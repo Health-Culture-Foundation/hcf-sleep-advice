@@ -1035,6 +1035,10 @@
             {
               "source": "wiki",
               "says": "Item 3.2.1 states 'Naps harm nighttime sleep' as a general claim; its own tip is to keep naps under 30 minutes and before 3 PM."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "No naps (recorded in health-glossary#17 from his videos; not a glossary entry)."
             }
           ]
         }
@@ -5597,6 +5601,10 @@
             {
               "source": "nhlbi-guide",
               "says": "2 to 3 hours (p. 28)."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "About 4 hours before bed (recorded in health-glossary#17 from his videos; not a glossary entry)."
             }
           ]
         }
