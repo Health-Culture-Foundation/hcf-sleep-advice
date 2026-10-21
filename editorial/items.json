@@ -14,7 +14,10 @@
     "people-with-a-late-body-clock": "Delayed sleep-wake phase: fall asleep and wake much later than wanted.",
     "talk-to-a-clinician": "Involves a supplement, medicine, device or condition; suggest checking with a health professional.",
     "needs-money-or-equipment": "Costs money or needs something many people do not have.",
-    "region-or-culture-specific": "Comes from, or fits, a particular place or culture (see audienceNote)."
+    "region-or-culture-specific": "Comes from, or fits, a particular place or culture (see audienceNote).",
+    "older-adults": "People over about 65.",
+    "pregnant-people": "During pregnancy.",
+    "infants": "Babies under 1 year (advice acted on by caregivers)."
   },
   "items": [
     {
@@ -162,7 +165,7 @@
     {
       "wiki": "1.1.6",
       "id": "dont-sleep-in-much-on-weekends",
-      "plain": "On weekends, wake up within about an hour of your weekday time.",
+      "plain": "Keep weekend wake-up times close to weekday ones; if you're short on sleep, a little extra on weekends may help.",
       "audience": [
         "all-ages-and-cultures"
       ],
@@ -191,7 +194,8 @@
           ]
         }
       ],
-      "notes": "The wiki item says 'limit social jet lag'. The one-hour figure in the plain line is Huberman's and is unverified; see also myth M2."
+      "notes": "The wiki item says 'limit social jet lag'. The one-hour figure in the plain line is Huberman's and is unverified; see also myth M2. Plain line corrected after the literature search: NSF 2023 says catch-up sleep 'may be beneficial' when weekday sleep is short; no source supports the one-hour rule.",
+      "plainBefore": "On weekends, wake up within about an hour of your weekday time."
     },
     {
       "wiki": "1.2.1",
@@ -521,11 +525,12 @@
     {
       "wiki": "1.4.2",
       "id": "try-pink-noise",
-      "plain": "Some people sleep better with pink noise, like steady rain, than white noise.",
+      "plain": "Pink noise is popular, but the evidence is weak, and one trial found it reduced dream (REM) sleep.",
       "audience": [
         "all-ages-and-cultures"
       ],
-      "notes": "Wiki's own scores disagree sharply on evidence (item page: 'well supported'; classification table: 'weak evidence', impact 1). Write-up has no citations."
+      "notes": "Wiki's own scores disagree sharply on evidence (item page: 'well supported'; classification table: 'weak evidence', impact 1). Write-up has no citations. Plain line corrected after the literature search: Basner 2026 RCT found all-night pink noise cut REM sleep; earplugs blocked traffic noise.",
+      "plainBefore": "Some people sleep better with pink noise, like steady rain, than white noise."
     },
     {
       "wiki": "1.4.3",
@@ -816,7 +821,7 @@
     {
       "wiki": "2.3.4",
       "id": "no-hard-workouts-right-before-bed",
-      "plain": "Finish hard workouts at least a couple of hours before bed.",
+      "plain": "Finish hard workouts at least an hour before bed; evening exercise is otherwise fine.",
       "audience": [
         "all-ages-and-cultures"
       ],
@@ -844,7 +849,9 @@
             }
           ]
         }
-      ]
+      ],
+      "plainBefore": "Finish hard workouts at least a couple of hours before bed.",
+      "notes": "Plain line corrected after the literature search: Stutz 2019 and Frimpong 2021 find evening exercise fine, except vigorous exercise ending within about 1 hour of bed. Experts in Robbins 2019 rated 'exercise within 4 hours disturbs sleep' a myth."
     },
     {
       "wiki": "2.4.1",
@@ -1234,7 +1241,7 @@
     {
       "wiki": "4.2.2",
       "id": "light-therapy-for-a-late-body-clock",
-      "plain": "If you can't fall asleep until very late, ask a clinician about morning bright-light therapy.",
+      "plain": "If you can't fall asleep until very late, ask a clinician about timed melatonin or morning light.",
       "audience": [
         "people-with-a-late-body-clock",
         "talk-to-a-clinician",
@@ -1243,7 +1250,8 @@
       "glossaryTerms": [
         "sleep-disorders-circadian-rhythm"
       ],
-      "notes": "Wiki tip names a 10,000-lux box. Write-up has no citations."
+      "notes": "Wiki tip names a 10,000-lux box. Write-up has no citations. Plain line corrected after the literature search: AASM 2015 makes no recommendation for light therapy alone in adults with delayed sleep-wake phase, but weakly recommends timed melatonin.",
+      "plainBefore": "If you can't fall asleep until very late, ask a clinician about morning bright-light therapy."
     },
     {
       "wiki": "4.2.3",
@@ -1419,11 +1427,12 @@
       "glossaryId": "slp-non-sleep-deep-rest",
       "placeIn": "3.1",
       "id": "rest-even-if-awake",
-      "plain": "If you can't sleep, lying still with your eyes closed still rests your body.",
+      "plain": "Lying still with your eyes closed rests you a little, but it is not a substitute for sleep.",
       "audience": [
         "all-ages-and-cultures"
       ],
-      "notes": "Pulls against 3.2.3 (get up after 20 minutes)."
+      "notes": "Pulls against 3.2.3 (get up after 20 minutes). Plain line corrected 2026-10-21 after the literature search: sleep experts rate 'lying in bed with eyes closed is almost as good as sleeping' a myth (Robbins 2019), and no study shows quiet wakefulness is restorative.",
+      "plainBefore": "If you can't sleep, lying still with your eyes closed still rests your body."
     },
     {
       "from": "glossary",
@@ -1586,7 +1595,22 @@
         "talk-to-a-clinician"
       ],
       "paragraph": "Anxiety and depression can complicate sleep, but simple practices and self-compassion change the tone of nights.",
-      "notes": "From the homepage quick tips and the Mental Health Conditions commitments."
+      "notes": "From the homepage quick tips and the Mental Health Conditions commitments.",
+      "disagreements": [
+        {
+          "about": "When to see a professional",
+          "positions": [
+            {
+              "source": "do-one-thing",
+              "says": "If poor sleep persists for more than a few weeks."
+            },
+            {
+              "source": "nhs-insomnia",
+              "says": "If changes to sleep habits have not helped and you've had trouble sleeping for months (per the guidelines search)."
+            }
+          ]
+        }
+      ]
     },
     {
       "from": "do-one-thing",
@@ -1613,6 +1637,220 @@
       "audienceNote": "Legal status differs by country and state.",
       "paragraph": "Cannabis affects sleep differently for everyone, but heavy use often suppresses restorative REM cycles. Reflection and moderation bring clarity.",
       "notes": "The REM claim is Do One Thing's and is not cited. Not in the wiki or glossary."
+    },
+    {
+      "from": "literature",
+      "id": "bright-days-dark-nights",
+      "placeIn": "2.1",
+      "kind": "advice",
+      "plain": "Get plenty of bright light during the day, and keep your nights dark.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "literatureMatch": "Get plenty of bright light"
+    },
+    {
+      "from": "literature",
+      "id": "tips-alone-dont-fix-insomnia",
+      "placeIn": "4.2",
+      "kind": "advice",
+      "plain": "Sleep tips alone rarely fix long-lasting insomnia; if poor sleep goes on for months, ask about CBT-I.",
+      "audience": [
+        "people-with-insomnia",
+        "talk-to-a-clinician"
+      ],
+      "literatureMatch": "Sleep tips alone rarely fix",
+      "notes": "Frames the whole dataset: most items here are sleep hygiene tips, which AASM 2021 advises against as the only treatment for chronic insomnia."
+    },
+    {
+      "from": "literature",
+      "id": "dont-split-sleep-into-blocks",
+      "placeIn": "1.1",
+      "kind": "advice",
+      "plain": "Don't try to split your sleep into several short blocks a day to need less sleep.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "literatureMatch": "cut your sleep into several short blocks",
+      "notes": "Polyphasic sleep (NSF 2021 consensus)."
+    },
+    {
+      "from": "literature",
+      "id": "later-school-start-times",
+      "placeIn": "1.1",
+      "kind": "advice",
+      "plain": "Teens' body clocks run later; support later school start times instead of blaming teens for sleeping late.",
+      "audience": [
+        "children-and-teens",
+        "parents-and-caregivers"
+      ],
+      "literatureMatch": "school start times",
+      "notes": "Policy-level advice."
+    },
+    {
+      "from": "literature",
+      "id": "infant-safe-sleep",
+      "placeIn": "1.2",
+      "kind": "advice",
+      "plain": "Put babies to sleep on their backs, on a firm flat surface, in your room but not in your bed.",
+      "audience": [
+        "infants",
+        "parents-and-caregivers"
+      ],
+      "literatureMatch": "Put babies to sleep on their back"
+    },
+    {
+      "from": "literature",
+      "id": "stop-trying-to-sleep",
+      "placeIn": "3.2",
+      "kind": "advice",
+      "plain": "If trying hard to fall asleep keeps you awake, stop trying and let sleep come on its own.",
+      "audience": [
+        "all-ages-and-cultures",
+        "people-with-insomnia"
+      ],
+      "literatureMatch": "If trying hard to fall asleep",
+      "notes": "Paradoxical intention and acceptance-based approaches."
+    },
+    {
+      "from": "literature",
+      "id": "calm-music-at-bedtime",
+      "placeIn": "3.3",
+      "kind": "advice",
+      "plain": "Listening to calm music for 25 to 60 minutes at bedtime may help you sleep better.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "literatureMatch": "Listening to calm music",
+      "notes": "Better evidence (Cochrane 2022) than binaural beats, pink noise or ASMR."
+    },
+    {
+      "from": "literature",
+      "id": "myth-falling-asleep-anywhere",
+      "placeIn": "myths",
+      "kind": "myth",
+      "plain": "Falling asleep anywhere, any time is a sign you're short on sleep, not a sign of good sleep.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "literatureMatch": "Falling asleep anywhere"
+    },
+    {
+      "from": "literature",
+      "id": "myth-snooze-wrecks-sleep",
+      "placeIn": "myths",
+      "kind": "myth",
+      "plain": "Hitting snooze for a short while is fine for most people.",
+      "audience": [
+        "adults"
+      ],
+      "literatureMatch": "Hitting snooze",
+      "notes": "Evidence is mixed: experts in Robbins 2019 vs a 2024 RCT."
+    },
+    {
+      "from": "literature",
+      "id": "melatonin-for-children",
+      "placeIn": "4.2",
+      "kind": "advice",
+      "plain": "Melatonin isn't automatically safe for children and teens just because it's natural; ask a clinician first.",
+      "audience": [
+        "children-and-teens",
+        "parents-and-caregivers",
+        "talk-to-a-clinician"
+      ],
+      "literatureMatch": "Melatonin is not automatically safe"
+    },
+    {
+      "from": "literature",
+      "id": "side-sleeping-in-late-pregnancy",
+      "placeIn": "4.1",
+      "kind": "advice",
+      "plain": "From about 28 weeks of pregnancy, go to sleep on your side (left or right), not on your back.",
+      "audience": [
+        "pregnant-people"
+      ],
+      "literatureMatch": "28 weeks of pregnancy",
+      "notes": "Evidence does not favor left over right; one cohort (Silver 2019) found no link."
+    },
+    {
+      "from": "literature",
+      "id": "sleeping-pills-in-older-adults",
+      "placeIn": "4.2",
+      "kind": "advice",
+      "plain": "For older adults, sleeping pills usually help only a little and raise the risk of falls and confusion; try other approaches first.",
+      "audience": [
+        "older-adults",
+        "talk-to-a-clinician"
+      ],
+      "literatureMatch": "Older adults: sleeping pills"
+    },
+    {
+      "from": "literature",
+      "id": "avoid-nicotine-before-bed",
+      "placeIn": "2.2",
+      "kind": "advice",
+      "plain": "Avoid smoking or vaping in the evening; if you quit, sleep may be rough for a few weeks before it improves.",
+      "audience": [
+        "adults"
+      ],
+      "literatureMatch": "smoking or vaping",
+      "notes": "NHLBI pairs nicotine with caffeine (see caffeine-and-big-meals-early)."
+    },
+    {
+      "from": "literature",
+      "id": "pets-in-the-bedroom",
+      "placeIn": "1.2",
+      "kind": "advice",
+      "plain": "A pet in the bedroom is usually fine; if it wakes you, keep it off the bed.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "literatureMatch": "A pet in the bedroom"
+    },
+    {
+      "from": "literature",
+      "id": "bed-partner-snoring",
+      "placeIn": "1.2",
+      "kind": "advice",
+      "plain": "Sharing a bed is fine for most couples; if a partner's snoring wakes you, get the snoring checked or try separate beds.",
+      "audience": [
+        "adults"
+      ],
+      "literatureMatch": "Sharing a bed with a partner"
+    },
+    {
+      "from": "literature",
+      "id": "be-wary-of-influencer-advice",
+      "placeIn": "4.2",
+      "kind": "advice",
+      "plain": "Be wary of sleep advice from popular videos and influencers; check it against a health service or sleep society.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "literatureMatch": "Be wary of sleep advice"
+    },
+    {
+      "from": "literature",
+      "id": "use-sleep-trackers-lightly",
+      "placeIn": "4.2",
+      "kind": "advice",
+      "plain": "Use a sleep tracker lightly, if at all; it can't diagnose sleep problems, and if the numbers make you worry, stop.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "literatureMatch": "sleep tracker"
+    },
+    {
+      "from": "literature",
+      "id": "side-sleeping-for-snoring",
+      "placeIn": "4.1",
+      "kind": "advice",
+      "plain": "If your snoring or apnea is worse on your back, sleeping on your side may help; ask your clinician.",
+      "audience": [
+        "people-who-snore-or-may-have-sleep-apnea",
+        "talk-to-a-clinician"
+      ],
+      "literatureMatch": "sleeping on your side may help"
     }
   ],
   "myths": {

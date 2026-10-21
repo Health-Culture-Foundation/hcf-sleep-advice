@@ -128,6 +128,11 @@
   skos:topConceptOf <https://health-culture.org/sleep-advice/facet/mechanism> ;
   skos:prefLabel "Tracking and getting care"@en ;
   skos:definition "Noticing patterns or problems and getting them checked: sleep diaries, medicine reviews, testing for apnea."@en .
+<https://health-culture.org/sleep-advice/facet/mechanism/body-position> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/mechanism> ;
+  skos:topConceptOf <https://health-culture.org/sleep-advice/facet/mechanism> ;
+  skos:prefLabel "Body position"@en ;
+  skos:definition "How you lie: side, back, head raised."@en .
 
 <https://health-culture.org/sleep-advice/facet/timeOfDay> a skos:ConceptScheme ; dct:title "When you do it"@en .
 <https://health-culture.org/sleep-advice/facet/timeOfDay/on-waking> a skos:Concept ;
@@ -346,6 +351,7 @@
   skos:altLabel "8-hour rule"@en ;
   skos:altLabel "Sleep duration"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/1.1> ;
+  skos:related <https://health-culture.org/sleep-advice/myth-falling-asleep-anywhere> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/sleep-duration/> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/sleep-pressure> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
@@ -394,7 +400,7 @@
 
 <https://health-culture.org/sleep-advice/dont-sleep-in-much-on-weekends> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
-  skos:prefLabel "On weekends, wake up within about an hour of your weekday time."@en ;
+  skos:prefLabel "Keep weekend wake-up times close to weekday ones; if you're short on sleep, a little extra on weekends may help."@en ;
   hsa:kind "advice" ;
   skos:notation "1.1.6" ;
   skos:altLabel "Limit social jet lag by maintaining weekday sleep patterns on weekends"@en ;
@@ -407,7 +413,7 @@
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
   hsa:problem <https://health-culture.org/sleep-advice/facet/problem/weekend-gap> ;
-  skos:editorialNote "The wiki item says 'limit social jet lag'. The one-hour figure in the plain line is Huberman's and is unverified; see also myth M2."@en .
+  skos:editorialNote "The wiki item says 'limit social jet lag'. The one-hour figure in the plain line is Huberman's and is unverified; see also myth M2. Plain line corrected after the literature search: NSF 2023 says catch-up sleep 'may be beneficial' when weekday sleep is short; no source supports the one-hour rule."@en .
 
 <https://health-culture.org/sleep-advice/keep-the-bedroom-cool-and-dark> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
@@ -676,7 +682,7 @@
 
 <https://health-culture.org/sleep-advice/try-pink-noise> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
-  skos:prefLabel "Some people sleep better with pink noise, like steady rain, than white noise."@en ;
+  skos:prefLabel "Pink noise is popular, but the evidence is weak, and one trial found it reduced dream (REM) sleep."@en ;
   hsa:kind "advice" ;
   skos:notation "1.4.2" ;
   skos:altLabel "Try pink noise instead of white noise"@en ;
@@ -685,7 +691,7 @@
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/during-the-night> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   skos:definition "Use free apps or YouTube to find pink noise sounds, or try a white noise machine with a pink noise setting. Experiment with different soundscapes to find what works best for you."@en ;
-  skos:editorialNote "Wiki's own scores disagree sharply on evidence (item page: 'well supported'; classification table: 'weak evidence', impact 1). Write-up has no citations."@en .
+  skos:editorialNote "Wiki's own scores disagree sharply on evidence (item page: 'well supported'; classification table: 'weak evidence', impact 1). Write-up has no citations. Plain line corrected after the literature search: Basner 2026 RCT found all-night pink noise cut REM sleep; earplugs blocked traffic noise."@en .
 
 <https://health-culture.org/sleep-advice/wear-socks-to-bed> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
@@ -711,6 +717,7 @@
   skos:altLabel "Morning sunlight"@en ;
   skos:altLabel "Morning light exposure"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/2.1> ;
+  skos:related <https://health-culture.org/sleep-advice/bright-days-dark-nights> ;
   skos:related <https://health-culture.org/sleep-advice/late-afternoon-daylight> ;
   skos:related <https://health-culture.org/sleep-advice/light-therapy-for-a-late-body-clock> ;
   skos:related <https://health-culture.org/sleep-advice/move-in-the-morning> ;
@@ -735,6 +742,7 @@
   skos:altLabel "After dark, keep indoor lights low and screens dim."@en ;
   skos:altLabel "Dim the Lights at Night"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/2.1> ;
+  skos:related <https://health-culture.org/sleep-advice/bright-days-dark-nights> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/light-at-night> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-clock> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
@@ -792,6 +800,7 @@
   skos:altLabel "Avoid caffeine and heavy meals before bed"@en ;
   skos:altLabel "Avoid Caffeine and Nicotine Before Bed"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/2.2> ;
+  skos:related <https://health-culture.org/sleep-advice/avoid-nicotine-before-bed> ;
   skos:related <https://health-culture.org/sleep-advice/small-snack-before-bed> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-avoid-caffeine-and-nicotine-before-bed/> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-avoid-large-meals-and-fluids-late-at-night/> ;
@@ -904,7 +913,7 @@
 
 <https://health-culture.org/sleep-advice/no-hard-workouts-right-before-bed> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
-  skos:prefLabel "Finish hard workouts at least a couple of hours before bed."@en ;
+  skos:prefLabel "Finish hard workouts at least an hour before bed; evening exercise is otherwise fine."@en ;
   hsa:kind "advice" ;
   skos:notation "2.3.4" ;
   skos:altLabel "Avoid intense workouts within 2 hours of bedtime"@en ;
@@ -916,7 +925,8 @@
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-temperature> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
-  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> .
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  skos:editorialNote "Plain line corrected after the literature search: Stutz 2019 and Frimpong 2021 find evening exercise fine, except vigorous exercise ending within about 1 hour of bed. Experts in Robbins 2019 rated 'exercise within 4 hours disturbs sleep' a myth."@en .
 
 <https://health-culture.org/sleep-advice/4-7-8-breathing> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
@@ -1127,6 +1137,7 @@
   skos:altLabel "Reconditioning Therapy"@en ;
   skos:broader <https://health-culture.org/sleep-advice/stimulus-control> ;
   skos:related <https://health-culture.org/sleep-advice/dont-check-the-clock> ;
+  skos:related <https://health-culture.org/sleep-advice/stop-trying-to-sleep> ;
   hsa:conflictsWith <https://health-culture.org/sleep-advice/stay-in-bed-and-breathe> ;
   hsa:conflictsWith <https://health-culture.org/sleep-advice/rest-even-if-awake> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-don-t-lie-in-bed-awake/> ;
@@ -1179,6 +1190,7 @@
   skos:notation "3.3.3" ;
   skos:altLabel "Listen to binaural beats at a sleep-friendly frequency (e.g., 2-8 Hz)"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/3.3> ;
+  skos:related <https://health-culture.org/sleep-advice/calm-music-at-bedtime> ;
   skos:related <https://health-culture.org/sleep-advice/mask-noise-with-steady-sound> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/sleep-environment> ;
@@ -1209,7 +1221,9 @@
   skos:altLabel "Sleep on your left side to aid digestion and reduce acid reflux"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/4.1> ;
   skos:related <https://health-culture.org/sleep-advice/raise-the-head-of-the-bed> ;
+  skos:related <https://health-culture.org/sleep-advice/side-sleeping-for-snoring> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/digestion-and-fluids> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-position> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/during-the-night> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/reflux> ;
   skos:definition "If you experience acid reflux at night, try placing a wedge pillow under your upper body while sleeping on your left side for added relief."@en ;
@@ -1239,6 +1253,7 @@
   skos:related <https://health-culture.org/sleep-advice/left-side-for-reflux> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/digestion-and-fluids> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/breathing-and-airway> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-position> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/during-the-night> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/reflux> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/sleep-apnea> ;
@@ -1253,6 +1268,7 @@
   skos:altLabel "Elevate your legs slightly to improve circulation"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/4.1> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/sleep-environment> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-position> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/bedtime> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   skos:editorialNote "In the wiki's 'New Sleep Advices' list. No write-up or evidence; the circulation claim in the wiki title is not repeated."@en .
@@ -1267,6 +1283,7 @@
   skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
   skos:related <https://health-culture.org/sleep-advice/cbt-for-insomnia> ;
   skos:related <https://health-culture.org/sleep-advice/sleep-restriction-therapy> ;
+  skos:related <https://health-culture.org/sleep-advice/use-sleep-trackers-lightly> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-sleep-restriction-therapy/> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-cognitive-behavioral-therapy-for-insomnia/> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/monitoring-and-care> ;
@@ -1280,7 +1297,7 @@
 
 <https://health-culture.org/sleep-advice/light-therapy-for-a-late-body-clock> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
-  skos:prefLabel "If you can't fall asleep until very late, ask a clinician about morning bright-light therapy."@en ;
+  skos:prefLabel "If you can't fall asleep until very late, ask a clinician about timed melatonin or morning light."@en ;
   hsa:kind "advice" ;
   skos:notation "4.2.2" ;
   skos:altLabel "Consider light therapy if you have delayed sleep phase disorder (DSPD)"@en ;
@@ -1293,7 +1310,7 @@
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/on-waking> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/late-body-clock> ;
   skos:definition "If you struggle with falling asleep late and waking up late, use a 10,000-lux light box for 30 minutes within an hour of waking up to help regulate your circadian rhythm."@en ;
-  skos:editorialNote "Wiki tip names a 10,000-lux box. Write-up has no citations."@en .
+  skos:editorialNote "Wiki tip names a 10,000-lux box. Write-up has no citations. Plain line corrected after the literature search: AASM 2015 makes no recommendation for light therapy alone in adults with delayed sleep-wake phase, but weakly recommends timed melatonin."@en .
 
 <https://health-culture.org/sleep-advice/melatonin-for-jet-lag-or-shifts> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
@@ -1304,6 +1321,7 @@
   skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
   skos:related <https://health-culture.org/sleep-advice/adjust-to-night-shift-work> ;
   skos:related <https://health-culture.org/sleep-advice/jet-lag> ;
+  skos:related <https://health-culture.org/sleep-advice/melatonin-for-children> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-coping-with-jet-lag/> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-adjusting-to-night-shift-work/> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/jet-lag-syndrome/> ;
@@ -1322,10 +1340,12 @@
   skos:notation "4.2.4" ;
   skos:altLabel "Check for potential sleep apnea"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
+  skos:related <https://health-culture.org/sleep-advice/bed-partner-snoring> ;
   skos:related <https://health-culture.org/sleep-advice/get-help-if-poor-sleep-persists> ;
   skos:related <https://health-culture.org/sleep-advice/mouth-taping> ;
   skos:related <https://health-culture.org/sleep-advice/myth-snoring-is-harmless> ;
   skos:related <https://health-culture.org/sleep-advice/raise-the-head-of-the-bed> ;
+  skos:related <https://health-culture.org/sleep-advice/side-sleeping-for-snoring> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/sleep-wake-disorders/> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/monitoring-and-care> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/breathing-and-airway> ;
@@ -1356,6 +1376,7 @@
   skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
   skos:related <https://health-culture.org/sleep-advice/get-help-if-poor-sleep-persists> ;
   skos:related <https://health-culture.org/sleep-advice/keep-a-sleep-diary> ;
+  skos:related <https://health-culture.org/sleep-advice/tips-alone-dont-fix-insomnia> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-cognitive-behavioral-therapy-for-insomnia/> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/learned-association> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/sleep-pressure> ;
@@ -1487,18 +1508,19 @@
 
 <https://health-culture.org/sleep-advice/rest-even-if-awake> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
-  skos:prefLabel "If you can't sleep, lying still with your eyes closed still rests your body."@en ;
+  skos:prefLabel "Lying still with your eyes closed rests you a little, but it is not a substitute for sleep."@en ;
   hsa:kind "advice" ;
   skos:altLabel "Non-Sleep Deep Rest"@en ;
   skos:altLabel "NSDR"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/3.1> ;
+  skos:related <https://health-culture.org/sleep-advice/stop-trying-to-sleep> ;
   hsa:conflictsWith <https://health-culture.org/sleep-advice/get-up-if-you-cant-sleep> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/during-the-night> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
   skos:definition "Lying still in the dark and quiet, awake, with your eyes closed. It is not sleep, but it can still rest the body, which can take pressure off the effort to fall asleep."@en ;
-  skos:editorialNote "Pulls against 3.2.3 (get up after 20 minutes)."@en .
+  skos:editorialNote "Pulls against 3.2.3 (get up after 20 minutes). Plain line corrected 2026-10-21 after the literature search: sleep experts rate 'lying in bed with eyes closed is almost as good as sleeping' a myth (Robbins 2019), and no study shows quiet wakefulness is restorative."@en .
 
 <https://health-culture.org/sleep-advice/power-down-hour> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
@@ -1577,6 +1599,7 @@
   skos:altLabel "Chronotype"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/1.1> ;
   skos:related <https://health-culture.org/sleep-advice/keep-a-regular-sleep-schedule> ;
+  skos:related <https://health-culture.org/sleep-advice/later-school-start-times> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-clock> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
@@ -1680,6 +1703,7 @@
   skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
   skos:related <https://health-culture.org/sleep-advice/cbt-for-insomnia> ;
   skos:related <https://health-culture.org/sleep-advice/check-for-sleep-apnea> ;
+  skos:related <https://health-culture.org/sleep-advice/tips-alone-dont-fix-insomnia> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/monitoring-and-care> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
@@ -1721,6 +1745,206 @@
   hsa:problem <https://health-culture.org/sleep-advice/facet/problem/cannabis-use> ;
   skos:definition "Cannabis affects sleep differently for everyone, but heavy use often suppresses restorative REM cycles. Reflection and moderation bring clarity."@en ;
   skos:editorialNote "The REM claim is Do One Thing's and is not cited. Not in the wiki or glossary."@en .
+
+<https://health-culture.org/sleep-advice/bright-days-dark-nights> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Get plenty of bright light during the day, and keep your nights dark."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/2.1> ;
+  skos:related <https://health-culture.org/sleep-advice/get-morning-daylight> ;
+  skos:related <https://health-culture.org/sleep-advice/less-bright-light-in-the-evening> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-clock> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/light-at-night> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> .
+
+<https://health-culture.org/sleep-advice/tips-alone-dont-fix-insomnia> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Sleep tips alone rarely fix long-lasting insomnia; if poor sleep goes on for months, ask about CBT-I."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
+  skos:related <https://health-culture.org/sleep-advice/cbt-for-insomnia> ;
+  skos:related <https://health-culture.org/sleep-advice/get-help-if-poor-sleep-persists> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/monitoring-and-care> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
+  skos:editorialNote "Frames the whole dataset: most items here are sleep hygiene tips, which AASM 2021 advises against as the only treatment for chronic insomnia."@en .
+
+<https://health-culture.org/sleep-advice/dont-split-sleep-into-blocks> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Don't try to split your sleep into several short blocks a day to need less sleep."@en ;
+  hsa:kind "advice" ;
+  skos:altLabel "Polyphasic sleep"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/category/1.1> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/sleep-pressure> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-clock> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  skos:editorialNote "Polyphasic sleep (NSF 2021 consensus)."@en .
+
+<https://health-culture.org/sleep-advice/later-school-start-times> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Teens' body clocks run later; support later school start times instead of blaming teens for sleeping late."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/1.1> ;
+  skos:related <https://health-culture.org/sleep-advice/fit-bedtime-to-your-body-clock> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-clock> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/on-waking> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  skos:editorialNote "Policy-level advice."@en .
+
+<https://health-culture.org/sleep-advice/infant-safe-sleep> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Put babies to sleep on their backs, on a firm flat surface, in your room but not in your bed."@en ;
+  hsa:kind "advice" ;
+  skos:altLabel "Safe sleep for babies"@en ;
+  skos:altLabel "SIDS prevention"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/category/1.2> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/sleep-environment> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-position> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/bedtime> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> .
+
+<https://health-culture.org/sleep-advice/stop-trying-to-sleep> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "If trying hard to fall asleep keeps you awake, stop trying and let sleep come on its own."@en ;
+  hsa:kind "advice" ;
+  skos:altLabel "Paradoxical intention"@en ;
+  skos:altLabel "Sleep effort"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/cbt-for-insomnia> ;
+  skos:related <https://health-culture.org/sleep-advice/get-up-if-you-cant-sleep> ;
+  skos:related <https://health-culture.org/sleep-advice/rest-even-if-awake> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/learned-association> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/bedtime> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/during-the-night> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
+  skos:editorialNote "Paradoxical intention and acceptance-based approaches."@en .
+
+<https://health-culture.org/sleep-advice/calm-music-at-bedtime> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Listening to calm music for 25 to 60 minutes at bedtime may help you sleep better."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/3.3> ;
+  skos:related <https://health-culture.org/sleep-advice/binaural-beats> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/bedtime> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
+  skos:editorialNote "Better evidence (Cochrane 2022) than binaural beats, pink noise or ASMR."@en .
+
+<https://health-culture.org/sleep-advice/myth-falling-asleep-anywhere> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Falling asleep anywhere, any time is a sign you're short on sleep, not a sign of good sleep."@en ;
+  hsa:kind "myth" ;
+  skos:related <https://health-culture.org/sleep-advice/get-enough-sleep-for-you> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/sleep-pressure> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/daytime> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> .
+
+<https://health-culture.org/sleep-advice/myth-snooze-wrecks-sleep> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Hitting snooze for a short while is fine for most people."@en ;
+  hsa:kind "myth" ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/sleep-pressure> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/on-waking> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  skos:editorialNote "Evidence is mixed: experts in Robbins 2019 vs a 2024 RCT."@en .
+
+<https://health-culture.org/sleep-advice/melatonin-for-children> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Melatonin isn't automatically safe for children and teens just because it's natural; ask a clinician first."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
+  skos:related <https://health-culture.org/sleep-advice/melatonin-for-jet-lag-or-shifts> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/substances> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> .
+
+<https://health-culture.org/sleep-advice/side-sleeping-in-late-pregnancy> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "From about 28 weeks of pregnancy, go to sleep on your side (left or right), not on your back."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/4.1> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-position> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/bedtime> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  skos:editorialNote "Evidence does not favor left over right; one cohort (Silver 2019) found no link."@en .
+
+<https://health-culture.org/sleep-advice/sleeping-pills-in-older-adults> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "For older adults, sleeping pills usually help only a little and raise the risk of falls and confusion; try other approaches first."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/substances> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/monitoring-and-care> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> .
+
+<https://health-culture.org/sleep-advice/avoid-nicotine-before-bed> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Avoid smoking or vaping in the evening; if you quit, sleep may be rough for a few weeks before it improves."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/2.2> ;
+  skos:related <https://health-culture.org/sleep-advice/caffeine-and-big-meals-early> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/substances> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  skos:editorialNote "NHLBI pairs nicotine with caffeine (see caffeine-and-big-meals-early)."@en .
+
+<https://health-culture.org/sleep-advice/pets-in-the-bedroom> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "A pet in the bedroom is usually fine; if it wakes you, keep it off the bed."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/1.2> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/sleep-environment> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/during-the-night> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> .
+
+<https://health-culture.org/sleep-advice/bed-partner-snoring> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Sharing a bed is fine for most couples; if a partner's snoring wakes you, get the snoring checked or try separate beds."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/1.2> ;
+  skos:related <https://health-culture.org/sleep-advice/check-for-sleep-apnea> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/sleep-environment> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/breathing-and-airway> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/during-the-night> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/sleep-apnea> .
+
+<https://health-culture.org/sleep-advice/be-wary-of-influencer-advice> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Be wary of sleep advice from popular videos and influencers; check it against a health service or sleep society."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/monitoring-and-care> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> .
+
+<https://health-culture.org/sleep-advice/use-sleep-trackers-lightly> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Use a sleep tracker lightly, if at all; it can't diagnose sleep problems, and if the numbers make you worry, stop."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
+  skos:related <https://health-culture.org/sleep-advice/keep-a-sleep-diary> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/monitoring-and-care> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> .
+
+<https://health-culture.org/sleep-advice/side-sleeping-for-snoring> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "If your snoring or apnea is worse on your back, sleeping on your side may help; ask your clinician."@en ;
+  hsa:kind "advice" ;
+  skos:broader <https://health-culture.org/sleep-advice/category/4.1> ;
+  skos:related <https://health-culture.org/sleep-advice/check-for-sleep-apnea> ;
+  skos:related <https://health-culture.org/sleep-advice/left-side-for-reflux> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/breathing-and-airway> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-position> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/during-the-night> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/sleep-apnea> .
 
 <https://health-culture.org/sleep-advice/myth-alcohol-helps-sleep> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
