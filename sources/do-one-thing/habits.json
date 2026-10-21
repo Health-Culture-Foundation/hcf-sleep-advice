@@ -1,0 +1,292 @@
+{
+  "source": {
+    "title": "Do One Thing: Choose your ONE THING (Habits by Category)",
+    "url": "https://doonething.sleepliteracy.org/choose-your-one-thing/",
+    "homepage": "https://doonething.sleepliteracy.org/",
+    "publisher": "Health Culture Foundation / SleepLiteracy.org (Sleep Awareness Month)",
+    "license": "CC BY 4.0: original HCF content (Kalman, 2026-10-21)",
+    "retrieved": "2026-10-21",
+    "retrievedBy": "Claude, via the in-app browser (the site blocks command-line requests)"
+  },
+  "knownIssuesOnSite": [
+    "'Get Exercise' (under Stress, Anxiety, and Mental Load) shows the intro and five commitments of 'Work/School Responsibilities' word for word: a copy-paste error. There is no exercise content.",
+    "'Relationships & Family Concerns' lists 'I will save serious conversations for the day, not bedtime.' twice.",
+    "'Weekend vs Weekday Gap' has two commitments; every other subcategory has five.",
+    "The Technology intro says 'Blue light delays melatonin'; the NSF 2024 consensus did not reach consensus on pre-bedtime light (see screens-before-bed)."
+  ],
+  "numbersOnHomepageToCheck": [
+    "Caffeine 'can stay in your system for 6–8 hours'",
+    "Sleep apnea 'affects an estimated 3–7% of adults'",
+    "Poor sleep 'can increase the risk of hypertension and cardiovascular disease by 48% (AHA, 2022)'",
+    "Insufficient sleep 'linked to a 55% higher risk of developing obesity among adults (NIH, 2010)'",
+    "Drowsy driving 'causes over 100,000 crashes in the US per year'"
+  ],
+  "categories": [
+    {
+      "id": "irregular-schedules",
+      "name": "Irregular Schedules (and Social Jetlag)",
+      "intro": "When bedtimes and wake times vary too much, the body’s internal clock loses its rhythm. Staying up late for projects, pulling early mornings for meetings, or drifting into weekend “catch-up sleep” creates what scientists call social jetlag. It feels like mild jet lag every week — fogginess, grogginess, and less restorative sleep. The antidote is finding gentle consistency and rituals that anchor the body.",
+      "homepageQuickTips": [
+        "Aim to keep your bedtime and wake-up time within the same hour every day, even on weekends.",
+        "If you’re up late, try a short nap the next day instead of sleeping in for hours, which can make the cycle worse.",
+        "Plan social activities earlier when you can — morning coffee catch-ups or evening walks can replace midnight hangouts.",
+        "Use consistent cues — morning sunlight, light exercise, and hydration — to help your body reset after a late night."
+      ],
+      "subcategories": [
+        {
+          "id": "weekend-gap",
+          "name": "Weekend vs Weekday Gap",
+          "intro": "Sleeping in late feels tempting, but it can reset the body clock in ways that make Mondays brutal. A steady rhythm creates smoother weeks.",
+          "commitments": [
+            "I will remind myself that consistency is freedom, not restriction.",
+            "I will treat Sunday nights as a gentle reset, preparing for the week with intention."
+          ]
+        },
+        {
+          "id": "deadlines",
+          "name": "Work & School Deadlines",
+          "intro": "Deadlines push us to sacrifice rest, but the late-night work rarely pays off the next day. Finishing earlier allows the brain to settle and restores clarity for tomorrow.",
+          "commitments": [
+            "I will finish schoolwork by 9 pm so my brain has time to slow down before sleep.",
+            "I will plan my hardest tasks for earlier in the day, leaving evenings calm.",
+            "I will give myself a 30-minute buffer between work and screens before bed.",
+            "I will stop treating exhaustion as productivity and instead value sleep as part of my success.",
+            "I will close my laptop before I feel depleted, not after."
+          ]
+        },
+        {
+          "id": "social-commitments",
+          "name": "Social Commitments",
+          "intro": "Connection is vital, but it doesn’t need to cost tomorrow’s energy. By shifting when and how we socialize, we keep both joy and rest intact.",
+          "commitments": [
+            "I will suggest earlier meet-ups so fun doesn’t mean fatigue.",
+            "I will cap social calls by 10 pm, choosing depth over late-night chatter.",
+            "I will trade one late-night hangout each week for a morning coffee ritual with a friend.",
+            "I will be honest with friends about needing rest, knowing true friends will support me.",
+            "I will let social joy add to my energy, not drain it."
+          ]
+        },
+        {
+          "id": "circadian-cues",
+          "name": "Circadian Rhythm Cues",
+          "intro": "Light, movement, and routines are nature’s signals. When we align with them, the body finds balance and sleep feels effortless.",
+          "commitments": [
+            "I will step outside for sunlight within 30 minutes of waking.",
+            "I will stretch or move my body every morning to signal the day has begun.",
+            "I will use the same nightly ritual — dim lights, tea, quiet — to signal sleep.",
+            "I will end each day with a simple phrase of gratitude to mark closure.",
+            "I will trust that my body thrives on rhythm and will reward me with better sleep."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "name": "Technology and Screen Time",
+      "intro": "Screens are both our tools and our traps. Blue light delays melatonin, and stimulation from scrolling, shows, or games keeps the brain alert. Tech habits spill into bedtime unless we create boundaries. Reclaiming the night from devices restores calm.",
+      "homepageQuickTips": [
+        "Set a “tech curfew” at least one hour before bedtime.",
+        "Use blue-light filters or night-shift modes if screens are unavoidable in the evening.",
+        "Keep your phone out of reach during the night to avoid disruptive notifications.",
+        "Replace screens with a relaxing bedtime routine — reading, journaling, stretching, or even light music."
+      ],
+      "subcategories": [
+        {
+          "id": "evening-phone",
+          "name": "Evening Phone/Tablet Use",
+          "intro": "Phones are designed to hook attention, but sleep suffers most when notifications and feeds creep into the quiet hours.",
+          "commitments": [
+            "I will set a tech curfew one hour before bed.",
+            "I will charge my phone outside the bedroom overnight.",
+            "I will replace scrolling with one page of reading or journaling.",
+            "I will greet mornings with intention, not with notifications.",
+            "I will see my bed as a place for rest, not a workstation."
+          ]
+        },
+        {
+          "id": "tv-streaming",
+          "name": "TV & Streaming Habits",
+          "intro": "Streaming platforms thrive on auto-play; our rest doesn’t. Stopping earlier turns evenings into time for restoration.",
+          "commitments": [
+            "I will stop watching shows by 9:30 pm, choosing rest over another episode.",
+            "I will shift my favorite shows earlier so my nights end quietly.",
+            "I will swap one binge night for an early night of deep sleep each week.",
+            "I will treat the ‘next episode’ button as an intentional choice, not a reflex.",
+            "I will remember that true cliffhangers resolve best after a good night’s rest."
+          ]
+        },
+        {
+          "id": "gaming-social-media",
+          "name": "Gaming & Social Media Stimulation",
+          "intro": "Fast-paced, interactive media heightens alertness — the opposite of what sleep needs. Ending sessions early brings back control.",
+          "commitments": [
+            "I will finish gaming or social feeds at least an hour before bed.",
+            "I will set a timer so playtime ends while I still feel in control.",
+            "I will move one gaming session into the afternoon instead of the evening.",
+            "I will remind myself that digital wins don’t matter if I lose tomorrow’s energy.",
+            "I will choose calm over stimulation when the night deepens."
+          ]
+        },
+        {
+          "id": "bedroom-devices",
+          "name": "Bedroom Environment & Devices",
+          "intro": "A restful bedroom is sacred. When devices stay outside, sleep deepens.",
+          "commitments": [
+            "I will keep my phone out of reach at night so sleep stays undisturbed.",
+            "I will use an alarm clock instead of relying on my phone.",
+            "I will make my bedroom a tech-free sanctuary.",
+            "I will honor my bed as a temple of rest, not a glowing workspace.",
+            "I will wake to sunlight or gentle sounds, not to pings and alerts."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stress",
+      "name": "Stress, Anxiety, and Mental Load",
+      "intro": "Racing thoughts and heavy emotions often strike hardest at night. Stress keeps cortisol high, holding the brain in alert mode. To rest well, we must create mental closure and safe rituals of calm.",
+      "homepageQuickTips": [
+        "Build a calming wind-down routine with dim lights and quiet activities.",
+        "Practice mindfulness, meditation, or deep breathing before bed — even 5 minutes helps.",
+        "Write down to-do lists or worries earlier in the evening to clear your mind.",
+        "If poor sleep persists for more than a few weeks, talk with a professional — you don’t have to navigate it alone."
+      ],
+      "subcategories": [
+        {
+          "id": "get-exercise",
+          "name": "Get Exercise",
+          "intro": "Tasks left unfinished echo through the night. Organizing earlier restores peace of mind.",
+          "commitments": [
+            "I will write tomorrow’s to-do list before dinner.",
+            "I will stop working at least one hour before bed.",
+            "I will celebrate what I finish each day instead of focusing on what remains.",
+            "I will end my workday with a short ritual that signals ‘done.’",
+            "I will trust that rest is the most important work of all."
+          ]
+        },
+        {
+          "id": "work-school",
+          "name": "Work/School Responsibilities",
+          "intro": "Tasks left unfinished echo through the night. Organizing earlier restores peace of mind.",
+          "commitments": [
+            "I will write tomorrow’s to-do list before dinner.",
+            "I will stop working at least one hour before bed.",
+            "I will celebrate what I finish each day instead of focusing on what remains.",
+            "I will end my workday with a short ritual that signals ‘done.’",
+            "I will trust that rest is the most important work of all."
+          ]
+        },
+        {
+          "id": "relationships",
+          "name": "Relationships & Family Concerns",
+          "intro": "Unspoken tensions linger. Naming positives and postponing conflicts until daylight strengthens both sleep and connection.",
+          "commitments": [
+            "I will journal three good things about my relationships each night.",
+            "I will save serious conversations for the day, not bedtime.",
+            "I will save serious conversations for the day, not bedtime.",
+            "I will rest knowing love is nurtured in patience, not in late-night arguments.",
+            "I will hold my family in compassion as I drift to sleep."
+          ]
+        },
+        {
+          "id": "money-worries",
+          "name": "Financial/Practical Worries",
+          "intro": "Money and logistics demand clarity, not midnight ruminations. By moving planning earlier, nights stay protected.",
+          "commitments": [
+            "I will set aside 15 minutes in the evening for practical planning.",
+            "I will separate financial worries from sleep by addressing them during daylight.",
+            "I will balance worries by writing down three daily wins.",
+            "I will remind myself that tomorrow always brings fresh perspective.",
+            "I will treat rest as the best investment in my future."
+          ]
+        },
+        {
+          "id": "mental-health",
+          "name": "Mental Health Conditions",
+          "intro": "Anxiety and depression can complicate sleep, but simple practices and self-compassion change the tone of nights.",
+          "commitments": [
+            "I will practice 5 minutes of mindful breathing before bed.",
+            "I will seek help when I need it, knowing strength is asking.",
+            "I will give myself grace on rough nights.",
+            "I will see poor sleep not as failure but as feedback.",
+            "I will anchor myself in rituals that remind me I am safe."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "substances-and-diet",
+      "name": "Caffeine, Alcohol, Marijuana, and Poor Dietary Habits",
+      "intro": "What we consume directly shapes how we sleep. Substances alter brain chemistry, and timing determines whether they help or hinder. Awareness and wise choices make the difference.",
+      "homepageQuickTips": [
+        "Cut off caffeine by early afternoon.",
+        "Avoid alcohol close to bedtime; stop drinking at least 3 hours before sleep.",
+        "If using marijuana, keep doses moderate and track how it affects your rest.",
+        "Finish heavy meals 2–3 hours before bed; opt for light snacks if you’re hungry late.",
+        "Stay hydrated earlier in the day and taper fluids at night to minimize middle-of-the-night wake-ups."
+      ],
+      "subcategories": [
+        {
+          "id": "caffeine-timing",
+          "name": "Caffeine Timing",
+          "intro": "Caffeine lingers long past the buzz. Cutting it earlier allows deep sleep to unfold.",
+          "commitments": [
+            "I will enjoy coffee only before 2 p.m.",
+            "I will switch to calming teas in the evening.",
+            "I will savor my morning coffee instead of chasing energy late.",
+            "I will trade my afternoon coffee for a short walk outside.",
+            "I will let natural rhythms, not caffeine, guide my nights."
+          ]
+        },
+        {
+          "id": "alcohol-timing",
+          "name": "Alcohol Timing & Quantity",
+          "intro": "Alcohol sedates but fragments sleep. True rest comes from moderation and timing.",
+          "commitments": [
+            "I will avoid drinking within three hours of bed.",
+            "I will enjoy drinks socially, not as sleep aids.",
+            "I will replace nightcaps with water or calming tea.",
+            "I will see mornings without grogginess as my reward.",
+            "I will remind myself that alcohol steals dreams as it steals REM."
+          ]
+        },
+        {
+          "id": "cannabis-use",
+          "name": "Marijuana Use",
+          "intro": "Cannabis affects sleep differently for everyone, but heavy use often suppresses restorative REM cycles. Reflection and moderation bring clarity.",
+          "commitments": [
+            "I will pause cannabis at least one hour before bed.",
+            "I will track how it affects my sleep with curiosity.",
+            "I will explore alternatives like reading or music at night.",
+            "I will choose balance over reliance.",
+            "I will honor my body’s need for natural cycles of dreaming."
+          ]
+        },
+        {
+          "id": "meal-timing",
+          "name": "Meal Timing & Size",
+          "intro": "Eating late burdens digestion. Finishing earlier creates space for the body to rest deeply.",
+          "commitments": [
+            "I will finish dinner two to three hours before bed.",
+            "I will choose lighter snacks at night instead of heavy meals.",
+            "I will eat with attention to fullness, not habit.",
+            "I will let hunger guide me wisely, not late-night impulse.",
+            "I will honor my body with timing that supports renewal."
+          ]
+        },
+        {
+          "id": "hydration-timing",
+          "name": "Hydration Timing",
+          "intro": "Too much liquid late at night interrupts sleep with bathroom trips. Hydrating earlier preserves the night.",
+          "commitments": [
+            "I will drink most of my water earlier in the day.",
+            "I will taper fluids after 8 pm to protect deep sleep.",
+            "I will enjoy a small calming drink before bed, not a large one.",
+            "I will see hydration as rhythm, not a last-minute scramble.",
+            "I will keep my nights for dreams, not for interruptions."
+          ]
+        }
+      ]
+    }
+  ]
+}

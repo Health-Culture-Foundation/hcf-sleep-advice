@@ -45,6 +45,13 @@
       "pmid": "40701900",
       "access": "not checked",
       "checked": "Found via PubMed; no abstract. Not read. Listed because it is NSF's practical follow-up to the 2024 consensus."
+    },
+    "do-one-thing": {
+      "citation": "Health Culture Foundation. Do One Thing: Choose your ONE THING (Habits by Category). SleepLiteracy.org, retrieved 2026-10-21.",
+      "url": "https://doonething.sleepliteracy.org/choose-your-one-thing/",
+      "access": "free",
+      "license": "CC BY 4.0 (original HCF content)",
+      "checked": "Snapshot in sources/do-one-thing/habits.json. HCF's own campaign copy; its claims are not independently checked."
     }
   }
 }

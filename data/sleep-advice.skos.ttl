@@ -205,6 +205,96 @@
   skos:prefLabel "Anxiety or stress"@en ;
   skos:closeMatch <http://id.who.int/icd/release/11/mms/6B00> .
 
+<https://health-culture.org/sleep-advice/facet/problem> a skos:ConceptScheme ; dct:title "Sleep thief it tackles (from Do One Thing)"@en .
+<https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:topConceptOf <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Irregular Schedules (and Social Jetlag)"@en .
+<https://health-culture.org/sleep-advice/facet/problem/weekend-gap> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Weekend vs Weekday Gap"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> .
+<https://health-culture.org/sleep-advice/facet/problem/deadlines> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Work & School Deadlines"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> .
+<https://health-culture.org/sleep-advice/facet/problem/social-commitments> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Social Commitments"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> .
+<https://health-culture.org/sleep-advice/facet/problem/circadian-cues> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Circadian Rhythm Cues"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> .
+<https://health-culture.org/sleep-advice/facet/problem/technology> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:topConceptOf <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Technology and Screen Time"@en .
+<https://health-culture.org/sleep-advice/facet/problem/evening-phone> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Evening Phone/Tablet Use"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/technology> .
+<https://health-culture.org/sleep-advice/facet/problem/tv-streaming> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "TV & Streaming Habits"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/technology> .
+<https://health-culture.org/sleep-advice/facet/problem/gaming-social-media> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Gaming & Social Media Stimulation"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/technology> .
+<https://health-culture.org/sleep-advice/facet/problem/bedroom-devices> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Bedroom Environment & Devices"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/technology> .
+<https://health-culture.org/sleep-advice/facet/problem/stress> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:topConceptOf <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Stress, Anxiety, and Mental Load"@en .
+<https://health-culture.org/sleep-advice/facet/problem/get-exercise> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Get Exercise"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/stress> .
+<https://health-culture.org/sleep-advice/facet/problem/work-school> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Work/School Responsibilities"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/stress> .
+<https://health-culture.org/sleep-advice/facet/problem/relationships> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Relationships & Family Concerns"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/stress> .
+<https://health-culture.org/sleep-advice/facet/problem/money-worries> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Financial/Practical Worries"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/stress> .
+<https://health-culture.org/sleep-advice/facet/problem/mental-health> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Mental Health Conditions"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/stress> .
+<https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:topConceptOf <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Caffeine, Alcohol, Marijuana, and Poor Dietary Habits"@en .
+<https://health-culture.org/sleep-advice/facet/problem/caffeine-timing> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Caffeine Timing"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> .
+<https://health-culture.org/sleep-advice/facet/problem/alcohol-timing> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Alcohol Timing & Quantity"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> .
+<https://health-culture.org/sleep-advice/facet/problem/cannabis-use> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Marijuana Use"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> .
+<https://health-culture.org/sleep-advice/facet/problem/meal-timing> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Meal Timing & Size"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> .
+<https://health-culture.org/sleep-advice/facet/problem/hydration-timing> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/facet/problem> ;
+  skos:prefLabel "Hydration Timing"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> .
+
 <https://health-culture.org/sleep-advice/keep-a-regular-sleep-schedule> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
   skos:prefLabel "Go to bed and get up at about the same times every day."@en ;
@@ -216,6 +306,7 @@
   skos:altLabel "Sleep regularity"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/1.1> ;
   skos:related <https://health-culture.org/sleep-advice/fit-bedtime-to-your-body-clock> ;
+  skos:related <https://health-culture.org/sleep-advice/plan-social-time-earlier> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-stick-to-a-sleep-schedule/> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/sleep-hygiene/> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-clock> ;
@@ -223,6 +314,9 @@
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/late-body-clock> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/weekend-gap> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/circadian-cues> ;
   skos:definition "Set a regular bedtime and wake-up time, even on weekends. Use alarms or bedtime reminders to help stay consistent, and get morning sunlight to reinforce your body’s natural clock."@en .
 
 <https://health-culture.org/sleep-advice/change-sleep-times-gradually> a skos:Concept ;
@@ -256,6 +350,11 @@
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/sleep-pressure> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/deadlines> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/work-school> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/money-worries> ;
   skos:definition "Set a consistent bedtime and wake-up time, even on weekends."@en ;
   skos:editorialNote "Item name and its own evidence disagree. Suggest renaming the item; the plain line follows the evidence, not the title."@en .
 
@@ -275,6 +374,7 @@
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/daytime> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
   skos:editorialNote "Duplicate of wiki 3.2.1 (see notes there)."@en .
 
 <https://health-culture.org/sleep-advice/get-up-at-the-same-time> a skos:Concept ;
@@ -305,6 +405,8 @@
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-clock> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/on-waking> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/weekend-gap> ;
   skos:editorialNote "The wiki item says 'limit social jet lag'. The one-hour figure in the plain line is Huberman's and is unverified; see also myth M2."@en .
 
 <https://health-culture.org/sleep-advice/keep-the-bedroom-cool-and-dark> a skos:Concept ;
@@ -398,6 +500,9 @@
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/during-the-night> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/evening-phone> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/bedroom-devices> ;
   skos:editorialNote "Listed with no write-up. Related to 1.3.1; the NSF 2024 consensus found screen use harms sleep in children and teens, not adults (see 1.3.1)."@en .
 
 <https://health-culture.org/sleep-advice/keep-the-bedroom-tidy> a skos:Concept ;
@@ -443,6 +548,12 @@
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/bedtime> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/deadlines> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/evening-phone> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/tv-streaming> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/gaming-social-media> ;
   skos:definition "Set a “screen curfew” 30–60 minutes before bed and switch to audiobooks, reading, or relaxation exercises instead. If you must use a screen, enable night mode or blue light filters."@en ;
   skos:editorialNote "This is the worked example in the Open Health Communication Declaration (vivwebsolutions/hcf-guides#6). The plain line is a first try at the nuanced version and needs Kalman's review. Wiki tip: a 'screen curfew' 30-60 minutes before bed."@en .
 
@@ -461,6 +572,13 @@
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/circadian-cues> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/mental-health> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/cannabis-use> ;
   skos:definition "Create a 30-minute wind-down routine before bed with calming activities like reading, light stretching, or listening to soft music. Stick to the same routine nightly to reinforce your body's sleep signals."@en ;
   skos:editorialNote "Write-up has no citations."@en .
 
@@ -471,10 +589,13 @@
   skos:notation "1.3.3" ;
   skos:altLabel "Reduce stimulating activities close to bedtime"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/1.3> ;
+  skos:related <https://health-culture.org/sleep-advice/finish-work-earlier> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-relax-before-bed/> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/gaming-social-media> ;
   skos:definition "Avoid intense exercise, heavy discussions, or engaging TV shows at least 1 hour before bed. Instead, opt for calming activities like gentle stretching, journaling, or deep breathing exercises."@en ;
   skos:editorialNote "Overlaps 1.3.7 and 2.3.4. Write-up has no citations."@en .
 
@@ -533,6 +654,8 @@
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/relationships> ;
   skos:editorialNote "Listed with no write-up. Overlaps 1.3.3."@en .
 
 <https://health-culture.org/sleep-advice/warm-bath-or-shower-before-bed> a skos:Concept ;
@@ -590,11 +713,16 @@
   skos:broader <https://health-culture.org/sleep-advice/category/2.1> ;
   skos:related <https://health-culture.org/sleep-advice/late-afternoon-daylight> ;
   skos:related <https://health-culture.org/sleep-advice/light-therapy-for-a-late-body-clock> ;
+  skos:related <https://health-culture.org/sleep-advice/move-in-the-morning> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-get-morning-sunlight-exposure/> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-clock> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/on-waking> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/late-body-clock> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/circadian-cues> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/bedroom-devices> ;
   skos:definition "Spend 10–30 minutes outside in the morning, preferably within an hour of waking. If natural sunlight isn’t available, consider using a bright light therapy lamp for similar benefits."@en ;
   skos:editorialNote "Wiki scores reach 3 on the item page but 5 in the summary table, and novelty 4 vs 1."@en .
 
@@ -612,6 +740,7 @@
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/late-body-clock> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
   skos:definition "Use blue light filter apps on screens, wear blue light-blocking glasses, and switch to warm, dim lighting (like red or amber bulbs) 1–2 hours before bed."@en ;
   skos:editorialNote "Wiki item says 'reduce blue light'. The NSF 2024 consensus did not reach consensus that pre-bedtime screen light impairs sleep; the plain line is about room light overall, not screen filters. Write-up has no citations."@en .
 
@@ -672,6 +801,8 @@
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/reflux> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/meal-timing> ;
   skos:definition "Avoid caffeine at least 6 hours before bed and finish heavy meals 2–3 hours before sleeping. If hungry late at night, opt for a light snack like yogurt or a banana."@en ;
   skos:editorialNote "NHLBI pairs caffeine with nicotine; the wiki has no nicotine item. Wiki splits alcohol into 2.2.3."@en .
 
@@ -688,6 +819,8 @@
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/daytime> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/hydration-timing> ;
   skos:definition "Drink most of your fluids in the morning and afternoon, then slow down in the evening to reduce nighttime disruptions."@en .
 
 <https://health-culture.org/sleep-advice/no-alcohol-close-to-bedtime> a skos:Concept ;
@@ -699,12 +832,15 @@
   skos:altLabel "Avoid Alcohol Before Bed"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/2.2> ;
   skos:related <https://health-culture.org/sleep-advice/3-2-1-rule> ;
+  skos:related <https://health-culture.org/sleep-advice/cannabis-and-sleep> ;
   skos:related <https://health-culture.org/sleep-advice/myth-alcohol-helps-sleep> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-avoid-alcohol-before-bed/> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/substances> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/sleep-apnea> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/alcohol-timing> ;
   skos:editorialNote "Listed with no write-up; myth M1 covers the same ground with citations. '3 hours' is from the 3-2-1 rule, not a trial."@en .
 
 <https://health-culture.org/sleep-advice/magnesium> a skos:Concept ;
@@ -734,6 +870,8 @@
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/daytime> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/get-exercise> ;
   skos:definition "Engage in at least 30 minutes of moderate exercise (e.g., walking, cycling, or strength training) most days, but avoid vigorous workouts right before bed, as they may be too stimulating."@en ;
   skos:editorialNote "NHLBI: at least 30 minutes most days (p. 28)."@en .
 
@@ -850,6 +988,8 @@
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/digestion-and-fluids> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/bedtime> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/meal-timing> ;
   skos:definition "Try a small snack like a banana with almond butter or whole-grain crackers with cheese about 30 minutes before bed to support relaxation and sleep onset."@en ;
   skos:editorialNote "Wiki's serotonin reasoning is uncited."@en .
 
@@ -865,6 +1005,10 @@
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/caffeine-timing> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/alcohol-timing> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/hydration-timing> ;
   skos:definition "Drink a cup of chamomile or passionflower tea about 30–45 minutes before bed to help relax and prepare for sleep."@en ;
   skos:editorialNote "Wiki summary table rates evidence 5/5; item page rates it 'well supported'; the write-up cites nothing."@en .
 
@@ -875,12 +1019,17 @@
   skos:notation "3.1.1" ;
   skos:altLabel "Manage stress and anxiety before sleep"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/3.1> ;
+  skos:related <https://health-culture.org/sleep-advice/be-kind-to-yourself-after-a-bad-night> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-relaxation-therapy/> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/bedtime> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/anxiety> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/work-school> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/relationships> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/money-worries> ;
   skos:definition "Try deep breathing, journaling, or progressive muscle relaxation before bed to calm the mind and reduce nighttime stress."@en ;
   skos:editorialNote "Broad; 3.1.2-3.1.4 are the specific ways to do it."@en .
 
@@ -899,6 +1048,8 @@
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/anxiety> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/mental-health> ;
   skos:definition "Try the 4-7-8 breathing technique before bed: inhale for 4 seconds, hold for 7 seconds, and exhale for 8 seconds to promote relaxation and prepare for sleep."@en ;
   skos:editorialNote "Write-up has no citations."@en .
 
@@ -927,11 +1078,15 @@
   skos:altLabel "Worry Journal"@en ;
   skos:altLabel "Scheduled worry time"@en ;
   skos:broader <https://health-culture.org/sleep-advice/calm-your-mind-before-bed> ;
+  skos:related <https://health-culture.org/sleep-advice/finish-work-earlier> ;
   hsa:conflictsWith <https://health-culture.org/sleep-advice/gratitude-list> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/anxiety> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/work-school> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/money-worries> ;
   skos:editorialNote "In the wiki's 'New Sleep Advices' list (not yet placed). No write-up."@en .
 
 <https://health-culture.org/sleep-advice/naps-and-night-sleep> a skos:Concept ;
@@ -956,6 +1111,9 @@
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/learned-association> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/evening-phone> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/bedroom-devices> ;
   skos:definition "If you can’t sleep after 20 minutes, get out of bed and do a relaxing activity (e.g., reading under dim light) until you feel sleepy, then return to bed."@en ;
   skos:editorialNote "Part of stimulus control (NHLBI calls it reconditioning therapy). Wiki tip folds in 3.2.3."@en .
 
@@ -1006,6 +1164,11 @@
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/circadian-cues> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/relationships> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/money-worries> ;
   skos:definition "Each night, write down three things you’re grateful for and why—this shifts focus away from stress and promotes relaxation before bed."@en ;
   skos:editorialNote "Wiki item says 'instead of a to-do list', which conflicts with 3.1.4 (write down worries and next steps). Write-up has no citations."@en .
 
@@ -1110,6 +1273,8 @@
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/on-waking> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/cannabis-use> ;
   skos:definition "Use a notebook or sleep-tracking app to record your bedtime, wake time, sleep interruptions, and factors like caffeine intake or stress levels for at least two weeks to spot trends."@en ;
   skos:editorialNote "A sleep diary is the starting point for sleep restriction therapy and CBT-I. Write-up has no citations."@en .
 
@@ -1157,6 +1322,7 @@
   skos:notation "4.2.4" ;
   skos:altLabel "Check for potential sleep apnea"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
+  skos:related <https://health-culture.org/sleep-advice/get-help-if-poor-sleep-persists> ;
   skos:related <https://health-culture.org/sleep-advice/mouth-taping> ;
   skos:related <https://health-culture.org/sleep-advice/myth-snoring-is-harmless> ;
   skos:related <https://health-culture.org/sleep-advice/raise-the-head-of-the-bed> ;
@@ -1188,6 +1354,7 @@
   skos:altLabel "Cognitive Behavioral Therapy for Insomnia"@en ;
   skos:altLabel "CBT-I"@en ;
   skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
+  skos:related <https://health-culture.org/sleep-advice/get-help-if-poor-sleep-persists> ;
   skos:related <https://health-culture.org/sleep-advice/keep-a-sleep-diary> ;
   skos:closeMatch <https://iha-health-glossary.pages.dev/terms/slp-cognitive-behavioral-therapy-for-insomnia/> ;
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/learned-association> ;
@@ -1397,6 +1564,8 @@
   hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/substances> ;
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/afternoon> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/caffeine-timing> ;
   skos:definition "Pick a time in the early afternoon after which you stop caffeine, so it has worn off by bedtime. Caffeine can stay in your body for many hours."@en ;
   skos:editorialNote "Specific version of 2.2.1; see its caffeine disagreement."@en .
 
@@ -1438,6 +1607,120 @@
   dct:isReplacedBy <https://health-culture.org/sleep-advice/less-bright-light-in-the-evening> ;
   skos:definition "After sunset, keep indoor lighting low. Avoid bright overhead lights, especially from about 10 p.m. to 4 a.m., turn screens down as far as you can still use them, and use only as much light as you need to move around safely."@en ;
   skos:editorialNote "Merged into less-bright-light-in-the-evening: Huberman's 'Dim the Lights at Night' and wiki 2.1.2 give the same advice; his time window is kept as a disagreement detail. Earlier note: Overlaps 2.1.2 and 2.1.4. Huberman's 10 p.m.-4 a.m. window is his rule of thumb."@en .
+
+<https://health-culture.org/sleep-advice/finish-work-earlier> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Stop work or schoolwork at least an hour before bed."@en ;
+  hsa:kind "advice" ;
+  skos:altLabel "Work & School Deadlines / Work/School Responsibilities"@en ;
+  skos:altLabel "Work cutoff"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/category/3.1> ;
+  skos:related <https://health-culture.org/sleep-advice/skip-exciting-things-before-bed> ;
+  skos:related <https://health-culture.org/sleep-advice/write-down-worries> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/time-displacement> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/anxiety> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/deadlines> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/work-school> ;
+  skos:definition "Deadlines push us to sacrifice rest, but the late-night work rarely pays off the next day. Finishing earlier allows the brain to settle and restores clarity for tomorrow."@en ;
+  skos:editorialNote "Not in the wiki or glossary. Do One Thing commitments give 9 pm and one hour as examples."@en .
+
+<https://health-culture.org/sleep-advice/plan-social-time-earlier> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Plan get-togethers earlier in the day so late nights are the exception."@en ;
+  hsa:kind "advice" ;
+  skos:altLabel "Social Commitments"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/category/1.1> ;
+  skos:related <https://health-culture.org/sleep-advice/keep-a-regular-sleep-schedule> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-clock> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/time-displacement> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/social-commitments> ;
+  skos:definition "Connection is vital, but it doesn’t need to cost tomorrow’s energy. By shifting when and how we socialize, we keep both joy and rest intact."@en .
+
+<https://health-culture.org/sleep-advice/move-in-the-morning> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Stretch or move your body soon after you wake up."@en ;
+  hsa:kind "advice" ;
+  skos:altLabel "I will stretch or move my body every morning to signal the day has begun."@en ;
+  skos:broader <https://health-culture.org/sleep-advice/exercise-regularly> ;
+  skos:related <https://health-culture.org/sleep-advice/get-morning-daylight> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/body-clock> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/on-waking> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/circadian-cues> ;
+  skos:editorialNote "Body-clock reasoning ('signal the day has begun') is not cited."@en .
+
+<https://health-culture.org/sleep-advice/use-an-alarm-clock> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "Use an alarm clock instead of your phone, so the phone can stay out of the bedroom."@en ;
+  hsa:kind "advice" ;
+  skos:altLabel "I will use an alarm clock instead of relying on my phone."@en ;
+  skos:broader <https://health-culture.org/sleep-advice/keep-devices-out-of-the-bedroom> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/time-displacement> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/bedroom-devices> .
+
+<https://health-culture.org/sleep-advice/get-help-if-poor-sleep-persists> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "If poor sleep lasts more than a few weeks, talk with a health professional."@en ;
+  hsa:kind "advice" ;
+  skos:altLabel "If poor sleep persists for more than a few weeks, talk with a professional — you don’t have to navigate it alone."@en ;
+  skos:altLabel "When to see a professional"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/category/4.2> ;
+  skos:related <https://health-culture.org/sleep-advice/cbt-for-insomnia> ;
+  skos:related <https://health-culture.org/sleep-advice/check-for-sleep-apnea> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/monitoring-and-care> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/anxiety> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/mental-health> ;
+  skos:definition "Anxiety and depression can complicate sleep, but simple practices and self-compassion change the tone of nights."@en ;
+  skos:editorialNote "From the homepage quick tips and the Mental Health Conditions commitments."@en .
+
+<https://health-culture.org/sleep-advice/be-kind-to-yourself-after-a-bad-night> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "After a bad night, go easy on yourself; one rough night is feedback, not failure."@en ;
+  hsa:kind "advice" ;
+  skos:altLabel "I will give myself grace on rough nights. / I will see poor sleep not as failure but as feedback."@en ;
+  skos:broader <https://health-culture.org/sleep-advice/category/3.1> ;
+  skos:related <https://health-culture.org/sleep-advice/calm-your-mind-before-bed> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/arousal> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/any-time> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/anxiety> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/mental-health> ;
+  skos:editorialNote "A mindset item. Worry about sleep itself keeps people awake; that reasoning is not cited here."@en .
+
+<https://health-culture.org/sleep-advice/cannabis-and-sleep> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/> ;
+  skos:prefLabel "If you use cannabis, keep it away from bedtime and notice how it affects your sleep."@en ;
+  hsa:kind "advice" ;
+  skos:altLabel "Marijuana Use"@en ;
+  skos:altLabel "Marijuana and sleep"@en ;
+  skos:broader <https://health-culture.org/sleep-advice/category/2.2> ;
+  skos:related <https://health-culture.org/sleep-advice/no-alcohol-close-to-bedtime> ;
+  hsa:mechanism <https://health-culture.org/sleep-advice/facet/mechanism/substances> ;
+  hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/evening> ;
+  hsa:condition <https://health-culture.org/sleep-advice/facet/condition/general> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/cannabis-use> ;
+  skos:definition "Cannabis affects sleep differently for everyone, but heavy use often suppresses restorative REM cycles. Reflection and moderation bring clarity."@en ;
+  skos:editorialNote "The REM claim is Do One Thing's and is not cited. Not in the wiki or glossary."@en .
 
 <https://health-culture.org/sleep-advice/myth-alcohol-helps-sleep> a skos:Concept ;
   skos:inScheme <https://health-culture.org/sleep-advice/> ;
@@ -1512,3 +1795,722 @@
   hsa:timeOfDay <https://health-culture.org/sleep-advice/facet/timeOfDay/during-the-night> ;
   hsa:condition <https://health-culture.org/sleep-advice/facet/condition/insomnia> ;
   skos:editorialNote "Grouping concept added so the two wiki items and the two NHLBI glossary entries for the same technique sit under one name. 'Stimulus control' is the clinical name; NHLBI says 'reconditioning'."@en .
+
+<https://health-culture.org/sleep-advice/commitments> a skos:ConceptScheme ; dct:title "Do One Thing commitments and tips"@en .
+
+<https://health-culture.org/sleep-advice/commitment/dot-irregular-schedules-tip-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Aim to keep your bedtime and wake-up time within the same hour every day, even on weekends."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/keep-a-regular-sleep-schedule> ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/dont-sleep-in-much-on-weekends> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> .
+<https://health-culture.org/sleep-advice/commitment/dot-irregular-schedules-tip-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "If you’re up late, try a short nap the next day instead of sleeping in for hours, which can make the cycle worse."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/keep-naps-short-and-early> ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/dont-sleep-in-much-on-weekends> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> .
+<https://health-culture.org/sleep-advice/commitment/dot-irregular-schedules-tip-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Plan social activities earlier when you can — morning coffee catch-ups or evening walks can replace midnight hangouts."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/plan-social-time-earlier> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> .
+<https://health-culture.org/sleep-advice/commitment/dot-irregular-schedules-tip-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Use consistent cues — morning sunlight, light exercise, and hydration — to help your body reset after a late night."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/get-morning-daylight> ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/move-in-the-morning> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> .
+<https://health-culture.org/sleep-advice/commitment/dot-weekend-gap-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will remind myself that consistency is freedom, not restriction."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/dont-sleep-in-much-on-weekends> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/weekend-gap> .
+<https://health-culture.org/sleep-advice/commitment/dot-weekend-gap-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will treat Sunday nights as a gentle reset, preparing for the week with intention."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/keep-a-regular-sleep-schedule> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/weekend-gap> .
+<https://health-culture.org/sleep-advice/commitment/dot-deadlines-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will finish schoolwork by 9 pm so my brain has time to slow down before sleep."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/finish-work-earlier> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/deadlines> .
+<https://health-culture.org/sleep-advice/commitment/dot-deadlines-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will plan my hardest tasks for earlier in the day, leaving evenings calm."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/finish-work-earlier> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/deadlines> .
+<https://health-culture.org/sleep-advice/commitment/dot-deadlines-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will give myself a 30-minute buffer between work and screens before bed."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/finish-work-earlier> ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/deadlines> .
+<https://health-culture.org/sleep-advice/commitment/dot-deadlines-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will stop treating exhaustion as productivity and instead value sleep as part of my success."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/get-enough-sleep-for-you> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/deadlines> .
+<https://health-culture.org/sleep-advice/commitment/dot-deadlines-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will close my laptop before I feel depleted, not after."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/finish-work-earlier> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/deadlines> .
+<https://health-culture.org/sleep-advice/commitment/dot-social-commitments-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will suggest earlier meet-ups so fun doesn’t mean fatigue."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/plan-social-time-earlier> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/social-commitments> .
+<https://health-culture.org/sleep-advice/commitment/dot-social-commitments-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will cap social calls by 10 pm, choosing depth over late-night chatter."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/plan-social-time-earlier> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/social-commitments> .
+<https://health-culture.org/sleep-advice/commitment/dot-social-commitments-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will trade one late-night hangout each week for a morning coffee ritual with a friend."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/plan-social-time-earlier> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/social-commitments> .
+<https://health-culture.org/sleep-advice/commitment/dot-social-commitments-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will be honest with friends about needing rest, knowing true friends will support me."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/plan-social-time-earlier> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/social-commitments> .
+<https://health-culture.org/sleep-advice/commitment/dot-social-commitments-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will let social joy add to my energy, not drain it."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/plan-social-time-earlier> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/social-commitments> .
+<https://health-culture.org/sleep-advice/commitment/dot-circadian-cues-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will step outside for sunlight within 30 minutes of waking."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/get-morning-daylight> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/circadian-cues> .
+<https://health-culture.org/sleep-advice/commitment/dot-circadian-cues-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will stretch or move my body every morning to signal the day has begun."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/move-in-the-morning> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/circadian-cues> .
+<https://health-culture.org/sleep-advice/commitment/dot-circadian-cues-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will use the same nightly ritual — dim lights, tea, quiet — to signal sleep."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/have-a-wind-down-routine> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/circadian-cues> .
+<https://health-culture.org/sleep-advice/commitment/dot-circadian-cues-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will end each day with a simple phrase of gratitude to mark closure."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/gratitude-list> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/circadian-cues> .
+<https://health-culture.org/sleep-advice/commitment/dot-circadian-cues-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will trust that my body thrives on rhythm and will reward me with better sleep."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/keep-a-regular-sleep-schedule> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/irregular-schedules> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/circadian-cues> .
+<https://health-culture.org/sleep-advice/commitment/dot-technology-tip-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Set a “tech curfew” at least one hour before bedtime."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> .
+<https://health-culture.org/sleep-advice/commitment/dot-technology-tip-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Use blue-light filters or night-shift modes if screens are unavoidable in the evening."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/less-bright-light-in-the-evening> ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> .
+<https://health-culture.org/sleep-advice/commitment/dot-technology-tip-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Keep your phone out of reach during the night to avoid disruptive notifications."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/keep-devices-out-of-the-bedroom> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> .
+<https://health-culture.org/sleep-advice/commitment/dot-technology-tip-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Replace screens with a relaxing bedtime routine — reading, journaling, stretching, or even light music."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/have-a-wind-down-routine> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> .
+<https://health-culture.org/sleep-advice/commitment/dot-evening-phone-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will set a tech curfew one hour before bed."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/evening-phone> .
+<https://health-culture.org/sleep-advice/commitment/dot-evening-phone-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will charge my phone outside the bedroom overnight."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/keep-devices-out-of-the-bedroom> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/evening-phone> .
+<https://health-culture.org/sleep-advice/commitment/dot-evening-phone-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will replace scrolling with one page of reading or journaling."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/evening-phone> .
+<https://health-culture.org/sleep-advice/commitment/dot-evening-phone-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will greet mornings with intention, not with notifications."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/keep-devices-out-of-the-bedroom> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/evening-phone> .
+<https://health-culture.org/sleep-advice/commitment/dot-evening-phone-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will see my bed as a place for rest, not a workstation."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/bed-is-for-sleep> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/evening-phone> .
+<https://health-culture.org/sleep-advice/commitment/dot-tv-streaming-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will stop watching shows by 9:30 pm, choosing rest over another episode."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/tv-streaming> .
+<https://health-culture.org/sleep-advice/commitment/dot-tv-streaming-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will shift my favorite shows earlier so my nights end quietly."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/tv-streaming> .
+<https://health-culture.org/sleep-advice/commitment/dot-tv-streaming-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will swap one binge night for an early night of deep sleep each week."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/tv-streaming> .
+<https://health-culture.org/sleep-advice/commitment/dot-tv-streaming-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will treat the ‘next episode’ button as an intentional choice, not a reflex."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/tv-streaming> .
+<https://health-culture.org/sleep-advice/commitment/dot-tv-streaming-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will remember that true cliffhangers resolve best after a good night’s rest."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/tv-streaming> .
+<https://health-culture.org/sleep-advice/commitment/dot-gaming-social-media-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will finish gaming or social feeds at least an hour before bed."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/gaming-social-media> .
+<https://health-culture.org/sleep-advice/commitment/dot-gaming-social-media-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will set a timer so playtime ends while I still feel in control."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/gaming-social-media> .
+<https://health-culture.org/sleep-advice/commitment/dot-gaming-social-media-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will move one gaming session into the afternoon instead of the evening."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/gaming-social-media> .
+<https://health-culture.org/sleep-advice/commitment/dot-gaming-social-media-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will remind myself that digital wins don’t matter if I lose tomorrow’s energy."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/screens-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/gaming-social-media> .
+<https://health-culture.org/sleep-advice/commitment/dot-gaming-social-media-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will choose calm over stimulation when the night deepens."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/skip-exciting-things-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/gaming-social-media> .
+<https://health-culture.org/sleep-advice/commitment/dot-bedroom-devices-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will keep my phone out of reach at night so sleep stays undisturbed."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/keep-devices-out-of-the-bedroom> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/bedroom-devices> .
+<https://health-culture.org/sleep-advice/commitment/dot-bedroom-devices-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will use an alarm clock instead of relying on my phone."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/use-an-alarm-clock> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/bedroom-devices> .
+<https://health-culture.org/sleep-advice/commitment/dot-bedroom-devices-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will make my bedroom a tech-free sanctuary."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/keep-devices-out-of-the-bedroom> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/bedroom-devices> .
+<https://health-culture.org/sleep-advice/commitment/dot-bedroom-devices-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will honor my bed as a temple of rest, not a glowing workspace."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/bed-is-for-sleep> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/bedroom-devices> .
+<https://health-culture.org/sleep-advice/commitment/dot-bedroom-devices-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will wake to sunlight or gentle sounds, not to pings and alerts."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/keep-devices-out-of-the-bedroom> ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/get-morning-daylight> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/technology> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/bedroom-devices> .
+<https://health-culture.org/sleep-advice/commitment/dot-stress-tip-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Build a calming wind-down routine with dim lights and quiet activities."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/have-a-wind-down-routine> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> .
+<https://health-culture.org/sleep-advice/commitment/dot-stress-tip-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Practice mindfulness, meditation, or deep breathing before bed — even 5 minutes helps."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/relaxation-techniques> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> .
+<https://health-culture.org/sleep-advice/commitment/dot-stress-tip-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Write down to-do lists or worries earlier in the evening to clear your mind."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/write-down-worries> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> .
+<https://health-culture.org/sleep-advice/commitment/dot-stress-tip-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "If poor sleep persists for more than a few weeks, talk with a professional — you don’t have to navigate it alone."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/get-help-if-poor-sleep-persists> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> .
+<https://health-culture.org/sleep-advice/commitment/dot-get-exercise-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will write tomorrow’s to-do list before dinner."@en ;
+  hsa:lineType "duplicate" ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/get-exercise> .
+<https://health-culture.org/sleep-advice/commitment/dot-get-exercise-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will stop working at least one hour before bed."@en ;
+  hsa:lineType "duplicate" ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/get-exercise> .
+<https://health-culture.org/sleep-advice/commitment/dot-get-exercise-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will celebrate what I finish each day instead of focusing on what remains."@en ;
+  hsa:lineType "duplicate" ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/get-exercise> .
+<https://health-culture.org/sleep-advice/commitment/dot-get-exercise-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will end my workday with a short ritual that signals ‘done.’"@en ;
+  hsa:lineType "duplicate" ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/get-exercise> .
+<https://health-culture.org/sleep-advice/commitment/dot-get-exercise-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will trust that rest is the most important work of all."@en ;
+  hsa:lineType "duplicate" ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/get-exercise> .
+<https://health-culture.org/sleep-advice/commitment/dot-work-school-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will write tomorrow’s to-do list before dinner."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/write-down-worries> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/work-school> .
+<https://health-culture.org/sleep-advice/commitment/dot-work-school-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will stop working at least one hour before bed."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/finish-work-earlier> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/work-school> .
+<https://health-culture.org/sleep-advice/commitment/dot-work-school-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will celebrate what I finish each day instead of focusing on what remains."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/calm-your-mind-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/work-school> .
+<https://health-culture.org/sleep-advice/commitment/dot-work-school-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will end my workday with a short ritual that signals ‘done.’"@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/finish-work-earlier> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/work-school> .
+<https://health-culture.org/sleep-advice/commitment/dot-work-school-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will trust that rest is the most important work of all."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/get-enough-sleep-for-you> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/work-school> .
+<https://health-culture.org/sleep-advice/commitment/dot-relationships-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will journal three good things about my relationships each night."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/gratitude-list> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/relationships> .
+<https://health-culture.org/sleep-advice/commitment/dot-relationships-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will save serious conversations for the day, not bedtime."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/avoid-heavy-talks-at-bedtime> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/relationships> .
+<https://health-culture.org/sleep-advice/commitment/dot-relationships-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will save serious conversations for the day, not bedtime."@en ;
+  hsa:lineType "duplicate" ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/relationships> .
+<https://health-culture.org/sleep-advice/commitment/dot-relationships-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will rest knowing love is nurtured in patience, not in late-night arguments."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/avoid-heavy-talks-at-bedtime> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/relationships> .
+<https://health-culture.org/sleep-advice/commitment/dot-relationships-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will hold my family in compassion as I drift to sleep."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/calm-your-mind-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/relationships> .
+<https://health-culture.org/sleep-advice/commitment/dot-money-worries-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will set aside 15 minutes in the evening for practical planning."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/write-down-worries> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/money-worries> .
+<https://health-culture.org/sleep-advice/commitment/dot-money-worries-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will separate financial worries from sleep by addressing them during daylight."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/write-down-worries> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/money-worries> .
+<https://health-culture.org/sleep-advice/commitment/dot-money-worries-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will balance worries by writing down three daily wins."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/gratitude-list> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/money-worries> .
+<https://health-culture.org/sleep-advice/commitment/dot-money-worries-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will remind myself that tomorrow always brings fresh perspective."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/calm-your-mind-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/money-worries> .
+<https://health-culture.org/sleep-advice/commitment/dot-money-worries-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will treat rest as the best investment in my future."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/get-enough-sleep-for-you> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/money-worries> .
+<https://health-culture.org/sleep-advice/commitment/dot-mental-health-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will practice 5 minutes of mindful breathing before bed."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/relaxation-techniques> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/mental-health> .
+<https://health-culture.org/sleep-advice/commitment/dot-mental-health-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will seek help when I need it, knowing strength is asking."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/get-help-if-poor-sleep-persists> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/mental-health> .
+<https://health-culture.org/sleep-advice/commitment/dot-mental-health-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will give myself grace on rough nights."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/be-kind-to-yourself-after-a-bad-night> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/mental-health> .
+<https://health-culture.org/sleep-advice/commitment/dot-mental-health-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will see poor sleep not as failure but as feedback."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/be-kind-to-yourself-after-a-bad-night> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/mental-health> .
+<https://health-culture.org/sleep-advice/commitment/dot-mental-health-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will anchor myself in rituals that remind me I am safe."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/have-a-wind-down-routine> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/stress> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/mental-health> .
+<https://health-culture.org/sleep-advice/commitment/dot-substances-and-diet-tip-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Cut off caffeine by early afternoon."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/caffeine-cutoff> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> .
+<https://health-culture.org/sleep-advice/commitment/dot-substances-and-diet-tip-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Avoid alcohol close to bedtime; stop drinking at least 3 hours before sleep."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/no-alcohol-close-to-bedtime> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> .
+<https://health-culture.org/sleep-advice/commitment/dot-substances-and-diet-tip-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "If using marijuana, keep doses moderate and track how it affects your rest."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/cannabis-and-sleep> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> .
+<https://health-culture.org/sleep-advice/commitment/dot-substances-and-diet-tip-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Finish heavy meals 2–3 hours before bed; opt for light snacks if you’re hungry late."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/caffeine-and-big-meals-early> ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/small-snack-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> .
+<https://health-culture.org/sleep-advice/commitment/dot-substances-and-diet-tip-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "Stay hydrated earlier in the day and taper fluids at night to minimize middle-of-the-night wake-ups."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/drink-more-earlier-in-the-day> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> .
+<https://health-culture.org/sleep-advice/commitment/dot-caffeine-timing-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will enjoy coffee only before 2 p.m."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/caffeine-cutoff> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/caffeine-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-caffeine-timing-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will switch to calming teas in the evening."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/herbal-tea-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/caffeine-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-caffeine-timing-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will savor my morning coffee instead of chasing energy late."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/caffeine-cutoff> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/caffeine-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-caffeine-timing-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will trade my afternoon coffee for a short walk outside."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/caffeine-cutoff> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/caffeine-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-caffeine-timing-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will let natural rhythms, not caffeine, guide my nights."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/caffeine-cutoff> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/caffeine-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-alcohol-timing-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will avoid drinking within three hours of bed."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/no-alcohol-close-to-bedtime> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/alcohol-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-alcohol-timing-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will enjoy drinks socially, not as sleep aids."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/no-alcohol-close-to-bedtime> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/alcohol-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-alcohol-timing-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will replace nightcaps with water or calming tea."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/no-alcohol-close-to-bedtime> ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/herbal-tea-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/alcohol-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-alcohol-timing-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will see mornings without grogginess as my reward."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/no-alcohol-close-to-bedtime> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/alcohol-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-alcohol-timing-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will remind myself that alcohol steals dreams as it steals REM."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/no-alcohol-close-to-bedtime> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/alcohol-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-cannabis-use-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will pause cannabis at least one hour before bed."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/cannabis-and-sleep> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/cannabis-use> .
+<https://health-culture.org/sleep-advice/commitment/dot-cannabis-use-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will track how it affects my sleep with curiosity."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/cannabis-and-sleep> ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/keep-a-sleep-diary> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/cannabis-use> .
+<https://health-culture.org/sleep-advice/commitment/dot-cannabis-use-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will explore alternatives like reading or music at night."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/cannabis-and-sleep> ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/have-a-wind-down-routine> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/cannabis-use> .
+<https://health-culture.org/sleep-advice/commitment/dot-cannabis-use-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will choose balance over reliance."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/cannabis-and-sleep> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/cannabis-use> .
+<https://health-culture.org/sleep-advice/commitment/dot-cannabis-use-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will honor my body’s need for natural cycles of dreaming."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/cannabis-and-sleep> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/cannabis-use> .
+<https://health-culture.org/sleep-advice/commitment/dot-meal-timing-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will finish dinner two to three hours before bed."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/caffeine-and-big-meals-early> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/meal-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-meal-timing-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will choose lighter snacks at night instead of heavy meals."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/small-snack-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/meal-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-meal-timing-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will eat with attention to fullness, not habit."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/caffeine-and-big-meals-early> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/meal-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-meal-timing-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will let hunger guide me wisely, not late-night impulse."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/small-snack-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/meal-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-meal-timing-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will honor my body with timing that supports renewal."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/caffeine-and-big-meals-early> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/meal-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-hydration-timing-1> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will drink most of my water earlier in the day."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/drink-more-earlier-in-the-day> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/hydration-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-hydration-timing-2> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will taper fluids after 8 pm to protect deep sleep."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/drink-more-earlier-in-the-day> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/hydration-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-hydration-timing-3> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will enjoy a small calming drink before bed, not a large one."@en ;
+  hsa:lineType "action" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/drink-more-earlier-in-the-day> ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/herbal-tea-before-bed> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/hydration-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-hydration-timing-4> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will see hydration as rhythm, not a last-minute scramble."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/drink-more-earlier-in-the-day> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/hydration-timing> .
+<https://health-culture.org/sleep-advice/commitment/dot-hydration-timing-5> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/sleep-advice/commitments> ;
+  skos:prefLabel "I will keep my nights for dreams, not for interruptions."@en ;
+  hsa:lineType "mindset" ;
+  hsa:appliesTo <https://health-culture.org/sleep-advice/drink-more-earlier-in-the-day> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/substances-and-diet> ;
+  hsa:problem <https://health-culture.org/sleep-advice/facet/problem/hydration-timing> .

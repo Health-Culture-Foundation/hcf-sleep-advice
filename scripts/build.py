@@ -179,6 +179,24 @@ def main() -> None:
                 "evidence": {"summary": None, "status": "no evidence summary; see glossary review note", "reviewNote": e["reviewNote"], "citations": []},
                 "tags": {k: {"value": None, "status": "not scored"} for k in SCALES},
             }
+        elif row.get("from") == "do-one-thing":
+            cat, sub = subs[row["placeIn"]]
+            rec = {
+                "id": aid,
+                "kind": "advice",
+                "origin": "do-one-thing",
+                "wikiNumber": None,
+                "categoryPath": [{"id": cat["id"], "name": cat["name"]}, {"id": sub["id"], "name": sub["name"]}],
+                "placement": "proposed (Do One Thing habit, not in the wiki taxonomy)",
+                "sourceWording": row["sourceWording"],
+                "plain": row["plain"],
+                "paragraph": (
+                    {"text": row["paragraph"], "from": "Do One Thing subcategory intro", "status": "HCF campaign text, unedited"}
+                    if row.get("paragraph") else {"text": None, "status": "to write"}
+                ),
+                "evidence": {"summary": None, "status": "no evidence summary (campaign copy)", "citations": []},
+                "tags": {k: {"value": None, "status": "not scored"} for k in SCALES},
+            }
         else:
             num = row["wiki"]
             w = witems.get(num)
@@ -288,6 +306,8 @@ def main() -> None:
     apply_code_check(records, code_check)
     facets = load("editorial/facets.json")
     apply_facets(records, facets, code_check, errors)
+    dot = load("sources/do-one-thing/habits.json")
+    commitments = apply_do_one_thing(records, dot, load("editorial/do-one-thing-map.json"), errors)
 
     missing = sorted(set(witems) - seen_wiki)
     if missing:
@@ -316,10 +336,12 @@ def main() -> None:
         "sources": {
             "samWiki": wiki["source"],
             "healthGlossary": gloss["source"],
+            "doOneThing": {**dot["source"], "knownIssuesOnSite": dot["knownIssuesOnSite"], "numbersOnHomepageToCheck": dot["numbersOnHomepageToCheck"]},
             "taggingTaxonomy": {"title": "Sleep Advice Coding Ideas (Advice Tagging Taxonomy v1.2)", "url": "https://docs.google.com/document/d/19gFTE4sa5e1rvHIZkovttb1w4qix2TBQ6BbWm3PeoR4"},
         },
         "conceptBase": CONCEPT_BASE,
         "facets": facets["facets"],
+        "commitments": commitments,
         "categories": [
             {
                 "id": c["id"],
@@ -340,7 +362,8 @@ def main() -> None:
 
     cols = [
         "id", "status", "mergedInto", "kind", "origin", "wikiNumber", "category", "subcategory", "placement", "plain",
-        "altLabels", "broader", "narrower", "related", "conflictsWith", "mechanism", "timeOfDay", "condition",
+        "altLabels", "broader", "narrower", "related", "conflictsWith", "mechanism", "timeOfDay", "condition", "problem",
+        "commitmentCount",
         "conditionIcd11", "sourceWording",
         "paragraph", "evidenceStatus", "citationCount", "freeCitationCount",
         *[f"{s}" for s in SCALES], *[f"{s}Spread" for s in SCALES],
@@ -365,6 +388,8 @@ def main() -> None:
                     "mechanism": "; ".join(r.get("facets", {}).get("mechanism", [])),
                     "timeOfDay": "; ".join(r.get("facets", {}).get("timeOfDay", [])),
                     "condition": "; ".join(r.get("facets", {}).get("condition", [])),
+                    "problem": "; ".join(r.get("facets", {}).get("problem", [])),
+                    "commitmentCount": len(r.get("commitments", [])),
                     "conditionIcd11": "; ".join(c["code"] for c in r.get("conditionCodes", [])),
                     "kind": r["kind"],
                     "origin": r["origin"],
@@ -401,6 +426,13 @@ def main() -> None:
             e = gentries[gid]
             for aid, rel in links:
                 w.writerow([gid, e["term"], e["file"], e["inCommittedBuild"], aid, rel])
+
+    with (data / "commitments.csv").open("w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["id", "type", "kindOfLine", "text", "problem", "appliesTo", "numbersToCheck", "duplicateOf", "from"])
+        for c in commitments:
+            w.writerow([c["id"], c["type"], c["kindOfLine"], c["text"], "; ".join(c["problem"]), "; ".join(c["appliesTo"]),
+                        "; ".join(c["numbersToCheck"]), c.get("duplicateOf") or "", c["from"]])
 
     write_skos(out)
     write_taxonomy_md(out)
@@ -560,7 +592,7 @@ def apply_facets(records: list[dict], facets: dict, code_check: dict, errors: li
     for i in facets["items"]:
         if i not in by_id:
             errors.append(f"facets.json: unknown id {i}")
-    names = ["mechanism", "timeOfDay", "condition"]
+    names = ["mechanism", "timeOfDay", "condition"]  # "problem" is derived in apply_do_one_thing
     for r in records:
         if r["status"] == "merged":
             continue
@@ -582,6 +614,61 @@ def apply_facets(records: list[dict], facets: dict, code_check: dict, errors: li
                 if c in icd and c not in {x["code"] for x in codes}:
                     codes.append({"code": c, "title": icd[c]["currentTitle"], "via": cond})
         r["conditionCodes"] = codes
+
+
+def apply_do_one_thing(records: list[dict], dot: dict, mapping: dict, errors: list) -> list[dict]:
+    """Do One Thing commitments and quick tips, each linked to the concepts it applies.
+    Its categories and subcategories become the derived 'problem' facet."""
+    by_id = {r["id"]: r for r in records}
+    for r in records:
+        if r["status"] != "merged":
+            r.setdefault("facets", {})["problem"] = []
+            r["commitments"] = []
+    out = []
+
+    def link(cid: str, problem_ids: list[str], concept_ids: list[str]) -> None:
+        for c in concept_ids:
+            if c not in by_id:
+                errors.append(f"do-one-thing-map.json: {cid}: unknown concept {c}")
+                continue
+            r = by_id[c]
+            r["commitments"].append(cid)
+            for pid in problem_ids:
+                if pid not in r["facets"]["problem"]:
+                    r["facets"]["problem"].append(pid)
+
+    for cat in dot["categories"]:
+        tips = mapping["quickTips"].get(cat["id"], [])
+        if len(tips) != len(cat["homepageQuickTips"]):
+            errors.append(f"do-one-thing-map.json: quickTips {cat['id']}: {len(tips)} mapped, {len(cat['homepageQuickTips'])} on page")
+        for n, (text, (kind, concepts, nums)) in enumerate(zip(cat["homepageQuickTips"], tips), start=1):
+            cid = f"dot-{cat['id']}-tip-{n}"
+            out.append({"id": cid, "type": "tip", "text": text, "problem": [cat["id"]], "kindOfLine": kind,
+                        "appliesTo": concepts, "numbersToCheck": nums, "from": "Do One Thing homepage quick tips",
+                        "status": "HCF campaign text; mapping drafted by Claude, unreviewed"})
+            link(cid, [cat["id"]], concepts)
+        for sub in cat["subcategories"]:
+            rows = mapping["subcategories"].get(sub["id"], [])
+            if len(rows) != len(sub["commitments"]):
+                errors.append(f"do-one-thing-map.json: {sub['id']}: {len(rows)} mapped, {len(sub['commitments'])} on page")
+            for n, (text, (kind, concepts, nums)) in enumerate(zip(sub["commitments"], rows), start=1):
+                cid = f"dot-{sub['id']}-{n}"
+                dup = None
+                if kind == "dup":
+                    d = mapping["duplicates"].get(f"{sub['id']}#{n}") or mapping["duplicates"].get(sub["id"])
+                    dup = (f"dot-{d['of'].split('#')[0]}-{d['of'].split('#')[1]}" if "#" in d["of"] else f"dot-{d['of']}-{n}") if d else None
+                out.append({"id": cid, "type": "commitment", "text": text, "problem": [cat["id"], sub["id"]],
+                            "kindOfLine": "duplicate" if dup else kind, "duplicateOf": dup, "appliesTo": concepts,
+                            "numbersToCheck": nums, "from": "Do One Thing: Habits by Category",
+                            "status": "HCF campaign text; mapping drafted by Claude, unreviewed"})
+                link(cid, [cat["id"], sub["id"]], concepts)
+        for sub_id, concepts in mapping.get("intendedConcepts", {}).items():
+            if any(s["id"] == sub_id for s in cat["subcategories"]):
+                link(f"dot-{sub_id}", [cat["id"], sub_id], concepts)
+                for c in concepts:
+                    if c in by_id:
+                        by_id[c]["commitments"].remove(f"dot-{sub_id}")
+    return out
 
 
 def apply_scores(records: list[dict], scores: dict, errors: list) -> None:
@@ -656,6 +743,9 @@ def write_skos(out: dict) -> None:
             if v.get("definition"):
                 t.append(f"skos:definition {turtle_str(v['definition'])}")
             t += [f"skos:closeMatch <http://id.who.int/icd/release/11/mms/{c}>" for c in v.get("icd11", [])]
+            if v.get("broader"):
+                t = [x for x in t if not x.startswith("skos:topConceptOf")]
+                t.append(f"skos:broader <{b}facet/{fname}/{v['broader']}>")
             L.append(" ;\n  ".join(t) + " .")
         L.append("")
     url_of = lambda i: f"<{b}{i}>"
@@ -686,6 +776,13 @@ def write_skos(out: dict) -> None:
             p.append(f"skos:editorialNote {turtle_str(r['editorNotes'])}")
         L.append(" ;\n  ".join(p) + " .")
         L.append("")
+    L += [f"<{b}commitments> a skos:ConceptScheme ; dct:title {turtle_str('Do One Thing commitments and tips')} .", ""]
+    for c in out["commitments"]:
+        t = [f"<{b}commitment/{c['id']}> a skos:Concept", f"skos:inScheme <{b}commitments>",
+             f"skos:prefLabel {turtle_str(c['text'])}", f"hsa:lineType \"{c['kindOfLine']}\""]
+        t += [f"hsa:appliesTo {url_of(x)}" for x in c["appliesTo"]]
+        t += [f"hsa:problem <{b}facet/problem/{p}>" for p in c["problem"]]
+        L.append(" ;\n  ".join(t) + " .")
     (ROOT / "data" / "sleep-advice.skos.ttl").write_text("\n".join(L), encoding="utf-8")
 
 
@@ -720,6 +817,8 @@ def write_taxonomy_md(out: dict) -> None:
         pad = "  " * depth
         if r["kind"] == "group":
             num = "▸ "
+        elif r["origin"] == "do-one-thing":
+            num = "◆ "
         elif r["origin"] == "sam-wiki":
             num = f"{r['wikiNumber']} "
         else:
@@ -733,6 +832,8 @@ def write_taxonomy_md(out: dict) -> None:
             lab = lambda f, v: out["facets"][f]["values"][v]["label"]
             meta += " · 🕒 " + ", ".join(lab("timeOfDay", v) for v in fx["timeOfDay"])
             meta += " · ⚙️ " + ", ".join(lab("mechanism", v) for v in fx["mechanism"])
+            if r.get("commitments"):
+                meta += f" · 💬 {len(r['commitments'])} Do One Thing line{'s' if len(r['commitments']) > 1 else ''}"
             conds = [v for v in fx["condition"] if v != "general"]
             if conds:
                 meta += " · 🩺 " + ", ".join(lab("condition", v) for v in conds)
@@ -778,7 +879,7 @@ def write_taxonomy_md(out: dict) -> None:
         "SKOS: [data/sleep-advice.skos.ttl](data/sleep-advice.skos.ttl).",
         "",
         "**How to read it.** Bold = preferred label (plain one-liner, unreviewed). Number = SAM wiki item; "
-        "＋ = from the health-glossary sleep entries; ▸ = grouping concept. Indented items are narrower "
+        "＋ = from the health-glossary sleep entries; ◆ = from Do One Thing; ▸ = grouping concept. Indented items are narrower "
         "versions of the item above them. \"also\" = alternative labels (synonyms, source wording, other names). "
         "Tags 1–5: **R** reach, **Ea** ease, **I** impact, **N** novelty, **Ev** evidence support; "
         f"– = not scored; * = Claude's proposal ({proposals} values), otherwise the wiki's score. All scores need review.",
@@ -804,6 +905,25 @@ def write_taxonomy_md(out: dict) -> None:
             hits = [r["id"] for r in items if vid in r.get("facets", {}).get(fname, [])]
             codes = f" (ICD-11 {', '.join(v['icd11'])})" if v.get("icd11") else ""
             md.append(f"- **{v['label']}**{codes}: {len(hits)} · " + " ".join(f"`{h}`" for h in hits))
+        md.append("")
+    md += ["## Do One Thing: commitments by sleep thief", "",
+           "HCF's Do One Thing habits ([source](https://doonething.sleepliteracy.org/choose-your-one-thing/)), "
+           "each linked to the concept it applies. *Italic* = mindset line; ⚠️ = numbers to check; "
+           "duplicates (site errors) are listed but not linked.", ""]
+    vals = out["facets"]["problem"]["values"]
+    for pid, v in vals.items():
+        lines_here = [c for c in out["commitments"] if c["problem"][-1] == pid]
+        if not lines_here:
+            continue
+        md += [f"{'####' if v.get('broader') else '###'} {v['label']}", ""]
+        for c in lines_here:
+            if c["kindOfLine"] == "duplicate":
+                md.append(f"- ~~{c['text']}~~ (duplicate of `{c['duplicateOf']}`)")
+                continue
+            txt = f"*{c['text']}*" if c["kindOfLine"] == "mindset" else c["text"]
+            tip = "Tip: " if c["type"] == "tip" else ""
+            warn = f" ⚠️ {', '.join(c['numbersToCheck'])}" if c["numbersToCheck"] else ""
+            md.append(f"- {tip}{txt} → " + ", ".join(f"`{a}`" for a in c["appliesTo"]) + warn)
         md.append("")
     md += ["## Merged", ""]
     for r in merged:

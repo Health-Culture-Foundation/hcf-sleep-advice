@@ -46,6 +46,28 @@
       "siteTermUrl": "https://iha-health-glossary.pages.dev/terms/{id}/",
       "buildNote": "inCommittedBuild: present in data/build/proposed-terms.json at origin/main 9105ad3, so it has a term page (working-group mode only, since it is unreviewed). Others exist only as drafts."
     },
+    "doOneThing": {
+      "title": "Do One Thing: Choose your ONE THING (Habits by Category)",
+      "url": "https://doonething.sleepliteracy.org/choose-your-one-thing/",
+      "homepage": "https://doonething.sleepliteracy.org/",
+      "publisher": "Health Culture Foundation / SleepLiteracy.org (Sleep Awareness Month)",
+      "license": "CC BY 4.0: original HCF content (Kalman, 2026-10-21)",
+      "retrieved": "2026-10-21",
+      "retrievedBy": "Claude, via the in-app browser (the site blocks command-line requests)",
+      "knownIssuesOnSite": [
+        "'Get Exercise' (under Stress, Anxiety, and Mental Load) shows the intro and five commitments of 'Work/School Responsibilities' word for word: a copy-paste error. There is no exercise content.",
+        "'Relationships & Family Concerns' lists 'I will save serious conversations for the day, not bedtime.' twice.",
+        "'Weekend vs Weekday Gap' has two commitments; every other subcategory has five.",
+        "The Technology intro says 'Blue light delays melatonin'; the NSF 2024 consensus did not reach consensus on pre-bedtime light (see screens-before-bed)."
+      ],
+      "numbersOnHomepageToCheck": [
+        "Caffeine 'can stay in your system for 6–8 hours'",
+        "Sleep apnea 'affects an estimated 3–7% of adults'",
+        "Poor sleep 'can increase the risk of hypertension and cardiovascular disease by 48% (AHA, 2022)'",
+        "Insufficient sleep 'linked to a 55% higher risk of developing obesity among adults (NIH, 2010)'",
+        "Drowsy driving 'causes over 100,000 crashes in the US per year'"
+      ]
+    },
     "taggingTaxonomy": {
       "title": "Sleep Advice Coding Ideas (Advice Tagging Taxonomy v1.2)",
       "url": "https://docs.google.com/document/d/19gFTE4sa5e1rvHIZkovttb1w4qix2TBQ6BbWm3PeoR4"
@@ -186,8 +208,1884 @@
           ]
         }
       }
+    },
+    "problem": {
+      "label": "Sleep thief it tackles (from Do One Thing)",
+      "source": "do-one-thing",
+      "derived": "Assigned by the build from editorial/do-one-thing-map.json, not by hand.",
+      "values": {
+        "irregular-schedules": {
+          "label": "Irregular Schedules (and Social Jetlag)"
+        },
+        "weekend-gap": {
+          "label": "Weekend vs Weekday Gap",
+          "broader": "irregular-schedules"
+        },
+        "deadlines": {
+          "label": "Work & School Deadlines",
+          "broader": "irregular-schedules"
+        },
+        "social-commitments": {
+          "label": "Social Commitments",
+          "broader": "irregular-schedules"
+        },
+        "circadian-cues": {
+          "label": "Circadian Rhythm Cues",
+          "broader": "irregular-schedules"
+        },
+        "technology": {
+          "label": "Technology and Screen Time"
+        },
+        "evening-phone": {
+          "label": "Evening Phone/Tablet Use",
+          "broader": "technology"
+        },
+        "tv-streaming": {
+          "label": "TV & Streaming Habits",
+          "broader": "technology"
+        },
+        "gaming-social-media": {
+          "label": "Gaming & Social Media Stimulation",
+          "broader": "technology"
+        },
+        "bedroom-devices": {
+          "label": "Bedroom Environment & Devices",
+          "broader": "technology"
+        },
+        "stress": {
+          "label": "Stress, Anxiety, and Mental Load"
+        },
+        "get-exercise": {
+          "label": "Get Exercise",
+          "broader": "stress"
+        },
+        "work-school": {
+          "label": "Work/School Responsibilities",
+          "broader": "stress"
+        },
+        "relationships": {
+          "label": "Relationships & Family Concerns",
+          "broader": "stress"
+        },
+        "money-worries": {
+          "label": "Financial/Practical Worries",
+          "broader": "stress"
+        },
+        "mental-health": {
+          "label": "Mental Health Conditions",
+          "broader": "stress"
+        },
+        "substances-and-diet": {
+          "label": "Caffeine, Alcohol, Marijuana, and Poor Dietary Habits"
+        },
+        "caffeine-timing": {
+          "label": "Caffeine Timing",
+          "broader": "substances-and-diet"
+        },
+        "alcohol-timing": {
+          "label": "Alcohol Timing & Quantity",
+          "broader": "substances-and-diet"
+        },
+        "cannabis-use": {
+          "label": "Marijuana Use",
+          "broader": "substances-and-diet"
+        },
+        "meal-timing": {
+          "label": "Meal Timing & Size",
+          "broader": "substances-and-diet"
+        },
+        "hydration-timing": {
+          "label": "Hydration Timing",
+          "broader": "substances-and-diet"
+        }
+      }
     }
   },
+  "commitments": [
+    {
+      "id": "dot-irregular-schedules-tip-1",
+      "type": "tip",
+      "text": "Aim to keep your bedtime and wake-up time within the same hour every day, even on weekends.",
+      "problem": [
+        "irregular-schedules"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "keep-a-regular-sleep-schedule",
+        "dont-sleep-in-much-on-weekends"
+      ],
+      "numbersToCheck": [
+        "within the same hour"
+      ],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-irregular-schedules-tip-2",
+      "type": "tip",
+      "text": "If you’re up late, try a short nap the next day instead of sleeping in for hours, which can make the cycle worse.",
+      "problem": [
+        "irregular-schedules"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "keep-naps-short-and-early",
+        "dont-sleep-in-much-on-weekends"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-irregular-schedules-tip-3",
+      "type": "tip",
+      "text": "Plan social activities earlier when you can — morning coffee catch-ups or evening walks can replace midnight hangouts.",
+      "problem": [
+        "irregular-schedules"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "plan-social-time-earlier"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-irregular-schedules-tip-4",
+      "type": "tip",
+      "text": "Use consistent cues — morning sunlight, light exercise, and hydration — to help your body reset after a late night.",
+      "problem": [
+        "irregular-schedules"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "get-morning-daylight",
+        "move-in-the-morning"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-weekend-gap-1",
+      "type": "commitment",
+      "text": "I will remind myself that consistency is freedom, not restriction.",
+      "problem": [
+        "irregular-schedules",
+        "weekend-gap"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "dont-sleep-in-much-on-weekends"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-weekend-gap-2",
+      "type": "commitment",
+      "text": "I will treat Sunday nights as a gentle reset, preparing for the week with intention.",
+      "problem": [
+        "irregular-schedules",
+        "weekend-gap"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "keep-a-regular-sleep-schedule"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-deadlines-1",
+      "type": "commitment",
+      "text": "I will finish schoolwork by 9 pm so my brain has time to slow down before sleep.",
+      "problem": [
+        "irregular-schedules",
+        "deadlines"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "finish-work-earlier"
+      ],
+      "numbersToCheck": [
+        "9 pm"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-deadlines-2",
+      "type": "commitment",
+      "text": "I will plan my hardest tasks for earlier in the day, leaving evenings calm.",
+      "problem": [
+        "irregular-schedules",
+        "deadlines"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "finish-work-earlier"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-deadlines-3",
+      "type": "commitment",
+      "text": "I will give myself a 30-minute buffer between work and screens before bed.",
+      "problem": [
+        "irregular-schedules",
+        "deadlines"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "finish-work-earlier",
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [
+        "30-minute buffer"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-deadlines-4",
+      "type": "commitment",
+      "text": "I will stop treating exhaustion as productivity and instead value sleep as part of my success.",
+      "problem": [
+        "irregular-schedules",
+        "deadlines"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "get-enough-sleep-for-you"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-deadlines-5",
+      "type": "commitment",
+      "text": "I will close my laptop before I feel depleted, not after.",
+      "problem": [
+        "irregular-schedules",
+        "deadlines"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "finish-work-earlier"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-social-commitments-1",
+      "type": "commitment",
+      "text": "I will suggest earlier meet-ups so fun doesn’t mean fatigue.",
+      "problem": [
+        "irregular-schedules",
+        "social-commitments"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "plan-social-time-earlier"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-social-commitments-2",
+      "type": "commitment",
+      "text": "I will cap social calls by 10 pm, choosing depth over late-night chatter.",
+      "problem": [
+        "irregular-schedules",
+        "social-commitments"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "plan-social-time-earlier"
+      ],
+      "numbersToCheck": [
+        "10 pm"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-social-commitments-3",
+      "type": "commitment",
+      "text": "I will trade one late-night hangout each week for a morning coffee ritual with a friend.",
+      "problem": [
+        "irregular-schedules",
+        "social-commitments"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "plan-social-time-earlier"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-social-commitments-4",
+      "type": "commitment",
+      "text": "I will be honest with friends about needing rest, knowing true friends will support me.",
+      "problem": [
+        "irregular-schedules",
+        "social-commitments"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "plan-social-time-earlier"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-social-commitments-5",
+      "type": "commitment",
+      "text": "I will let social joy add to my energy, not drain it.",
+      "problem": [
+        "irregular-schedules",
+        "social-commitments"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "plan-social-time-earlier"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-circadian-cues-1",
+      "type": "commitment",
+      "text": "I will step outside for sunlight within 30 minutes of waking.",
+      "problem": [
+        "irregular-schedules",
+        "circadian-cues"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "get-morning-daylight"
+      ],
+      "numbersToCheck": [
+        "within 30 minutes of waking"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-circadian-cues-2",
+      "type": "commitment",
+      "text": "I will stretch or move my body every morning to signal the day has begun.",
+      "problem": [
+        "irregular-schedules",
+        "circadian-cues"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "move-in-the-morning"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-circadian-cues-3",
+      "type": "commitment",
+      "text": "I will use the same nightly ritual — dim lights, tea, quiet — to signal sleep.",
+      "problem": [
+        "irregular-schedules",
+        "circadian-cues"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "have-a-wind-down-routine"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-circadian-cues-4",
+      "type": "commitment",
+      "text": "I will end each day with a simple phrase of gratitude to mark closure.",
+      "problem": [
+        "irregular-schedules",
+        "circadian-cues"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "gratitude-list"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-circadian-cues-5",
+      "type": "commitment",
+      "text": "I will trust that my body thrives on rhythm and will reward me with better sleep.",
+      "problem": [
+        "irregular-schedules",
+        "circadian-cues"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "keep-a-regular-sleep-schedule"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-technology-tip-1",
+      "type": "tip",
+      "text": "Set a “tech curfew” at least one hour before bedtime.",
+      "problem": [
+        "technology"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [
+        "at least one hour"
+      ],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-technology-tip-2",
+      "type": "tip",
+      "text": "Use blue-light filters or night-shift modes if screens are unavoidable in the evening.",
+      "problem": [
+        "technology"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "less-bright-light-in-the-evening",
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-technology-tip-3",
+      "type": "tip",
+      "text": "Keep your phone out of reach during the night to avoid disruptive notifications.",
+      "problem": [
+        "technology"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "keep-devices-out-of-the-bedroom"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-technology-tip-4",
+      "type": "tip",
+      "text": "Replace screens with a relaxing bedtime routine — reading, journaling, stretching, or even light music.",
+      "problem": [
+        "technology"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "have-a-wind-down-routine"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-evening-phone-1",
+      "type": "commitment",
+      "text": "I will set a tech curfew one hour before bed.",
+      "problem": [
+        "technology",
+        "evening-phone"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [
+        "one hour before bed"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-evening-phone-2",
+      "type": "commitment",
+      "text": "I will charge my phone outside the bedroom overnight.",
+      "problem": [
+        "technology",
+        "evening-phone"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "keep-devices-out-of-the-bedroom"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-evening-phone-3",
+      "type": "commitment",
+      "text": "I will replace scrolling with one page of reading or journaling.",
+      "problem": [
+        "technology",
+        "evening-phone"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-evening-phone-4",
+      "type": "commitment",
+      "text": "I will greet mornings with intention, not with notifications.",
+      "problem": [
+        "technology",
+        "evening-phone"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "keep-devices-out-of-the-bedroom"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-evening-phone-5",
+      "type": "commitment",
+      "text": "I will see my bed as a place for rest, not a workstation.",
+      "problem": [
+        "technology",
+        "evening-phone"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "bed-is-for-sleep"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-tv-streaming-1",
+      "type": "commitment",
+      "text": "I will stop watching shows by 9:30 pm, choosing rest over another episode.",
+      "problem": [
+        "technology",
+        "tv-streaming"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [
+        "9:30 pm"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-tv-streaming-2",
+      "type": "commitment",
+      "text": "I will shift my favorite shows earlier so my nights end quietly.",
+      "problem": [
+        "technology",
+        "tv-streaming"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-tv-streaming-3",
+      "type": "commitment",
+      "text": "I will swap one binge night for an early night of deep sleep each week.",
+      "problem": [
+        "technology",
+        "tv-streaming"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-tv-streaming-4",
+      "type": "commitment",
+      "text": "I will treat the ‘next episode’ button as an intentional choice, not a reflex.",
+      "problem": [
+        "technology",
+        "tv-streaming"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-tv-streaming-5",
+      "type": "commitment",
+      "text": "I will remember that true cliffhangers resolve best after a good night’s rest.",
+      "problem": [
+        "technology",
+        "tv-streaming"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-gaming-social-media-1",
+      "type": "commitment",
+      "text": "I will finish gaming or social feeds at least an hour before bed.",
+      "problem": [
+        "technology",
+        "gaming-social-media"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [
+        "an hour before bed"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-gaming-social-media-2",
+      "type": "commitment",
+      "text": "I will set a timer so playtime ends while I still feel in control.",
+      "problem": [
+        "technology",
+        "gaming-social-media"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-gaming-social-media-3",
+      "type": "commitment",
+      "text": "I will move one gaming session into the afternoon instead of the evening.",
+      "problem": [
+        "technology",
+        "gaming-social-media"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-gaming-social-media-4",
+      "type": "commitment",
+      "text": "I will remind myself that digital wins don’t matter if I lose tomorrow’s energy.",
+      "problem": [
+        "technology",
+        "gaming-social-media"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "screens-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-gaming-social-media-5",
+      "type": "commitment",
+      "text": "I will choose calm over stimulation when the night deepens.",
+      "problem": [
+        "technology",
+        "gaming-social-media"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "skip-exciting-things-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-bedroom-devices-1",
+      "type": "commitment",
+      "text": "I will keep my phone out of reach at night so sleep stays undisturbed.",
+      "problem": [
+        "technology",
+        "bedroom-devices"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "keep-devices-out-of-the-bedroom"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-bedroom-devices-2",
+      "type": "commitment",
+      "text": "I will use an alarm clock instead of relying on my phone.",
+      "problem": [
+        "technology",
+        "bedroom-devices"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "use-an-alarm-clock"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-bedroom-devices-3",
+      "type": "commitment",
+      "text": "I will make my bedroom a tech-free sanctuary.",
+      "problem": [
+        "technology",
+        "bedroom-devices"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "keep-devices-out-of-the-bedroom"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-bedroom-devices-4",
+      "type": "commitment",
+      "text": "I will honor my bed as a temple of rest, not a glowing workspace.",
+      "problem": [
+        "technology",
+        "bedroom-devices"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "bed-is-for-sleep"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-bedroom-devices-5",
+      "type": "commitment",
+      "text": "I will wake to sunlight or gentle sounds, not to pings and alerts.",
+      "problem": [
+        "technology",
+        "bedroom-devices"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "keep-devices-out-of-the-bedroom",
+        "get-morning-daylight"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-stress-tip-1",
+      "type": "tip",
+      "text": "Build a calming wind-down routine with dim lights and quiet activities.",
+      "problem": [
+        "stress"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "have-a-wind-down-routine"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-stress-tip-2",
+      "type": "tip",
+      "text": "Practice mindfulness, meditation, or deep breathing before bed — even 5 minutes helps.",
+      "problem": [
+        "stress"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "relaxation-techniques"
+      ],
+      "numbersToCheck": [
+        "5 minutes"
+      ],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-stress-tip-3",
+      "type": "tip",
+      "text": "Write down to-do lists or worries earlier in the evening to clear your mind.",
+      "problem": [
+        "stress"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "write-down-worries"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-stress-tip-4",
+      "type": "tip",
+      "text": "If poor sleep persists for more than a few weeks, talk with a professional — you don’t have to navigate it alone.",
+      "problem": [
+        "stress"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "get-help-if-poor-sleep-persists"
+      ],
+      "numbersToCheck": [
+        "more than a few weeks"
+      ],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-get-exercise-1",
+      "type": "commitment",
+      "text": "I will write tomorrow’s to-do list before dinner.",
+      "problem": [
+        "stress",
+        "get-exercise"
+      ],
+      "kindOfLine": "duplicate",
+      "duplicateOf": "dot-work-school-1",
+      "appliesTo": [],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-get-exercise-2",
+      "type": "commitment",
+      "text": "I will stop working at least one hour before bed.",
+      "problem": [
+        "stress",
+        "get-exercise"
+      ],
+      "kindOfLine": "duplicate",
+      "duplicateOf": "dot-work-school-2",
+      "appliesTo": [],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-get-exercise-3",
+      "type": "commitment",
+      "text": "I will celebrate what I finish each day instead of focusing on what remains.",
+      "problem": [
+        "stress",
+        "get-exercise"
+      ],
+      "kindOfLine": "duplicate",
+      "duplicateOf": "dot-work-school-3",
+      "appliesTo": [],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-get-exercise-4",
+      "type": "commitment",
+      "text": "I will end my workday with a short ritual that signals ‘done.’",
+      "problem": [
+        "stress",
+        "get-exercise"
+      ],
+      "kindOfLine": "duplicate",
+      "duplicateOf": "dot-work-school-4",
+      "appliesTo": [],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-get-exercise-5",
+      "type": "commitment",
+      "text": "I will trust that rest is the most important work of all.",
+      "problem": [
+        "stress",
+        "get-exercise"
+      ],
+      "kindOfLine": "duplicate",
+      "duplicateOf": "dot-work-school-5",
+      "appliesTo": [],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-work-school-1",
+      "type": "commitment",
+      "text": "I will write tomorrow’s to-do list before dinner.",
+      "problem": [
+        "stress",
+        "work-school"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "write-down-worries"
+      ],
+      "numbersToCheck": [
+        "before dinner"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-work-school-2",
+      "type": "commitment",
+      "text": "I will stop working at least one hour before bed.",
+      "problem": [
+        "stress",
+        "work-school"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "finish-work-earlier"
+      ],
+      "numbersToCheck": [
+        "one hour before bed"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-work-school-3",
+      "type": "commitment",
+      "text": "I will celebrate what I finish each day instead of focusing on what remains.",
+      "problem": [
+        "stress",
+        "work-school"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "calm-your-mind-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-work-school-4",
+      "type": "commitment",
+      "text": "I will end my workday with a short ritual that signals ‘done.’",
+      "problem": [
+        "stress",
+        "work-school"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "finish-work-earlier"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-work-school-5",
+      "type": "commitment",
+      "text": "I will trust that rest is the most important work of all.",
+      "problem": [
+        "stress",
+        "work-school"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "get-enough-sleep-for-you"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-relationships-1",
+      "type": "commitment",
+      "text": "I will journal three good things about my relationships each night.",
+      "problem": [
+        "stress",
+        "relationships"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "gratitude-list"
+      ],
+      "numbersToCheck": [
+        "three good things"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-relationships-2",
+      "type": "commitment",
+      "text": "I will save serious conversations for the day, not bedtime.",
+      "problem": [
+        "stress",
+        "relationships"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "avoid-heavy-talks-at-bedtime"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-relationships-3",
+      "type": "commitment",
+      "text": "I will save serious conversations for the day, not bedtime.",
+      "problem": [
+        "stress",
+        "relationships"
+      ],
+      "kindOfLine": "duplicate",
+      "duplicateOf": "dot-relationships-2",
+      "appliesTo": [],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-relationships-4",
+      "type": "commitment",
+      "text": "I will rest knowing love is nurtured in patience, not in late-night arguments.",
+      "problem": [
+        "stress",
+        "relationships"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "avoid-heavy-talks-at-bedtime"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-relationships-5",
+      "type": "commitment",
+      "text": "I will hold my family in compassion as I drift to sleep.",
+      "problem": [
+        "stress",
+        "relationships"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "calm-your-mind-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-money-worries-1",
+      "type": "commitment",
+      "text": "I will set aside 15 minutes in the evening for practical planning.",
+      "problem": [
+        "stress",
+        "money-worries"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "write-down-worries"
+      ],
+      "numbersToCheck": [
+        "15 minutes"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-money-worries-2",
+      "type": "commitment",
+      "text": "I will separate financial worries from sleep by addressing them during daylight.",
+      "problem": [
+        "stress",
+        "money-worries"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "write-down-worries"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-money-worries-3",
+      "type": "commitment",
+      "text": "I will balance worries by writing down three daily wins.",
+      "problem": [
+        "stress",
+        "money-worries"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "gratitude-list"
+      ],
+      "numbersToCheck": [
+        "three daily wins"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-money-worries-4",
+      "type": "commitment",
+      "text": "I will remind myself that tomorrow always brings fresh perspective.",
+      "problem": [
+        "stress",
+        "money-worries"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "calm-your-mind-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-money-worries-5",
+      "type": "commitment",
+      "text": "I will treat rest as the best investment in my future.",
+      "problem": [
+        "stress",
+        "money-worries"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "get-enough-sleep-for-you"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-mental-health-1",
+      "type": "commitment",
+      "text": "I will practice 5 minutes of mindful breathing before bed.",
+      "problem": [
+        "stress",
+        "mental-health"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "relaxation-techniques"
+      ],
+      "numbersToCheck": [
+        "5 minutes"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-mental-health-2",
+      "type": "commitment",
+      "text": "I will seek help when I need it, knowing strength is asking.",
+      "problem": [
+        "stress",
+        "mental-health"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "get-help-if-poor-sleep-persists"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-mental-health-3",
+      "type": "commitment",
+      "text": "I will give myself grace on rough nights.",
+      "problem": [
+        "stress",
+        "mental-health"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "be-kind-to-yourself-after-a-bad-night"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-mental-health-4",
+      "type": "commitment",
+      "text": "I will see poor sleep not as failure but as feedback.",
+      "problem": [
+        "stress",
+        "mental-health"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "be-kind-to-yourself-after-a-bad-night"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-mental-health-5",
+      "type": "commitment",
+      "text": "I will anchor myself in rituals that remind me I am safe.",
+      "problem": [
+        "stress",
+        "mental-health"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "have-a-wind-down-routine"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-substances-and-diet-tip-1",
+      "type": "tip",
+      "text": "Cut off caffeine by early afternoon.",
+      "problem": [
+        "substances-and-diet"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "caffeine-cutoff"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-substances-and-diet-tip-2",
+      "type": "tip",
+      "text": "Avoid alcohol close to bedtime; stop drinking at least 3 hours before sleep.",
+      "problem": [
+        "substances-and-diet"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "no-alcohol-close-to-bedtime"
+      ],
+      "numbersToCheck": [
+        "at least 3 hours"
+      ],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-substances-and-diet-tip-3",
+      "type": "tip",
+      "text": "If using marijuana, keep doses moderate and track how it affects your rest.",
+      "problem": [
+        "substances-and-diet"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "cannabis-and-sleep"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-substances-and-diet-tip-4",
+      "type": "tip",
+      "text": "Finish heavy meals 2–3 hours before bed; opt for light snacks if you’re hungry late.",
+      "problem": [
+        "substances-and-diet"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "caffeine-and-big-meals-early",
+        "small-snack-before-bed"
+      ],
+      "numbersToCheck": [
+        "2–3 hours"
+      ],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-substances-and-diet-tip-5",
+      "type": "tip",
+      "text": "Stay hydrated earlier in the day and taper fluids at night to minimize middle-of-the-night wake-ups.",
+      "problem": [
+        "substances-and-diet"
+      ],
+      "kindOfLine": "action",
+      "appliesTo": [
+        "drink-more-earlier-in-the-day"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing homepage quick tips",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-caffeine-timing-1",
+      "type": "commitment",
+      "text": "I will enjoy coffee only before 2 p.m.",
+      "problem": [
+        "substances-and-diet",
+        "caffeine-timing"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "caffeine-cutoff"
+      ],
+      "numbersToCheck": [
+        "before 2 p.m."
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-caffeine-timing-2",
+      "type": "commitment",
+      "text": "I will switch to calming teas in the evening.",
+      "problem": [
+        "substances-and-diet",
+        "caffeine-timing"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "herbal-tea-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-caffeine-timing-3",
+      "type": "commitment",
+      "text": "I will savor my morning coffee instead of chasing energy late.",
+      "problem": [
+        "substances-and-diet",
+        "caffeine-timing"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "caffeine-cutoff"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-caffeine-timing-4",
+      "type": "commitment",
+      "text": "I will trade my afternoon coffee for a short walk outside.",
+      "problem": [
+        "substances-and-diet",
+        "caffeine-timing"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "caffeine-cutoff"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-caffeine-timing-5",
+      "type": "commitment",
+      "text": "I will let natural rhythms, not caffeine, guide my nights.",
+      "problem": [
+        "substances-and-diet",
+        "caffeine-timing"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "caffeine-cutoff"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-alcohol-timing-1",
+      "type": "commitment",
+      "text": "I will avoid drinking within three hours of bed.",
+      "problem": [
+        "substances-and-diet",
+        "alcohol-timing"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "no-alcohol-close-to-bedtime"
+      ],
+      "numbersToCheck": [
+        "three hours"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-alcohol-timing-2",
+      "type": "commitment",
+      "text": "I will enjoy drinks socially, not as sleep aids.",
+      "problem": [
+        "substances-and-diet",
+        "alcohol-timing"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "no-alcohol-close-to-bedtime"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-alcohol-timing-3",
+      "type": "commitment",
+      "text": "I will replace nightcaps with water or calming tea.",
+      "problem": [
+        "substances-and-diet",
+        "alcohol-timing"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "no-alcohol-close-to-bedtime",
+        "herbal-tea-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-alcohol-timing-4",
+      "type": "commitment",
+      "text": "I will see mornings without grogginess as my reward.",
+      "problem": [
+        "substances-and-diet",
+        "alcohol-timing"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "no-alcohol-close-to-bedtime"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-alcohol-timing-5",
+      "type": "commitment",
+      "text": "I will remind myself that alcohol steals dreams as it steals REM.",
+      "problem": [
+        "substances-and-diet",
+        "alcohol-timing"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "no-alcohol-close-to-bedtime"
+      ],
+      "numbersToCheck": [
+        "claim: alcohol 'steals REM'"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-cannabis-use-1",
+      "type": "commitment",
+      "text": "I will pause cannabis at least one hour before bed.",
+      "problem": [
+        "substances-and-diet",
+        "cannabis-use"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "cannabis-and-sleep"
+      ],
+      "numbersToCheck": [
+        "one hour before bed"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-cannabis-use-2",
+      "type": "commitment",
+      "text": "I will track how it affects my sleep with curiosity.",
+      "problem": [
+        "substances-and-diet",
+        "cannabis-use"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "cannabis-and-sleep",
+        "keep-a-sleep-diary"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-cannabis-use-3",
+      "type": "commitment",
+      "text": "I will explore alternatives like reading or music at night.",
+      "problem": [
+        "substances-and-diet",
+        "cannabis-use"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "cannabis-and-sleep",
+        "have-a-wind-down-routine"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-cannabis-use-4",
+      "type": "commitment",
+      "text": "I will choose balance over reliance.",
+      "problem": [
+        "substances-and-diet",
+        "cannabis-use"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "cannabis-and-sleep"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-cannabis-use-5",
+      "type": "commitment",
+      "text": "I will honor my body’s need for natural cycles of dreaming.",
+      "problem": [
+        "substances-and-diet",
+        "cannabis-use"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "cannabis-and-sleep"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-meal-timing-1",
+      "type": "commitment",
+      "text": "I will finish dinner two to three hours before bed.",
+      "problem": [
+        "substances-and-diet",
+        "meal-timing"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "caffeine-and-big-meals-early"
+      ],
+      "numbersToCheck": [
+        "two to three hours"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-meal-timing-2",
+      "type": "commitment",
+      "text": "I will choose lighter snacks at night instead of heavy meals.",
+      "problem": [
+        "substances-and-diet",
+        "meal-timing"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "small-snack-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-meal-timing-3",
+      "type": "commitment",
+      "text": "I will eat with attention to fullness, not habit.",
+      "problem": [
+        "substances-and-diet",
+        "meal-timing"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "caffeine-and-big-meals-early"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-meal-timing-4",
+      "type": "commitment",
+      "text": "I will let hunger guide me wisely, not late-night impulse.",
+      "problem": [
+        "substances-and-diet",
+        "meal-timing"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "small-snack-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-meal-timing-5",
+      "type": "commitment",
+      "text": "I will honor my body with timing that supports renewal.",
+      "problem": [
+        "substances-and-diet",
+        "meal-timing"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "caffeine-and-big-meals-early"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-hydration-timing-1",
+      "type": "commitment",
+      "text": "I will drink most of my water earlier in the day.",
+      "problem": [
+        "substances-and-diet",
+        "hydration-timing"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "drink-more-earlier-in-the-day"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-hydration-timing-2",
+      "type": "commitment",
+      "text": "I will taper fluids after 8 pm to protect deep sleep.",
+      "problem": [
+        "substances-and-diet",
+        "hydration-timing"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "drink-more-earlier-in-the-day"
+      ],
+      "numbersToCheck": [
+        "after 8 pm"
+      ],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-hydration-timing-3",
+      "type": "commitment",
+      "text": "I will enjoy a small calming drink before bed, not a large one.",
+      "problem": [
+        "substances-and-diet",
+        "hydration-timing"
+      ],
+      "kindOfLine": "action",
+      "duplicateOf": null,
+      "appliesTo": [
+        "drink-more-earlier-in-the-day",
+        "herbal-tea-before-bed"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-hydration-timing-4",
+      "type": "commitment",
+      "text": "I will see hydration as rhythm, not a last-minute scramble.",
+      "problem": [
+        "substances-and-diet",
+        "hydration-timing"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "drink-more-earlier-in-the-day"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    },
+    {
+      "id": "dot-hydration-timing-5",
+      "type": "commitment",
+      "text": "I will keep my nights for dreams, not for interruptions.",
+      "problem": [
+        "substances-and-diet",
+        "hydration-timing"
+      ],
+      "kindOfLine": "mindset",
+      "duplicateOf": null,
+      "appliesTo": [
+        "drink-more-earlier-in-the-day"
+      ],
+      "numbersToCheck": [],
+      "from": "Do One Thing: Habits by Category",
+      "status": "HCF campaign text; mapping drafted by Claude, unreviewed"
+    }
+  ],
   "categories": [
     {
       "id": "1",
@@ -743,7 +2641,8 @@
         "dont-sleep-in-much-on-weekends"
       ],
       "related": [
-        "fit-bedtime-to-your-body-clock"
+        "fit-bedtime-to-your-body-clock",
+        "plan-social-time-earlier"
       ],
       "conflictsWith": [],
       "status": "active",
@@ -760,7 +2659,12 @@
           "insomnia",
           "late-body-clock"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "irregular-schedules",
+          "weekend-gap",
+          "circadian-cues"
+        ]
       },
       "conditionCodes": [
         {
@@ -778,6 +2682,11 @@
           "title": "Delayed sleep-wake phase disorder",
           "via": "late-body-clock"
         }
+      ],
+      "commitments": [
+        "dot-irregular-schedules-tip-1",
+        "dot-weekend-gap-2",
+        "dot-circadian-cues-5"
       ]
     },
     {
@@ -1078,7 +2987,8 @@
           "shift-work",
           "late-body-clock"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -1096,7 +3006,8 @@
           "title": "Delayed sleep-wake phase disorder",
           "via": "late-body-clock"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "get-enough-sleep-for-you",
@@ -1337,9 +3248,21 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "irregular-schedules",
+          "deadlines",
+          "stress",
+          "work-school",
+          "money-worries"
+        ]
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": [
+        "dot-deadlines-4",
+        "dot-work-school-5",
+        "dot-money-worries-5"
+      ]
     },
     {
       "id": "keep-naps-short-and-early",
@@ -1543,7 +3466,10 @@
           "general",
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "irregular-schedules"
+        ]
       },
       "conditionCodes": [
         {
@@ -1556,6 +3482,9 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
+      ],
+      "commitments": [
+        "dot-irregular-schedules-tip-2"
       ]
     },
     {
@@ -1741,7 +3670,8 @@
           "general",
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -1754,7 +3684,8 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "dont-sleep-in-much-on-weekends",
@@ -1871,6 +3802,10 @@
             {
               "source": "nhlbi-guide",
               "says": "Sleeping later on weekends won't make up for lost sleep (p. 28); gives no limit."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Keep bedtime and wake time within the same hour every day, even on weekends."
             }
           ]
         }
@@ -1948,9 +3883,18 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "irregular-schedules",
+          "weekend-gap"
+        ]
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": [
+        "dot-irregular-schedules-tip-1",
+        "dot-irregular-schedules-tip-2",
+        "dot-weekend-gap-1"
+      ]
     },
     {
       "id": "keep-the-bedroom-cool-and-dark",
@@ -2202,9 +4146,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "block-outside-light",
@@ -2377,7 +4323,8 @@
           "general",
           "shift-work"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -2385,7 +4332,8 @@
           "title": "Circadian rhythm sleep-wake disorder, shift work type",
           "via": "shift-work"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "make-your-bed-comfortable",
@@ -2555,9 +4503,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "mask-noise-with-steady-sound",
@@ -2735,7 +4685,8 @@
           "general",
           "shift-work"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -2743,7 +4694,8 @@
           "title": "Circadian rhythm sleep-wake disorder, shift work type",
           "via": "shift-work"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "keep-the-bedroom-quiet",
@@ -2927,9 +4879,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "keep-devices-out-of-the-bedroom",
@@ -3092,7 +5046,9 @@
         "Remove electronic devices from the bedroom"
       ],
       "broader": [],
-      "narrower": [],
+      "narrower": [
+        "use-an-alarm-clock"
+      ],
       "related": [
         "screens-before-bed"
       ],
@@ -3112,9 +5068,22 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "technology",
+          "evening-phone",
+          "bedroom-devices"
+        ]
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": [
+        "dot-technology-tip-3",
+        "dot-evening-phone-2",
+        "dot-evening-phone-4",
+        "dot-bedroom-devices-1",
+        "dot-bedroom-devices-3",
+        "dot-bedroom-devices-5"
+      ]
     },
     {
       "id": "keep-the-bedroom-tidy",
@@ -3274,9 +5243,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "try-calming-scents",
@@ -3436,9 +5407,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "screens-before-bed",
@@ -3687,6 +5660,10 @@
             {
               "source": "hartstein-2024",
               "says": "Consensus on content harming children's and teens' sleep; no consensus on light."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Blue light delays melatonin, and stimulation from scrolling, shows or games keeps the brain alert. Tech curfew at least one hour before bed."
             }
           ]
         }
@@ -3766,9 +5743,33 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "irregular-schedules",
+          "deadlines",
+          "technology",
+          "evening-phone",
+          "tv-streaming",
+          "gaming-social-media"
+        ]
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": [
+        "dot-deadlines-3",
+        "dot-technology-tip-1",
+        "dot-technology-tip-2",
+        "dot-evening-phone-1",
+        "dot-evening-phone-3",
+        "dot-tv-streaming-1",
+        "dot-tv-streaming-2",
+        "dot-tv-streaming-3",
+        "dot-tv-streaming-4",
+        "dot-tv-streaming-5",
+        "dot-gaming-social-media-1",
+        "dot-gaming-social-media-2",
+        "dot-gaming-social-media-3",
+        "dot-gaming-social-media-4"
+      ]
     },
     {
       "id": "have-a-wind-down-routine",
@@ -3956,7 +5957,16 @@
           "general",
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "irregular-schedules",
+          "circadian-cues",
+          "technology",
+          "stress",
+          "mental-health",
+          "substances-and-diet",
+          "cannabis-use"
+        ]
       },
       "conditionCodes": [
         {
@@ -3969,6 +5979,13 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
+      ],
+      "commitments": [
+        "dot-circadian-cues-3",
+        "dot-technology-tip-4",
+        "dot-stress-tip-1",
+        "dot-mental-health-5",
+        "dot-cannabis-use-3"
       ]
     },
     {
@@ -4126,7 +6143,9 @@
         "avoid-heavy-talks-at-bedtime",
         "no-hard-workouts-right-before-bed"
       ],
-      "related": [],
+      "related": [
+        "finish-work-earlier"
+      ],
       "conflictsWith": [],
       "status": "active",
       "mergedInto": null,
@@ -4140,9 +6159,16 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "technology",
+          "gaming-social-media"
+        ]
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": [
+        "dot-gaming-social-media-5"
+      ]
     },
     {
       "id": "dont-check-the-clock",
@@ -4317,7 +6343,8 @@
           "general",
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -4330,7 +6357,8 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "try-a-guided-meditation",
@@ -4508,7 +6536,8 @@
           "anxiety",
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -4526,7 +6555,8 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "try-a-weighted-blanket",
@@ -4688,7 +6718,8 @@
           "general",
           "anxiety"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -4696,7 +6727,8 @@
           "title": "Generalised anxiety disorder",
           "via": "anxiety"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "avoid-heavy-talks-at-bedtime",
@@ -4857,9 +6889,17 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "stress",
+          "relationships"
+        ]
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": [
+        "dot-relationships-2",
+        "dot-relationships-4"
+      ]
     },
     {
       "id": "warm-bath-or-shower-before-bed",
@@ -5061,9 +7101,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "try-pink-noise",
@@ -5234,9 +7276,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "wear-socks-to-bed",
@@ -5400,9 +7444,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "get-morning-daylight",
@@ -5602,6 +7648,10 @@
             {
               "source": "wiki",
               "says": "10-30 minutes, within an hour of waking."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Within 30 minutes of waking; no duration given."
             }
           ]
         }
@@ -5657,7 +7707,8 @@
       "narrower": [],
       "related": [
         "late-afternoon-daylight",
-        "light-therapy-for-a-late-body-clock"
+        "light-therapy-for-a-late-body-clock",
+        "move-in-the-morning"
       ],
       "conflictsWith": [],
       "status": "active",
@@ -5673,7 +7724,13 @@
           "general",
           "late-body-clock"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "irregular-schedules",
+          "circadian-cues",
+          "technology",
+          "bedroom-devices"
+        ]
       },
       "conditionCodes": [
         {
@@ -5681,6 +7738,11 @@
           "title": "Delayed sleep-wake phase disorder",
           "via": "late-body-clock"
         }
+      ],
+      "commitments": [
+        "dot-irregular-schedules-tip-4",
+        "dot-circadian-cues-1",
+        "dot-bedroom-devices-5"
       ]
     },
     {
@@ -5873,7 +7935,10 @@
           "general",
           "late-body-clock"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "technology"
+        ]
       },
       "conditionCodes": [
         {
@@ -5881,6 +7946,9 @@
           "title": "Delayed sleep-wake phase disorder",
           "via": "late-body-clock"
         }
+      ],
+      "commitments": [
+        "dot-technology-tip-2"
       ]
     },
     {
@@ -6063,9 +8131,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "dim-lights-gradually",
@@ -6235,9 +8305,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "blue-blocking-glasses",
@@ -6400,7 +8472,8 @@
           "general",
           "late-body-clock"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -6408,7 +8481,8 @@
           "title": "Delayed sleep-wake phase disorder",
           "via": "late-body-clock"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "caffeine-and-big-meals-early",
@@ -6603,6 +8677,10 @@
             {
               "source": "huberman-sleep-toolkit",
               "says": "No more than about 100 mg after 4 p.m."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Coffee only before 2 p.m.; homepage: 'by early afternoon'; caffeine lasts 6–8 hours."
             }
           ]
         },
@@ -6620,6 +8698,10 @@
             {
               "source": "nhlbi-guide",
               "says": "Avoid large meals late at night; a light snack is fine (p. 29)."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Finish dinner 2–3 hours before bed; lighter snacks if hungry."
             }
           ]
         }
@@ -6714,7 +8796,11 @@
           "general",
           "reflux"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "substances-and-diet",
+          "meal-timing"
+        ]
       },
       "conditionCodes": [
         {
@@ -6722,6 +8808,12 @@
           "title": "Gastro-oesophageal reflux disease",
           "via": "reflux"
         }
+      ],
+      "commitments": [
+        "dot-substances-and-diet-tip-4",
+        "dot-meal-timing-1",
+        "dot-meal-timing-3",
+        "dot-meal-timing-5"
       ]
     },
     {
@@ -6873,6 +8965,10 @@
             {
               "source": "wiki",
               "says": "Item 2.5.3 suggests chamomile tea 30-45 minutes before bed."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Taper fluids after 8 pm; a small calming drink before bed is fine."
             }
           ]
         }
@@ -6947,9 +9043,21 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "substances-and-diet",
+          "hydration-timing"
+        ]
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": [
+        "dot-substances-and-diet-tip-5",
+        "dot-hydration-timing-1",
+        "dot-hydration-timing-2",
+        "dot-hydration-timing-3",
+        "dot-hydration-timing-4",
+        "dot-hydration-timing-5"
+      ]
     },
     {
       "id": "no-alcohol-close-to-bedtime",
@@ -7112,6 +9220,7 @@
       "narrower": [],
       "related": [
         "3-2-1-rule",
+        "cannabis-and-sleep",
         "myth-alcohol-helps-sleep"
       ],
       "conflictsWith": [],
@@ -7128,7 +9237,11 @@
           "general",
           "sleep-apnea"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "substances-and-diet",
+          "alcohol-timing"
+        ]
       },
       "conditionCodes": [
         {
@@ -7136,6 +9249,14 @@
           "title": "Obstructive sleep apnoea",
           "via": "sleep-apnea"
         }
+      ],
+      "commitments": [
+        "dot-substances-and-diet-tip-2",
+        "dot-alcohol-timing-1",
+        "dot-alcohol-timing-2",
+        "dot-alcohol-timing-3",
+        "dot-alcohol-timing-4",
+        "dot-alcohol-timing-5"
       ]
     },
     {
@@ -7296,9 +9417,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "exercise-regularly",
@@ -7478,7 +9601,9 @@
         "Regular exercise improves sleep quality"
       ],
       "broader": [],
-      "narrower": [],
+      "narrower": [
+        "move-in-the-morning"
+      ],
       "related": [
         "no-hard-workouts-right-before-bed"
       ],
@@ -7498,7 +9623,11 @@
           "general",
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "stress",
+          "get-exercise"
+        ]
       },
       "conditionCodes": [
         {
@@ -7511,7 +9640,8 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "gentle-stretching-before-bed",
@@ -7673,9 +9803,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "strength-training-earlier-in-the-day",
@@ -7845,9 +9977,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "no-hard-workouts-right-before-bed",
@@ -8039,9 +10173,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "4-7-8-breathing",
@@ -8218,7 +10354,8 @@
           "general",
           "anxiety"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -8226,7 +10363,8 @@
           "title": "Generalised anxiety disorder",
           "via": "anxiety"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "mouth-taping",
@@ -8401,7 +10539,8 @@
         "condition": [
           "sleep-apnea"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -8409,7 +10548,8 @@
           "title": "Obstructive sleep apnoea",
           "via": "sleep-apnea"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "nose-breathing-exercises",
@@ -8588,9 +10728,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "kiwi-or-tart-cherries",
@@ -8754,9 +10896,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "small-snack-before-bed",
@@ -8943,9 +11087,18 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "substances-and-diet",
+          "meal-timing"
+        ]
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": [
+        "dot-substances-and-diet-tip-4",
+        "dot-meal-timing-2",
+        "dot-meal-timing-4"
+      ]
     },
     {
       "id": "herbal-tea-before-bed",
@@ -9126,9 +11279,20 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "substances-and-diet",
+          "caffeine-timing",
+          "alcohol-timing",
+          "hydration-timing"
+        ]
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": [
+        "dot-caffeine-timing-2",
+        "dot-alcohol-timing-3",
+        "dot-hydration-timing-3"
+      ]
     },
     {
       "id": "calm-your-mind-before-bed",
@@ -9383,7 +11547,9 @@
         "cognitive-shuffling",
         "gratitude-list"
       ],
-      "related": [],
+      "related": [
+        "be-kind-to-yourself-after-a-bad-night"
+      ],
       "conflictsWith": [],
       "status": "active",
       "mergedInto": null,
@@ -9399,7 +11565,13 @@
           "general",
           "anxiety"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "stress",
+          "work-school",
+          "relationships",
+          "money-worries"
+        ]
       },
       "conditionCodes": [
         {
@@ -9407,6 +11579,11 @@
           "title": "Generalised anxiety disorder",
           "via": "anxiety"
         }
+      ],
+      "commitments": [
+        "dot-work-school-3",
+        "dot-relationships-5",
+        "dot-money-worries-4"
       ]
     },
     {
@@ -9631,7 +11808,11 @@
           "anxiety",
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "stress",
+          "mental-health"
+        ]
       },
       "conditionCodes": [
         {
@@ -9649,6 +11830,10 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
+      ],
+      "commitments": [
+        "dot-stress-tip-2",
+        "dot-mental-health-1"
       ]
     },
     {
@@ -9861,7 +12046,8 @@
           "anxiety",
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -9879,7 +12065,8 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "write-down-worries",
@@ -10071,7 +12258,9 @@
         "calm-your-mind-before-bed"
       ],
       "narrower": [],
-      "related": [],
+      "related": [
+        "finish-work-earlier"
+      ],
       "conflictsWith": [
         {
           "id": "gratitude-list",
@@ -10091,7 +12280,12 @@
           "general",
           "anxiety"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "stress",
+          "work-school",
+          "money-worries"
+        ]
       },
       "conditionCodes": [
         {
@@ -10099,6 +12293,12 @@
           "title": "Generalised anxiety disorder",
           "via": "anxiety"
         }
+      ],
+      "commitments": [
+        "dot-stress-tip-3",
+        "dot-work-school-1",
+        "dot-money-worries-1",
+        "dot-money-worries-2"
       ]
     },
     {
@@ -10474,7 +12674,12 @@
         "condition": [
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "technology",
+          "evening-phone",
+          "bedroom-devices"
+        ]
       },
       "conditionCodes": [
         {
@@ -10487,6 +12692,10 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
+      ],
+      "commitments": [
+        "dot-evening-phone-5",
+        "dot-bedroom-devices-4"
       ]
     },
     {
@@ -10707,7 +12916,8 @@
         "condition": [
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -10720,7 +12930,8 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "cognitive-shuffling",
@@ -10899,9 +13110,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "gratitude-list",
@@ -11094,9 +13307,21 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "irregular-schedules",
+          "circadian-cues",
+          "stress",
+          "relationships",
+          "money-worries"
+        ]
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": [
+        "dot-circadian-cues-4",
+        "dot-relationships-1",
+        "dot-money-worries-3"
+      ]
     },
     {
       "id": "binaural-beats",
@@ -11271,9 +13496,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "nature-sounds-or-asmr",
@@ -11442,9 +13669,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "left-side-for-reflux",
@@ -11629,7 +13858,8 @@
         "condition": [
           "reflux"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -11637,7 +13867,8 @@
           "title": "Gastro-oesophageal reflux disease",
           "via": "reflux"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "acupressure-or-massage",
@@ -11815,9 +14046,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "raise-the-head-of-the-bed",
@@ -12020,7 +14253,8 @@
           "reflux",
           "sleep-apnea"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -12033,7 +14267,8 @@
           "title": "Obstructive sleep apnoea",
           "via": "sleep-apnea"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "raise-your-legs",
@@ -12213,9 +14448,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "keep-a-sleep-diary",
@@ -12421,7 +14658,11 @@
           "general",
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "substances-and-diet",
+          "cannabis-use"
+        ]
       },
       "conditionCodes": [
         {
@@ -12434,6 +14675,9 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
+      ],
+      "commitments": [
+        "dot-cannabis-use-2"
       ]
     },
     {
@@ -12639,7 +14883,8 @@
         "condition": [
           "late-body-clock"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -12647,7 +14892,8 @@
           "title": "Delayed sleep-wake phase disorder",
           "via": "late-body-clock"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "melatonin-for-jet-lag-or-shifts",
@@ -12866,7 +15112,8 @@
           "jet-lag",
           "shift-work"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -12879,7 +15126,8 @@
           "title": "Circadian rhythm sleep-wake disorder, shift work type",
           "via": "shift-work"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "check-for-sleep-apnea",
@@ -13053,6 +15301,7 @@
       "broader": [],
       "narrower": [],
       "related": [
+        "get-help-if-poor-sleep-persists",
         "mouth-taping",
         "myth-snoring-is-harmless",
         "raise-the-head-of-the-bed"
@@ -13071,7 +15320,8 @@
         "condition": [
           "sleep-apnea"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -13079,7 +15329,8 @@
           "title": "Obstructive sleep apnoea",
           "via": "sleep-apnea"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "check-your-medicines",
@@ -13234,7 +15485,8 @@
           "general",
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -13247,7 +15499,8 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "cbt-for-insomnia",
@@ -13391,6 +15644,7 @@
         "stimulus-control"
       ],
       "related": [
+        "get-help-if-poor-sleep-persists",
         "keep-a-sleep-diary"
       ],
       "conflictsWith": [],
@@ -13408,7 +15662,8 @@
         "condition": [
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -13421,7 +15676,8 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "sleep-restriction-therapy",
@@ -13578,7 +15834,8 @@
         "condition": [
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -13591,7 +15848,8 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "jet-lag",
@@ -13748,7 +16006,8 @@
         "condition": [
           "jet-lag"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -13756,7 +16015,8 @@
           "title": "Circadian rhythm sleep-wake disorder, jet lag type",
           "via": "jet-lag"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "adjust-to-night-shift-work",
@@ -13911,7 +16171,8 @@
         "condition": [
           "shift-work"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -13919,7 +16180,8 @@
           "title": "Circadian rhythm sleep-wake disorder, shift work type",
           "via": "shift-work"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "late-afternoon-daylight",
@@ -14073,9 +16335,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "body-temperature-low-point",
@@ -14221,7 +16485,8 @@
         "condition": [
           "jet-lag"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -14229,7 +16494,8 @@
           "title": "Circadian rhythm sleep-wake disorder, jet lag type",
           "via": "jet-lag"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "box-breathing",
@@ -14385,7 +16651,8 @@
           "general",
           "anxiety"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -14393,7 +16660,8 @@
           "title": "Generalised anxiety disorder",
           "via": "anxiety"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "cyclic-sighing",
@@ -14549,7 +16817,8 @@
           "general",
           "anxiety"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -14557,7 +16826,8 @@
           "title": "Generalised anxiety disorder",
           "via": "anxiety"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "belly-breathing",
@@ -14712,7 +16982,8 @@
           "general",
           "anxiety"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -14720,7 +16991,8 @@
           "title": "Generalised anxiety disorder",
           "via": "anxiety"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "alternate-nostril-breathing",
@@ -14876,9 +17148,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "rest-even-if-awake",
@@ -15037,7 +17311,8 @@
           "general",
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -15050,7 +17325,8 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "power-down-hour",
@@ -15206,9 +17482,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "3-2-1-rule",
@@ -15375,9 +17653,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "frozen-water-bottle",
@@ -15531,9 +17811,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "delay-first-coffee",
@@ -15701,9 +17983,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "caffeine-cutoff",
@@ -15859,9 +18143,20 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "substances-and-diet",
+          "caffeine-timing"
+        ]
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": [
+        "dot-substances-and-diet-tip-1",
+        "dot-caffeine-timing-1",
+        "dot-caffeine-timing-3",
+        "dot-caffeine-timing-4",
+        "dot-caffeine-timing-5"
+      ]
     },
     {
       "id": "fit-bedtime-to-your-body-clock",
@@ -16017,7 +18312,8 @@
           "general",
           "late-body-clock"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -16025,7 +18321,8 @@
           "title": "Delayed sleep-wake phase disorder",
           "via": "late-body-clock"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "stay-in-bed-and-breathe",
@@ -16183,7 +18480,8 @@
           "general",
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -16196,7 +18494,8 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "dim-the-lights-after-dark",
@@ -16288,6 +18587,1158 @@
       "conflictsWith": [],
       "status": "merged",
       "mergedInto": "less-bright-light-in-the-evening"
+    },
+    {
+      "id": "finish-work-earlier",
+      "kind": "advice",
+      "origin": "do-one-thing",
+      "wikiNumber": null,
+      "categoryPath": [
+        {
+          "id": "3",
+          "name": "Psychological and Emotional Factors Affecting Sleep"
+        },
+        {
+          "id": "3.1",
+          "name": "Stress and Anxiety Management"
+        }
+      ],
+      "placement": "proposed (Do One Thing habit, not in the wiki taxonomy)",
+      "sourceWording": "Work & School Deadlines / Work/School Responsibilities",
+      "plain": "Stop work or schoolwork at least an hour before bed.",
+      "paragraph": {
+        "text": "Deadlines push us to sacrifice rest, but the late-night work rarely pays off the next day. Finishing earlier allows the brain to settle and restores clarity for tomorrow.",
+        "from": "Do One Thing subcategory intro",
+        "status": "HCF campaign text, unedited"
+      },
+      "evidence": {
+        "summary": null,
+        "status": "no evidence summary (campaign copy)",
+        "citations": [],
+        "moreSources": []
+      },
+      "tags": {
+        "reach": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": "Do One Thing item.",
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "ease": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "impact": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "novelty": {
+          "value": 2,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 2,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "evidenceSupport": {
+          "value": null,
+          "status": "not scored",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "from": null,
+          "reviewed": false
+        }
+      },
+      "audience": [
+        "all-ages-and-cultures",
+        "students"
+      ],
+      "audienceNote": null,
+      "disagreements": [],
+      "codes": {
+        "ichi": [],
+        "icd11": [],
+        "verified": false,
+        "note": "No codes: not in the wiki taxonomy."
+      },
+      "glossary": [],
+      "glossaryTerms": [],
+      "editorNotes": "Not in the wiki or glossary. Do One Thing commitments give 9 pm and one hour as examples.",
+      "plainStatus": "drafted by Claude 2026-10-21, unreviewed",
+      "tested": {
+        "withReaders": false
+      },
+      "changeLog": [],
+      "license": "CC-BY-4.0",
+      "lastChecked": "2026-10-21",
+      "altLabels": [
+        "Work & School Deadlines / Work/School Responsibilities",
+        "Work cutoff"
+      ],
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "skip-exciting-things-before-bed",
+        "write-down-worries"
+      ],
+      "conflictsWith": [],
+      "status": "active",
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal",
+          "time-displacement"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general",
+          "anxiety"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "irregular-schedules",
+          "deadlines",
+          "stress",
+          "work-school"
+        ]
+      },
+      "conditionCodes": [
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        }
+      ],
+      "commitments": [
+        "dot-deadlines-1",
+        "dot-deadlines-2",
+        "dot-deadlines-3",
+        "dot-deadlines-5",
+        "dot-work-school-2",
+        "dot-work-school-4"
+      ]
+    },
+    {
+      "id": "plan-social-time-earlier",
+      "kind": "advice",
+      "origin": "do-one-thing",
+      "wikiNumber": null,
+      "categoryPath": [
+        {
+          "id": "1",
+          "name": "Sleep Hygiene (General Behavioral and Environmental Factors)"
+        },
+        {
+          "id": "1.1",
+          "name": "Sleep Schedule and Regularity"
+        }
+      ],
+      "placement": "proposed (Do One Thing habit, not in the wiki taxonomy)",
+      "sourceWording": "Social Commitments",
+      "plain": "Plan get-togethers earlier in the day so late nights are the exception.",
+      "paragraph": {
+        "text": "Connection is vital, but it doesn’t need to cost tomorrow’s energy. By shifting when and how we socialize, we keep both joy and rest intact.",
+        "from": "Do One Thing subcategory intro",
+        "status": "HCF campaign text, unedited"
+      },
+      "evidence": {
+        "summary": null,
+        "status": "no evidence summary (campaign copy)",
+        "citations": [],
+        "moreSources": []
+      },
+      "tags": {
+        "reach": {
+          "value": 2,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 2,
+            "reason": "Do One Thing item.",
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "ease": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "impact": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "novelty": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "evidenceSupport": {
+          "value": null,
+          "status": "not scored",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "from": null,
+          "reviewed": false
+        }
+      },
+      "audience": [
+        "all-ages-and-cultures",
+        "students"
+      ],
+      "audienceNote": null,
+      "disagreements": [],
+      "codes": {
+        "ichi": [],
+        "icd11": [],
+        "verified": false,
+        "note": "No codes: not in the wiki taxonomy."
+      },
+      "glossary": [],
+      "glossaryTerms": [],
+      "editorNotes": null,
+      "plainStatus": "drafted by Claude 2026-10-21, unreviewed",
+      "tested": {
+        "withReaders": false
+      },
+      "changeLog": [],
+      "license": "CC-BY-4.0",
+      "lastChecked": "2026-10-21",
+      "altLabels": [
+        "Social Commitments"
+      ],
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "keep-a-regular-sleep-schedule"
+      ],
+      "conflictsWith": [],
+      "status": "active",
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock",
+          "time-displacement"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "irregular-schedules",
+          "social-commitments"
+        ]
+      },
+      "conditionCodes": [],
+      "commitments": [
+        "dot-irregular-schedules-tip-3",
+        "dot-social-commitments-1",
+        "dot-social-commitments-2",
+        "dot-social-commitments-3",
+        "dot-social-commitments-4",
+        "dot-social-commitments-5"
+      ]
+    },
+    {
+      "id": "move-in-the-morning",
+      "kind": "advice",
+      "origin": "do-one-thing",
+      "wikiNumber": null,
+      "categoryPath": [
+        {
+          "id": "2",
+          "name": "Physiological and Biological Factors Affecting Sleep"
+        },
+        {
+          "id": "2.3",
+          "name": "Exercise and Physical Activity"
+        }
+      ],
+      "placement": "proposed (Do One Thing habit, not in the wiki taxonomy)",
+      "sourceWording": "I will stretch or move my body every morning to signal the day has begun.",
+      "plain": "Stretch or move your body soon after you wake up.",
+      "paragraph": {
+        "text": null,
+        "status": "to write"
+      },
+      "evidence": {
+        "summary": null,
+        "status": "no evidence summary (campaign copy)",
+        "citations": [],
+        "moreSources": []
+      },
+      "tags": {
+        "reach": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": "Do One Thing item.",
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "ease": {
+          "value": 4,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 4,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "impact": {
+          "value": 2,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 2,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "novelty": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "evidenceSupport": {
+          "value": null,
+          "status": "not scored",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "from": null,
+          "reviewed": false
+        }
+      },
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "audienceNote": null,
+      "disagreements": [],
+      "codes": {
+        "ichi": [],
+        "icd11": [],
+        "verified": false,
+        "note": "No codes: not in the wiki taxonomy."
+      },
+      "glossary": [],
+      "glossaryTerms": [],
+      "editorNotes": "Body-clock reasoning ('signal the day has begun') is not cited.",
+      "plainStatus": "drafted by Claude 2026-10-21, unreviewed",
+      "tested": {
+        "withReaders": false
+      },
+      "changeLog": [],
+      "license": "CC-BY-4.0",
+      "lastChecked": "2026-10-21",
+      "altLabels": [
+        "I will stretch or move my body every morning to signal the day has begun."
+      ],
+      "broader": [
+        "exercise-regularly"
+      ],
+      "narrower": [],
+      "related": [
+        "get-morning-daylight"
+      ],
+      "conflictsWith": [],
+      "status": "active",
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock"
+        ],
+        "timeOfDay": [
+          "on-waking"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "irregular-schedules",
+          "circadian-cues"
+        ]
+      },
+      "conditionCodes": [],
+      "commitments": [
+        "dot-irregular-schedules-tip-4",
+        "dot-circadian-cues-2"
+      ]
+    },
+    {
+      "id": "use-an-alarm-clock",
+      "kind": "advice",
+      "origin": "do-one-thing",
+      "wikiNumber": null,
+      "categoryPath": [
+        {
+          "id": "1",
+          "name": "Sleep Hygiene (General Behavioral and Environmental Factors)"
+        },
+        {
+          "id": "1.2",
+          "name": "Sleep Environment Optimization"
+        }
+      ],
+      "placement": "proposed (Do One Thing habit, not in the wiki taxonomy)",
+      "sourceWording": "I will use an alarm clock instead of relying on my phone.",
+      "plain": "Use an alarm clock instead of your phone, so the phone can stay out of the bedroom.",
+      "paragraph": {
+        "text": null,
+        "status": "to write"
+      },
+      "evidence": {
+        "summary": null,
+        "status": "no evidence summary (campaign copy)",
+        "citations": [],
+        "moreSources": []
+      },
+      "tags": {
+        "reach": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": "Do One Thing item.",
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "ease": {
+          "value": 4,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 4,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "impact": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "novelty": {
+          "value": 2,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 2,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "evidenceSupport": {
+          "value": null,
+          "status": "not scored",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "from": null,
+          "reviewed": false
+        }
+      },
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "audienceNote": null,
+      "disagreements": [],
+      "codes": {
+        "ichi": [],
+        "icd11": [],
+        "verified": false,
+        "note": "No codes: not in the wiki taxonomy."
+      },
+      "glossary": [],
+      "glossaryTerms": [],
+      "editorNotes": null,
+      "plainStatus": "drafted by Claude 2026-10-21, unreviewed",
+      "tested": {
+        "withReaders": false
+      },
+      "changeLog": [],
+      "license": "CC-BY-4.0",
+      "lastChecked": "2026-10-21",
+      "altLabels": [
+        "I will use an alarm clock instead of relying on my phone."
+      ],
+      "broader": [
+        "keep-devices-out-of-the-bedroom"
+      ],
+      "narrower": [],
+      "related": [],
+      "conflictsWith": [],
+      "status": "active",
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "time-displacement",
+          "arousal"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "technology",
+          "bedroom-devices"
+        ]
+      },
+      "conditionCodes": [],
+      "commitments": [
+        "dot-bedroom-devices-2"
+      ]
+    },
+    {
+      "id": "get-help-if-poor-sleep-persists",
+      "kind": "advice",
+      "origin": "do-one-thing",
+      "wikiNumber": null,
+      "categoryPath": [
+        {
+          "id": "4",
+          "name": "Medical and Pharmacological Considerations"
+        },
+        {
+          "id": "4.2",
+          "name": "Sleep Disorders and Medical Interventions"
+        }
+      ],
+      "placement": "proposed (Do One Thing habit, not in the wiki taxonomy)",
+      "sourceWording": "If poor sleep persists for more than a few weeks, talk with a professional — you don’t have to navigate it alone.",
+      "plain": "If poor sleep lasts more than a few weeks, talk with a health professional.",
+      "paragraph": {
+        "text": "Anxiety and depression can complicate sleep, but simple practices and self-compassion change the tone of nights.",
+        "from": "Do One Thing subcategory intro",
+        "status": "HCF campaign text, unedited"
+      },
+      "evidence": {
+        "summary": null,
+        "status": "no evidence summary (campaign copy)",
+        "citations": [],
+        "moreSources": []
+      },
+      "tags": {
+        "reach": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": "Do One Thing item.",
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "ease": {
+          "value": 2,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 2,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "impact": {
+          "value": 5,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 5,
+            "reason": "Opens the door to CBT-I and apnea care.",
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "novelty": {
+          "value": 2,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 2,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "evidenceSupport": {
+          "value": null,
+          "status": "not scored",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "from": null,
+          "reviewed": false
+        }
+      },
+      "audience": [
+        "all-ages-and-cultures",
+        "talk-to-a-clinician"
+      ],
+      "audienceNote": null,
+      "disagreements": [],
+      "codes": {
+        "ichi": [],
+        "icd11": [],
+        "verified": false,
+        "note": "No codes: not in the wiki taxonomy."
+      },
+      "glossary": [],
+      "glossaryTerms": [],
+      "editorNotes": "From the homepage quick tips and the Mental Health Conditions commitments.",
+      "plainStatus": "drafted by Claude 2026-10-21, unreviewed",
+      "tested": {
+        "withReaders": false
+      },
+      "changeLog": [],
+      "license": "CC-BY-4.0",
+      "lastChecked": "2026-10-21",
+      "altLabels": [
+        "If poor sleep persists for more than a few weeks, talk with a professional — you don’t have to navigate it alone.",
+        "When to see a professional"
+      ],
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "cbt-for-insomnia",
+        "check-for-sleep-apnea"
+      ],
+      "conflictsWith": [],
+      "status": "active",
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "monitoring-and-care"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "general",
+          "insomnia",
+          "anxiety"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "stress",
+          "mental-health"
+        ]
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        },
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        }
+      ],
+      "commitments": [
+        "dot-stress-tip-4",
+        "dot-mental-health-2"
+      ]
+    },
+    {
+      "id": "be-kind-to-yourself-after-a-bad-night",
+      "kind": "advice",
+      "origin": "do-one-thing",
+      "wikiNumber": null,
+      "categoryPath": [
+        {
+          "id": "3",
+          "name": "Psychological and Emotional Factors Affecting Sleep"
+        },
+        {
+          "id": "3.1",
+          "name": "Stress and Anxiety Management"
+        }
+      ],
+      "placement": "proposed (Do One Thing habit, not in the wiki taxonomy)",
+      "sourceWording": "I will give myself grace on rough nights. / I will see poor sleep not as failure but as feedback.",
+      "plain": "After a bad night, go easy on yourself; one rough night is feedback, not failure.",
+      "paragraph": {
+        "text": null,
+        "status": "to write"
+      },
+      "evidence": {
+        "summary": null,
+        "status": "no evidence summary (campaign copy)",
+        "citations": [],
+        "moreSources": []
+      },
+      "tags": {
+        "reach": {
+          "value": 2,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 2,
+            "reason": "Do One Thing item.",
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "ease": {
+          "value": 4,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 4,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "impact": {
+          "value": 2,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 2,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "novelty": {
+          "value": 4,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 4,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "evidenceSupport": {
+          "value": null,
+          "status": "not scored",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "from": null,
+          "reviewed": false
+        }
+      },
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "audienceNote": null,
+      "disagreements": [],
+      "codes": {
+        "ichi": [],
+        "icd11": [],
+        "verified": false,
+        "note": "No codes: not in the wiki taxonomy."
+      },
+      "glossary": [],
+      "glossaryTerms": [],
+      "editorNotes": "A mindset item. Worry about sleep itself keeps people awake; that reasoning is not cited here.",
+      "plainStatus": "drafted by Claude 2026-10-21, unreviewed",
+      "tested": {
+        "withReaders": false
+      },
+      "changeLog": [],
+      "license": "CC-BY-4.0",
+      "lastChecked": "2026-10-21",
+      "altLabels": [
+        "I will give myself grace on rough nights. / I will see poor sleep not as failure but as feedback."
+      ],
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "calm-your-mind-before-bed"
+      ],
+      "conflictsWith": [],
+      "status": "active",
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "general",
+          "insomnia",
+          "anxiety"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "stress",
+          "mental-health"
+        ]
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        },
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        }
+      ],
+      "commitments": [
+        "dot-mental-health-3",
+        "dot-mental-health-4"
+      ]
+    },
+    {
+      "id": "cannabis-and-sleep",
+      "kind": "advice",
+      "origin": "do-one-thing",
+      "wikiNumber": null,
+      "categoryPath": [
+        {
+          "id": "2",
+          "name": "Physiological and Biological Factors Affecting Sleep"
+        },
+        {
+          "id": "2.2",
+          "name": "Diet and Nutrition for Sleep"
+        }
+      ],
+      "placement": "proposed (Do One Thing habit, not in the wiki taxonomy)",
+      "sourceWording": "Marijuana Use",
+      "plain": "If you use cannabis, keep it away from bedtime and notice how it affects your sleep.",
+      "paragraph": {
+        "text": "Cannabis affects sleep differently for everyone, but heavy use often suppresses restorative REM cycles. Reflection and moderation bring clarity.",
+        "from": "Do One Thing subcategory intro",
+        "status": "HCF campaign text, unedited"
+      },
+      "evidence": {
+        "summary": null,
+        "status": "no evidence summary (campaign copy)",
+        "citations": [],
+        "moreSources": []
+      },
+      "tags": {
+        "reach": {
+          "value": 2,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 2,
+            "reason": "Do One Thing item.",
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "ease": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "impact": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "novelty": {
+          "value": 3,
+          "status": "proposed by Claude, unreviewed",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "proposal": {
+            "value": 3,
+            "reason": null,
+            "by": "Claude, 2026-10-21"
+          },
+          "from": "proposal",
+          "reviewed": false
+        },
+        "evidenceSupport": {
+          "value": null,
+          "status": "not scored",
+          "wikiScores": {},
+          "spread": null,
+          "rationale": null,
+          "wikiValue": null,
+          "from": null,
+          "reviewed": false
+        }
+      },
+      "audience": [
+        "adults",
+        "talk-to-a-clinician"
+      ],
+      "audienceNote": "Legal status differs by country and state.",
+      "disagreements": [],
+      "codes": {
+        "ichi": [],
+        "icd11": [],
+        "verified": false,
+        "note": "No codes: not in the wiki taxonomy."
+      },
+      "glossary": [],
+      "glossaryTerms": [],
+      "editorNotes": "The REM claim is Do One Thing's and is not cited. Not in the wiki or glossary.",
+      "plainStatus": "drafted by Claude 2026-10-21, unreviewed",
+      "tested": {
+        "withReaders": false
+      },
+      "changeLog": [],
+      "license": "CC-BY-4.0",
+      "lastChecked": "2026-10-21",
+      "altLabels": [
+        "Marijuana Use",
+        "Marijuana and sleep"
+      ],
+      "broader": [],
+      "narrower": [],
+      "related": [
+        "no-alcohol-close-to-bedtime"
+      ],
+      "conflictsWith": [],
+      "status": "active",
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "substances"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": [
+          "substances-and-diet",
+          "cannabis-use"
+        ]
+      },
+      "conditionCodes": [],
+      "commitments": [
+        "dot-substances-and-diet-tip-3",
+        "dot-cannabis-use-1",
+        "dot-cannabis-use-2",
+        "dot-cannabis-use-3",
+        "dot-cannabis-use-4",
+        "dot-cannabis-use-5"
+      ]
     },
     {
       "id": "myth-alcohol-helps-sleep",
@@ -16425,9 +19876,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "myth-weekend-catch-up",
@@ -16548,9 +20001,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "myth-exercise-right-before-bed",
@@ -16680,9 +20135,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "myth-tv-helps-you-sleep",
@@ -16813,9 +20270,11 @@
         "condition": [
           "general"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
-      "conditionCodes": []
+      "conditionCodes": [],
+      "commitments": []
     },
     {
       "id": "myth-snoring-is-harmless",
@@ -16980,7 +20439,8 @@
         "condition": [
           "sleep-apnea"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -16988,7 +20448,8 @@
           "title": "Obstructive sleep apnoea",
           "via": "sleep-apnea"
         }
-      ]
+      ],
+      "commitments": []
     },
     {
       "id": "stimulus-control",
@@ -17138,7 +20599,8 @@
         "condition": [
           "insomnia"
         ],
-        "status": "drafted by Claude 2026-10-21, unreviewed"
+        "status": "drafted by Claude 2026-10-21, unreviewed",
+        "problem": []
       },
       "conditionCodes": [
         {
@@ -17151,7 +20613,8 @@
           "title": "Insomnia disorders, unspecified",
           "via": "insomnia"
         }
-      ]
+      ],
+      "commitments": []
     }
   ]
 }

@@ -706,6 +706,11 @@
       "free": false,
       "how": "OpenAlex: closed",
       "readUrl": null
+    },
+    "do-one-thing": {
+      "url": "https://doonething.sleepliteracy.org/choose-your-one-thing/",
+      "free": true,
+      "how": "web page (not checked for paywall)"
     }
   }
 }

@@ -1,99 +1,372 @@
 {
   "_about": "Concept relations, drafted by Claude on 2026-10-21 and unreviewed. Modelled on SKOS: each item is a concept with one preferred label (its plain line), any number of alternative labels (synonyms, source wordings, other names), broader/narrower links (narrower is computed from broader), related links, and conflictsWith for advice that pulls the opposite way. A merged item keeps its ID and points to the concept that replaced it; its wording becomes an alternative label there.",
   "groups": [
-    {"id": "stimulus-control", "placeIn": "3.2", "plain": "Teach your body that bed means sleep.",
-     "altLabels": ["Stimulus control", "Stimulus control therapy", "Reconditioning therapy"],
-     "broader": ["cbt-for-insomnia"],
-     "notes": "Grouping concept added so the two wiki items and the two NHLBI glossary entries for the same technique sit under one name. 'Stimulus control' is the clinical name; NHLBI says 'reconditioning'."}
+    {
+      "id": "stimulus-control",
+      "placeIn": "3.2",
+      "plain": "Teach your body that bed means sleep.",
+      "altLabels": [
+        "Stimulus control",
+        "Stimulus control therapy",
+        "Reconditioning therapy"
+      ],
+      "broader": [
+        "cbt-for-insomnia"
+      ],
+      "notes": "Grouping concept added so the two wiki items and the two NHLBI glossary entries for the same technique sit under one name. 'Stimulus control' is the clinical name; NHLBI says 'reconditioning'."
+    }
   ],
   "merges": {
-    "naps-and-night-sleep": {"into": "keep-naps-short-and-early", "why": "Wiki 3.2.1 is the claim behind 1.1.4, and its own tip is the same advice."},
-    "dim-the-lights-after-dark": {"into": "less-bright-light-in-the-evening", "why": "Huberman's 'Dim the Lights at Night' and wiki 2.1.2 give the same advice; his time window is kept as a disagreement detail."}
+    "naps-and-night-sleep": {
+      "into": "keep-naps-short-and-early",
+      "why": "Wiki 3.2.1 is the claim behind 1.1.4, and its own tip is the same advice."
+    },
+    "dim-the-lights-after-dark": {
+      "into": "less-bright-light-in-the-evening",
+      "why": "Huberman's 'Dim the Lights at Night' and wiki 2.1.2 give the same advice; his time window is kept as a disagreement detail."
+    }
   },
   "altLabels": {
-    "keep-a-regular-sleep-schedule": ["Consistent sleep schedule", "Sleep regularity"],
-    "dont-sleep-in-much-on-weekends": ["Social jet lag"],
-    "get-enough-sleep-for-you": ["8-hour rule", "Sleep duration"],
-    "fit-bedtime-to-your-body-clock": ["Chronotype"],
-    "get-morning-daylight": ["Morning sunlight", "Morning light exposure"],
-    "screens-before-bed": ["Screen curfew", "No screens before bed"],
-    "power-down-hour": ["Wind-down hour"],
-    "light-therapy-for-a-late-body-clock": ["Bright light therapy", "Light box"],
-    "mouth-taping": ["Mouth tape"],
-    "progressive-muscle-relaxation": ["PMR"],
-    "alternate-nostril-breathing": ["Nadi shodhana"],
-    "rest-even-if-awake": ["Non-sleep deep rest", "NSDR"],
-    "cbt-for-insomnia": ["CBT-I"],
-    "write-down-worries": ["Worry journal", "Scheduled worry time"],
-    "body-temperature-low-point": ["Temperature minimum", "Core body temperature minimum"],
-    "keep-a-sleep-diary": ["Sleep log"]
+    "keep-a-regular-sleep-schedule": [
+      "Consistent sleep schedule",
+      "Sleep regularity"
+    ],
+    "dont-sleep-in-much-on-weekends": [
+      "Social jet lag"
+    ],
+    "get-enough-sleep-for-you": [
+      "8-hour rule",
+      "Sleep duration"
+    ],
+    "fit-bedtime-to-your-body-clock": [
+      "Chronotype"
+    ],
+    "get-morning-daylight": [
+      "Morning sunlight",
+      "Morning light exposure"
+    ],
+    "screens-before-bed": [
+      "Screen curfew",
+      "No screens before bed"
+    ],
+    "power-down-hour": [
+      "Wind-down hour"
+    ],
+    "light-therapy-for-a-late-body-clock": [
+      "Bright light therapy",
+      "Light box"
+    ],
+    "mouth-taping": [
+      "Mouth tape"
+    ],
+    "progressive-muscle-relaxation": [
+      "PMR"
+    ],
+    "alternate-nostril-breathing": [
+      "Nadi shodhana"
+    ],
+    "rest-even-if-awake": [
+      "Non-sleep deep rest",
+      "NSDR"
+    ],
+    "cbt-for-insomnia": [
+      "CBT-I"
+    ],
+    "write-down-worries": [
+      "Worry journal",
+      "Scheduled worry time"
+    ],
+    "body-temperature-low-point": [
+      "Temperature minimum",
+      "Core body temperature minimum"
+    ],
+    "keep-a-sleep-diary": [
+      "Sleep log"
+    ],
+    "cannabis-and-sleep": [
+      "Marijuana and sleep"
+    ],
+    "finish-work-earlier": [
+      "Work cutoff"
+    ],
+    "get-help-if-poor-sleep-persists": [
+      "When to see a professional"
+    ]
   },
   "broader": {
-    "get-up-at-the-same-time": ["keep-a-regular-sleep-schedule"],
-    "dont-sleep-in-much-on-weekends": ["keep-a-regular-sleep-schedule"],
-    "jet-lag": ["change-sleep-times-gradually"],
-    "block-outside-light": ["keep-the-bedroom-cool-and-dark"],
-    "frozen-water-bottle": ["keep-the-bedroom-cool-and-dark"],
-    "mask-noise-with-steady-sound": ["keep-the-bedroom-quiet"],
-    "try-pink-noise": ["mask-noise-with-steady-sound"],
-    "power-down-hour": ["have-a-wind-down-routine"],
-    "warm-bath-or-shower-before-bed": ["have-a-wind-down-routine"],
-    "avoid-heavy-talks-at-bedtime": ["skip-exciting-things-before-bed"],
-    "no-hard-workouts-right-before-bed": ["skip-exciting-things-before-bed"],
-    "try-a-guided-meditation": ["relaxation-techniques"],
-    "dim-lights-gradually": ["less-bright-light-in-the-evening"],
-    "blue-blocking-glasses": ["less-bright-light-in-the-evening"],
-    "use-dim-red-light-at-night": ["less-bright-light-in-the-evening"],
-    "caffeine-cutoff": ["caffeine-and-big-meals-early"],
-    "3-2-1-rule": ["caffeine-and-big-meals-early"],
-    "4-7-8-breathing": ["relaxation-techniques"],
-    "box-breathing": ["relaxation-techniques"],
-    "cyclic-sighing": ["relaxation-techniques"],
-    "belly-breathing": ["relaxation-techniques"],
-    "nose-breathing-exercises": ["relaxation-techniques"],
-    "alternate-nostril-breathing": ["nose-breathing-exercises"],
-    "progressive-muscle-relaxation": ["relaxation-techniques"],
-    "relaxation-techniques": ["calm-your-mind-before-bed"],
-    "write-down-worries": ["calm-your-mind-before-bed"],
-    "gratitude-list": ["calm-your-mind-before-bed"],
-    "cognitive-shuffling": ["calm-your-mind-before-bed"],
-    "bed-is-for-sleep": ["stimulus-control"],
-    "get-up-if-you-cant-sleep": ["stimulus-control"],
-    "sleep-restriction-therapy": ["cbt-for-insomnia"]
+    "get-up-at-the-same-time": [
+      "keep-a-regular-sleep-schedule"
+    ],
+    "dont-sleep-in-much-on-weekends": [
+      "keep-a-regular-sleep-schedule"
+    ],
+    "jet-lag": [
+      "change-sleep-times-gradually"
+    ],
+    "block-outside-light": [
+      "keep-the-bedroom-cool-and-dark"
+    ],
+    "frozen-water-bottle": [
+      "keep-the-bedroom-cool-and-dark"
+    ],
+    "mask-noise-with-steady-sound": [
+      "keep-the-bedroom-quiet"
+    ],
+    "try-pink-noise": [
+      "mask-noise-with-steady-sound"
+    ],
+    "power-down-hour": [
+      "have-a-wind-down-routine"
+    ],
+    "warm-bath-or-shower-before-bed": [
+      "have-a-wind-down-routine"
+    ],
+    "avoid-heavy-talks-at-bedtime": [
+      "skip-exciting-things-before-bed"
+    ],
+    "no-hard-workouts-right-before-bed": [
+      "skip-exciting-things-before-bed"
+    ],
+    "try-a-guided-meditation": [
+      "relaxation-techniques"
+    ],
+    "dim-lights-gradually": [
+      "less-bright-light-in-the-evening"
+    ],
+    "blue-blocking-glasses": [
+      "less-bright-light-in-the-evening"
+    ],
+    "use-dim-red-light-at-night": [
+      "less-bright-light-in-the-evening"
+    ],
+    "caffeine-cutoff": [
+      "caffeine-and-big-meals-early"
+    ],
+    "3-2-1-rule": [
+      "caffeine-and-big-meals-early"
+    ],
+    "4-7-8-breathing": [
+      "relaxation-techniques"
+    ],
+    "box-breathing": [
+      "relaxation-techniques"
+    ],
+    "cyclic-sighing": [
+      "relaxation-techniques"
+    ],
+    "belly-breathing": [
+      "relaxation-techniques"
+    ],
+    "nose-breathing-exercises": [
+      "relaxation-techniques"
+    ],
+    "alternate-nostril-breathing": [
+      "nose-breathing-exercises"
+    ],
+    "progressive-muscle-relaxation": [
+      "relaxation-techniques"
+    ],
+    "relaxation-techniques": [
+      "calm-your-mind-before-bed"
+    ],
+    "write-down-worries": [
+      "calm-your-mind-before-bed"
+    ],
+    "gratitude-list": [
+      "calm-your-mind-before-bed"
+    ],
+    "cognitive-shuffling": [
+      "calm-your-mind-before-bed"
+    ],
+    "bed-is-for-sleep": [
+      "stimulus-control"
+    ],
+    "get-up-if-you-cant-sleep": [
+      "stimulus-control"
+    ],
+    "sleep-restriction-therapy": [
+      "cbt-for-insomnia"
+    ],
+    "use-an-alarm-clock": [
+      "keep-devices-out-of-the-bedroom"
+    ],
+    "move-in-the-morning": [
+      "exercise-regularly"
+    ]
   },
   "related": [
-    ["keep-devices-out-of-the-bedroom", "screens-before-bed"],
-    ["fit-bedtime-to-your-body-clock", "keep-a-regular-sleep-schedule"],
-    ["no-hard-workouts-right-before-bed", "exercise-regularly"],
-    ["delay-first-coffee", "caffeine-cutoff"],
-    ["small-snack-before-bed", "caffeine-and-big-meals-early"],
-    ["3-2-1-rule", "no-alcohol-close-to-bedtime"],
-    ["3-2-1-rule", "drink-more-earlier-in-the-day"],
-    ["binaural-beats", "mask-noise-with-steady-sound"],
-    ["nature-sounds-or-asmr", "mask-noise-with-steady-sound"],
-    ["keep-a-sleep-diary", "cbt-for-insomnia"],
-    ["keep-a-sleep-diary", "sleep-restriction-therapy"],
-    ["light-therapy-for-a-late-body-clock", "get-morning-daylight"],
-    ["late-afternoon-daylight", "get-morning-daylight"],
-    ["melatonin-for-jet-lag-or-shifts", "jet-lag"],
-    ["melatonin-for-jet-lag-or-shifts", "adjust-to-night-shift-work"],
-    ["body-temperature-low-point", "jet-lag"],
-    ["raise-the-head-of-the-bed", "left-side-for-reflux"],
-    ["raise-the-head-of-the-bed", "check-for-sleep-apnea"],
-    ["check-for-sleep-apnea", "mouth-taping"],
-    ["dont-check-the-clock", "get-up-if-you-cant-sleep"],
-    ["wear-socks-to-bed", "keep-the-bedroom-cool-and-dark"],
-    ["myth-alcohol-helps-sleep", "no-alcohol-close-to-bedtime"],
-    ["myth-weekend-catch-up", "dont-sleep-in-much-on-weekends"],
-    ["myth-exercise-right-before-bed", "no-hard-workouts-right-before-bed"],
-    ["myth-tv-helps-you-sleep", "screens-before-bed"],
-    ["myth-snoring-is-harmless", "check-for-sleep-apnea"]
+    [
+      "keep-devices-out-of-the-bedroom",
+      "screens-before-bed"
+    ],
+    [
+      "fit-bedtime-to-your-body-clock",
+      "keep-a-regular-sleep-schedule"
+    ],
+    [
+      "no-hard-workouts-right-before-bed",
+      "exercise-regularly"
+    ],
+    [
+      "delay-first-coffee",
+      "caffeine-cutoff"
+    ],
+    [
+      "small-snack-before-bed",
+      "caffeine-and-big-meals-early"
+    ],
+    [
+      "3-2-1-rule",
+      "no-alcohol-close-to-bedtime"
+    ],
+    [
+      "3-2-1-rule",
+      "drink-more-earlier-in-the-day"
+    ],
+    [
+      "binaural-beats",
+      "mask-noise-with-steady-sound"
+    ],
+    [
+      "nature-sounds-or-asmr",
+      "mask-noise-with-steady-sound"
+    ],
+    [
+      "keep-a-sleep-diary",
+      "cbt-for-insomnia"
+    ],
+    [
+      "keep-a-sleep-diary",
+      "sleep-restriction-therapy"
+    ],
+    [
+      "light-therapy-for-a-late-body-clock",
+      "get-morning-daylight"
+    ],
+    [
+      "late-afternoon-daylight",
+      "get-morning-daylight"
+    ],
+    [
+      "melatonin-for-jet-lag-or-shifts",
+      "jet-lag"
+    ],
+    [
+      "melatonin-for-jet-lag-or-shifts",
+      "adjust-to-night-shift-work"
+    ],
+    [
+      "body-temperature-low-point",
+      "jet-lag"
+    ],
+    [
+      "raise-the-head-of-the-bed",
+      "left-side-for-reflux"
+    ],
+    [
+      "raise-the-head-of-the-bed",
+      "check-for-sleep-apnea"
+    ],
+    [
+      "check-for-sleep-apnea",
+      "mouth-taping"
+    ],
+    [
+      "dont-check-the-clock",
+      "get-up-if-you-cant-sleep"
+    ],
+    [
+      "wear-socks-to-bed",
+      "keep-the-bedroom-cool-and-dark"
+    ],
+    [
+      "myth-alcohol-helps-sleep",
+      "no-alcohol-close-to-bedtime"
+    ],
+    [
+      "myth-weekend-catch-up",
+      "dont-sleep-in-much-on-weekends"
+    ],
+    [
+      "myth-exercise-right-before-bed",
+      "no-hard-workouts-right-before-bed"
+    ],
+    [
+      "myth-tv-helps-you-sleep",
+      "screens-before-bed"
+    ],
+    [
+      "myth-snoring-is-harmless",
+      "check-for-sleep-apnea"
+    ],
+    [
+      "finish-work-earlier",
+      "write-down-worries"
+    ],
+    [
+      "finish-work-earlier",
+      "skip-exciting-things-before-bed"
+    ],
+    [
+      "plan-social-time-earlier",
+      "keep-a-regular-sleep-schedule"
+    ],
+    [
+      "move-in-the-morning",
+      "get-morning-daylight"
+    ],
+    [
+      "get-help-if-poor-sleep-persists",
+      "cbt-for-insomnia"
+    ],
+    [
+      "get-help-if-poor-sleep-persists",
+      "check-for-sleep-apnea"
+    ],
+    [
+      "be-kind-to-yourself-after-a-bad-night",
+      "calm-your-mind-before-bed"
+    ],
+    [
+      "cannabis-and-sleep",
+      "no-alcohol-close-to-bedtime"
+    ]
   ],
   "conflictsWith": [
-    {"between": ["get-up-if-you-cant-sleep", "stay-in-bed-and-breathe"], "why": "NHLBI: get up after about 20 minutes awake. Breus: stay in bed and breathe."},
-    {"between": ["get-up-if-you-cant-sleep", "rest-even-if-awake"], "why": "Resting awake in bed vs getting up when you can't sleep."},
-    {"between": ["gratitude-list", "write-down-worries"], "why": "The wiki says gratitude 'instead of a to-do list'; the worry journal is a list of worries and next steps."},
-    {"between": ["herbal-tea-before-bed", "3-2-1-rule"], "why": "Tea 30-45 minutes before bed vs no fluids in the last hour."},
-    {"between": ["small-snack-before-bed", "3-2-1-rule"], "why": "A snack 30 minutes before bed vs no food in the last 2 hours."}
+    {
+      "between": [
+        "get-up-if-you-cant-sleep",
+        "stay-in-bed-and-breathe"
+      ],
+      "why": "NHLBI: get up after about 20 minutes awake. Breus: stay in bed and breathe."
+    },
+    {
+      "between": [
+        "get-up-if-you-cant-sleep",
+        "rest-even-if-awake"
+      ],
+      "why": "Resting awake in bed vs getting up when you can't sleep."
+    },
+    {
+      "between": [
+        "gratitude-list",
+        "write-down-worries"
+      ],
+      "why": "The wiki says gratitude 'instead of a to-do list'; the worry journal is a list of worries and next steps."
+    },
+    {
+      "between": [
+        "herbal-tea-before-bed",
+        "3-2-1-rule"
+      ],
+      "why": "Tea 30-45 minutes before bed vs no fluids in the last hour."
+    },
+    {
+      "between": [
+        "small-snack-before-bed",
+        "3-2-1-rule"
+      ],
+      "why": "A snack 30 minutes before bed vs no food in the last 2 hours."
+    }
   ]
 }

@@ -60,7 +60,7 @@ until its status says so.
 | `broader` / `narrower` | list of ids | Hierarchy within the advice. `narrower` is computed. Items with no `broader` hang directly under their subcategory. |
 | `related` | list of ids | Associated advice, both directions. |
 | `conflictsWith` | list | `{id, why}`: advice that pulls the opposite way. Both directions. |
-| `origin` | `sam-wiki` \| `health-glossary` | Which input the item first came from. |
+| `origin` | `sam-wiki` \| `health-glossary` \| `do-one-thing` \| `editorial` | Which input the item first came from. |
 | `wikiNumber` | string \| null | The wiki's number (`1.3.1`, `M4`). Kept for traceability, not as an ID: numbers change when the taxonomy is rearranged. |
 | `categoryPath` | list | Category, then subcategory, from the wiki taxonomy. |
 | `placement` | string | `wiki taxonomy`; or listed in the wiki's "New Sleep Advices" (numbered but not yet placed); or `proposed` for glossary-only items placed by Claude. |
@@ -72,7 +72,8 @@ until its status says so.
 | `audience` | list | Audience tags. `all-ages-and-cultures` is the default; others narrow it. |
 | `audienceNote` | string \| null | Who it may not fit, and why. |
 | `disagreements` | list | Where sources disagree. See below. |
-| `facets` | object | `mechanism`, `timeOfDay`, `condition` (lists of facet values) and `status`. See below. |
+| `facets` | object | `mechanism`, `timeOfDay`, `condition`, `problem` (lists of facet values) and `status`. See below. |
+| `commitments` | list of ids | Do One Thing commitments and tips that apply this concept (see top-level `commitments`). |
 | `conditionCodes` | list | ICD-11 codes reached through `facets.condition`, per item: `{code, title, via}`. More precise than `codes`, which the wiki set per subcategory. |
 | `codes` | object | `ichi`, `icd11` (each `{code, title, wikiTitle, exists, titleOutdatedInWiki}`), `verified`, `checkedOn`, `note`. |
 | `glossary` | list | Matching health-glossary sleep **advice** entries: `glossaryId`, `term`, `relation`, `status`, `url` (null if the entry has no term page yet). |
@@ -188,9 +189,34 @@ Assignments were drafted by Claude on 2026-10-21 and are unreviewed.
 | `timeOfDay`: when you do it | on-waking, daytime, afternoon, evening, bedtime, during-the-night, any-time, ahead-of-time |
 | `condition`: who it is especially relevant for | general, insomnia (7A00, 7A0Z), sleep-apnea (7A41), reflux (DA22), late-body-clock (7A60), jet-lag (7A65), shift-work (7A64), anxiety (6B00) |
 
+| `problem`: the "sleep thief" it tackles, from HCF's Do One Thing campaign | 4 categories (irregular-schedules, technology, stress, substances-and-diet), each with subcategories (weekend-gap, deadlines, evening-phone, caffeine-timing, …). **Derived** by the build from the commitments that apply the concept; not assigned by hand. |
+
 All condition codes were looked up in the ICD-11 browser (`sources/code-check.json`).
 In SKOS, each facet is its own concept scheme and items link to values with
 `hsa:mechanism`, `hsa:timeOfDay` and `hsa:condition`.
+
+### Top-level `commitments`
+
+HCF's [Do One Thing](https://doonething.sleepliteracy.org/choose-your-one-thing/)
+"Habits by Category" page and homepage quick tips, snapshotted on 2026-10-21 in
+`sources/do-one-thing/habits.json` (CC BY 4.0, HCF's own content). Each line
+links to the advice concepts it applies (`editorial/do-one-thing-map.json`).
+Also exported as `data/commitments.csv`.
+
+| Field | Meaning |
+|---|---|
+| `id` | `dot-{subcategory}-{n}` for commitments, `dot-{category}-tip-{n}` for homepage tips. |
+| `type` | `commitment` ("I will…") or `tip`. |
+| `text` | HCF's wording, unchanged. |
+| `problem` | Do One Thing category and subcategory ids. |
+| `kindOfLine` | `action` (a concrete change), `mindset` (an attitude that supports it), or `duplicate` (a site error). |
+| `appliesTo` | Concept ids. Empty for duplicates. |
+| `numbersToCheck` | Times and amounts in the line (e.g. "before 2 p.m."), to check against the evidence and other sources. |
+| `duplicateOf` | For duplicates: the line it repeats. |
+
+Concepts that exist only because of Do One Thing (e.g. cannabis and sleep,
+finishing work earlier, planning social time earlier) have `origin:
+"do-one-thing"`.
 
 ### `glossary.relation`
 

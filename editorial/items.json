@@ -183,6 +183,10 @@
             {
               "source": "nhlbi-guide",
               "says": "Sleeping later on weekends won't make up for lost sleep (p. 28); gives no limit."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Keep bedtime and wake time within the same hour every day, even on weekends."
             }
           ]
         }
@@ -378,6 +382,10 @@
             {
               "source": "hartstein-2024",
               "says": "Consensus on content harming children's and teens' sleep; no consensus on light."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Blue light delays melatonin, and stimulation from scrolling, shows or games keeps the brain alert. Tech curfew at least one hour before bed."
             }
           ]
         }
@@ -561,6 +569,10 @@
             {
               "source": "wiki",
               "says": "10-30 minutes, within an hour of waking."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Within 30 minutes of waking; no duration given."
             }
           ]
         }
@@ -670,6 +682,10 @@
             {
               "source": "huberman-sleep-toolkit",
               "says": "No more than about 100 mg after 4 p.m."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Coffee only before 2 p.m.; homepage: 'by early afternoon'; caffeine lasts 6–8 hours."
             }
           ]
         },
@@ -687,6 +703,10 @@
             {
               "source": "nhlbi-guide",
               "says": "Avoid large meals late at night; a light snack is fine (p. 29)."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Finish dinner 2–3 hours before bed; lighter snacks if hungry."
             }
           ]
         }
@@ -722,6 +742,10 @@
             {
               "source": "wiki",
               "says": "Item 2.5.3 suggests chamomile tea 30-45 minutes before bed."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Taper fluids after 8 pm; a small calming drink before bed is fine."
             }
           ]
         }
@@ -1502,6 +1526,93 @@
         "all-ages-and-cultures"
       ],
       "notes": "Overlaps 2.1.2 and 2.1.4. Huberman's 10 p.m.-4 a.m. window is his rule of thumb."
+    },
+    {
+      "from": "do-one-thing",
+      "id": "finish-work-earlier",
+      "placeIn": "3.1",
+      "sourceWording": "Work & School Deadlines / Work/School Responsibilities",
+      "plain": "Stop work or schoolwork at least an hour before bed.",
+      "audience": [
+        "all-ages-and-cultures",
+        "students"
+      ],
+      "paragraph": "Deadlines push us to sacrifice rest, but the late-night work rarely pays off the next day. Finishing earlier allows the brain to settle and restores clarity for tomorrow.",
+      "notes": "Not in the wiki or glossary. Do One Thing commitments give 9 pm and one hour as examples."
+    },
+    {
+      "from": "do-one-thing",
+      "id": "plan-social-time-earlier",
+      "placeIn": "1.1",
+      "sourceWording": "Social Commitments",
+      "plain": "Plan get-togethers earlier in the day so late nights are the exception.",
+      "audience": [
+        "all-ages-and-cultures",
+        "students"
+      ],
+      "paragraph": "Connection is vital, but it doesn’t need to cost tomorrow’s energy. By shifting when and how we socialize, we keep both joy and rest intact."
+    },
+    {
+      "from": "do-one-thing",
+      "id": "move-in-the-morning",
+      "placeIn": "2.3",
+      "sourceWording": "I will stretch or move my body every morning to signal the day has begun.",
+      "plain": "Stretch or move your body soon after you wake up.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "paragraph": null,
+      "notes": "Body-clock reasoning ('signal the day has begun') is not cited."
+    },
+    {
+      "from": "do-one-thing",
+      "id": "use-an-alarm-clock",
+      "placeIn": "1.2",
+      "sourceWording": "I will use an alarm clock instead of relying on my phone.",
+      "plain": "Use an alarm clock instead of your phone, so the phone can stay out of the bedroom.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "paragraph": null
+    },
+    {
+      "from": "do-one-thing",
+      "id": "get-help-if-poor-sleep-persists",
+      "placeIn": "4.2",
+      "sourceWording": "If poor sleep persists for more than a few weeks, talk with a professional — you don’t have to navigate it alone.",
+      "plain": "If poor sleep lasts more than a few weeks, talk with a health professional.",
+      "audience": [
+        "all-ages-and-cultures",
+        "talk-to-a-clinician"
+      ],
+      "paragraph": "Anxiety and depression can complicate sleep, but simple practices and self-compassion change the tone of nights.",
+      "notes": "From the homepage quick tips and the Mental Health Conditions commitments."
+    },
+    {
+      "from": "do-one-thing",
+      "id": "be-kind-to-yourself-after-a-bad-night",
+      "placeIn": "3.1",
+      "sourceWording": "I will give myself grace on rough nights. / I will see poor sleep not as failure but as feedback.",
+      "plain": "After a bad night, go easy on yourself; one rough night is feedback, not failure.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "paragraph": null,
+      "notes": "A mindset item. Worry about sleep itself keeps people awake; that reasoning is not cited here."
+    },
+    {
+      "from": "do-one-thing",
+      "id": "cannabis-and-sleep",
+      "placeIn": "2.2",
+      "sourceWording": "Marijuana Use",
+      "plain": "If you use cannabis, keep it away from bedtime and notice how it affects your sleep.",
+      "audience": [
+        "adults",
+        "talk-to-a-clinician"
+      ],
+      "audienceNote": "Legal status differs by country and state.",
+      "paragraph": "Cannabis affects sleep differently for everyone, but heavy use often suppresses restorative REM cycles. Reflection and moderation bring clarity.",
+      "notes": "The REM claim is Do One Thing's and is not cited. Not in the wiki or glossary."
     }
   ],
   "myths": {
