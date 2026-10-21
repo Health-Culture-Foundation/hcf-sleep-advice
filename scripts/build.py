@@ -38,6 +38,44 @@ def load(path: str):
     return json.loads((ROOT / path).read_text(encoding="utf-8"))
 
 
+LIT_DIR = "research/lit-search-2026-10"
+LIT_HIGH = {"guideline", "consensus", "systematic review", "meta-analysis"}
+
+
+def load_literature() -> list[dict]:
+    """Findings from the 2026-10 literature search (one file per area; see FORMAT.md there)."""
+    out = []
+    for path in sorted((ROOT / LIT_DIR).glob("*.json")):
+        for f in json.loads(path.read_text(encoding="utf-8")):
+            f = dict(f)
+            f["area"] = path.stem
+            f["searchedBy"] = "Claude literature-search agent, 2026-10-21 (citations re-verified against PubMed)"
+            out.append(f)
+    return out
+
+
+def advice_support(f: dict) -> int:
+    """Agents scored how strong each finding is. A strong finding *against* the advice
+    (or showing harm or no effect) is weak support for it: 6 - score, capped at 3."""
+    v = f["suggestedEvidenceSupport"]
+    if f.get("direction") in ("against", "harm", "no effect"):
+        return min(6 - v, 3)
+    return v
+
+
+def literature_evidence(findings: list[dict]) -> tuple[int, str] | None:
+    """Median support for the advice, from guideline/review-level findings when there are any."""
+    scored = [f for f in findings if isinstance(f.get("suggestedEvidenceSupport"), (int, float))]
+    if not scored:
+        return None
+    high = [f for f in scored if f.get("studyType") in LIT_HIGH]
+    use = high or scored
+    vals = sorted(advice_support(f) for f in use)
+    mid = vals[len(vals) // 2] if len(vals) % 2 else round((vals[len(vals) // 2 - 1] + vals[len(vals) // 2]) / 2 + 0.01)
+    kind = "guideline/consensus/review-level" if high else "lower-level"
+    return int(mid), f"Literature search 2026-10: median of {len(use)} {kind} finding(s) (of {len(findings)} total)."
+
+
 def tags_for(item: dict) -> dict:
     page = item.get("page", {})
     page_scores = dict(page.get("scores", {}))
@@ -112,6 +150,7 @@ def main() -> None:
     ed = load("editorial/items.json")
     sources = load("editorial/sources.json")["sources"]
 
+    literature = load_literature()
     cats = {c["id"]: c for c in wiki["categories"]}
     subs = {s["id"]: (c, s) for c in wiki["categories"] for s in c["subcategories"]}
     witems = {i["id"]: i for i in wiki["items"]}
@@ -179,6 +218,30 @@ def main() -> None:
                 "evidence": {"summary": None, "status": "no evidence summary; see glossary review note", "reviewNote": e["reviewNote"], "citations": []},
                 "tags": {k: {"value": None, "status": "not scored"} for k in SCALES},
             }
+        elif row.get("from") == "literature":
+            if row["placeIn"] == "myths":
+                path = [{"id": "myths", "name": "Busting sleep myths"}]
+            else:
+                cat, sub = subs[row["placeIn"]]
+                path = [{"id": cat["id"], "name": cat["name"]}, {"id": sub["id"], "name": sub["name"]}]
+            rec = {
+                "id": aid,
+                "kind": row.get("kind", "advice"),
+                "origin": "literature",
+                "wikiNumber": None,
+                "categoryPath": path,
+                "placement": "proposed (from the 2026-10 literature search)",
+                "sourceWording": row["plain"],
+                "plain": row["plain"],
+                "paragraph": {"text": None, "status": "to write"},
+                "evidence": {"summary": None, "status": "see literature", "citations": []},
+                "tags": {k: {"value": None, "status": "not scored"} for k in SCALES},
+            }
+            matched = [f for f in literature if f["conceptId"] == "NEW" and row["literatureMatch"].lower() in (f.get("newAdvice") or "").lower()]
+            if not matched:
+                errors.append(f"{aid}: literatureMatch matched no NEW finding")
+            for f in matched:
+                f["conceptId"] = aid
         elif row.get("from") == "do-one-thing":
             cat, sub = subs[row["placeIn"]]
             rec = {
@@ -233,6 +296,8 @@ def main() -> None:
                 "tags": tags_for(w),
             }
         rec["evidence"]["moreSources"] = [editorial_source(k, sources, access) for k in row.get("extraSources", [])]
+        if row.get("plainBefore"):
+            rec["plainBefore"] = row["plainBefore"]
         rec["audience"] = row.get("audience") or ["all-ages-and-cultures"]
         rec["audienceNote"] = row.get("audienceNote")
         rec["disagreements"] = row.get("disagreements", [])
@@ -301,6 +366,14 @@ def main() -> None:
         )
 
     records = apply_concepts(records, load("editorial/relations.json"), subs, errors)
+    by_rec = {r["id"]: r for r in records}
+    for f in literature:
+        if f["conceptId"] == "NEW":
+            errors.append(f"literature NEW finding not mapped to a concept: {f.get('newAdvice')}")
+        elif f["conceptId"] not in by_rec:
+            errors.append(f"literature finding for unknown concept {f['conceptId']}")
+    for r in records:
+        r["evidence"]["literature"] = [f for f in literature if f["conceptId"] == r["id"]]
     apply_scores(records, load("editorial/scores.json"), errors)
     code_check = load("sources/code-check.json")
     apply_code_check(records, code_check)
@@ -365,7 +438,7 @@ def main() -> None:
         "altLabels", "broader", "narrower", "related", "conflictsWith", "mechanism", "timeOfDay", "condition", "problem",
         "commitmentCount",
         "conditionIcd11", "sourceWording",
-        "paragraph", "evidenceStatus", "citationCount", "freeCitationCount",
+        "paragraph", "evidenceStatus", "citationCount", "freeCitationCount", "literatureCount", "literatureFreeCount",
         *[f"{s}" for s in SCALES], *[f"{s}Spread" for s in SCALES],
         "audience", "audienceNote", "disagreementCount", "disagreements", "glossaryIds", "ichi", "icd11", "codesVerified",
         "editorNotes", "license", "lastChecked",
@@ -403,6 +476,8 @@ def main() -> None:
                     "evidenceStatus": r["evidence"]["status"],
                     "citationCount": len(cites),
                     "freeCitationCount": sum(1 for c in cites if c.get("freeToRead")),
+                    "literatureCount": len(r["evidence"].get("literature", [])),
+                    "literatureFreeCount": sum(1 for f in r["evidence"].get("literature", []) if f.get("freeToRead")),
                     **{s: r["tags"][s]["value"] if r["tags"][s]["value"] is not None else "" for s in SCALES},
                     **{f"{s}Spread": r["tags"][s].get("spread") if r["tags"][s].get("spread") is not None else "" for s in SCALES},
                     "audience": "; ".join(r["audience"]),
@@ -681,7 +756,12 @@ def apply_scores(records: list[dict], scores: dict, errors: list) -> None:
         if r["kind"] in ("myth",) or r["status"] == "merged":
             continue
         props = scores["proposals"].get(r["id"], {})
-        cited = bool(r["evidence"]["citations"] or r["evidence"]["moreSources"])
+        cited = bool(r["evidence"]["citations"] or r["evidence"]["moreSources"] or r["evidence"].get("literature"))
+        lit = literature_evidence(r["evidence"].get("literature", []))
+        if lit and r.get("plainBefore"):
+            props = {**props, "evidenceSupport": [None, "Re-score: the plain line was rewritten to match the literature, which was scored against the old wording."]}
+        elif lit:
+            props = {**props, "evidenceSupport": [lit[0], lit[1]]}
         for scale in SCALES:
             t = r["tags"][scale]
             t.setdefault("wikiScores", {})
@@ -803,7 +883,10 @@ def write_taxonomy_md(out: dict) -> None:
     def flags(r: dict) -> str:
         f = []
         n = len(r["evidence"]["citations"]) + len(r["evidence"]["moreSources"])
+        lit = len(r["evidence"].get("literature", []))
         f.append(f"{n} cited" if n else "no citations")
+        if lit:
+            f.append(f"📚 {lit} from literature search")
         if r["disagreements"]:
             f.append(f"⚖️ {len(r['disagreements'])} source disagreement{'s' if len(r['disagreements']) > 1 else ''}")
         for c in r["conflictsWith"]:
@@ -819,6 +902,8 @@ def write_taxonomy_md(out: dict) -> None:
             num = "▸ "
         elif r["origin"] == "do-one-thing":
             num = "◆ "
+        elif r["origin"] == "literature":
+            num = "📚 "
         elif r["origin"] == "sam-wiki":
             num = f"{r['wikiNumber']} "
         else:
@@ -879,7 +964,7 @@ def write_taxonomy_md(out: dict) -> None:
         "SKOS: [data/sleep-advice.skos.ttl](data/sleep-advice.skos.ttl).",
         "",
         "**How to read it.** Bold = preferred label (plain one-liner, unreviewed). Number = SAM wiki item; "
-        "＋ = from the health-glossary sleep entries; ◆ = from Do One Thing; ▸ = grouping concept. Indented items are narrower "
+        "＋ = from the health-glossary sleep entries; ◆ = from Do One Thing; 📚 = new from the literature search; ▸ = grouping concept. Indented items are narrower "
         "versions of the item above them. \"also\" = alternative labels (synonyms, source wording, other names). "
         "Tags 1–5: **R** reach, **Ea** ease, **I** impact, **N** novelty, **Ev** evidence support; "
         f"– = not scored; * = Claude's proposal ({proposals} values), otherwise the wiki's score. All scores need review.",

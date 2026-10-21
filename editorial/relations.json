@@ -91,6 +91,17 @@
     ],
     "get-help-if-poor-sleep-persists": [
       "When to see a professional"
+    ],
+    "stop-trying-to-sleep": [
+      "Paradoxical intention",
+      "Sleep effort"
+    ],
+    "dont-split-sleep-into-blocks": [
+      "Polyphasic sleep"
+    ],
+    "infant-safe-sleep": [
+      "Safe sleep for babies",
+      "SIDS prevention"
     ]
   },
   "broader": {
@@ -192,6 +203,9 @@
     ],
     "move-in-the-morning": [
       "exercise-regularly"
+    ],
+    "stop-trying-to-sleep": [
+      "cbt-for-insomnia"
     ]
   },
   "related": [
@@ -330,6 +344,66 @@
     [
       "cannabis-and-sleep",
       "no-alcohol-close-to-bedtime"
+    ],
+    [
+      "tips-alone-dont-fix-insomnia",
+      "cbt-for-insomnia"
+    ],
+    [
+      "tips-alone-dont-fix-insomnia",
+      "get-help-if-poor-sleep-persists"
+    ],
+    [
+      "stop-trying-to-sleep",
+      "get-up-if-you-cant-sleep"
+    ],
+    [
+      "stop-trying-to-sleep",
+      "rest-even-if-awake"
+    ],
+    [
+      "bright-days-dark-nights",
+      "get-morning-daylight"
+    ],
+    [
+      "bright-days-dark-nights",
+      "less-bright-light-in-the-evening"
+    ],
+    [
+      "melatonin-for-children",
+      "melatonin-for-jet-lag-or-shifts"
+    ],
+    [
+      "side-sleeping-for-snoring",
+      "left-side-for-reflux"
+    ],
+    [
+      "side-sleeping-for-snoring",
+      "check-for-sleep-apnea"
+    ],
+    [
+      "bed-partner-snoring",
+      "check-for-sleep-apnea"
+    ],
+    [
+      "avoid-nicotine-before-bed",
+      "caffeine-and-big-meals-early"
+    ],
+    [
+      "calm-music-at-bedtime",
+      "binaural-beats"
+    ],
+    [
+      "use-sleep-trackers-lightly",
+      "keep-a-sleep-diary"
+    ],
+    [
+      "later-school-start-times",
+      "fit-bedtime-to-your-body-clock"
+    ],
+    [
+      "myth-falling-asleep-anywhere",
+      "get-enough-sleep-for-you"
     ]
   ],
   "conflictsWith": [

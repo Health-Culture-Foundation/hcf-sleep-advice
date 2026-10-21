@@ -60,7 +60,8 @@ until its status says so.
 | `broader` / `narrower` | list of ids | Hierarchy within the advice. `narrower` is computed. Items with no `broader` hang directly under their subcategory. |
 | `related` | list of ids | Associated advice, both directions. |
 | `conflictsWith` | list | `{id, why}`: advice that pulls the opposite way. Both directions. |
-| `origin` | `sam-wiki` \| `health-glossary` \| `do-one-thing` \| `editorial` | Which input the item first came from. |
+| `origin` | `sam-wiki` \| `health-glossary` \| `do-one-thing` \| `literature` \| `editorial` | Which input the item first came from. |
+| `plainBefore` | string | When the plain line was rewritten after the literature search, the previous wording. |
 | `wikiNumber` | string \| null | The wiki's number (`1.3.1`, `M4`). Kept for traceability, not as an ID: numbers change when the taxonomy is rearranged. |
 | `categoryPath` | list | Category, then subcategory, from the wiki taxonomy. |
 | `placement` | string | `wiki taxonomy`; or listed in the wiki's "New Sleep Advices" (numbered but not yet placed); or `proposed` for glossary-only items placed by Claude. |
@@ -94,6 +95,7 @@ until its status says so.
 | `status` | `wiki text with citations`, `wiki text, no citations`, `no write-up in the wiki`, or (glossary items) see `reviewNote`. |
 | `citations` | Every reference the wiki write-up links to: `wikiRef` (its number in the wiki's reference list), `citation`, `url`, `doi`, `freeToRead`, `accessCheckedBy`, `readUrl`. |
 | `moreSources` | Sources added in the editorial layer (e.g. the NSF 2024 consensus for screens), with what was actually read (`whatWasChecked`). |
+| `literature` | Findings from the 2026-10 literature search (`research/lit-search-2026-10/`), in that folder's FORMAT.md shape: `question`, `studyType`, `population`, `direction`, `keyResult`, `citation` (PMID/DOI), `freeToRead`, `freeUrl`, `whatWasRead`, `suggestedEvidenceSupport`, `disagreement`, `notes`, plus `area`. Every PMID was re-checked against PubMed. |
 | `reviewNote` | Glossary items only: the glossary's review note, including NOT VERIFIED flags. |
 
 `freeToRead` comes from `scripts/check_access.py`: OpenAlex open-access status
@@ -136,7 +138,13 @@ Proposals were made in `editorial/scores.json` by these rules:
 - Where the wiki's three scores disagree, one value was picked, with the reason.
 - Reach, ease, impact and novelty were proposed for every unscored advice item.
   These are judgement calls.
-- `evidenceSupport` is capped at 3 when the dataset holds no citation for the
+- `evidenceSupport` comes from the literature search where it found anything:
+  the median support for the advice across guideline-, consensus- and review-level
+  findings (all findings if there are none at that level). Agents scored how strong
+  each *finding* is, so a finding against the advice, or showing harm or no effect,
+  counts as 6 − score, capped at 3. Items whose plain line was rewritten to match
+  the literature are left for re-scoring.
+- Otherwise `evidenceSupport` is capped at 3 when the dataset holds no citation for the
   item: a strong evidence score should be backed by something a reader can check.
 - `evidenceSupport` is never proposed for an unscored item, because that would
   mean inventing evidence. These stay `null`.

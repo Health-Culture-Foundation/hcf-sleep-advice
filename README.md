@@ -13,7 +13,7 @@ reviewed. Nothing here has been checked by a person yet.
 
 It is modelled as a SKOS concept scheme: each item has a preferred label, alternative labels (synonyms, other names), broader/narrower and related links, and conflicts. Duplicates are merged, and the merged item's ID still resolves. Also available as [Turtle](data/sleep-advice.skos.ttl).
 
-`data/sleep-advice.json` (and `.csv`) has 95 records:
+`data/sleep-advice.json` (and `.csv`) has 113 records:
 
 - **62 advice items** from the Sleep Awareness Month wiki's taxonomy
   (4 categories, 14 subcategories), with the wiki's write-ups, citations and
@@ -22,8 +22,9 @@ It is modelled as a SKOS concept scheme: each item has a preferred label, altern
   [health-glossary](https://github.com/vivwebsolutions/health-glossary)
   (NHLBI, Dr. Michael Breus, Andrew Huberman), placed in the wiki's categories.
 - **7 items** from HCF's [Do One Thing](https://doonething.sleepliteracy.org/choose-your-one-thing/) habits that had no match (cannabis, finishing work earlier, planning social time earlier, etc.).
+- **18 items** from the [October 2026 literature search](research/lit-search-2026-10/README.md) (e.g. infant safe sleep, stop trying hard to sleep, nicotine, sleep trackers), 2 of them myths.
 - **5 myths** from the wiki's "Busting sleep myths" tab.
-- **1 grouping concept** (stimulus control). Two duplicates are merged into other items, leaving 93 active concepts.
+- **1 grouping concept** (stimulus control). Two duplicates are merged into other items, leaving 111 active concepts. 90 of them carry findings from the literature search (278 findings).
 
 Plus **104 Do One Thing commitments and tips** ("I will finish schoolwork by 9 pm…"), each linked to the concept it applies ([data/commitments.csv](data/commitments.csv)). Do One Thing's categories become a "sleep thief" facet alongside mechanism, time of day and condition.
 

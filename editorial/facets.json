@@ -51,6 +51,10 @@
         "monitoring-and-care": {
           "label": "Tracking and getting care",
           "definition": "Noticing patterns or problems and getting them checked: sleep diaries, medicine reviews, testing for apnea."
+        },
+        "body-position": {
+          "label": "Body position",
+          "definition": "How you lie: side, back, head raised."
         }
       }
     },
@@ -494,7 +498,7 @@
       "general"
     ],
     "left-side-for-reflux": [
-      "digestion-and-fluids",
+      "digestion-and-fluids|body-position",
       "during-the-night",
       "reflux"
     ],
@@ -504,12 +508,12 @@
       "general"
     ],
     "raise-the-head-of-the-bed": [
-      "digestion-and-fluids|breathing-and-airway",
+      "digestion-and-fluids|breathing-and-airway|body-position",
       "during-the-night",
       "reflux|sleep-apnea"
     ],
     "raise-your-legs": [
-      "sleep-environment",
+      "sleep-environment|body-position",
       "bedtime",
       "general"
     ],
@@ -692,6 +696,96 @@
       "substances",
       "evening",
       "general"
+    ],
+    "bright-days-dark-nights": [
+      "body-clock|light-at-night",
+      "any-time",
+      "general"
+    ],
+    "tips-alone-dont-fix-insomnia": [
+      "monitoring-and-care",
+      "any-time",
+      "insomnia"
+    ],
+    "dont-split-sleep-into-blocks": [
+      "sleep-pressure|body-clock",
+      "any-time",
+      "general"
+    ],
+    "later-school-start-times": [
+      "body-clock",
+      "on-waking",
+      "general"
+    ],
+    "infant-safe-sleep": [
+      "sleep-environment|body-position",
+      "bedtime",
+      "general"
+    ],
+    "stop-trying-to-sleep": [
+      "arousal|learned-association",
+      "bedtime|during-the-night",
+      "general|insomnia"
+    ],
+    "calm-music-at-bedtime": [
+      "arousal",
+      "bedtime",
+      "general|insomnia"
+    ],
+    "myth-falling-asleep-anywhere": [
+      "sleep-pressure",
+      "daytime",
+      "general"
+    ],
+    "myth-snooze-wrecks-sleep": [
+      "sleep-pressure",
+      "on-waking",
+      "general"
+    ],
+    "melatonin-for-children": [
+      "substances",
+      "evening",
+      "general"
+    ],
+    "side-sleeping-in-late-pregnancy": [
+      "body-position",
+      "bedtime",
+      "general"
+    ],
+    "sleeping-pills-in-older-adults": [
+      "substances|monitoring-and-care",
+      "any-time",
+      "insomnia"
+    ],
+    "avoid-nicotine-before-bed": [
+      "substances",
+      "evening",
+      "general"
+    ],
+    "pets-in-the-bedroom": [
+      "sleep-environment",
+      "during-the-night",
+      "general"
+    ],
+    "bed-partner-snoring": [
+      "sleep-environment|breathing-and-airway",
+      "during-the-night",
+      "general|sleep-apnea"
+    ],
+    "be-wary-of-influencer-advice": [
+      "monitoring-and-care",
+      "any-time",
+      "general"
+    ],
+    "use-sleep-trackers-lightly": [
+      "monitoring-and-care|arousal",
+      "any-time",
+      "general"
+    ],
+    "side-sleeping-for-snoring": [
+      "breathing-and-airway|body-position",
+      "during-the-night",
+      "sleep-apnea"
     ]
   }
 }

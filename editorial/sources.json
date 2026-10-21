@@ -52,6 +52,12 @@
       "access": "free",
       "license": "CC BY 4.0 (original HCF content)",
       "checked": "Snapshot in sources/do-one-thing/habits.json. HCF's own campaign copy; its claims are not independently checked."
+    },
+    "nhs-insomnia": {
+      "citation": "NHS. Insomnia (page last reviewed 19 March 2024).",
+      "url": "https://www.nhs.uk/conditions/insomnia/",
+      "access": "free",
+      "checked": "Read by the guidelines agent, 2026-10-21 (research/lit-search-2026-10/guidelines.json)."
     }
   }
 }
