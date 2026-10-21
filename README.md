@@ -9,6 +9,8 @@ reviewed. Nothing here has been checked by a person yet.
 
 ## What's in it
 
+**Browse the taxonomy: [TAXONOMY.md](TAXONOMY.md)** (category tree with every item's plain wording, tags and flags).
+
 `data/sleep-advice.json` (and `.csv`) has 87 items:
 
 - **62 advice items** from the Sleep Awareness Month wiki's taxonomy
