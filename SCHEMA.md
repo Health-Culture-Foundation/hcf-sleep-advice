@@ -1,0 +1,146 @@
+# Sleep advice dataset: schema
+
+`data/sleep-advice.json` is the full dataset. `data/sleep-advice.csv` is a flat
+copy for spreadsheets (one row per item, lists joined with `; `).
+`data/glossary-mapping.csv` lists every health-glossary sleep entry and the
+advice items it maps to.
+
+Everything is a **draft**. Each field says where it came from and whether a
+person has checked it. Nothing in the dataset should be read as reviewed
+until its status says so.
+
+## Top level
+
+| Field | Meaning |
+|---|---|
+| `name`, `version`, `description` | Dataset identity. `0.x` while it is a draft. |
+| `license` | CC BY 4.0, attribution "Health Culture Foundation". |
+| `lastChecked` | Date the whole build was last checked. |
+| `scales` | What each 1–5 tag means (below). |
+| `audienceTags` | The audience vocabulary and what each tag means. |
+| `sources` | The three inputs: SAM wiki, health-glossary drafts, tagging taxonomy v1.2. |
+| `categories` | The wiki's 4 categories and 14 subcategories, with their ICHI and ICD-11 codes. |
+| `items` | The advice, concepts and myths. |
+
+## Item
+
+| Field | Type | Meaning |
+|---|---|---|
+| `id` | string | Stable slug. Never reused or renamed, even if the wording changes. |
+| `kind` | `advice` \| `concept` \| `myth` | A concept is background the advice relies on (e.g. body temperature low point). A myth is a common belief the wiki corrects. |
+| `origin` | `sam-wiki` \| `health-glossary` | Which input the item first came from. |
+| `wikiNumber` | string \| null | The wiki's number (`1.3.1`, `M4`). Kept for traceability, not as an ID: numbers change when the taxonomy is rearranged. |
+| `categoryPath` | list | Category, then subcategory, from the wiki taxonomy. |
+| `placement` | string | `wiki taxonomy`; or listed in the wiki's "New Sleep Advices" (numbered but not yet placed); or `proposed` for glossary-only items placed by Claude. |
+| `sourceWording` | string | The wording in the source, unchanged. |
+| `plain` | string | **Layer 1.** One plain line a reader can act on. Drafted by Claude, unreviewed (`plainStatus`). |
+| `paragraph` | object | **Layer 2.** `text`, `from`, `status`. Wiki items use the wiki's short practical tip; glossary items use the glossary's AI-drafted definition. `null` text means it still needs writing. |
+| `evidence` | object | **Layer 3.** See below. |
+| `tags` | object | The five 1–5 scales. See below. |
+| `audience` | list | Audience tags. `all-ages-and-cultures` is the default; others narrow it. |
+| `audienceNote` | string \| null | Who it may not fit, and why. |
+| `disagreements` | list | Where sources disagree. See below. |
+| `codes` | object | `ichi`, `icd11`, `verified` (always `false` for now), `note`. |
+| `glossary` | list | Matching health-glossary sleep **advice** entries: `glossaryId`, `term`, `relation`, `status`, `url` (null if the entry has no term page yet). |
+| `glossaryTerms` | list | Matching published glossary **terms** (e.g. Sleep Hygiene, Jet Lag Syndrome), with URL. |
+| `relatedAdvice` | list | Myths only: wiki numbers of the advice it relates to. |
+| `editorNotes` | string \| null | Internal notes: duplicates, gaps, score conflicts, things to check. |
+| `plainStatus` | string | Review status of `plain`. |
+| `tested` | object | `withReaders`: has this wording been tested with real readers? All `false`. |
+| `changeLog` | list | When the guidance or wording changes: `{date, what, why, source}`. Empty in 0.1. |
+| `license` | string | `CC-BY-4.0`. |
+| `lastChecked` | date | When this item was last checked. |
+
+### `evidence`
+
+| Field | Meaning |
+|---|---|
+| `summary` | The wiki's "Scientific support" text, unchanged. Not checked against its citations. |
+| `status` | `wiki text with citations`, `wiki text, no citations`, `no write-up in the wiki`, or (glossary items) see `reviewNote`. |
+| `citations` | Every reference the wiki write-up links to: `wikiRef` (its number in the wiki's reference list), `citation`, `url`, `doi`, `freeToRead`, `accessCheckedBy`, `readUrl`. |
+| `moreSources` | Sources added in the editorial layer (e.g. the NSF 2024 consensus for screens), with what was actually read (`whatWasChecked`). |
+| `reviewNote` | Glossary items only: the glossary's review note, including NOT VERIFIED flags. |
+
+`freeToRead` comes from `scripts/check_access.py`: OpenAlex open-access status
+for DOIs; PubMed Central, NCBI Bookshelf and `.gov` pages count as free; other
+web pages are marked free but "not checked for paywall". `false` means OpenAlex
+reports the article as closed; `readUrl`, when present, is a free copy.
+
+### `tags`
+
+Five scales from the Advice Tagging Taxonomy v1.2, renamed per Kalman's
+feedback, all running 1 (low) to 5 (high):
+
+| Dataset name | Wiki name | 1 | 5 |
+|---|---|---|---|
+| `reach` | Commonality ("popularity" was rejected) | rare | universal |
+| `ease` | Practicality / Ease of implementation | impractical | effortless |
+| `impact` | Impact | minimal | game-changer |
+| `novelty` | Novelty | obvious | feels like a secret |
+| `evidenceSupport` | Scientific red flags, **flipped** (6 − red flag) | red flag | strongly supported |
+
+Low `reach` is not a mark against advice. Niche advice that works, or that
+works for one audience, is exactly what the dataset should surface.
+
+Each scale is an object:
+
+| Field | Meaning |
+|---|---|
+| `value` | The score used. Taken from the wiki's item page if it has one, else its summary table, else its classification table. |
+| `from` | Which of those it came from. |
+| `wikiScores` | All three wiki scores where present. The wiki scored items three times and the sets often disagree. |
+| `spread` | Max − min of `wikiScores`. 2 or more means the wiki contradicts itself; review these first. |
+| `rationale` | The wiki's one-line reason, when the item page gives one. |
+| `status` | `wiki draft, unreviewed` or `not scored`. Glossary-only items and myths are not scored; no scores were invented to fill gaps. |
+
+### `disagreements`
+
+```json
+{
+  "about": "Caffeine cutoff",
+  "positions": [
+    {"source": "nhlbi-guide", "says": "Effects can last up to 8 hours (p. 28); no clock time."},
+    {"source": "breus-youtube", "says": "2 p.m.; half-life 6-8 hours."}
+  ]
+}
+```
+
+`source` is a key in `editorial/sources.json`, or `wiki` for the SAM wiki
+itself. Only positions a named source states are recorded; a disagreement is
+not a verdict.
+
+### `codes`
+
+ICHI codes are set per wiki category and ICD-11 codes per subcategory, so
+every item in a subcategory carries the same codes. They were copied from the
+wiki, where some were AI-drafted, and are **not verified**. Some wiki titles
+differ from current ICD-11 wording (the wiki says "Circadian rhythm sleep-wake
+disorder, delayed sleep phase type" for 7A60). Check each against the WHO
+ICD-11 browser and the ICHI classification before relying on them.
+
+### `glossary.relation`
+
+| Value | Meaning |
+|---|---|
+| `same` | Same advice. A candidate for merging. |
+| `overlaps` | Partly the same; each says something the other doesn't. |
+| `narrower` | The glossary entry is a specific version of this item (e.g. Box Breathing under relaxation techniques). |
+| `conflicts` | The two give opposite advice. |
+
+## How it's built
+
+```
+Google Doc (SAM wiki) --export--> wiki.md (not committed)
+  scripts/extract_sam_wiki.py  ->  sources/sam-wiki/extract.json
+  scripts/check_access.py      ->  sources/citation-access.json
+health-glossary data/ai/sleep  ->  sources/health-glossary/sleep-entries.json (snapshot)
+editorial/items.json + editorial/sources.json (hand-edited)
+  scripts/build.py             ->  data/sleep-advice.json, .csv, glossary-mapping.csv
+```
+
+`build.py` fails if a wiki item or glossary entry is left unmapped, or if the
+editorial layer names a source, tag or glossary ID that doesn't exist.
+
+To change wording, tags or audiences, edit `editorial/items.json`. To change
+the taxonomy, edit the wiki and re-run the extractor. Don't edit `data/` by
+hand.
