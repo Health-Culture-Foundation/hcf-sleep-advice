@@ -9,9 +9,11 @@ reviewed. Nothing here has been checked by a person yet.
 
 ## What's in it
 
-**Browse the taxonomy: [TAXONOMY.md](TAXONOMY.md)** (category tree with every item's plain wording, tags and flags).
+**Browse the taxonomy: [TAXONOMY.md](TAXONOMY.md)**. It's a category tree with every concept's plain wording, synonyms, narrower items, tags and flags.
 
-`data/sleep-advice.json` (and `.csv`) has 87 items:
+It is modelled as a SKOS concept scheme: each item has a preferred label, alternative labels (synonyms, other names), broader/narrower and related links, and conflicts. Duplicates are merged, and the merged item's ID still resolves. Also available as [Turtle](data/sleep-advice.skos.ttl).
+
+`data/sleep-advice.json` (and `.csv`) has 88 records:
 
 - **62 advice items** from the Sleep Awareness Month wiki's taxonomy
   (4 categories, 14 subcategories), with the wiki's write-ups, citations and
@@ -20,10 +22,11 @@ reviewed. Nothing here has been checked by a person yet.
   [health-glossary](https://github.com/vivwebsolutions/health-glossary)
   (NHLBI, Dr. Michael Breus, Andrew Huberman), placed in the wiki's categories.
 - **5 myths** from the wiki's "Busting sleep myths" tab.
+- **1 grouping concept** (stimulus control). Two duplicates are merged into other items, leaving 86 active concepts.
 
 Each item has three layers of wording (one line, a paragraph, the evidence),
-five 1–5 tags (reach, ease, impact, novelty, evidence support), audience
-tags, where sources disagree, ICHI/ICD-11 codes (unverified), and links to
+five 1–5 tags (reach, ease, impact, novelty, evidence support; the wiki's scores plus Claude's first-pass proposals, all unreviewed), audience
+tags, where sources disagree, ICHI/ICD-11 codes (all checked to exist; fit not yet reviewed), and links to
 matching glossary terms. See [SCHEMA.md](SCHEMA.md).
 
 `data/glossary-mapping.csv` maps all 41 glossary sleep entries to advice items.

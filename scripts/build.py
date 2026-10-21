@@ -4,8 +4,11 @@ editorial layer into one dataset.
     python3 -I scripts/build.py
 
 Reads:  sources/sam-wiki/extract.json, sources/health-glossary/sleep-entries.json,
-        sources/citation-access.json, editorial/items.json, editorial/sources.json
-Writes: data/sleep-advice.json, data/sleep-advice.csv, data/glossary-mapping.csv
+        sources/citation-access.json, sources/code-check.json,
+        editorial/items.json, editorial/sources.json, editorial/relations.json,
+        editorial/scores.json
+Writes: data/sleep-advice.json, data/sleep-advice.csv, data/glossary-mapping.csv,
+        data/sleep-advice.skos.ttl, TAXONOMY.md
 
 Fails if any wiki item or glossary entry is left unmapped, or if an editorial
 entry points at something that doesn't exist.
@@ -23,10 +26,12 @@ SCALES = ["reach", "ease", "impact", "novelty", "evidenceSupport"]
 # feedback); red flags are flipped so 5 is always the good end.
 FROM_WIKI = {"commonality": "reach", "ease": "ease", "impact": "impact", "novelty": "novelty", "evidenceSupport": "evidenceSupport"}
 CODES_NOTE = (
-    "Copied from the SAM wiki, where some codes were AI-drafted. Not checked against the WHO ICD-11 "
-    "browser or the ICHI classification. Codes are assigned per category (ICHI) and subcategory (ICD-11), "
-    "not per item."
+    "Copied from the SAM wiki. Each code was looked up in the WHO browsers on 2026-10-21 (see "
+    "sources/code-check.json): all exist, two ICD-11 titles in the wiki are outdated. Whether each code "
+    "fits the advice has not been reviewed. Codes are assigned per category (ICHI) and subcategory "
+    "(ICD-11), not per item."
 )
+CONCEPT_BASE = "https://health-culture.org/sleep-advice/"
 
 
 def load(path: str):
@@ -277,6 +282,11 @@ def main() -> None:
             }
         )
 
+    records = apply_concepts(records, load("editorial/relations.json"), subs, errors)
+    apply_scores(records, load("editorial/scores.json"), errors)
+    code_check = load("sources/code-check.json")
+    apply_code_check(records, code_check)
+
     missing = sorted(set(witems) - seen_wiki)
     if missing:
         errors.append(f"wiki items with no editorial entry: {missing}")
@@ -306,8 +316,17 @@ def main() -> None:
             "healthGlossary": gloss["source"],
             "taggingTaxonomy": {"title": "Sleep Advice Coding Ideas (Advice Tagging Taxonomy v1.2)", "url": "https://docs.google.com/document/d/19gFTE4sa5e1rvHIZkovttb1w4qix2TBQ6BbWm3PeoR4"},
         },
+        "conceptBase": CONCEPT_BASE,
         "categories": [
-            {"id": c["id"], "name": c["name"], "ichi": c["ichi"], "subcategories": [{"id": s["id"], "name": s["name"], "icd11": s["icd11"]} for s in c["subcategories"]]}
+            {
+                "id": c["id"],
+                "name": c["name"],
+                "ichi": [checked_code(x, code_check["ichi"]) for x in c["ichi"]],
+                "subcategories": [
+                    {"id": s["id"], "name": s["name"], "icd11": [checked_code(x, code_check["icd11"]) for x in s["icd11"]]}
+                    for s in c["subcategories"]
+                ],
+            }
             for c in wiki["categories"]
         ],
         "items": records,
@@ -317,7 +336,8 @@ def main() -> None:
     (data / "sleep-advice.json").write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     cols = [
-        "id", "kind", "origin", "wikiNumber", "category", "subcategory", "placement", "plain", "sourceWording",
+        "id", "status", "mergedInto", "kind", "origin", "wikiNumber", "category", "subcategory", "placement", "plain",
+        "altLabels", "broader", "narrower", "related", "conflictsWith", "sourceWording",
         "paragraph", "evidenceStatus", "citationCount", "freeCitationCount",
         *[f"{s}" for s in SCALES], *[f"{s}Spread" for s in SCALES],
         "audience", "audienceNote", "disagreementCount", "disagreements", "glossaryIds", "ichi", "icd11", "codesVerified",
@@ -331,6 +351,13 @@ def main() -> None:
             w.writerow(
                 {
                     "id": r["id"],
+                    "status": r["status"],
+                    "mergedInto": r.get("mergedInto") or "",
+                    "altLabels": "; ".join(r["altLabels"]),
+                    "broader": "; ".join(r["broader"]),
+                    "narrower": "; ".join(r["narrower"]),
+                    "related": "; ".join(r["related"]),
+                    "conflictsWith": "; ".join(c["id"] for c in r["conflictsWith"]),
                     "kind": r["kind"],
                     "origin": r["origin"],
                     "wikiNumber": r["wikiNumber"] or "",
@@ -352,7 +379,7 @@ def main() -> None:
                     "glossaryIds": "; ".join(f"{g['glossaryId']} ({g['relation']})" for g in r["glossary"]),
                     "ichi": "; ".join(c["code"] for c in r["codes"]["ichi"]),
                     "icd11": "; ".join(c["code"] for c in r["codes"]["icd11"]),
-                    "codesVerified": "no",
+                    "codesVerified": r["codes"]["verified"],
                     "editorNotes": r["editorNotes"] or "",
                     "license": r["license"],
                     "lastChecked": r["lastChecked"],
@@ -367,23 +394,254 @@ def main() -> None:
             for aid, rel in links:
                 w.writerow([gid, e["term"], e["file"], e["inCommittedBuild"], aid, rel])
 
+    write_skos(out)
     write_taxonomy_md(out)
 
     kinds = {}
     for r in records:
         kinds[r["kind"]] = kinds.get(r["kind"], 0) + 1
-    print(f"{len(records)} records {kinds} -> data/sleep-advice.json, .csv, glossary-mapping.csv, TAXONOMY.md")
+    print(f"{len(records)} records {kinds} -> data/sleep-advice.json, .csv, .skos.ttl, glossary-mapping.csv, TAXONOMY.md")
+
+
+def checked_code(code: dict, check: dict) -> dict:
+    c = check["codes"].get(code["code"], {})
+    return {
+        "code": code["code"],
+        "title": c.get("currentTitle") or code["title"],
+        "wikiTitle": code["title"],
+        "exists": c.get("exists"),
+        "titleOutdatedInWiki": c.get("titleOutdated", False),
+    }
+
+
+def apply_code_check(records: list[dict], check: dict) -> None:
+    for r in records:
+        codes = r["codes"]
+        if not (codes["ichi"] or codes["icd11"]):
+            continue
+        codes["ichi"] = [checked_code(x, check["ichi"]) for x in codes["ichi"]]
+        codes["icd11"] = [checked_code(x, check["icd11"]) for x in codes["icd11"]]
+        codes["verified"] = "code exists; fit not reviewed"
+        codes["checkedOn"] = check["checked"]
+
+
+def apply_concepts(records: list[dict], rel: dict, subs: dict, errors: list) -> list[dict]:
+    """Turn items into SKOS-style concepts: labels, hierarchy, merges, conflicts."""
+    for g in rel["groups"]:
+        cat, sub = subs[g["placeIn"]]
+        records.append(
+            {
+                "id": g["id"],
+                "kind": "group",
+                "origin": "editorial",
+                "wikiNumber": None,
+                "categoryPath": [{"id": cat["id"], "name": cat["name"]}, {"id": sub["id"], "name": sub["name"]}],
+                "placement": "proposed grouping concept",
+                "sourceWording": g["plain"],
+                "plain": g["plain"],
+                "paragraph": {"text": None, "status": "to write"},
+                "evidence": {"summary": None, "status": "see narrower items", "citations": [], "moreSources": []},
+                "tags": {k: {"value": None, "status": "not scored"} for k in SCALES},
+                "audience": ["all-ages-and-cultures"],
+                "audienceNote": None,
+                "disagreements": [],
+                "codes": {"ichi": [], "icd11": [], "verified": False, "note": "Grouping concept; no codes."},
+                "glossary": [],
+                "glossaryTerms": [],
+                "editorNotes": g.get("notes"),
+                "plainStatus": "drafted by Claude 2026-10-21, unreviewed",
+                "tested": {"withReaders": False},
+                "changeLog": [],
+                "license": LICENSE["id"],
+                "lastChecked": LAST_CHECKED,
+                "_alt": g.get("altLabels", []),
+                "_broader": g.get("broader", []),
+            }
+        )
+    by_id = {r["id"]: r for r in records}
+
+    def known(i: str, where: str) -> bool:
+        if i not in by_id:
+            errors.append(f"relations.json {where}: unknown id {i}")
+            return False
+        return True
+
+    for r in records:
+        alt = list(r.pop("_alt", []))
+        # Wiki titles read "advice – reason"; only the advice part is a label.
+        wording = (r["sourceWording"] or "").split(" – ")[0].strip()
+        if r["kind"] == "myth":
+            wording = ""
+        if wording and wording.lower().rstrip(".") != r["plain"].lower().rstrip("."):
+            alt.append(wording)
+        alt += [g["term"] for g in r["glossary"] if g["relation"] == "same"]
+        alt += rel["altLabels"].get(r["id"], [])
+        r["altLabels"] = alt
+        r["broader"] = list(r.pop("_broader", [])) + rel["broader"].get(r["id"], [])
+        r["narrower"], r["related"], r["conflictsWith"] = [], [], []
+        r["status"] = "active"
+        r["mergedInto"] = None
+    for i in rel["altLabels"]:
+        known(i, "altLabels")
+    for child, parents in rel["broader"].items():
+        known(child, "broader")
+        for p in parents:
+            known(p, "broader")
+    for r in records:
+        for p in r["broader"]:
+            if p in by_id:
+                by_id[p]["narrower"].append(r["id"])
+    for a, b in rel["related"]:
+        if known(a, "related") and known(b, "related"):
+            by_id[a]["related"].append(b)
+            by_id[b]["related"].append(a)
+    for c in rel["conflictsWith"]:
+        a, b = c["between"]
+        if known(a, "conflictsWith") and known(b, "conflictsWith"):
+            by_id[a]["conflictsWith"].append({"id": b, "why": c["why"]})
+            by_id[b]["conflictsWith"].append({"id": a, "why": c["why"]})
+
+    for old, m in rel["merges"].items():
+        if not (known(old, "merges") and known(m["into"], "merges")):
+            continue
+        src, dst = by_id[old], by_id[m["into"]]
+        src["status"] = "merged"
+        src["mergedInto"] = dst["id"]
+        src["editorNotes"] = f"Merged into {dst['id']}: {m['why']}" + (f" Earlier note: {src['editorNotes']}" if src["editorNotes"] else "")
+        dst["altLabels"] += [src["plain"]] + src["altLabels"]
+        for g in src["glossary"]:
+            if g["glossaryId"] not in {x["glossaryId"] for x in dst["glossary"]}:
+                dst["glossary"].append(g)
+        for d in src["disagreements"]:
+            dst["disagreements"].append({**d, "about": f"{d['about']} (from merged item {old})"})
+        dst["related"] += [x for x in src["related"] if x != dst["id"]]
+        dst.setdefault("mergedFrom", []).append(old)
+        for key in ("broader", "narrower", "related", "conflictsWith"):
+            src[key] = []
+
+    # Cycle check on broader.
+    def walk(i: str, seen: tuple) -> None:
+        if i in seen:
+            errors.append(f"broader cycle: {' -> '.join(seen + (i,))}")
+            return
+        for p in by_id.get(i, {}).get("broader", []):
+            walk(p, seen + (i,))
+
+    for r in records:
+        walk(r["id"], ())
+        seen, uniq = set(), []
+        for a in r["altLabels"]:
+            if a.lower() not in seen and a.lower() != r["plain"].lower():
+                seen.add(a.lower())
+                uniq.append(a)
+        r["altLabels"] = uniq
+        r["related"] = sorted(set(r["related"]))
+    return records
+
+
+def apply_scores(records: list[dict], scores: dict, errors: list) -> None:
+    by_id = {r["id"]: r for r in records}
+    cap = scores["rules"]["evidenceCapWithoutCitation"]
+    for i in scores["proposals"]:
+        if i not in by_id:
+            errors.append(f"scores.json: unknown id {i}")
+    for r in records:
+        if r["kind"] in ("myth",) or r["status"] == "merged":
+            continue
+        props = scores["proposals"].get(r["id"], {})
+        cited = bool(r["evidence"]["citations"] or r["evidence"]["moreSources"])
+        for scale in SCALES:
+            t = r["tags"][scale]
+            t.setdefault("wikiScores", {})
+            t.setdefault("spread", None)
+            t.setdefault("rationale", None)
+            wiki_value, wiki_from = t["value"], t.get("from")
+            t["wikiValue"] = wiki_value
+            proposal = None
+            if scale in props:
+                v, why = props[scale]
+                proposal = {"value": v, "reason": why or None}
+            elif scale == "evidenceSupport" and wiki_value is not None and wiki_value > cap and not cited:
+                proposal = {"value": cap, "reason": f"Capped at {cap}: the wiki rates it {wiki_value} but the dataset holds no citation for it."}
+            if proposal:
+                proposal["by"] = "Claude, 2026-10-21"
+                t["proposal"] = proposal
+                t["value"] = proposal["value"]
+                t["from"] = "proposal"
+                t["status"] = "proposed by Claude, unreviewed"
+            else:
+                t["from"] = f"wiki {wiki_from}" if wiki_from else None
+                t["status"] = "wiki draft, unreviewed" if wiki_value is not None else "not scored"
+            t["reviewed"] = False
+
+
+def turtle_str(s: str) -> str:
+    return '"' + s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n") + '"@en'
+
+
+def write_skos(out: dict) -> None:
+    """SKOS concept scheme: categories are top concepts, items hang under subcategories."""
+    b = out["conceptBase"]
+    L = [
+        "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
+        "@prefix dct: <http://purl.org/dc/terms/> .",
+        "@prefix hsa: <" + b + "vocab#> .",
+        "",
+        "# Generated by scripts/build.py. Draft; concept IRIs are placeholders until a public home is chosen.",
+        "",
+        f"<{b}> a skos:ConceptScheme ;",
+        f"  dct:title {turtle_str(out['name'])} ;",
+        f"  dct:license <{out['license']['url']}> ;",
+        "  skos:hasTopConcept " + ", ".join(f"<{b}category/{c['id']}>" for c in out["categories"]) + " .",
+        "",
+    ]
+    for c in out["categories"]:
+        L += [f"<{b}category/{c['id']}> a skos:Concept ; skos:inScheme <{b}> ; skos:topConceptOf <{b}> ;",
+              f"  skos:prefLabel {turtle_str(c['name'])} ;", f"  skos:notation \"{c['id']}\" ."]
+        for s in c["subcategories"]:
+            L += [f"<{b}category/{s['id']}> a skos:Concept ; skos:inScheme <{b}> ;",
+                  f"  skos:prefLabel {turtle_str(s['name'])} ; skos:notation \"{s['id']}\" ;",
+                  f"  skos:broader <{b}category/{c['id']}> ."]
+        L.append("")
+    url_of = lambda i: f"<{b}{i}>"
+    for r in out["items"]:
+        if r["kind"] == "myth":
+            parent = None
+        else:
+            parent = f"<{b}category/{r['categoryPath'][-1]['id']}>"
+        p = [f"{url_of(r['id'])} a skos:Concept", f"skos:inScheme <{b}>", f"skos:prefLabel {turtle_str(r['plain'])}", f"hsa:kind \"{r['kind']}\""]
+        if r.get("wikiNumber"):
+            p.append(f"skos:notation \"{r['wikiNumber']}\"")
+        p += [f"skos:altLabel {turtle_str(a)}" for a in r["altLabels"]]
+        if r["status"] == "merged":
+            p += ["hsa:deprecated true", f"dct:isReplacedBy {url_of(r['mergedInto'])}"]
+        else:
+            broader = [url_of(x) for x in r["broader"]] or ([parent] if parent else [])
+            p += [f"skos:broader {x}" for x in broader]
+            p += [f"skos:related {url_of(x)}" for x in r["related"]]
+            p += [f"hsa:conflictsWith {url_of(x['id'])}" for x in r["conflictsWith"]]
+            p += [f"skos:closeMatch <{g['url']}>" for g in r["glossary"] if g.get("url")]
+            p += [f"skos:closeMatch <{g['url']}>" for g in r["glossaryTerms"]]
+        if r["paragraph"].get("text"):
+            p.append(f"skos:definition {turtle_str(r['paragraph']['text'])}")
+        if r.get("editorNotes"):
+            p.append(f"skos:editorialNote {turtle_str(r['editorNotes'])}")
+        L.append(" ;\n  ".join(p) + " .")
+        L.append("")
+    (ROOT / "data" / "sleep-advice.skos.ttl").write_text("\n".join(L), encoding="utf-8")
 
 
 def write_taxonomy_md(out: dict) -> None:
     """A readable tree of the taxonomy, generated so it can't drift from the data."""
+    items = [r for r in out["items"] if r["status"] == "active"]
+    by_id = {r["id"]: r for r in items}
 
     def score(r: dict) -> str:
         vals = []
         for s, label in (("reach", "R"), ("ease", "Ea"), ("impact", "I"), ("novelty", "N"), ("evidenceSupport", "Ev")):
             t = r["tags"][s]
             v = t["value"]
-            mark = "!" if (t.get("spread") or 0) >= 2 else ""
+            mark = "*" if t.get("from") == "proposal" else ""
             vals.append(f"{label}{v if v is not None else '–'}{mark}")
         return " ".join(vals)
 
@@ -392,54 +650,89 @@ def write_taxonomy_md(out: dict) -> None:
         n = len(r["evidence"]["citations"]) + len(r["evidence"]["moreSources"])
         f.append(f"{n} cited" if n else "no citations")
         if r["disagreements"]:
-            f.append(f"⚖️ {len(r['disagreements'])} disagreement{'s' if len(r['disagreements']) > 1 else ''}")
-        if any(g["relation"] == "conflicts" for g in r["glossary"]):
-            f.append("❗ conflicting glossary entry")
+            f.append(f"⚖️ {len(r['disagreements'])} source disagreement{'s' if len(r['disagreements']) > 1 else ''}")
+        for c in r["conflictsWith"]:
+            f.append(f"❗ conflicts with `{c['id']}`")
         aud = [a for a in r["audience"] if a != "all-ages-and-cultures"]
         if aud:
             f.append("for: " + ", ".join(aud))
         return " · ".join(f)
 
-    def line(r: dict) -> list[str]:
-        num = f"{r['wikiNumber']} " if r["origin"] == "sam-wiki" else "＋ "
-        lines = [f"- **{num}{r['plain']}**  ", f"  <sub>`{r['id']}` · source: “{r['sourceWording']}” · {score(r)} · {flags(r)}</sub>"]
+    def line(r: dict, depth: int, sub_id: str) -> list[str]:
+        pad = "  " * depth
+        if r["kind"] == "group":
+            num = "▸ "
+        elif r["origin"] == "sam-wiki":
+            num = f"{r['wikiNumber']} "
+        else:
+            num = "＋ "
+        lines = [f"{pad}- **{num}{r['plain']}**  "]
+        if r["altLabels"]:
+            lines.append(f"{pad}  <sub>also: {' · '.join(r['altLabels'])}</sub>  ")
+        meta = f"`{r['id']}`" if r["kind"] == "group" else f"`{r['id']}` · {score(r)} · {flags(r)}"
+        elsewhere = [p for p in r["broader"] if p in by_id and by_id[p]["categoryPath"][1]["id"] != sub_id]
+        if elsewhere:
+            meta += " · ↑ part of " + ", ".join(f"`{p}` ({by_id[p]['categoryPath'][1]['id']})" for p in elsewhere)
+        lines.append(f"{pad}  <sub>{meta}</sub>")
         return lines
 
-    items = out["items"]
+    def tree(root_ids: list[str], depth: int, out_lines: list[str], sub_id: str) -> None:
+        # Children are nested only within their own subcategory; a child placed in
+        # another subcategory is listed there, with a pointer back up.
+        for i in root_ids:
+            r = by_id[i]
+            out_lines += line(r, depth, sub_id)
+            kids = [k for k in r["narrower"] if k in by_id and by_id[k]["categoryPath"][1]["id"] == sub_id]
+            tree(sorted(kids, key=order), depth + 1, out_lines, sub_id)
+
+    def order(i: str):
+        r = by_id[i]
+        rank = {"group": 0, "advice": 1, "concept": 2}.get(r["kind"], 3)
+        return (r["origin"] != "sam-wiki", [int(x) for x in (r["wikiNumber"] or "9.9.9").split(".")], rank, i)
+
     by_sub: dict[str, list] = {}
     for r in items:
-        if r["kind"] != "myth":
-            by_sub.setdefault(r["categoryPath"][1]["id"], []).append(r)
+        if r["kind"] == "myth":
+            continue
+        sub_id = r["categoryPath"][1]["id"]
+        if not any(p in by_id and by_id[p]["categoryPath"][1]["id"] == sub_id for p in r["broader"]):
+            by_sub.setdefault(sub_id, []).append(r["id"])
+    proposals = sum(1 for r in items for t in r["tags"].values() if t.get("from") == "proposal")
+    merged = [r for r in out["items"] if r["status"] == "merged"]
     md = [
         "# Sleep advice taxonomy",
         "",
         "<!-- Generated by scripts/build.py from data/sleep-advice.json. Do not edit by hand. -->",
         "",
         f"Version {out['version']}, last checked {out['lastChecked']}. Nothing here is reviewed yet.",
-        f"{sum(1 for r in items if r['kind'] != 'myth')} advice items in {len(out['categories'])} categories, plus "
-        f"{sum(1 for r in items if r['kind'] == 'myth')} myths. Full fields: [SCHEMA.md](SCHEMA.md); "
-        "spreadsheet view: [data/sleep-advice.csv](data/sleep-advice.csv).",
+        f"{sum(1 for r in items if r['kind'] in ('advice', 'concept'))} advice items and "
+        f"{sum(1 for r in items if r['kind'] == 'group')} grouping concept(s) in {len(out['categories'])} categories, plus "
+        f"{sum(1 for r in items if r['kind'] == 'myth')} myths; {len(merged)} items merged into others. "
+        "Full fields: [SCHEMA.md](SCHEMA.md); spreadsheet: [data/sleep-advice.csv](data/sleep-advice.csv); "
+        "SKOS: [data/sleep-advice.skos.ttl](data/sleep-advice.skos.ttl).",
         "",
-        "**How to read a line.** Bold = plain one-liner (drafted, unreviewed). Number = SAM wiki item; "
-        "＋ = from the health-glossary sleep entries, placed here by proposal. "
+        "**How to read it.** Bold = preferred label (plain one-liner, unreviewed). Number = SAM wiki item; "
+        "＋ = from the health-glossary sleep entries; ▸ = grouping concept. Indented items are narrower "
+        "versions of the item above them. \"also\" = alternative labels (synonyms, source wording, other names). "
         "Tags 1–5: **R** reach, **Ea** ease, **I** impact, **N** novelty, **Ev** evidence support; "
-        "– = not scored; ! = the wiki's own scores for that tag differ by 2 or more.",
+        f"– = not scored; * = Claude's proposal ({proposals} values), otherwise the wiki's score. All scores need review.",
         "",
     ]
     for c in out["categories"]:
-        ichi = ", ".join(f"{x['code']} ({x['title']})" for x in c["ichi"])
-        md += [f"## {c['id']}. {c['name']}", "", f"ICHI (unverified): {ichi}", ""]
+        ichi = ", ".join(f"{x['code']} {x['title']}" for x in c["ichi"])
+        md += [f"## {c['id']}. {c['name']}", "", f"<sub>ICHI: {ichi} (codes exist; fit not reviewed)</sub>", ""]
         for s in c["subcategories"]:
             icd = ", ".join(f"{x['code']} {x['title']}" for x in s["icd11"])
-            md += [f"### {s['id']} {s['name']}", "", f"<sub>ICD-11 (unverified): {icd}</sub>", ""]
-            rows = sorted(by_sub.get(s["id"], []), key=lambda r: (r["origin"] != "sam-wiki", [int(x) for x in (r["wikiNumber"] or "9.9.9").split(".")]))
-            for r in rows:
-                md += line(r)
+            md += [f"### {s['id']} {s['name']}", "", f"<sub>ICD-11: {icd} (codes exist; fit not reviewed)</sub>", ""]
+            tree(sorted(by_sub.get(s["id"], []), key=order), 0, md, s["id"])
             md.append("")
     md += ["## Myths", ""]
     for r in items:
         if r["kind"] == "myth":
             md += [f"- **{r['plain']}**  ", f"  <sub>`{r['id']}` · “{r['sourceWording']}” · {flags(r)}</sub>"]
+    md += ["", "## Merged", ""]
+    for r in merged:
+        md.append(f"- `{r['id']}` → `{r['mergedInto']}` (“{r['sourceWording']}”)")
     md.append("")
     (ROOT / "TAXONOMY.md").write_text("\n".join(md), encoding="utf-8")
 

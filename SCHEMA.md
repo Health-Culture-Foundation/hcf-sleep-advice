@@ -2,8 +2,32 @@
 
 `data/sleep-advice.json` is the full dataset. `data/sleep-advice.csv` is a flat
 copy for spreadsheets (one row per item, lists joined with `; `).
-`data/glossary-mapping.csv` lists every health-glossary sleep entry and the
-advice items it maps to.
+`data/sleep-advice.skos.ttl` is the same concepts as a SKOS concept scheme
+(Turtle). `data/glossary-mapping.csv` lists every health-glossary sleep entry
+and the advice items it maps to. `TAXONOMY.md` is a readable tree, generated
+from the data.
+
+## The model: a concept scheme, not a flat list
+
+Each item is a **concept** in the sense of
+[SKOS](https://www.w3.org/TR/skos-reference/), the W3C standard for
+thesauri and taxonomies:
+
+- one **preferred label** (`plain`, the one-liner), and any number of
+  **alternative labels** (`altLabels`: synonyms, the source's own wording,
+  clinical names, glossary term names);
+- **broader / narrower** links, so a specific technique (box breathing) sits
+  under a general one (relaxation techniques) even across categories;
+- **related** links, and **conflictsWith** for advice that pulls the other way;
+- category and subcategory are themselves concepts (top of the tree).
+
+Duplicates are **merged, not deleted**: the merged item keeps its ID with
+`status: "merged"` and `mergedInto`, and its wording becomes an alternative
+label on the surviving concept. Links to old IDs keep working.
+
+This leaves room to grow into an ontology later, by adding typed relations
+(mechanism such as light, temperature or arousal; time of day; condition
+treated) without changing what is here.
 
 Everything is a **draft**. Each field says where it came from and whether a
 person has checked it. Nothing in the dataset should be read as reviewed
@@ -14,6 +38,7 @@ until its status says so.
 | Field | Meaning |
 |---|---|
 | `name`, `version`, `description` | Dataset identity. `0.x` while it is a draft. |
+| `conceptBase` | Base IRI for concepts (`https://health-culture.org/sleep-advice/`). A placeholder: nothing resolves there yet. |
 | `license` | CC BY 4.0, attribution "Health Culture Foundation". |
 | `lastChecked` | Date the whole build was last checked. |
 | `scales` | What each 1–5 tag means (below). |
@@ -26,8 +51,14 @@ until its status says so.
 
 | Field | Type | Meaning |
 |---|---|---|
-| `id` | string | Stable slug. Never reused or renamed, even if the wording changes. |
-| `kind` | `advice` \| `concept` \| `myth` | A concept is background the advice relies on (e.g. body temperature low point). A myth is a common belief the wiki corrects. |
+| `id` | string | Stable slug. Never reused or renamed, even if the wording changes. Also the last part of the concept IRI (`conceptBase` + id). |
+| `status` | `active` \| `merged` | Merged items stay in the file so their IDs keep resolving. |
+| `mergedInto` | string \| null | For merged items: the concept that replaced it. Survivors list `mergedFrom`. |
+| `kind` | `advice` \| `concept` \| `group` \| `myth` | A concept is background the advice relies on (e.g. body temperature low point). A group is an editorial heading that gathers related advice (e.g. stimulus control). A myth is a common belief the wiki corrects. |
+| `altLabels` | list | Alternative labels: synonyms, source wording, clinical names, glossary term names, and the wording of merged items. |
+| `broader` / `narrower` | list of ids | Hierarchy within the advice. `narrower` is computed. Items with no `broader` hang directly under their subcategory. |
+| `related` | list of ids | Associated advice, both directions. |
+| `conflictsWith` | list | `{id, why}`: advice that pulls the opposite way. Both directions. |
 | `origin` | `sam-wiki` \| `health-glossary` | Which input the item first came from. |
 | `wikiNumber` | string \| null | The wiki's number (`1.3.1`, `M4`). Kept for traceability, not as an ID: numbers change when the taxonomy is rearranged. |
 | `categoryPath` | list | Category, then subcategory, from the wiki taxonomy. |
@@ -40,7 +71,7 @@ until its status says so.
 | `audience` | list | Audience tags. `all-ages-and-cultures` is the default; others narrow it. |
 | `audienceNote` | string \| null | Who it may not fit, and why. |
 | `disagreements` | list | Where sources disagree. See below. |
-| `codes` | object | `ichi`, `icd11`, `verified` (always `false` for now), `note`. |
+| `codes` | object | `ichi`, `icd11` (each `{code, title, wikiTitle, exists, titleOutdatedInWiki}`), `verified`, `checkedOn`, `note`. |
 | `glossary` | list | Matching health-glossary sleep **advice** entries: `glossaryId`, `term`, `relation`, `status`, `url` (null if the entry has no term page yet). |
 | `glossaryTerms` | list | Matching published glossary **terms** (e.g. Sleep Hygiene, Jet Lag Syndrome), with URL. |
 | `relatedAdvice` | list | Myths only: wiki numbers of the advice it relates to. |
@@ -86,12 +117,26 @@ Each scale is an object:
 
 | Field | Meaning |
 |---|---|
-| `value` | The score used. Taken from the wiki's item page if it has one, else its summary table, else its classification table. |
-| `from` | Which of those it came from. |
+| `value` | The current best score: Claude's proposal if there is one, else the wiki's. Use this for charts. |
+| `from` | `proposal`, or which wiki table the value came from (`wiki itemPage`, `wiki summaryTable`, `wiki classificationTable`). |
+| `wikiValue` | The wiki's score (item page first, then summary table, then classification table). |
 | `wikiScores` | All three wiki scores where present. The wiki scored items three times and the sets often disagree. |
-| `spread` | Max − min of `wikiScores`. 2 or more means the wiki contradicts itself; review these first. |
+| `spread` | Max − min of `wikiScores`. |
 | `rationale` | The wiki's one-line reason, when the item page gives one. |
-| `status` | `wiki draft, unreviewed` or `not scored`. Glossary-only items and myths are not scored; no scores were invented to fill gaps. |
+| `proposal` | `{value, reason, by}`: Claude's first-pass score (2026-10-21). |
+| `status` | `proposed by Claude, unreviewed`, `wiki draft, unreviewed`, or `not scored`. |
+| `reviewed` | `false` everywhere. Set `true` when a person has reviewed the score. |
+
+Proposals were made in `editorial/scores.json` by these rules:
+
+- Where the wiki's three scores disagree, one value was picked, with the reason.
+- Reach, ease, impact and novelty were proposed for every unscored advice item.
+  These are judgement calls.
+- `evidenceSupport` is capped at 3 when the dataset holds no citation for the
+  item: a strong evidence score should be backed by something a reader can check.
+- `evidenceSupport` is never proposed for an unscored item, because that would
+  mean inventing evidence. These stay `null`.
+- Myths are not scored.
 
 ### `disagreements`
 
@@ -112,11 +157,22 @@ not a verdict.
 ### `codes`
 
 ICHI codes are set per wiki category and ICD-11 codes per subcategory, so
-every item in a subcategory carries the same codes. They were copied from the
-wiki, where some were AI-drafted, and are **not verified**. Some wiki titles
-differ from current ICD-11 wording (the wiki says "Circadian rhythm sleep-wake
-disorder, delayed sleep phase type" for 7A60). Check each against the WHO
-ICD-11 browser and the ICHI classification before relying on them.
+every item in a subcategory carries the same codes. Every code was looked up
+in the WHO browsers on 2026-10-21 (`sources/code-check.json`):
+
+- All 8 ICD-11 codes exist (ICD-11 MMS 2025-01). The wiki's titles for 7A60
+  and 7A61 are outdated: they are now "Delayed sleep-wake phase disorder" and
+  "Advanced sleep-wake phase disorder". `title` holds the current title,
+  `wikiTitle` the wiki's.
+- All 7 ICHI codes exist in WHO's ICHI maintenance platform (a
+  work-in-progress version, not a formal release).
+- **Fit is not reviewed.** ICD-11 codes name disorders, so on general advice
+  they mean "relevant to", not "treats". ICHI also has ATK.PN.ZZ "Advising
+  about sleep functions", which may fit an advice list better than the
+  wiki's "Education" code.
+
+`verified` is `"code exists; fit not reviewed"` for wiki items and `false` for
+items without codes.
 
 ### `glossary.relation`
 
@@ -134,13 +190,18 @@ Google Doc (SAM wiki) --export--> wiki.md (not committed)
   scripts/extract_sam_wiki.py  ->  sources/sam-wiki/extract.json
   scripts/check_access.py      ->  sources/citation-access.json
 health-glossary data/ai/sleep  ->  sources/health-glossary/sleep-entries.json (snapshot)
-editorial/items.json + editorial/sources.json (hand-edited)
-  scripts/build.py             ->  data/sleep-advice.json, .csv, glossary-mapping.csv
+WHO ICD-11 / ICHI browsers   ->  sources/code-check.json (looked up by hand)
+editorial/items.json, sources.json, relations.json, scores.json (hand-edited)
+  scripts/build.py             ->  data/sleep-advice.json, .csv, .skos.ttl,
+                                   glossary-mapping.csv, TAXONOMY.md
 ```
 
-`build.py` fails if a wiki item or glossary entry is left unmapped, or if the
-editorial layer names a source, tag or glossary ID that doesn't exist.
+`build.py` fails if a wiki item or glossary entry is left unmapped, if the
+editorial layer names a source, tag, glossary ID or concept that doesn't
+exist, or if `broader` links form a cycle.
 
-To change wording, tags or audiences, edit `editorial/items.json`. To change
+To change wording or audiences, edit `editorial/items.json`. Synonyms,
+hierarchy, merges and conflicts live in `editorial/relations.json`; score
+proposals in `editorial/scores.json`. To change
 the taxonomy, edit the wiki and re-run the extractor. Don't edit `data/` by
 hand.
