@@ -1,0 +1,105 @@
+id,type,kindOfLine,text,problem,appliesTo,numbersToCheck,duplicateOf,from
+dot-irregular-schedules-tip-1,tip,action,"Aim to keep your bedtime and wake-up time within the same hour every day, even on weekends.",irregular-schedules,keep-a-regular-sleep-schedule; dont-sleep-in-much-on-weekends,within the same hour,,Do One Thing homepage quick tips
+dot-irregular-schedules-tip-2,tip,action,"If you’re up late, try a short nap the next day instead of sleeping in for hours, which can make the cycle worse.",irregular-schedules,keep-naps-short-and-early; dont-sleep-in-much-on-weekends,,,Do One Thing homepage quick tips
+dot-irregular-schedules-tip-3,tip,action,Plan social activities earlier when you can — morning coffee catch-ups or evening walks can replace midnight hangouts.,irregular-schedules,plan-social-time-earlier,,,Do One Thing homepage quick tips
+dot-irregular-schedules-tip-4,tip,action,"Use consistent cues — morning sunlight, light exercise, and hydration — to help your body reset after a late night.",irregular-schedules,get-morning-daylight; move-in-the-morning,,,Do One Thing homepage quick tips
+dot-weekend-gap-1,commitment,mindset,"I will remind myself that consistency is freedom, not restriction.",irregular-schedules; weekend-gap,dont-sleep-in-much-on-weekends,,,Do One Thing: Habits by Category
+dot-weekend-gap-2,commitment,mindset,"I will treat Sunday nights as a gentle reset, preparing for the week with intention.",irregular-schedules; weekend-gap,keep-a-regular-sleep-schedule,,,Do One Thing: Habits by Category
+dot-deadlines-1,commitment,action,I will finish schoolwork by 9 pm so my brain has time to slow down before sleep.,irregular-schedules; deadlines,finish-work-earlier,9 pm,,Do One Thing: Habits by Category
+dot-deadlines-2,commitment,action,"I will plan my hardest tasks for earlier in the day, leaving evenings calm.",irregular-schedules; deadlines,finish-work-earlier,,,Do One Thing: Habits by Category
+dot-deadlines-3,commitment,action,I will give myself a 30-minute buffer between work and screens before bed.,irregular-schedules; deadlines,finish-work-earlier; screens-before-bed,30-minute buffer,,Do One Thing: Habits by Category
+dot-deadlines-4,commitment,mindset,I will stop treating exhaustion as productivity and instead value sleep as part of my success.,irregular-schedules; deadlines,get-enough-sleep-for-you,,,Do One Thing: Habits by Category
+dot-deadlines-5,commitment,action,"I will close my laptop before I feel depleted, not after.",irregular-schedules; deadlines,finish-work-earlier,,,Do One Thing: Habits by Category
+dot-social-commitments-1,commitment,action,I will suggest earlier meet-ups so fun doesn’t mean fatigue.,irregular-schedules; social-commitments,plan-social-time-earlier,,,Do One Thing: Habits by Category
+dot-social-commitments-2,commitment,action,"I will cap social calls by 10 pm, choosing depth over late-night chatter.",irregular-schedules; social-commitments,plan-social-time-earlier,10 pm,,Do One Thing: Habits by Category
+dot-social-commitments-3,commitment,action,I will trade one late-night hangout each week for a morning coffee ritual with a friend.,irregular-schedules; social-commitments,plan-social-time-earlier,,,Do One Thing: Habits by Category
+dot-social-commitments-4,commitment,mindset,"I will be honest with friends about needing rest, knowing true friends will support me.",irregular-schedules; social-commitments,plan-social-time-earlier,,,Do One Thing: Habits by Category
+dot-social-commitments-5,commitment,mindset,"I will let social joy add to my energy, not drain it.",irregular-schedules; social-commitments,plan-social-time-earlier,,,Do One Thing: Habits by Category
+dot-circadian-cues-1,commitment,action,I will step outside for sunlight within 30 minutes of waking.,irregular-schedules; circadian-cues,get-morning-daylight,within 30 minutes of waking,,Do One Thing: Habits by Category
+dot-circadian-cues-2,commitment,action,I will stretch or move my body every morning to signal the day has begun.,irregular-schedules; circadian-cues,move-in-the-morning,,,Do One Thing: Habits by Category
+dot-circadian-cues-3,commitment,action,"I will use the same nightly ritual — dim lights, tea, quiet — to signal sleep.",irregular-schedules; circadian-cues,have-a-wind-down-routine,,,Do One Thing: Habits by Category
+dot-circadian-cues-4,commitment,action,I will end each day with a simple phrase of gratitude to mark closure.,irregular-schedules; circadian-cues,gratitude-list,,,Do One Thing: Habits by Category
+dot-circadian-cues-5,commitment,mindset,I will trust that my body thrives on rhythm and will reward me with better sleep.,irregular-schedules; circadian-cues,keep-a-regular-sleep-schedule,,,Do One Thing: Habits by Category
+dot-technology-tip-1,tip,action,Set a “tech curfew” at least one hour before bedtime.,technology,screens-before-bed,at least one hour,,Do One Thing homepage quick tips
+dot-technology-tip-2,tip,action,Use blue-light filters or night-shift modes if screens are unavoidable in the evening.,technology,less-bright-light-in-the-evening; screens-before-bed,,,Do One Thing homepage quick tips
+dot-technology-tip-3,tip,action,Keep your phone out of reach during the night to avoid disruptive notifications.,technology,keep-devices-out-of-the-bedroom,,,Do One Thing homepage quick tips
+dot-technology-tip-4,tip,action,"Replace screens with a relaxing bedtime routine — reading, journaling, stretching, or even light music.",technology,have-a-wind-down-routine,,,Do One Thing homepage quick tips
+dot-evening-phone-1,commitment,action,I will set a tech curfew one hour before bed.,technology; evening-phone,screens-before-bed,one hour before bed,,Do One Thing: Habits by Category
+dot-evening-phone-2,commitment,action,I will charge my phone outside the bedroom overnight.,technology; evening-phone,keep-devices-out-of-the-bedroom,,,Do One Thing: Habits by Category
+dot-evening-phone-3,commitment,action,I will replace scrolling with one page of reading or journaling.,technology; evening-phone,screens-before-bed,,,Do One Thing: Habits by Category
+dot-evening-phone-4,commitment,mindset,"I will greet mornings with intention, not with notifications.",technology; evening-phone,keep-devices-out-of-the-bedroom,,,Do One Thing: Habits by Category
+dot-evening-phone-5,commitment,mindset,"I will see my bed as a place for rest, not a workstation.",technology; evening-phone,bed-is-for-sleep,,,Do One Thing: Habits by Category
+dot-tv-streaming-1,commitment,action,"I will stop watching shows by 9:30 pm, choosing rest over another episode.",technology; tv-streaming,screens-before-bed,9:30 pm,,Do One Thing: Habits by Category
+dot-tv-streaming-2,commitment,action,I will shift my favorite shows earlier so my nights end quietly.,technology; tv-streaming,screens-before-bed,,,Do One Thing: Habits by Category
+dot-tv-streaming-3,commitment,action,I will swap one binge night for an early night of deep sleep each week.,technology; tv-streaming,screens-before-bed,,,Do One Thing: Habits by Category
+dot-tv-streaming-4,commitment,mindset,"I will treat the ‘next episode’ button as an intentional choice, not a reflex.",technology; tv-streaming,screens-before-bed,,,Do One Thing: Habits by Category
+dot-tv-streaming-5,commitment,mindset,I will remember that true cliffhangers resolve best after a good night’s rest.,technology; tv-streaming,screens-before-bed,,,Do One Thing: Habits by Category
+dot-gaming-social-media-1,commitment,action,I will finish gaming or social feeds at least an hour before bed.,technology; gaming-social-media,screens-before-bed,an hour before bed,,Do One Thing: Habits by Category
+dot-gaming-social-media-2,commitment,action,I will set a timer so playtime ends while I still feel in control.,technology; gaming-social-media,screens-before-bed,,,Do One Thing: Habits by Category
+dot-gaming-social-media-3,commitment,action,I will move one gaming session into the afternoon instead of the evening.,technology; gaming-social-media,screens-before-bed,,,Do One Thing: Habits by Category
+dot-gaming-social-media-4,commitment,mindset,I will remind myself that digital wins don’t matter if I lose tomorrow’s energy.,technology; gaming-social-media,screens-before-bed,,,Do One Thing: Habits by Category
+dot-gaming-social-media-5,commitment,mindset,I will choose calm over stimulation when the night deepens.,technology; gaming-social-media,skip-exciting-things-before-bed,,,Do One Thing: Habits by Category
+dot-bedroom-devices-1,commitment,action,I will keep my phone out of reach at night so sleep stays undisturbed.,technology; bedroom-devices,keep-devices-out-of-the-bedroom,,,Do One Thing: Habits by Category
+dot-bedroom-devices-2,commitment,action,I will use an alarm clock instead of relying on my phone.,technology; bedroom-devices,use-an-alarm-clock,,,Do One Thing: Habits by Category
+dot-bedroom-devices-3,commitment,action,I will make my bedroom a tech-free sanctuary.,technology; bedroom-devices,keep-devices-out-of-the-bedroom,,,Do One Thing: Habits by Category
+dot-bedroom-devices-4,commitment,mindset,"I will honor my bed as a temple of rest, not a glowing workspace.",technology; bedroom-devices,bed-is-for-sleep,,,Do One Thing: Habits by Category
+dot-bedroom-devices-5,commitment,action,"I will wake to sunlight or gentle sounds, not to pings and alerts.",technology; bedroom-devices,keep-devices-out-of-the-bedroom; get-morning-daylight,,,Do One Thing: Habits by Category
+dot-stress-tip-1,tip,action,Build a calming wind-down routine with dim lights and quiet activities.,stress,have-a-wind-down-routine,,,Do One Thing homepage quick tips
+dot-stress-tip-2,tip,action,"Practice mindfulness, meditation, or deep breathing before bed — even 5 minutes helps.",stress,relaxation-techniques,5 minutes,,Do One Thing homepage quick tips
+dot-stress-tip-3,tip,action,Write down to-do lists or worries earlier in the evening to clear your mind.,stress,write-down-worries,,,Do One Thing homepage quick tips
+dot-stress-tip-4,tip,action,"If poor sleep persists for more than a few weeks, talk with a professional — you don’t have to navigate it alone.",stress,get-help-if-poor-sleep-persists,more than a few weeks,,Do One Thing homepage quick tips
+dot-get-exercise-1,commitment,duplicate,I will write tomorrow’s to-do list before dinner.,stress; get-exercise,,,dot-work-school-1,Do One Thing: Habits by Category
+dot-get-exercise-2,commitment,duplicate,I will stop working at least one hour before bed.,stress; get-exercise,,,dot-work-school-2,Do One Thing: Habits by Category
+dot-get-exercise-3,commitment,duplicate,I will celebrate what I finish each day instead of focusing on what remains.,stress; get-exercise,,,dot-work-school-3,Do One Thing: Habits by Category
+dot-get-exercise-4,commitment,duplicate,I will end my workday with a short ritual that signals ‘done.’,stress; get-exercise,,,dot-work-school-4,Do One Thing: Habits by Category
+dot-get-exercise-5,commitment,duplicate,I will trust that rest is the most important work of all.,stress; get-exercise,,,dot-work-school-5,Do One Thing: Habits by Category
+dot-work-school-1,commitment,action,I will write tomorrow’s to-do list before dinner.,stress; work-school,write-down-worries,before dinner,,Do One Thing: Habits by Category
+dot-work-school-2,commitment,action,I will stop working at least one hour before bed.,stress; work-school,finish-work-earlier,one hour before bed,,Do One Thing: Habits by Category
+dot-work-school-3,commitment,mindset,I will celebrate what I finish each day instead of focusing on what remains.,stress; work-school,calm-your-mind-before-bed,,,Do One Thing: Habits by Category
+dot-work-school-4,commitment,action,I will end my workday with a short ritual that signals ‘done.’,stress; work-school,finish-work-earlier,,,Do One Thing: Habits by Category
+dot-work-school-5,commitment,mindset,I will trust that rest is the most important work of all.,stress; work-school,get-enough-sleep-for-you,,,Do One Thing: Habits by Category
+dot-relationships-1,commitment,action,I will journal three good things about my relationships each night.,stress; relationships,gratitude-list,three good things,,Do One Thing: Habits by Category
+dot-relationships-2,commitment,action,"I will save serious conversations for the day, not bedtime.",stress; relationships,avoid-heavy-talks-at-bedtime,,,Do One Thing: Habits by Category
+dot-relationships-3,commitment,duplicate,"I will save serious conversations for the day, not bedtime.",stress; relationships,,,dot-relationships-2,Do One Thing: Habits by Category
+dot-relationships-4,commitment,mindset,"I will rest knowing love is nurtured in patience, not in late-night arguments.",stress; relationships,avoid-heavy-talks-at-bedtime,,,Do One Thing: Habits by Category
+dot-relationships-5,commitment,mindset,I will hold my family in compassion as I drift to sleep.,stress; relationships,calm-your-mind-before-bed,,,Do One Thing: Habits by Category
+dot-money-worries-1,commitment,action,I will set aside 15 minutes in the evening for practical planning.,stress; money-worries,write-down-worries,15 minutes,,Do One Thing: Habits by Category
+dot-money-worries-2,commitment,action,I will separate financial worries from sleep by addressing them during daylight.,stress; money-worries,write-down-worries,,,Do One Thing: Habits by Category
+dot-money-worries-3,commitment,action,I will balance worries by writing down three daily wins.,stress; money-worries,gratitude-list,three daily wins,,Do One Thing: Habits by Category
+dot-money-worries-4,commitment,mindset,I will remind myself that tomorrow always brings fresh perspective.,stress; money-worries,calm-your-mind-before-bed,,,Do One Thing: Habits by Category
+dot-money-worries-5,commitment,mindset,I will treat rest as the best investment in my future.,stress; money-worries,get-enough-sleep-for-you,,,Do One Thing: Habits by Category
+dot-mental-health-1,commitment,action,I will practice 5 minutes of mindful breathing before bed.,stress; mental-health,relaxation-techniques,5 minutes,,Do One Thing: Habits by Category
+dot-mental-health-2,commitment,action,"I will seek help when I need it, knowing strength is asking.",stress; mental-health,get-help-if-poor-sleep-persists,,,Do One Thing: Habits by Category
+dot-mental-health-3,commitment,mindset,I will give myself grace on rough nights.,stress; mental-health,be-kind-to-yourself-after-a-bad-night,,,Do One Thing: Habits by Category
+dot-mental-health-4,commitment,mindset,I will see poor sleep not as failure but as feedback.,stress; mental-health,be-kind-to-yourself-after-a-bad-night,,,Do One Thing: Habits by Category
+dot-mental-health-5,commitment,mindset,I will anchor myself in rituals that remind me I am safe.,stress; mental-health,have-a-wind-down-routine,,,Do One Thing: Habits by Category
+dot-substances-and-diet-tip-1,tip,action,Cut off caffeine by early afternoon.,substances-and-diet,caffeine-cutoff,,,Do One Thing homepage quick tips
+dot-substances-and-diet-tip-2,tip,action,Avoid alcohol close to bedtime; stop drinking at least 3 hours before sleep.,substances-and-diet,no-alcohol-close-to-bedtime,at least 3 hours,,Do One Thing homepage quick tips
+dot-substances-and-diet-tip-3,tip,action,"If using marijuana, keep doses moderate and track how it affects your rest.",substances-and-diet,cannabis-and-sleep,,,Do One Thing homepage quick tips
+dot-substances-and-diet-tip-4,tip,action,Finish heavy meals 2–3 hours before bed; opt for light snacks if you’re hungry late.,substances-and-diet,caffeine-and-big-meals-early; small-snack-before-bed,2–3 hours,,Do One Thing homepage quick tips
+dot-substances-and-diet-tip-5,tip,action,Stay hydrated earlier in the day and taper fluids at night to minimize middle-of-the-night wake-ups.,substances-and-diet,drink-more-earlier-in-the-day,,,Do One Thing homepage quick tips
+dot-caffeine-timing-1,commitment,action,I will enjoy coffee only before 2 p.m.,substances-and-diet; caffeine-timing,caffeine-cutoff,before 2 p.m.,,Do One Thing: Habits by Category
+dot-caffeine-timing-2,commitment,action,I will switch to calming teas in the evening.,substances-and-diet; caffeine-timing,herbal-tea-before-bed,,,Do One Thing: Habits by Category
+dot-caffeine-timing-3,commitment,action,I will savor my morning coffee instead of chasing energy late.,substances-and-diet; caffeine-timing,caffeine-cutoff,,,Do One Thing: Habits by Category
+dot-caffeine-timing-4,commitment,action,I will trade my afternoon coffee for a short walk outside.,substances-and-diet; caffeine-timing,caffeine-cutoff,,,Do One Thing: Habits by Category
+dot-caffeine-timing-5,commitment,mindset,"I will let natural rhythms, not caffeine, guide my nights.",substances-and-diet; caffeine-timing,caffeine-cutoff,,,Do One Thing: Habits by Category
+dot-alcohol-timing-1,commitment,action,I will avoid drinking within three hours of bed.,substances-and-diet; alcohol-timing,no-alcohol-close-to-bedtime,three hours,,Do One Thing: Habits by Category
+dot-alcohol-timing-2,commitment,action,"I will enjoy drinks socially, not as sleep aids.",substances-and-diet; alcohol-timing,no-alcohol-close-to-bedtime,,,Do One Thing: Habits by Category
+dot-alcohol-timing-3,commitment,action,I will replace nightcaps with water or calming tea.,substances-and-diet; alcohol-timing,no-alcohol-close-to-bedtime; herbal-tea-before-bed,,,Do One Thing: Habits by Category
+dot-alcohol-timing-4,commitment,mindset,I will see mornings without grogginess as my reward.,substances-and-diet; alcohol-timing,no-alcohol-close-to-bedtime,,,Do One Thing: Habits by Category
+dot-alcohol-timing-5,commitment,mindset,I will remind myself that alcohol steals dreams as it steals REM.,substances-and-diet; alcohol-timing,no-alcohol-close-to-bedtime,claim: alcohol 'steals REM',,Do One Thing: Habits by Category
+dot-cannabis-use-1,commitment,action,I will pause cannabis at least one hour before bed.,substances-and-diet; cannabis-use,cannabis-and-sleep,one hour before bed,,Do One Thing: Habits by Category
+dot-cannabis-use-2,commitment,action,I will track how it affects my sleep with curiosity.,substances-and-diet; cannabis-use,cannabis-and-sleep; keep-a-sleep-diary,,,Do One Thing: Habits by Category
+dot-cannabis-use-3,commitment,action,I will explore alternatives like reading or music at night.,substances-and-diet; cannabis-use,cannabis-and-sleep; have-a-wind-down-routine,,,Do One Thing: Habits by Category
+dot-cannabis-use-4,commitment,mindset,I will choose balance over reliance.,substances-and-diet; cannabis-use,cannabis-and-sleep,,,Do One Thing: Habits by Category
+dot-cannabis-use-5,commitment,mindset,I will honor my body’s need for natural cycles of dreaming.,substances-and-diet; cannabis-use,cannabis-and-sleep,,,Do One Thing: Habits by Category
+dot-meal-timing-1,commitment,action,I will finish dinner two to three hours before bed.,substances-and-diet; meal-timing,caffeine-and-big-meals-early,two to three hours,,Do One Thing: Habits by Category
+dot-meal-timing-2,commitment,action,I will choose lighter snacks at night instead of heavy meals.,substances-and-diet; meal-timing,small-snack-before-bed,,,Do One Thing: Habits by Category
+dot-meal-timing-3,commitment,mindset,"I will eat with attention to fullness, not habit.",substances-and-diet; meal-timing,caffeine-and-big-meals-early,,,Do One Thing: Habits by Category
+dot-meal-timing-4,commitment,mindset,"I will let hunger guide me wisely, not late-night impulse.",substances-and-diet; meal-timing,small-snack-before-bed,,,Do One Thing: Habits by Category
+dot-meal-timing-5,commitment,mindset,I will honor my body with timing that supports renewal.,substances-and-diet; meal-timing,caffeine-and-big-meals-early,,,Do One Thing: Habits by Category
+dot-hydration-timing-1,commitment,action,I will drink most of my water earlier in the day.,substances-and-diet; hydration-timing,drink-more-earlier-in-the-day,,,Do One Thing: Habits by Category
+dot-hydration-timing-2,commitment,action,I will taper fluids after 8 pm to protect deep sleep.,substances-and-diet; hydration-timing,drink-more-earlier-in-the-day,after 8 pm,,Do One Thing: Habits by Category
+dot-hydration-timing-3,commitment,action,"I will enjoy a small calming drink before bed, not a large one.",substances-and-diet; hydration-timing,drink-more-earlier-in-the-day; herbal-tea-before-bed,,,Do One Thing: Habits by Category
+dot-hydration-timing-4,commitment,mindset,"I will see hydration as rhythm, not a last-minute scramble.",substances-and-diet; hydration-timing,drink-more-earlier-in-the-day,,,Do One Thing: Habits by Category
+dot-hydration-timing-5,commitment,mindset,"I will keep my nights for dreams, not for interruptions.",substances-and-diet; hydration-timing,drink-more-earlier-in-the-day,,,Do One Thing: Habits by Category

@@ -1,0 +1,102 @@
+{
+  "_about": "Codes from the SAM wiki checked by Claude on 2026-10-21 by searching the WHO browsers. 'exists' = the code was found with this title. Fit (whether the code is the right one for the advice) is a separate, human question.",
+  "checked": "2026-10-21",
+  "icd11": {
+    "browser": "https://icd.who.int/browse/2025-01/mms/en",
+    "release": "ICD-11 MMS 2025-01",
+    "codes": {
+      "7A60": {
+        "exists": true,
+        "currentTitle": "Delayed sleep-wake phase disorder",
+        "wikiTitle": "Circadian rhythm sleep-wake disorder, delayed sleep phase type",
+        "titleOutdated": true
+      },
+      "7A61": {
+        "exists": true,
+        "currentTitle": "Advanced sleep-wake phase disorder",
+        "wikiTitle": "Circadian rhythm sleep-wake disorder, advanced sleep phase type",
+        "titleOutdated": true
+      },
+      "7A0Z": {
+        "exists": true,
+        "currentTitle": "Insomnia disorders, unspecified"
+      },
+      "7A6Z": {
+        "exists": true,
+        "currentTitle": "Circadian rhythm sleep-wake disorders, unspecified"
+      },
+      "7A41": {
+        "exists": true,
+        "currentTitle": "Obstructive sleep apnoea"
+      },
+      "6B00": {
+        "exists": true,
+        "currentTitle": "Generalised anxiety disorder"
+      },
+      "6B01": {
+        "exists": true,
+        "currentTitle": "Panic disorder"
+      },
+      "DA22": {
+        "exists": true,
+        "currentTitle": "Gastro-oesophageal reflux disease"
+      },
+      "7A00": {
+        "exists": true,
+        "currentTitle": "Chronic insomnia"
+      },
+      "7A64": {
+        "exists": true,
+        "currentTitle": "Circadian rhythm sleep-wake disorder, shift work type"
+      },
+      "7A65": {
+        "exists": true,
+        "currentTitle": "Circadian rhythm sleep-wake disorder, jet lag type"
+      }
+    },
+    "fitNote": "ICD-11 codes name disorders. Most items are general advice for people without a disorder, so the codes say which condition an item is relevant to, not what the advice is. The wiki assigns 7A0Z (insomnia, unspecified) to whole subcategories such as bedroom environment; that is a loose fit.",
+    "addedForConditionFacet": "7A00, 7A64 and 7A65 are not used by the wiki; looked up on 2026-10-21 for the condition facet."
+  },
+  "ichi": {
+    "browser": "https://icd.who.int/dev11/l-ichi/en",
+    "release": "WHO-FIC maintenance platform (work-in-progress version, not a released version)",
+    "codes": {
+      "ATK.PM.ZZ": {
+        "exists": true,
+        "currentTitle": "Education about sleep functions"
+      },
+      "ATK.PG.ZZ": {
+        "exists": true,
+        "currentTitle": "Assisting and leading exercise for sleep functions"
+      },
+      "ATK.PP.ZZ": {
+        "exists": true,
+        "currentTitle": "Counselling for sleep functions"
+      },
+      "ATK.RC.ZZ": {
+        "exists": true,
+        "currentTitle": "Emotional support for sleep functions"
+      },
+      "ATK.AA.ZZ": {
+        "exists": true,
+        "currentTitle": "Assessment of sleep functions"
+      },
+      "ATK.AC.ZZ": {
+        "exists": true,
+        "currentTitle": "Test of sleep functions"
+      },
+      "ATK.AI.AH": {
+        "exists": true,
+        "currentTitle": "Polysomnogram"
+      }
+    },
+    "alsoAvailable": {
+      "ATK.PN.ZZ": "Advising about sleep functions. Possibly the best single fit for a list of advice.",
+      "ATK.PH.ZZ": "Training of sleep functions",
+      "ATK.RB.ZZ": "Practical support with sleep functions",
+      "ATK.AN.ZZ": "Interview in relation to sleep functions",
+      "ATK.ZZ.ZZ": "Other interventions on sleep functions, not elsewhere classified"
+    },
+    "fitNote": "ICHI codes describe the intervention (education, advising, exercise). The wiki assigns one per category; category 2 (light, diet, breathing) gets ATK.PG.ZZ 'assisting and leading exercise', which fits the exercise and breathing items but not light or diet."
+  }
+}

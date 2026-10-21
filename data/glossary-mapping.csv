@@ -1,0 +1,82 @@
+glossaryId,term,glossaryFile,inCommittedBuild,adviceId,relation
+slp-dim-the-lights-at-night,Dim the Lights at Night,data/ai/sleep/huberman-sleep-essentials.json,False,screens-before-bed,overlaps
+slp-dim-the-lights-at-night,Dim the Lights at Night,data/ai/sleep/huberman-sleep-essentials.json,False,less-bright-light-in-the-evening,overlaps
+slp-dim-the-lights-at-night,Dim the Lights at Night,data/ai/sleep/huberman-sleep-essentials.json,False,dim-lights-gradually,overlaps
+slp-dim-the-lights-at-night,Dim the Lights at Night,data/ai/sleep/huberman-sleep-essentials.json,False,dim-the-lights-after-dark,same
+slp-late-afternoon-sunlight-viewing,Late-Afternoon Sunlight Viewing,data/ai/sleep/huberman-sleep-essentials.json,False,late-afternoon-daylight,same
+slp-use-red-light-if-you-must-be-up-at-night,Use Red Light If You Must Be Up at Night,data/ai/sleep/huberman-sleep-essentials.json,False,use-dim-red-light-at-night,same
+slp-temperature-minimum,Temperature Minimum,data/ai/sleep/huberman-sleep-essentials.json,False,body-temperature-low-point,same
+slp-limit-weekend-sleep-in,Limit Weekend Sleep-In,data/ai/sleep/huberman-sleep-essentials.json,False,keep-a-regular-sleep-schedule,overlaps
+slp-limit-weekend-sleep-in,Limit Weekend Sleep-In,data/ai/sleep/huberman-sleep-essentials.json,False,dont-sleep-in-much-on-weekends,same
+slp-stick-to-a-sleep-schedule,Stick to a Sleep Schedule,data/ai/sleep/nhlbi-good-night-tips.json,True,keep-a-regular-sleep-schedule,same
+slp-stick-to-a-sleep-schedule,Stick to a Sleep Schedule,data/ai/sleep/nhlbi-good-night-tips.json,True,change-sleep-times-gradually,overlaps
+slp-stick-to-a-sleep-schedule,Stick to a Sleep Schedule,data/ai/sleep/nhlbi-good-night-tips.json,True,get-up-at-the-same-time,overlaps
+slp-time-your-exercise-for-sleep,Time Your Exercise for Sleep,data/ai/sleep/nhlbi-good-night-tips.json,True,exercise-regularly,overlaps
+slp-time-your-exercise-for-sleep,Time Your Exercise for Sleep,data/ai/sleep/nhlbi-good-night-tips.json,True,no-hard-workouts-right-before-bed,same
+slp-avoid-caffeine-and-nicotine-before-bed,Avoid Caffeine and Nicotine Before Bed,data/ai/sleep/nhlbi-good-night-tips.json,True,caffeine-and-big-meals-early,same
+slp-avoid-alcohol-before-bed,Avoid Alcohol Before Bed,data/ai/sleep/nhlbi-good-night-tips.json,True,no-alcohol-close-to-bedtime,same
+slp-avoid-large-meals-and-fluids-late-at-night,Avoid Large Meals and Fluids Late at Night,data/ai/sleep/nhlbi-good-night-tips.json,True,caffeine-and-big-meals-early,overlaps
+slp-avoid-large-meals-and-fluids-late-at-night,Avoid Large Meals and Fluids Late at Night,data/ai/sleep/nhlbi-good-night-tips.json,True,drink-more-earlier-in-the-day,overlaps
+slp-review-medicines-that-disrupt-sleep,Review Medicines That Disrupt Sleep,data/ai/sleep/nhlbi-good-night-tips.json,True,check-your-medicines,same
+slp-avoid-late-afternoon-naps,Avoid Late Afternoon Naps,data/ai/sleep/nhlbi-good-night-tips.json,True,keep-naps-short-and-early,same
+slp-avoid-late-afternoon-naps,Avoid Late Afternoon Naps,data/ai/sleep/nhlbi-good-night-tips.json,True,naps-and-night-sleep,overlaps
+slp-relax-before-bed,Relax Before Bed,data/ai/sleep/nhlbi-good-night-tips.json,True,have-a-wind-down-routine,same
+slp-relax-before-bed,Relax Before Bed,data/ai/sleep/nhlbi-good-night-tips.json,True,skip-exciting-things-before-bed,overlaps
+slp-take-a-warm-bath-before-bed,Take a Warm Bath Before Bed,data/ai/sleep/nhlbi-good-night-tips.json,True,have-a-wind-down-routine,overlaps
+slp-take-a-warm-bath-before-bed,Take a Warm Bath Before Bed,data/ai/sleep/nhlbi-good-night-tips.json,True,warm-bath-or-shower-before-bed,same
+slp-create-a-good-sleep-environment,Create a Good Sleep Environment,data/ai/sleep/nhlbi-good-night-tips.json,True,keep-the-bedroom-cool-and-dark,overlaps
+slp-create-a-good-sleep-environment,Create a Good Sleep Environment,data/ai/sleep/nhlbi-good-night-tips.json,True,block-outside-light,overlaps
+slp-create-a-good-sleep-environment,Create a Good Sleep Environment,data/ai/sleep/nhlbi-good-night-tips.json,True,make-your-bed-comfortable,overlaps
+slp-create-a-good-sleep-environment,Create a Good Sleep Environment,data/ai/sleep/nhlbi-good-night-tips.json,True,mask-noise-with-steady-sound,overlaps
+slp-create-a-good-sleep-environment,Create a Good Sleep Environment,data/ai/sleep/nhlbi-good-night-tips.json,True,keep-the-bedroom-quiet,overlaps
+slp-create-a-good-sleep-environment,Create a Good Sleep Environment,data/ai/sleep/nhlbi-good-night-tips.json,True,keep-devices-out-of-the-bedroom,overlaps
+slp-get-morning-sunlight-exposure,Get Morning Sunlight Exposure,data/ai/sleep/nhlbi-good-night-tips.json,True,get-morning-daylight,same
+slp-don-t-lie-in-bed-awake,Don't Lie in Bed Awake,data/ai/sleep/nhlbi-good-night-tips.json,True,get-up-if-you-cant-sleep,same
+slp-reconditioning-therapy,Reconditioning Therapy,data/ai/sleep/nhlbi-insomnia-techniques.json,True,bed-is-for-sleep,overlaps
+slp-reconditioning-therapy,Reconditioning Therapy,data/ai/sleep/nhlbi-insomnia-techniques.json,True,get-up-if-you-cant-sleep,same
+slp-relaxation-therapy,Relaxation Therapy,data/ai/sleep/nhlbi-insomnia-techniques.json,True,try-a-guided-meditation,overlaps
+slp-relaxation-therapy,Relaxation Therapy,data/ai/sleep/nhlbi-insomnia-techniques.json,True,calm-your-mind-before-bed,overlaps
+slp-relaxation-therapy,Relaxation Therapy,data/ai/sleep/nhlbi-insomnia-techniques.json,True,relaxation-techniques,same
+slp-sleep-restriction-therapy,Sleep Restriction Therapy,data/ai/sleep/nhlbi-insomnia-techniques.json,True,keep-a-sleep-diary,overlaps
+slp-sleep-restriction-therapy,Sleep Restriction Therapy,data/ai/sleep/nhlbi-insomnia-techniques.json,True,sleep-restriction-therapy,same
+slp-cognitive-behavioral-therapy-for-insomnia,Cognitive Behavioral Therapy for Insomnia,data/ai/sleep/nhlbi-insomnia-techniques.json,True,keep-a-sleep-diary,overlaps
+slp-cognitive-behavioral-therapy-for-insomnia,Cognitive Behavioral Therapy for Insomnia,data/ai/sleep/nhlbi-insomnia-techniques.json,True,cbt-for-insomnia,same
+slp-coping-with-jet-lag,Coping With Jet Lag,data/ai/sleep/nhlbi-jet-lag-and-shift-work.json,True,change-sleep-times-gradually,narrower
+slp-coping-with-jet-lag,Coping With Jet Lag,data/ai/sleep/nhlbi-jet-lag-and-shift-work.json,True,melatonin-for-jet-lag-or-shifts,overlaps
+slp-coping-with-jet-lag,Coping With Jet Lag,data/ai/sleep/nhlbi-jet-lag-and-shift-work.json,True,jet-lag,same
+slp-adjusting-to-night-shift-work,Adjusting to Night Shift Work,data/ai/sleep/nhlbi-jet-lag-and-shift-work.json,True,melatonin-for-jet-lag-or-shifts,overlaps
+slp-adjusting-to-night-shift-work,Adjusting to Night Shift Work,data/ai/sleep/nhlbi-jet-lag-and-shift-work.json,True,adjust-to-night-shift-work,same
+slp-4-7-8-breathing,4-7-8 Breathing,data/ai/sleep/sleep-doctor-youtube.json,False,4-7-8-breathing,same
+slp-box-breathing,Box Breathing,data/ai/sleep/sleep-doctor-youtube.json,False,relaxation-techniques,narrower
+slp-box-breathing,Box Breathing,data/ai/sleep/sleep-doctor-youtube.json,False,box-breathing,same
+slp-cyclic-sighing,Cyclic Sighing,data/ai/sleep/sleep-doctor-youtube.json,False,relaxation-techniques,narrower
+slp-cyclic-sighing,Cyclic Sighing,data/ai/sleep/sleep-doctor-youtube.json,False,cyclic-sighing,same
+slp-alternate-nostril-breathing,Alternate Nostril Breathing,data/ai/sleep/sleep-doctor-youtube.json,False,nose-breathing-exercises,narrower
+slp-alternate-nostril-breathing,Alternate Nostril Breathing,data/ai/sleep/sleep-doctor-youtube.json,False,alternate-nostril-breathing,same
+slp-belly-breathing,Belly Breathing,data/ai/sleep/sleep-doctor-youtube.json,False,nose-breathing-exercises,overlaps
+slp-belly-breathing,Belly Breathing,data/ai/sleep/sleep-doctor-youtube.json,False,relaxation-techniques,narrower
+slp-belly-breathing,Belly Breathing,data/ai/sleep/sleep-doctor-youtube.json,False,belly-breathing,same
+slp-progressive-muscle-relaxation,Progressive Muscle Relaxation,data/ai/sleep/sleep-doctor-youtube.json,False,progressive-muscle-relaxation,same
+slp-non-sleep-deep-rest,Non-Sleep Deep Rest,data/ai/sleep/sleep-doctor-youtube.json,False,try-a-guided-meditation,overlaps
+slp-non-sleep-deep-rest,Non-Sleep Deep Rest,data/ai/sleep/sleep-doctor-youtube.json,False,rest-even-if-awake,same
+slp-don-t-check-the-clock,Don't Check the Clock,data/ai/sleep/sleep-doctor-youtube.json,False,dont-check-the-clock,same
+slp-stay-in-bed-and-breathe-when-you-wake-at-night,Stay in Bed and Breathe When You Wake at Night,data/ai/sleep/sleep-doctor-youtube.json,False,get-up-if-you-cant-sleep,conflicts
+slp-stay-in-bed-and-breathe-when-you-wake-at-night,Stay in Bed and Breathe When You Wake at Night,data/ai/sleep/sleep-doctor-youtube.json,False,stay-in-bed-and-breathe,same
+slp-worry-journal,Worry Journal,data/ai/sleep/sleep-doctor-youtube.json,False,calm-your-mind-before-bed,narrower
+slp-worry-journal,Worry Journal,data/ai/sleep/sleep-doctor-youtube.json,False,write-down-worries,same
+slp-gratitude-list-before-bed,Gratitude List Before Bed,data/ai/sleep/sleep-doctor-youtube.json,False,gratitude-list,same
+slp-power-down-hour,Power-Down Hour,data/ai/sleep/sleep-doctor-youtube.json,False,screens-before-bed,overlaps
+slp-power-down-hour,Power-Down Hour,data/ai/sleep/sleep-doctor-youtube.json,False,have-a-wind-down-routine,narrower
+slp-power-down-hour,Power-Down Hour,data/ai/sleep/sleep-doctor-youtube.json,False,power-down-hour,same
+slp-3-2-1-rule,3-2-1 Rule,data/ai/sleep/sleep-doctor-youtube.json,False,caffeine-and-big-meals-early,narrower
+slp-3-2-1-rule,3-2-1 Rule,data/ai/sleep/sleep-doctor-youtube.json,False,drink-more-earlier-in-the-day,overlaps
+slp-3-2-1-rule,3-2-1 Rule,data/ai/sleep/sleep-doctor-youtube.json,False,no-alcohol-close-to-bedtime,overlaps
+slp-3-2-1-rule,3-2-1 Rule,data/ai/sleep/sleep-doctor-youtube.json,False,3-2-1-rule,same
+slp-cool-down-with-a-frozen-water-bottle,Cool Down With a Frozen Water Bottle,data/ai/sleep/sleep-doctor-youtube.json,False,keep-the-bedroom-cool-and-dark,narrower
+slp-cool-down-with-a-frozen-water-bottle,Cool Down With a Frozen Water Bottle,data/ai/sleep/sleep-doctor-youtube.json,False,frozen-water-bottle,same
+slp-delay-your-first-coffee,Delay Your First Coffee,data/ai/sleep/sleep-doctor-youtube.json,False,delay-first-coffee,same
+slp-set-a-caffeine-cutoff,Set a Caffeine Cutoff,data/ai/sleep/sleep-doctor-youtube.json,False,caffeine-and-big-meals-early,narrower
+slp-set-a-caffeine-cutoff,Set a Caffeine Cutoff,data/ai/sleep/sleep-doctor-youtube.json,False,caffeine-cutoff,same
+slp-keep-a-fixed-wake-time,Keep a Fixed Wake Time,data/ai/sleep/sleep-doctor-youtube.json,False,keep-a-regular-sleep-schedule,overlaps
+slp-keep-a-fixed-wake-time,Keep a Fixed Wake Time,data/ai/sleep/sleep-doctor-youtube.json,False,get-up-at-the-same-time,same
+slp-match-bedtime-to-your-chronotype,Match Bedtime to Your Chronotype,data/ai/sleep/sleep-doctor-youtube.json,False,fit-bedtime-to-your-body-clock,same

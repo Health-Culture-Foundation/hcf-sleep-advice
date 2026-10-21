@@ -1,0 +1,716 @@
+{
+  "checked": "2026-10-21",
+  "wikiReferences": {
+    "1": {
+      "url": "https://doi.org/10.3389/fnsys.2014.00046",
+      "doi": "10.3389/fnsys.2014.00046",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.frontiersin.org/articles/10.3389/fnsys.2014.00046/pdf"
+    },
+    "2": {
+      "url": "https://doi.org/10.1016/j.sleh.2023.11.011",
+      "doi": "10.1016/j.sleh.2023.11.011",
+      "free": true,
+      "how": "OpenAlex: bronze",
+      "readUrl": "https://doi.org/10.1016/j.sleh.2023.11.011"
+    },
+    "3": {
+      "url": "https://www.sleepfoundation.org/sleep-deprivation/lack-of-sleep-and-cognitive-impairment",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "4": {
+      "url": "https://doi.org/10.1016/j.smrv.2021.101556",
+      "doi": "10.1016/j.smrv.2021.101556",
+      "free": true,
+      "how": "OpenAlex: hybrid",
+      "readUrl": "https://www.sciencedirect.com/science/article/pii/S1087079221001416/pdf"
+    },
+    "5": {
+      "url": "https://www.mentalhealth.org.uk/explore-mental-health/publications/sleep-matters-impact-sleep-health-and-wellbeing",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "6": {
+      "url": "https://doi.org/10.5664/jcsm.9476",
+      "doi": "10.5664/jcsm.9476",
+      "free": true,
+      "how": "OpenAlex: bronze",
+      "readUrl": "https://jcsm.aasm.org/doi/pdf/10.5664/jcsm.9476"
+    },
+    "7": {
+      "url": "https://newsinhealth.nih.gov/2021/04/good-sleep-good-health",
+      "free": true,
+      "how": "US government web page"
+    },
+    "8": {
+      "url": "https://www.cdc.gov/sleep/about/index.html",
+      "free": true,
+      "how": "US government web page"
+    },
+    "9": {
+      "url": "https://doi.org/10.1016/j.sleh.2019.02.002",
+      "doi": "10.1016/j.sleh.2019.02.002",
+      "free": true,
+      "how": "OpenAlex: bronze",
+      "readUrl": "https://doi.org/10.1016/j.sleh.2019.02.002"
+    },
+    "10": {
+      "url": "https://doi.org/10.2196/57748",
+      "doi": "10.2196/57748",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://infodemiology.jmir.org/2024/1/e57748/PDF"
+    },
+    "11": {
+      "url": "https://doi.org/10.7759/cureus.61568",
+      "doi": "10.7759/cureus.61568",
+      "free": true,
+      "how": "OpenAlex: diamond",
+      "readUrl": "https://doi.org/10.7759/cureus.61568"
+    },
+    "12": {
+      "url": "https://doi.org/10.1016/j.smrv.2022.101700",
+      "doi": "10.1016/j.smrv.2022.101700",
+      "free": true,
+      "how": "OpenAlex: hybrid",
+      "readUrl": "https://www.sciencedirect.com/science/article/pii/S1087079222001137/pdf"
+    },
+    "13": {
+      "url": "https://doi.org/10.7759/cureus.41638",
+      "doi": "10.7759/cureus.41638",
+      "free": true,
+      "how": "OpenAlex: diamond",
+      "readUrl": "https://assets.cureus.com/uploads/original_article/pdf/166080/20230711-11713-1b8npp0.pdf"
+    },
+    "14": {
+      "url": "https://doi.org/10.1186/s41606-023-00090-4",
+      "doi": "10.1186/s41606-023-00090-4",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://sleep.biomedcentral.com/counter/pdf/10.1186/s41606-023-00090-4"
+    },
+    "15": {
+      "url": "https://www.sleepfoundation.org/stages-of-sleep/rem-sleep",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "16": {
+      "url": "https://doi.org/10.3389/fpsyt.2022.1037927",
+      "doi": "10.3389/fpsyt.2022.1037927",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.frontiersin.org/articles/10.3389/fpsyt.2022.1037927/pdf"
+    },
+    "17": {
+      "url": "https://doi.org/10.7759/cureus.43595",
+      "doi": "10.7759/cureus.43595",
+      "free": true,
+      "how": "OpenAlex: diamond",
+      "readUrl": "https://assets.cureus.com/uploads/review_article/pdf/178269/20230816-657-3jabe.pdf"
+    },
+    "18": {
+      "url": "https://www.sleepfoundation.org/bedroom-environment/blue-light",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "19": {
+      "url": "https://doi.org/10.3389/fphys.2022.943108",
+      "doi": "10.3389/fphys.2022.943108",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.frontiersin.org/articles/10.3389/fphys.2022.943108/pdf"
+    },
+    "20": {
+      "url": "https://doi.org/10.33069/cim.2024.0004",
+      "doi": "10.33069/cim.2024.0004",
+      "free": true,
+      "how": "OpenAlex: diamond",
+      "readUrl": "https://www.chronobiologyinmedicine.org/upload/pdf/cim-2024-0004.pdf"
+    },
+    "21": {
+      "url": "https://doi.org/10.1016/j.sleh.2021.02.004",
+      "doi": "10.1016/j.sleh.2021.02.004",
+      "free": false,
+      "how": "OpenAlex: closed",
+      "readUrl": null
+    },
+    "22": {
+      "url": "https://doi.org/10.1016/j.smrv.2022.101742",
+      "doi": "10.1016/j.smrv.2022.101742",
+      "free": true,
+      "how": "OpenAlex: hybrid",
+      "readUrl": "https://www.sciencedirect.com/science/article/pii/S1087079222001551/pdf"
+    },
+    "23": {
+      "url": "https://doi.org/10.2196/20319",
+      "doi": "10.2196/20319",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.jmir.org/2021/1/e20319/PDF"
+    },
+    "24": {
+      "url": "https://doi.org/10.1080/07420528.2021.1930029",
+      "doi": "10.1080/07420528.2021.1930029",
+      "free": false,
+      "how": "OpenAlex: closed",
+      "readUrl": null
+    },
+    "25": {
+      "url": "div\\",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "26": {
+      "url": "https://doi.org/10.1093/sleep/33.3.335",
+      "doi": "10.1093/sleep/33.3.335",
+      "free": true,
+      "how": "OpenAlex: bronze",
+      "readUrl": "https://academic.oup.com/sleep/article-pdf/33/3/335/13665268/sleep-33-3-335.pdf"
+    },
+    "27": {
+      "url": "https://doi.org/10.1007/s11818-019-00215-x",
+      "doi": "10.1007/s11818-019-00215-x",
+      "free": true,
+      "how": "OpenAlex: hybrid",
+      "readUrl": "https://link.springer.com/content/pdf/10.1007/s11818-019-00215-x.pdf"
+    },
+    "28": {
+      "url": "https://doi.org/10.1016/j.jsmc.2010.08.001",
+      "doi": "10.1016/j.jsmc.2010.08.001",
+      "free": true,
+      "how": "OpenAlex: bronze",
+      "readUrl": "http://www.sleep.theclinics.com/article/S1556407X10000809/pdf"
+    },
+    "29": {
+      "url": "https://doi.org/10.1016/j.smrv.2019.04.012",
+      "doi": "10.1016/j.smrv.2019.04.012",
+      "free": true,
+      "how": "OpenAlex: hybrid",
+      "readUrl": "https://www.sciencedirect.com/science/article/pii/S1087079218301886/pdf"
+    },
+    "30": {
+      "url": "https://doi.org/10.1371/journal.pone.0267659",
+      "doi": "10.1371/journal.pone.0267659",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0267659&type=printable"
+    },
+    "31": {
+      "url": "https://doi.org/10.1016/j.pneurobio.2021.102127",
+      "doi": "10.1016/j.pneurobio.2021.102127",
+      "free": true,
+      "how": "OpenAlex: hybrid",
+      "readUrl": "https://www.sciencedirect.com/science/article/pii/S0301008221001416/pdf"
+    },
+    "32": {
+      "url": "https://doi.org/10.1007/s40675-017-0071-6",
+      "doi": "10.1007/s40675-017-0071-6",
+      "free": true,
+      "how": "OpenAlex: green",
+      "readUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/5647832"
+    },
+    "33": {
+      "url": "https://doi.org/10.3390/ijerph17062043",
+      "doi": "10.3390/ijerph17062043",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.mdpi.com/1660-4601/17/6/2043/pdf?version=1584619430"
+    },
+    "34": {
+      "url": "https://www.sleepfoundation.org/light-therapy",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "35": {
+      "url": "https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/03.html",
+      "free": true,
+      "how": "US government web page"
+    },
+    "36": {
+      "url": "https://doi.org/10.1539/joh.17-0070-oa",
+      "doi": "10.1539/joh.17-0070-oa",
+      "free": true,
+      "how": "OpenAlex: hybrid",
+      "readUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1539/joh.17-0070-OA"
+    },
+    "37": {
+      "url": "https://doi.org/10.1038/s41598-021-84625-8",
+      "doi": "10.1038/s41598-021-84625-8",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.nature.com/articles/s41598-021-84625-8.pdf"
+    },
+    "38": {
+      "url": "https://doi.org/10.1016/b978-0-444-53702-7.00009-9",
+      "doi": "10.1016/b978-0-444-53702-7.00009-9",
+      "free": false,
+      "how": "OpenAlex: closed",
+      "readUrl": null
+    },
+    "39": {
+      "url": "https://doi.org/10.1016/j.sleep.2017.01.019",
+      "doi": "10.1016/j.sleep.2017.01.019",
+      "free": true,
+      "how": "OpenAlex: green",
+      "readUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/5598771"
+    },
+    "40": {
+      "url": "https://doi.org/10.1016/j.sleh.2014.12.010",
+      "doi": "10.1016/j.sleh.2014.12.010",
+      "free": true,
+      "how": "OpenAlex: bronze",
+      "readUrl": "http://www.sleephealthjournal.org/article/S2352721815000157/pdf"
+    },
+    "41": {
+      "url": "https://doi.org/10.2147/nss.s163071",
+      "doi": "10.2147/nss.s163071",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.dovepress.com/getfile.php?fileID=46523"
+    },
+    "42": {
+      "url": "https://www.sleepfoundation.org/stages-of-sleep",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "43": {
+      "url": "https://www.nhlbi.nih.gov/health/sleep/stages-of-sleep",
+      "free": true,
+      "how": "US government web page"
+    },
+    "44": {
+      "url": "https://www.hopkinsmedicine.org/health/wellness-and-prevention/the-science-of-sleep-understanding-what-happens-when-you-sleep",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "45": {
+      "url": "https://doi.org/10.1186/1880-6805-31-14",
+      "doi": "10.1186/1880-6805-31-14",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://jphysiolanthropol.biomedcentral.com/counter/pdf/10.1186/1880-6805-31-14"
+    },
+    "46": {
+      "url": "https://doi.org/10.1016/j.enbenv.2023.06.010",
+      "doi": "10.1016/j.enbenv.2023.06.010",
+      "free": true,
+      "how": "OpenAlex: diamond",
+      "readUrl": "https://doi.org/10.1016/j.enbenv.2023.06.010"
+    },
+    "47": {
+      "url": "https://doi.org/10.4172/2168-975x.1000151",
+      "doi": "10.4172/2168-975x.1000151",
+      "free": true,
+      "how": "OpenAlex: hybrid",
+      "readUrl": "https://www.omicsonline.org/open-access/melatonin-the-hormone-of-darkness-from-sleep-promotion-to-ebola-treatment-2168-975X.1000151.pdf"
+    },
+    "48": {
+      "url": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know#:~:text=Melatonin%20is%20a%20hormone%20that,in%20the%20body%20beyond%20sleep",
+      "free": true,
+      "how": "US government web page"
+    },
+    "49": {
+      "url": "https://doi.org/10.1016/j.ejmcr.2024.100138",
+      "doi": "10.1016/j.ejmcr.2024.100138",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://doi.org/10.1016/j.ejmcr.2024.100138"
+    },
+    "50": {
+      "url": "https://doi.org/10.2174/1570159x13666141210215655",
+      "doi": "10.2174/1570159x13666141210215655",
+      "free": true,
+      "how": "OpenAlex: bronze",
+      "readUrl": "http://www.eurekaselect.com/article/63919"
+    },
+    "51": {
+      "url": "https://www.hopkinsmedicine.org/health/wellness-and-prevention/better-sleep-3-simple-diet-tweaks",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "52": {
+      "url": "https://doi.org/10.3390/ijerph17082677",
+      "doi": "10.3390/ijerph17082677",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.mdpi.com/1660-4601/17/8/2677/pdf?version=1586869968"
+    },
+    "53": {
+      "url": "https://doi.org/10.3390/foods11233930",
+      "doi": "10.3390/foods11233930",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.mdpi.com/2304-8158/11/23/3930/pdf?version=1670408228"
+    },
+    "54": {
+      "url": "https://doi.org/10.1016/j.imr.2018.11.004",
+      "doi": "10.1016/j.imr.2018.11.004",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.sciencedirect.com/science/article/pii/S2213422018302087/pdf"
+    },
+    "55": {
+      "url": "https://doi.org/10.3390/nu7042648",
+      "doi": "10.3390/nu7042648",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.mdpi.com/2072-6643/7/4/2648/pdf?version=1428577470"
+    },
+    "56": {
+      "url": "https://www.sleepfoundation.org/nutrition/healthy-bedtime-snacks",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "57": {
+      "url": "https://doi.org/10.1016/j.smrv.2019.04.008",
+      "doi": "10.1016/j.smrv.2019.04.008",
+      "free": false,
+      "how": "OpenAlex: closed",
+      "readUrl": null
+    },
+    "58": {
+      "url": "https://doi.org/10.1093/sleep/zsac305",
+      "doi": "10.1093/sleep/zsac305",
+      "free": true,
+      "how": "OpenAlex: hybrid",
+      "readUrl": "https://doi.org/10.1093/sleep/zsac305"
+    },
+    "59": {
+      "url": "https://doi.org/10.1249/fit.0000000000000375",
+      "doi": "10.1249/fit.0000000000000375",
+      "free": true,
+      "how": "OpenAlex: green",
+      "readUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/6715137"
+    },
+    "60": {
+      "url": "https://www.hss.edu/article_parasympathetic-nervous-system.asp",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "61": {
+      "url": "https://doi.org/10.5935/1984-0063.20180046",
+      "doi": "10.5935/1984-0063.20180046",
+      "free": true,
+      "how": "OpenAlex: diamond",
+      "readUrl": "https://doi.org/10.5935/1984-0063.20180046"
+    },
+    "62": {
+      "url": "https://doi.org/10.3390/ijerph19116910",
+      "doi": "10.3390/ijerph19116910",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.mdpi.com/1660-4601/19/11/6910/pdf?version=1654420337"
+    },
+    "63": {
+      "url": "https://www.sleepfoundation.org/nutrition/hydration-and-sleep",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "64": {
+      "url": "https://doi.org/10.22540/jfsf-04-036",
+      "doi": "10.22540/jfsf-04-036",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://doi.org/10.22540/jfsf-04-036"
+    },
+    "65": {
+      "url": "https://www.sleepfoundation.org/nutrition/drinking-water-before-bed",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "66": {
+      "url": "https://doi.org/10.1111/jsr.12662",
+      "doi": "10.1111/jsr.12662",
+      "free": false,
+      "how": "OpenAlex: closed",
+      "readUrl": null
+    },
+    "67": {
+      "url": "https://doi.org/10.1016/j.sleep.2010.04.014",
+      "doi": "10.1016/j.sleep.2010.04.014",
+      "free": true,
+      "how": "OpenAlex: green",
+      "readUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/2992829"
+    },
+    "68": {
+      "url": "https://doi.org/10.7759/cureus.41638",
+      "doi": "10.7759/cureus.41638",
+      "free": true,
+      "how": "OpenAlex: diamond",
+      "readUrl": "https://assets.cureus.com/uploads/original_article/pdf/166080/20230711-11713-1b8npp0.pdf"
+    },
+    "69": {
+      "url": "https://www.health.harvard.edu/staying-healthy/understanding-the-stress-response",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "70": {
+      "url": "https://www.nichd.nih.gov/newsroom/releases/stress",
+      "free": true,
+      "how": "US government web page"
+    },
+    "71": {
+      "url": "https://doi.org/10.1016/j.slsci.2015.09.002",
+      "doi": "10.1016/j.slsci.2015.09.002",
+      "free": true,
+      "how": "OpenAlex: diamond",
+      "readUrl": "https://doi.org/10.1016/j.slsci.2015.09.002"
+    },
+    "72": {
+      "url": "https://doi.org/10.1016/j.coemr.2021.03.011",
+      "doi": "10.1016/j.coemr.2021.03.011",
+      "free": true,
+      "how": "OpenAlex: green",
+      "readUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/8813037"
+    },
+    "73": {
+      "url": "https://doi.org/10.1111/jsr.12710",
+      "doi": "10.1111/jsr.12710",
+      "free": true,
+      "how": "OpenAlex: bronze",
+      "readUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jsr.12710"
+    },
+    "74": {
+      "url": "https://doi.org/10.1111/nyas.13996",
+      "doi": "10.1111/nyas.13996",
+      "free": true,
+      "how": "OpenAlex: green",
+      "readUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/6557693"
+    },
+    "75": {
+      "url": "https://doi.org/10.3389/fpsyg.2024.1347336",
+      "doi": "10.3389/fpsyg.2024.1347336",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://doi.org/10.3389/fpsyg.2024.1347336"
+    },
+    "76": {
+      "url": "https://doi.org/10.3390/s21072398",
+      "doi": "10.3390/s21072398",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.mdpi.com/1424-8220/21/7/2398/pdf?version=1617938381"
+    },
+    "77": {
+      "url": "https://doi.org/10.1016/b978-0-444-62619-6.00024-0",
+      "doi": "10.1016/b978-0-444-62619-6.00024-0",
+      "free": true,
+      "how": "OpenAlex: green",
+      "readUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/5821259"
+    },
+    "78": {
+      "url": "https://www.sleepfoundation.org/nutrition/alcohol-and-sleep",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "79": {
+      "url": "https://www.sleepfoundation.org/sleep-apnea/alcohol-and-sleep-apnea#:~:text=Alcohol%20is%20a%20relaxant%20that,their%20doctor%20about%20breathing%20problems",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "80": {
+      "url": "https://doi.org/10.1111/acer.13217",
+      "doi": "10.1111/acer.13217",
+      "free": true,
+      "how": "OpenAlex: green",
+      "readUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/7486899"
+    },
+    "81": {
+      "url": "https://www.ncoa.org/article/how-alcohol-affects-your-sleep/",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "82": {
+      "url": "https://www.health.harvard.edu/blog/weekend-catch-up-sleep-wont-fix-the-effects-of-sleep-deprivation-on-your-waistline-2019092417861",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "83": {
+      "url": "https://doi.org/10.1016/j.sleep.2020.05.030",
+      "doi": "10.1016/j.sleep.2020.05.030",
+      "free": true,
+      "how": "OpenAlex: hybrid",
+      "readUrl": "https://www.sciencedirect.com/science/article/am/pii/S1389945720302331?via%3Dihub"
+    },
+    "84": {
+      "url": "https://doi.org/10.1016/b978-0-12-396971-2.00007-5",
+      "doi": "10.1016/b978-0-12-396971-2.00007-5",
+      "free": true,
+      "how": "OpenAlex: green",
+      "readUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/3963479"
+    },
+    "85": {
+      "url": "https://doi.org/10.20463/pan.2023.0029",
+      "doi": "10.20463/pan.2023.0029",
+      "free": true,
+      "how": "OpenAlex: diamond",
+      "readUrl": "https://www.e-pan.org/upload/pdf/pan-2023-0029.pdf"
+    },
+    "86": {
+      "url": "https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod6/08.html",
+      "free": true,
+      "how": "US government web page"
+    },
+    "87": {
+      "url": "https://www.sleepfoundation.org/physical-activity",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "88": {
+      "url": "https://www.sleepfoundation.org/sleep-news/watching-tv-before-sleep-most-popular-bedtime-routine",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "89": {
+      "url": "https://www.hopkinsmedicine.org/health/wellness-and-prevention/why-do-people-snore-answers-for-better-health",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "90": {
+      "url": "https://www.sleepfoundation.org/snoring/common-causes",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "91": {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK459252/",
+      "free": true,
+      "how": "PubMed Central / NCBI Bookshelf"
+    },
+    "92": {
+      "url": "https://doi.org/10.3390/jcm13113223",
+      "doi": "10.3390/jcm13113223",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.mdpi.com/2077-0383/13/11/3223/pdf?version=1717058982"
+    },
+    "93": {
+      "url": "https://doi.org/10.1161/circresaha.118.310783",
+      "doi": "10.1161/circresaha.118.310783",
+      "free": false,
+      "how": "OpenAlex: closed",
+      "readUrl": null
+    },
+    "94": {
+      "url": "https://www.hopkinsmedicine.org/health/wellness-and-prevention/the-dangers-of-uncontrolled-sleep-apnea",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "95": {
+      "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/treatment",
+      "free": true,
+      "how": "US government web page"
+    },
+    "96": {
+      "url": "https://doi.org/10.1016/j.jcm.2010.12.003",
+      "doi": "10.1016/j.jcm.2010.12.003",
+      "free": true,
+      "how": "OpenAlex: bronze",
+      "readUrl": "https://www.sciencedirect.com/science/article/pii/S1556370711000368"
+    },
+    "97": {
+      "url": "https://doi.org/10.1038/s41574-022-00747-7",
+      "doi": "10.1038/s41574-022-00747-7",
+      "free": true,
+      "how": "OpenAlex: bronze",
+      "readUrl": "https://www.nature.com/articles/s41574-022-00747-7.pdf"
+    },
+    "98": {
+      "url": "https://www.sleepfoundation.org/sleep-hygiene/how-to-reset-your-sleep-routine#:~:text=Start%20adjusting%20your%20sleep%20routine,gets%20dark%20in%20the%20evening",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "99": {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK519507/",
+      "free": true,
+      "how": "PubMed Central / NCBI Bookshelf"
+    },
+    "100": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5564947/",
+      "free": true,
+      "how": "PubMed Central / NCBI Bookshelf"
+    },
+    "101": {
+      "url": "https://doi.org/10.17712/nsj.2023.2.20220108",
+      "doi": "10.17712/nsj.2023.2.20220108",
+      "free": true,
+      "how": "OpenAlex: diamond",
+      "readUrl": "https://nsj.org.sa/content/nsj/28/2/91.full.pdf"
+    },
+    "102": {
+      "url": "https://doi.org/10.3389/fphar.2023.1282357",
+      "doi": "10.3389/fphar.2023.1282357",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.frontiersin.org/articles/10.3389/fphar.2023.1282357/pdf?isPublishedV2=False"
+    },
+    "103": {
+      "url": "https://doi.org/10.1016/j.jsmc.2019.11.005",
+      "doi": "10.1016/j.jsmc.2019.11.005",
+      "free": true,
+      "how": "OpenAlex: green",
+      "readUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/9960533"
+    },
+    "104": {
+      "url": "https://www.sleepfoundation.org/sleep-habits",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "105": {
+      "url": "https://doi.org/10.2147/nss.s6683",
+      "doi": "10.2147/nss.s6683",
+      "free": true,
+      "how": "OpenAlex: gold",
+      "readUrl": "https://www.dovepress.com/getfile.php?fileID=7432"
+    },
+    "106": {
+      "url": "https://www.health.harvard.edu/blog/how-much-sleep-do-you-actually-need-202310302986",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    }
+  },
+  "editorialSources": {
+    "nhlbi-guide": {
+      "url": "https://www.nhlbi.nih.gov/resources/your-guide-healthy-sleep",
+      "free": true,
+      "how": "US government web page"
+    },
+    "breus-youtube": {
+      "url": "https://www.youtube.com/@thesleepdoctor",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "huberman-sleep-toolkit": {
+      "url": "https://www.youtube.com/watch?v=RTgJSQtvo88",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    },
+    "hartstein-2024": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13181348/",
+      "doi": "10.1016/j.sleh.2024.05.001",
+      "free": true,
+      "how": "OpenAlex: green",
+      "readUrl": "https://eprints.gla.ac.uk/327966/"
+    },
+    "bauducco-2024": {
+      "url": "https://doi.org/10.1016/j.smrv.2024.101933",
+      "doi": "10.1016/j.smrv.2024.101933",
+      "free": true,
+      "how": "OpenAlex: hybrid",
+      "readUrl": "https://doi.org/10.1016/j.smrv.2024.101933"
+    },
+    "grandner-2025": {
+      "url": "https://doi.org/10.1016/j.sleh.2025.05.002",
+      "doi": "10.1016/j.sleh.2025.05.002",
+      "free": false,
+      "how": "OpenAlex: closed",
+      "readUrl": null
+    },
+    "do-one-thing": {
+      "url": "https://doonething.sleepliteracy.org/choose-your-one-thing/",
+      "free": true,
+      "how": "web page (not checked for paywall)"
+    }
+  }
+}

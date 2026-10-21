@@ -1,0 +1,1671 @@
+{
+  "_about": "Hand-edited layer joined onto the SAM wiki extract by scripts/build.py. 'plain' is HCF wording drafted by Claude on 2026-10-21 (unreviewed). 'glossary' maps to health-glossary sleep entries (relation: same | overlaps | narrower = the glossary entry is a specific version of this item | conflicts). 'disagreements' only records positions that a named source states; nothing here is new evidence. Items with 'from' = 'glossary' are glossary entries with no wiki item, given a proposed place in the wiki's categories.",
+  "audienceTags": {
+    "all-ages-and-cultures": "Default. Fits anyone unless another tag narrows it.",
+    "adults": "Written for adults; not checked for children.",
+    "children-and-teens": "Evidence or advice specific to under-18s.",
+    "parents-and-caregivers": "Acted on by someone caring for another person.",
+    "students": "College or school students.",
+    "shift-workers": "People who work nights or rotating shifts.",
+    "travelers": "People crossing time zones.",
+    "people-with-insomnia": "Ongoing trouble falling or staying asleep.",
+    "people-with-reflux": "Heartburn or GERD at night.",
+    "people-who-snore-or-may-have-sleep-apnea": "Loud snoring, gasping, pauses in breathing.",
+    "people-with-a-late-body-clock": "Delayed sleep-wake phase: fall asleep and wake much later than wanted.",
+    "talk-to-a-clinician": "Involves a supplement, medicine, device or condition; suggest checking with a health professional.",
+    "needs-money-or-equipment": "Costs money or needs something many people do not have.",
+    "region-or-culture-specific": "Comes from, or fits, a particular place or culture (see audienceNote)."
+  },
+  "items": [
+    {
+      "wiki": "1.1.1",
+      "id": "keep-a-regular-sleep-schedule",
+      "plain": "Go to bed and get up at about the same times every day.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-stick-to-a-sleep-schedule",
+          "relation": "same"
+        },
+        {
+          "id": "slp-keep-a-fixed-wake-time",
+          "relation": "overlaps"
+        },
+        {
+          "id": "slp-limit-weekend-sleep-in",
+          "relation": "overlaps"
+        }
+      ],
+      "glossaryTerms": [
+        "sleep-hygiene"
+      ],
+      "disagreements": [
+        {
+          "about": "Which matters more, a fixed bedtime or a fixed wake time",
+          "positions": [
+            {
+              "source": "nhlbi-guide",
+              "says": "Keep both bedtime and wake time the same every day, weekends included (p. 28)."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "A steady wake time matters more than a steady bedtime."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "wiki": "1.1.2",
+      "id": "change-sleep-times-gradually",
+      "plain": "If you need to move your sleep times, shift them a little each day instead of all at once.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-stick-to-a-sleep-schedule",
+          "relation": "overlaps"
+        },
+        {
+          "id": "slp-coping-with-jet-lag",
+          "relation": "narrower"
+        }
+      ],
+      "notes": "The wiki item title says 'avoid drastic changes'; its practical tip is about shifting 15-30 minutes per night, which is the actionable version used for the plain line."
+    },
+    {
+      "wiki": "1.1.3",
+      "id": "get-enough-sleep-for-you",
+      "plain": "Most adults need 7 to 9 hours; notice how much you need to wake up rested.",
+      "audience": [
+        "adults",
+        "region-or-culture-specific"
+      ],
+      "audienceNote": "The wiki taxonomy labels this '8-hour rule (recommended in Asia)'; the regional claim has no citation. Children and teens need more sleep than adults; that is not covered here.",
+      "glossaryTerms": [
+        "sleep-duration"
+      ],
+      "disagreements": [
+        {
+          "about": "Whether '8 hours' is the rule",
+          "positions": [
+            {
+              "source": "wiki",
+              "says": "Its own write-up says 7-9 hours is the guideline and that a strict 8-hour rule is 'overly simplistic' (wiki ref 106, Harvard Health), yet the item is named 'Follow the 8-hour rule'."
+            }
+          ]
+        }
+      ],
+      "notes": "Item name and its own evidence disagree. Suggest renaming the item; the plain line follows the evidence, not the title."
+    },
+    {
+      "wiki": "1.1.4",
+      "id": "keep-naps-short-and-early",
+      "plain": "If you nap, keep it short and before mid-afternoon.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "audienceNote": "Napping norms differ by culture (siesta cultures, workplace naps). Shift workers may need longer naps; see adjust-to-night-shift-work.",
+      "glossary": [
+        {
+          "id": "slp-avoid-late-afternoon-naps",
+          "relation": "same"
+        }
+      ],
+      "disagreements": [
+        {
+          "about": "Whether naps help or harm",
+          "positions": [
+            {
+              "source": "nhlbi-guide",
+              "says": "A short nap can make up for lost sleep; napping after 3 p.m. can make it harder to fall asleep (p. 29)."
+            },
+            {
+              "source": "huberman-sleep-toolkit",
+              "says": "After a late night, take a short afternoon nap rather than sleeping in."
+            },
+            {
+              "source": "wiki",
+              "says": "Item 3.2.1 states 'Naps harm nighttime sleep' as a general claim; its own tip is to keep naps under 30 minutes and before 3 PM."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "No naps (recorded in health-glossary#17 from his videos; not a glossary entry)."
+            }
+          ]
+        }
+      ],
+      "notes": "Duplicate of wiki 3.2.1 (see notes there)."
+    },
+    {
+      "wiki": "1.1.5",
+      "id": "get-up-at-the-same-time",
+      "plain": "Get up at the same time every day, weekends too.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-keep-a-fixed-wake-time",
+          "relation": "same"
+        },
+        {
+          "id": "slp-stick-to-a-sleep-schedule",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "Listed in the wiki taxonomy with no write-up."
+    },
+    {
+      "wiki": "1.1.6",
+      "id": "dont-sleep-in-much-on-weekends",
+      "plain": "On weekends, wake up within about an hour of your weekday time.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-limit-weekend-sleep-in",
+          "relation": "same"
+        }
+      ],
+      "disagreements": [
+        {
+          "about": "How much weekend sleep-in is OK",
+          "positions": [
+            {
+              "source": "huberman-sleep-toolkit",
+              "says": "No more than about an hour later than usual."
+            },
+            {
+              "source": "nhlbi-guide",
+              "says": "Sleeping later on weekends won't make up for lost sleep (p. 28); gives no limit."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Keep bedtime and wake time within the same hour every day, even on weekends."
+            }
+          ]
+        }
+      ],
+      "notes": "The wiki item says 'limit social jet lag'. The one-hour figure in the plain line is Huberman's and is unverified; see also myth M2."
+    },
+    {
+      "wiki": "1.2.1",
+      "id": "keep-the-bedroom-cool-and-dark",
+      "plain": "Keep your bedroom cool and dark at night.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "audienceNote": "Cooling tips assume a fan or air conditioning; hot climates and shared rooms make this harder.",
+      "glossary": [
+        {
+          "id": "slp-create-a-good-sleep-environment",
+          "relation": "overlaps"
+        },
+        {
+          "id": "slp-cool-down-with-a-frozen-water-bottle",
+          "relation": "narrower"
+        }
+      ],
+      "disagreements": [
+        {
+          "about": "Best bedroom temperature",
+          "positions": [
+            {
+              "source": "wiki",
+              "says": "Item tip: 60-67°F (15-19°C). The wiki's Tools tab: 18-20°C."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "About 65 to 72°F (unverified in the glossary notes)."
+            },
+            {
+              "source": "nhlbi-guide",
+              "says": "Keep the room 'on the cool side' (p. 29); no number."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "wiki": "1.2.2",
+      "id": "block-outside-light",
+      "plain": "Block light from windows with heavy curtains or an eye mask.",
+      "audience": [
+        "all-ages-and-cultures",
+        "needs-money-or-equipment"
+      ],
+      "glossary": [
+        {
+          "id": "slp-create-a-good-sleep-environment",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "Write-up has no citations."
+    },
+    {
+      "wiki": "1.2.3",
+      "id": "make-your-bed-comfortable",
+      "plain": "Sleep on a mattress and pillow that feel comfortable to you.",
+      "audience": [
+        "all-ages-and-cultures",
+        "needs-money-or-equipment"
+      ],
+      "glossary": [
+        {
+          "id": "slp-create-a-good-sleep-environment",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "Wiki name 'Invest in...' assumes money; the tip offers a mattress topper as a cheaper option. Write-up has no citations."
+    },
+    {
+      "wiki": "1.2.4",
+      "id": "mask-noise-with-steady-sound",
+      "plain": "If noise wakes you, try a fan or white noise to cover it.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-create-a-good-sleep-environment",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "Overlaps 1.2.5 and 1.4.2 (pink noise). Write-up has no citations."
+    },
+    {
+      "wiki": "1.2.5",
+      "id": "keep-the-bedroom-quiet",
+      "plain": "Make your bedroom as quiet as you can, or use earplugs.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-create-a-good-sleep-environment",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "Wiki page is a blank template. Earplugs in the plain line are an editorial addition, not from a source."
+    },
+    {
+      "wiki": "1.2.6",
+      "id": "keep-devices-out-of-the-bedroom",
+      "plain": "Charge your phone and other devices outside the bedroom.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-create-a-good-sleep-environment",
+          "relation": "overlaps"
+        }
+      ],
+      "extraSources": [
+        "hartstein-2024"
+      ],
+      "notes": "Listed with no write-up. Related to 1.3.1; the NSF 2024 consensus found screen use harms sleep in children and teens, not adults (see 1.3.1)."
+    },
+    {
+      "wiki": "1.2.7",
+      "id": "keep-the-bedroom-tidy",
+      "plain": "Keep your bedroom tidy so it feels calm.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Listed with no write-up or evidence."
+    },
+    {
+      "wiki": "1.2.8",
+      "id": "try-calming-scents",
+      "plain": "Try a calming scent such as lavender at bedtime.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Listed with no write-up or evidence."
+    },
+    {
+      "wiki": "1.3.1",
+      "id": "screens-before-bed",
+      "plain": "In the hour before bed, choose calm screen use or none, and keep phones out of children's bedrooms.",
+      "audience": [
+        "children-and-teens",
+        "parents-and-caregivers",
+        "adults"
+      ],
+      "audienceNote": "The NSF 2024 consensus found harm in children and teens; it did not reach consensus for adults. Keep a separate adult wording until adult evidence is checked.",
+      "glossary": [
+        {
+          "id": "slp-power-down-hour",
+          "relation": "overlaps"
+        },
+        {
+          "id": "slp-dim-the-lights-at-night",
+          "relation": "overlaps"
+        }
+      ],
+      "extraSources": [
+        "hartstein-2024",
+        "bauducco-2024",
+        "grandner-2025"
+      ],
+      "disagreements": [
+        {
+          "about": "How strong the evidence is, and for whom",
+          "positions": [
+            {
+              "source": "wiki",
+              "says": "Scores this 'strongly supported' (1 on red flags; 5/5 support in both summary tables) for everyone, and explains it mainly by blue light suppressing melatonin."
+            },
+            {
+              "source": "hartstein-2024",
+              "says": "Consensus that screen use in general, and the content of pre-bedtime use, impair sleep in children and adolescents. The abstract reports no consensus for adults, or that pre-bedtime light impairs sleep."
+            },
+            {
+              "source": "bauducco-2024",
+              "says": "The link runs both ways: people who can't sleep may use screens to pass time or calm down. How much it matters depends on how much, for whom, and which mechanism."
+            }
+          ]
+        },
+        {
+          "about": "Mechanism: light or content",
+          "positions": [
+            {
+              "source": "wiki",
+              "says": "Blue light suppresses melatonin (also the wiki's myth M4 on TV)."
+            },
+            {
+              "source": "hartstein-2024",
+              "says": "Consensus on content harming children's and teens' sleep; no consensus on light."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Blue light delays melatonin, and stimulation from scrolling, shows or games keeps the brain alert. Tech curfew at least one hour before bed."
+            }
+          ]
+        }
+      ],
+      "notes": "This is the worked example in the Open Health Communication Declaration (vivwebsolutions/hcf-guides#6). The plain line is a first try at the nuanced version and needs Kalman's review. Wiki tip: a 'screen curfew' 30-60 minutes before bed."
+    },
+    {
+      "wiki": "1.3.2",
+      "id": "have-a-wind-down-routine",
+      "plain": "Do the same calm things in the same order before bed, like reading or a warm shower.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-relax-before-bed",
+          "relation": "same"
+        },
+        {
+          "id": "slp-power-down-hour",
+          "relation": "narrower"
+        },
+        {
+          "id": "slp-take-a-warm-bath-before-bed",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "Write-up has no citations."
+    },
+    {
+      "wiki": "1.3.3",
+      "id": "skip-exciting-things-before-bed",
+      "plain": "Save exciting or stressful activities for earlier in the evening.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-relax-before-bed",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "Overlaps 1.3.7 and 2.3.4. Write-up has no citations."
+    },
+    {
+      "wiki": "1.3.4",
+      "id": "dont-check-the-clock",
+      "plain": "If you wake at night, don't look at the clock.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-don-t-check-the-clock",
+          "relation": "same"
+        }
+      ],
+      "notes": "NHLBI (p. 30) says to turn the clock face away. Write-up has no citations."
+    },
+    {
+      "wiki": "1.3.5",
+      "id": "try-a-guided-meditation",
+      "plain": "Try a guided sleep meditation or a mindfulness recording at bedtime.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-relaxation-therapy",
+          "relation": "overlaps"
+        },
+        {
+          "id": "slp-non-sleep-deep-rest",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "Listed with no write-up. Overlaps 3.1.2."
+    },
+    {
+      "wiki": "1.3.6",
+      "id": "try-a-weighted-blanket",
+      "plain": "Some people find a weighted blanket calming at night.",
+      "audience": [
+        "adults",
+        "needs-money-or-equipment"
+      ],
+      "audienceNote": "Not checked for children; weighted blankets carry safety warnings for infants and young children (warning not sourced here; check before publishing).",
+      "notes": "Listed with no write-up or evidence."
+    },
+    {
+      "wiki": "1.3.7",
+      "id": "avoid-heavy-talks-at-bedtime",
+      "plain": "Leave hard conversations for earlier in the day when you can.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Listed with no write-up. Overlaps 1.3.3."
+    },
+    {
+      "wiki": "1.4.1",
+      "id": "warm-bath-or-shower-before-bed",
+      "plain": "Take a warm bath or shower an hour or two before bed.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-take-a-warm-bath-before-bed",
+          "relation": "same"
+        }
+      ],
+      "disagreements": [
+        {
+          "about": "When",
+          "positions": [
+            {
+              "source": "wiki",
+              "says": "60-90 minutes before bedtime."
+            },
+            {
+              "source": "nhlbi-guide",
+              "says": "Before bed; no timing (p. 29)."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "A warm shower in the second 20 minutes of a one-hour wind-down, so 20-40 minutes before bed."
+            }
+          ]
+        }
+      ],
+      "notes": "Wiki scores ease 3 on the item page but 5 in both summary tables. Write-up has no citations."
+    },
+    {
+      "wiki": "1.4.2",
+      "id": "try-pink-noise",
+      "plain": "Some people sleep better with pink noise, like steady rain, than white noise.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Wiki's own scores disagree sharply on evidence (item page: 'well supported'; classification table: 'weak evidence', impact 1). Write-up has no citations."
+    },
+    {
+      "wiki": "1.4.3",
+      "id": "wear-socks-to-bed",
+      "plain": "If your feet get cold, wear loose socks to bed.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Pulls the opposite way from cooling tips (1.2.1, frozen water bottle); the wiki says warm feet help the body shed heat. Write-up has no citations."
+    },
+    {
+      "wiki": "2.1.1",
+      "id": "get-morning-daylight",
+      "plain": "Get outside in daylight soon after you wake up.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "audienceNote": "Hard for people who wake before sunrise, in high-latitude winters, or who can't go outside.",
+      "glossary": [
+        {
+          "id": "slp-get-morning-sunlight-exposure",
+          "relation": "same"
+        }
+      ],
+      "disagreements": [
+        {
+          "about": "How long",
+          "positions": [
+            {
+              "source": "nhlbi-guide",
+              "says": "At least 30 minutes of daylight a day; an hour of morning sun if falling asleep is hard (p. 30)."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "15 minutes."
+            },
+            {
+              "source": "huberman-sleep-toolkit",
+              "says": "About 5 minutes on a clear day, 10 cloudy, 20-30 overcast, within 30-60 minutes of waking, not through a window."
+            },
+            {
+              "source": "wiki",
+              "says": "10-30 minutes, within an hour of waking."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Within 30 minutes of waking; no duration given."
+            }
+          ]
+        }
+      ],
+      "notes": "Wiki scores reach 3 on the item page but 5 in the summary table, and novelty 4 vs 1."
+    },
+    {
+      "wiki": "2.1.2",
+      "id": "less-bright-light-in-the-evening",
+      "plain": "Use dimmer, warmer lights in the evening.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-dim-the-lights-at-night",
+          "relation": "overlaps"
+        }
+      ],
+      "extraSources": [
+        "hartstein-2024"
+      ],
+      "notes": "Wiki item says 'reduce blue light'. The NSF 2024 consensus did not reach consensus that pre-bedtime screen light impairs sleep; the plain line is about room light overall, not screen filters. Write-up has no citations."
+    },
+    {
+      "wiki": "2.1.3",
+      "id": "use-dim-red-light-at-night",
+      "plain": "If you need light at night, use a dim red or amber one.",
+      "audience": [
+        "all-ages-and-cultures",
+        "parents-and-caregivers"
+      ],
+      "glossary": [
+        {
+          "id": "slp-use-red-light-if-you-must-be-up-at-night",
+          "relation": "same"
+        }
+      ],
+      "notes": "Wiki scores disagree on evidence (item page: well supported; classification table: limited). Huberman's reason (cortisol) is unverified. Write-up has no citations."
+    },
+    {
+      "wiki": "2.1.4",
+      "id": "dim-lights-gradually",
+      "plain": "Turn the lights down little by little as bedtime gets closer.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-dim-the-lights-at-night",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "Wiki item names 'smart lighting'; the plain line drops the product. Listed with no write-up."
+    },
+    {
+      "wiki": "2.1.5",
+      "id": "blue-blocking-glasses",
+      "plain": "Some people wear blue-light-blocking glasses in the evening.",
+      "audience": [
+        "adults",
+        "needs-money-or-equipment"
+      ],
+      "notes": "Listed with no write-up or evidence. See 2.1.2 for why the light mechanism is disputed."
+    },
+    {
+      "wiki": "2.2.1",
+      "id": "caffeine-and-big-meals-early",
+      "plain": "Have your last caffeine by early afternoon and your last big meal a few hours before bed.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-avoid-caffeine-and-nicotine-before-bed",
+          "relation": "same"
+        },
+        {
+          "id": "slp-set-a-caffeine-cutoff",
+          "relation": "narrower"
+        },
+        {
+          "id": "slp-avoid-large-meals-and-fluids-late-at-night",
+          "relation": "overlaps"
+        },
+        {
+          "id": "slp-3-2-1-rule",
+          "relation": "narrower"
+        }
+      ],
+      "disagreements": [
+        {
+          "about": "Caffeine cutoff",
+          "positions": [
+            {
+              "source": "wiki",
+              "says": "At least 6 hours before bed."
+            },
+            {
+              "source": "nhlbi-guide",
+              "says": "Effects can last up to 8 hours (p. 28); no clock time."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "2 p.m.; half-life 6-8 hours."
+            },
+            {
+              "source": "huberman-sleep-toolkit",
+              "says": "No more than about 100 mg after 4 p.m."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Coffee only before 2 p.m.; homepage: 'by early afternoon'; caffeine lasts 6–8 hours."
+            }
+          ]
+        },
+        {
+          "about": "Last big meal",
+          "positions": [
+            {
+              "source": "wiki",
+              "says": "2-3 hours before bed."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "Stop eating 2 hours before (3-2-1 rule)."
+            },
+            {
+              "source": "nhlbi-guide",
+              "says": "Avoid large meals late at night; a light snack is fine (p. 29)."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Finish dinner 2–3 hours before bed; lighter snacks if hungry."
+            }
+          ]
+        }
+      ],
+      "notes": "NHLBI pairs caffeine with nicotine; the wiki has no nicotine item. Wiki splits alcohol into 2.2.3."
+    },
+    {
+      "wiki": "2.2.2",
+      "id": "drink-more-earlier-in-the-day",
+      "plain": "Drink most of your fluids earlier in the day so you don't wake up to use the bathroom.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "audienceNote": "Not for people who need fluids at night for medicine, diabetes or thirst (caution from the glossary's 3-2-1 entry).",
+      "glossary": [
+        {
+          "id": "slp-avoid-large-meals-and-fluids-late-at-night",
+          "relation": "overlaps"
+        },
+        {
+          "id": "slp-3-2-1-rule",
+          "relation": "overlaps"
+        }
+      ],
+      "disagreements": [
+        {
+          "about": "Fluids vs bedtime tea",
+          "positions": [
+            {
+              "source": "breus-youtube",
+              "says": "Stop fluids 1 hour before bed (3-2-1 rule)."
+            },
+            {
+              "source": "wiki",
+              "says": "Item 2.5.3 suggests chamomile tea 30-45 minutes before bed."
+            },
+            {
+              "source": "do-one-thing",
+              "says": "Taper fluids after 8 pm; a small calming drink before bed is fine."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "wiki": "2.2.3",
+      "id": "no-alcohol-close-to-bedtime",
+      "plain": "Don't use alcohol to help you sleep; stop drinking a few hours before bed.",
+      "audience": [
+        "adults"
+      ],
+      "glossary": [
+        {
+          "id": "slp-avoid-alcohol-before-bed",
+          "relation": "same"
+        },
+        {
+          "id": "slp-3-2-1-rule",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "Listed with no write-up; myth M1 covers the same ground with citations. '3 hours' is from the 3-2-1 rule, not a trial."
+    },
+    {
+      "wiki": "2.2.4",
+      "id": "magnesium",
+      "plain": "Eat foods with enough magnesium; ask before taking a supplement.",
+      "audience": [
+        "adults",
+        "talk-to-a-clinician"
+      ],
+      "notes": "Listed with no write-up or evidence. Supplement safety not checked."
+    },
+    {
+      "wiki": "2.3.1",
+      "id": "exercise-regularly",
+      "plain": "Be active most days; it helps you sleep better.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-time-your-exercise-for-sleep",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "NHLBI: at least 30 minutes most days (p. 28)."
+    },
+    {
+      "wiki": "2.3.2",
+      "id": "gentle-stretching-before-bed",
+      "plain": "Try a few minutes of gentle stretching or yoga before bed.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Write-up has no citations."
+    },
+    {
+      "wiki": "2.3.3",
+      "id": "strength-training-earlier-in-the-day",
+      "plain": "If you do strength training, try it in the afternoon or early evening.",
+      "audience": [
+        "adults"
+      ],
+      "notes": "Wiki scores disagree (classification table: reach 1, novelty 5; item page: reach 2, novelty 4). Write-up has no citations."
+    },
+    {
+      "wiki": "2.3.4",
+      "id": "no-hard-workouts-right-before-bed",
+      "plain": "Finish hard workouts at least a couple of hours before bed.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-time-your-exercise-for-sleep",
+          "relation": "same"
+        }
+      ],
+      "disagreements": [
+        {
+          "about": "How long before bed",
+          "positions": [
+            {
+              "source": "wiki",
+              "says": "Item title: 2 hours. Myth M3: at least 3 hours (wiki refs 86, 87)."
+            },
+            {
+              "source": "nhlbi-guide",
+              "says": "2 to 3 hours (p. 28)."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "About 4 hours before bed (recorded in health-glossary#17 from his videos; not a glossary entry)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "wiki": "2.4.1",
+      "id": "4-7-8-breathing",
+      "plain": "To wind down, breathe in for 4, hold for 7, and breathe out for 8.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-4-7-8-breathing",
+          "relation": "same"
+        }
+      ],
+      "notes": "Wiki item says it 'can slow heart rate'; the glossary flags Breus's heart-rate claim as unverified. Write-up has no citations."
+    },
+    {
+      "wiki": "2.4.2",
+      "id": "mouth-taping",
+      "plain": "Mouth taping is popular, but the evidence is thin; check with a clinician first.",
+      "audience": [
+        "adults",
+        "talk-to-a-clinician",
+        "people-who-snore-or-may-have-sleep-apnea"
+      ],
+      "notes": "Wiki rates evidence weak-to-limited and impact low in its classification tables, but well supported on the item page. Safety for people with blocked noses or possible sleep apnea not checked; the plain line is cautious on purpose. The wiki's novelty-vs-reach section calls mouth taping 'strong scientific support but low commonality', which contradicts its own scores."
+    },
+    {
+      "wiki": "2.4.3",
+      "id": "nose-breathing-exercises",
+      "plain": "Try slow breathing through your nose before sleep.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-alternate-nostril-breathing",
+          "relation": "narrower"
+        },
+        {
+          "id": "slp-belly-breathing",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "Listed with no write-up."
+    },
+    {
+      "wiki": "2.5.1",
+      "id": "kiwi-or-tart-cherries",
+      "plain": "Some small studies found kiwi or tart cherry before bed helped sleep.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Plain line hedged because the wiki write-up cites no studies and its classification table rates evidence 'limited'. Availability and cost vary by region."
+    },
+    {
+      "wiki": "2.5.2",
+      "id": "small-snack-before-bed",
+      "plain": "If you're hungry at bedtime, a small snack is fine.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "disagreements": [
+        {
+          "about": "Eating close to bed",
+          "positions": [
+            {
+              "source": "wiki",
+              "says": "A small carb-rich snack 30 minutes before bed."
+            },
+            {
+              "source": "nhlbi-guide",
+              "says": "Avoid large meals late; a light snack is fine (p. 29)."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "Stop eating 2 hours before bed (3-2-1 rule)."
+            }
+          ]
+        }
+      ],
+      "notes": "Wiki's serotonin reasoning is uncited."
+    },
+    {
+      "wiki": "2.5.3",
+      "id": "herbal-tea-before-bed",
+      "plain": "A cup of chamomile tea can be part of a calm bedtime routine.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "audienceNote": "Herbal products can interact with medicines; passionflower especially (not sourced here; check).",
+      "disagreements": [
+        {
+          "about": "Fluids before bed",
+          "positions": [
+            {
+              "source": "wiki",
+              "says": "Tea 30-45 minutes before bed."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "No fluids in the last hour (3-2-1 rule)."
+            }
+          ]
+        }
+      ],
+      "notes": "Wiki summary table rates evidence 5/5; item page rates it 'well supported'; the write-up cites nothing."
+    },
+    {
+      "wiki": "3.1.1",
+      "id": "calm-your-mind-before-bed",
+      "plain": "Do something that calms you before bed when you're stressed.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-relaxation-therapy",
+          "relation": "overlaps"
+        },
+        {
+          "id": "slp-worry-journal",
+          "relation": "narrower"
+        }
+      ],
+      "notes": "Broad; 3.1.2-3.1.4 are the specific ways to do it."
+    },
+    {
+      "wiki": "3.1.2",
+      "id": "relaxation-techniques",
+      "plain": "Try slow breathing or meditation to relax at bedtime.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-relaxation-therapy",
+          "relation": "same"
+        },
+        {
+          "id": "slp-belly-breathing",
+          "relation": "narrower"
+        },
+        {
+          "id": "slp-box-breathing",
+          "relation": "narrower"
+        },
+        {
+          "id": "slp-cyclic-sighing",
+          "relation": "narrower"
+        }
+      ],
+      "notes": "Write-up has no citations."
+    },
+    {
+      "wiki": "3.1.3",
+      "id": "progressive-muscle-relaxation",
+      "plain": "Tense and then relax each muscle group, one at a time, from feet to head.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-progressive-muscle-relaxation",
+          "relation": "same"
+        }
+      ],
+      "disagreements": [
+        {
+          "about": "How",
+          "positions": [
+            {
+              "source": "wiki",
+              "says": "Start at the feet, tense 5-10 seconds."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "5-7 seconds; starts at the toes in one video and the head in another."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "wiki": "3.1.4",
+      "id": "write-down-worries",
+      "plain": "Write down what's on your mind, and one next step, before bed.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-worry-journal",
+          "relation": "same"
+        }
+      ],
+      "disagreements": [
+        {
+          "about": "When",
+          "positions": [
+            {
+              "source": "wiki",
+              "says": "Before bed."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "A few hours before bed, so you are not holding it in bed."
+            }
+          ]
+        }
+      ],
+      "notes": "In the wiki's 'New Sleep Advices' list (not yet placed). No write-up."
+    },
+    {
+      "wiki": "3.2.1",
+      "id": "naps-and-night-sleep",
+      "plain": "Short naps are fine for most people; long or late naps can make night sleep harder.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-avoid-late-afternoon-naps",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "The wiki item is a claim ('Naps harm nighttime sleep'), not advice, and its own evidence says it depends. Recommend merging into 1.1.4 and moving the claim to the myths list."
+    },
+    {
+      "wiki": "3.2.2",
+      "id": "bed-is-for-sleep",
+      "plain": "Use your bed only for sleep and sex.",
+      "audience": [
+        "adults",
+        "people-with-insomnia"
+      ],
+      "glossary": [
+        {
+          "id": "slp-reconditioning-therapy",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "Part of stimulus control (NHLBI calls it reconditioning therapy). Wiki tip folds in 3.2.3."
+    },
+    {
+      "wiki": "3.2.3",
+      "id": "get-up-if-you-cant-sleep",
+      "plain": "If you can't sleep after about 20 minutes, get up and do something calm until you feel sleepy.",
+      "audience": [
+        "all-ages-and-cultures",
+        "people-with-insomnia"
+      ],
+      "glossary": [
+        {
+          "id": "slp-don-t-lie-in-bed-awake",
+          "relation": "same"
+        },
+        {
+          "id": "slp-reconditioning-therapy",
+          "relation": "same"
+        },
+        {
+          "id": "slp-stay-in-bed-and-breathe-when-you-wake-at-night",
+          "relation": "conflicts"
+        }
+      ],
+      "disagreements": [
+        {
+          "about": "Get up or stay in bed",
+          "positions": [
+            {
+              "source": "nhlbi-guide",
+              "says": "Get out of bed after about 20 minutes awake and do something relaxing (pp. 30, 37)."
+            },
+            {
+              "source": "breus-youtube",
+              "says": "Stay in bed with the lights off and breathe slowly instead of getting up."
+            }
+          ]
+        }
+      ],
+      "notes": "Direct conflict between sources; the declaration's 'where sources disagree' field exists for cases like this. In the wiki's 'New Sleep Advices' list. No write-up."
+    },
+    {
+      "wiki": "3.3.1",
+      "id": "cognitive-shuffling",
+      "plain": "If your mind races, picture a string of random, unconnected things.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Kept on purpose as niche-but-maybe-valuable (Kalman's v1.2 feedback). Wiki scores clash: classification table rates evidence 1 (weakest), item page rates it well supported, and the scatterplot text promotes it as 'practical but lesser-known'. Write-up has no citations."
+    },
+    {
+      "wiki": "3.3.2",
+      "id": "gratitude-list",
+      "plain": "Before bed, write down three things you're thankful for.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "glossary": [
+        {
+          "id": "slp-gratitude-list-before-bed",
+          "relation": "same"
+        }
+      ],
+      "notes": "Wiki item says 'instead of a to-do list', which conflicts with 3.1.4 (write down worries and next steps). Write-up has no citations."
+    },
+    {
+      "wiki": "3.3.3",
+      "id": "binaural-beats",
+      "plain": "Some people relax with binaural beats; evidence for sleep is mixed.",
+      "audience": [
+        "all-ages-and-cultures",
+        "needs-money-or-equipment"
+      ],
+      "notes": "Needs headphones. Wiki rates it 3 on red flags (mixed) on the item page. Write-up has no citations."
+    },
+    {
+      "wiki": "3.3.4",
+      "id": "nature-sounds-or-asmr",
+      "plain": "Try nature sounds or ASMR recordings to relax at bedtime.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "In the wiki's 'New Sleep Advices' list. No write-up."
+    },
+    {
+      "wiki": "4.1.1",
+      "id": "left-side-for-reflux",
+      "plain": "If you get heartburn at night, try sleeping on your left side.",
+      "audience": [
+        "people-with-reflux"
+      ],
+      "notes": "Wiki summary table rates evidence 5/5; write-up cites nothing. Pregnancy advice about left-side sleeping is a separate topic, not covered."
+    },
+    {
+      "wiki": "4.1.2",
+      "id": "acupressure-or-massage",
+      "plain": "Some people relax with gentle massage or acupressure before sleep.",
+      "audience": [
+        "all-ages-and-cultures",
+        "region-or-culture-specific"
+      ],
+      "audienceNote": "Acupressure points (P6) come from traditional Chinese medicine.",
+      "notes": "Write-up has no citations."
+    },
+    {
+      "wiki": "4.1.3",
+      "id": "raise-the-head-of-the-bed",
+      "plain": "If you have reflux or sleep apnea, raising your upper body may help; ask your clinician.",
+      "audience": [
+        "people-with-reflux",
+        "people-who-snore-or-may-have-sleep-apnea",
+        "talk-to-a-clinician"
+      ],
+      "notes": "Wiki classification tables rate it 1 on everything (hardest, weakest); the item page rates it well supported with strong impact. Biggest internal spread in the wiki."
+    },
+    {
+      "wiki": "4.1.4",
+      "id": "raise-your-legs",
+      "plain": "Some people find raising their legs a little helps them feel comfortable at night.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "In the wiki's 'New Sleep Advices' list. No write-up or evidence; the circulation claim in the wiki title is not repeated."
+    },
+    {
+      "wiki": "4.2.1",
+      "id": "keep-a-sleep-diary",
+      "plain": "Write down when you go to bed, wake up and how you slept for a week or two.",
+      "audience": [
+        "all-ages-and-cultures",
+        "people-with-insomnia"
+      ],
+      "glossary": [
+        {
+          "id": "slp-sleep-restriction-therapy",
+          "relation": "overlaps"
+        },
+        {
+          "id": "slp-cognitive-behavioral-therapy-for-insomnia",
+          "relation": "overlaps"
+        }
+      ],
+      "notes": "A sleep diary is the starting point for sleep restriction therapy and CBT-I. Write-up has no citations."
+    },
+    {
+      "wiki": "4.2.2",
+      "id": "light-therapy-for-a-late-body-clock",
+      "plain": "If you can't fall asleep until very late, ask a clinician about morning bright-light therapy.",
+      "audience": [
+        "people-with-a-late-body-clock",
+        "talk-to-a-clinician",
+        "needs-money-or-equipment"
+      ],
+      "glossaryTerms": [
+        "sleep-disorders-circadian-rhythm"
+      ],
+      "notes": "Wiki tip names a 10,000-lux box. Write-up has no citations."
+    },
+    {
+      "wiki": "4.2.3",
+      "id": "melatonin-for-jet-lag-or-shifts",
+      "plain": "Melatonin may help with jet lag or shift work; ask a pharmacist or doctor first.",
+      "audience": [
+        "travelers",
+        "shift-workers",
+        "talk-to-a-clinician"
+      ],
+      "glossary": [
+        {
+          "id": "slp-coping-with-jet-lag",
+          "relation": "overlaps"
+        },
+        {
+          "id": "slp-adjusting-to-night-shift-work",
+          "relation": "overlaps"
+        }
+      ],
+      "glossaryTerms": [
+        "jet-lag-syndrome"
+      ],
+      "disagreements": [
+        {
+          "about": "Evidence",
+          "positions": [
+            {
+              "source": "nhlbi-guide",
+              "says": "Discusses melatonin for jet lag but says the evidence is mixed (pp. 10-12)."
+            }
+          ]
+        }
+      ],
+      "audienceNote": "Melatonin is sold over the counter in some countries and by prescription in others.",
+      "notes": "In the wiki's 'New Sleep Advices' list. No write-up."
+    },
+    {
+      "wiki": "4.2.4",
+      "id": "check-for-sleep-apnea",
+      "plain": "If you snore loudly or gasp in your sleep, ask a doctor about sleep apnea.",
+      "audience": [
+        "people-who-snore-or-may-have-sleep-apnea",
+        "talk-to-a-clinician"
+      ],
+      "glossaryTerms": [
+        "sleep-wake-disorders"
+      ],
+      "notes": "In the wiki's 'New Sleep Advices' list. No write-up; myth M5 (snoring) covers it with citations. The glossary has 'Sleep Apnea, Central' but no obstructive sleep apnea term yet."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-review-medicines-that-disrupt-sleep",
+      "placeIn": "4.2",
+      "id": "check-your-medicines",
+      "plain": "Ask your pharmacist or doctor whether any of your medicines can affect sleep.",
+      "audience": [
+        "all-ages-and-cultures",
+        "talk-to-a-clinician"
+      ]
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-cognitive-behavioral-therapy-for-insomnia",
+      "placeIn": "4.2",
+      "id": "cbt-for-insomnia",
+      "plain": "For long-lasting insomnia, ask about CBT-I, a structured talking and habits treatment.",
+      "audience": [
+        "people-with-insomnia",
+        "talk-to-a-clinician"
+      ],
+      "notes": "The wiki's discussion tab names CBT-I as the intervention linking categories 3 and 4, but it has no item."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-sleep-restriction-therapy",
+      "placeIn": "4.2",
+      "id": "sleep-restriction-therapy",
+      "plain": "With a clinician's help, limit time in bed to the sleep you actually get, then add time back.",
+      "audience": [
+        "people-with-insomnia",
+        "talk-to-a-clinician"
+      ],
+      "notes": "NHLBI caution: avoid driving or machinery while sleep-deprived during this process."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-coping-with-jet-lag",
+      "placeIn": "1.1",
+      "id": "jet-lag",
+      "plain": "Before a long trip, shift your sleep times a little toward the new time zone.",
+      "audience": [
+        "travelers"
+      ]
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-adjusting-to-night-shift-work",
+      "placeIn": "1.1",
+      "id": "adjust-to-night-shift-work",
+      "plain": "On night shifts, use bright light at work and a dark, quiet room to sleep in.",
+      "audience": [
+        "shift-workers"
+      ]
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-late-afternoon-sunlight-viewing",
+      "placeIn": "2.1",
+      "id": "late-afternoon-daylight",
+      "plain": "Some advise getting outside in late-afternoon light too.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Huberman only; low confidence in the glossary. His protective claim is unverified and left out."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-temperature-minimum",
+      "placeIn": "2.1",
+      "id": "body-temperature-low-point",
+      "kind": "concept",
+      "plain": "Your body is coldest a couple of hours before you usually wake.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "A concept used in jet-lag advice, not advice by itself. The 2-hour figure is Huberman's and unverified."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-box-breathing",
+      "placeIn": "2.4",
+      "id": "box-breathing",
+      "plain": "Breathe in for 4, hold for 4, out for 4, hold for 4, and repeat.",
+      "audience": [
+        "all-ages-and-cultures"
+      ]
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-cyclic-sighing",
+      "placeIn": "2.4",
+      "id": "cyclic-sighing",
+      "plain": "Breathe in fully through your nose, then breathe out slowly and completely.",
+      "audience": [
+        "all-ages-and-cultures"
+      ]
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-belly-breathing",
+      "placeIn": "2.4",
+      "id": "belly-breathing",
+      "plain": "Breathe slowly so your belly, not your chest, rises and falls.",
+      "audience": [
+        "all-ages-and-cultures"
+      ]
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-alternate-nostril-breathing",
+      "placeIn": "2.4",
+      "id": "alternate-nostril-breathing",
+      "plain": "Breathe in through one nostril and out the other, switching sides.",
+      "audience": [
+        "all-ages-and-cultures",
+        "region-or-culture-specific"
+      ],
+      "audienceNote": "From yoga practice (nadi shodhana)."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-non-sleep-deep-rest",
+      "placeIn": "3.1",
+      "id": "rest-even-if-awake",
+      "plain": "If you can't sleep, lying still with your eyes closed still rests your body.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Pulls against 3.2.3 (get up after 20 minutes)."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-power-down-hour",
+      "placeIn": "1.3",
+      "id": "power-down-hour",
+      "plain": "Use the last hour before bed for chores, then washing up, then something calm.",
+      "audience": [
+        "all-ages-and-cultures"
+      ]
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-3-2-1-rule",
+      "placeIn": "2.2",
+      "id": "3-2-1-rule",
+      "plain": "Stop alcohol 3 hours, food 2 hours and drinks 1 hour before bed.",
+      "audience": [
+        "adults"
+      ],
+      "audienceNote": "Skip the fluid step if you need fluids for medicine, diabetes or thirst."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-cool-down-with-a-frozen-water-bottle",
+      "placeIn": "1.4",
+      "id": "frozen-water-bottle",
+      "plain": "On hot nights, a frozen water bottle wrapped in a sock can cool you down in bed.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "A personal trick; no evidence cited."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-delay-your-first-coffee",
+      "placeIn": "2.2",
+      "id": "delay-first-coffee",
+      "plain": "Some advise waiting 90 minutes or more after waking for your first coffee.",
+      "audience": [
+        "adults"
+      ],
+      "disagreements": [
+        {
+          "about": "Why and how long",
+          "positions": [
+            {
+              "source": "breus-youtube",
+              "says": "About 90 minutes, because cortisol drops by then (unverified)."
+            },
+            {
+              "source": "huberman-sleep-toolkit",
+              "says": "90-120 minutes, to spread energy and want less caffeine later."
+            }
+          ]
+        }
+      ],
+      "notes": "Popular claim; evidence not checked."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-set-a-caffeine-cutoff",
+      "placeIn": "2.2",
+      "id": "caffeine-cutoff",
+      "plain": "Pick a time in the early afternoon after which you have no caffeine.",
+      "audience": [
+        "adults"
+      ],
+      "notes": "Specific version of 2.2.1; see its caffeine disagreement."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-match-bedtime-to-your-chronotype",
+      "placeIn": "1.1",
+      "id": "fit-bedtime-to-your-body-clock",
+      "plain": "If you're naturally a night owl or early bird, set your bedtime with that in mind.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Evidence for tailoring bedtime to chronotype not checked. Breus's branded animal labels left out."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-stay-in-bed-and-breathe-when-you-wake-at-night",
+      "placeIn": "3.2",
+      "id": "stay-in-bed-and-breathe",
+      "plain": "One expert says to stay in bed and breathe slowly when you wake at night.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Conflicts with 3.2.3 and NHLBI; kept so the disagreement is visible."
+    },
+    {
+      "from": "glossary",
+      "glossaryId": "slp-dim-the-lights-at-night",
+      "placeIn": "2.1",
+      "id": "dim-the-lights-after-dark",
+      "plain": "After dark, keep indoor lights low and screens dim.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "notes": "Overlaps 2.1.2 and 2.1.4. Huberman's 10 p.m.-4 a.m. window is his rule of thumb."
+    },
+    {
+      "from": "do-one-thing",
+      "id": "finish-work-earlier",
+      "placeIn": "3.1",
+      "sourceWording": "Work & School Deadlines / Work/School Responsibilities",
+      "plain": "Stop work or schoolwork at least an hour before bed.",
+      "audience": [
+        "all-ages-and-cultures",
+        "students"
+      ],
+      "paragraph": "Deadlines push us to sacrifice rest, but the late-night work rarely pays off the next day. Finishing earlier allows the brain to settle and restores clarity for tomorrow.",
+      "notes": "Not in the wiki or glossary. Do One Thing commitments give 9 pm and one hour as examples."
+    },
+    {
+      "from": "do-one-thing",
+      "id": "plan-social-time-earlier",
+      "placeIn": "1.1",
+      "sourceWording": "Social Commitments",
+      "plain": "Plan get-togethers earlier in the day so late nights are the exception.",
+      "audience": [
+        "all-ages-and-cultures",
+        "students"
+      ],
+      "paragraph": "Connection is vital, but it doesn’t need to cost tomorrow’s energy. By shifting when and how we socialize, we keep both joy and rest intact."
+    },
+    {
+      "from": "do-one-thing",
+      "id": "move-in-the-morning",
+      "placeIn": "2.3",
+      "sourceWording": "I will stretch or move my body every morning to signal the day has begun.",
+      "plain": "Stretch or move your body soon after you wake up.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "paragraph": null,
+      "notes": "Body-clock reasoning ('signal the day has begun') is not cited."
+    },
+    {
+      "from": "do-one-thing",
+      "id": "use-an-alarm-clock",
+      "placeIn": "1.2",
+      "sourceWording": "I will use an alarm clock instead of relying on my phone.",
+      "plain": "Use an alarm clock instead of your phone, so the phone can stay out of the bedroom.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "paragraph": null
+    },
+    {
+      "from": "do-one-thing",
+      "id": "get-help-if-poor-sleep-persists",
+      "placeIn": "4.2",
+      "sourceWording": "If poor sleep persists for more than a few weeks, talk with a professional — you don’t have to navigate it alone.",
+      "plain": "If poor sleep lasts more than a few weeks, talk with a health professional.",
+      "audience": [
+        "all-ages-and-cultures",
+        "talk-to-a-clinician"
+      ],
+      "paragraph": "Anxiety and depression can complicate sleep, but simple practices and self-compassion change the tone of nights.",
+      "notes": "From the homepage quick tips and the Mental Health Conditions commitments."
+    },
+    {
+      "from": "do-one-thing",
+      "id": "be-kind-to-yourself-after-a-bad-night",
+      "placeIn": "3.1",
+      "sourceWording": "I will give myself grace on rough nights. / I will see poor sleep not as failure but as feedback.",
+      "plain": "After a bad night, go easy on yourself; one rough night is feedback, not failure.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "paragraph": null,
+      "notes": "A mindset item. Worry about sleep itself keeps people awake; that reasoning is not cited here."
+    },
+    {
+      "from": "do-one-thing",
+      "id": "cannabis-and-sleep",
+      "placeIn": "2.2",
+      "sourceWording": "Marijuana Use",
+      "plain": "If you use cannabis, keep it away from bedtime and notice how it affects your sleep.",
+      "audience": [
+        "adults",
+        "talk-to-a-clinician"
+      ],
+      "audienceNote": "Legal status differs by country and state.",
+      "paragraph": "Cannabis affects sleep differently for everyone, but heavy use often suppresses restorative REM cycles. Reflection and moderation bring clarity.",
+      "notes": "The REM claim is Do One Thing's and is not cited. Not in the wiki or glossary."
+    }
+  ],
+  "myths": {
+    "M1": {
+      "id": "myth-alcohol-helps-sleep",
+      "plain": "Alcohol may make you drowsy, but it makes sleep worse later in the night.",
+      "audience": [
+        "adults"
+      ],
+      "related": [
+        "2.2.3"
+      ]
+    },
+    "M2": {
+      "id": "myth-weekend-catch-up",
+      "plain": "Sleeping in on weekends doesn't fully make up for short sleep during the week.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "related": [
+        "1.1.6"
+      ]
+    },
+    "M3": {
+      "id": "myth-exercise-right-before-bed",
+      "plain": "Regular exercise helps sleep, but hard workouts right before bed can keep you up.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "related": [
+        "2.3.4"
+      ]
+    },
+    "M4": {
+      "id": "myth-tv-helps-you-sleep",
+      "plain": "Falling asleep to TV can make sleep lighter and more broken.",
+      "audience": [
+        "all-ages-and-cultures"
+      ],
+      "related": [
+        "1.3.1"
+      ],
+      "notes": "Wiki explains this with blue light; see 1.3.1 for why the light mechanism is disputed."
+    },
+    "M5": {
+      "id": "myth-snoring-is-harmless",
+      "plain": "Loud, frequent snoring can be a sign of sleep apnea and is worth checking.",
+      "audience": [
+        "people-who-snore-or-may-have-sleep-apnea"
+      ],
+      "related": [
+        "4.2.4"
+      ]
+    }
+  }
+}

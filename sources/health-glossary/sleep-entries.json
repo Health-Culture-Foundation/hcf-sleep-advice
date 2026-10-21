@@ -1,0 +1,609 @@
+{
+  "source": {
+    "repo": "vivwebsolutions/health-glossary",
+    "path": "data/ai/sleep/",
+    "commit": "9105ad3",
+    "note": "AI-drafted proposed terms (aiDefinition, unreviewed). NHLBI text is public domain; Breus and Huberman entries are written in our own words and cited by video.",
+    "siteTermUrl": "https://iha-health-glossary.pages.dev/terms/{id}/",
+    "buildNote": "inCommittedBuild: present in data/build/proposed-terms.json at origin/main 9105ad3, so it has a term page (working-group mode only, since it is unreviewed). Others exist only as drafts."
+  },
+  "entries": [
+    {
+      "glossaryId": "slp-dim-the-lights-at-night",
+      "term": "Dim the Lights at Night",
+      "file": "data/ai/sleep/huberman-sleep-essentials.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Andrew Huberman's Huberman Lab Essentials sleep episode",
+      "subcategory": "Light and body clock",
+      "definition": "After sunset, keep indoor lighting low. Avoid bright overhead lights, especially from about 10 p.m. to 4 a.m., turn screens down as far as you can still use them, and use only as much light as you need to move around safely.",
+      "confidence": "medium",
+      "reviewNote": "Andrew Huberman, Huberman Lab Essentials (YouTube), \"Essentials: Sleep Toolkit for Optimizing Sleep & Sleep-Wake Timing\" https://www.youtube.com/watch?v=RTgJSQtvo88&t=1245s . NHLBI (p. 30) already says to turn down the lights before bedtime; his addition is the 10 p.m.-4 a.m. window and dimming screens. The window is his rule of thumb, not a checked standard. NOT VERIFIED: he says bright light at night wipes out melatonin; check the research before stating it.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-late-afternoon-sunlight-viewing",
+      "term": "Late-Afternoon Sunlight Viewing",
+      "file": "data/ai/sleep/huberman-sleep-essentials.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Andrew Huberman's Huberman Lab Essentials sleep episode",
+      "subcategory": "Light and body clock",
+      "definition": "Spend a little time outdoors in the late afternoon or early evening, when the sun is low, looking toward the sky (never straight at the sun). It is meant to signal to your body clock that evening is coming.",
+      "confidence": "low",
+      "reviewNote": "Andrew Huberman, Huberman Lab Essentials (YouTube), \"Essentials: Sleep Toolkit for Optimizing Sleep & Sleep-Wake Timing\" https://www.youtube.com/watch?v=RTgJSQtvo88&t=1116s . He suggests roughly 5 to 30 minutes depending on cloud cover. NOT VERIFIED: he says it protects you against the effects of artificial light at night. That claim was left out; check it before any wording like it is used. Not covered by NHLBI or the Sleep Doctor videos.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-use-red-light-if-you-must-be-up-at-night",
+      "term": "Use Red Light If You Must Be Up at Night",
+      "file": "data/ai/sleep/huberman-sleep-essentials.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Andrew Huberman's Huberman Lab Essentials sleep episode",
+      "subcategory": "Light and body clock",
+      "definition": "If you have to be awake in the middle of the night, for a feeding, caregiving, or an early start, use dim red light instead of bright white light so you can see without lighting up the room.",
+      "confidence": "low",
+      "reviewNote": "Andrew Huberman, Huberman Lab Essentials (YouTube), \"Essentials: Sleep Toolkit for Optimizing Sleep & Sleep-Wake Timing\" https://www.youtube.com/watch?v=RTgJSQtvo88&t=2023s . NOT VERIFIED: he says red light lets you stay awake enough without disrupting the cortisol rhythm, citing studies. Check those before adopting any claim that red light is better for sleep; the definition only says what he advises.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-temperature-minimum",
+      "term": "Temperature Minimum",
+      "file": "data/ai/sleep/huberman-sleep-essentials.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Andrew Huberman's Huberman Lab Essentials sleep episode",
+      "subcategory": "Light and body clock",
+      "definition": "The coldest point of your body's daily temperature cycle. In this model it falls about 2 hours before you usually wake up, so about 5 a.m. if you wake at 7. Bright light, exercise, or caffeine in the 2 to 4 hours before it nudges your body clock later; the same things in the hours just after it nudge your clock earlier. Some people use the timing to shift their clock before travel.",
+      "confidence": "low",
+      "reviewNote": "Andrew Huberman, Huberman Lab Essentials (YouTube), \"Essentials: Sleep Toolkit for Optimizing Sleep & Sleep-Wake Timing\" https://www.youtube.com/watch?v=RTgJSQtvo88&t=1811s . The \"2 hours before your usual wake time\" rule and the before/after effects are his plain-language version; get a chronobiology source to confirm both. NHLBI's jet-lag advice (pp. 10-12) is simpler (shift bed and wake times by small steps), so this adds a more technical option.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-limit-weekend-sleep-in",
+      "term": "Limit Weekend Sleep-In",
+      "file": "data/ai/sleep/huberman-sleep-essentials.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Andrew Huberman's Huberman Lab Essentials sleep episode",
+      "subcategory": "Better sleep habits",
+      "definition": "On weekends, wake within about an hour of your usual time, even after a late night. If you are tired, add a short afternoon nap rather than sleeping a long time in the morning.",
+      "confidence": "medium",
+      "reviewNote": "Andrew Huberman, Huberman Lab Essentials (YouTube), \"Essentials: Sleep Toolkit for Optimizing Sleep & Sleep-Wake Timing\" https://www.youtube.com/watch?v=RTgJSQtvo88&t=1743s . Agrees with NHLBI (p. 28: sleeping later on weekends won't make up for lost sleep) and with Dr. Breus's fixed wake time; his specific limit is \"no more than about an hour\". Check the one-hour figure against a clinical source.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-stick-to-a-sleep-schedule",
+      "term": "Stick to a Sleep Schedule",
+      "file": "data/ai/sleep/nhlbi-good-night-tips.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Better sleep habits",
+      "definition": "Go to bed and wake up at the same time every day, including weekends. Sleeping in on weekends doesn't make up for lost sleep during the week, and it makes Monday mornings harder.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's \"Tips for Getting a Good Night's Sleep,\" Your Guide to Healthy Sleep (NIH Publication No. 11-5271), p. 28: https://www.nhlbi.nih.gov/resources/your-guide-healthy-sleep",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-time-your-exercise-for-sleep",
+      "term": "Time Your Exercise for Sleep",
+      "file": "data/ai/sleep/nhlbi-good-night-tips.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Better sleep habits",
+      "definition": "Get regular exercise — at least 30 minutes most days — but finish at least 2 to 3 hours before bedtime. Exercising too close to bed can make it harder to fall asleep.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's \"Tips for Getting a Good Night's Sleep,\" Your Guide to Healthy Sleep, p. 28.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-avoid-caffeine-and-nicotine-before-bed",
+      "term": "Avoid Caffeine and Nicotine Before Bed",
+      "file": "data/ai/sleep/nhlbi-good-night-tips.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Better sleep habits",
+      "definition": "Caffeine (in coffee, tea, soda, and chocolate) and nicotine are both stimulants. Caffeine's effects can last up to 8 hours, so even a late-afternoon cup of coffee can make it harder to fall asleep at night; nicotine tends to cause lighter sleep and earlier waking.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's \"Tips for Getting a Good Night's Sleep,\" Your Guide to Healthy Sleep, pp. 28-29.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-avoid-alcohol-before-bed",
+      "term": "Avoid Alcohol Before Bed",
+      "file": "data/ai/sleep/nhlbi-good-night-tips.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Better sleep habits",
+      "definition": "A drink before bed might help you feel relaxed, but heavy alcohol use cuts into deep sleep and REM sleep, and it can make you more likely to wake up once its effects wear off partway through the night.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's \"Tips for Getting a Good Night's Sleep,\" Your Guide to Healthy Sleep, p. 29.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-avoid-large-meals-and-fluids-late-at-night",
+      "term": "Avoid Large Meals and Fluids Late at Night",
+      "file": "data/ai/sleep/nhlbi-good-night-tips.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Better sleep habits",
+      "definition": "A big meal close to bedtime can cause indigestion that disrupts sleep, and drinking a lot of fluid can mean waking up to use the bathroom. A light snack is fine.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's \"Tips for Getting a Good Night's Sleep,\" Your Guide to Healthy Sleep, p. 29.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-review-medicines-that-disrupt-sleep",
+      "term": "Review Medicines That Disrupt Sleep",
+      "file": "data/ai/sleep/nhlbi-good-night-tips.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Better sleep habits",
+      "definition": "Some heart, blood pressure, and asthma medicines, along with some over-the-counter cough, cold, and allergy remedies, can interfere with sleep. If you're having trouble sleeping, ask your doctor or pharmacist whether something you're taking could be the cause, and whether it can be taken earlier in the day instead.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's \"Tips for Getting a Good Night's Sleep,\" Your Guide to Healthy Sleep, p. 29.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-avoid-late-afternoon-naps",
+      "term": "Avoid Late Afternoon Naps",
+      "file": "data/ai/sleep/nhlbi-good-night-tips.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Better sleep habits",
+      "definition": "A short nap can make up for lost sleep, but napping after 3 p.m. can make it harder to fall asleep that night.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's \"Tips for Getting a Good Night's Sleep,\" Your Guide to Healthy Sleep, p. 29.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-relax-before-bed",
+      "term": "Relax Before Bed",
+      "file": "data/ai/sleep/nhlbi-good-night-tips.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Better sleep habits",
+      "definition": "Leave time before sleep to unwind instead of scheduling right up to bedtime. A calm activity like reading or listening to music makes a good bedtime ritual.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's \"Tips for Getting a Good Night's Sleep,\" Your Guide to Healthy Sleep, p. 29.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-take-a-warm-bath-before-bed",
+      "term": "Take a Warm Bath Before Bed",
+      "file": "data/ai/sleep/nhlbi-good-night-tips.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Better sleep habits",
+      "definition": "A warm bath before bed helps you relax, and the drop in body temperature afterward can help you feel sleepy.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's \"Tips for Getting a Good Night's Sleep,\" Your Guide to Healthy Sleep, p. 29.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-create-a-good-sleep-environment",
+      "term": "Create a Good Sleep Environment",
+      "file": "data/ai/sleep/nhlbi-good-night-tips.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Better sleep habits",
+      "definition": "Clear the bedroom of anything that pulls your attention away from sleep — noise, bright light, an uncomfortable bed, or a room that's too warm. A cool room, a comfortable mattress and pillow, and no TV, phone, or computer all help. Turning the clock face away from view can also stop you from watching the time while trying to fall asleep.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's \"Tips for Getting a Good Night's Sleep,\" Your Guide to Healthy Sleep, pp. 29-30.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-get-morning-sunlight-exposure",
+      "term": "Get Morning Sunlight Exposure",
+      "file": "data/ai/sleep/nhlbi-good-night-tips.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Better sleep habits",
+      "definition": "Daylight helps set your body's sleep-wake clock. Aim for at least 30 minutes outside in natural light each day; if falling asleep is hard, an hour of morning sunlight paired with dimmer light before bed can help.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's \"Tips for Getting a Good Night's Sleep,\" Your Guide to Healthy Sleep, p. 30. Sources disagree on amount: NHLBI 30 minutes; Dr. Breus 15 minutes; Huberman about 5 minutes on a clear day, 10 on a cloudy day, 20-30 on a dark overcast day, within 30-60 minutes of waking, without sunglasses and not through a window or windshield (Andrew Huberman (Essentials sleep episode, https://www.youtube.com/watch?v=RTgJSQtvo88&t=66s). Pick one or give a range.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-don-t-lie-in-bed-awake",
+      "term": "Don't Lie in Bed Awake",
+      "file": "data/ai/sleep/nhlbi-good-night-tips.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Better sleep habits",
+      "definition": "If you're still awake after about 20 minutes, or you start to feel anxious about not sleeping, get up and do something relaxing until you feel sleepy, then go back to bed. Lying there worrying about not sleeping tends to make it harder to fall asleep.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's \"Tips for Getting a Good Night's Sleep,\" Your Guide to Healthy Sleep, p. 30. This is the general-audience version of the technique described more clinically as \"Reconditioning Therapy\" in the guide's Insomnia section (p. 37) — worth confirming with the working group whether these should stay separate or merge.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-reconditioning-therapy",
+      "term": "Reconditioning Therapy",
+      "file": "data/ai/sleep/nhlbi-insomnia-techniques.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Insomnia treatment techniques",
+      "definition": "A technique for chronic insomnia that breaks the link between bed and lying awake worrying: go to bed only when sleepy, and if you can't fall asleep (or fall back asleep) within about 20 minutes, get up, go to another room, and do something relaxing until you're sleepy again before returning to bed.",
+      "confidence": "medium",
+      "reviewNote": "NHLBI's guide calls this \"reconditioning therapy\" (Your Guide to Healthy Sleep, p. 37) and describes the same get-out-of-bed technique in plainer terms under \"Don't Lie in Bed Awake\" (p. 30). The wider clinical literature usually calls this technique \"stimulus control\" or \"stimulus control therapy\" — flagged for the working group to confirm which name to use, since NHLBI itself never uses that phrase.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-relaxation-therapy",
+      "term": "Relaxation Therapy",
+      "file": "data/ai/sleep/nhlbi-insomnia-techniques.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Insomnia treatment techniques",
+      "definition": "A way to calm body and mind before sleep. It can be mental — meditation or other relaxation techniques — or physical, such as tensing and then releasing each muscle group in turn, or focusing on slow, deep breathing.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's Your Guide to Healthy Sleep, p. 37.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-sleep-restriction-therapy",
+      "term": "Sleep Restriction Therapy",
+      "file": "data/ai/sleep/nhlbi-insomnia-techniques.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Insomnia treatment techniques",
+      "definition": "A technique for insomnia that limits time in bed to match how much you actually sleep. Calculate your average sleep time over a week, keep your time in bed to that amount, then gradually add more as your sleep improves. Naps longer than 15-20 minutes are avoided during this process, since they can undo the effect.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's Your Guide to Healthy Sleep, p. 37. The guide also notes avoiding driving or operating machinery until you're getting enough sleep at night during this process — worth keeping as a caution if this term is adopted.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-cognitive-behavioral-therapy-for-insomnia",
+      "term": "Cognitive Behavioral Therapy for Insomnia",
+      "file": "data/ai/sleep/nhlbi-insomnia-techniques.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Insomnia treatment techniques",
+      "definition": "A structured treatment for chronic insomnia that combines behavior changes — like reconditioning and sleep restriction therapy — with replacing unhelpful thoughts about sleep, such as \"I'll never fall asleep without pills,\" with more realistic ones. It's effective for most people with chronic insomnia.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's Your Guide to Healthy Sleep, p. 37.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-coping-with-jet-lag",
+      "term": "Coping With Jet Lag",
+      "file": "data/ai/sleep/nhlbi-jet-lag-and-shift-work.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Jet lag & shift work",
+      "definition": "A handful of adjustments that can ease jet lag on a trip of more than a few days: shift your sleep and wake times by small steps for a couple of days beforehand, get plenty of outdoor daylight right after you arrive, skip alcohol and afternoon caffeine, and keep any naps short (10-15 minutes).",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's Your Guide to Healthy Sleep, pp. 10-12. The guide also discusses melatonin as a possible jet-lag aid but says the evidence is mixed — worth a caution note if this term is adopted. Named distinctly from \"Jet Lag Syndrome\" (the MeSH-sourced disorder candidate) since this term is the coping technique, not the diagnosis.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-adjusting-to-night-shift-work",
+      "term": "Adjusting to Night Shift Work",
+      "file": "data/ai/sleep/nhlbi-jet-lag-and-shift-work.json",
+      "generatedBy": "claude-sonnet-5, hand-drafted from NHLBI's Your Guide to Healthy Sleep",
+      "subcategory": "Jet lag & shift work",
+      "definition": "Ways to make night-shift sleep easier: add naps and extra sleep time, use bright light at work, keep shift changes infrequent so your body clock has time to adjust, block out light and noise while sleeping during the day, and limit caffeine to the start of the shift.",
+      "confidence": "high",
+      "reviewNote": "From NHLBI's Your Guide to Healthy Sleep, p. 9.",
+      "inCommittedBuild": true
+    },
+    {
+      "glossaryId": "slp-4-7-8-breathing",
+      "term": "4-7-8 Breathing",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Breathing techniques",
+      "definition": "A slow breathing pattern for winding down: breathe in through the nose for a count of 4, hold for 7, and breathe out for 8, gently and without forcing the air. If holding for 7 is hard, shorten the hold and build up. Start with a few rounds, and cut back if you feel lightheaded.",
+      "confidence": "medium",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"How to fall back asleep in the middle of the night\" https://www.youtube.com/watch?v=zpdRKmLePaQ&t=183s ; \"5 Breathing Techniques to Help Fall Back to Sleep\" https://www.youtube.com/watch?v=nqOm1HZyh8Y&t=500s ; \"My Favorite Breathing Techniques to Fall Asleep FAST\" https://www.youtube.com/watch?v=2vVfqgxpl_4. Technique and counts are his; wording is ours. NOT VERIFIED: he says it lowers heart rate below 60, which he says is needed to fall asleep. Needs a peer-reviewed or government source before any such claim is made. He also says it works best if practiced twice a day, and warns of lightheadedness at first.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-box-breathing",
+      "term": "Box Breathing",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Breathing techniques",
+      "definition": "A counted breathing pattern: breathe in for 4, hold for 4, breathe out for 4, hold for 4, then repeat. Picturing the numbers as you count gives your mind something to focus on. Beginners can start with 4 to 5 rounds.",
+      "confidence": "medium",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"5 Breathing Techniques to Help Fall Back to Sleep\" https://www.youtube.com/watch?v=nqOm1HZyh8Y&t=152s ; \"My Favorite Breathing Techniques to Fall Asleep FAST\" https://www.youtube.com/watch?v=2vVfqgxpl_4. He suggests 7-8 rounds in one video, 4-5 (building to 10-20) in another. Round counts are his; confirm against a clinical source.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-cyclic-sighing",
+      "term": "Cyclic Sighing",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Breathing techniques",
+      "definition": "A breathing pattern for calming down fast: breathe in through the nose until your lungs feel full, then, without holding, let the air out slowly and completely. A few rounds is often enough to quiet racing thoughts.",
+      "confidence": "medium",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"5 Breathing Techniques to Help Fall Back to Sleep\" https://www.youtube.com/watch?v=nqOm1HZyh8Y&t=107s . He says it can relieve stress in under a minute; NOT VERIFIED here. Check the research on cyclic sighing before adopting that claim.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-alternate-nostril-breathing",
+      "term": "Alternate Nostril Breathing",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Breathing techniques",
+      "definition": "A breathing exercise where you close one nostril with a finger, breathe in through the other, then switch sides for the breath out and the next breath in. Beginners can try 5 to 10 rounds. It is used to settle strong emotions.",
+      "confidence": "low",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"5 Breathing Techniques to Help Fall Back to Sleep\" https://www.youtube.com/watch?v=nqOm1HZyh8Y&t=252s . He nicknames it \"hang 10 breathing\" and says it is \"believed to\" balance the left and right sides of the brain. That claim is not supported here and was left out of the definition; confirm or drop it. Low confidence because the evidence for its effect on sleep was not checked.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-belly-breathing",
+      "term": "Belly Breathing",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Breathing techniques",
+      "definition": "Breathing deeply so your belly rises as you breathe in and falls as you breathe out, slowly and through the nose. It is the base skill for most other relaxation breathing exercises.",
+      "confidence": "medium",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"5 Breathing Techniques to Help Fall Back to Sleep\" https://www.youtube.com/watch?v=nqOm1HZyh8Y ; \"My Favorite Breathing Techniques to Fall Asleep FAST\" https://www.youtube.com/watch?v=2vVfqgxpl_4 . NHLBI's guide (p. 37) also lists focusing on deep breathing under Relaxation Therapy, so this term overlaps with that one; working group to decide whether they stay separate.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-progressive-muscle-relaxation",
+      "term": "Progressive Muscle Relaxation",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Calming techniques",
+      "definition": "A body-relaxing exercise: tighten one group of muscles for about 5 to 7 seconds, then let go and notice how it feels. Work through the body one group at a time, for example toes, feet, calves, thighs, hips, belly, hands, arms, shoulders, neck, jaw and forehead. Each tense-and-release takes about 10 to 15 seconds.",
+      "confidence": "medium",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"5 Breathing Techniques to Help Fall Back to Sleep\" https://www.youtube.com/watch?v=nqOm1HZyh8Y&t=365s (starts at the toes); \"My Favorite Breathing Techniques to Fall Asleep FAST\" https://www.youtube.com/watch?v=2vVfqgxpl_4&t=223s (starts at the head). Direction differs by video, so the definition does not fix one. NHLBI's guide (p. 37) describes the same idea in one sentence inside Relaxation Therapy. Seconds are his; confirm against a clinical protocol.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-non-sleep-deep-rest",
+      "term": "Non-Sleep Deep Rest",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Calming techniques",
+      "definition": "Lying still in the dark and quiet, awake, with your eyes closed. It is not sleep, but it can still rest the body, which can take pressure off the effort to fall asleep.",
+      "confidence": "low",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"How to fall back asleep in the middle of the night\" https://www.youtube.com/watch?v=zpdRKmLePaQ&t=106s . NOT VERIFIED: he says an hour of this is worth about 20 minutes of sleep. That figure was left out of the definition. Also, NSDR is widely used by Andrew Huberman for guided audio protocols, which is a different practice; check how the working group wants the term scoped before pulling in Huberman material.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-don-t-check-the-clock",
+      "term": "Don't Check the Clock",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Calming techniques",
+      "definition": "When you wake at night, resist looking at the time. Checking leads to counting how many hours are left, which adds worry and makes it harder to fall back asleep.",
+      "confidence": "high",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"How to fall back asleep in the middle of the night\" https://www.youtube.com/watch?v=zpdRKmLePaQ&t=224s . Matches NHLBI's advice (Your Guide to Healthy Sleep, p. 30) to turn the clock face out of view; consider merging with \"Create a Good Sleep Environment\".",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-stay-in-bed-and-breathe-when-you-wake-at-night",
+      "term": "Stay in Bed and Breathe When You Wake at Night",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Calming techniques",
+      "definition": "When you wake in the middle of the night, stay in bed with the lights off and use slow breathing to settle, instead of getting up, walking around, or picking up your phone. If you do not need the bathroom, skip the trip. Keep a glass of room-temperature water by the bed.",
+      "confidence": "low",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"How to fall back asleep in the middle of the night\" https://www.youtube.com/watch?v=zpdRKmLePaQ&t=259s . CONFLICTS WITH NHLBI: NHLBI (Your Guide to Healthy Sleep, pp. 30 and 37) says to get out of bed after about 20 minutes awake and do something relaxing. The two pieces of advice are opposite, so the working group has to decide which to present, or present both with when each applies. Also NOT VERIFIED: his reason (a rising heart rate from getting up keeps you awake).",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-worry-journal",
+      "term": "Worry Journal",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Calming techniques",
+      "definition": "Writing down what is on your mind a few hours before bed so you are not holding it in bed. One way: draw a line down a page, list your worries on the left, and write one small next step for each on the right. It does not need to solve the problem, only to put it somewhere other than your head.",
+      "confidence": "medium",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"14 Tips to Fall Asleep Faster & Sleep Better\" https://www.youtube.com/watch?v=e_3UoecZlxY&t=349s . The two-column layout is his; wording is ours. Check whether published studies support scheduled worry writing for sleep before the working group describes it as effective.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-gratitude-list-before-bed",
+      "term": "Gratitude List Before Bed",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Calming techniques",
+      "definition": "Writing or thinking through a short list of things you are thankful for in the last stretch before bed, to shift attention from the day's stress to something positive.",
+      "confidence": "low",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"How To Fall Asleep Fast – Sleep Doctor Tips!\" https://www.youtube.com/watch?v=qGDNNjGBc0U&t=385s . He says there is growing data that positive emotions before bed help sleep and lead to more positive dreams. NOT VERIFIED; that claim is left out of the definition.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-power-down-hour",
+      "term": "Power-Down Hour",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Better sleep habits",
+      "definition": "A set hour before bed split into three 20-minute parts: one for chores and last-minute tasks, one for hygiene such as brushing teeth, washing your face, or a warm shower, and one for something slow and calming such as reading, meditation, or prayer. Setting an alarm an hour before bedtime reminds you to start.",
+      "confidence": "medium",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"How To Fall Asleep Fast – Sleep Doctor Tips!\" https://www.youtube.com/watch?v=qGDNNjGBc0U&t=346s ; \"The ULTIMATE night routine to fall asleep fast\" https://www.youtube.com/watch?v=wQwPAPHYDfU ; \"14 Tips...\" https://www.youtube.com/watch?v=e_3UoecZlxY . He calls the last 20 minutes the \"runway to land the plane\". The 20/20/20 split is his own framing, not a research standard. Overlaps NHLBI's \"Relax Before Bed\".",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-3-2-1-rule",
+      "term": "3-2-1 Rule",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Better sleep habits",
+      "definition": "A countdown before bed: stop alcohol 3 hours before, stop eating 2 hours before, and stop drinking fluids 1 hour before. People who need fluids for medicine, diabetes, or constant thirst should skip the fluid cutoff and ask their doctor.",
+      "confidence": "medium",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"14 Tips to Fall Asleep Faster & Sleep Better\" https://www.youtube.com/watch?v=e_3UoecZlxY&t=401s . He says he is not the originator of the rule. The hour counts are not from a trial that was checked here. Overlaps NHLBI's \"Avoid Alcohol Before Bed\" and \"Avoid Large Meals and Fluids Late at Night\".",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-cool-down-with-a-frozen-water-bottle",
+      "term": "Cool Down With a Frozen Water Bottle",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Better sleep habits",
+      "definition": "A low-tech way to cool your body before sleep: freeze a bottle of water, put it in a sock, and place one by each hip in bed.",
+      "confidence": "low",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"How To Fall Asleep Fast – Sleep Doctor Tips!\" https://www.youtube.com/watch?v=qGDNNjGBc0U&t=179s . A personal trick from him; no evidence cited for it. In the same video he gives a bedroom range of 65 to about 72 degrees F, which is not in the definition and should be checked. NHLBI (p. 29) only says to keep the room \"on the cool side\".",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-delay-your-first-coffee",
+      "term": "Delay Your First Coffee",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Better sleep habits",
+      "definition": "Drink water first and wait about 90 minutes after waking before your first cup of coffee.",
+      "confidence": "low",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"14 Tips to Fall Asleep Faster & Sleep Better\" https://www.youtube.com/watch?v=e_3UoecZlxY&t=107s ; \"The ULTIMATE night routine to fall asleep fast\" https://www.youtube.com/watch?v=wQwPAPHYDfU&t=59s . NOT VERIFIED: his reason is that cortisol and adrenaline are high on waking and then drop after about 90 minutes. This is a popular claim and not established; check the evidence before it is stated as fact. The same claim is common in Andrew Huberman material, so consider verifying once for both. Huberman gives a different window: 90 to 120 minutes after waking (Andrew Huberman (Essentials sleep episode, https://www.youtube.com/watch?v=RTgJSQtvo88&t=643s). He gives a different reason too (spreading out energy so you want less caffeine later), not the cortisol story.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-set-a-caffeine-cutoff",
+      "term": "Set a Caffeine Cutoff",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Better sleep habits",
+      "definition": "Pick a time in the early afternoon after which you stop caffeine, so it has worn off by bedtime. Caffeine can stay in your body for many hours.",
+      "confidence": "medium",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"14 Tips to Fall Asleep Faster & Sleep Better\" https://www.youtube.com/watch?v=e_3UoecZlxY&t=187s ; \"The ULTIMATE night routine to fall asleep fast\" https://www.youtube.com/watch?v=wQwPAPHYDfU . His cutoff is 2 p.m., with a caffeine half-life of 6 to 8 hours. NHLBI (p. 28) says its effects can take as long as 8 hours to wear off and gives no clock time. The working group should choose whether to publish a specific time, and check the half-life range, since it varies by person. Huberman's cutoff differs: no more than about 100 mg after 4 p.m., and he says caffeine after 4 p.m. can disrupt sleep stages even in people who think they sleep fine (Andrew Huberman (Essentials sleep episode, https://www.youtube.com/watch?v=RTgJSQtvo88&t=655s).",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-keep-a-fixed-wake-time",
+      "term": "Keep a Fixed Wake Time",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Better sleep habits",
+      "definition": "Get up at the same time every day, including weekends, even after a late night. Many sleep experts treat a steady wake time as more important than a steady bedtime.",
+      "confidence": "medium",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"How To Fall Asleep Fast – Sleep Doctor Tips!\" https://www.youtube.com/watch?v=qGDNNjGBc0U&t=303s ; \"14 Tips to Fall Asleep Faster & Sleep Better\" https://www.youtube.com/watch?v=e_3UoecZlxY . The \"wake time over bedtime\" emphasis is his; NHLBI (p. 28) says to keep both bedtime and wake time the same. Overlaps \"Stick to a Sleep Schedule\", consider merging.",
+      "inCommittedBuild": false
+    },
+    {
+      "glossaryId": "slp-match-bedtime-to-your-chronotype",
+      "term": "Match Bedtime to Your Chronotype",
+      "file": "data/ai/sleep/sleep-doctor-youtube.json",
+      "generatedBy": "claude-sonnet-5.5, hand-drafted from Dr. Michael Breus (The Sleep Doctor) YouTube videos",
+      "subcategory": "Better sleep habits",
+      "definition": "Your chronotype is your natural lean toward mornings or evenings. Going to bed much earlier or later than your body prefers can make falling asleep harder, so set your bedtime with your own pattern in mind.",
+      "confidence": "low",
+      "reviewNote": "Dr. Michael Breus, The Sleep Doctor (YouTube). \"How To Fall Asleep Fast – Sleep Doctor Tips!\" https://www.youtube.com/watch?v=qGDNNjGBc0U&t=121s ; \"14 Tips to Fall Asleep Faster & Sleep Better\" https://www.youtube.com/watch?v=e_3UoecZlxY . He sells a chronotype quiz and uses animal labels (\"wolf\", etc.); those labels are branded and were left out. \"Chronotype\" is also a MeSH descriptor (D000094407) outside the Sleep tree; the working group may want it as its own term. Evidence for tailoring bedtime to chronotype was not checked.",
+      "inCommittedBuild": false
+    }
+  ],
+  "publishedSleepTerms": [
+    {
+      "glossaryId": "sleep-hygiene",
+      "term": "Sleep Hygiene"
+    },
+    {
+      "glossaryId": "sleep-latency",
+      "term": "Sleep Latency"
+    },
+    {
+      "glossaryId": "sleepiness",
+      "term": "Sleepiness"
+    },
+    {
+      "glossaryId": "sleep-slow-wave",
+      "term": "Sleep, Slow-Wave"
+    },
+    {
+      "glossaryId": "sleep-quality",
+      "term": "Sleep Quality"
+    },
+    {
+      "glossaryId": "sleep-duration",
+      "term": "Sleep Duration"
+    },
+    {
+      "glossaryId": "cataplexy",
+      "term": "Cataplexy"
+    },
+    {
+      "glossaryId": "dreams",
+      "term": "Dreams"
+    },
+    {
+      "glossaryId": "disorders-of-excessive-somnolence",
+      "term": "Disorders of Excessive Somnolence"
+    },
+    {
+      "glossaryId": "narcolepsy",
+      "term": "Narcolepsy"
+    },
+    {
+      "glossaryId": "obesity-hypoventilation-syndrome",
+      "term": "Obesity Hypoventilation Syndrome"
+    },
+    {
+      "glossaryId": "restless-legs-syndrome",
+      "term": "Restless Legs Syndrome"
+    },
+    {
+      "glossaryId": "sleep",
+      "term": "Sleep"
+    },
+    {
+      "glossaryId": "sleep-deprivation",
+      "term": "Sleep Deprivation"
+    },
+    {
+      "glossaryId": "sleep-wake-disorders",
+      "term": "Sleep Wake Disorders"
+    },
+    {
+      "glossaryId": "sleep-stages",
+      "term": "Sleep Stages"
+    },
+    {
+      "glossaryId": "sleep-rem",
+      "term": "Sleep, REM"
+    },
+    {
+      "glossaryId": "somnambulism",
+      "term": "Somnambulism"
+    },
+    {
+      "glossaryId": "kleine-levin-syndrome",
+      "term": "Kleine-Levin Syndrome"
+    },
+    {
+      "glossaryId": "idiopathic-hypersomnia",
+      "term": "Idiopathic Hypersomnia"
+    },
+    {
+      "glossaryId": "sleep-disorders-circadian-rhythm",
+      "term": "Sleep Disorders, Circadian Rhythm"
+    },
+    {
+      "glossaryId": "jet-lag-syndrome",
+      "term": "Jet Lag Syndrome"
+    },
+    {
+      "glossaryId": "sleep-apnea-central",
+      "term": "Sleep Apnea, Central"
+    },
+    {
+      "glossaryId": "nocturnal-paroxysmal-dystonia",
+      "term": "Nocturnal Paroxysmal Dystonia"
+    },
+    {
+      "glossaryId": "night-terrors",
+      "term": "Night Terrors"
+    },
+    {
+      "glossaryId": "sleep-bruxism",
+      "term": "Sleep Bruxism"
+    },
+    {
+      "glossaryId": "rem-sleep-behavior-disorder",
+      "term": "REM Sleep Behavior Disorder"
+    },
+    {
+      "glossaryId": "sleep-paralysis",
+      "term": "Sleep Paralysis"
+    },
+    {
+      "glossaryId": "nocturnal-myoclonus-syndrome",
+      "term": "Nocturnal Myoclonus Syndrome"
+    },
+    {
+      "glossaryId": "parasomnias",
+      "term": "Parasomnias"
+    },
+    {
+      "glossaryId": "sleep-disorders-intrinsic",
+      "term": "Sleep Disorders, Intrinsic"
+    },
+    {
+      "glossaryId": "dyssomnias",
+      "term": "Dyssomnias"
+    },
+    {
+      "glossaryId": "sleep-arousal-disorders",
+      "term": "Sleep Arousal Disorders"
+    },
+    {
+      "glossaryId": "sleep-wake-transition-disorders",
+      "term": "Sleep-Wake Transition Disorders"
+    },
+    {
+      "glossaryId": "rem-sleep-parasomnias",
+      "term": "REM Sleep Parasomnias"
+    },
+    {
+      "glossaryId": "insomnia-fatal-familial",
+      "term": "Insomnia, Fatal Familial"
+    }
+  ]
+}

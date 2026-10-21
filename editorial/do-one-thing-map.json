@@ -1,0 +1,36 @@
+{
+  "_about": "Maps each Do One Thing commitment ('I will…') and homepage quick tip, in page order, to the advice concepts it applies. Drafted by Claude on 2026-10-21, unreviewed. Each entry is [type, conceptIds, numbersToCheck]. type: 'action' = a concrete change; 'mindset' = an attitude or reminder that supports the change. 'dup' marks a line that repeats another (site error). The Do One Thing categories and subcategories become the 'problem' facet; a concept gets a problem value when a commitment or tip under it applies that concept.",
+  "subcategories": {
+    "weekend-gap": [["mindset", ["dont-sleep-in-much-on-weekends"], []], ["mindset", ["keep-a-regular-sleep-schedule"], []]],
+    "deadlines": [["action", ["finish-work-earlier"], ["9 pm"]], ["action", ["finish-work-earlier"], []], ["action", ["finish-work-earlier", "screens-before-bed"], ["30-minute buffer"]], ["mindset", ["get-enough-sleep-for-you"], []], ["action", ["finish-work-earlier"], []]],
+    "social-commitments": [["action", ["plan-social-time-earlier"], []], ["action", ["plan-social-time-earlier"], ["10 pm"]], ["action", ["plan-social-time-earlier"], []], ["mindset", ["plan-social-time-earlier"], []], ["mindset", ["plan-social-time-earlier"], []]],
+    "circadian-cues": [["action", ["get-morning-daylight"], ["within 30 minutes of waking"]], ["action", ["move-in-the-morning"], []], ["action", ["have-a-wind-down-routine"], []], ["action", ["gratitude-list"], []], ["mindset", ["keep-a-regular-sleep-schedule"], []]],
+    "evening-phone": [["action", ["screens-before-bed"], ["one hour before bed"]], ["action", ["keep-devices-out-of-the-bedroom"], []], ["action", ["screens-before-bed"], []], ["mindset", ["keep-devices-out-of-the-bedroom"], []], ["mindset", ["bed-is-for-sleep"], []]],
+    "tv-streaming": [["action", ["screens-before-bed"], ["9:30 pm"]], ["action", ["screens-before-bed"], []], ["action", ["screens-before-bed"], []], ["mindset", ["screens-before-bed"], []], ["mindset", ["screens-before-bed"], []]],
+    "gaming-social-media": [["action", ["screens-before-bed"], ["an hour before bed"]], ["action", ["screens-before-bed"], []], ["action", ["screens-before-bed"], []], ["mindset", ["screens-before-bed"], []], ["mindset", ["skip-exciting-things-before-bed"], []]],
+    "bedroom-devices": [["action", ["keep-devices-out-of-the-bedroom"], []], ["action", ["use-an-alarm-clock"], []], ["action", ["keep-devices-out-of-the-bedroom"], []], ["mindset", ["bed-is-for-sleep"], []], ["action", ["keep-devices-out-of-the-bedroom", "get-morning-daylight"], []]],
+    "get-exercise": [["dup", [], []], ["dup", [], []], ["dup", [], []], ["dup", [], []], ["dup", [], []]],
+    "work-school": [["action", ["write-down-worries"], ["before dinner"]], ["action", ["finish-work-earlier"], ["one hour before bed"]], ["mindset", ["calm-your-mind-before-bed"], []], ["action", ["finish-work-earlier"], []], ["mindset", ["get-enough-sleep-for-you"], []]],
+    "relationships": [["action", ["gratitude-list"], ["three good things"]], ["action", ["avoid-heavy-talks-at-bedtime"], []], ["dup", [], []], ["mindset", ["avoid-heavy-talks-at-bedtime"], []], ["mindset", ["calm-your-mind-before-bed"], []]],
+    "money-worries": [["action", ["write-down-worries"], ["15 minutes"]], ["action", ["write-down-worries"], []], ["action", ["gratitude-list"], ["three daily wins"]], ["mindset", ["calm-your-mind-before-bed"], []], ["mindset", ["get-enough-sleep-for-you"], []]],
+    "mental-health": [["action", ["relaxation-techniques"], ["5 minutes"]], ["action", ["get-help-if-poor-sleep-persists"], []], ["mindset", ["be-kind-to-yourself-after-a-bad-night"], []], ["mindset", ["be-kind-to-yourself-after-a-bad-night"], []], ["mindset", ["have-a-wind-down-routine"], []]],
+    "caffeine-timing": [["action", ["caffeine-cutoff"], ["before 2 p.m."]], ["action", ["herbal-tea-before-bed"], []], ["action", ["caffeine-cutoff"], []], ["action", ["caffeine-cutoff"], []], ["mindset", ["caffeine-cutoff"], []]],
+    "alcohol-timing": [["action", ["no-alcohol-close-to-bedtime"], ["three hours"]], ["action", ["no-alcohol-close-to-bedtime"], []], ["action", ["no-alcohol-close-to-bedtime", "herbal-tea-before-bed"], []], ["mindset", ["no-alcohol-close-to-bedtime"], []], ["mindset", ["no-alcohol-close-to-bedtime"], ["claim: alcohol 'steals REM'"]]],
+    "cannabis-use": [["action", ["cannabis-and-sleep"], ["one hour before bed"]], ["action", ["cannabis-and-sleep", "keep-a-sleep-diary"], []], ["action", ["cannabis-and-sleep", "have-a-wind-down-routine"], []], ["mindset", ["cannabis-and-sleep"], []], ["mindset", ["cannabis-and-sleep"], []]],
+    "meal-timing": [["action", ["caffeine-and-big-meals-early"], ["two to three hours"]], ["action", ["small-snack-before-bed"], []], ["mindset", ["caffeine-and-big-meals-early"], []], ["mindset", ["small-snack-before-bed"], []], ["mindset", ["caffeine-and-big-meals-early"], []]],
+    "hydration-timing": [["action", ["drink-more-earlier-in-the-day"], []], ["action", ["drink-more-earlier-in-the-day"], ["after 8 pm"]], ["action", ["drink-more-earlier-in-the-day", "herbal-tea-before-bed"], []], ["mindset", ["drink-more-earlier-in-the-day"], []], ["mindset", ["drink-more-earlier-in-the-day"], []]]
+  },
+  "duplicates": {
+    "get-exercise": {"of": "work-school", "note": "Site error: 'Get Exercise' repeats the Work/School intro and commitments. Its intended concept is exercise-regularly."},
+    "relationships#3": {"of": "relationships#2"}
+  },
+  "intendedConcepts": {
+    "get-exercise": ["exercise-regularly"]
+  },
+  "quickTips": {
+    "irregular-schedules": [["action", ["keep-a-regular-sleep-schedule", "dont-sleep-in-much-on-weekends"], ["within the same hour"]], ["action", ["keep-naps-short-and-early", "dont-sleep-in-much-on-weekends"], []], ["action", ["plan-social-time-earlier"], []], ["action", ["get-morning-daylight", "move-in-the-morning"], []]],
+    "technology": [["action", ["screens-before-bed"], ["at least one hour"]], ["action", ["less-bright-light-in-the-evening", "screens-before-bed"], []], ["action", ["keep-devices-out-of-the-bedroom"], []], ["action", ["have-a-wind-down-routine"], []]],
+    "stress": [["action", ["have-a-wind-down-routine"], []], ["action", ["relaxation-techniques"], ["5 minutes"]], ["action", ["write-down-worries"], []], ["action", ["get-help-if-poor-sleep-persists"], ["more than a few weeks"]]],
+    "substances-and-diet": [["action", ["caffeine-cutoff"], []], ["action", ["no-alcohol-close-to-bedtime"], ["at least 3 hours"]], ["action", ["cannabis-and-sleep"], []], ["action", ["caffeine-and-big-meals-early", "small-snack-before-bed"], ["2–3 hours"]], ["action", ["drink-more-earlier-in-the-day"], []]]
+  }
+}

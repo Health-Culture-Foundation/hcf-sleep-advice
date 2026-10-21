@@ -1,0 +1,1004 @@
+{
+  "_about": "First-pass score proposals by Claude, 2026-10-21. Every score still needs human review; these exist so the review has a starting point. Each entry is [value, reason]. Proposals override the wiki value in tags.<scale>.value; the wiki's own scores stay in tags.<scale>.wikiScores. Two rules were applied across the board, recorded per item by the build: (1) evidenceSupport is capped at 3 when the dataset holds no citation for the item, because the score should be backed by something a reader can check; (2) evidenceSupport is never proposed for an unscored item, because that would be inventing evidence. Reach, ease, impact and novelty are judgement calls and are proposed for every advice item.",
+  "rules": {
+    "evidenceCapWithoutCitation": 3
+  },
+  "proposals": {
+    "get-enough-sleep-for-you": {
+      "reach": [
+        5,
+        "Wiki tables disagree (5 vs 3); '8 hours' is about as widely known as sleep advice gets."
+      ]
+    },
+    "screens-before-bed": {
+      "novelty": [
+        1,
+        "Wiki tables disagree (3 vs 1); widely known advice."
+      ],
+      "evidenceSupport": [
+        3,
+        "NSF 2024 consensus: harm in children and teens, no consensus for adults or for light. 5 overstates it for a general audience."
+      ]
+    },
+    "warm-bath-or-shower-before-bed": {
+      "ease": [
+        4,
+        "Wiki 3 vs 5; easy, but needs time and hot water."
+      ],
+      "novelty": [
+        3,
+        "Wiki 4 vs 2; the 'warmth helps you cool down' reason is surprising, the advice itself is not."
+      ]
+    },
+    "try-pink-noise": {
+      "impact": [
+        2,
+        "Wiki 3 vs 1; small effect at best, no citations here."
+      ],
+      "evidenceSupport": [
+        2,
+        "Wiki 4 vs 1; classification table says weak and the write-up cites nothing."
+      ]
+    },
+    "get-morning-daylight": {
+      "novelty": [
+        3,
+        "Wiki 4 vs 1; known in sleep and wellness circles, less so generally."
+      ]
+    },
+    "less-bright-light-in-the-evening": {
+      "novelty": [
+        2,
+        "Wiki 3 vs 1."
+      ]
+    },
+    "use-dim-red-light-at-night": {
+      "impact": [
+        3,
+        "Wiki 4 vs 2; useful for people up at night, modest otherwise."
+      ],
+      "evidenceSupport": [
+        2,
+        "Wiki 4 vs 2; no citations here, and Huberman's reasoning is unverified."
+      ]
+    },
+    "strength-training-earlier-in-the-day": {
+      "novelty": [
+        4,
+        "Wiki 3 to 5; item page value kept."
+      ]
+    },
+    "mouth-taping": {
+      "impact": [
+        2,
+        "Wiki 4 vs 1; no citations here, possible safety issues."
+      ],
+      "evidenceSupport": [
+        2,
+        "Wiki 4 vs 2; thin evidence, none cited here."
+      ]
+    },
+    "kiwi-or-tart-cherries": {
+      "evidenceSupport": [
+        2,
+        "Wiki 4 vs 2; small studies at most, none cited here."
+      ]
+    },
+    "cognitive-shuffling": {
+      "impact": [
+        2,
+        "Wiki 3 vs 1."
+      ],
+      "evidenceSupport": [
+        2,
+        "Wiki 4 vs 1; none cited here. Kept in the dataset as niche-but-maybe-valuable."
+      ]
+    },
+    "gratitude-list": {
+      "novelty": [
+        3,
+        "Wiki 4 vs 2."
+      ]
+    },
+    "binaural-beats": {
+      "impact": [
+        2,
+        "Wiki 2 to 4; item page says evidence is mixed."
+      ]
+    },
+    "raise-the-head-of-the-bed": {
+      "reach": [
+        2,
+        "Wiki 3 vs 1; known mainly to people with reflux or apnea."
+      ],
+      "impact": [
+        3,
+        "Wiki 4 vs 2; helpful for its audience only."
+      ]
+    },
+    "light-therapy-for-a-late-body-clock": {
+      "reach": [
+        2,
+        "Wiki 2 vs 4."
+      ],
+      "novelty": [
+        4,
+        "Wiki 3 to 5."
+      ]
+    },
+    "keep-naps-short-and-early": {
+      "reach": [
+        4,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "get-up-at-the-same-time": {
+      "reach": [
+        3,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        4,
+        ""
+      ],
+      "novelty": [
+        3,
+        "Fixed wake time over fixed bedtime surprises people."
+      ]
+    },
+    "dont-sleep-in-much-on-weekends": {
+      "reach": [
+        2,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "keep-the-bedroom-quiet": {
+      "reach": [
+        5,
+        "Wiki page is a blank template."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        4,
+        ""
+      ],
+      "novelty": [
+        1,
+        ""
+      ]
+    },
+    "keep-devices-out-of-the-bedroom": {
+      "reach": [
+        4,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "keep-the-bedroom-tidy": {
+      "reach": [
+        3,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "try-calming-scents": {
+      "reach": [
+        3,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        5,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "try-a-guided-meditation": {
+      "reach": [
+        4,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "try-a-weighted-blanket": {
+      "reach": [
+        3,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        2,
+        "Costs money."
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "avoid-heavy-talks-at-bedtime": {
+      "reach": [
+        3,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "dim-lights-gradually": {
+      "reach": [
+        2,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "blue-blocking-glasses": {
+      "reach": [
+        3,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "no-alcohol-close-to-bedtime": {
+      "reach": [
+        4,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        4,
+        ""
+      ],
+      "novelty": [
+        3,
+        "Many people believe alcohol helps sleep (myth M1)."
+      ]
+    },
+    "magnesium": {
+      "reach": [
+        3,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "no-hard-workouts-right-before-bed": {
+      "reach": [
+        4,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "nose-breathing-exercises": {
+      "reach": [
+        2,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "write-down-worries": {
+      "reach": [
+        3,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "get-up-if-you-cant-sleep": {
+      "reach": [
+        2,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        2,
+        "Hard to do half-asleep."
+      ],
+      "impact": [
+        4,
+        "Core part of insomnia treatment."
+      ],
+      "novelty": [
+        4,
+        "Counterintuitive: leave bed to sleep better."
+      ]
+    },
+    "nature-sounds-or-asmr": {
+      "reach": [
+        3,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        5,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "raise-your-legs": {
+      "reach": [
+        2,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        1,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "melatonin-for-jet-lag-or-shifts": {
+      "reach": [
+        4,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "check-for-sleep-apnea": {
+      "reach": [
+        3,
+        "Unscored in wiki."
+      ],
+      "ease": [
+        2,
+        "Needs a doctor visit and often a sleep test."
+      ],
+      "impact": [
+        5,
+        "Untreated apnea has serious health effects (myth M5 sources)."
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "check-your-medicines": {
+      "reach": [
+        2,
+        "Glossary-only item."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        4,
+        ""
+      ]
+    },
+    "cbt-for-insomnia": {
+      "reach": [
+        2,
+        "Glossary-only item."
+      ],
+      "ease": [
+        2,
+        "Needs a trained provider or program."
+      ],
+      "impact": [
+        5,
+        ""
+      ],
+      "novelty": [
+        4,
+        "Most people expect pills, not a talking and habits treatment."
+      ]
+    },
+    "sleep-restriction-therapy": {
+      "reach": [
+        1,
+        "Glossary-only item."
+      ],
+      "ease": [
+        1,
+        "Hard, and best done with a clinician."
+      ],
+      "impact": [
+        5,
+        ""
+      ],
+      "novelty": [
+        5,
+        "Sleeping less to sleep better."
+      ]
+    },
+    "stimulus-control": {
+      "reach": [
+        1,
+        "Grouping concept."
+      ],
+      "ease": [
+        2,
+        ""
+      ],
+      "impact": [
+        5,
+        ""
+      ],
+      "novelty": [
+        4,
+        ""
+      ]
+    },
+    "jet-lag": {
+      "reach": [
+        3,
+        "Glossary-only item."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "adjust-to-night-shift-work": {
+      "reach": [
+        2,
+        "Glossary-only item."
+      ],
+      "ease": [
+        2,
+        ""
+      ],
+      "impact": [
+        4,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "late-afternoon-daylight": {
+      "reach": [
+        1,
+        "Glossary-only item."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        5,
+        ""
+      ]
+    },
+    "body-temperature-low-point": {
+      "reach": [
+        1,
+        "Concept, not advice: ease and impact left blank."
+      ],
+      "novelty": [
+        5,
+        ""
+      ]
+    },
+    "box-breathing": {
+      "reach": [
+        3,
+        "Glossary-only item."
+      ],
+      "ease": [
+        5,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "cyclic-sighing": {
+      "reach": [
+        1,
+        "Glossary-only item."
+      ],
+      "ease": [
+        5,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        4,
+        ""
+      ]
+    },
+    "belly-breathing": {
+      "reach": [
+        3,
+        "Glossary-only item."
+      ],
+      "ease": [
+        5,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "alternate-nostril-breathing": {
+      "reach": [
+        2,
+        "Glossary-only item."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        4,
+        ""
+      ]
+    },
+    "rest-even-if-awake": {
+      "reach": [
+        2,
+        "Glossary-only item."
+      ],
+      "ease": [
+        5,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        4,
+        ""
+      ]
+    },
+    "power-down-hour": {
+      "reach": [
+        2,
+        "Glossary-only item."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "3-2-1-rule": {
+      "reach": [
+        2,
+        "Glossary-only item."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "frozen-water-bottle": {
+      "reach": [
+        1,
+        "Glossary-only item."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        5,
+        ""
+      ]
+    },
+    "delay-first-coffee": {
+      "reach": [
+        3,
+        "Glossary-only item; popular online."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        4,
+        ""
+      ]
+    },
+    "caffeine-cutoff": {
+      "reach": [
+        4,
+        "Glossary-only item."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        4,
+        ""
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "fit-bedtime-to-your-body-clock": {
+      "reach": [
+        3,
+        "Glossary-only item."
+      ],
+      "ease": [
+        2,
+        "Work and school hours often don't allow it."
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "stay-in-bed-and-breathe": {
+      "reach": [
+        2,
+        "Glossary-only item."
+      ],
+      "ease": [
+        5,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "finish-work-earlier": {
+      "reach": [
+        3,
+        "Do One Thing item."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "plan-social-time-earlier": {
+      "reach": [
+        2,
+        "Do One Thing item."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "move-in-the-morning": {
+      "reach": [
+        3,
+        "Do One Thing item."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    },
+    "use-an-alarm-clock": {
+      "reach": [
+        3,
+        "Do One Thing item."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "get-help-if-poor-sleep-persists": {
+      "reach": [
+        3,
+        "Do One Thing item."
+      ],
+      "ease": [
+        2,
+        ""
+      ],
+      "impact": [
+        5,
+        "Opens the door to CBT-I and apnea care."
+      ],
+      "novelty": [
+        2,
+        ""
+      ]
+    },
+    "be-kind-to-yourself-after-a-bad-night": {
+      "reach": [
+        2,
+        "Do One Thing item."
+      ],
+      "ease": [
+        4,
+        ""
+      ],
+      "impact": [
+        2,
+        ""
+      ],
+      "novelty": [
+        4,
+        ""
+      ]
+    },
+    "cannabis-and-sleep": {
+      "reach": [
+        2,
+        "Do One Thing item."
+      ],
+      "ease": [
+        3,
+        ""
+      ],
+      "impact": [
+        3,
+        ""
+      ],
+      "novelty": [
+        3,
+        ""
+      ]
+    }
+  }
+}

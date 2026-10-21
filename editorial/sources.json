@@ -1,0 +1,57 @@
+{
+  "_about": "Sources named in editorial/items.json (disagreements and extra citations). Wiki references are numbered separately in sources/sam-wiki/extract.json. Every entry here was looked up on 2026-10-21; 'checked' says how.",
+  "sources": {
+    "nhlbi-guide": {
+      "citation": "National Heart, Lung, and Blood Institute. Your Guide to Healthy Sleep. NIH Publication No. 11-5271 (2011).",
+      "url": "https://www.nhlbi.nih.gov/resources/your-guide-healthy-sleep",
+      "access": "free",
+      "license": "Public domain (US federal government work)",
+      "checked": "Page numbers come from the health-glossary drafts (data/ai/sleep/nhlbi-*.json), which were hand-drafted from the PDF."
+    },
+    "breus-youtube": {
+      "citation": "Michael Breus (The Sleep Doctor). YouTube videos cited per glossary entry in sources/health-glossary/sleep-entries.json.",
+      "url": "https://www.youtube.com/@thesleepdoctor",
+      "access": "free",
+      "license": "Copyrighted; cited only, wording not reused",
+      "checked": "Claims flagged NOT VERIFIED in the glossary review notes were not checked here either."
+    },
+    "huberman-sleep-toolkit": {
+      "citation": "Andrew Huberman. Essentials: Sleep Toolkit for Optimizing Sleep & Sleep-Wake Timing. Huberman Lab Essentials (YouTube).",
+      "url": "https://www.youtube.com/watch?v=RTgJSQtvo88",
+      "access": "free",
+      "license": "Copyrighted; cited only, wording not reused",
+      "checked": "Claims flagged NOT VERIFIED in the glossary review notes were not checked here either."
+    },
+    "hartstein-2024": {
+      "citation": "Hartstein LE, Mathew GM, Reichenberger DA, et al. The impact of screen use on sleep health across the lifespan: A National Sleep Foundation consensus statement. Sleep Health. 2024;10(4):373-384.",
+      "doi": "10.1016/j.sleh.2024.05.001",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13181348/",
+      "pmid": "38806392",
+      "access": "free (PubMed Central)",
+      "checked": "Abstract read via PubMed. Panel reached consensus on 5 of 10 statements: screen use in general, and pre-bedtime content, impair sleep health in children and adolescents; behavioral strategies may reduce the effects. The abstract reports no consensus statement for adults or for pre-bedtime light."
+    },
+    "bauducco-2024": {
+      "citation": "Bauducco S, Pillion M, Bartel K, Reynolds C, Kahn M, Gradisar M. A bidirectional model of sleep and technology use: A theoretical review of How much, for whom, and which mechanisms. Sleep Medicine Reviews. 2024;76:101933.",
+      "doi": "10.1016/j.smrv.2024.101933",
+      "url": "https://doi.org/10.1016/j.smrv.2024.101933",
+      "pmid": "38657359",
+      "access": "free (open access, per OpenAlex)",
+      "checked": "Abstract read via PubMed. Theoretical review: the link runs both ways (sleep problems can lead to pre-sleep technology use, e.g. as a time filler or to regulate emotions); effects depend on how much, for whom, and which mechanism. Conflict of interest declared: Gradisar is CEO of WINK Sleep and employed by Sleep Cycle AB."
+    },
+    "grandner-2025": {
+      "citation": "Grandner MA, Dzierzewski JM, Gozal D, Lopos JG, Miller AN, Redline S. Screen use and sleep health in children, adolescents, and adults: National Sleep Foundation consensus considerations and practical suggestions. Sleep Health. 2025;11(5):560-561.",
+      "doi": "10.1016/j.sleh.2025.05.002",
+      "url": "https://doi.org/10.1016/j.sleh.2025.05.002",
+      "pmid": "40701900",
+      "access": "not checked",
+      "checked": "Found via PubMed; no abstract. Not read. Listed because it is NSF's practical follow-up to the 2024 consensus."
+    },
+    "do-one-thing": {
+      "citation": "Health Culture Foundation. Do One Thing: Choose your ONE THING (Habits by Category). SleepLiteracy.org, retrieved 2026-10-21.",
+      "url": "https://doonething.sleepliteracy.org/choose-your-one-thing/",
+      "access": "free",
+      "license": "CC BY 4.0 (original HCF content)",
+      "checked": "Snapshot in sources/do-one-thing/habits.json. HCF's own campaign copy; its claims are not independently checked."
+    }
+  }
+}
