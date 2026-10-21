@@ -17,31 +17,31 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **1.1.1 Go to bed and get up at about the same times every day.**  
   <sub>also: Maintain a consistent sleep schedule · Stick to a Sleep Schedule · Consistent sleep schedule · Sleep regularity</sub>  
-  <sub>`keep-a-regular-sleep-schedule` · R5 Ea3 I4 N1 Ev5 · 6 cited · ⚖️ 1 source disagreement</sub>
+  <sub>`keep-a-regular-sleep-schedule` · R5 Ea3 I4 N1 Ev5 · 6 cited · ⚖️ 1 source disagreement · 🕒 Any time: a habit or a one-off setup · ⚙️ Body clock timing · 🩺 Insomnia, Late body clock (delayed sleep-wake phase)</sub>
   - **1.1.5 Get up at the same time every day, weekends too.**  
     <sub>also: Try a consistent wake-up time even on weekends · Keep a Fixed Wake Time</sub>  
-    <sub>`get-up-at-the-same-time` · R3* Ea3* I4* N3* Ev– · no citations</sub>
+    <sub>`get-up-at-the-same-time` · R3* Ea3* I4* N3* Ev– · no citations · 🕒 On waking / morning · ⚙️ Body clock timing · 🩺 Insomnia</sub>
   - **1.1.6 On weekends, wake up within about an hour of your weekday time.**  
     <sub>also: Limit social jet lag by maintaining weekday sleep patterns on weekends · Limit Weekend Sleep-In · Social jet lag</sub>  
-    <sub>`dont-sleep-in-much-on-weekends` · R2* Ea3* I3* N3* Ev– · no citations · ⚖️ 1 source disagreement</sub>
+    <sub>`dont-sleep-in-much-on-weekends` · R2* Ea3* I3* N3* Ev– · no citations · ⚖️ 1 source disagreement · 🕒 On waking / morning · ⚙️ Body clock timing</sub>
 - **1.1.2 If you need to move your sleep times, shift them a little each day instead of all at once.**  
   <sub>also: Avoid drastic changes in sleep and wake times</sub>  
-  <sub>`change-sleep-times-gradually` · R4 Ea4 I4 N2 Ev5 · 13 cited</sub>
+  <sub>`change-sleep-times-gradually` · R4 Ea4 I4 N2 Ev5 · 13 cited · 🕒 Days ahead (travel, shift changes) · ⚙️ Body clock timing · 🩺 Jet lag, Shift work, Late body clock (delayed sleep-wake phase)</sub>
   - **＋ Before a long trip, shift your sleep times a little toward the new time zone.**  
     <sub>also: Coping With Jet Lag</sub>  
-    <sub>`jet-lag` · R3* Ea3* I3* N3* Ev– · no citations · for: travelers</sub>
+    <sub>`jet-lag` · R3* Ea3* I3* N3* Ev– · no citations · for: travelers · 🕒 Days ahead (travel, shift changes) · ⚙️ Body clock timing · 🩺 Jet lag</sub>
 - **1.1.3 Most adults need 7 to 9 hours; notice how much you need to wake up rested.**  
   <sub>also: Follow the 8-hour rule · 8-hour rule · Sleep duration</sub>  
-  <sub>`get-enough-sleep-for-you` · R5* Ea3 I4 N1 Ev4 · 6 cited · ⚖️ 1 source disagreement · for: adults, region-or-culture-specific</sub>
+  <sub>`get-enough-sleep-for-you` · R5* Ea3 I4 N1 Ev4 · 6 cited · ⚖️ 1 source disagreement · for: adults, region-or-culture-specific · 🕒 Any time: a habit or a one-off setup · ⚙️ Sleep pressure</sub>
 - **1.1.4 If you nap, keep it short and before mid-afternoon.**  
   <sub>also: Avoid long or irregular daytime naps · Avoid Late Afternoon Naps · Short naps are fine for most people; long or late naps can make night sleep harder. · Naps harm nighttime sleep</sub>  
-  <sub>`keep-naps-short-and-early` · R4* Ea4* I3* N2* Ev– · no citations · ⚖️ 1 source disagreement</sub>
+  <sub>`keep-naps-short-and-early` · R4* Ea4* I3* N2* Ev– · no citations · ⚖️ 1 source disagreement · 🕒 Afternoon, During the day · ⚙️ Sleep pressure · 🩺 Insomnia</sub>
 - **＋ On night shifts, use bright light at work and a dark, quiet room to sleep in.**  
   <sub>also: Adjusting to Night Shift Work</sub>  
-  <sub>`adjust-to-night-shift-work` · R2* Ea2* I4* N3* Ev– · no citations · for: shift-workers</sub>
+  <sub>`adjust-to-night-shift-work` · R2* Ea2* I4* N3* Ev– · no citations · for: shift-workers · 🕒 Any time: a habit or a one-off setup · ⚙️ Body clock timing, Bedroom environment · 🩺 Shift work</sub>
 - **＋ If you're naturally a night owl or early bird, set your bedtime with that in mind.**  
   <sub>also: Match Bedtime to Your Chronotype · Chronotype</sub>  
-  <sub>`fit-bedtime-to-your-body-clock` · R3* Ea2* I3* N3* Ev– · no citations</sub>
+  <sub>`fit-bedtime-to-your-body-clock` · R3* Ea2* I3* N3* Ev– · no citations · 🕒 Evening, the hours before bed · ⚙️ Body clock timing · 🩺 Late body clock (delayed sleep-wake phase)</sub>
 
 ### 1.2 Sleep Environment Optimization
 
@@ -49,28 +49,28 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **1.2.1 Keep your bedroom cool and dark at night.**  
   <sub>also: Keep your bedroom cool and dark</sub>  
-  <sub>`keep-the-bedroom-cool-and-dark` · R4 Ea4 I4 N2 Ev5 · 6 cited · ⚖️ 1 source disagreement</sub>
+  <sub>`keep-the-bedroom-cool-and-dark` · R4 Ea4 I4 N2 Ev5 · 6 cited · ⚖️ 1 source disagreement · 🕒 Any time: a habit or a one-off setup · ⚙️ Body temperature, Light at night, Bedroom environment</sub>
   - **1.2.2 Block light from windows with heavy curtains or an eye mask.**  
     <sub>also: Use blackout curtains</sub>  
-    <sub>`block-outside-light` · R3 Ea3 I3 N3 Ev3* · no citations · for: needs-money-or-equipment</sub>
+    <sub>`block-outside-light` · R3 Ea3 I3 N3 Ev3* · no citations · for: needs-money-or-equipment · 🕒 Any time: a habit or a one-off setup · ⚙️ Light at night, Bedroom environment · 🩺 Shift work</sub>
 - **1.2.3 Sleep on a mattress and pillow that feel comfortable to you.**  
   <sub>also: Invest in a comfortable mattress and pillow</sub>  
-  <sub>`make-your-bed-comfortable` · R4 Ea2 I4 N2 Ev3* · no citations · for: needs-money-or-equipment</sub>
+  <sub>`make-your-bed-comfortable` · R4 Ea2 I4 N2 Ev3* · no citations · for: needs-money-or-equipment · 🕒 Any time: a habit or a one-off setup · ⚙️ Bedroom environment</sub>
 - **1.2.5 Make your bedroom as quiet as you can, or use earplugs.**  
   <sub>also: Have it quiet</sub>  
-  <sub>`keep-the-bedroom-quiet` · R5* Ea3* I4* N1* Ev3* · no citations</sub>
+  <sub>`keep-the-bedroom-quiet` · R5* Ea3* I4* N1* Ev3* · no citations · 🕒 Any time: a habit or a one-off setup · ⚙️ Bedroom environment</sub>
   - **1.2.4 If noise wakes you, try a fan or white noise to cover it.**  
     <sub>also: Use white noise machines</sub>  
-    <sub>`mask-noise-with-steady-sound` · R3 Ea3 I3 N3 Ev3* · no citations</sub>
+    <sub>`mask-noise-with-steady-sound` · R3 Ea3 I3 N3 Ev3* · no citations · 🕒 During the night, if you wake · ⚙️ Bedroom environment · 🩺 Shift work</sub>
 - **1.2.6 Charge your phone and other devices outside the bedroom.**  
   <sub>also: Remove electronic devices from the bedroom</sub>  
-  <sub>`keep-devices-out-of-the-bedroom` · R4* Ea3* I3* N2* Ev– · 1 cited</sub>
+  <sub>`keep-devices-out-of-the-bedroom` · R4* Ea3* I3* N2* Ev– · 1 cited · 🕒 Evening, the hours before bed, During the night, if you wake · ⚙️ Time taken from sleep, Calming body and mind, Light at night</sub>
 - **1.2.7 Keep your bedroom tidy so it feels calm.**  
   <sub>also: Keep bedroom clutter-free for a more relaxing atmosphere</sub>  
-  <sub>`keep-the-bedroom-tidy` · R3* Ea4* I2* N2* Ev– · no citations</sub>
+  <sub>`keep-the-bedroom-tidy` · R3* Ea4* I2* N2* Ev– · no citations · 🕒 Any time: a habit or a one-off setup · ⚙️ Bedroom environment, Calming body and mind</sub>
 - **1.2.8 Try a calming scent such as lavender at bedtime.**  
   <sub>also: Use aromatherapy with calming scents like lavender</sub>  
-  <sub>`try-calming-scents` · R3* Ea5* I2* N2* Ev– · no citations</sub>
+  <sub>`try-calming-scents` · R3* Ea5* I2* N2* Ev– · no citations · 🕒 At bedtime, in bed · ⚙️ Bedroom environment, Calming body and mind</sub>
 
 ### 1.3 Pre-Sleep Routine and Wind-Down Activities
 
@@ -78,28 +78,28 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **1.3.1 In the hour before bed, choose calm screen use or none, and keep phones out of children's bedrooms.**  
   <sub>also: Avoid screens before bed · Screen curfew · No screens before bed</sub>  
-  <sub>`screens-before-bed` · R4 Ea3 I4 N1* Ev3* · 11 cited · ⚖️ 2 source disagreements · for: children-and-teens, parents-and-caregivers, adults</sub>
+  <sub>`screens-before-bed` · R4 Ea3 I4 N1* Ev3* · 11 cited · ⚖️ 2 source disagreements · for: children-and-teens, parents-and-caregivers, adults · 🕒 Evening, the hours before bed, At bedtime, in bed · ⚙️ Calming body and mind, Time taken from sleep, Light at night</sub>
 - **1.3.2 Do the same calm things in the same order before bed, like reading or a warm shower.**  
   <sub>also: Establish a relaxing bedtime routine (e.g., reading, warm bath) · Relax Before Bed</sub>  
-  <sub>`have-a-wind-down-routine` · R4 Ea4 I4 N2 Ev3* · no citations</sub>
+  <sub>`have-a-wind-down-routine` · R4 Ea4 I4 N2 Ev3* · no citations · 🕒 Evening, the hours before bed · ⚙️ Calming body and mind, Learned cues · 🩺 Insomnia</sub>
   - **＋ Use the last hour before bed for chores, then washing up, then something calm.**  
     <sub>also: Power-Down Hour · Wind-down hour</sub>  
-    <sub>`power-down-hour` · R2* Ea3* I3* N3* Ev– · no citations</sub>
+    <sub>`power-down-hour` · R2* Ea3* I3* N3* Ev– · no citations · 🕒 Evening, the hours before bed · ⚙️ Calming body and mind, Learned cues</sub>
 - **1.3.3 Save exciting or stressful activities for earlier in the evening.**  
   <sub>also: Reduce stimulating activities close to bedtime</sub>  
-  <sub>`skip-exciting-things-before-bed` · R4 Ea3 I4 N2 Ev3* · no citations</sub>
+  <sub>`skip-exciting-things-before-bed` · R4 Ea3 I4 N2 Ev3* · no citations · 🕒 Evening, the hours before bed · ⚙️ Calming body and mind</sub>
   - **1.3.7 Leave hard conversations for earlier in the day when you can.**  
     <sub>also: Avoid mentally stimulating discussions before bedtime</sub>  
-    <sub>`avoid-heavy-talks-at-bedtime` · R3* Ea3* I2* N2* Ev– · no citations</sub>
+    <sub>`avoid-heavy-talks-at-bedtime` · R3* Ea3* I2* N2* Ev– · no citations · 🕒 Evening, the hours before bed · ⚙️ Calming body and mind</sub>
 - **1.3.4 If you wake at night, don't look at the clock.**  
   <sub>also: Avoid checking the clock if you wake up at night · Don't Check the Clock</sub>  
-  <sub>`dont-check-the-clock` · R3 Ea4 I3 N3 Ev3* · no citations</sub>
+  <sub>`dont-check-the-clock` · R3 Ea4 I3 N3 Ev3* · no citations · 🕒 During the night, if you wake · ⚙️ Calming body and mind · 🩺 Insomnia</sub>
 - **1.3.5 Try a guided sleep meditation or a mindfulness recording at bedtime.**  
   <sub>also: Try guided sleep meditations or mindfulness apps</sub>  
-  <sub>`try-a-guided-meditation` · R4* Ea4* I3* N2* Ev– · no citations · ↑ part of `relaxation-techniques` (3.1)</sub>
+  <sub>`try-a-guided-meditation` · R4* Ea4* I3* N2* Ev– · no citations · 🕒 At bedtime, in bed · ⚙️ Calming body and mind · 🩺 Anxiety or stress, Insomnia · ↑ part of `relaxation-techniques` (3.1)</sub>
 - **1.3.6 Some people find a weighted blanket calming at night.**  
   <sub>also: Use a weighted blanket for a calming effect</sub>  
-  <sub>`try-a-weighted-blanket` · R3* Ea2* I2* N3* Ev– · no citations · for: adults, needs-money-or-equipment</sub>
+  <sub>`try-a-weighted-blanket` · R3* Ea2* I2* N3* Ev– · no citations · for: adults, needs-money-or-equipment · 🕒 At bedtime, in bed · ⚙️ Calming body and mind, Bedroom environment · 🩺 Anxiety or stress</sub>
 
 ### 1.4 Temperature and Sensory Cues
 
@@ -107,16 +107,16 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **1.4.1 Take a warm bath or shower an hour or two before bed.**  
   <sub>also: Take a warm shower or bath before bed · Take a Warm Bath Before Bed</sub>  
-  <sub>`warm-bath-or-shower-before-bed` · R3 Ea4* I4 N3* Ev3* · no citations · ⚖️ 1 source disagreement · ↑ part of `have-a-wind-down-routine` (1.3)</sub>
+  <sub>`warm-bath-or-shower-before-bed` · R3 Ea4* I4 N3* Ev3* · no citations · ⚖️ 1 source disagreement · 🕒 Evening, the hours before bed · ⚙️ Body temperature, Calming body and mind · ↑ part of `have-a-wind-down-routine` (1.3)</sub>
 - **1.4.2 Some people sleep better with pink noise, like steady rain, than white noise.**  
   <sub>also: Try pink noise instead of white noise</sub>  
-  <sub>`try-pink-noise` · R2 Ea3 I2* N4 Ev2* · no citations · ↑ part of `mask-noise-with-steady-sound` (1.2)</sub>
+  <sub>`try-pink-noise` · R2 Ea3 I2* N4 Ev2* · no citations · 🕒 During the night, if you wake · ⚙️ Bedroom environment · ↑ part of `mask-noise-with-steady-sound` (1.2)</sub>
 - **1.4.3 If your feet get cold, wear loose socks to bed.**  
   <sub>also: Sleep with socks on</sub>  
-  <sub>`wear-socks-to-bed` · R3 Ea4 I3 N4 Ev3* · no citations</sub>
+  <sub>`wear-socks-to-bed` · R3 Ea4 I3 N4 Ev3* · no citations · 🕒 At bedtime, in bed · ⚙️ Body temperature</sub>
 - **＋ On hot nights, a frozen water bottle wrapped in a sock can cool you down in bed.**  
   <sub>also: Cool Down With a Frozen Water Bottle</sub>  
-  <sub>`frozen-water-bottle` · R1* Ea4* I2* N5* Ev– · no citations · ↑ part of `keep-the-bedroom-cool-and-dark` (1.2)</sub>
+  <sub>`frozen-water-bottle` · R1* Ea4* I2* N5* Ev– · no citations · 🕒 At bedtime, in bed · ⚙️ Body temperature · ↑ part of `keep-the-bedroom-cool-and-dark` (1.2)</sub>
 
 ## 2. Physiological and Biological Factors Affecting Sleep
 
@@ -128,25 +128,25 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **2.1.1 Get outside in daylight soon after you wake up.**  
   <sub>also: Morning sunlight exposure · Get Morning Sunlight Exposure · Morning sunlight · Morning light exposure</sub>  
-  <sub>`get-morning-daylight` · R3 Ea4 I4 N3* Ev5 · 8 cited · ⚖️ 1 source disagreement</sub>
+  <sub>`get-morning-daylight` · R3 Ea4 I4 N3* Ev5 · 8 cited · ⚖️ 1 source disagreement · 🕒 On waking / morning · ⚙️ Body clock timing · 🩺 Late body clock (delayed sleep-wake phase)</sub>
 - **2.1.2 Use dimmer, warmer lights in the evening.**  
   <sub>also: Reduce blue light exposure in the evening · After dark, keep indoor lights low and screens dim. · Dim the Lights at Night</sub>  
-  <sub>`less-bright-light-in-the-evening` · R4 Ea3 I4 N2* Ev5 · 1 cited</sub>
+  <sub>`less-bright-light-in-the-evening` · R4 Ea3 I4 N2* Ev5 · 1 cited · 🕒 Evening, the hours before bed · ⚙️ Light at night, Body clock timing · 🩺 Late body clock (delayed sleep-wake phase)</sub>
   - **2.1.3 If you need light at night, use a dim red or amber one.**  
     <sub>also: Use dim red light at night instead of blue or white light · Use Red Light If You Must Be Up at Night</sub>  
-    <sub>`use-dim-red-light-at-night` · R2 Ea3 I3* N4 Ev2* · no citations · for: parents-and-caregivers</sub>
+    <sub>`use-dim-red-light-at-night` · R2 Ea3 I3* N4 Ev2* · no citations · for: parents-and-caregivers · 🕒 During the night, if you wake · ⚙️ Light at night</sub>
   - **2.1.4 Turn the lights down little by little as bedtime gets closer.**  
     <sub>also: Use smart lighting to gradually dim before bed</sub>  
-    <sub>`dim-lights-gradually` · R2* Ea3* I3* N3* Ev– · no citations</sub>
+    <sub>`dim-lights-gradually` · R2* Ea3* I3* N3* Ev– · no citations · 🕒 Evening, the hours before bed · ⚙️ Light at night, Learned cues</sub>
   - **2.1.5 Some people wear blue-light-blocking glasses in the evening.**  
     <sub>also: Wear blue-light-blocking glasses in the evening</sub>  
-    <sub>`blue-blocking-glasses` · R3* Ea3* I2* N3* Ev– · no citations · for: adults, needs-money-or-equipment</sub>
+    <sub>`blue-blocking-glasses` · R3* Ea3* I2* N3* Ev– · no citations · for: adults, needs-money-or-equipment · 🕒 Evening, the hours before bed · ⚙️ Light at night · 🩺 Late body clock (delayed sleep-wake phase)</sub>
 - **＋ Some advise getting outside in late-afternoon light too.**  
   <sub>also: Late-Afternoon Sunlight Viewing</sub>  
-  <sub>`late-afternoon-daylight` · R1* Ea3* I2* N5* Ev– · no citations</sub>
+  <sub>`late-afternoon-daylight` · R1* Ea3* I2* N5* Ev– · no citations · 🕒 Afternoon · ⚙️ Body clock timing</sub>
 - **＋ Your body is coldest a couple of hours before you usually wake.**  
   <sub>also: Temperature Minimum · Core body temperature minimum</sub>  
-  <sub>`body-temperature-low-point` · R1* Ea– I– N5* Ev– · no citations</sub>
+  <sub>`body-temperature-low-point` · R1* Ea– I– N5* Ev– · no citations · 🕒 During the night, if you wake · ⚙️ Body clock timing, Body temperature · 🩺 Jet lag</sub>
 
 ### 2.2 Diet and Nutrition for Sleep
 
@@ -154,25 +154,25 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **2.2.1 Have your last caffeine by early afternoon and your last big meal a few hours before bed.**  
   <sub>also: Avoid caffeine and heavy meals before bed · Avoid Caffeine and Nicotine Before Bed</sub>  
-  <sub>`caffeine-and-big-meals-early` · R5 Ea4 I4 N1 Ev5 · 8 cited · ⚖️ 2 source disagreements</sub>
+  <sub>`caffeine-and-big-meals-early` · R5 Ea4 I4 N1 Ev5 · 8 cited · ⚖️ 2 source disagreements · 🕒 Afternoon, Evening, the hours before bed · ⚙️ Substances, Food, drink and digestion · 🩺 Night-time reflux / GERD</sub>
   - **＋ Stop alcohol 3 hours, food 2 hours and drinks 1 hour before bed.**  
     <sub>also: 3-2-1 Rule</sub>  
-    <sub>`3-2-1-rule` · R2* Ea3* I3* N3* Ev– · no citations · ❗ conflicts with `herbal-tea-before-bed` · ❗ conflicts with `small-snack-before-bed` · for: adults</sub>
+    <sub>`3-2-1-rule` · R2* Ea3* I3* N3* Ev– · no citations · ❗ conflicts with `herbal-tea-before-bed` · ❗ conflicts with `small-snack-before-bed` · for: adults · 🕒 Evening, the hours before bed · ⚙️ Substances, Food, drink and digestion</sub>
   - **＋ Pick a time in the early afternoon after which you have no caffeine.**  
     <sub>also: Set a Caffeine Cutoff</sub>  
-    <sub>`caffeine-cutoff` · R4* Ea3* I4* N2* Ev– · no citations · for: adults</sub>
+    <sub>`caffeine-cutoff` · R4* Ea3* I4* N2* Ev– · no citations · for: adults · 🕒 Afternoon · ⚙️ Substances</sub>
 - **2.2.2 Drink most of your fluids earlier in the day so you don't wake up to use the bathroom.**  
   <sub>also: Stay hydrated earlier in the day and gradually reduce water intake</sub>  
-  <sub>`drink-more-earlier-in-the-day` · R3 Ea4 I3 N3 Ev4 · 4 cited · ⚖️ 1 source disagreement</sub>
+  <sub>`drink-more-earlier-in-the-day` · R3 Ea4 I3 N3 Ev4 · 4 cited · ⚖️ 1 source disagreement · 🕒 During the day, Evening, the hours before bed · ⚙️ Food, drink and digestion</sub>
 - **2.2.3 Don't use alcohol to help you sleep; stop drinking a few hours before bed.**  
   <sub>also: Avoid alcohol close to bedtime as it disrupts sleep cycles · Avoid Alcohol Before Bed</sub>  
-  <sub>`no-alcohol-close-to-bedtime` · R4* Ea3* I4* N3* Ev– · no citations · for: adults</sub>
+  <sub>`no-alcohol-close-to-bedtime` · R4* Ea3* I4* N3* Ev– · no citations · for: adults · 🕒 Evening, the hours before bed · ⚙️ Substances · 🩺 Snoring or sleep apnea</sub>
 - **2.2.4 Eat foods with enough magnesium; ask before taking a supplement.**  
   <sub>also: Ensure sufficient magnesium intake, which helps relax muscles</sub>  
-  <sub>`magnesium` · R3* Ea4* I2* N3* Ev– · no citations · for: adults, talk-to-a-clinician</sub>
+  <sub>`magnesium` · R3* Ea4* I2* N3* Ev– · no citations · for: adults, talk-to-a-clinician · 🕒 Any time: a habit or a one-off setup · ⚙️ Substances</sub>
 - **＋ Some advise waiting 90 minutes or more after waking for your first coffee.**  
   <sub>also: Delay Your First Coffee</sub>  
-  <sub>`delay-first-coffee` · R3* Ea3* I2* N4* Ev– · no citations · ⚖️ 1 source disagreement · for: adults</sub>
+  <sub>`delay-first-coffee` · R3* Ea3* I2* N4* Ev– · no citations · ⚖️ 1 source disagreement · for: adults · 🕒 On waking / morning · ⚙️ Substances</sub>
 
 ### 2.3 Exercise and Physical Activity
 
@@ -180,16 +180,16 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **2.3.1 Be active most days; it helps you sleep better.**  
   <sub>also: Regular exercise improves sleep quality</sub>  
-  <sub>`exercise-regularly` · R5 Ea3 I4 N1 Ev5 · 3 cited</sub>
+  <sub>`exercise-regularly` · R5 Ea3 I4 N1 Ev5 · 3 cited · 🕒 During the day · ⚙️ Sleep pressure, Body clock timing, Calming body and mind · 🩺 Insomnia</sub>
 - **2.3.2 Try a few minutes of gentle stretching or yoga before bed.**  
   <sub>also: Try relaxing exercises like yoga or stretching before bed</sub>  
-  <sub>`gentle-stretching-before-bed` · R3 Ea4 I3 N3 Ev3* · no citations</sub>
+  <sub>`gentle-stretching-before-bed` · R3 Ea4 I3 N3 Ev3* · no citations · 🕒 At bedtime, in bed · ⚙️ Calming body and mind</sub>
 - **2.3.3 If you do strength training, try it in the afternoon or early evening.**  
   <sub>also: Try resistance training in the afternoon</sub>  
-  <sub>`strength-training-earlier-in-the-day` · R2 Ea3 I4 N4* Ev3* · no citations · for: adults</sub>
+  <sub>`strength-training-earlier-in-the-day` · R2 Ea3 I4 N4* Ev3* · no citations · for: adults · 🕒 Afternoon · ⚙️ Sleep pressure, Body clock timing</sub>
 - **2.3.4 Finish hard workouts at least a couple of hours before bed.**  
   <sub>also: Avoid intense workouts within 2 hours of bedtime · Time Your Exercise for Sleep</sub>  
-  <sub>`no-hard-workouts-right-before-bed` · R4* Ea4* I3* N2* Ev– · no citations · ⚖️ 1 source disagreement · ↑ part of `skip-exciting-things-before-bed` (1.3)</sub>
+  <sub>`no-hard-workouts-right-before-bed` · R4* Ea4* I3* N2* Ev– · no citations · ⚖️ 1 source disagreement · 🕒 Evening, the hours before bed · ⚙️ Calming body and mind, Body temperature · ↑ part of `skip-exciting-things-before-bed` (1.3)</sub>
 
 ### 2.4 Breath Control and Oxygenation
 
@@ -197,25 +197,25 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **2.4.1 To wind down, breathe in for 4, hold for 7, and breathe out for 8.**  
   <sub>also: Practice the 4-7-8 breathing technique before bed · 4-7-8 Breathing</sub>  
-  <sub>`4-7-8-breathing` · R3 Ea5 I3 N4 Ev3* · no citations · ↑ part of `relaxation-techniques` (3.1)</sub>
+  <sub>`4-7-8-breathing` · R3 Ea5 I3 N4 Ev3* · no citations · 🕒 At bedtime, in bed, During the night, if you wake · ⚙️ Calming body and mind · 🩺 Anxiety or stress · ↑ part of `relaxation-techniques` (3.1)</sub>
 - **2.4.2 Mouth taping is popular, but the evidence is thin; check with a clinician first.**  
   <sub>also: Sleep with your mouth closed (or use mouth tape if needed) · Mouth tape</sub>  
-  <sub>`mouth-taping` · R2 Ea3 I2* N4 Ev2* · no citations · for: adults, talk-to-a-clinician, people-who-snore-or-may-have-sleep-apnea</sub>
+  <sub>`mouth-taping` · R2 Ea3 I2* N4 Ev2* · no citations · for: adults, talk-to-a-clinician, people-who-snore-or-may-have-sleep-apnea · 🕒 During the night, if you wake · ⚙️ Breathing and airway · 🩺 Snoring or sleep apnea</sub>
 - **2.4.3 Try slow breathing through your nose before sleep.**  
   <sub>also: Try nasal breathing exercises before sleep</sub>  
-  <sub>`nose-breathing-exercises` · R2* Ea4* I2* N3* Ev– · no citations · ↑ part of `relaxation-techniques` (3.1)</sub>
+  <sub>`nose-breathing-exercises` · R2* Ea4* I2* N3* Ev– · no citations · 🕒 At bedtime, in bed · ⚙️ Breathing and airway, Calming body and mind · ↑ part of `relaxation-techniques` (3.1)</sub>
   - **＋ Breathe in through one nostril and out the other, switching sides.**  
     <sub>also: Alternate Nostril Breathing · Nadi shodhana</sub>  
-    <sub>`alternate-nostril-breathing` · R2* Ea4* I2* N4* Ev– · no citations · for: region-or-culture-specific</sub>
+    <sub>`alternate-nostril-breathing` · R2* Ea4* I2* N4* Ev– · no citations · for: region-or-culture-specific · 🕒 At bedtime, in bed · ⚙️ Calming body and mind</sub>
 - **＋ Breathe slowly so your belly, not your chest, rises and falls.**  
   <sub>also: Belly Breathing</sub>  
-  <sub>`belly-breathing` · R3* Ea5* I3* N2* Ev– · no citations · ↑ part of `relaxation-techniques` (3.1)</sub>
+  <sub>`belly-breathing` · R3* Ea5* I3* N2* Ev– · no citations · 🕒 At bedtime, in bed · ⚙️ Calming body and mind · 🩺 Anxiety or stress · ↑ part of `relaxation-techniques` (3.1)</sub>
 - **＋ Breathe in for 4, hold for 4, out for 4, hold for 4, and repeat.**  
   <sub>also: Box Breathing</sub>  
-  <sub>`box-breathing` · R3* Ea5* I3* N3* Ev– · no citations · ↑ part of `relaxation-techniques` (3.1)</sub>
+  <sub>`box-breathing` · R3* Ea5* I3* N3* Ev– · no citations · 🕒 At bedtime, in bed, During the night, if you wake · ⚙️ Calming body and mind · 🩺 Anxiety or stress · ↑ part of `relaxation-techniques` (3.1)</sub>
 - **＋ Breathe in fully through your nose, then breathe out slowly and completely.**  
   <sub>also: Cyclic Sighing</sub>  
-  <sub>`cyclic-sighing` · R1* Ea5* I3* N4* Ev– · no citations · ↑ part of `relaxation-techniques` (3.1)</sub>
+  <sub>`cyclic-sighing` · R1* Ea5* I3* N4* Ev– · no citations · 🕒 At bedtime, in bed, During the night, if you wake · ⚙️ Calming body and mind · 🩺 Anxiety or stress · ↑ part of `relaxation-techniques` (3.1)</sub>
 
 ### 2.5 Unique Dietary Sleep Aids
 
@@ -223,13 +223,13 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **2.5.1 Some small studies found kiwi or tart cherry before bed helped sleep.**  
   <sub>also: Consume kiwi or tart cherries before bed</sub>  
-  <sub>`kiwi-or-tart-cherries` · R2 Ea4 I3 N4 Ev2* · no citations</sub>
+  <sub>`kiwi-or-tart-cherries` · R2 Ea4 I3 N4 Ev2* · no citations · 🕒 Evening, the hours before bed · ⚙️ Substances, Food, drink and digestion</sub>
 - **2.5.2 If you're hungry at bedtime, a small snack is fine.**  
   <sub>also: Eat a small, carb-rich snack 30 minutes before bed</sub>  
-  <sub>`small-snack-before-bed` · R2 Ea4 I3 N4 Ev3* · no citations · ⚖️ 1 source disagreement · ❗ conflicts with `3-2-1-rule`</sub>
+  <sub>`small-snack-before-bed` · R2 Ea4 I3 N4 Ev3* · no citations · ⚖️ 1 source disagreement · ❗ conflicts with `3-2-1-rule` · 🕒 At bedtime, in bed · ⚙️ Food, drink and digestion</sub>
 - **2.5.3 A cup of chamomile tea can be part of a calm bedtime routine.**  
   <sub>also: Drink chamomile or passionflower tea before bed</sub>  
-  <sub>`herbal-tea-before-bed` · R3 Ea4 I3 N3 Ev3* · no citations · ⚖️ 1 source disagreement · ❗ conflicts with `3-2-1-rule`</sub>
+  <sub>`herbal-tea-before-bed` · R3 Ea4 I3 N3 Ev3* · no citations · ⚖️ 1 source disagreement · ❗ conflicts with `3-2-1-rule` · 🕒 Evening, the hours before bed · ⚙️ Substances, Calming body and mind</sub>
 
 ## 3. Psychological and Emotional Factors Affecting Sleep
 
@@ -241,19 +241,19 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **3.1.1 Do something that calms you before bed when you're stressed.**  
   <sub>also: Manage stress and anxiety before sleep</sub>  
-  <sub>`calm-your-mind-before-bed` · R4 Ea3 I4 N2 Ev5 · 8 cited</sub>
+  <sub>`calm-your-mind-before-bed` · R4 Ea3 I4 N2 Ev5 · 8 cited · 🕒 Evening, the hours before bed, At bedtime, in bed · ⚙️ Calming body and mind · 🩺 Anxiety or stress</sub>
   - **3.1.2 Try slow breathing or meditation to relax at bedtime.**  
     <sub>also: Practice relaxation techniques (e.g., deep breathing, meditation) · Relaxation Therapy</sub>  
-    <sub>`relaxation-techniques` · R3 Ea3 I4 N2 Ev3* · no citations</sub>
+    <sub>`relaxation-techniques` · R3 Ea3 I4 N2 Ev3* · no citations · 🕒 At bedtime, in bed, During the night, if you wake · ⚙️ Calming body and mind · 🩺 Anxiety or stress, Insomnia</sub>
     - **3.1.3 Tense and then relax each muscle group, one at a time, from feet to head.**  
       <sub>also: Use progressive muscle relaxation (PMR) before bed · Progressive Muscle Relaxation · PMR</sub>  
-      <sub>`progressive-muscle-relaxation` · R3 Ea3 I4 N3 Ev3* · no citations · ⚖️ 1 source disagreement</sub>
+      <sub>`progressive-muscle-relaxation` · R3 Ea3 I4 N3 Ev3* · no citations · ⚖️ 1 source disagreement · 🕒 At bedtime, in bed · ⚙️ Calming body and mind · 🩺 Anxiety or stress, Insomnia</sub>
   - **3.1.4 Write down what's on your mind, and one next step, before bed.**  
     <sub>also: Write down worries or concerns before bed to clear your mind · Worry Journal · Scheduled worry time</sub>  
-    <sub>`write-down-worries` · R3* Ea4* I3* N3* Ev– · no citations · ⚖️ 1 source disagreement · ❗ conflicts with `gratitude-list`</sub>
+    <sub>`write-down-worries` · R3* Ea4* I3* N3* Ev– · no citations · ⚖️ 1 source disagreement · ❗ conflicts with `gratitude-list` · 🕒 Evening, the hours before bed · ⚙️ Calming body and mind · 🩺 Anxiety or stress</sub>
 - **＋ If you can't sleep, lying still with your eyes closed still rests your body.**  
   <sub>also: Non-Sleep Deep Rest · NSDR</sub>  
-  <sub>`rest-even-if-awake` · R2* Ea5* I2* N4* Ev– · no citations · ❗ conflicts with `get-up-if-you-cant-sleep`</sub>
+  <sub>`rest-even-if-awake` · R2* Ea5* I2* N4* Ev– · no citations · ❗ conflicts with `get-up-if-you-cant-sleep` · 🕒 During the night, if you wake · ⚙️ Calming body and mind · 🩺 Insomnia</sub>
 
 ### 3.2 Cognitive Associations with Sleep
 
@@ -261,16 +261,16 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **▸ Teach your body that bed means sleep.**  
   <sub>also: Stimulus control · Stimulus control therapy · Reconditioning therapy</sub>  
-  <sub>`stimulus-control` · ↑ part of `cbt-for-insomnia` (4.2)</sub>
+  <sub>`stimulus-control` · 🕒 At bedtime, in bed, During the night, if you wake · ⚙️ Learned cues · 🩺 Insomnia · ↑ part of `cbt-for-insomnia` (4.2)</sub>
   - **3.2.2 Use your bed only for sleep and sex.**  
     <sub>also: Use the bed only for sleep and intimacy</sub>  
-    <sub>`bed-is-for-sleep` · R4 Ea3 I4 N2 Ev3* · no citations · for: adults, people-with-insomnia</sub>
+    <sub>`bed-is-for-sleep` · R4 Ea3 I4 N2 Ev3* · no citations · for: adults, people-with-insomnia · 🕒 Any time: a habit or a one-off setup · ⚙️ Learned cues · 🩺 Insomnia</sub>
   - **3.2.3 If you can't sleep after about 20 minutes, get up and do something calm until you feel sleepy.**  
     <sub>also: Avoid lying in bed awake for more than 20 minutes—get up and do a calming activity · Don't Lie in Bed Awake · Reconditioning Therapy</sub>  
-    <sub>`get-up-if-you-cant-sleep` · R2* Ea2* I4* N4* Ev– · no citations · ⚖️ 1 source disagreement · ❗ conflicts with `stay-in-bed-and-breathe` · ❗ conflicts with `rest-even-if-awake` · for: people-with-insomnia</sub>
+    <sub>`get-up-if-you-cant-sleep` · R2* Ea2* I4* N4* Ev– · no citations · ⚖️ 1 source disagreement · ❗ conflicts with `stay-in-bed-and-breathe` · ❗ conflicts with `rest-even-if-awake` · for: people-with-insomnia · 🕒 During the night, if you wake, At bedtime, in bed · ⚙️ Learned cues, Calming body and mind · 🩺 Insomnia</sub>
 - **＋ One expert says to stay in bed and breathe slowly when you wake at night.**  
   <sub>also: Stay in Bed and Breathe When You Wake at Night</sub>  
-  <sub>`stay-in-bed-and-breathe` · R2* Ea5* I2* N3* Ev– · no citations · ❗ conflicts with `get-up-if-you-cant-sleep`</sub>
+  <sub>`stay-in-bed-and-breathe` · R2* Ea5* I2* N3* Ev– · no citations · ❗ conflicts with `get-up-if-you-cant-sleep` · 🕒 During the night, if you wake · ⚙️ Calming body and mind · 🩺 Insomnia</sub>
 
 ### 3.3 Sensory and Mental Priming
 
@@ -278,16 +278,16 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **3.3.1 If your mind races, picture a string of random, unconnected things.**  
   <sub>also: Engage in "cognitive shuffling"</sub>  
-  <sub>`cognitive-shuffling` · R2 Ea4 I2* N4 Ev2* · no citations · ↑ part of `calm-your-mind-before-bed` (3.1)</sub>
+  <sub>`cognitive-shuffling` · R2 Ea4 I2* N4 Ev2* · no citations · 🕒 At bedtime, in bed, During the night, if you wake · ⚙️ Calming body and mind · ↑ part of `calm-your-mind-before-bed` (3.1)</sub>
 - **3.3.2 Before bed, write down three things you're thankful for.**  
   <sub>also: Use a gratitude journal instead of a to-do list · Gratitude List Before Bed</sub>  
-  <sub>`gratitude-list` · R3 Ea4 I3 N3* Ev3* · no citations · ❗ conflicts with `write-down-worries` · ↑ part of `calm-your-mind-before-bed` (3.1)</sub>
+  <sub>`gratitude-list` · R3 Ea4 I3 N3* Ev3* · no citations · ❗ conflicts with `write-down-worries` · 🕒 Evening, the hours before bed · ⚙️ Calming body and mind · ↑ part of `calm-your-mind-before-bed` (3.1)</sub>
 - **3.3.3 Some people relax with binaural beats; evidence for sleep is mixed.**  
   <sub>also: Listen to binaural beats at a sleep-friendly frequency (e.g., 2-8 Hz)</sub>  
-  <sub>`binaural-beats` · R2 Ea3 I2* N4 Ev3 · no citations · for: needs-money-or-equipment</sub>
+  <sub>`binaural-beats` · R2 Ea3 I2* N4 Ev3 · no citations · for: needs-money-or-equipment · 🕒 At bedtime, in bed · ⚙️ Calming body and mind, Bedroom environment</sub>
 - **3.3.4 Try nature sounds or ASMR recordings to relax at bedtime.**  
   <sub>also: Listen to nature sounds or ASMR for relaxation</sub>  
-  <sub>`nature-sounds-or-asmr` · R3* Ea5* I2* N3* Ev– · no citations</sub>
+  <sub>`nature-sounds-or-asmr` · R3* Ea5* I2* N3* Ev– · no citations · 🕒 At bedtime, in bed · ⚙️ Calming body and mind, Bedroom environment</sub>
 
 ## 4. Medical and Pharmacological Considerations
 
@@ -299,16 +299,16 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **4.1.1 If you get heartburn at night, try sleeping on your left side.**  
   <sub>also: Sleep on your left side to aid digestion and reduce acid reflux</sub>  
-  <sub>`left-side-for-reflux` · R3 Ea4 I4 N3 Ev3* · no citations · for: people-with-reflux</sub>
+  <sub>`left-side-for-reflux` · R3 Ea4 I4 N3 Ev3* · no citations · for: people-with-reflux · 🕒 During the night, if you wake · ⚙️ Food, drink and digestion · 🩺 Night-time reflux / GERD</sub>
 - **4.1.2 Some people relax with gentle massage or acupressure before sleep.**  
   <sub>also: Try acupressure or gentle massage before sleep</sub>  
-  <sub>`acupressure-or-massage` · R2 Ea3 I3 N4 Ev3 · no citations · for: region-or-culture-specific</sub>
+  <sub>`acupressure-or-massage` · R2 Ea3 I3 N4 Ev3 · no citations · for: region-or-culture-specific · 🕒 At bedtime, in bed · ⚙️ Calming body and mind</sub>
 - **4.1.3 If you have reflux or sleep apnea, raising your upper body may help; ask your clinician.**  
   <sub>also: Try an inclined sleeping position if you have sleep apnea or acid reflux</sub>  
-  <sub>`raise-the-head-of-the-bed` · R2* Ea3 I3* N3 Ev3* · no citations · for: people-with-reflux, people-who-snore-or-may-have-sleep-apnea, talk-to-a-clinician</sub>
+  <sub>`raise-the-head-of-the-bed` · R2* Ea3 I3* N3 Ev3* · no citations · for: people-with-reflux, people-who-snore-or-may-have-sleep-apnea, talk-to-a-clinician · 🕒 During the night, if you wake · ⚙️ Food, drink and digestion, Breathing and airway · 🩺 Night-time reflux / GERD, Snoring or sleep apnea</sub>
 - **4.1.4 Some people find raising their legs a little helps them feel comfortable at night.**  
   <sub>also: Elevate your legs slightly to improve circulation</sub>  
-  <sub>`raise-your-legs` · R2* Ea4* I1* N3* Ev– · no citations</sub>
+  <sub>`raise-your-legs` · R2* Ea4* I1* N3* Ev– · no citations · 🕒 At bedtime, in bed · ⚙️ Bedroom environment</sub>
 
 ### 4.2 Sleep Disorders and Medical Interventions
 
@@ -316,25 +316,25 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
 
 - **4.2.1 Write down when you go to bed, wake up and how you slept for a week or two.**  
   <sub>also: Keep a sleep diary to track patterns and identify issues · Sleep log</sub>  
-  <sub>`keep-a-sleep-diary` · R3 Ea3 I4 N3 Ev3* · no citations · for: people-with-insomnia</sub>
+  <sub>`keep-a-sleep-diary` · R3 Ea3 I4 N3 Ev3* · no citations · for: people-with-insomnia · 🕒 On waking / morning · ⚙️ Tracking and getting care · 🩺 Insomnia</sub>
 - **4.2.2 If you can't fall asleep until very late, ask a clinician about morning bright-light therapy.**  
   <sub>also: Consider light therapy if you have delayed sleep phase disorder (DSPD) · Bright light therapy · Light box</sub>  
-  <sub>`light-therapy-for-a-late-body-clock` · R2* Ea2 I4 N4* Ev3* · no citations · for: people-with-a-late-body-clock, talk-to-a-clinician, needs-money-or-equipment</sub>
+  <sub>`light-therapy-for-a-late-body-clock` · R2* Ea2 I4 N4* Ev3* · no citations · for: people-with-a-late-body-clock, talk-to-a-clinician, needs-money-or-equipment · 🕒 On waking / morning · ⚙️ Body clock timing · 🩺 Late body clock (delayed sleep-wake phase)</sub>
 - **4.2.3 Melatonin may help with jet lag or shift work; ask a pharmacist or doctor first.**  
   <sub>also: Consider a melatonin supplement if struggling with jet lag or shift work</sub>  
-  <sub>`melatonin-for-jet-lag-or-shifts` · R4* Ea4* I3* N2* Ev– · no citations · ⚖️ 1 source disagreement · for: travelers, shift-workers, talk-to-a-clinician</sub>
+  <sub>`melatonin-for-jet-lag-or-shifts` · R4* Ea4* I3* N2* Ev– · no citations · ⚖️ 1 source disagreement · for: travelers, shift-workers, talk-to-a-clinician · 🕒 Days ahead (travel, shift changes), Evening, the hours before bed · ⚙️ Body clock timing, Substances · 🩺 Jet lag, Shift work</sub>
 - **4.2.4 If you snore loudly or gasp in your sleep, ask a doctor about sleep apnea.**  
   <sub>also: Check for potential sleep apnea</sub>  
-  <sub>`check-for-sleep-apnea` · R3* Ea2* I5* N2* Ev– · no citations · for: people-who-snore-or-may-have-sleep-apnea, talk-to-a-clinician</sub>
+  <sub>`check-for-sleep-apnea` · R3* Ea2* I5* N2* Ev– · no citations · for: people-who-snore-or-may-have-sleep-apnea, talk-to-a-clinician · 🕒 Any time: a habit or a one-off setup · ⚙️ Tracking and getting care, Breathing and airway · 🩺 Snoring or sleep apnea</sub>
 - **＋ For long-lasting insomnia, ask about CBT-I, a structured talking and habits treatment.**  
   <sub>also: Cognitive Behavioral Therapy for Insomnia · CBT-I</sub>  
-  <sub>`cbt-for-insomnia` · R2* Ea2* I5* N4* Ev– · no citations · for: people-with-insomnia, talk-to-a-clinician</sub>
+  <sub>`cbt-for-insomnia` · R2* Ea2* I5* N4* Ev– · no citations · for: people-with-insomnia, talk-to-a-clinician · 🕒 Any time: a habit or a one-off setup · ⚙️ Learned cues, Sleep pressure, Calming body and mind · 🩺 Insomnia</sub>
   - **＋ With a clinician's help, limit time in bed to the sleep you actually get, then add time back.**  
     <sub>also: Sleep Restriction Therapy</sub>  
-    <sub>`sleep-restriction-therapy` · R1* Ea1* I5* N5* Ev– · no citations · for: people-with-insomnia, talk-to-a-clinician</sub>
+    <sub>`sleep-restriction-therapy` · R1* Ea1* I5* N5* Ev– · no citations · for: people-with-insomnia, talk-to-a-clinician · 🕒 Any time: a habit or a one-off setup · ⚙️ Sleep pressure · 🩺 Insomnia</sub>
 - **＋ Ask your pharmacist or doctor whether any of your medicines can affect sleep.**  
   <sub>also: Review Medicines That Disrupt Sleep</sub>  
-  <sub>`check-your-medicines` · R2* Ea4* I3* N4* Ev– · no citations · for: talk-to-a-clinician</sub>
+  <sub>`check-your-medicines` · R2* Ea4* I3* N4* Ev– · no citations · for: talk-to-a-clinician · 🕒 Any time: a habit or a one-off setup · ⚙️ Tracking and getting care, Substances · 🩺 Insomnia</sub>
 
 ## Myths
 
@@ -348,6 +348,47 @@ Version 0.1.0-draft, last checked 2026-10-21. Nothing here is reviewed yet.
   <sub>`myth-tv-helps-you-sleep` · “Myth: Watching TV helps you fall asleep.” · 4 cited</sub>
 - **Loud, frequent snoring can be a sign of sleep apnea and is worth checking.**  
   <sub>`myth-snoring-is-harmless` · “Myth: Snoring is harmless.” · 8 cited · for: people-who-snore-or-may-have-sleep-apnea</sub>
+
+## Browse by facet
+
+Drafted by Claude, unreviewed. Mechanism is how the sources say the advice works, not proof that it does.
+
+### How it is said to work
+
+- **Body clock timing**: 16 · `keep-a-regular-sleep-schedule` `change-sleep-times-gradually` `get-up-at-the-same-time` `dont-sleep-in-much-on-weekends` `get-morning-daylight` `less-bright-light-in-the-evening` `exercise-regularly` `strength-training-earlier-in-the-day` `light-therapy-for-a-late-body-clock` `melatonin-for-jet-lag-or-shifts` `jet-lag` `adjust-to-night-shift-work` `late-afternoon-daylight` `body-temperature-low-point` `fit-bedtime-to-your-body-clock` `myth-weekend-catch-up`
+- **Light at night**: 9 · `keep-the-bedroom-cool-and-dark` `block-outside-light` `keep-devices-out-of-the-bedroom` `screens-before-bed` `less-bright-light-in-the-evening` `use-dim-red-light-at-night` `dim-lights-gradually` `blue-blocking-glasses` `myth-tv-helps-you-sleep`
+- **Sleep pressure**: 7 · `get-enough-sleep-for-you` `keep-naps-short-and-early` `exercise-regularly` `strength-training-earlier-in-the-day` `cbt-for-insomnia` `sleep-restriction-therapy` `myth-weekend-catch-up`
+- **Body temperature**: 7 · `keep-the-bedroom-cool-and-dark` `warm-bath-or-shower-before-bed` `wear-socks-to-bed` `no-hard-workouts-right-before-bed` `body-temperature-low-point` `frozen-water-bottle` `myth-exercise-right-before-bed`
+- **Calming body and mind**: 37 · `keep-devices-out-of-the-bedroom` `keep-the-bedroom-tidy` `try-calming-scents` `screens-before-bed` `have-a-wind-down-routine` `skip-exciting-things-before-bed` `dont-check-the-clock` `try-a-guided-meditation` `try-a-weighted-blanket` `avoid-heavy-talks-at-bedtime` `warm-bath-or-shower-before-bed` `exercise-regularly` `gentle-stretching-before-bed` `no-hard-workouts-right-before-bed` `4-7-8-breathing` `nose-breathing-exercises` `herbal-tea-before-bed` `calm-your-mind-before-bed` `relaxation-techniques` `progressive-muscle-relaxation` `write-down-worries` `get-up-if-you-cant-sleep` `cognitive-shuffling` `gratitude-list` `binaural-beats` `nature-sounds-or-asmr` `acupressure-or-massage` `cbt-for-insomnia` `box-breathing` `cyclic-sighing` `belly-breathing` `alternate-nostril-breathing` `rest-even-if-awake` `power-down-hour` `stay-in-bed-and-breathe` `myth-exercise-right-before-bed` `myth-tv-helps-you-sleep`
+- **Learned cues**: 7 · `have-a-wind-down-routine` `dim-lights-gradually` `bed-is-for-sleep` `get-up-if-you-cant-sleep` `cbt-for-insomnia` `power-down-hour` `stimulus-control`
+- **Substances**: 11 · `caffeine-and-big-meals-early` `no-alcohol-close-to-bedtime` `magnesium` `kiwi-or-tart-cherries` `herbal-tea-before-bed` `melatonin-for-jet-lag-or-shifts` `check-your-medicines` `3-2-1-rule` `delay-first-coffee` `caffeine-cutoff` `myth-alcohol-helps-sleep`
+- **Food, drink and digestion**: 7 · `caffeine-and-big-meals-early` `drink-more-earlier-in-the-day` `kiwi-or-tart-cherries` `small-snack-before-bed` `left-side-for-reflux` `raise-the-head-of-the-bed` `3-2-1-rule`
+- **Bedroom environment**: 13 · `keep-the-bedroom-cool-and-dark` `block-outside-light` `make-your-bed-comfortable` `mask-noise-with-steady-sound` `keep-the-bedroom-quiet` `keep-the-bedroom-tidy` `try-calming-scents` `try-a-weighted-blanket` `try-pink-noise` `binaural-beats` `nature-sounds-or-asmr` `raise-your-legs` `adjust-to-night-shift-work`
+- **Breathing and airway**: 5 · `mouth-taping` `nose-breathing-exercises` `raise-the-head-of-the-bed` `check-for-sleep-apnea` `myth-snoring-is-harmless`
+- **Time taken from sleep**: 3 · `keep-devices-out-of-the-bedroom` `screens-before-bed` `myth-tv-helps-you-sleep`
+- **Tracking and getting care**: 3 · `keep-a-sleep-diary` `check-for-sleep-apnea` `check-your-medicines`
+
+### When you do it
+
+- **On waking / morning**: 7 · `get-up-at-the-same-time` `dont-sleep-in-much-on-weekends` `get-morning-daylight` `keep-a-sleep-diary` `light-therapy-for-a-late-body-clock` `delay-first-coffee` `myth-weekend-catch-up`
+- **During the day**: 3 · `keep-naps-short-and-early` `drink-more-earlier-in-the-day` `exercise-regularly`
+- **Afternoon**: 5 · `keep-naps-short-and-early` `caffeine-and-big-meals-early` `strength-training-earlier-in-the-day` `late-afternoon-daylight` `caffeine-cutoff`
+- **Evening, the hours before bed**: 24 · `keep-devices-out-of-the-bedroom` `screens-before-bed` `have-a-wind-down-routine` `skip-exciting-things-before-bed` `avoid-heavy-talks-at-bedtime` `warm-bath-or-shower-before-bed` `less-bright-light-in-the-evening` `dim-lights-gradually` `blue-blocking-glasses` `caffeine-and-big-meals-early` `drink-more-earlier-in-the-day` `no-alcohol-close-to-bedtime` `no-hard-workouts-right-before-bed` `kiwi-or-tart-cherries` `herbal-tea-before-bed` `calm-your-mind-before-bed` `write-down-worries` `gratitude-list` `melatonin-for-jet-lag-or-shifts` `power-down-hour` `3-2-1-rule` `fit-bedtime-to-your-body-clock` `myth-alcohol-helps-sleep` `myth-exercise-right-before-bed`
+- **At bedtime, in bed**: 25 · `try-calming-scents` `screens-before-bed` `try-a-guided-meditation` `try-a-weighted-blanket` `wear-socks-to-bed` `gentle-stretching-before-bed` `4-7-8-breathing` `nose-breathing-exercises` `small-snack-before-bed` `calm-your-mind-before-bed` `relaxation-techniques` `progressive-muscle-relaxation` `get-up-if-you-cant-sleep` `cognitive-shuffling` `binaural-beats` `nature-sounds-or-asmr` `acupressure-or-massage` `raise-your-legs` `box-breathing` `cyclic-sighing` `belly-breathing` `alternate-nostril-breathing` `frozen-water-bottle` `myth-tv-helps-you-sleep` `stimulus-control`
+- **During the night, if you wake**: 19 · `mask-noise-with-steady-sound` `keep-devices-out-of-the-bedroom` `dont-check-the-clock` `try-pink-noise` `use-dim-red-light-at-night` `4-7-8-breathing` `mouth-taping` `relaxation-techniques` `get-up-if-you-cant-sleep` `cognitive-shuffling` `left-side-for-reflux` `raise-the-head-of-the-bed` `body-temperature-low-point` `box-breathing` `cyclic-sighing` `rest-even-if-awake` `stay-in-bed-and-breathe` `myth-snoring-is-harmless` `stimulus-control`
+- **Any time: a habit or a one-off setup**: 14 · `keep-a-regular-sleep-schedule` `get-enough-sleep-for-you` `keep-the-bedroom-cool-and-dark` `block-outside-light` `make-your-bed-comfortable` `keep-the-bedroom-quiet` `keep-the-bedroom-tidy` `magnesium` `bed-is-for-sleep` `check-for-sleep-apnea` `check-your-medicines` `cbt-for-insomnia` `sleep-restriction-therapy` `adjust-to-night-shift-work`
+- **Days ahead (travel, shift changes)**: 3 · `change-sleep-times-gradually` `melatonin-for-jet-lag-or-shifts` `jet-lag`
+
+### Especially relevant for
+
+- **Anyone (general sleep health)**: 71 · `keep-a-regular-sleep-schedule` `change-sleep-times-gradually` `get-enough-sleep-for-you` `keep-naps-short-and-early` `get-up-at-the-same-time` `dont-sleep-in-much-on-weekends` `keep-the-bedroom-cool-and-dark` `block-outside-light` `make-your-bed-comfortable` `mask-noise-with-steady-sound` `keep-the-bedroom-quiet` `keep-devices-out-of-the-bedroom` `keep-the-bedroom-tidy` `try-calming-scents` `screens-before-bed` `have-a-wind-down-routine` `skip-exciting-things-before-bed` `dont-check-the-clock` `try-a-guided-meditation` `try-a-weighted-blanket` `avoid-heavy-talks-at-bedtime` `warm-bath-or-shower-before-bed` `try-pink-noise` `wear-socks-to-bed` `get-morning-daylight` `less-bright-light-in-the-evening` `use-dim-red-light-at-night` `dim-lights-gradually` `blue-blocking-glasses` `caffeine-and-big-meals-early` `drink-more-earlier-in-the-day` `no-alcohol-close-to-bedtime` `magnesium` `exercise-regularly` `gentle-stretching-before-bed` `strength-training-earlier-in-the-day` `no-hard-workouts-right-before-bed` `4-7-8-breathing` `nose-breathing-exercises` `kiwi-or-tart-cherries` `small-snack-before-bed` `herbal-tea-before-bed` `calm-your-mind-before-bed` `relaxation-techniques` `progressive-muscle-relaxation` `write-down-worries` `cognitive-shuffling` `gratitude-list` `binaural-beats` `nature-sounds-or-asmr` `acupressure-or-massage` `raise-your-legs` `keep-a-sleep-diary` `check-your-medicines` `late-afternoon-daylight` `box-breathing` `cyclic-sighing` `belly-breathing` `alternate-nostril-breathing` `rest-even-if-awake` `power-down-hour` `3-2-1-rule` `frozen-water-bottle` `delay-first-coffee` `caffeine-cutoff` `fit-bedtime-to-your-body-clock` `stay-in-bed-and-breathe` `myth-alcohol-helps-sleep` `myth-weekend-catch-up` `myth-exercise-right-before-bed` `myth-tv-helps-you-sleep`
+- **Insomnia** (ICD-11 7A00, 7A0Z): 18 · `keep-a-regular-sleep-schedule` `keep-naps-short-and-early` `get-up-at-the-same-time` `have-a-wind-down-routine` `dont-check-the-clock` `try-a-guided-meditation` `exercise-regularly` `relaxation-techniques` `progressive-muscle-relaxation` `bed-is-for-sleep` `get-up-if-you-cant-sleep` `keep-a-sleep-diary` `check-your-medicines` `cbt-for-insomnia` `sleep-restriction-therapy` `rest-even-if-awake` `stay-in-bed-and-breathe` `stimulus-control`
+- **Snoring or sleep apnea** (ICD-11 7A41): 5 · `no-alcohol-close-to-bedtime` `mouth-taping` `raise-the-head-of-the-bed` `check-for-sleep-apnea` `myth-snoring-is-harmless`
+- **Night-time reflux / GERD** (ICD-11 DA22): 3 · `caffeine-and-big-meals-early` `left-side-for-reflux` `raise-the-head-of-the-bed`
+- **Late body clock (delayed sleep-wake phase)** (ICD-11 7A60): 7 · `keep-a-regular-sleep-schedule` `change-sleep-times-gradually` `get-morning-daylight` `less-bright-light-in-the-evening` `blue-blocking-glasses` `light-therapy-for-a-late-body-clock` `fit-bedtime-to-your-body-clock`
+- **Jet lag** (ICD-11 7A65): 4 · `change-sleep-times-gradually` `melatonin-for-jet-lag-or-shifts` `jet-lag` `body-temperature-low-point`
+- **Shift work** (ICD-11 7A64): 5 · `change-sleep-times-gradually` `block-outside-light` `mask-noise-with-steady-sound` `melatonin-for-jet-lag-or-shifts` `adjust-to-night-shift-work`
+- **Anxiety or stress** (ICD-11 6B00): 10 · `try-a-guided-meditation` `try-a-weighted-blanket` `4-7-8-breathing` `calm-your-mind-before-bed` `relaxation-techniques` `progressive-muscle-relaxation` `write-down-worries` `box-breathing` `cyclic-sighing` `belly-breathing`
 
 ## Merged
 

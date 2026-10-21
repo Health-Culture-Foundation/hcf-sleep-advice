@@ -25,9 +25,10 @@ Duplicates are **merged, not deleted**: the merged item keeps its ID with
 `status: "merged"` and `mergedInto`, and its wording becomes an alternative
 label on the surviving concept. Links to old IDs keep working.
 
-This leaves room to grow into an ontology later, by adding typed relations
-(mechanism such as light, temperature or arousal; time of day; condition
-treated) without changing what is here.
+On top of the hierarchy, three **facets** cut across categories (see `facets`
+below). That makes it a small ontology: the same item can be found by
+what it is (category), how it is said to work (mechanism), when you do it
+(time of day) and who it is especially for (condition).
 
 Everything is a **draft**. Each field says where it came from and whether a
 person has checked it. Nothing in the dataset should be read as reviewed
@@ -71,6 +72,8 @@ until its status says so.
 | `audience` | list | Audience tags. `all-ages-and-cultures` is the default; others narrow it. |
 | `audienceNote` | string \| null | Who it may not fit, and why. |
 | `disagreements` | list | Where sources disagree. See below. |
+| `facets` | object | `mechanism`, `timeOfDay`, `condition` (lists of facet values) and `status`. See below. |
+| `conditionCodes` | list | ICD-11 codes reached through `facets.condition`, per item: `{code, title, via}`. More precise than `codes`, which the wiki set per subcategory. |
 | `codes` | object | `ichi`, `icd11` (each `{code, title, wikiTitle, exists, titleOutdatedInWiki}`), `verified`, `checkedOn`, `note`. |
 | `glossary` | list | Matching health-glossary sleep **advice** entries: `glossaryId`, `term`, `relation`, `status`, `url` (null if the entry has no term page yet). |
 | `glossaryTerms` | list | Matching published glossary **terms** (e.g. Sleep Hygiene, Jet Lag Syndrome), with URL. |
@@ -173,6 +176,21 @@ in the WHO browsers on 2026-10-21 (`sources/code-check.json`):
 
 `verified` is `"code exists; fit not reviewed"` for wiki items and `false` for
 items without codes.
+
+### `facets`
+
+Vocabularies are defined in the top-level `facets` object (`editorial/facets.json`).
+Assignments were drafted by Claude on 2026-10-21 and are unreviewed.
+
+| Facet | Values |
+|---|---|
+| `mechanism`: how the sources say it works (not proof that it does) | body-clock, light-at-night, sleep-pressure, body-temperature, arousal, learned-association, substances, digestion-and-fluids, sleep-environment, breathing-and-airway, time-displacement, monitoring-and-care |
+| `timeOfDay`: when you do it | on-waking, daytime, afternoon, evening, bedtime, during-the-night, any-time, ahead-of-time |
+| `condition`: who it is especially relevant for | general, insomnia (7A00, 7A0Z), sleep-apnea (7A41), reflux (DA22), late-body-clock (7A60), jet-lag (7A65), shift-work (7A64), anxiety (6B00) |
+
+All condition codes were looked up in the ICD-11 browser (`sources/code-check.json`).
+In SKOS, each facet is its own concept scheme and items link to values with
+`hsa:mechanism`, `hsa:timeOfDay` and `hsa:condition`.
 
 ### `glossary.relation`
 

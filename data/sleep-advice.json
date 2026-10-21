@@ -52,6 +52,142 @@
     }
   },
   "conceptBase": "https://health-culture.org/sleep-advice/",
+  "facets": {
+    "mechanism": {
+      "label": "How it is said to work",
+      "values": {
+        "body-clock": {
+          "label": "Body clock timing",
+          "definition": "Sets or shifts the circadian clock: light at the right time, regular times, gradual shifts, melatonin timing."
+        },
+        "light-at-night": {
+          "label": "Light at night",
+          "definition": "Less light in the evening or at night, said to keep melatonin up and the brain less alert."
+        },
+        "sleep-pressure": {
+          "label": "Sleep pressure",
+          "definition": "Builds or protects the drive to sleep that grows the longer you are awake (naps, time in bed, activity)."
+        },
+        "body-temperature": {
+          "label": "Body temperature",
+          "definition": "Helps the core body temperature drop that comes with sleep (cool room, warm bath then cooling, warm feet)."
+        },
+        "arousal": {
+          "label": "Calming body and mind",
+          "definition": "Lowers mental, emotional or physical arousal: stress, racing thoughts, exciting content, hard exercise."
+        },
+        "learned-association": {
+          "label": "Learned cues",
+          "definition": "Trains the brain to link bed and bedtime routines with sleep, not with lying awake."
+        },
+        "substances": {
+          "label": "Substances",
+          "definition": "Caffeine, alcohol, nicotine, supplements, herbal products, medicines."
+        },
+        "digestion-and-fluids": {
+          "label": "Food, drink and digestion",
+          "definition": "Meal timing and size, reflux, night-time bathroom trips."
+        },
+        "sleep-environment": {
+          "label": "Bedroom environment",
+          "definition": "Noise, comfort, tidiness, scent: the room itself."
+        },
+        "breathing-and-airway": {
+          "label": "Breathing and airway",
+          "definition": "Keeping the airway open at night; snoring and sleep apnea."
+        },
+        "time-displacement": {
+          "label": "Time taken from sleep",
+          "definition": "An activity that pushes bedtime later or eats into sleep time (e.g. screens, per Bauducco et al. 2024)."
+        },
+        "monitoring-and-care": {
+          "label": "Tracking and getting care",
+          "definition": "Noticing patterns or problems and getting them checked: sleep diaries, medicine reviews, testing for apnea."
+        }
+      }
+    },
+    "timeOfDay": {
+      "label": "When you do it",
+      "values": {
+        "on-waking": {
+          "label": "On waking / morning"
+        },
+        "daytime": {
+          "label": "During the day"
+        },
+        "afternoon": {
+          "label": "Afternoon"
+        },
+        "evening": {
+          "label": "Evening, the hours before bed"
+        },
+        "bedtime": {
+          "label": "At bedtime, in bed"
+        },
+        "during-the-night": {
+          "label": "During the night, if you wake"
+        },
+        "any-time": {
+          "label": "Any time: a habit or a one-off setup"
+        },
+        "ahead-of-time": {
+          "label": "Days ahead (travel, shift changes)"
+        }
+      }
+    },
+    "condition": {
+      "label": "Especially relevant for",
+      "values": {
+        "general": {
+          "label": "Anyone (general sleep health)",
+          "icd11": []
+        },
+        "insomnia": {
+          "label": "Insomnia",
+          "icd11": [
+            "7A00",
+            "7A0Z"
+          ]
+        },
+        "sleep-apnea": {
+          "label": "Snoring or sleep apnea",
+          "icd11": [
+            "7A41"
+          ]
+        },
+        "reflux": {
+          "label": "Night-time reflux / GERD",
+          "icd11": [
+            "DA22"
+          ]
+        },
+        "late-body-clock": {
+          "label": "Late body clock (delayed sleep-wake phase)",
+          "icd11": [
+            "7A60"
+          ]
+        },
+        "jet-lag": {
+          "label": "Jet lag",
+          "icd11": [
+            "7A65"
+          ]
+        },
+        "shift-work": {
+          "label": "Shift work",
+          "icd11": [
+            "7A64"
+          ]
+        },
+        "anxiety": {
+          "label": "Anxiety or stress",
+          "icd11": [
+            "6B00"
+          ]
+        }
+      }
+    }
+  },
   "categories": [
     {
       "id": "1",
@@ -611,7 +747,38 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "general",
+          "insomnia",
+          "late-body-clock"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A60",
+          "title": "Delayed sleep-wake phase disorder",
+          "via": "late-body-clock"
+        }
+      ]
     },
     {
       "id": "change-sleep-times-gradually",
@@ -897,7 +1064,39 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock"
+        ],
+        "timeOfDay": [
+          "ahead-of-time"
+        ],
+        "condition": [
+          "general",
+          "jet-lag",
+          "shift-work",
+          "late-body-clock"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A65",
+          "title": "Circadian rhythm sleep-wake disorder, jet lag type",
+          "via": "jet-lag"
+        },
+        {
+          "code": "7A64",
+          "title": "Circadian rhythm sleep-wake disorder, shift work type",
+          "via": "shift-work"
+        },
+        {
+          "code": "7A60",
+          "title": "Delayed sleep-wake phase disorder",
+          "via": "late-body-clock"
+        }
+      ]
     },
     {
       "id": "get-enough-sleep-for-you",
@@ -1127,7 +1326,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "sleep-pressure"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "keep-naps-short-and-early",
@@ -1318,6 +1530,32 @@
       "mergedInto": null,
       "mergedFrom": [
         "naps-and-night-sleep"
+      ],
+      "facets": {
+        "mechanism": [
+          "sleep-pressure"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "daytime"
+        ],
+        "condition": [
+          "general",
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
       ]
     },
     {
@@ -1491,7 +1729,32 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock"
+        ],
+        "timeOfDay": [
+          "on-waking"
+        ],
+        "condition": [
+          "general",
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "dont-sleep-in-much-on-weekends",
@@ -1674,7 +1937,20 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock"
+        ],
+        "timeOfDay": [
+          "on-waking"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "keep-the-bedroom-cool-and-dark",
@@ -1913,7 +2189,22 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-temperature",
+          "light-at-night",
+          "sleep-environment"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "block-outside-light",
@@ -2073,7 +2364,28 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "light-at-night",
+          "sleep-environment"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "general",
+          "shift-work"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A64",
+          "title": "Circadian rhythm sleep-wake disorder, shift work type",
+          "via": "shift-work"
+        }
+      ]
     },
     {
       "id": "make-your-bed-comfortable",
@@ -2232,7 +2544,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "sleep-environment"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "mask-noise-with-steady-sound",
@@ -2398,7 +2723,27 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "sleep-environment"
+        ],
+        "timeOfDay": [
+          "during-the-night"
+        ],
+        "condition": [
+          "general",
+          "shift-work"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A64",
+          "title": "Circadian rhythm sleep-wake disorder, shift work type",
+          "via": "shift-work"
+        }
+      ]
     },
     {
       "id": "keep-the-bedroom-quiet",
@@ -2571,7 +2916,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "sleep-environment"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "keep-devices-out-of-the-bedroom",
@@ -2740,7 +3098,23 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "time-displacement",
+          "arousal",
+          "light-at-night"
+        ],
+        "timeOfDay": [
+          "evening",
+          "during-the-night"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "keep-the-bedroom-tidy",
@@ -2888,7 +3262,21 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "sleep-environment",
+          "arousal"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "try-calming-scents",
@@ -3036,7 +3424,21 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "sleep-environment",
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "screens-before-bed",
@@ -3350,7 +3752,23 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal",
+          "time-displacement",
+          "light-at-night"
+        ],
+        "timeOfDay": [
+          "evening",
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "have-a-wind-down-routine",
@@ -3525,7 +3943,33 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal",
+          "learned-association"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general",
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "skip-exciting-things-before-bed",
@@ -3685,7 +4129,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "dont-check-the-clock",
@@ -3848,7 +4305,32 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "during-the-night"
+        ],
+        "condition": [
+          "general",
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "try-a-guided-meditation",
@@ -4013,7 +4495,38 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general",
+          "anxiety",
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        },
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "try-a-weighted-blanket",
@@ -4162,7 +4675,28 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal",
+          "sleep-environment"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general",
+          "anxiety"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        }
+      ]
     },
     {
       "id": "avoid-heavy-talks-at-bedtime",
@@ -4312,7 +4846,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "warm-bath-or-shower-before-bed",
@@ -4502,7 +5049,21 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-temperature",
+          "arousal"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "try-pink-noise",
@@ -4662,7 +5223,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "sleep-environment"
+        ],
+        "timeOfDay": [
+          "during-the-night"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "wear-socks-to-bed",
@@ -4815,7 +5389,20 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-temperature"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "get-morning-daylight",
@@ -5074,7 +5661,27 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock"
+        ],
+        "timeOfDay": [
+          "on-waking"
+        ],
+        "condition": [
+          "general",
+          "late-body-clock"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A60",
+          "title": "Delayed sleep-wake phase disorder",
+          "via": "late-body-clock"
+        }
+      ]
     },
     {
       "id": "less-bright-light-in-the-evening",
@@ -5253,6 +5860,27 @@
       "mergedInto": null,
       "mergedFrom": [
         "dim-the-lights-after-dark"
+      ],
+      "facets": {
+        "mechanism": [
+          "light-at-night",
+          "body-clock"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general",
+          "late-body-clock"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A60",
+          "title": "Delayed sleep-wake phase disorder",
+          "via": "late-body-clock"
+        }
       ]
     },
     {
@@ -5424,7 +6052,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "light-at-night"
+        ],
+        "timeOfDay": [
+          "during-the-night"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "dim-lights-gradually",
@@ -5582,7 +6223,21 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "light-at-night",
+          "learned-association"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "blue-blocking-glasses",
@@ -5733,7 +6388,27 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "light-at-night"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general",
+          "late-body-clock"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A60",
+          "title": "Delayed sleep-wake phase disorder",
+          "via": "late-body-clock"
+        }
+      ]
     },
     {
       "id": "caffeine-and-big-meals-early",
@@ -6025,7 +6700,29 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "substances",
+          "digestion-and-fluids"
+        ],
+        "timeOfDay": [
+          "afternoon",
+          "evening"
+        ],
+        "condition": [
+          "general",
+          "reflux"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "DA22",
+          "title": "Gastro-oesophageal reflux disease",
+          "via": "reflux"
+        }
+      ]
     },
     {
       "id": "drink-more-earlier-in-the-day",
@@ -6238,7 +6935,21 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "digestion-and-fluids"
+        ],
+        "timeOfDay": [
+          "daytime",
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "no-alcohol-close-to-bedtime",
@@ -6405,7 +7116,27 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "substances"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general",
+          "sleep-apnea"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A41",
+          "title": "Obstructive sleep apnoea",
+          "via": "sleep-apnea"
+        }
+      ]
     },
     {
       "id": "magnesium",
@@ -6554,7 +7285,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "substances"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "exercise-regularly",
@@ -6740,7 +7484,34 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "sleep-pressure",
+          "body-clock",
+          "arousal"
+        ],
+        "timeOfDay": [
+          "daytime"
+        ],
+        "condition": [
+          "general",
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "gentle-stretching-before-bed",
@@ -6891,7 +7662,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "strength-training-earlier-in-the-day",
@@ -7049,7 +7833,21 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "sleep-pressure",
+          "body-clock"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "no-hard-workouts-right-before-bed",
@@ -7229,7 +8027,21 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal",
+          "body-temperature"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "4-7-8-breathing",
@@ -7393,7 +8205,28 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime",
+          "during-the-night"
+        ],
+        "condition": [
+          "general",
+          "anxiety"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        }
+      ]
     },
     {
       "id": "mouth-taping",
@@ -7557,7 +8390,26 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "breathing-and-airway"
+        ],
+        "timeOfDay": [
+          "during-the-night"
+        ],
+        "condition": [
+          "sleep-apnea"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A41",
+          "title": "Obstructive sleep apnoea",
+          "via": "sleep-apnea"
+        }
+      ]
     },
     {
       "id": "nose-breathing-exercises",
@@ -7724,7 +8576,21 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "breathing-and-airway",
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "kiwi-or-tart-cherries",
@@ -7876,7 +8742,21 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "substances",
+          "digestion-and-fluids"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "small-snack-before-bed",
@@ -8052,7 +8932,20 @@
         }
       ],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "digestion-and-fluids"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "herbal-tea-before-bed",
@@ -8221,7 +9114,21 @@
         }
       ],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "substances",
+          "arousal"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "calm-your-mind-before-bed",
@@ -8479,7 +9386,28 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "evening",
+          "bedtime"
+        ],
+        "condition": [
+          "general",
+          "anxiety"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        }
+      ]
     },
     {
       "id": "relaxation-techniques",
@@ -8689,7 +9617,39 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime",
+          "during-the-night"
+        ],
+        "condition": [
+          "general",
+          "anxiety",
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        },
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "progressive-muscle-relaxation",
@@ -8888,7 +9848,38 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general",
+          "anxiety",
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        },
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "write-down-worries",
@@ -9088,7 +10079,27 @@
         }
       ],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general",
+          "anxiety"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        }
+      ]
     },
     {
       "id": "naps-and-night-sleep",
@@ -9452,7 +10463,31 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "learned-association"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "get-up-if-you-cant-sleep",
@@ -9659,7 +10694,33 @@
         }
       ],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "learned-association",
+          "arousal"
+        ],
+        "timeOfDay": [
+          "during-the-night",
+          "bedtime"
+        ],
+        "condition": [
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "cognitive-shuffling",
@@ -9826,7 +10887,21 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime",
+          "during-the-night"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "gratitude-list",
@@ -10008,7 +11083,20 @@
         }
       ],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "binaural-beats",
@@ -10171,7 +11259,21 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal",
+          "sleep-environment"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "nature-sounds-or-asmr",
@@ -10328,7 +11430,21 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal",
+          "sleep-environment"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "left-side-for-reflux",
@@ -10502,7 +11618,26 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "digestion-and-fluids"
+        ],
+        "timeOfDay": [
+          "during-the-night"
+        ],
+        "condition": [
+          "reflux"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "DA22",
+          "title": "Gastro-oesophageal reflux disease",
+          "via": "reflux"
+        }
+      ]
     },
     {
       "id": "acupressure-or-massage",
@@ -10669,7 +11804,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "raise-the-head-of-the-bed",
@@ -10859,7 +12007,33 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "digestion-and-fluids",
+          "breathing-and-airway"
+        ],
+        "timeOfDay": [
+          "during-the-night"
+        ],
+        "condition": [
+          "reflux",
+          "sleep-apnea"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "DA22",
+          "title": "Gastro-oesophageal reflux disease",
+          "via": "reflux"
+        },
+        {
+          "code": "7A41",
+          "title": "Obstructive sleep apnoea",
+          "via": "sleep-apnea"
+        }
+      ]
     },
     {
       "id": "raise-your-legs",
@@ -11028,7 +12202,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "sleep-environment"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "keep-a-sleep-diary",
@@ -11222,7 +12409,32 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "monitoring-and-care"
+        ],
+        "timeOfDay": [
+          "on-waking"
+        ],
+        "condition": [
+          "general",
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "light-therapy-for-a-late-body-clock",
@@ -11416,7 +12628,26 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock"
+        ],
+        "timeOfDay": [
+          "on-waking"
+        ],
+        "condition": [
+          "late-body-clock"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A60",
+          "title": "Delayed sleep-wake phase disorder",
+          "via": "late-body-clock"
+        }
+      ]
     },
     {
       "id": "melatonin-for-jet-lag-or-shifts",
@@ -11621,7 +12852,34 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock",
+          "substances"
+        ],
+        "timeOfDay": [
+          "ahead-of-time",
+          "evening"
+        ],
+        "condition": [
+          "jet-lag",
+          "shift-work"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A65",
+          "title": "Circadian rhythm sleep-wake disorder, jet lag type",
+          "via": "jet-lag"
+        },
+        {
+          "code": "7A64",
+          "title": "Circadian rhythm sleep-wake disorder, shift work type",
+          "via": "shift-work"
+        }
+      ]
     },
     {
       "id": "check-for-sleep-apnea",
@@ -11801,7 +13059,27 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "monitoring-and-care",
+          "breathing-and-airway"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "sleep-apnea"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A41",
+          "title": "Obstructive sleep apnoea",
+          "via": "sleep-apnea"
+        }
+      ]
     },
     {
       "id": "check-your-medicines",
@@ -11943,7 +13221,33 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "monitoring-and-care",
+          "substances"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "general",
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "cbt-for-insomnia",
@@ -12091,7 +13395,33 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "learned-association",
+          "sleep-pressure",
+          "arousal"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "sleep-restriction-therapy",
@@ -12237,7 +13567,31 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "sleep-pressure"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "jet-lag",
@@ -12383,7 +13737,26 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock"
+        ],
+        "timeOfDay": [
+          "ahead-of-time"
+        ],
+        "condition": [
+          "jet-lag"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A65",
+          "title": "Circadian rhythm sleep-wake disorder, jet lag type",
+          "via": "jet-lag"
+        }
+      ]
     },
     {
       "id": "adjust-to-night-shift-work",
@@ -12526,7 +13899,27 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock",
+          "sleep-environment"
+        ],
+        "timeOfDay": [
+          "any-time"
+        ],
+        "condition": [
+          "shift-work"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A64",
+          "title": "Circadian rhythm sleep-wake disorder, shift work type",
+          "via": "shift-work"
+        }
+      ]
     },
     {
       "id": "late-afternoon-daylight",
@@ -12669,7 +14062,20 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "body-temperature-low-point",
@@ -12803,7 +14209,27 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock",
+          "body-temperature"
+        ],
+        "timeOfDay": [
+          "during-the-night"
+        ],
+        "condition": [
+          "jet-lag"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A65",
+          "title": "Circadian rhythm sleep-wake disorder, jet lag type",
+          "via": "jet-lag"
+        }
+      ]
     },
     {
       "id": "box-breathing",
@@ -12946,7 +14372,28 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime",
+          "during-the-night"
+        ],
+        "condition": [
+          "general",
+          "anxiety"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        }
+      ]
     },
     {
       "id": "cyclic-sighing",
@@ -13089,7 +14536,28 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime",
+          "during-the-night"
+        ],
+        "condition": [
+          "general",
+          "anxiety"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        }
+      ]
     },
     {
       "id": "belly-breathing",
@@ -13232,7 +14700,27 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general",
+          "anxiety"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "6B00",
+          "title": "Generalised anxiety disorder",
+          "via": "anxiety"
+        }
+      ]
     },
     {
       "id": "alternate-nostril-breathing",
@@ -13377,7 +14865,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "rest-even-if-awake",
@@ -13524,7 +15025,32 @@
         }
       ],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "during-the-night"
+        ],
+        "condition": [
+          "general",
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "power-down-hour",
@@ -13668,7 +15194,21 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal",
+          "learned-association"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "3-2-1-rule",
@@ -13823,7 +15363,21 @@
         }
       ],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "substances",
+          "digestion-and-fluids"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "frozen-water-bottle",
@@ -13966,7 +15520,20 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-temperature"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "delay-first-coffee",
@@ -14123,7 +15690,20 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "substances"
+        ],
+        "timeOfDay": [
+          "on-waking"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "caffeine-cutoff",
@@ -14268,7 +15848,20 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "substances"
+        ],
+        "timeOfDay": [
+          "afternoon"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "fit-bedtime-to-your-body-clock",
@@ -14412,7 +16005,27 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general",
+          "late-body-clock"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A60",
+          "title": "Delayed sleep-wake phase disorder",
+          "via": "late-body-clock"
+        }
+      ]
     },
     {
       "id": "stay-in-bed-and-breathe",
@@ -14558,7 +16171,32 @@
         }
       ],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal"
+        ],
+        "timeOfDay": [
+          "during-the-night"
+        ],
+        "condition": [
+          "general",
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     },
     {
       "id": "dim-the-lights-after-dark",
@@ -14776,7 +16414,20 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "substances"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "myth-weekend-catch-up",
@@ -14885,7 +16536,21 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "body-clock",
+          "sleep-pressure"
+        ],
+        "timeOfDay": [
+          "on-waking"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "myth-exercise-right-before-bed",
@@ -15003,7 +16668,21 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal",
+          "body-temperature"
+        ],
+        "timeOfDay": [
+          "evening"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "myth-tv-helps-you-sleep",
@@ -15121,7 +16800,22 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "arousal",
+          "light-at-night",
+          "time-displacement"
+        ],
+        "timeOfDay": [
+          "bedtime"
+        ],
+        "condition": [
+          "general"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": []
     },
     {
       "id": "myth-snoring-is-harmless",
@@ -15275,7 +16969,26 @@
       ],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "breathing-and-airway"
+        ],
+        "timeOfDay": [
+          "during-the-night"
+        ],
+        "condition": [
+          "sleep-apnea"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A41",
+          "title": "Obstructive sleep apnoea",
+          "via": "sleep-apnea"
+        }
+      ]
     },
     {
       "id": "stimulus-control",
@@ -15413,7 +17126,32 @@
       "related": [],
       "conflictsWith": [],
       "status": "active",
-      "mergedInto": null
+      "mergedInto": null,
+      "facets": {
+        "mechanism": [
+          "learned-association"
+        ],
+        "timeOfDay": [
+          "bedtime",
+          "during-the-night"
+        ],
+        "condition": [
+          "insomnia"
+        ],
+        "status": "drafted by Claude 2026-10-21, unreviewed"
+      },
+      "conditionCodes": [
+        {
+          "code": "7A00",
+          "title": "Chronic insomnia",
+          "via": "insomnia"
+        },
+        {
+          "code": "7A0Z",
+          "title": "Insomnia disorders, unspecified",
+          "via": "insomnia"
+        }
+      ]
     }
   ]
 }

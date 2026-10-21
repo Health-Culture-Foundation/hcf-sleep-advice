@@ -286,6 +286,8 @@ def main() -> None:
     apply_scores(records, load("editorial/scores.json"), errors)
     code_check = load("sources/code-check.json")
     apply_code_check(records, code_check)
+    facets = load("editorial/facets.json")
+    apply_facets(records, facets, code_check, errors)
 
     missing = sorted(set(witems) - seen_wiki)
     if missing:
@@ -317,6 +319,7 @@ def main() -> None:
             "taggingTaxonomy": {"title": "Sleep Advice Coding Ideas (Advice Tagging Taxonomy v1.2)", "url": "https://docs.google.com/document/d/19gFTE4sa5e1rvHIZkovttb1w4qix2TBQ6BbWm3PeoR4"},
         },
         "conceptBase": CONCEPT_BASE,
+        "facets": facets["facets"],
         "categories": [
             {
                 "id": c["id"],
@@ -337,7 +340,8 @@ def main() -> None:
 
     cols = [
         "id", "status", "mergedInto", "kind", "origin", "wikiNumber", "category", "subcategory", "placement", "plain",
-        "altLabels", "broader", "narrower", "related", "conflictsWith", "sourceWording",
+        "altLabels", "broader", "narrower", "related", "conflictsWith", "mechanism", "timeOfDay", "condition",
+        "conditionIcd11", "sourceWording",
         "paragraph", "evidenceStatus", "citationCount", "freeCitationCount",
         *[f"{s}" for s in SCALES], *[f"{s}Spread" for s in SCALES],
         "audience", "audienceNote", "disagreementCount", "disagreements", "glossaryIds", "ichi", "icd11", "codesVerified",
@@ -358,6 +362,10 @@ def main() -> None:
                     "narrower": "; ".join(r["narrower"]),
                     "related": "; ".join(r["related"]),
                     "conflictsWith": "; ".join(c["id"] for c in r["conflictsWith"]),
+                    "mechanism": "; ".join(r.get("facets", {}).get("mechanism", [])),
+                    "timeOfDay": "; ".join(r.get("facets", {}).get("timeOfDay", [])),
+                    "condition": "; ".join(r.get("facets", {}).get("condition", [])),
+                    "conditionIcd11": "; ".join(c["code"] for c in r.get("conditionCodes", [])),
                     "kind": r["kind"],
                     "origin": r["origin"],
                     "wikiNumber": r["wikiNumber"] or "",
@@ -539,6 +547,43 @@ def apply_concepts(records: list[dict], rel: dict, subs: dict, errors: list) -> 
     return records
 
 
+def apply_facets(records: list[dict], facets: dict, code_check: dict, errors: list) -> None:
+    """Mechanism, time of day and condition. Condition values carry checked ICD-11 codes,
+    which are per item, unlike the wiki's per-subcategory codes."""
+    vocab = facets["facets"]
+    icd = code_check["icd11"]["codes"]
+    for v in vocab["condition"]["values"].values():
+        for c in v["icd11"]:
+            if c not in icd:
+                errors.append(f"facets.json: condition code {c} not in sources/code-check.json")
+    by_id = {r["id"]: r for r in records}
+    for i in facets["items"]:
+        if i not in by_id:
+            errors.append(f"facets.json: unknown id {i}")
+    names = ["mechanism", "timeOfDay", "condition"]
+    for r in records:
+        if r["status"] == "merged":
+            continue
+        row = facets["items"].get(r["id"])
+        if not row:
+            errors.append(f"facets.json: no facets for {r['id']}")
+            continue
+        r["facets"] = {}
+        for name, raw in zip(names, row):
+            vals = [v for v in raw.split("|") if v]
+            for v in vals:
+                if v not in vocab[name]["values"]:
+                    errors.append(f"facets.json: {r['id']}: unknown {name} value {v}")
+            r["facets"][name] = vals
+        r["facets"]["status"] = "drafted by Claude 2026-10-21, unreviewed"
+        codes = []
+        for cond in r["facets"]["condition"]:
+            for c in vocab["condition"]["values"].get(cond, {}).get("icd11", []):
+                if c in icd and c not in {x["code"] for x in codes}:
+                    codes.append({"code": c, "title": icd[c]["currentTitle"], "via": cond})
+        r["conditionCodes"] = codes
+
+
 def apply_scores(records: list[dict], scores: dict, errors: list) -> None:
     by_id = {r["id"]: r for r in records}
     cap = scores["rules"]["evidenceCapWithoutCitation"]
@@ -603,6 +648,16 @@ def write_skos(out: dict) -> None:
                   f"  skos:prefLabel {turtle_str(s['name'])} ; skos:notation \"{s['id']}\" ;",
                   f"  skos:broader <{b}category/{c['id']}> ."]
         L.append("")
+    for fname, f in out["facets"].items():
+        L += [f"<{b}facet/{fname}> a skos:ConceptScheme ; dct:title {turtle_str(f['label'])} ."]
+        for vid, v in f["values"].items():
+            t = [f"<{b}facet/{fname}/{vid}> a skos:Concept", f"skos:inScheme <{b}facet/{fname}>",
+                 f"skos:topConceptOf <{b}facet/{fname}>", f"skos:prefLabel {turtle_str(v['label'])}"]
+            if v.get("definition"):
+                t.append(f"skos:definition {turtle_str(v['definition'])}")
+            t += [f"skos:closeMatch <http://id.who.int/icd/release/11/mms/{c}>" for c in v.get("icd11", [])]
+            L.append(" ;\n  ".join(t) + " .")
+        L.append("")
     url_of = lambda i: f"<{b}{i}>"
     for r in out["items"]:
         if r["kind"] == "myth":
@@ -622,6 +677,9 @@ def write_skos(out: dict) -> None:
             p += [f"hsa:conflictsWith {url_of(x['id'])}" for x in r["conflictsWith"]]
             p += [f"skos:closeMatch <{g['url']}>" for g in r["glossary"] if g.get("url")]
             p += [f"skos:closeMatch <{g['url']}>" for g in r["glossaryTerms"]]
+            for fname, vals in r.get("facets", {}).items():
+                if fname != "status":
+                    p += [f"hsa:{fname} <{b}facet/{fname}/{v}>" for v in vals]
         if r["paragraph"].get("text"):
             p.append(f"skos:definition {turtle_str(r['paragraph']['text'])}")
         if r.get("editorNotes"):
@@ -670,6 +728,14 @@ def write_taxonomy_md(out: dict) -> None:
         if r["altLabels"]:
             lines.append(f"{pad}  <sub>also: {' · '.join(r['altLabels'])}</sub>  ")
         meta = f"`{r['id']}`" if r["kind"] == "group" else f"`{r['id']}` · {score(r)} · {flags(r)}"
+        fx = r.get("facets", {})
+        if fx:
+            lab = lambda f, v: out["facets"][f]["values"][v]["label"]
+            meta += " · 🕒 " + ", ".join(lab("timeOfDay", v) for v in fx["timeOfDay"])
+            meta += " · ⚙️ " + ", ".join(lab("mechanism", v) for v in fx["mechanism"])
+            conds = [v for v in fx["condition"] if v != "general"]
+            if conds:
+                meta += " · 🩺 " + ", ".join(lab("condition", v) for v in conds)
         elsewhere = [p for p in r["broader"] if p in by_id and by_id[p]["categoryPath"][1]["id"] != sub_id]
         if elsewhere:
             meta += " · ↑ part of " + ", ".join(f"`{p}` ({by_id[p]['categoryPath'][1]['id']})" for p in elsewhere)
@@ -730,7 +796,16 @@ def write_taxonomy_md(out: dict) -> None:
     for r in items:
         if r["kind"] == "myth":
             md += [f"- **{r['plain']}**  ", f"  <sub>`{r['id']}` · “{r['sourceWording']}” · {flags(r)}</sub>"]
-    md += ["", "## Merged", ""]
+    md += ["", "## Browse by facet", "",
+           "Drafted by Claude, unreviewed. Mechanism is how the sources say the advice works, not proof that it does.", ""]
+    for fname, f in out["facets"].items():
+        md += [f"### {f['label']}", ""]
+        for vid, v in f["values"].items():
+            hits = [r["id"] for r in items if vid in r.get("facets", {}).get(fname, [])]
+            codes = f" (ICD-11 {', '.join(v['icd11'])})" if v.get("icd11") else ""
+            md.append(f"- **{v['label']}**{codes}: {len(hits)} · " + " ".join(f"`{h}`" for h in hits))
+        md.append("")
+    md += ["## Merged", ""]
     for r in merged:
         md.append(f"- `{r['id']}` → `{r['mergedInto']}` (“{r['sourceWording']}”)")
     md.append("")
