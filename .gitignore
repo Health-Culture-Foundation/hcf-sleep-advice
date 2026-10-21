@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Raw Google Doc exports: the wiki also holds survey drafts and third-party survey results
+sources/sam-wiki/*.md
