@@ -1,0 +1,1191 @@
+[
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [],
+    "freeToRead": false,
+    "freeUrl": "https://cks.nice.org.uk/topics/insomnia/management/managing-insomnia/",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "All CKS wording: hypnotic course length (reported secondary as 3-7 days for short-term insomnia), melatonin over-55 wording, referral criteria"
+    ],
+    "notes": "BLOCKED. Important absence: England has NO full NICE clinical guideline on insomnia; CKS + TA77 (2004) + TA922 + HTG624 are the national layer. NHS-UK patient page (row below) is the readable proxy.",
+    "body": "NICE Clinical Knowledge Summaries (CKS)",
+    "guidelineTitle": "Insomnia (CKS topic)",
+    "guidelineYear": null,
+    "status": "unknown - page geo-blocked (UK-only); not read",
+    "condition": "chronic insomnia",
+    "decision": "first-line treatment",
+    "recommendation": "NOT READ. cks.nice.org.uk returns 'CKS is only available in the UK' (HTTP 403) from this location. CKS is the main NICE primary-care source for insomnia drug choice, duration limits and melatonin-over-55 wording. A secondary summary (iatrox.com, not used as evidence) suggests CKS offers CBT-I first and limits Z-drugs to short courses; lead must open the page from a UK IP.",
+    "direction": "no recommendation / insufficient evidence",
+    "strength": "n/a (not read)",
+    "citation": {
+      "authors": "NICE",
+      "title": "Insomnia: Managing insomnia",
+      "journal": "NICE CKS",
+      "year": null,
+      "pmid": "",
+      "doi": "",
+      "url": "https://cks.nice.org.uk/topics/insomnia/management/managing-insomnia/"
+    },
+    "whatWasRead": "not read (blocked)"
+  },
+  {
+    "country": "UK",
+    "layer": "pathway",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.nhs.uk/conditions/insomnia/",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "OTC sleep aids '1 to 2 weeks' max",
+      "pills 'a few days, or weeks at the most'"
+    ],
+    "notes": "Patient-facing summary of the England pathway: self-help -> GP -> CBT-I (in person or digital) -> short hypnotic course; sleep clinic only for suspected other sleep disorders.",
+    "body": "NHS (nhs.uk, NHS England patient information)",
+    "guidelineTitle": "Insomnia",
+    "guidelineYear": 2024,
+    "status": "current (reviewed 19 Mar 2024, next review 19 Mar 2027)",
+    "condition": "chronic insomnia",
+    "decision": "stepped care",
+    "recommendation": "See a GP if changing sleep habits has not helped, 'you've had trouble sleeping for months', or it affects daily life. GP may offer CBT 'face-to-face with a therapist, or through an online self-help programme'. May refer to a sleep clinic if symptoms of another sleep disorder such as sleep apnoea. 'GPs now rarely prescribe sleeping pills'; they are 'only prescribed for a few days, or weeks at the most' if insomnia is very bad or other treatments have not worked. Over-the-counter sleep aids 'may help you sleep better for 1 to 2 weeks. They should not be taken for any longer.'",
+    "direction": "recommend",
+    "strength": "patient information (not graded)",
+    "citation": {
+      "authors": "NHS",
+      "title": "Insomnia",
+      "journal": "nhs.uk",
+      "year": 2024,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nhs.uk/conditions/insomnia/"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "zolpidem",
+      "zopiclone",
+      "zaleplon",
+      "temazepam",
+      "shorter-acting benzodiazepines"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ta77",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "Published 28 April 2004",
+      "last reviewed 31 August 2010"
+    ],
+    "notes": "Zaleplon 'no longer has a marketing authorisation in the UK'. TA77 sets no week limit itself; it defers to the licence (SmPC: max 4 weeks incl. taper). Zopiclone controlled-drug change: Misuse of Drugs Act amendments in force 10 June 2014 (per TA77 page). 20+ years old: the oldest live national insomnia drug guidance in this dataset.",
+    "body": "NICE",
+    "guidelineTitle": "Guidance on the use of zaleplon, zolpidem and zopiclone for the short-term management of insomnia (TA77)",
+    "guidelineYear": 2004,
+    "status": "stale (published 28 Apr 2004; last reviewed 31 Aug 2010, 'found nothing new'); still listed as current",
+    "condition": "chronic insomnia",
+    "decision": "Z-drugs",
+    "recommendation": "When, after due consideration of non-drug measures, hypnotic therapy is appropriate for 'severe insomnia interfering with normal daily life', hypnotics 'should be prescribed for short periods of time only, in strict accordance with their licensed indications'. Because of 'the lack of compelling evidence to distinguish between zolpidem, zopiclone or the shorter-acting benzodiazepine hypnotics', prescribe the one with the lowest purchase cost. Switch only for adverse effects of a specific agent; 'Patients who have not responded to 1 of these hypnotic drugs should not be prescribed any of the others.'",
+    "direction": "suggest (weak/conditional for)",
+    "strength": "NICE TA: recommended (short-term only)",
+    "citation": {
+      "authors": "NICE",
+      "title": "Guidance on the use of zaleplon, zolpidem and zopiclone for the short-term management of insomnia (TA77)",
+      "journal": "NICE technology appraisal guidance",
+      "year": 2004,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ta77"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "zopiclone"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.medicines.org.uk/emc/product/2855/smpc",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "max 4 weeks including taper",
+      "SmPC revision date 11/02/2026"
+    ],
+    "notes": "Prescription only medicine. The tailored-taper wording appears to follow the MHRA Jan 2026 review (row below).",
+    "body": "MHRA-approved product licence (SmPC) - zopiclone (Zimovane)",
+    "guidelineTitle": "Zimovane 7.5mg film-coated tablets SmPC",
+    "guidelineYear": 2026,
+    "status": "current (text revised 11/02/2026)",
+    "condition": "chronic insomnia",
+    "decision": "duration limit",
+    "recommendation": "'Treatment should be as short as possible and should not exceed four weeks including the period of tapering off. Extension beyond the maximum treatment period should not take place without re-evaluation of the patient's status, since the risk of abuse and dependence increases with the duration of treatment.' 'Elderly should be given a reduced dose.' New taper wording: schedule 'should be tailored to the individual'.",
+    "direction": "regulatory fact",
+    "strength": "Licence (SmPC)",
+    "citation": {
+      "authors": "Marketing authorisation holder (MHRA-approved SmPC via emc)",
+      "title": "Zimovane 7.5mg film-coated tablets - SmPC",
+      "journal": "Summary of Product Characteristics",
+      "year": 2026,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.medicines.org.uk/emc/product/2855/smpc"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "zolpidem"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.medicines.org.uk/emc/product/3975/smpc",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "max 4 weeks incl. taper",
+      "5 mg in elderly"
+    ],
+    "notes": "Prescription only medicine.",
+    "body": "MHRA-approved product licence (SmPC) - zolpidem",
+    "guidelineTitle": "Zolpidem Tartrate 10mg Tablets SmPC",
+    "guidelineYear": 2025,
+    "status": "current (text revised 21/11/2025)",
+    "condition": "chronic insomnia",
+    "decision": "duration limit",
+    "recommendation": "Same 4-week cap as zopiclone ('should not exceed four weeks including the period of tapering off'). 'Elderly or debilitated patients may be especially sensitive... therefore a 5 mg dose is recommended.'",
+    "direction": "regulatory fact",
+    "strength": "Licence (SmPC)",
+    "citation": {
+      "authors": "Marketing authorisation holder (MHRA-approved SmPC via emc)",
+      "title": "Zolpidem Tartrate 10mg Tablets - SmPC",
+      "journal": "Summary of Product Characteristics",
+      "year": 2025,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.medicines.org.uk/emc/product/3975/smpc"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "temazepam"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.medicines.org.uk/emc/product/9479/smpc",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "4 weeks incl. taper"
+    ],
+    "notes": "BNF hypnotics/anxiolytics treatment summary (which carries the old CSM benzodiazepine advice) was NOT readable - bnf.nice.org.uk is UK-only (403).",
+    "body": "MHRA-approved product licence (SmPC) - temazepam",
+    "guidelineTitle": "Temazepam 10mg/5ml Oral Solution SmPC",
+    "guidelineYear": 2022,
+    "status": "current (text revised 31/08/2022)",
+    "condition": "chronic insomnia",
+    "decision": "benzodiazepines",
+    "recommendation": "'Treatment should if possible be intermittent. The lowest dose which can control symptoms should be used. It should not be continued beyond 4 weeks.' Duration 'should not exceed 4 weeks for insomnia, including tapering off process.' Elderly: 'Half the normal dose... may be sufficient'.",
+    "direction": "regulatory fact",
+    "strength": "Licence (SmPC)",
+    "citation": {
+      "authors": "Marketing authorisation holder (MHRA-approved SmPC via emc)",
+      "title": "Temazepam 10mg/5ml Oral Solution - SmPC",
+      "journal": "Summary of Product Characteristics",
+      "year": 2022,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.medicines.org.uk/emc/product/9479/smpc"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "zopiclone",
+      "zolpidem",
+      "benzodiazepines"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.gov.uk/drug-safety-update/improving-information-supplied-with-gabapentinoids-pregabalin-slash-gabapentin-benzodiazepines-and-z-drugs",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "published 8 January 2026"
+    ],
+    "notes": "Newest UK regulatory action on hypnotics. Earlier MHRA items: 'Benzodiazepines and opioids: reminder of risk of potentially fatal respiratory depression' (2020).",
+    "body": "Medicines and Healthcare products Regulatory Agency (MHRA)",
+    "guidelineTitle": "Improving information supplied with gabapentinoids (pregabalin/gabapentin), benzodiazepines and z-drugs (Drug Safety Update)",
+    "guidelineYear": 2026,
+    "status": "current (published 8 Jan 2026)",
+    "condition": "chronic insomnia",
+    "decision": "deprescribing",
+    "recommendation": "All three classes 'are known to pose risks of addiction, dependency, withdrawal and tolerance'; product information and packaging get strengthened warnings. 'Prior to starting treatment with these medicines, a discussion should be held with patients to put in place a strategy for reducing or ending treatment.' Taper gradually: 'Tapering from a high dose may take weeks or months.' Points to NICE NG215.",
+    "direction": "regulatory fact",
+    "strength": "MHRA safety advice",
+    "citation": {
+      "authors": "MHRA",
+      "title": "Improving Information Supplied with Gabapentinoids (Pregabalin/Gabapentin), Benzodiazepines and Z-Drugs",
+      "journal": "Drug Safety Update",
+      "year": 2026,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.gov.uk/drug-safety-update/improving-information-supplied-with-gabapentinoids-pregabalin-slash-gabapentin-benzodiazepines-and-z-drugs"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "benzodiazepines",
+      "zopiclone",
+      "zolpidem"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ng215",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "last reviewed 20 April 2022"
+    ],
+    "notes": "Grew out of the PHE 2019 prescribed medicines review. Overview only read.",
+    "body": "NICE",
+    "guidelineTitle": "Medicines associated with dependence or withdrawal symptoms: safe prescribing and withdrawal management for adults (NG215)",
+    "guidelineYear": 2022,
+    "status": "current (published/last reviewed 20 Apr 2022)",
+    "condition": "chronic insomnia",
+    "decision": "deprescribing",
+    "recommendation": "Covers 'general principles for prescribing and managing withdrawal from opioids, benzodiazepines, gabapentinoids, Z-drugs and antidepressants in primary and secondary care.' (Detailed recommendations not extracted here.)",
+    "direction": "recommend",
+    "strength": "NICE guideline",
+    "citation": {
+      "authors": "NICE",
+      "title": "Medicines associated with dependence or withdrawal symptoms (NG215)",
+      "journal": "NICE guideline",
+      "year": 2022,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ng215"
+    },
+    "whatWasRead": "summary page"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "benzodiazepines",
+      "zopiclone",
+      "zolpidem"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.gov.uk/government/publications/prescribed-medicines-review-report/prescribed-medicines-review-summary",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "1.4 million (3%) benzodiazepines 2017-18",
+      "1.0 million (2%) Z-drugs",
+      "120,000 / 100,000 continuous users Apr 2015-Mar 2018",
+      "11.5 million adults (26%) any reviewed medicine",
+      "5% of benzodiazepine starters still on at 12 months (June 2015 cohort)"
+    ],
+    "notes": "Brief suggested 'Royal College of Psychiatrists / PHE' - the report is PHE's; RCPsych was not checked as co-author.",
+    "body": "Public Health England (now OHID)",
+    "guidelineTitle": "Prescribed medicines review: summary",
+    "guidelineYear": 2019,
+    "status": "report (2019; page updated 3 Dec 2020)",
+    "condition": "chronic insomnia",
+    "decision": "deprescribing",
+    "recommendation": "In 2017-18, 1.4 million adults in England (3%) were dispensed benzodiazepines and 1.0 million (2%) Z-drugs. Continuously prescribed April 2015-March 2018: benzodiazepines 120,000; Z-drugs 100,000. 'Clinical guidelines specify that benzodiazepines should not usually be prescribed for longer than 2 to 4 weeks.' Benzodiazepine prescriptions keep falling; Z-drug rise 'started to reverse in 2014'.",
+    "direction": "regulatory fact",
+    "strength": "government evidence review (not graded)",
+    "citation": {
+      "authors": "Public Health England",
+      "title": "Prescribed medicines review: summary",
+      "journal": "GOV.UK",
+      "year": 2019,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.gov.uk/government/publications/prescribed-medicines-review-report/prescribed-medicines-review-summary"
+    },
+    "whatWasRead": "summary page"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.bap.org.uk/pdfs/BAP_Guidelines-Sleep.pdf",
+    "conflictsOfInterest": "Paper states: 'The author(s) declared no potential conflicts of interest' and 'received no financial support'. Note: co-author Colin Espie is listed with a Big Health Ltd (Sleepio maker) affiliation in a 2021 PubMed record (PMID 34246110); the BAP paper itself declares none. Treat as a COI to verify.",
+    "numbersToVerify": [],
+    "notes": "NICE HTG624 cites this BAP statement as the UK clinical pathway.",
+    "body": "British Association for Psychopharmacology (BAP)",
+    "guidelineTitle": "British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, parasomnias and circadian rhythm disorders: An update",
+    "guidelineYear": 2019,
+    "status": "stale (consensus meeting Oct 2017, published 2019; no newer BAP sleep update found on PubMed as of Oct 2026)",
+    "condition": "chronic insomnia",
+    "decision": "CBT-I",
+    "recommendation": "'CBT-based treatment packages for chronic insomnia including sleep restriction and stimulus control are effective and therefore should be offered to patients as a first-line treatment (A).' 'Both face to face CBTi and dCBTi are efficacious (A).'",
+    "direction": "recommend",
+    "strength": "BAP grade A",
+    "citation": {
+      "authors": "Wilson S, Anderson K, Baldwin D, Dijk DJ, Espie A, Espie C, Gringras P, Krystal A, Nutt D, Selsick H, Sharpley A",
+      "title": "British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, parasomnias and circadian rhythm disorders: An update",
+      "journal": "J Psychopharmacol 33(8):923-947",
+      "year": 2019,
+      "pmid": "31271339",
+      "doi": "10.1177/0269881119855343",
+      "url": "https://doi.org/10.1177/0269881119855343"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "zolpidem",
+      "eszopiclone",
+      "temazepam",
+      "ramelteon"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.bap.org.uk/pdfs/BAP_Guidelines-Sleep.pdf",
+    "conflictsOfInterest": "Paper states: 'The author(s) declared no potential conflicts of interest' and 'received no financial support'. Note: co-author Colin Espie is listed with a Big Health Ltd (Sleepio maker) affiliation in a 2021 PubMed record (PMID 34246110); the BAP paper itself declares none. Treat as a COI to verify.",
+    "numbersToVerify": [
+      "'3–4 weeks' wording",
+      "~40% resumed benzodiazepine use at 2-year follow-up (cited Belanger 2005)"
+    ],
+    "notes": "DISAGREES in spirit with UK licences (4-week cap) and TA77 'short periods only': BAP allows longer use when clinically indicated.",
+    "body": "British Association for Psychopharmacology (BAP)",
+    "guidelineTitle": "British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, parasomnias and circadian rhythm disorders: An update",
+    "guidelineYear": 2019,
+    "status": "stale (2019)",
+    "condition": "chronic insomnia",
+    "decision": "duration limit",
+    "recommendation": "Long-term use: 'Use as clinically indicated (A).' 'In general, hypnotic discontinuation should be based on slowly tapering off medication (A).' 'CBTi during taper improves outcome (A).' Text: 'The available evidence does not suggest there is an unfavourable risk/benefit transition at 3–4 weeks for any agent.'",
+    "direction": "suggest (weak/conditional for)",
+    "strength": "BAP grade A",
+    "citation": {
+      "authors": "Wilson S, Anderson K, Baldwin D, Dijk DJ, Espie A, Espie C, Gringras P, Krystal A, Nutt D, Selsick H, Sharpley A",
+      "title": "British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, parasomnias and circadian rhythm disorders: An update",
+      "journal": "J Psychopharmacol 33(8):923-947",
+      "year": 2019,
+      "pmid": "31271339",
+      "doi": "10.1177/0269881119855343",
+      "url": "https://doi.org/10.1177/0269881119855343"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "zolpidem",
+      "zopiclone",
+      "melatonin",
+      "doxepin",
+      "trazodone",
+      "quetiapine",
+      "diphenhydramine",
+      "promethazine"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.bap.org.uk/pdfs/BAP_Guidelines-Sleep.pdf",
+    "conflictsOfInterest": "Paper states: 'The author(s) declared no potential conflicts of interest' and 'received no financial support'. Note: co-author Colin Espie is listed with a Big Health Ltd (Sleepio maker) affiliation in a 2021 PubMed record (PMID 34246110); the BAP paper itself declares none. Treat as a COI to verify.",
+    "numbersToVerify": [],
+    "notes": "Predates orexin antagonists in UK: suvorexant noted as not available in Europe; daridorexant not covered (NICE TA922 fills that gap).",
+    "body": "British Association for Psychopharmacology (BAP)",
+    "guidelineTitle": "British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, parasomnias and circadian rhythm disorders: An update",
+    "guidelineYear": 2019,
+    "status": "stale (2019)",
+    "condition": "chronic insomnia",
+    "decision": "first-line treatment",
+    "recommendation": "Drug choice: 'efficacy, safety, and duration of action (A)'; also prior response and 'history of substance abuse or dependence (D)'. Shorter-acting drug (zolpidem or melatonin) for sleep-onset problems, slightly longer (zopiclone) for night waking. Antidepressants: 'Consider drugs for depression when there is co-existent mood disorder (A)'; 'Beware toxicity of TCAs in overdose'. Antipsychotics: 'no indication for use as first-line treatment (D)'. Low-dose doxepin 'is effective in insomnia (A)' but not available in Europe; non-selective antihistamines have 'a limited role (D)'.",
+    "direction": "suggest (weak/conditional for)",
+    "strength": "BAP grades A-D",
+    "citation": {
+      "authors": "Wilson S, Anderson K, Baldwin D, Dijk DJ, Espie A, Espie C, Gringras P, Krystal A, Nutt D, Selsick H, Sharpley A",
+      "title": "British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, parasomnias and circadian rhythm disorders: An update",
+      "journal": "J Psychopharmacol 33(8):923-947",
+      "year": 2019,
+      "pmid": "31271339",
+      "doi": "10.1177/0269881119855343",
+      "url": "https://doi.org/10.1177/0269881119855343"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "melatonin (prolonged-release)"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.bap.org.uk/pdfs/BAP_Guidelines-Sleep.pdf",
+    "conflictsOfInterest": "Paper states: 'The author(s) declared no potential conflicts of interest' and 'received no financial support'. Note: co-author Colin Espie is listed with a Big Health Ltd (Sleepio maker) affiliation in a 2021 PubMed record (PMID 34246110); the BAP paper itself declares none. Treat as a COI to verify.",
+    "numbersToVerify": [
+      "over 55 years"
+    ],
+    "notes": "",
+    "body": "British Association for Psychopharmacology (BAP)",
+    "guidelineTitle": "British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, parasomnias and circadian rhythm disorders: An update",
+    "guidelineYear": 2019,
+    "status": "stale (2019)",
+    "condition": "chronic insomnia",
+    "decision": "melatonin",
+    "recommendation": "Older adults: 'CBTi is effective and should be offered as a first line treatment where available (A).' 'When a hypnotic is indicated in patients over 55 years prolonged release melatonin should be tried first (B).' 'If a GABA-A hypnotic is used then a shorter half-life will minimise unwanted hangover effects (A).'",
+    "direction": "suggest (weak/conditional for)",
+    "strength": "BAP grade B",
+    "citation": {
+      "authors": "Wilson S, Anderson K, Baldwin D, Dijk DJ, Espie A, Espie C, Gringras P, Krystal A, Nutt D, Selsick H, Sharpley A",
+      "title": "British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, parasomnias and circadian rhythm disorders: An update",
+      "journal": "J Psychopharmacol 33(8):923-947",
+      "year": 2019,
+      "pmid": "31271339",
+      "doi": "10.1177/0269881119855343",
+      "url": "https://doi.org/10.1177/0269881119855343"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "melatonin"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.medicines.org.uk/emc/product/2809/smpc",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "aged 55 or over",
+      "2 mg",
+      "up to 13 weeks"
+    ],
+    "notes": "Melatonin is POM in the UK (cannot be sold over the counter), unlike the US/many EU countries. MHRA/BNF legal-status page itself not read (BNF geo-blocked); POM status taken from the SmPC.",
+    "body": "MHRA-approved product licence (SmPC) - Circadin (prolonged-release melatonin)",
+    "guidelineTitle": "Circadin 2mg prolonged-release tablets SmPC",
+    "guidelineYear": 2021,
+    "status": "current",
+    "condition": "chronic insomnia",
+    "decision": "regulatory status",
+    "recommendation": "Legal category: 'Prescription only medicine'. Indicated 'as monotherapy for the short-term treatment of primary insomnia characterised by poor quality of sleep in patients who are aged 55 or over.' Dose '2 mg once daily, 1-2 hours before bedtime and after food. This dosage may be continued for up to thirteen weeks.'",
+    "direction": "regulatory fact",
+    "strength": "Licence (SmPC)",
+    "citation": {
+      "authors": "Marketing authorisation holder (MHRA-approved SmPC via emc)",
+      "title": "Circadin 2mg prolonged-release tablets - SmPC",
+      "journal": "Summary of Product Characteristics",
+      "year": 2021,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.medicines.org.uk/emc/product/2809/smpc"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "daridorexant"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ta922",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "3 nights per week",
+      "at least 3 months",
+      "assess within 3 months",
+      "trial evidence to 12 months"
+    ],
+    "notes": "Company: Idorsia. First NICE-backed long-term insomnia drug - contrasts with 4-week caps on Z-drugs/benzodiazepines.",
+    "body": "NICE",
+    "guidelineTitle": "Daridorexant for treating long-term insomnia (TA922)",
+    "guidelineYear": 2023,
+    "status": "current (published 18 Oct 2023)",
+    "condition": "chronic insomnia",
+    "decision": "orexin antagonists",
+    "recommendation": "'Daridorexant is recommended for treating insomnia in adults with symptoms lasting for 3 nights or more per week for at least 3 months, and whose daytime functioning is considerably affected, only if: cognitive behavioural therapy for insomnia (CBTi) has been tried but not worked, or CBTi is not available or is unsuitable.' 'The length of treatment should be as short as possible. Treatment with daridorexant should be assessed within 3 months of starting and should be stopped in people whose long-term insomnia has not responded adequately.'",
+    "direction": "recommend",
+    "strength": "NICE TA: recommended (restricted)",
+    "citation": {
+      "authors": "NICE",
+      "title": "Daridorexant for treating long-term insomnia (TA922)",
+      "journal": "NICE technology appraisal guidance",
+      "year": 2023,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ta922"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK",
+    "layer": "coverage",
+    "drugs": [
+      "daridorexant"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ta922/chapter/4-Implementation",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "£1.40/day; £42 per 30",
+      "3-month (England) / 2-month (Wales) funding deadline"
+    ],
+    "notes": "Funding is mandatory where the clinician judges it right AND the CBT-I-failed/unavailable condition is met.",
+    "body": "NICE",
+    "guidelineTitle": "Daridorexant for treating long-term insomnia (TA922)",
+    "guidelineYear": 2023,
+    "status": "current",
+    "condition": "chronic insomnia",
+    "decision": "reimbursement: drug",
+    "recommendation": "Integrated care boards and NHS England must comply 'within 3 months of its date of publication'; Wales 'within 2 months' of final draft guidance. Committee: 'daridorexant is recommended for routine use in the NHS'. List price '£1.40 per day (£42 per pack of 30 tablets)'.",
+    "direction": "regulatory fact",
+    "strength": "NICE TA funding direction",
+    "citation": {
+      "authors": "NICE",
+      "title": "Daridorexant for treating long-term insomnia - Implementation and price",
+      "journal": "NICE TA922",
+      "year": 2023,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ta922/chapter/4-Implementation"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK (Scotland)",
+    "layer": "coverage",
+    "drugs": [
+      "daridorexant"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://scottishmedicines.org.uk/medicines-advice/daridorexant-quviviq-full-smc2611/",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "published 08 April 2024"
+    ],
+    "notes": "Same restriction as NICE TA922.",
+    "body": "Scottish Medicines Consortium (SMC)",
+    "guidelineTitle": "daridorexant (Quviviq) SMC2611",
+    "guidelineYear": 2024,
+    "status": "current (advice published 8 Apr 2024)",
+    "condition": "chronic insomnia",
+    "decision": "reimbursement: drug",
+    "recommendation": "'daridorexant (Quviviq®) is accepted for restricted use within NHSScotland.' 'SMC restriction: in patients who have failed cognitive behavioural therapy for insomnia (CBT-I) or for whom CBT-I is unsuitable or unavailable.'",
+    "direction": "regulatory fact",
+    "strength": "SMC: accepted for restricted use",
+    "citation": {
+      "authors": "Scottish Medicines Consortium",
+      "title": "daridorexant (Quviviq) Full SMC2611",
+      "journal": "SMC",
+      "year": 2024,
+      "pmid": "",
+      "doi": "",
+      "url": "https://scottishmedicines.org.uk/medicines-advice/daridorexant-quviviq-full-smc2611/"
+    },
+    "whatWasRead": "summary page"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/htg624",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "£45 per person"
+    ],
+    "notes": "First NICE recommendation for a digital CBT-I product. NICE says face-to-face CBT-I 'availability in the UK is limited'. No NICE early value assessment on other digital CBT-I apps found in NICE search (finding of absence).",
+    "body": "NICE",
+    "guidelineTitle": "Sleepio to treat insomnia and insomnia symptoms (MTG70, now HTG624)",
+    "guidelineYear": 2022,
+    "status": "current (published 20 May 2022; migrated to HTG624, 'recommendations... remain unchanged')",
+    "condition": "chronic insomnia",
+    "decision": "CBT-I",
+    "recommendation": "'Sleepio is recommended as a cost saving option for treating insomnia and insomnia symptoms in primary care for people who would otherwise be offered sleep hygiene or sleeping pills.' Medical assessment first for people at higher risk of other sleep disorders (e.g. pregnancy, comorbidities). More research needed vs face-to-face CBT-I: 'There is no direct evidence of its effectiveness compared with face-to-face CBT-I'.",
+    "direction": "recommend",
+    "strength": "NICE medtech: recommended",
+    "citation": {
+      "authors": "NICE",
+      "title": "Sleepio to treat insomnia and insomnia symptoms (MTG70, now HTG624)",
+      "journal": "NICE medical technologies / HealthTech guidance",
+      "year": 2022,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/htg624"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK",
+    "layer": "coverage",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/htg624",
+    "conflictsOfInterest": "Underlying cost study (Sampson 2022) co-authored by Big Health staff (C Miller, Big Health Inc affiliation).",
+    "numbersToVerify": [
+      "£45 per person",
+      "9 GP practices"
+    ],
+    "notes": "Medtech guidance does not carry the 3-month mandatory funding duty of a TA; local commissioning decides. Underlying study: Sampson C et al. BJGP Open 2022, PMID 34862166, DOI 10.3399/BJGPO.2021.0146 (abstract read): Thames Valley/Buckinghamshire rollout, saving £71,027 over 65 weeks, ~£70.44 per Sleepio user.",
+    "body": "NICE",
+    "guidelineTitle": "Sleepio to treat insomnia and insomnia symptoms (MTG70, now HTG624)",
+    "guidelineYear": 2022,
+    "status": "current",
+    "condition": "chronic insomnia",
+    "decision": "reimbursement: digital CBT-I",
+    "recommendation": "'At a price of £45 per person, Sleepio is cost saving compared with usual treatment in primary care.' Based on 9 GP practices; costs lower at 1 year, 'mostly because of fewer GP appointments and sleeping pills prescribed'.",
+    "direction": "regulatory fact",
+    "strength": "NICE medtech cost case",
+    "citation": {
+      "authors": "NICE",
+      "title": "Sleepio to treat insomnia and insomnia symptoms (MTG70, now HTG624)",
+      "journal": "NICE medical technologies / HealthTech guidance",
+      "year": 2022,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/htg624"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK (Scotland)",
+    "layer": "pathway",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.nhsinform.scot/illnesses-and-conditions/mental-health/insomnia/",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "Year Sleepio became free nationally in Scotland (not confirmed here; often cited as 2020)"
+    ],
+    "notes": "Scotland offers direct self-referral to digital CBT-I with no GP step - a pathway difference from England, where access to Sleepio depends on local commissioning.",
+    "body": "NHS 24 / NHS inform",
+    "guidelineTitle": "Insomnia (NHS inform)",
+    "guidelineYear": 2026,
+    "status": "current (last updated 25 Mar 2026)",
+    "condition": "chronic insomnia",
+    "decision": "stepped care",
+    "recommendation": "Self-help first (CBT-based self-help guide; 'You could try an online course like Sleepio' with a free NHS inform sign-up link). If habits don't help: 'your GP may refer you for... CBT-I'. Medication 'can be effective in the short term but it can also cause insomnia to get worse, cause addiction, or other side effects.'",
+    "direction": "recommend",
+    "strength": "patient information (not graded)",
+    "citation": {
+      "authors": "NHS 24",
+      "title": "Insomnia",
+      "journal": "NHS inform",
+      "year": 2026,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/mental-health/insomnia/"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK",
+    "layer": "pathway",
+    "drugs": [],
+    "freeToRead": false,
+    "freeUrl": "https://doi.org/10.1016/j.brat.2021.103922",
+    "conflictsOfInterest": "Stott, Miller and Espie list Big Health Ltd affiliations (PubMed record).",
+    "numbersToVerify": [],
+    "notes": "Insomnia is not, as far as verified, a stand-alone NHS Talking Therapies problem descriptor - check the manual. Waiting-time pledge for Talking Therapies: 75% start within 6 weeks, 95% within 18 weeks (NHS Constitution handbook).",
+    "body": "NHS England / NHS Talking Therapies (formerly IAPT)",
+    "guidelineTitle": "Adjunctive Sleepio in an IAPT service (service evaluation)",
+    "guidelineYear": 2021,
+    "status": "evidence of local practice, not national policy",
+    "condition": "chronic insomnia",
+    "decision": "stepped care",
+    "recommendation": "One NHS talking therapies service (Oxford Health) offered Sleepio to all patients endorsing a 'poor sleep' item at assessment for 12 months, in addition to routine care. National NHS Talking Therapies manual's position on insomnia was NOT read (england.nhs.uk bot-blocked).",
+    "direction": "no recommendation / insufficient evidence",
+    "strength": "observational study",
+    "citation": {
+      "authors": "Stott R, Pimm J, Emsley R, Miller CB, Espie CA",
+      "title": "Does adjunctive digital CBT for insomnia improve clinical outcomes in an improving access to psychological therapies service?",
+      "journal": "Behav Res Ther 144:103922",
+      "year": 2021,
+      "pmid": "34246110",
+      "doi": "10.1016/j.brat.2021.103922",
+      "url": "https://doi.org/10.1016/j.brat.2021.103922"
+    },
+    "whatWasRead": "abstract"
+  },
+  {
+    "country": "UK",
+    "layer": "pathway",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.gov.uk/government/publications/supplements-to-the-nhs-constitution-for-england/the-handbook-to-the-nhs-constitution-for-england",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "18 weeks RTT",
+      "6 weeks diagnostic",
+      "Whether 'sleep studies' are one of the DM01 monitored diagnostic tests (NHS England stats page bot-blocked)"
+    ],
+    "notes": "Applies to England only. Not-consultant-led services are excluded. Actual sleep-service performance against 18 weeks not checked.",
+    "body": "NHS England (NHS Constitution handbook)",
+    "guidelineTitle": "The handbook to the NHS Constitution for England",
+    "guidelineYear": 2025,
+    "status": "current (updated 24 Jan 2025)",
+    "condition": "other",
+    "decision": "waiting time",
+    "recommendation": "Legal right to 'start your consultant-led treatment within a maximum of 18 weeks from referral for non-urgent conditions' (applies to consultant-led sleep services). Pledge: 'patients waiting for a diagnostic test should have been waiting less than 6 weeks from referral'. NHS talking therapies: '75%... within 6 weeks... 95%... within 18 weeks'.",
+    "direction": "regulatory fact",
+    "strength": "statutory right / pledge",
+    "citation": {
+      "authors": "Department of Health and Social Care",
+      "title": "The handbook to the NHS Constitution for England",
+      "journal": "GOV.UK",
+      "year": 2025,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.gov.uk/government/publications/supplements-to-the-nhs-constitution-for-england/the-handbook-to-the-nhs-constitution-for-england"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "Ireland",
+    "layer": "guideline",
+    "drugs": [
+      "zopiclone",
+      "zolpidem",
+      "benzodiazepines"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.drugsandalcohol.ie/34248/1/guidance-on-appropriate-prescribing-of-bzra-feb-2021.pdf",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "few days to two weeks (MMP)",
+      "2-4 weeks (DoH 2002)",
+      "max 4 weeks incl. taper (SmPC)"
+    ],
+    "notes": "Original HSE URL now 404; read via the Irish Health Research Board drugsandalcohol.ie repository copy. Ireland: stricter default (2 weeks) than UK licences (4 weeks). Zopiclone/zolpidem are Schedule 4 Part 1 controlled drugs in Ireland. No Irish national OSA guideline found.",
+    "body": "HSE Medicines Management Programme (MMP)",
+    "guidelineTitle": "Guidance on appropriate prescribing of benzodiazepines and z-drugs (BZRA) for the treatment of anxiety and insomnia",
+    "guidelineYear": 2021,
+    "status": "stale (v1 Feb 2018; v1.1 Feb 2021)",
+    "condition": "chronic insomnia",
+    "decision": "duration limit",
+    "recommendation": "'The MMP recommends that BZRA should only be prescribed for a period of a few days to two weeks for the treatment of insomnia.' Cites DoH Good Practice Guidelines (2002): hypnotic benzodiazepine prescriptions 'limited to between 2 - 4 weeks'; 'Do not prescribe for longer than four weeks'. 'Zolpidem should only be prescribed for patients with sleep-onset insomnia'; 'Zopiclone is suitable for continuous sleep disturbance.' First line: 'The MMP recommends The Good Sleep Guide as a first-line treatment for insomnia in new patients.'",
+    "direction": "recommend against",
+    "strength": "national prescribing guidance (not graded)",
+    "citation": {
+      "authors": "HSE Medicines Management Programme (approved Prof. Michael Barry)",
+      "title": "Guidance on appropriate prescribing of benzodiazepines and z-drugs (BZRA) for the treatment of anxiety and insomnia, v1.1",
+      "journal": "HSE",
+      "year": 2021,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.drugsandalcohol.ie/34248/1/guidance-on-appropriate-prescribing-of-bzra-feb-2021.pdf"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [],
+    "notes": "Published 20 Aug 2021; only change since: 'March 2025: Links were updated' (obesity guideline). Not yet 5 years old as of Oct 2026 but approaching; no update announced on the page. Home polygraphy first; lab polysomnography is a fallback, not the default.",
+    "body": "NICE",
+    "guidelineTitle": "Obstructive sleep apnoea/hypopnoea syndrome and obesity hypoventilation syndrome in over 16s (NG202)",
+    "guidelineYear": 2021,
+    "status": "current (20 Aug 2021; links updated Mar 2025)",
+    "condition": "obstructive sleep apnea",
+    "decision": "diagnosis: home sleep apnea test",
+    "recommendation": "1.3.1 'Offer home respiratory polygraphy to people with suspected OSAHS.' 1.3.2 'If access to home respiratory polygraphy is limited, consider home oximetry' (may be inaccurate with heart failure or chronic lung disease). 1.3.3/1.3.5 Consider polygraphy or polysomnography if results are negative but symptoms are significant/continue. 1.1.3 Use Epworth; consider STOP-Bang; 1.1.4 do not use Epworth alone to decide referral.",
+    "direction": "recommend",
+    "strength": "NICE: offer (strong) / consider (weaker)",
+    "citation": {
+      "authors": "NICE (developed by National Guideline Centre, Royal College of Physicians)",
+      "title": "Obstructive sleep apnoea/hypopnoea syndrome and obesity hypoventilation syndrome in over 16s (NG202)",
+      "journal": "NICE guideline",
+      "year": 2021,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "pathway",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [],
+    "notes": "NICE sets priority groups but no time target for 'rapid'. Diagnosis and CPAP set-up sit with the specialist sleep service (GP refers; sleep service tests and supplies CPAP).",
+    "body": "NICE",
+    "guidelineTitle": "Obstructive sleep apnoea/hypopnoea syndrome and obesity hypoventilation syndrome in over 16s (NG202)",
+    "guidelineYear": 2021,
+    "status": "current",
+    "condition": "obstructive sleep apnea",
+    "decision": "referral criteria",
+    "recommendation": "Referral letter should include assessment scores, how sleepiness affects the person, comorbidities, occupational risk, oxygen saturation/blood gases. 1.2.2 'prioritise people with suspected OSAHS for rapid assessment if': 'vocational driving job'; job where 'vigilance is critical for safety'; 'unstable cardiovascular disease' (e.g. poorly controlled arrhythmia, nocturnal angina, treatment-resistant hypertension); pregnant; 'preoperative assessment for major surgery'; non-arteritic anterior ischaemic optic neuropathy.",
+    "direction": "recommend",
+    "strength": "NICE",
+    "citation": {
+      "authors": "NICE (developed by National Guideline Centre, Royal College of Physicians)",
+      "title": "Obstructive sleep apnoea/hypopnoea syndrome and obesity hypoventilation syndrome in over 16s (NG202)",
+      "journal": "NICE guideline",
+      "year": 2021,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "telemonitoring up to 12 months"
+    ],
+    "notes": "Fixed-level CPAP is the NICE default, auto-CPAP the exception - opposite of common US practice. 1.5.2 replaced TA139's mild-OSA recommendation.",
+    "body": "NICE",
+    "guidelineTitle": "Obstructive sleep apnoea/hypopnoea syndrome and obesity hypoventilation syndrome in over 16s (NG202)",
+    "guidelineYear": 2021,
+    "status": "current",
+    "condition": "obstructive sleep apnea",
+    "decision": "CPAP",
+    "recommendation": "Moderate/severe: 1.6.1 'Offer fixed-level CPAP, in addition to lifestyle advice'. Mild with symptoms affecting quality of life/daytime activity: 1.5.2 offer fixed-level CPAP with lifestyle advice if any priority factor, or 'if lifestyle advice alone has been unsuccessful or is considered inappropriate'. Mild without symptoms: 'treatment is not usually needed'. Telemonitoring: 'Offer... for up to 12 months'. Auto-CPAP only in listed situations (e.g. intolerance, or same/lower cost). Heated humidification for dryness/rhinitis.",
+    "direction": "recommend",
+    "strength": "NICE: offer",
+    "citation": {
+      "authors": "NICE (developed by National Guideline Centre, Royal College of Physicians)",
+      "title": "Obstructive sleep apnoea/hypopnoea syndrome and obesity hypoventilation syndrome in over 16s (NG202)",
+      "journal": "NICE guideline",
+      "year": 2021,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "coverage",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ta139",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "published 26 March 2008",
+      "updated 20 August 2021"
+    ],
+    "notes": "Because TA139 is a technology appraisal, NHS commissioners are legally required to fund CPAP for moderate/severe symptomatic OSAHS. No national CPAP-adherence condition for continued funding (unlike the US Medicare rule) was found in NICE documents; NG202 1.9.9 only asks clinicians to review adherence.",
+    "body": "NICE",
+    "guidelineTitle": "Continuous positive airway pressure for the treatment of obstructive sleep apnoea/hypopnoea syndrome (TA139)",
+    "guidelineYear": 2008,
+    "status": "current but partly superseded (published 26 Mar 2008; last updated 20 Aug 2021 - mild-OSA rec replaced by NG202 1.5.2)",
+    "condition": "obstructive sleep apnea",
+    "decision": "CPAP",
+    "recommendation": "CPAP 'is recommended as a treatment option for adults with moderate or severe symptomatic OSAHS' (as quoted in NG202). The mild-OSAHS recommendation 'has been updated and replaced by recommendation 1.5.2' of NG202.",
+    "direction": "recommend",
+    "strength": "NICE TA: recommended",
+    "citation": {
+      "authors": "NICE",
+      "title": "Continuous positive airway pressure for the treatment of obstructive sleep apnoea/hypopnoea syndrome (TA139)",
+      "journal": "NICE technology appraisal guidance",
+      "year": 2008,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ta139"
+    },
+    "whatWasRead": "summary page"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "aged 18 and over",
+      "follow-up at 3 months"
+    ],
+    "notes": "Second-line only, after CPAP. Who funds/provides splints on the NHS (often not on NHS dental contract) not verified.",
+    "body": "NICE",
+    "guidelineTitle": "Obstructive sleep apnoea/hypopnoea syndrome and obesity hypoventilation syndrome in over 16s (NG202)",
+    "guidelineYear": 2021,
+    "status": "current",
+    "condition": "obstructive sleep apnea",
+    "decision": "oral appliance",
+    "recommendation": "If unable to tolerate or declines CPAP (mild with symptoms, or moderate/severe): 'consider a customised or semi-customised mandibular advancement splint as an alternative to CPAP' if 'aged 18 and over' and 'optimal dental and periodontal health'. Semi-customised may be inappropriate with active periodontal disease, few/no teeth, or generalised tonic-clonic seizures. Follow-up at 3 months.",
+    "direction": "suggest (weak/conditional for)",
+    "strength": "NICE: consider",
+    "citation": {
+      "authors": "NICE (developed by National Guideline Centre, Royal College of Physicians)",
+      "title": "Obstructive sleep apnoea/hypopnoea syndrome and obesity hypoventilation syndrome in over 16s (NG202)",
+      "journal": "NICE guideline",
+      "year": 2021,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "BMI < 35 kg/m2"
+    ],
+    "notes": "",
+    "body": "NICE",
+    "guidelineTitle": "Obstructive sleep apnoea/hypopnoea syndrome and obesity hypoventilation syndrome in over 16s (NG202)",
+    "guidelineYear": 2021,
+    "status": "current",
+    "condition": "obstructive sleep apnea",
+    "decision": "surgery",
+    "recommendation": "1.7.3 'Consider tonsillectomy for people with OSAHS who have large obstructive tonsils and a body mass index (BMI) of less than 35 kg/m2.' 1.7.4 'Consider referral for assessment for oropharyngeal surgery in people with severe OSAHS who have been unable to tolerate CPAP and a customised mandibular advancement splint despite medically supervised attempts.' Positional modifier: consider in mild/moderate positional OSAHS if other treatments unsuitable; 'unlikely to be effective in severe OSAHS'.",
+    "direction": "suggest (weak/conditional for)",
+    "strength": "NICE: consider",
+    "citation": {
+      "authors": "NICE (developed by National Guideline Centre, Royal College of Physicians)",
+      "title": "Obstructive sleep apnoea/hypopnoea syndrome and obesity hypoventilation syndrome in over 16s (NG202)",
+      "journal": "NICE guideline",
+      "year": 2021,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "at least 2 weeks without treatment before re-evaluation"
+    ],
+    "notes": "",
+    "body": "NICE",
+    "guidelineTitle": "Obstructive sleep apnoea/hypopnoea syndrome and obesity hypoventilation syndrome in over 16s (NG202)",
+    "guidelineYear": 2021,
+    "status": "current",
+    "condition": "obstructive sleep apnea",
+    "decision": "weight loss",
+    "recommendation": "1.4.1 'Discuss appropriate lifestyle changes with all people with OSAHS. Provide support and information on losing weight, stopping smoking, reducing alcohol intake and improving sleep hygiene'. 1.9.11 'Consider stopping treatment if OSAHS may have resolved, for example, with significant weight loss' - re-check after at least 2 weeks off treatment.",
+    "direction": "recommend",
+    "strength": "NICE",
+    "citation": {
+      "authors": "NICE (developed by National Guideline Centre, Royal College of Physicians)",
+      "title": "Obstructive sleep apnoea/hypopnoea syndrome and obesity hypoventilation syndrome in over 16s (NG202)",
+      "journal": "NICE guideline",
+      "year": 2021,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome"
+    },
+    "whatWasRead": "full text"
+  },
+  {
+    "country": "UK",
+    "layer": "coverage",
+    "drugs": [
+      "tirzepatide"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ta1026/chapter/1-Recommendations",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "BMI >= 35 + 1 comorbidity",
+      "phase dates June 2026 / March 2027",
+      "5 qualifying comorbidities incl. OSA",
+      "stop-rule <5% weight loss at 6 months"
+    ],
+    "notes": "As of Oct 2026 NICE search for 'tirzepatide sleep apnoea' returned no OSA-indication TA (published or in development). In England OSA counts toward obesity-drug eligibility rather than being a treatment indication. TA1026 published 23 Dec 2024.",
+    "body": "NICE",
+    "guidelineTitle": "Tirzepatide for managing overweight and obesity (TA1026)",
+    "guidelineYear": 2024,
+    "status": "current (published 23 Dec 2024; last updated 1 Sep 2025); NO OSA-specific tirzepatide appraisal found",
+    "condition": "obstructive sleep apnea",
+    "decision": "GLP-1 / tirzepatide",
+    "recommendation": "Tirzepatide recommended for obesity only with 'initial BMI of at least 35 kg/m2 and at least 1 weight-related comorbidity' (BMI threshold 2.5 lower for some ethnic groups). NHS England phased rollout lists obstructive sleep apnoea as one of 5 qualifying comorbidities: now = 4+ comorbidities and BMI >= 40; 'From around June 2026' 4+ and BMI 35-39.9; 'From around March 2027' 3 and BMI >= 40.",
+    "direction": "regulatory fact",
+    "strength": "NICE TA (obesity indication, not OSA)",
+    "citation": {
+      "authors": "NICE",
+      "title": "Tirzepatide for managing overweight and obesity (TA1026)",
+      "journal": "NICE technology appraisal guidance",
+      "year": 2024,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ta1026/chapter/1-Recommendations"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/htg455/chapter/1-Recommendations",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [],
+    "notes": "Nearly 9 years old; US/German practice uses HNS routinely in selected patients. Not in NG202 recommendations.",
+    "body": "NICE",
+    "guidelineTitle": "Hypoglossal nerve stimulation for moderate to severe obstructive sleep apnoea (IPG598, now HTG455)",
+    "guidelineYear": 2017,
+    "status": "stale (published 22 Nov 2017; moved to HTG455, 'The guidance itself has not changed')",
+    "condition": "obstructive sleep apnea",
+    "decision": "surgery",
+    "recommendation": "Evidence 'is limited in quantity and quality. Therefore, this procedure should only be used with special arrangements for clinical governance, consent and audit or research.' Patient selection by clinicians 'with special expertise in the management of obstructive sleep apnoea'.",
+    "direction": "no recommendation / insufficient evidence",
+    "strength": "NICE IPG: special arrangements",
+    "citation": {
+      "authors": "NICE",
+      "title": "Hypoglossal nerve stimulation for moderate to severe obstructive sleep apnoea (IPG598 / HTG455)",
+      "journal": "NICE interventional procedures guidance",
+      "year": 2017,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/htg455/chapter/1-Recommendations"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK",
+    "layer": "coverage",
+    "drugs": [
+      "pitolisant",
+      "solriamfetol"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ta776",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [],
+    "notes": "Second URL: https://www.nice.org.uk/guidance/ta777",
+    "body": "NICE",
+    "guidelineTitle": "Pitolisant (TA776) and solriamfetol (TA777) for excessive daytime sleepiness caused by OSA",
+    "guidelineYear": 2022,
+    "status": "current (9 Mar 2022)",
+    "condition": "obstructive sleep apnea",
+    "decision": "reimbursement: drug",
+    "recommendation": "TA776: 'Pitolisant hydrochloride is not recommended, within its marketing authorisation,' for residual sleepiness in OSA despite CPAP or CPAP intolerance. TA777: 'Solriamfetol is not recommended, within its marketing authorisation,' for residual sleepiness in OSA.",
+    "direction": "recommend against",
+    "strength": "NICE TA: not recommended",
+    "citation": {
+      "authors": "NICE",
+      "title": "Pitolisant hydrochloride for treating excessive daytime sleepiness caused by obstructive sleep apnoea (TA776); Solriamfetol for treating excessive daytime sleepiness caused by obstructive sleep apnoea (TA777)",
+      "journal": "NICE technology appraisal guidance",
+      "year": 2022,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ta776"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK",
+    "layer": "pathway",
+    "drugs": [],
+    "freeToRead": true,
+    "freeUrl": "https://www.gov.uk/guidance/miscellaneous-conditions-assessing-fitness-to-drive",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [
+      "3 months to notify",
+      "AHI 15-29 / 30+",
+      "review every 3 years Group 1, annually Group 2"
+    ],
+    "notes": "This is the de facto UK CPAP-adherence requirement: adherence is demanded for driving licences, not for NHS funding. NG202 1.9.8 tells clinicians to follow DVLA guidance.",
+    "body": "Driver and Vehicle Licensing Agency (DVLA)",
+    "guidelineTitle": "Miscellaneous conditions: assessing fitness to drive - Excessive sleepiness including OSA",
+    "guidelineYear": 2025,
+    "status": "current (page updated Nov 2025)",
+    "condition": "obstructive sleep apnea",
+    "decision": "referral criteria",
+    "recommendation": "Suspected OSA with excessive sleepiness: 'Must not drive. Driving may resume only after satisfactory symptom control. If symptom control cannot be achieved in 3 months DVLA must be notified.' Moderate (AHI 15-29) / severe (AHI 30+) with sleepiness: 'Must not drive and must notify DVLA'; relicensing needs control, improved sleepiness and 'treatment adherence'; review every 3 years (car) / annually (bus, lorry). Mild (AHI <15) with sleepiness: must not drive until controlled.",
+    "direction": "regulatory fact",
+    "strength": "statutory licensing standard",
+    "citation": {
+      "authors": "DVLA",
+      "title": "Miscellaneous conditions: assessing fitness to drive",
+      "journal": "GOV.UK",
+      "year": 2025,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.gov.uk/guidance/miscellaneous-conditions-assessing-fitness-to-drive"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [
+      "solriamfetol",
+      "modafinil",
+      "dexamfetamine",
+      "methylphenidate",
+      "sodium oxybate",
+      "pitolisant"
+    ],
+    "freeToRead": true,
+    "freeUrl": "https://www.nice.org.uk/guidance/ta758/chapter/1-Recommendations",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [],
+    "notes": "No NICE clinical guideline on narcolepsy; no NICE TA for pitolisant in narcolepsy (only an evidence summary). DVLA: narcolepsy 'Must not drive and must notify DVLA'; licence after 'satisfactory symptom control for at least 3 months'.",
+    "body": "NICE",
+    "guidelineTitle": "Solriamfetol for treating excessive daytime sleepiness caused by narcolepsy (TA758)",
+    "guidelineYear": 2022,
+    "status": "current (5 Jan 2022)",
+    "condition": "narcolepsy",
+    "decision": "solriamfetol",
+    "recommendation": "'Solriamfetol is recommended as an option for treating excessive daytime sleepiness in adults with narcolepsy with or without cataplexy. This is only if modafinil and either dexamfetamine or methylphenidate have not worked well enough or are not suitable.' Committee: usual order is modafinil, then dexamfetamine or methylphenidate; sodium oxybate and pitolisant availability 'varies in clinics across England'.",
+    "direction": "recommend",
+    "strength": "NICE TA: recommended (third-line)",
+    "citation": {
+      "authors": "NICE",
+      "title": "Solriamfetol for treating excessive daytime sleepiness caused by narcolepsy (TA758)",
+      "journal": "NICE technology appraisal guidance",
+      "year": 2022,
+      "pmid": "",
+      "doi": "",
+      "url": "https://www.nice.org.uk/guidance/ta758/chapter/1-Recommendations"
+    },
+    "whatWasRead": "guideline web page"
+  },
+  {
+    "country": "UK",
+    "layer": "guideline",
+    "drugs": [],
+    "freeToRead": false,
+    "freeUrl": "https://cks.nice.org.uk/topics/restless-legs-syndrome/",
+    "conflictsOfInterest": "not stated",
+    "numbersToVerify": [],
+    "notes": "BLOCKED. Lead should open CKS RLS from a UK IP for dopamine-agonist / iron / alpha-2-delta wording (augmentation warnings).",
+    "body": "NICE CKS",
+    "guidelineTitle": "Restless legs syndrome (CKS topic)",
+    "guidelineYear": null,
+    "status": "unknown - geo-blocked; not read",
+    "condition": "restless legs",
+    "decision": "iron",
+    "recommendation": "NOT READ (cks.nice.org.uk UK-only). No NICE clinical guideline or technology appraisal on RLS found; CKS is the only national English source. BAP 2019 covers RLS only in pregnancy: 'Good sleep hygiene and lifestyle (D)', 'Keep caffeine low as it can exacerbate RLS (D)'.",
+    "direction": "no recommendation / insufficient evidence",
+    "strength": "n/a",
+    "citation": {
+      "authors": "NICE",
+      "title": "Restless legs syndrome",
+      "journal": "NICE CKS",
+      "year": null,
+      "pmid": "",
+      "doi": "",
+      "url": "https://cks.nice.org.uk/topics/restless-legs-syndrome/"
+    },
+    "whatWasRead": "not read (blocked)"
+  }
+]

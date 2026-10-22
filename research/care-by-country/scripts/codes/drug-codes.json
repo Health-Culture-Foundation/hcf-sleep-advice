@@ -1,0 +1,536 @@
+{
+ "_source": {
+  "atc": "WHO Collaborating Centre for Drug Statistics Methodology, ATC/DDD Index (https://atcddd.fhi.no/atc_ddd_index/), index last updated 2026-01-20, checked 2026-10-22. Use of ATC codes in an open dataset is an open question (see README).",
+  "rxnorm": "NLM RxNav REST API (https://rxnav.nlm.nih.gov/), exact name, single ingredient (TTY=IN) only.",
+  "licence": "ATC codes are WHOCC material, excluded from the dataset's CC BY licence. Bare codes only: no ATC names, hierarchy or DDDs. Source: WHO Collaborating Centre for Drug Statistics Methodology, https://atcddd.fhi.no/copyright_disclaimer/",
+  "rule": "atc is null unless the index lists the name (or its WHO spelling) as a substance, or the name is a class matching exactly one ATC group. atcOther lists other codes the index gives the same substance; atc is the systemic code in the group that fits sleep use."
+ },
+ "drugs": {
+  "aceprometazine+meprobamate": {
+   "atc": null,
+   "note": "Combination; aceprometazine is not listed by name. N05CX01 is a candidate, unconfirmed."
+  },
+  "acetaminophen": {
+   "atc": "N02BE01",
+   "note": "WHO name: paracetamol.",
+   "rxnorm": "161"
+  },
+  "acetazolamide": {
+   "atc": "S01EC01",
+   "note": "The index gives acetazolamide one code, used for all routes.",
+   "rxnorm": "167"
+  },
+  "agomelatine": {
+   "atc": "N06AX22",
+   "rxnorm": null
+  },
+  "alimemazine": {
+   "atc": "R06AD01",
+   "rxnorm": "10825"
+  },
+  "amitriptyline": {
+   "atc": "N06AA09",
+   "rxnorm": "704"
+  },
+  "amphetamine": {
+   "atc": "N06BA01",
+   "note": "WHO name: amfetamine.",
+   "rxnorm": "725"
+  },
+  "antihistamines": {
+   "atc": null,
+   "note": "Class spread over more than one ATC group; no single code."
+  },
+  "antipsychotics": {
+   "atc": "N05A",
+   "note": "ATC group, not a single substance."
+  },
+  "antipsychotics (class, e.g. quetiapine)": {
+   "atc": "N05A",
+   "note": "ATC group, not a single substance."
+  },
+  "armodafinil": {
+   "atc": "N06BA13",
+   "rxnorm": "641465"
+  },
+  "atomoxetine": {
+   "atc": "N06BA09",
+   "rxnorm": "38400"
+  },
+  "benzodiazepines": {
+   "atc": null,
+   "note": "Class spread over more than one ATC group; no single code."
+  },
+  "brotizolam": {
+   "atc": "N05CD09",
+   "rxnorm": "19790"
+  },
+  "buprenorphine": {
+   "atc": "N02AE01",
+   "atcOther": [
+    "N07BC01"
+   ],
+   "note": "N02AE01 = analgesic; N07BC01 = opioid dependence.",
+   "rxnorm": "1819"
+  },
+  "bupropion": {
+   "atc": "N06AX12",
+   "rxnorm": "42347"
+  },
+  "cabergoline": {
+   "atc": "N04BC06",
+   "atcOther": [
+    "G02CB03"
+   ],
+   "note": "N04BC06 = dopamine agonist; G02CB03 = prolactin inhibitor.",
+   "rxnorm": "47579"
+  },
+  "calcium/magnesium/potassium/sodium oxybates (low-sodium oxybate)": {
+   "atc": null,
+   "note": "Not listed by name in the index."
+  },
+  "cannabinoids": {
+   "atc": "N02BG10",
+   "rxnorm": null
+  },
+  "cannabis": {
+   "atc": null,
+   "note": "Not listed by name in the index (herbal or traditional preparation)."
+  },
+  "carbamazepine": {
+   "atc": "N03AF01",
+   "rxnorm": "2002"
+  },
+  "Chaihu Shugan San": {
+   "atc": null,
+   "note": "Not listed by name in the index (herbal or traditional preparation)."
+  },
+  "chamomile": {
+   "atc": null,
+   "note": "Not listed by name in the index (herbal or traditional preparation)."
+  },
+  "chlorprothixene": {
+   "atc": "N05AF03",
+   "rxnorm": "2406"
+  },
+  "clarithromycin": {
+   "atc": "J01FA09",
+   "rxnorm": "21212"
+  },
+  "clomipramine": {
+   "atc": "N06AA04",
+   "rxnorm": "2597"
+  },
+  "clonazepam": {
+   "atc": "N03AE01",
+   "rxnorm": "2598"
+  },
+  "codeine": {
+   "atc": "R05DA04",
+   "note": "The index gives plain codeine one code; analgesic codeine products are coded as combinations.",
+   "rxnorm": "2670"
+  },
+  "daridorexant": {
+   "atc": "N05CJ03",
+   "rxnorm": "2591497"
+  },
+  "dexamethasone": {
+   "atc": "H02AB02",
+   "atcOther": [
+    "A01AC02",
+    "C05AA09",
+    "D07AB19",
+    "D07XB05",
+    "D10AA03",
+    "R01AD03",
+    "S01BA01",
+    "S01CB01",
+    "S02BA06",
+    "S03BA01"
+   ],
+   "note": "H02AB02 = systemic; the others are local or topical forms.",
+   "rxnorm": "3264"
+  },
+  "dexamfetamine": {
+   "atc": "N06BA02",
+   "rxnorm": "3288"
+  },
+  "dextroamphetamine": {
+   "atc": "N06BA02",
+   "rxnorm": "3288"
+  },
+  "diazepam": {
+   "atc": "N05BA01",
+   "rxnorm": "3322"
+  },
+  "diphenhydramine": {
+   "atc": "R06AA02",
+   "atcOther": [
+    "D04AA32"
+   ],
+   "note": "R06AA02 = systemic; D04AA32 = topical.",
+   "rxnorm": "3498"
+  },
+  "dipyridamole": {
+   "atc": "B01AC07",
+   "rxnorm": "3521"
+  },
+  "doxepin": {
+   "atc": "N06AA12",
+   "atcOther": [
+    "D04AX01"
+   ],
+   "note": "N06AA12 = systemic; D04AX01 = topical.",
+   "rxnorm": "3638"
+  },
+  "doxylamine": {
+   "atc": "R06AA09",
+   "rxnorm": "3642"
+  },
+  "eszopiclone": {
+   "atc": "N05CF04",
+   "rxnorm": "461016"
+  },
+  "etizolam": {
+   "atc": "N05BA19",
+   "rxnorm": null
+  },
+  "ferric carboxymaltose": {
+   "atc": null,
+   "note": "Not listed by name in the index; injected iron has only a group code (B03AC). Left null until checked."
+  },
+  "ferrous sulfate": {
+   "atc": "B03AA07",
+   "rxnorm": "24947"
+  },
+  "ferumoxytol": {
+   "atc": null,
+   "note": "Not listed by name in the index; injected iron has only a group code (B03AC). Left null until checked."
+  },
+  "flunitrazepam": {
+   "atc": "N05CD03",
+   "rxnorm": "4460"
+  },
+  "flurazepam": {
+   "atc": "N05CD01",
+   "rxnorm": "4501"
+  },
+  "gabapentin": {
+   "atc": "N02BF01",
+   "rxnorm": "25480"
+  },
+  "gabapentin enacarbil": {
+   "atc": null,
+   "note": "Not listed by name in the index."
+  },
+  "hops": {
+   "atc": null,
+   "note": "Not listed by name in the index (herbal or traditional preparation)."
+  },
+  "hydroxyzine": {
+   "atc": "N05BB01",
+   "rxnorm": "5553"
+  },
+  "hypnotics": {
+   "atc": "N05C",
+   "note": "ATC group, not a single substance."
+  },
+  "ibuprofen": {
+   "atc": "M01AE01",
+   "atcOther": [
+    "C01EB16",
+    "G02CC01",
+    "M02AA13",
+    "R02AX02"
+   ],
+   "note": "M01AE01 = oral anti-inflammatory; the others are IV (ductus), vaginal, topical and throat forms.",
+   "rxnorm": "5640"
+  },
+  "intranasal corticosteroids": {
+   "atc": null,
+   "note": "Several substances; the row names no single drug."
+  },
+  "iron dextran": {
+   "atc": null,
+   "note": "Not listed by name in the index; injected iron has only a group code (B03AC). Left null until checked."
+  },
+  "iron sucrose": {
+   "atc": null,
+   "note": "Not listed by name in the index; injected iron has only a group code (B03AC). Left null until checked."
+  },
+  "kava": {
+   "atc": null,
+   "note": "Not listed by name in the index (herbal or traditional preparation)."
+  },
+  "kava-kava": {
+   "atc": null,
+   "note": "Not listed by name in the index (herbal or traditional preparation)."
+  },
+  "lavender": {
+   "atc": null,
+   "note": "The index lists only lavender oil (N05BX05); the row does not say which preparation."
+  },
+  "lemborexant": {
+   "atc": "N05CJ02",
+   "rxnorm": "2272403"
+  },
+  "levodopa": {
+   "atc": "N04BA01",
+   "atcOther": [
+    "N04BA02"
+   ],
+   "note": "N04BA02 = levodopa with decarboxylase inhibitor (the usual product); the row says only 'levodopa'.",
+   "rxnorm": "6375"
+  },
+  "levomepromazine": {
+   "atc": "N05AA02",
+   "rxnorm": "6852"
+  },
+  "lisdexamfetamine": {
+   "atc": "N06BA12",
+   "rxnorm": "700810"
+  },
+  "long-acting benzodiazepines": {
+   "atc": null,
+   "note": "Class spread over more than one ATC group; no single code."
+  },
+  "lorazepam": {
+   "atc": "N05BA06",
+   "rxnorm": "6470"
+  },
+  "lormetazepam": {
+   "atc": "N05CD06",
+   "rxnorm": "28894"
+  },
+  "melatonin": {
+   "atc": "N05CH01",
+   "rxnorm": "6711"
+  },
+  "melatonin (immediate-release)": {
+   "atc": "N05CH01",
+   "rxnorm": "6711"
+  },
+  "melatonin (prolonged-release)": {
+   "atc": "N05CH01",
+   "rxnorm": "6711"
+  },
+  "melatonin 2 mg PR": {
+   "atc": "N05CH01",
+   "rxnorm": "6711"
+  },
+  "melatonin 2 mg prolonged-release": {
+   "atc": "N05CH01",
+   "rxnorm": "6711"
+  },
+  "melissa": {
+   "atc": null,
+   "note": "Not listed by name in the index (herbal or traditional preparation)."
+  },
+  "melperone": {
+   "atc": "N05AD03",
+   "rxnorm": "29961"
+  },
+  "methylphenidate": {
+   "atc": "N06BA04",
+   "rxnorm": "6901"
+  },
+  "mianserin": {
+   "atc": "N06AX03",
+   "rxnorm": "6929"
+  },
+  "midazolam": {
+   "atc": "N05CD08",
+   "rxnorm": "6960"
+  },
+  "mirtazapine": {
+   "atc": "N06AX11",
+   "rxnorm": "15996"
+  },
+  "modafinil": {
+   "atc": "N06BA07",
+   "rxnorm": "30125"
+  },
+  "montelukast": {
+   "atc": "R03DC03",
+   "rxnorm": "88249"
+  },
+  "nitrazepam": {
+   "atc": "N05CD02",
+   "rxnorm": "7440"
+  },
+  "olanzapine": {
+   "atc": "N05AH03",
+   "rxnorm": "61381"
+  },
+  "opioids": {
+   "atc": "N02A",
+   "note": "ATC group, not a single substance."
+  },
+  "oxazepam": {
+   "atc": "N05BA04",
+   "rxnorm": "7781"
+  },
+  "oxybutynin": {
+   "atc": "G04BD04",
+   "rxnorm": "32675"
+  },
+  "oxycodone": {
+   "atc": "N02AA05",
+   "rxnorm": "7804"
+  },
+  "passiflora": {
+   "atc": null,
+   "note": "Not listed by name in the index (herbal or traditional preparation)."
+  },
+  "passionflower": {
+   "atc": null,
+   "note": "Not listed by name in the index (herbal or traditional preparation)."
+  },
+  "pipamperone": {
+   "atc": "N05AD05",
+   "rxnorm": "33739"
+  },
+  "pitolisant": {
+   "atc": "N07XX11",
+   "rxnorm": "2197878"
+  },
+  "pramipexole": {
+   "atc": "N04BC05",
+   "rxnorm": "746741"
+  },
+  "pregabalin": {
+   "atc": "N02BF02",
+   "rxnorm": "187832"
+  },
+  "promethazine": {
+   "atc": "R06AD02",
+   "atcOther": [
+    "D04AA10"
+   ],
+   "note": "R06AD02 = systemic; D04AA10 = topical.",
+   "rxnorm": "8745"
+  },
+  "prothipendyl": {
+   "atc": "N05AX07",
+   "rxnorm": "55244"
+  },
+  "quetiapine": {
+   "atc": "N05AH04",
+   "rxnorm": "51272"
+  },
+  "ramelteon": {
+   "atc": "N05CH02",
+   "rxnorm": "596205"
+  },
+  "ropinirole": {
+   "atc": "N04BC04",
+   "rxnorm": "72302"
+  },
+  "rotigotine": {
+   "atc": "N04BC09",
+   "rxnorm": "616739"
+  },
+  "saffron": {
+   "atc": null,
+   "note": "Not listed by name in the index (herbal or traditional preparation)."
+  },
+  "sedating antidepressants": {
+   "atc": null,
+   "note": "Not an ATC group."
+  },
+  "shorter-acting benzodiazepines": {
+   "atc": null,
+   "note": "Class spread over more than one ATC group; no single code."
+  },
+  "sodium oxybate": {
+   "atc": "N07XX04",
+   "atcOther": [
+    "N01AX11"
+   ],
+   "note": "N07XX04 = other nervous system drugs (narcolepsy); N01AX11 = anaesthetic.",
+   "rxnorm": null
+  },
+  "solriamfetol": {
+   "atc": "N06BA14",
+   "rxnorm": "2121751"
+  },
+  "sulthiame": {
+   "atc": "N03AX03",
+   "note": "WHO name: sultiame.",
+   "rxnorm": "10240"
+  },
+  "suvorexant": {
+   "atc": "N05CJ01",
+   "rxnorm": "1547099"
+  },
+  "tasimelteon": {
+   "atc": "N05CH03",
+   "rxnorm": "1490468"
+  },
+  "temazepam": {
+   "atc": "N05CD07",
+   "rxnorm": "10355"
+  },
+  "tiagabine": {
+   "atc": "N03AG06",
+   "rxnorm": "31914"
+  },
+  "tirzepatide": {
+   "atc": "A10BX16",
+   "rxnorm": "2601723"
+  },
+  "trazodone": {
+   "atc": "N06AX05",
+   "rxnorm": "10737"
+  },
+  "triazolam": {
+   "atc": "N05CD05",
+   "rxnorm": "10767"
+  },
+  "trimipramine": {
+   "atc": "N06AA06",
+   "rxnorm": "10834"
+  },
+  "tryptophan": {
+   "atc": "N06AX02",
+   "rxnorm": "10898"
+  },
+  "valerian": {
+   "atc": "N05CM09",
+   "note": "Coded as valerian root.",
+   "rxnorm": "253206"
+  },
+  "valproic acid": {
+   "atc": "N03AG01",
+   "rxnorm": null
+  },
+  "venlafaxine": {
+   "atc": "N06AX16",
+   "rxnorm": "39786"
+  },
+  "Xiaoyao San": {
+   "atc": null,
+   "note": "Not listed by name in the index (herbal or traditional preparation)."
+  },
+  "Z-drugs": {
+   "atc": "N05CF",
+   "note": "ATC group, not a single substance."
+  },
+  "zaleplon": {
+   "atc": "N05CF03",
+   "rxnorm": "74667"
+  },
+  "zolpidem": {
+   "atc": "N05CF02",
+   "rxnorm": "39993"
+  },
+  "zonisamide": {
+   "atc": "N03AX15",
+   "rxnorm": "39998"
+  },
+  "zopiclone": {
+   "atc": "N05CF01",
+   "rxnorm": "40001"
+  }
+ }
+}

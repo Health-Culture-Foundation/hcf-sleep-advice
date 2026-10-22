@@ -60,4 +60,9 @@ attribution "Health Culture Foundation". Cited works keep their own licenses;
 the dataset links to them and does not reproduce them. Glossary entries based
 on Breus and Huberman videos are written in our own words.
 
+ATC drug codes and ICD-11 codes in `research/care-by-country/` are WHO material and
+are **not** covered by CC BY 4.0: ATC is under WHOCC terms (no commercial copying, no
+changes) and is kept out of any open release until WHOCC replies; ICD-11 is CC BY-ND
+3.0 IGO. Details and attribution in [LICENSE](LICENSE).
+
 Scripts (`scripts/`): MIT.

@@ -1,0 +1,1476 @@
+[
+ {
+  "country": "Canada",
+  "body": "Bruyere Research Institute / deprescribing.org (Pottie et al.)",
+  "guidelineTitle": "Deprescribing benzodiazepine receptor agonists: Evidence-based clinical practice guideline",
+  "guidelineYear": 2018,
+  "status": "stale (last updated 2018)",
+  "condition": "chronic insomnia",
+  "decision": "deprescribing",
+  "recommendation": "\"We recommend that deprescribing (tapering slowly) of BZRAs be offered to elderly adults (>= 65 years) who take BZRAs, regardless of duration of use, and suggest that deprescribing (tapering slowly) be offered to adults aged 18 to 64 who have used BZRAs for more than 4 weeks.\"",
+  "direction": "recommend",
+  "strength": "Strong for >=65 y; weak ('suggest') for 18-64 y (GRADE)",
+  "drugs": [
+   "benzodiazepines",
+   "zopiclone",
+   "zolpidem",
+   "eszopiclone"
+  ],
+  "citation": {
+   "authors": "Pottie K, Thompson W, Davies S, et al.",
+   "title": "Deprescribing benzodiazepine receptor agonists: Evidence-based clinical practice guideline",
+   "journal": "Can Fam Physician",
+   "year": 2018,
+   "pmid": "29760253",
+   "doi": "",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5951648/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5951648/",
+  "whatWasRead": "abstract",
+  "conflictsOfInterest": "Abstract: 'members disclosed conflicts of interest'; details not read",
+  "numbersToVerify": [
+   ">= 65 years",
+   "more than 4 weeks"
+  ],
+  "notes": "Applies to primary insomnia or comorbid insomnia with comorbidities managed; not to other sleep disorders or untreated anxiety/depression. BZRA = benzodiazepines plus Z-drugs.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Canada",
+  "body": "Choosing Wisely Canada / Canadian Geriatrics Society",
+  "guidelineTitle": "Geriatrics: Recommendation 2",
+  "guidelineYear": 2025,
+  "status": "current (last updated April 2025)",
+  "condition": "chronic insomnia",
+  "decision": "benzodiazepines",
+  "recommendation": "\"Don't use benzodiazepines or other sedative-hypnotics in older adults as first choice for insomnia, agitation or delirium.\" Supporting text: number needed to treat for better sleep is 13, number needed to harm is 6; CBT and taper protocols help discontinuation.",
+  "direction": "recommend against",
+  "strength": "Choosing Wisely (not graded)",
+  "drugs": [
+   "benzodiazepines",
+   "Z-drugs"
+  ],
+  "citation": {
+   "authors": "Canadian Geriatrics Society",
+   "title": "Choosing Wisely Canada: Geriatrics recommendations",
+   "journal": "",
+   "year": 2025,
+   "pmid": "",
+   "doi": "",
+   "url": "https://choosingwiselycanada.org/recommendation/geriatrics/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://choosingwiselycanada.org/recommendation/geriatrics/",
+  "whatWasRead": "guideline web page",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "NNT 13",
+   "NNH 6",
+   "risk 'can more than double'"
+  ],
+  "notes": "Similar recommendations from other Canadian societies (psychiatry, hospital pharmacists) per search snippets, not read directly.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Canada (Ontario, Centre for Effective Practice tool; also linked by Alberta)",
+  "body": "Centre for Effective Practice (CEP)",
+  "guidelineTitle": "Management of Chronic Insomnia",
+  "guidelineYear": 2017,
+  "status": "stale (last updated 31 Jan 2017)",
+  "condition": "chronic insomnia",
+  "decision": "first-line treatment",
+  "recommendation": "\"CBT-I is recommended as the initial treatment for chronic insomnia.\" \"Pharmacotherapy should be considered as adjunctive therapy to CBT-I.\" Start lowest dose, short duration (e.g. 1-2 weeks); \"pharmacotherapy should be used no longer than ~1 month\". In older adults, \"the safest and best studied sleep medication ... is doxepin (<= 6mg/day)\"; avoid benzodiazepines in the elderly.",
+  "direction": "recommend",
+  "strength": "not graded (primary-care tool)",
+  "drugs": [
+   "doxepin",
+   "zopiclone",
+   "zolpidem",
+   "trazodone",
+   "temazepam",
+   "melatonin"
+  ],
+  "citation": {
+   "authors": "Centre for Effective Practice; Ontario College of Family Physicians; Nurse Practitioners' Association of Ontario",
+   "title": "Management of Chronic Insomnia (tool)",
+   "journal": "",
+   "year": 2017,
+   "pmid": "",
+   "doi": "",
+   "url": "https://tools.cep.health/tool/management-of-chronic-insomnia/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://tools.cep.health/tool/management-of-chronic-insomnia/",
+  "whatWasRead": "guideline web page",
+  "conflictsOfInterest": "Funded by Ontario Ministry of Health (Knowledge Translation in Primary Care Initiative); panel COI not stated on page",
+  "numbersToVerify": [
+   "1-2 weeks",
+   "~1 month",
+   "doxepin <= 6 mg/day",
+   "melatonin 1-3 mg 30-90 min before bed"
+  ],
+  "notes": "Alberta's former TOP 'Assessment to Management of Adult Insomnia' guideline (Dec 2015) is no longer hosted as a document: the Alberta Medical Association page now links only to the TOP sleep questionnaire and this CEP tool, and says ACTT 'no longer develops or updates' single-topic CPGs.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Canada (Ontario, Centre for Effective Practice tool)",
+  "body": "Centre for Effective Practice (CEP)",
+  "guidelineTitle": "Management of Chronic Insomnia",
+  "guidelineYear": 2017,
+  "status": "stale (last updated 31 Jan 2017)",
+  "condition": "chronic insomnia",
+  "decision": "reimbursement: drug",
+  "recommendation": "Ontario Drug Benefit coverage shown in tool: doxepin, trazodone, temazepam covered; zopiclone not covered; zolpidem, melatonin, valerian uncertain. Online CBT-I listed as paid (e.g. Sleepio US$300/12 months).",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [
+   "doxepin",
+   "trazodone",
+   "temazepam",
+   "zopiclone",
+   "zolpidem"
+  ],
+  "citation": {
+   "authors": "Centre for Effective Practice; Ontario College of Family Physicians; Nurse Practitioners' Association of Ontario",
+   "title": "Management of Chronic Insomnia (tool)",
+   "journal": "",
+   "year": 2017,
+   "pmid": "",
+   "doi": "",
+   "url": "https://tools.cep.health/tool/management-of-chronic-insomnia/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://tools.cep.health/tool/management-of-chronic-insomnia/",
+  "whatWasRead": "guideline web page",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "Sleepio US$300",
+   "ODB coverage list (2017, likely outdated)"
+  ],
+  "notes": "2017 coverage snapshot; verify against current Ontario formulary. Notable that zopiclone (Canada's most-used Z-drug) was listed as not ODB-covered.",
+  "layer": "coverage"
+ },
+ {
+  "country": "Canada (Ontario)",
+  "body": "Centre for Effective Practice (CEP)",
+  "guidelineTitle": "Management of Chronic Insomnia",
+  "guidelineYear": 2017,
+  "status": "stale (last updated 31 Jan 2017)",
+  "condition": "chronic insomnia",
+  "decision": "deprescribing",
+  "recommendation": "Taper BZRAs by \"no more than diazepam 5mg or clonazepam 0.25mg equivalent per week\" (slower below 20 mg diazepam-equivalent), or reduce 10% every 1-2 weeks until 20% remains, then 5% every 2-4 weeks; follow up every 1-4 weeks; consider CBT.",
+  "direction": "recommend",
+  "strength": "not graded",
+  "drugs": [
+   "benzodiazepines",
+   "Z-drugs"
+  ],
+  "citation": {
+   "authors": "Centre for Effective Practice; Ontario College of Family Physicians; Nurse Practitioners' Association of Ontario",
+   "title": "Management of Chronic Insomnia (tool)",
+   "journal": "",
+   "year": 2017,
+   "pmid": "",
+   "doi": "",
+   "url": "https://tools.cep.health/tool/management-of-chronic-insomnia/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://tools.cep.health/tool/management-of-chronic-insomnia/",
+  "whatWasRead": "guideline web page",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "5 mg diazepam/week",
+   "10% every 1-2 weeks",
+   "5% every 2-4 weeks"
+  ],
+  "notes": "",
+  "layer": "guideline"
+ },
+ {
+  "country": "Canada (Ontario)",
+  "body": "Ontario Ministry of Health (no official source found)",
+  "guidelineTitle": "CBT-I public coverage",
+  "guidelineYear": null,
+  "status": "n/a",
+  "condition": "chronic insomnia",
+  "decision": "reimbursement: digital CBT-I",
+  "recommendation": "No official source found showing CBT-I is publicly covered in Ontario: psychologist services are outside OHIP; Ontario Structured Psychotherapy officially covers depression and anxiety. Only retailer blogs claim insomnia is accepted.",
+  "direction": "no recommendation / insufficient evidence",
+  "strength": "n/a",
+  "drugs": [],
+  "citation": {
+   "authors": "",
+   "title": "",
+   "journal": "",
+   "year": null,
+   "pmid": "",
+   "doi": "",
+   "url": "https://ontariohealth.ca/about-us/our-work/our-stories/better-access-better-mental-health-care-for-all"
+  },
+  "freeToRead": true,
+  "freeUrl": "",
+  "whatWasRead": "secondary source",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [],
+  "notes": "Absence is the finding: unlike Australia (Better Access) Canada has no national subsidised CBT-I route found. Kalman: worth a manual check of OSP intake criteria.",
+  "layer": "coverage"
+ },
+ {
+  "country": "Canada",
+  "body": "Canada's Drug Agency (CDA-AMC, formerly CADTH)",
+  "guidelineTitle": "Daridorexant (Quviviq) reimbursement recommendation (SR0862)",
+  "guidelineYear": 2025,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "reimbursement: drug",
+  "recommendation": "\"CDEC recommends that daridorexant not be reimbursed for the management of adult patients with insomnia\" characterized by difficulties with sleep onset and/or sleep maintenance. Initial meeting 28 May 2025; reconsideration 24 Sept 2025 upheld it. Reasons: unclear whether benefit is clinically meaningful; no comparison with other insomnia drugs.",
+  "direction": "recommend against",
+  "strength": "CDEC: Do not reimburse",
+  "drugs": [
+   "daridorexant"
+  ],
+  "citation": {
+   "authors": "Canada's Drug Agency (CDA-AMC), Canadian Drug Expert Committee",
+   "title": "Daridorexant (Quviviq) reimbursement recommendation (SR0862)",
+   "journal": "Can J Health Technol",
+   "year": 2025,
+   "pmid": "",
+   "doi": "",
+   "url": "https://canjhealthtechnol.ca/index.php/cjht/article/view/SR0862/2805"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://canjhealthtechnol.ca/index.php/cjht/article/view/SR0862/2805",
+  "whatWasRead": "summary page",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "$861.99 per patient per year",
+   "$2.36 per tablet",
+   "meeting dates 28 May 2025 / 24 Sept 2025"
+  ],
+  "notes": "Sponsor asked for listing in moderate-severe chronic insomnia when CBT-I is inappropriate, unavailable or failed (ISI >= 15). Health Canada NOC for Quviviq: 28 April 2023 (from CDA clinical review).",
+  "layer": "coverage"
+ },
+ {
+  "country": "Canada",
+  "body": "Health Canada",
+  "guidelineTitle": "Notice of Compliance: Quviviq (daridorexant)",
+  "guidelineYear": 2023,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "regulatory status",
+  "recommendation": "Approved for \"the management of adult patients with insomnia, characterized by difficulties with sleep onset and/or sleep maintenance.\" NOC date 28 April 2023.",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [
+   "daridorexant"
+  ],
+  "citation": {
+   "authors": "CDA-AMC",
+   "title": "Daridorexant (Quviviq) Clinical Review SR0862r",
+   "journal": "Can J Health Technol",
+   "year": 2026,
+   "pmid": "",
+   "doi": "",
+   "url": "https://canjhealthtechnol.ca/index.php/cjht/article/view/SR0862r/3125"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://canjhealthtechnol.ca/index.php/cjht/article/view/SR0862r/3125",
+  "whatWasRead": "summary page",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "NOC 28 April 2023"
+  ],
+  "notes": "",
+  "layer": "guideline"
+ },
+ {
+  "country": "Canada",
+  "body": "Canada's Drug Agency (CDA-AMC, formerly CADTH)",
+  "guidelineTitle": "Lemborexant (Dayvigo) reimbursement recommendation (SR0895, resubmission)",
+  "guidelineYear": 2026,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "reimbursement: drug",
+  "recommendation": "CDEC \"recommends that lemborexant not be reimbursed for the treatment of insomnia.\" Second 'do not reimburse' (first 10 Jan 2023; resubmission for chronic insomnia disorder, reconsideration 17 Dec 2025). New fall-risk observational studies could not show lower fall risk than other drugs.",
+  "direction": "recommend against",
+  "strength": "CDEC: Do not reimburse",
+  "drugs": [
+   "lemborexant"
+  ],
+  "citation": {
+   "authors": "Canada's Drug Agency (CDA-AMC), Canadian Drug Expert Committee",
+   "title": "Lemborexant (Dayvigo) reimbursement recommendation (SR0895, resubmission)",
+   "journal": "Can J Health Technol",
+   "year": 2026,
+   "pmid": "",
+   "doi": "",
+   "url": "https://canjhealthtechnol.ca/index.php/cjht/article/view/SR0895/3023"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://canjhealthtechnol.ca/index.php/cjht/article/view/SR0895/3023",
+  "whatWasRead": "summary page",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "10 Jan 2023",
+   "17 Dec 2025"
+  ],
+  "notes": "Health Canada NOC 4 Nov 2020 (Summary Basis of Decision, via search snippet; not opened). BC PharmaCare non-benefit decision 14 Mar 2024 (search snippet). So in Canada both licensed DORAs are approved but not publicly funded; suvorexant is not marketed in Canada (not checked directly).",
+  "layer": "coverage"
+ },
+ {
+  "country": "Canada",
+  "body": "Health Canada (Natural and Non-prescription Health Products Directorate)",
+  "guidelineTitle": "Melatonin - Oral monograph (NHP)",
+  "guidelineYear": 2024,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "melatonin",
+  "recommendation": "Melatonin is sold as a licensed Natural Health Product (non-prescription). All licensed melatonin NHPs are for adults only; none authorised for children. Monograph doses commonly cited 0.1-10 mg/day; label advice not to use more than 4 weeks without consulting a health professional. Health Canada consulted on making paediatric sleep use prescription-only.",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [
+   "melatonin"
+  ],
+  "citation": {
+   "authors": "Health Canada",
+   "title": "Monograph: Melatonin - Oral",
+   "journal": "",
+   "year": null,
+   "pmid": "",
+   "doi": "",
+   "url": "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/monoReq.do?id=136"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/monoReq.do?id=136",
+  "whatWasRead": "secondary source",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "0.1-10 mg/day",
+   "4 weeks",
+   "adult-only licensing"
+  ],
+  "notes": "Details from search summaries of Health Canada pages; monograph itself not opened. Contrast: Australia/NZ prescription or pharmacist-only; Brazil food supplement capped at 0.21 mg.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Canada",
+  "body": "Canadian Thoracic Society (CTS)",
+  "guidelineTitle": "Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing",
+  "guidelineYear": 2011,
+  "status": "stale (last updated 2011)",
+  "condition": "obstructive sleep apnea",
+  "decision": "waiting time",
+  "recommendation": "\"Patients with suspected severe OSAS, and patients working in safety-critical occupations should be investigated within four weeks of the referral to a diagnostic sleep facility.\" Same for unstable heart disease, recent stroke, heart failure, refractory hypertension, pregnancy etc. \"All patients within six months of the referral\".",
+  "direction": "recommend",
+  "strength": "1C (severe/safety-critical); 2C (all patients 6 months)",
+  "drugs": [],
+  "citation": {
+   "authors": "Fleetham J, Ayas N, Bradley D, et al.; CTS Sleep Disordered Breathing Committee",
+   "title": "Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing",
+   "journal": "Can Respir J",
+   "year": 2011,
+   "pmid": "21369547",
+   "doi": "10.1155/2011/506189",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3070752/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3070752/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Committee members declared potential conflicts at appointment, updated per CTS COI policy; CTS states editorial independence",
+  "numbersToVerify": [
+   "four weeks",
+   "six months"
+  ],
+  "notes": "No newer adult CTS OSA guideline found (2026 CTS/CSS guideline is paediatric only, PMID 41887281). One of few guidelines anywhere to set explicit wait-time targets.",
+  "layer": "pathway"
+ },
+ {
+  "country": "Canada",
+  "body": "Canadian Thoracic Society (CTS)",
+  "guidelineTitle": "Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing",
+  "guidelineYear": 2011,
+  "status": "stale (last updated 2011)",
+  "condition": "obstructive sleep apnea",
+  "decision": "diagnosis: home sleep apnea test",
+  "recommendation": "Level I attended PSG \"remains the accepted standard ... and is the test of choice when readily available.\" Level III portable studies \"can be used to confirm the diagnosis of OSAS and institute appropriate treatment in patients with a moderate to high pretest probability\" when part of a package of care with physician expertise and PSG back-up.",
+  "direction": "suggest (weak/conditional for)",
+  "strength": "1B",
+  "drugs": [],
+  "citation": {
+   "authors": "Fleetham J, Ayas N, Bradley D, et al.; CTS Sleep Disordered Breathing Committee",
+   "title": "Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing",
+   "journal": "Can Respir J",
+   "year": 2011,
+   "pmid": "21369547",
+   "doi": "10.1155/2011/506189",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3070752/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3070752/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Committee members declared potential conflicts at appointment, updated per CTS COI policy; CTS states editorial independence",
+  "numbersToVerify": [],
+  "notes": "2010 CSS/CTS position paper (PMID 21037998): portable monitoring \"under the supervision of a physician with training in sleep medicine\" may expedite treatment when suspicion is high.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Canada",
+  "body": "Canadian Thoracic Society (CTS)",
+  "guidelineTitle": "Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing",
+  "guidelineYear": 2011,
+  "status": "stale (last updated 2011)",
+  "condition": "obstructive sleep apnea",
+  "decision": "CPAP",
+  "recommendation": "\"Conventional CPAP at a fixed pressure is the primary treatment for patients with OSAS.\" \"APAP is an alternative effective treatment to fixed CPAP for OSAS in the absence of comorbid diseases and conditions.\" Treat asymptomatic patients with significant cardiovascular disease \"especially if the AHI is 19/h or greater\" (2C).",
+  "direction": "recommend",
+  "strength": "1B (CPAP, APAP); 2C (asymptomatic CVD)",
+  "drugs": [],
+  "citation": {
+   "authors": "Fleetham J, Ayas N, Bradley D, et al.; CTS Sleep Disordered Breathing Committee",
+   "title": "Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing",
+   "journal": "Can Respir J",
+   "year": 2011,
+   "pmid": "21369547",
+   "doi": "10.1155/2011/506189",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3070752/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3070752/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Committee members declared potential conflicts at appointment, updated per CTS COI policy; CTS states editorial independence",
+  "numbersToVerify": [
+   "AHI 19/h"
+  ],
+  "notes": "",
+  "layer": "guideline"
+ },
+ {
+  "country": "Canada",
+  "body": "Canadian Thoracic Society (CTS)",
+  "guidelineTitle": "Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing",
+  "guidelineYear": 2011,
+  "status": "stale (last updated 2011)",
+  "condition": "obstructive sleep apnea",
+  "decision": "surgery",
+  "recommendation": "\"Bariatric (weight loss) surgery should be considered in the management of OSAS in morbidly obese patients (BMI of greater than 40 kg/m2), and in those with a BMI of greater than 35 kg/m2 who also have serious comorbid disease, after failure to lose weight\" with diet and lifestyle.",
+  "direction": "suggest (weak/conditional for)",
+  "strength": "1C",
+  "drugs": [],
+  "citation": {
+   "authors": "Fleetham J, Ayas N, Bradley D, et al.; CTS Sleep Disordered Breathing Committee",
+   "title": "Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing",
+   "journal": "Can Respir J",
+   "year": 2011,
+   "pmid": "21369547",
+   "doi": "10.1155/2011/506189",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3070752/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3070752/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Committee members declared potential conflicts at appointment, updated per CTS COI policy; CTS states editorial independence",
+  "numbersToVerify": [
+   "BMI > 40",
+   "BMI > 35 with comorbidity"
+  ],
+  "notes": "Predates GLP-1/tirzepatide; no Canadian guidance on those found.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Canada (Ontario Assistive Devices Program)",
+  "body": "Ontario Ministry of Health, Assistive Devices Program (ADP)",
+  "guidelineTitle": "Respiratory Equipment and Supplies: applicant information (4793-67E, 2025/01)",
+  "guidelineYear": 2025,
+  "status": "current",
+  "condition": "obstructive sleep apnea",
+  "decision": "who prescribes CPAP",
+  "recommendation": "\"ADP pays 75% of the ADP approved price\" for CPAP/APAP/BPAP; may pay 100% for people on Ontario Works, ODSP or ACSD. \"To receive funding assistance for CPAP/APAP/BPAP systems you must be assessed by a physician who works at a sleep clinic registered with the ADP.\" Form signed by patient, prescribing physician or NP, and ADP-registered vendor; review about six weeks.",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [],
+  "citation": {
+   "authors": "Ontario Ministry of Health",
+   "title": "Assistive Devices Program - Respiratory Equipment and Supplies information sheet 4793-67E",
+   "journal": "",
+   "year": 2025,
+   "pmid": "",
+   "doi": "",
+   "url": "https://forms.mgcs.gov.on.ca/dataset/45af5680-77e5-4c6b-bd0d-0250a0c74be8/resource/5db1ae35-5b54-4ee2-9cdb-a891cec902b9/download/4793-67e_info.pdf"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://forms.mgcs.gov.on.ca/dataset/45af5680-77e5-4c6b-bd0d-0250a0c74be8/resource/5db1ae35-5b54-4ee2-9cdb-a891cec902b9/download/4793-67e_info.pdf",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "75%",
+   "100% for social assistance",
+   "~six weeks review"
+  ],
+  "notes": "Medical eligibility criteria not spelled out on the sheet. A 2020 ADP memo (search snippet) says APAP funding needs a diagnosis of OSA syndrome plus significant symptoms or risks. No ADP adherence-download rule found (contrast US Medicare).",
+  "layer": "coverage"
+ },
+ {
+  "country": "Australia",
+  "body": "Australasian Sleep Association + Sleep Health Foundation + RACGP + Australian Psychological Society + Pharmaceutical Society of Australia + APNA (joint position statement)",
+  "guidelineTitle": "Management of adult insomnia in Australia (joint position statement)",
+  "guidelineYear": 2026,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "CBT-I",
+  "recommendation": "\"Multi-component Cognitive Behavioral Therapy for insomnia (CBTi) is the recommended 'first-line' treatment for insomnia\", effective across settings, comorbidities and modes (individual, group, telehealth, self-guided digital). Sleep hygiene advice \"not an adequate stand-alone treatment for chronic insomnia\". \"Clinicians should discuss CBTi options with all patients with insomnia as the first-line management approach.\"",
+  "direction": "recommend",
+  "strength": "position statement (ungraded in abstract)",
+  "drugs": [],
+  "citation": {
+   "authors": "Sweetman A, Putland S, Meaklim H, et al.",
+   "title": "Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, Sleep Health Foundation, Royal Australian College of General Practitioners, Australian Psychological Society, Pharmaceutical Society of Australia, and Australian Primary Health Care Nurses Association",
+   "journal": "Sleep Adv",
+   "year": 2026,
+   "pmid": "42781607",
+   "doi": "10.1093/sleepadvances/zpag086",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13600392/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13600392/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Funded by Australian Government Health Peak and Advisory Bodies grant (2022-2026) and a Quality Use of Diagnostics, Therapeutics and Pathology grant. Disclosures: lead author was salaried ASA staff; one author (DC) made GP podcast content sponsored by Eisai (lemborexant maker); one author owns a behavioural sleep clinic.",
+  "numbersToVerify": [],
+  "notes": "Replaces the 2017 ASA psychological-treatment position statement (Ree et al., PMID 28648226) which also named CBT-I first line. This is the RACGP/ASA joint primary-care position the brief asked about.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Australia",
+  "body": "Australasian Sleep Association + Sleep Health Foundation + RACGP + Australian Psychological Society + Pharmaceutical Society of Australia + APNA (joint position statement)",
+  "guidelineTitle": "Management of adult insomnia in Australia (joint position statement)",
+  "guidelineYear": 2026,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "duration limit",
+  "recommendation": "Medicines \"not recommended as the 'first-line' treatment\" but may be used with CBTi or second-line. \"If used, specific benzodiazepines and 'z-drugs' may be indicated for up to 2-4 weeks of use at the lowest effective dose, melatonin may be used for up to 13 weeks, and dual orexin receptor antagonists are generally only recommended for chronic insomnia.\"",
+  "direction": "suggest (weak/conditional for)",
+  "strength": "position statement",
+  "drugs": [
+   "temazepam",
+   "zolpidem",
+   "zopiclone",
+   "melatonin",
+   "suvorexant",
+   "lemborexant"
+  ],
+  "citation": {
+   "authors": "Sweetman A, Putland S, Meaklim H, et al.",
+   "title": "Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, Sleep Health Foundation, Royal Australian College of General Practitioners, Australian Psychological Society, Pharmaceutical Society of Australia, and Australian Primary Health Care Nurses Association",
+   "journal": "Sleep Adv",
+   "year": 2026,
+   "pmid": "42781607",
+   "doi": "10.1093/sleepadvances/zpag086",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13600392/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13600392/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Funded by Australian Government Health Peak and Advisory Bodies grant (2022-2026) and a Quality Use of Diagnostics, Therapeutics and Pathology grant. Disclosures: lead author was salaried ASA staff; one author (DC) made GP podcast content sponsored by Eisai (lemborexant maker); one author owns a behavioural sleep clinic.",
+  "numbersToVerify": [
+   "2-4 weeks",
+   "13 weeks",
+   "zopiclone up to 2 weeks (TG)",
+   "suvorexant: review at 7-10 days and at 3 months"
+  ],
+  "notes": "Table 7 (from AMH/TG/TGA/PBS): suvorexant 15/20 mg, lemborexant 5/10 mg, both Schedule 4. Daridorexant does not appear in the Australian medicines table at all (TGA status not confirmed).",
+  "layer": "guideline"
+ },
+ {
+  "country": "Australia",
+  "body": "Australasian Sleep Association + Sleep Health Foundation + RACGP + Australian Psychological Society + Pharmaceutical Society of Australia + APNA (joint position statement)",
+  "guidelineTitle": "Management of adult insomnia in Australia (joint position statement)",
+  "guidelineYear": 2026,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "sedating antihistamines",
+  "recommendation": "\"Sedating antihistamines, antidepressants, antipsychotics, cannabinoids, and complementary medications are not recommended.\" Table 7: antihistamines (doxylamine, diphenhydramine, pharmacist-only Schedule 3) \"do not use for over 10 consecutive days\"; mirtazapine, amitriptyline, quetiapine, olanzapine \"not indicated for insomnia\".",
+  "direction": "recommend against",
+  "strength": "position statement",
+  "drugs": [
+   "doxylamine",
+   "diphenhydramine",
+   "mirtazapine",
+   "amitriptyline",
+   "quetiapine",
+   "olanzapine",
+   "cannabinoids"
+  ],
+  "citation": {
+   "authors": "Sweetman A, Putland S, Meaklim H, et al.",
+   "title": "Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, Sleep Health Foundation, Royal Australian College of General Practitioners, Australian Psychological Society, Pharmaceutical Society of Australia, and Australian Primary Health Care Nurses Association",
+   "journal": "Sleep Adv",
+   "year": 2026,
+   "pmid": "42781607",
+   "doi": "10.1093/sleepadvances/zpag086",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13600392/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13600392/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Funded by Australian Government Health Peak and Advisory Bodies grant (2022-2026) and a Quality Use of Diagnostics, Therapeutics and Pathology grant. Disclosures: lead author was salaried ASA staff; one author (DC) made GP podcast content sponsored by Eisai (lemborexant maker); one author owns a behavioural sleep clinic.",
+  "numbersToVerify": [
+   "10 consecutive days"
+  ],
+  "notes": "Low-dose doxepin and trazodone are covered only in the Supplement (not read). Contrast Brazil, which recommends doxepin 3-6 mg and trazodone for sleep maintenance.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Australia",
+  "body": "Australasian Sleep Association + Sleep Health Foundation + RACGP + Australian Psychological Society + Pharmaceutical Society of Australia + APNA (joint position statement) (table drawn from PBS)",
+  "guidelineTitle": "Management of adult insomnia in Australia (joint position statement), Table 7",
+  "guidelineYear": 2026,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "reimbursement: drug",
+  "recommendation": "PBS listing for adult insomnia: temazepam and nitrazepam listed (25 tablets, 0 repeats); zopiclone 'Repatriation only'; zolpidem No; suvorexant No; lemborexant No; melatonin 2 mg CR No; antihistamines No.",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [
+   "temazepam",
+   "nitrazepam",
+   "zopiclone",
+   "zolpidem",
+   "suvorexant",
+   "lemborexant",
+   "melatonin"
+  ],
+  "citation": {
+   "authors": "Sweetman A, Putland S, Meaklim H, et al.",
+   "title": "Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, Sleep Health Foundation, Royal Australian College of General Practitioners, Australian Psychological Society, Pharmaceutical Society of Australia, and Australian Primary Health Care Nurses Association",
+   "journal": "Sleep Adv",
+   "year": 2026,
+   "pmid": "42781607",
+   "doi": "10.1093/sleepadvances/zpag086",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13600392/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13600392/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Funded by Australian Government Health Peak and Advisory Bodies grant (2022-2026) and a Quality Use of Diagnostics, Therapeutics and Pathology grant. Disclosures: lead author was salaried ASA staff; one author (DC) made GP podcast content sponsored by Eisai (lemborexant maker); one author owns a behavioural sleep clinic.",
+  "numbersToVerify": [
+   "temazepam/nitrazepam 25 tablets 0 repeats",
+   "zopiclone Repatriation 14 tabs (1 repeat) or 30 tabs (0 repeats)"
+  ],
+  "notes": "Result: the only PBS-subsidised hypnotics for insomnia are older benzodiazepines; orexin antagonists are private-script only. PBS schedule not checked directly.",
+  "layer": "coverage"
+ },
+ {
+  "country": "Australia",
+  "body": "Australasian Sleep Association + Sleep Health Foundation + RACGP + Australian Psychological Society + Pharmaceutical Society of Australia + APNA (joint position statement)",
+  "guidelineTitle": "Management of adult insomnia in Australia (joint position statement)",
+  "guidelineYear": 2026,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "reimbursement: digital CBT-I",
+  "recommendation": "Insomnia is an eligible condition under Medicare's Better Access initiative: GP prepares a Mental Health Treatment Plan; rebate for \"up to 10 in-person or tele-health consultations each calendar year\" (gaps can exceed rebate). Free digital options listed: This Way Up Insomnia Program, Sleep Ninja, The Sleep Course. Guideline-based digital mental health programs are \"presently exempt from Therapeutic Goods Administration (TGA) regulatory approval (as of January 2025).\"",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [],
+  "citation": {
+   "authors": "Sweetman A, Putland S, Meaklim H, et al.",
+   "title": "Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, Sleep Health Foundation, Royal Australian College of General Practitioners, Australian Psychological Society, Pharmaceutical Society of Australia, and Australian Primary Health Care Nurses Association",
+   "journal": "Sleep Adv",
+   "year": 2026,
+   "pmid": "42781607",
+   "doi": "10.1093/sleepadvances/zpag086",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13600392/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13600392/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Funded by Australian Government Health Peak and Advisory Bodies grant (2022-2026) and a Quality Use of Diagnostics, Therapeutics and Pathology grant. Disclosures: lead author was salaried ASA staff; one author (DC) made GP podcast content sponsored by Eisai (lemborexant maker); one author owns a behavioural sleep clinic.",
+  "numbersToVerify": [
+   "up to 10 sessions per calendar year",
+   "TGA exemption as of Jan 2025"
+  ],
+  "notes": "Australia is unusual in having a national subsidised route to therapist CBT-I via the GP. Paper notes few sleep-trained psychologists, worse rurally.",
+  "layer": "coverage"
+ },
+ {
+  "country": "Australia",
+  "body": "Australasian Sleep Association + Sleep Health Foundation + RACGP + Australian Psychological Society + Pharmaceutical Society of Australia + APNA (joint position statement)",
+  "guidelineTitle": "Management of adult insomnia in Australia (joint position statement)",
+  "guidelineYear": 2026,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "referral criteria",
+  "recommendation": "Referral to a sleep physician \"may be considered if a comorbid sleep disorder is suspected\" or for people \"who have used and not responded to CBTi.\" GP coordinates; collaboration across GPs, psychologists, pharmacists, nurses.",
+  "direction": "suggest (weak/conditional for)",
+  "strength": "position statement",
+  "drugs": [],
+  "citation": {
+   "authors": "Sweetman A, Putland S, Meaklim H, et al.",
+   "title": "Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, Sleep Health Foundation, Royal Australian College of General Practitioners, Australian Psychological Society, Pharmaceutical Society of Australia, and Australian Primary Health Care Nurses Association",
+   "journal": "Sleep Adv",
+   "year": 2026,
+   "pmid": "42781607",
+   "doi": "10.1093/sleepadvances/zpag086",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13600392/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13600392/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Funded by Australian Government Health Peak and Advisory Bodies grant (2022-2026) and a Quality Use of Diagnostics, Therapeutics and Pathology grant. Disclosures: lead author was salaried ASA staff; one author (DC) made GP podcast content sponsored by Eisai (lemborexant maker); one author owns a behavioural sleep clinic.",
+  "numbersToVerify": [],
+  "notes": "Stepped-care model is described in the Supplement (not read).",
+  "layer": "pathway"
+ },
+ {
+  "country": "Australia",
+  "body": "Therapeutic Goods Administration (TGA) / Poisons Standard",
+  "guidelineTitle": "Notice of final decision to amend the Poisons Standard in relation to melatonin",
+  "guidelineYear": 2021,
+  "status": "current (change proposed for March 2026 ACMS meeting; outcome not confirmed)",
+  "condition": "chronic insomnia",
+  "decision": "melatonin",
+  "recommendation": "Schedule 3 (pharmacist-only) for modified-release tablets <= 2 mg melatonin for short-term monotherapy of primary insomnia with poor sleep quality in adults aged 55 or over, packs <= 30 tablets; all other melatonin Schedule 4 (prescription). A 2023 decision added Schedule 3 immediate-release <= 5 mg for jet lag in adults (no product marketed at time of report).",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [
+   "melatonin"
+  ],
+  "citation": {
+   "authors": "TGA",
+   "title": "Notice of final decision to amend the current Poisons Standard in relation to melatonin",
+   "journal": "",
+   "year": null,
+   "pmid": "",
+   "doi": "",
+   "url": "https://www.tga.gov.au/resources/publication/scheduling-decisions-final/notice-final-decision-amend-current-poisons-standard-relation-melatonin"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://www.tga.gov.au/resources/publication/scheduling-decisions-final/notice-final-decision-amend-current-poisons-standard-relation-melatonin",
+  "whatWasRead": "secondary source",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "<= 2 mg",
+   "55 or over",
+   "30 tablets",
+   "implementation date (1 June 2021 vs 1 Oct 2020 in different snippets)",
+   "jet lag <= 5 mg, 10 units, 2023"
+  ],
+  "notes": "Read via search summaries of TGA pages, not the pages themselves. March 2026 consultation proposed deleting the 55+ Schedule 3 entry; result not found. Joint statement confirms current S3 >=55 / S4 otherwise. Children's melatonin (Slenyto) status not verified.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Australia",
+  "body": "Therapeutic Goods Administration (TGA)",
+  "guidelineTitle": "AusPAR: Suvorexant (Belsomra)",
+  "guidelineYear": 2015,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "regulatory status",
+  "recommendation": "Suvorexant (Belsomra, MSD) approved as a new chemical entity at 15 and 20 mg (AusPAR March 2015, updated June 2018). Lemborexant (Dayvigo) is also on the Australian market (Schedule 4, in AMH for chronic insomnia). Neither PBS-listed.",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [
+   "suvorexant",
+   "lemborexant",
+   "daridorexant"
+  ],
+  "citation": {
+   "authors": "TGA",
+   "title": "Australian Public Assessment Report for Suvorexant",
+   "journal": "",
+   "year": 2015,
+   "pmid": "",
+   "doi": "",
+   "url": "https://www.tga.gov.au/sites/default/files/auspar-suvorexant-150411.pdf"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://www.tga.gov.au/sites/default/files/auspar-suvorexant-150411.pdf",
+  "whatWasRead": "secondary source",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "15 and 20 mg",
+   "AusPAR dates"
+  ],
+  "notes": "Daridorexant TGA registration not found in any source checked; ARTG not searched directly.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Australia",
+  "body": "Royal Australian College of General Practitioners (RACGP)",
+  "guidelineTitle": "Prescribing drugs of dependence in general practice, Part B: Benzodiazepines",
+  "guidelineYear": 2015,
+  "status": "stale (published 2015; page notes may not reflect current evidence)",
+  "condition": "chronic insomnia",
+  "decision": "benzodiazepines",
+  "recommendation": "\"First-line therapy should be non-drug interventions\" and CBT \"should therefore be offered to patients, including older adults\" (Level A). \"Short-term or intermittent dosing of benzodiazepines should be used to reduce the risk of tolerance and dependence\" (Level B). \"Long-term use, beyond 4 weeks, should be uncommon\". Stepped approach to discontinuation.",
+  "direction": "recommend",
+  "strength": "Level A (non-drug first line); Level B (short/intermittent)",
+  "drugs": [
+   "benzodiazepines"
+  ],
+  "citation": {
+   "authors": "RACGP",
+   "title": "Prescribing drugs of dependence in general practice, Part B: Benzodiazepines",
+   "journal": "",
+   "year": 2015,
+   "pmid": "",
+   "doi": "",
+   "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-racgp-guidelines/drugs-of-dependence/part-b/summary-of-recommendations"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-racgp-guidelines/drugs-of-dependence/part-b/summary-of-recommendations",
+  "whatWasRead": "guideline web page",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "beyond 4 weeks"
+  ],
+  "notes": "Search snippets give a 2019 revision date for Part B; the page itself says published 2015.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Australia",
+  "body": "Australian Government, Medicare Benefits Schedule (MBS)",
+  "guidelineTitle": "MBS items 12203 (attended PSG) and 12250 (unattended home study)",
+  "guidelineYear": 2021,
+  "status": "current (descriptors updated 1 Mar 2021; fees 1 Jul 2026)",
+  "condition": "obstructive sleep apnea",
+  "decision": "referral criteria",
+  "recommendation": "Item 12250 (home study, adults 18+) is payable if either (i) a medical practitioner (e.g. GP) refers to a sleep or respiratory physician who determines high probability of symptomatic moderate-severe OSA \"based on a STOP-Bang score of 3 or more, an OSA50 score of 5 or more or a high risk score on the Berlin Questionnaire, and an Epworth Sleepiness Scale score of 8 or more\"; or (ii) the specialist sees the patient (face-to-face or video) and decides a test is needed. Item 12203 (lab PSG) has the same gate plus listed indications (e.g. not suitable for home study, central apnoea, hypoventilation).",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [],
+  "citation": {
+   "authors": "Australian Government Department of Health",
+   "title": "MBS Online item 12250",
+   "journal": "",
+   "year": null,
+   "pmid": "",
+   "doi": "",
+   "url": "https://www9.health.gov.au/mbs/fullDisplay.cfm?type=item&q=12250&qt=item"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://www9.health.gov.au/mbs/fullDisplay.cfm?type=item&q=12250&qt=item",
+  "whatWasRead": "guideline web page",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "STOP-Bang >= 3",
+   "OSA50 >= 5",
+   "ESS >= 8",
+   "at least 8 hours"
+  ],
+  "notes": "The questionnaire route lets a GP get a home test without the patient seeing the specialist first, but a sleep/respiratory physician still has to sign off the referral; it is not GP-ordered testing outright. Some secondary sources still quote STOP-Bang >= 4 (pre-March 2021).",
+  "layer": "coverage"
+ },
+ {
+  "country": "Australia",
+  "body": "Australian Government, Medicare Benefits Schedule (MBS)",
+  "guidelineTitle": "MBS item 12204 (CPAP titration study)",
+  "guidelineYear": 2021,
+  "status": "current",
+  "condition": "obstructive sleep apnea",
+  "decision": "who prescribes CPAP",
+  "recommendation": "Attended PAP titration study payable when need is decided by a qualified adult sleep medicine practitioner or respiratory physician, who has seen the patient (face-to-face or video) and established the breathing disorder causes the symptoms; patient has not had PAP in the previous 6 months. Medicare does not subsidise the CPAP device itself.",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [],
+  "citation": {
+   "authors": "Australian Government Department of Health",
+   "title": "MBS Online item 12204",
+   "journal": "",
+   "year": null,
+   "pmid": "",
+   "doi": "",
+   "url": "https://www9.health.gov.au/mbs/fullDisplay.cfm?type=item&q=12204&qt=item"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://www9.health.gov.au/mbs/fullDisplay.cfm?type=item&q=12204&qt=item",
+  "whatWasRead": "guideline web page",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "previous 6 months"
+  ],
+  "notes": "'No Medicare subsidy for the device' comes from secondary (retailer) sources plus absence of any MBS/PBS item; device funding is state-run (see Queensland row) or private/health-fund extras.",
+  "layer": "coverage"
+ },
+ {
+  "country": "Australia (Queensland Health Sleep Disorders Program)",
+  "body": "Queensland Health",
+  "guidelineTitle": "Queensland Health Sleep Disorders Program (QHSDP)",
+  "guidelineYear": 2026,
+  "status": "current (page updated 3 Sept 2026)",
+  "condition": "obstructive sleep apnea",
+  "decision": "CPAP adherence requirement",
+  "recommendation": "Free CPAP loan for Queensland residents holding a Pensioner Concession Card, Health Care Card or DVA white card, with \"significant sleep apnoea\" diagnosed at a QHSDP Prescriber Centre, managed by an RACP-accredited sleep physician; must first rent a device for a \"minimum 2-month home treatment trial with average usage of at least 4 hours per night\"; buy own mask. Access needs GP or specialist referral.",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [],
+  "citation": {
+   "authors": "Queensland Government",
+   "title": "Queensland Health Sleep Disorders Program",
+   "journal": "",
+   "year": null,
+   "pmid": "",
+   "doi": "",
+   "url": "https://qld.gov.au/health/services/specialists/queensland-health-sleep-disorders-program"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://qld.gov.au/health/services/specialists/queensland-health-sleep-disorders-program",
+  "whatWasRead": "guideline web page",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "2-month trial",
+   "average >= 4 hours per night"
+  ],
+  "notes": "Means-tested and state-specific. NSW equivalent (EnableNSW) needs pension concession card, severity criteria and proof of use; co-payment $100/year for pensioners (from search summary of NSW Health pages, not opened). Clinician-facing QLD page bot-blocked.",
+  "layer": "coverage"
+ },
+ {
+  "country": "New Zealand",
+  "body": "bpacnz (Best Practice Advocacy Centre)",
+  "guidelineTitle": "Managing insomnia: Part 2 - pharmacological treatment",
+  "guidelineYear": 2017,
+  "status": "stale (published 13 Oct 2017)",
+  "condition": "chronic insomnia",
+  "decision": "duration limit",
+  "recommendation": "\"Non-pharmacological interventions are the preferred treatment for insomnia.\" Hypnotics \"should be used for a maximum of four weeks (but often less)\"; short-acting hypnotics \"should be prescribed for no more than two to three weeks\", ideally a few nights. Temazepam, triazolam and zopiclone are the medicines indicated for insomnia. No OTC products incl. sedating antihistamines recommended; limited evidence for quetiapine.",
+  "direction": "recommend",
+  "strength": "not graded",
+  "drugs": [
+   "zopiclone",
+   "temazepam",
+   "triazolam",
+   "quetiapine",
+   "diphenhydramine"
+  ],
+  "citation": {
+   "authors": "bpacnz",
+   "title": "Managing insomnia: Part 2 - pharmacological treatment",
+   "journal": "Best Practice Journal",
+   "year": 2017,
+   "pmid": "",
+   "doi": "",
+   "url": "https://bpac.org.nz/2017/insomnia-2.aspx"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://bpac.org.nz/2017/insomnia-2.aspx",
+  "whatWasRead": "guideline web page",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "four weeks",
+   "two to three weeks"
+  ],
+  "notes": "2021 bpac article: zopiclone is NZ's most dispensed funded hypnotic. No DORA mentioned; none appears to be approved/funded in NZ (not checked against Medsafe directly).",
+  "layer": "guideline"
+ },
+ {
+  "country": "New Zealand",
+  "body": "Medsafe / PHARMAC (via Medsafe MARC paper, March 2026)",
+  "guidelineTitle": "Melatonin safety profile in adults (MARC meeting 12 March 2026)",
+  "guidelineYear": 2026,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "melatonin",
+  "recommendation": "Since 10 Oct 2025, adults 18+ can buy from pharmacies (pharmacy-only) up to 30 days of melatonin for primary insomnia (immediate-release <= 3 mg or modified-release <= 2 mg) or 10 days for jet lag (IR <= 5 mg). Adults 55+ can still get up to 13 weeks after pharmacist consultation. Otherwise prescription. PHARMAC funds modified-release 2 mg (Vigisom brand) only for patients <= 18 years meeting Special Authority criteria; unsubsidised for adult insomnia.",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [
+   "melatonin"
+  ],
+  "citation": {
+   "authors": "Medsafe Medicines Adverse Reactions Committee",
+   "title": "Melatonin safety profile in adults",
+   "journal": "",
+   "year": 2026,
+   "pmid": "",
+   "doi": "",
+   "url": "https://medsafe.govt.nz/committees/MARC/reports/205-3.2.1%20Melatonin-safety-profile-in%20adults.pdf"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://medsafe.govt.nz/committees/MARC/reports/205-3.2.1%20Melatonin-safety-profile-in%20adults.pdf",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "10 Oct 2025",
+   "30 days",
+   "<= 3 mg IR / <= 2 mg MR",
+   "10 days jet lag <= 5 mg",
+   "13 weeks for 55+",
+   "<= 18 years funded"
+  ],
+  "notes": "NZ is now more permissive than Australia (where adults under 55 need a prescription). bpac 2017 also said melatonin is unsubsidised for adult insomnia.",
+  "layer": "coverage"
+ },
+ {
+  "country": "Brazil",
+  "body": "Associação Brasileira do Sono (ABS) + Associação Brasileira de Medicina do Sono (ABMS)",
+  "guidelineTitle": "2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults",
+  "guidelineYear": 2023,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "CBT-I",
+  "recommendation": "\"Multicomponent CBT-I is recommended as the gold standard for treating chronic insomnia\" (100% agreement). In-person and group CBT-I: Recommended, evidence Level 1; online CBT-I Level 2 and \"not inferior to in-person\"; digital Level 1 (78.1% agreement). \"Sleep hygiene is not recommended as an isolated form of intervention.\"",
+  "direction": "recommend",
+  "strength": "Delphi consensus (>=75% agreement) + Oxford CEBM evidence level 1",
+  "drugs": [],
+  "citation": {
+   "authors": "Drager LF, Assis M, Bacelar AFR, et al.",
+   "title": "2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association",
+   "journal": "Sleep Sci",
+   "year": 2023,
+   "pmid": "38370879",
+   "doi": "10.1055/s-0043-1776281",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10869237/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10869237/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Many authors report lecture/consultancy fees from Brazilian and multinational drug makers (Eurofarma, EMS, Apsen, Aché, Biolab, Libbs, Takeda, Sanofi, Lundbeck, Teva) and ResMed; one author is partner at SleepUp (digital CBT-I company) and another on its advisory board; several declare none. EMS is the Latin American partner for daridorexant.",
+  "numbersToVerify": [
+   "100%",
+   "78.1%",
+   "93.75%"
+  ],
+  "notes": "Grading: Oxford levels 1-5 assigned by one author; recommendation by Delphi vote; only physicians voted on drug items. Only drugs available or expected in Brazil were considered.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Brazil",
+  "body": "Associação Brasileira do Sono (ABS) + Associação Brasileira de Medicina do Sono (ABMS)",
+  "guidelineTitle": "2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults",
+  "guidelineYear": 2023,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "Z-drugs",
+  "recommendation": "Zolpidem oral/sublingual/orodispersible Recommended for sleep onset (Level 1); controlled-release for maintenance. \"The use of zolpidem should NOT exceed 4 weeks, intermittent use or 'if necessary' is recommended.\" Eszopiclone Recommended onset and maintenance (Level 1); zopiclone Recommended (Level 3), short-term / as needed.",
+  "direction": "recommend",
+  "strength": "Level 1 (zolpidem, eszopiclone); Level 3 (zopiclone)",
+  "drugs": [
+   "zolpidem",
+   "eszopiclone",
+   "zopiclone"
+  ],
+  "citation": {
+   "authors": "Drager LF, Assis M, Bacelar AFR, et al.",
+   "title": "2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association",
+   "journal": "Sleep Sci",
+   "year": 2023,
+   "pmid": "38370879",
+   "doi": "10.1055/s-0043-1776281",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10869237/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10869237/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Many authors report lecture/consultancy fees from Brazilian and multinational drug makers (Eurofarma, EMS, Apsen, Aché, Biolab, Libbs, Takeda, Sanofi, Lundbeck, Teva) and ResMed; one author is partner at SleepUp (digital CBT-I company) and another on its advisory board; several declare none. EMS is the Latin American partner for daridorexant.",
+  "numbersToVerify": [
+   "4 weeks",
+   "agreement 94-100%"
+  ],
+  "notes": "Brazil recommends Z-drugs more positively than Australia/Canada. Benzodiazepines as a class: NOT Recommended (Level 5, 82%/75%).",
+  "layer": "guideline"
+ },
+ {
+  "country": "Brazil",
+  "body": "Associação Brasileira do Sono (ABS) + Associação Brasileira de Medicina do Sono (ABMS)",
+  "guidelineTitle": "2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults",
+  "guidelineYear": 2023,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "orexin antagonists",
+  "recommendation": "Suvorexant Recommended for onset (Level 1, 82%) and maintenance (Level 1, 100%); daridorexant Recommended onset (Level 1) and maintenance (Level 1, 94%); lemborexant Recommended (Level 2). \"Lemborexant is NOT recommended as a treatment for insomnia in patients with narcolepsy.\"",
+  "direction": "recommend",
+  "strength": "Level 1 (suvorexant, daridorexant); Level 2 (lemborexant)",
+  "drugs": [
+   "suvorexant",
+   "daridorexant",
+   "lemborexant"
+  ],
+  "citation": {
+   "authors": "Drager LF, Assis M, Bacelar AFR, et al.",
+   "title": "2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association",
+   "journal": "Sleep Sci",
+   "year": 2023,
+   "pmid": "38370879",
+   "doi": "10.1055/s-0043-1776281",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10869237/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10869237/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Many authors report lecture/consultancy fees from Brazilian and multinational drug makers (Eurofarma, EMS, Apsen, Aché, Biolab, Libbs, Takeda, Sanofi, Lundbeck, Teva) and ResMed; one author is partner at SleepUp (digital CBT-I company) and another on its advisory board; several declare none. EMS is the Latin American partner for daridorexant.",
+  "numbersToVerify": [
+   "82.35%",
+   "94.12%",
+   "100%"
+  ],
+  "notes": "Recommended before being sold in Brazil: per Idorsia (Jan 2026) daridorexant was filed with ANVISA in 2025 via EMS, launch expected mid-2027 (press, not ANVISA). Brazilian registration of suvorexant/lemborexant not confirmed.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Brazil",
+  "body": "Associação Brasileira do Sono (ABS) + Associação Brasileira de Medicina do Sono (ABMS)",
+  "guidelineTitle": "2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults",
+  "guidelineYear": 2023,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "low-dose doxepin",
+  "recommendation": "Doxepin Recommended for sleep maintenance (Level 2, 88%); \"The recommended doses of doxepin should be between 3 and 6 mg used close to bedtime\". Trazodone Recommended for maintenance (Level 2, 82%); not for pregnancy, breastfeeding, children. Mirtazapine and amitriptyline: no consensus (useful in comorbid depression).",
+  "direction": "recommend",
+  "strength": "Level 2",
+  "drugs": [
+   "doxepin",
+   "trazodone",
+   "mirtazapine",
+   "amitriptyline"
+  ],
+  "citation": {
+   "authors": "Drager LF, Assis M, Bacelar AFR, et al.",
+   "title": "2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association",
+   "journal": "Sleep Sci",
+   "year": 2023,
+   "pmid": "38370879",
+   "doi": "10.1055/s-0043-1776281",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10869237/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10869237/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Many authors report lecture/consultancy fees from Brazilian and multinational drug makers (Eurofarma, EMS, Apsen, Aché, Biolab, Libbs, Takeda, Sanofi, Lundbeck, Teva) and ResMed; one author is partner at SleepUp (digital CBT-I company) and another on its advisory board; several declare none. EMS is the Latin American partner for daridorexant.",
+  "numbersToVerify": [
+   "3-6 mg",
+   "88.24%",
+   "82.35%"
+  ],
+  "notes": "",
+  "layer": "guideline"
+ },
+ {
+  "country": "Brazil",
+  "body": "Associação Brasileira do Sono (ABS) + Associação Brasileira de Medicina do Sono (ABMS)",
+  "guidelineTitle": "2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults",
+  "guidelineYear": 2023,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "melatonin",
+  "recommendation": "Melatonin NOT Recommended for adult insomnia (Level 2; 76% onset, 88% maintenance), but special statement: \"Melatonin can be used to treat initial insomnia in the elderly and children with autism spectrum disorder.\" Also NOT Recommended: quetiapine (Level 5), gabapentin (Level 5), valerian (Level 2), cannabinoids (Level 3), promethazine, hydroxyzine, dimenhydrinate (Level 5).",
+  "direction": "recommend against",
+  "strength": "Level 2 (melatonin)",
+  "drugs": [
+   "melatonin",
+   "quetiapine",
+   "gabapentin",
+   "valerian",
+   "cannabinoids",
+   "promethazine",
+   "hydroxyzine"
+  ],
+  "citation": {
+   "authors": "Drager LF, Assis M, Bacelar AFR, et al.",
+   "title": "2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association",
+   "journal": "Sleep Sci",
+   "year": 2023,
+   "pmid": "38370879",
+   "doi": "10.1055/s-0043-1776281",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10869237/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10869237/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "Many authors report lecture/consultancy fees from Brazilian and multinational drug makers (Eurofarma, EMS, Apsen, Aché, Biolab, Libbs, Takeda, Sanofi, Lundbeck, Teva) and ResMed; one author is partner at SleepUp (digital CBT-I company) and another on its advisory board; several declare none. EMS is the Latin American partner for daridorexant.",
+  "numbersToVerify": [
+   "76.47%",
+   "88.24%"
+  ],
+  "notes": "Internal tension: general 'not recommended' vs 'can be used' in elderly. Australia allows melatonin up to 13 weeks in 55+.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Brazil",
+  "body": "ANVISA (Agência Nacional de Vigilância Sanitária)",
+  "guidelineTitle": "Zolpidem prescription rules (RDC 871 and 877/2024; Comunicado GGMON 002/2024)",
+  "guidelineYear": 2024,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "regulatory status",
+  "recommendation": "From 1 Aug 2024 all zolpidem products, at any dose, need the blue 'Notificação de Receita B' (controlled prescription; prescriber registered with local health surveillance). The old exemption treating doses up to 10 mg like List C1 (ordinary two-copy prescription) was removed. Original reasoning (press summary): \"não há dados científicos que demonstrem que concentrações de até 10 mg mereçam um critério regulatório diferenciado\" (no scientific data show doses up to 10 mg deserve different rules). Packs move to black stripe (tarja preta) by 1 Dec 2024.",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [
+   "zolpidem"
+  ],
+  "citation": {
+   "authors": "ANVISA",
+   "title": "Comunicado GGMON 002/2024: Medicamento zolpidem terá alteração no tipo de receita para prescrição e venda",
+   "journal": "",
+   "year": 2024,
+   "pmid": "",
+   "doi": "",
+   "url": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/monitoramento/farmacovigilancia/comunicados-ggmon/comunicado-ggmon-002-2024"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/monitoramento/farmacovigilancia/comunicados-ggmon/comunicado-ggmon-002-2024",
+  "whatWasRead": "secondary source",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "1 Aug 2024",
+   "decision 15 May 2024",
+   "RDC 871 and 877",
+   "1 Dec 2024 tarja preta"
+  ],
+  "notes": "ANVISA page shows only title; details from Brazilian press and CFM. Driven by rising zolpidem misuse; see also Brazilian Academy of Neurology 2025 Z-drug dependence guideline (Stelzer et al., PMID 41187937, DOI 10.1055/s-0045-1812323), which restates the no-more-than-4-weeks rule.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Brazil",
+  "body": "ANVISA",
+  "guidelineTitle": "Instrução Normativa 28/2018 amendment: melatonin in food supplements",
+  "guidelineYear": 2021,
+  "status": "current",
+  "condition": "chronic insomnia",
+  "decision": "melatonin",
+  "recommendation": "Since Oct 2021 (Dicol decision 14 Oct 2021) melatonin is allowed in food supplements without prescription for adults (reported as over 19), max 0.21 mg/day; label warning against use by pregnant or breastfeeding women, children, and people doing tasks needing constant attention. Original: \"Não foram aprovadas alegações\" de benefício (no health claims approved, i.e. cannot be sold 'for sleep').",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [
+   "melatonin"
+  ],
+  "citation": {
+   "authors": "ANVISA",
+   "title": "Voto 80/2021 DIRE3 (melatonina em suplementos alimentares)",
+   "journal": "",
+   "year": 2021,
+   "pmid": "",
+   "doi": "",
+   "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/votos/2021/copy_of_rop-06.2021/item-2-3-11-voto-80-2021-dire3.pdf"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/votos/2021/copy_of_rop-06.2021/item-2-3-11-voto-80-2021-dire3.pdf",
+  "whatWasRead": "secondary source",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "0.21 mg/day",
+   "age 19 vs 18 (sources differ)",
+   "14 Oct 2021"
+  ],
+  "notes": "0.21 mg is a tenth or less of the 2 mg dose used in Australia/NZ/Europe. Before 2021, melatonin only via prescription at compounding pharmacies.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Brazil",
+  "body": "Sociedade Brasileira de Pneumologia e Tisiologia (SBPT)",
+  "guidelineTitle": "Brazilian Thoracic Association Consensus on Sleep-disordered Breathing",
+  "guidelineYear": 2022,
+  "status": "current",
+  "condition": "obstructive sleep apnea",
+  "decision": "diagnosis: home sleep apnea test",
+  "recommendation": "High-risk patients (by screening) \"can be tested either at home or in the sleep laboratory\"; low-risk should be tested in the lab. A negative or technically poor home study with high suspicion should be followed by in-lab PSG. Screening tools can route high-risk patients to home testing \"thus trimming the waiting lists at sleep laboratories.\"",
+  "direction": "suggest (weak/conditional for)",
+  "strength": "expert consensus (14 experts; ungraded)",
+  "drugs": [],
+  "citation": {
+   "authors": "Duarte RLM, Togeiro SMGP, Palombini LO, et al.",
+   "title": "Brazilian Thoracic Association Consensus on Sleep-disordered Breathing",
+   "journal": "J Bras Pneumol",
+   "year": 2022,
+   "pmid": "35830079",
+   "doi": "10.36416/1806-3756/e20220106",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9262434/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9262434/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "None declared",
+  "numbersToVerify": [],
+  "notes": "Brazilian Sleep Association OSA-specific guideline not found beyond this SBPT consensus and allied-health guidelines (physiotherapy 2022, speech therapy 2023).",
+  "layer": "guideline"
+ },
+ {
+  "country": "Brazil",
+  "body": "Sociedade Brasileira de Pneumologia e Tisiologia (SBPT)",
+  "guidelineTitle": "Brazilian Thoracic Association Consensus on Sleep-disordered Breathing",
+  "guidelineYear": 2022,
+  "status": "current",
+  "condition": "obstructive sleep apnea",
+  "decision": "CPAP",
+  "recommendation": "\"Positive pressure therapy is the treatment of choice for individuals with moderate-to-severe OSA.\" Adherence defined as CPAP >= 4 h/night on >= 70% of nights in the first 3 months. Other options: positional therapy, alcohol avoidance, exercise, weight loss, oral appliances, surgery.",
+  "direction": "recommend",
+  "strength": "expert consensus",
+  "drugs": [],
+  "citation": {
+   "authors": "Duarte RLM, Togeiro SMGP, Palombini LO, et al.",
+   "title": "Brazilian Thoracic Association Consensus on Sleep-disordered Breathing",
+   "journal": "J Bras Pneumol",
+   "year": 2022,
+   "pmid": "35830079",
+   "doi": "10.36416/1806-3756/e20220106",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9262434/"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9262434/",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "None declared",
+  "numbersToVerify": [
+   ">= 4 h/night",
+   ">= 70% of nights",
+   "1-year adherence > 75%"
+  ],
+  "notes": "",
+  "layer": "guideline"
+ },
+ {
+  "country": "Brazil",
+  "body": "Sistema Único de Saúde (SUS) / NATJUS-RJ technical opinions",
+  "guidelineTitle": "CPAP access in SUS",
+  "guidelineYear": 2025,
+  "status": "current",
+  "condition": "obstructive sleep apnea",
+  "decision": "who prescribes CPAP",
+  "recommendation": "No Ministry of Health clinical protocol (PCDT) for OSA; CPAP not assessed by CONITEC; not on any national, Rio state or municipal SUS dispensing list and no outpatient SIGTAP code. Original: \"não há PCDT publicado pelo Ministério da Saúde para apneia do sono\" (no Ministry of Health protocol published for sleep apnoea).",
+  "direction": "regulatory fact",
+  "strength": "n/a",
+  "drugs": [],
+  "citation": {
+   "authors": "NATJUS / Comitê Estadual de Saúde RJ",
+   "title": "Parecer técnico 1516/2023 (CPAP)",
+   "journal": "",
+   "year": 2023,
+   "pmid": "",
+   "doi": "",
+   "url": "https://static.trf2.jus.br/nas-internet/documento/comite-estadual-saude/pareceres/2023/parecer-1516-2023.pdf"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://static.trf2.jus.br/nas-internet/documento/comite-estadual-saude/pareceres/2023/parecer-1516-2023.pdf",
+  "whatWasRead": "secondary source",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [],
+  "notes": "From search summaries of court technical opinions (2023-2025), not opened. These opinions are written for court cases about CPAP supply. Some states/municipalities run their own programs (not checked).",
+  "layer": "coverage"
+ },
+ {
+  "country": "Argentina",
+  "body": "Asociación Argentina de Medicina Respiratoria (AAMR)",
+  "guidelineTitle": "Guías prácticas de diagnóstico y tratamiento del síndrome de apneas e hipopneas obstructivas del sueño: Actualización 2018",
+  "guidelineYear": 2019,
+  "status": "stale (last updated 2018/2019)",
+  "condition": "obstructive sleep apnea",
+  "decision": "diagnosis: home sleep apnea test",
+  "recommendation": "\"La evidencia disponible muestra que la PR realizada en el domicilio del paciente es comparable a la PSG realizada en el laboratorio de sueño para el diagnóstico del SAHOS del adulto en pacientes con sospecha clínica. (Evidencia A)\" (home respiratory polygraphy is comparable to lab PSG in adults with clinical suspicion). Expert reading needed with heart/lung disease, neuromuscular disease, stroke, chronic opioids. Valid study needs >= 4 h interpretable recording.",
+  "direction": "recommend",
+  "strength": "Evidencia A",
+  "drugs": [],
+  "citation": {
+   "authors": "Nogueira F, Borsini E, Cambursano H, et al. (AAMR)",
+   "title": "Guías prácticas de diagnóstico y tratamiento del síndrome de apneas e hipopneas obstructivas del sueño: Actualización 2018",
+   "journal": "Rev Am Med Respir",
+   "year": 2019,
+   "pmid": "",
+   "doi": "",
+   "url": "https://aamr.org.ar/biblioteca/consensos/guias_sueno_aamr_2018-2019.pdf"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://aamr.org.ar/biblioteca/consensos/guias_sueno_aamr_2018-2019.pdf",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   ">= 4 hours"
+  ],
+  "notes": "Not indexed in PubMed (no PMID). Earlier Argentine consensus 2001 (Medicina B Aires, PMID 11808438 / 11474886) named PSG as standard. COI section not found in text.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Argentina",
+  "body": "Asociación Argentina de Medicina Respiratoria (AAMR)",
+  "guidelineTitle": "Guías prácticas de diagnóstico y tratamiento del síndrome de apneas e hipopneas obstructivas del sueño: Actualización 2018",
+  "guidelineYear": 2019,
+  "status": "stale (last updated 2018/2019)",
+  "condition": "obstructive sleep apnea",
+  "decision": "CPAP",
+  "recommendation": "\"La aplicación de presión positiva continua en la vía aérea (CPAP) durante el sueño es el tratamiento de elección para el SAHOS\" (CPAP is the treatment of choice) (Recomendación A). Indicated for AHI >= 15/h, or AHI 5-14.9 with daytime sleepiness, cognitive deficit, or cardiovascular/metabolic/cerebrovascular disease (A). \"La indicación, ajuste y control del tratamiento debe estar a cargo de un equipo profesional entrenado en Medicina del Sueño\" (sleep-medicine team prescribes and follows). Auto-CPAP titration at home allowed (A).",
+  "direction": "recommend",
+  "strength": "Recomendación A",
+  "drugs": [],
+  "citation": {
+   "authors": "Nogueira F, Borsini E, Cambursano H, et al. (AAMR)",
+   "title": "Guías prácticas de diagnóstico y tratamiento del síndrome de apneas e hipopneas obstructivas del sueño: Actualización 2018",
+   "journal": "Rev Am Med Respir",
+   "year": 2019,
+   "pmid": "",
+   "doi": "",
+   "url": "https://aamr.org.ar/biblioteca/consensos/guias_sueno_aamr_2018-2019.pdf"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://aamr.org.ar/biblioteca/consensos/guias_sueno_aamr_2018-2019.pdf",
+  "whatWasRead": "full text",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "AHI >= 15",
+   "AHI 5-14.9"
+  ],
+  "notes": "Oral appliances: custom, titratable devices recommended for those who suit them; surgery first-line only for fixable obstruction (e.g. tonsils).",
+  "layer": "guideline"
+ },
+ {
+  "country": "Mexico",
+  "body": "Instituto Mexicano del Seguro Social (IMSS) / CENETEC clinical practice guideline",
+  "guidelineTitle": "Guía de práctica clínica. Diagnóstico y tratamiento del insomnio en el adulto mayor",
+  "guidelineYear": 2014,
+  "status": "stale (2014)",
+  "condition": "chronic insomnia",
+  "decision": "melatonin",
+  "recommendation": "For older adults: find and treat secondary causes, use non-drug therapy including sleep hygiene, then drugs. \"No es recomendable comenzar el tratamiento con un hipnótico\" before ruling out causative drugs/diseases. \"Tampoco se recomienda el uso de neurolépticos, melatonina, antihistamínicos o benzodiacepinas de vida media larga\" (antipsychotics, melatonin, antihistamines and long-acting benzodiazepines not recommended).",
+  "direction": "recommend against",
+  "strength": "not shown in abstract",
+  "drugs": [
+   "melatonin",
+   "antipsychotics",
+   "antihistamines",
+   "long-acting benzodiazepines"
+  ],
+  "citation": {
+   "authors": "Medina-Chávez JH, Fuentes-Alexandro SA, Gil-Palafox IB, et al.",
+   "title": "Guía de práctica clínica. Diagnóstico y tratamiento del insomnio en el adulto mayor",
+   "journal": "Rev Med Inst Mex Seguro Soc",
+   "year": 2014,
+   "pmid": "",
+   "doi": "",
+   "url": "https://revistamedica.imss.gob.mx/index.php/revista_medica/article/view/758"
+  },
+  "freeToRead": true,
+  "freeUrl": "https://revistamedica.imss.gob.mx/index.php/revista_medica/article/view/758",
+  "whatWasRead": "abstract",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [
+   "Vol 52(1):108-19; year 2014 vs 2016 shown on page"
+  ],
+  "notes": "Older-adult guideline only. A CENETEC GPC 'Diagnóstico y tratamiento del insomnio crónico en adultos en los tres niveles de atención' exists (covers drugs, psychological therapy, referral criteria between care levels) but its text, code and year could not be read. No Mexican national OSA guideline found.",
+  "layer": "guideline"
+ },
+ {
+  "country": "Chile",
+  "body": "none found",
+  "guidelineTitle": "No national adult insomnia or OSA guideline found",
+  "guidelineYear": null,
+  "status": "n/a",
+  "condition": "obstructive sleep apnea",
+  "decision": "first-line treatment",
+  "recommendation": "No Chilean society (e.g. Sociedad Chilena de Enfermedades Respiratorias) or MINSAL adult OSA or insomnia guideline found in PubMed or web search; only a prevalence study from the 2016/17 National Health Survey.",
+  "direction": "no recommendation / insufficient evidence",
+  "strength": "n/a",
+  "drugs": [],
+  "citation": {
+   "authors": "",
+   "title": "",
+   "journal": "",
+   "year": null,
+   "pmid": "",
+   "doi": "",
+   "url": "https://revistamedicadechile.cl/index.php/rmedica/article/download/8209/6049/102794"
+  },
+  "freeToRead": true,
+  "freeUrl": "",
+  "whatWasRead": "secondary source",
+  "conflictsOfInterest": "not stated",
+  "numbersToVerify": [],
+  "notes": "Absence finding; the search was not exhaustive (Spanish-language society sites not crawled). Spanish SEPAR-led International Consensus Document on OSA (2021) is commonly used across Latin America (not reviewed here).",
+  "layer": "guideline"
+ }
+]

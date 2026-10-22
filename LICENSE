@@ -5,6 +5,23 @@ Full text: https://creativecommons.org/licenses/by/4.0/legalcode
 
 Works cited by the dataset keep their own licenses and are linked, not reproduced.
 
+Third-party codes excluded from the CC BY 4.0 licence (research/care-by-country/):
+
+- ATC codes (the `atc` value in `drugCodes`, and scripts/codes/drug-codes.json) are
+  material of the WHO Collaborating Centre for Drug Statistics Methodology, Oslo.
+  They are NOT covered by this repository's CC BY 4.0 licence. Terms:
+  https://atcddd.fhi.no/copyright_disclaimer/ (attribution required; no commercial
+  copying or distribution; no changes to the material). Only bare codes are stored,
+  with no ATC names, hierarchy or DDDs. Do not include them in any open release
+  until the WHOCC confirms this use.
+  Attribution: ATC codes from the WHO Collaborating Centre for Drug Statistics
+  Methodology, ATC/DDD Index, https://atcddd.fhi.no/atc_ddd_index/.
+- ICD-11 codes, titles and URIs (`conditionCodes`) are WHO material under CC BY-ND 3.0
+  IGO (https://icd.who.int/en/docs/icd11-license.pdf), not this repository's CC BY 4.0.
+  Citation: International Classification of Diseases, Eleventh Revision (ICD-11),
+  World Health Organization (WHO) 2019, https://icd.who.int/browse11. Licensed under
+  CC BY-ND 3.0 IGO.
+
 Scripts in scripts/ are licensed under the MIT License:
 
 Copyright (c) 2026 Health Culture Foundation

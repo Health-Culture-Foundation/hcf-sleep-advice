@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sleep Care by Country</title>
+<meta name="description" content="How sleep medicine guidelines, care pathways and payer rules differ between countries, drugs included, and whether anyone has compared them before. Draft research by the Health Culture Foundation.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf7; --surface:#ffffff; --surface-2:#f3f1ec; --ink:#1d1f23; --ink-2:#4a4f57; --ink-3:#6b717a;
+  --line:#e2ded5; --accent:#2f4b8a; --accent-soft:#e6ecf8; --warn:#8a5a00; --warn-soft:#fbf1dc;
+  --good:#2f6b3f; --good-soft:#e3f1e6; --bad:#9a2d2d; --bad-soft:#f8e4e2;
+  --maxw:1080px; --prose:720px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161a; --surface:#1b1e23; --surface-2:#22262c; --ink:#e9e7e2; --ink-2:#b9bcc2; --ink-3:#8d929a;
+    --line:#2f343b; --accent:#9db4ea; --accent-soft:#232c40; --warn:#e6b65c; --warn-soft:#33291a;
+    --good:#8fcf9e; --good-soft:#1d2e22; --bad:#ec9a92; --bad-soft:#3a2222;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14161a; --surface:#1b1e23; --surface-2:#22262c; --ink:#e9e7e2; --ink-2:#b9bcc2; --ink-3:#8d929a;
+  --line:#2f343b; --accent:#9db4ea; --accent-soft:#232c40; --warn:#e6b65c; --warn-soft:#33291a;
+  --good:#8fcf9e; --good-soft:#1d2e22; --bad:#ec9a92; --bad-soft:#3a2222;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:2px}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;line-height:1.2;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,5vw,3.1rem);margin:.2em 0 .3em;font-weight:700}
+h2{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 .6em;font-weight:600}
+h3{font-size:1.2rem;margin:1.6em 0 .5em;font-weight:600}
+p{margin:0 0 1em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+.prose{max-width:var(--prose)}
+header.hero{border-bottom:1px solid var(--line);background:var(--surface);padding:56px 0 40px}
+.eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.lede{font-size:1.2rem;color:var(--ink-2);max-width:var(--prose)}
+.banner{margin-top:24px;padding:12px 16px;border-radius:8px;background:var(--warn-soft);color:var(--warn);font-size:.92rem;max-width:var(--prose)}
+nav.toc{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+nav.toc a{flex:none;font-size:.85rem;color:var(--ink-2);text-decoration:none;padding:6px 10px;border-radius:6px}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 18px 14px}
+.card .k{font-family:"Source Serif 4",Georgia,serif;font-size:1.15rem;font-weight:600;margin-bottom:6px}
+.card p{color:var(--ink-2);font-size:.95rem;margin:0}
+.stats{display:flex;flex-wrap:wrap;gap:28px;margin:28px 0 0}
+.stat .n{font-family:"Source Serif 4",Georgia,serif;font-size:2.2rem;font-weight:700;line-height:1}
+.stat .l{font-size:.85rem;color:var(--ink-3)}
+.verdict{border-left:4px solid var(--accent);background:var(--accent-soft);padding:16px 20px;border-radius:0 8px 8px 0;margin:20px 0;max-width:var(--prose)}
+.verdict strong{display:block;font-family:"Source Serif 4",Georgia,serif;font-size:1.15rem;margin-bottom:4px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:16px 0}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:900px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{background:var(--surface-2);font-weight:600;font-size:.8rem;color:var(--ink-2);position:sticky;top:0}
+tr:last-child td{border-bottom:none}
+td:first-child{font-weight:600;white-space:nowrap}
+.muted{color:var(--ink-3)}
+.small{font-size:.88rem}
+.pill{display:inline-block;font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.pill.for{background:var(--good-soft);color:var(--good)}
+.pill.against{background:var(--bad-soft);color:var(--bad)}
+.pill.fact{background:var(--accent-soft);color:var(--accent)}
+.pill.stale{background:var(--warn-soft);color:var(--warn)}
+ul.tight{padding-left:1.2em;margin:0 0 1em} ul.tight li{margin:.3em 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.spectrum{margin:16px 0 8px;max-width:var(--prose)}
+.spectrum .row{display:grid;grid-template-columns:140px 1fr;gap:12px;align-items:center;margin:8px 0;font-size:.92rem}
+.spectrum .bar{height:10px;border-radius:5px;background:var(--accent)}
+.spectrum .row span:last-child{display:flex;align-items:center;gap:10px}
+@media (max-width:560px){.spectrum .row{grid-template-columns:1fr;gap:4px;margin:14px 0}.spectrum .row span:first-child{font-weight:600}.spectrum .row span:last-child{flex-direction:column;align-items:flex-start;gap:4px}.spectrum .bar{min-width:8px}}
+/* explorer */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.filters input,.filters select{font:inherit;font-size:.9rem;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);min-width:0}
+.filters input{flex:1 1 220px}
+.filters select{flex:0 1 180px}
+#count{font-size:.85rem;color:var(--ink-3);margin-bottom:8px}
+.rows{display:grid;gap:10px}
+details.row{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
+details.row summary{cursor:pointer;list-style:none;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:baseline}
+details.row summary::-webkit-details-marker{display:none}
+details.row summary .c{font-weight:600}
+details.row summary .d{color:var(--ink-2)}
+details.row .body{margin-top:10px;font-size:.92rem;color:var(--ink-2)}
+details.row .body dl{display:grid;grid-template-columns:150px 1fr;gap:4px 12px;margin:10px 0 0}
+details.row .body dt{color:var(--ink-3);font-size:.82rem}
+details.row .body dd{margin:0}
+@media (max-width:560px){details.row .body dl{grid-template-columns:1fr}details.row .body dt{margin-top:6px}}
+button.more{font:inherit;font-size:.9rem;margin-top:14px;padding:8px 14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;cursor:pointer}
+footer{padding:40px 0 64px;color:var(--ink-3);font-size:.88rem}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Health Culture Foundation · Draft research · October 2026</div>
+    <h1>Sleep care by country</h1>
+    <p class="lede">How doctors are told to treat sleep problems in different countries, which drugs they may use, who does what, and who pays. And the question behind it: has anyone already compared this?</p>
+    <div class="stats">
+      <div class="stat"><div class="n">312</div><div class="l">recommendations, pathway steps<br>and payer rules</div></div>
+      <div class="stat"><div class="n">31</div><div class="l">countries and<br>international bodies</div></div>
+      <div class="stat"><div class="n">49</div><div class="l">earlier comparisons<br>found and rated</div></div>
+      <div class="stat"><div class="n">155</div><div class="l">PubMed IDs<br>re-checked</div></div>
+    </div>
+    <div class="banner"><strong>Draft. Not yet reviewed by a person.</strong> This is a first pass, researched with AI help. It is not medical advice. Numbers that need checking are flagged, and some sources could only be read as abstracts or summaries.</div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <div class="wrap">
+    <a href="#answer">Short answer</a>
+    <a href="#insomnia">Insomnia</a>
+    <a href="#apnea">Sleep apnea</a>
+    <a href="#other">Other conditions</a>
+    <a href="#pathways">Pathways and payers</a>
+    <a href="#gap">Has anyone compared this?</a>
+    <a href="#closed">Who owns the guidance</a>
+    <a href="#formats">Standard formats</a>
+    <a href="#caveats">Caveats</a>
+    <a href="#explore">Explore the data</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="answer">
+  <div class="wrap">
+    <h2>The short answer</h2>
+    <div class="prose">
+      <p>We read sleep medicine guidelines from the US, UK, Europe and its national bodies, Canada, Australia, New Zealand, Latin America, Japan, China, South Korea, India and WHO. For each one we noted what it recommends, how strongly, how old it is, who wrote it, and what payers and care routes actually require.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="k">Everyone agrees on one thing</div><p>A short course of talking therapy for insomnia (CBT-I) should come first. Every guideline we found says so.</p></div>
+      <div class="card"><div class="k">Almost nothing else matches</div><p>Which sleeping pills to use, for how long, whether melatonin is a supplement or a prescription drug, and how strict payers are about CPAP use all vary widely.</p></div>
+      <div class="card"><div class="k">Nobody has compared it properly</div><p>We found no thorough, current, open comparison of sleep guidelines across countries down to individual drugs.</p></div>
+      <div class="card"><div class="k">Care routes are an even bigger gap</div><p>Who you see, in what order, and who pays has barely been compared at all, especially for insomnia.</p></div>
+      <div class="card"><div class="k">Much of it is old</div><p>The main US drug guideline is from 2017. France's insomnia guidance is from 2006. Canada's sleep apnea guideline is from 2011.</p></div>
+      <div class="card"><div class="k">Some of it is closed</div><p>The UK's main GP guide is publicly funded but privately owned, readable only from inside the UK, and may not be mined.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="insomnia">
+  <div class="wrap">
+    <h2>Insomnia: what each country says</h2>
+    <div class="prose">
+      <p>"CBT-I" is cognitive behavioural therapy for insomnia: a few sessions, in person or by app, that change sleep habits and thoughts about sleep. "Z-drugs" are zolpidem, zopiclone, eszopiclone and zaleplon. "Orexin drugs" are the newest sleeping pills: suvorexant, lemborexant and daridorexant. A dash means the guideline we read didn't address it, or we didn't capture it.</p>
+    </div>
+
+    <h3>How long you may take sleeping pills</h3>
+    <p class="prose small muted">Limits for benzodiazepines and Z-drugs, from strictest to loosest.</p>
+    <div class="spectrum" role="list">
+      <div class="row" role="listitem"><span>Netherlands</span><span><span class="bar" style="width:6%"></span>No pills for persistent insomnia; one course of 5–10 tablets for short-term</span></div>
+      <div class="row" role="listitem"><span>Denmark</span><span><span class="bar" style="width:14%"></span>Usually 1–2 weeks at first</span></div>
+      <div class="row" role="listitem"><span>Ireland</span><span><span class="bar" style="width:16%"></span>"A few days to two weeks"</span></div>
+      <div class="row" role="listitem"><span>Australia</span><span><span class="bar" style="width:26%"></span>2–4 weeks</span></div>
+      <div class="row" role="listitem"><span>Europe, UK, France, Germany, Norway, Korea, NZ</span><span><span class="bar" style="width:32%"></span>4 weeks or less (UK and France: including the taper)</span></div>
+      <div class="row" role="listitem"><span>UK (BAP consensus)</span><span><span class="bar" style="width:80%"></span>Long-term "as clinically indicated"</span></div>
+      <div class="row" role="listitem"><span>India</span><span><span class="bar" style="width:90%"></span>Long-term allowed if no CBT-I therapist is available</span></div>
+    </div>
+
+    <h3>Country by country</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Country / body</th><th>Main guidance</th><th>CBT-I first?</th><th>Pill time limit</th><th>Orexin drugs</th><th>Trazodone / low-dose antidepressants</th><th>Melatonin for adults</th></tr></thead>
+        <tbody>
+          <tr><td>US: AASM</td><td>Drugs 2017 <span class="pill stale">stale</span>; behavioural 2021; CBT-I + drug 2026</td><td>Yes (strong)</td><td>No week cap found</td><td>Suvorexant: weak for. Lemborexant, daridorexant: not graded</td><td>Trazodone: suggest against. Low-dose doxepin: weak for</td><td>Sold as a supplement. Suggest against for insomnia</td></tr>
+          <tr><td>US: VA/DoD</td><td>2025</td><td>Yes (strong)</td><td>—</td><td>Suggest all three</td><td>Trazodone: suggest against</td><td>Suggest against</td></tr>
+          <tr><td>US: ACP</td><td>2016 <span class="pill stale">listed inactive</span></td><td>Yes (strong)</td><td>"Short-term", shared decision</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>UK: NICE / BAP</td><td>Daridorexant 2023; Sleepio 2022; Z-drugs 2004; BAP 2019. GP guide (CKS) not open</td><td>Yes</td><td>Licences: 4 weeks incl. taper. BAP: long-term "as clinically indicated"</td><td>Daridorexant if CBT-I tried or unavailable; review within 3 months</td><td>—</td><td>Prescription only: 2 mg slow-release, 55+, up to 13 weeks</td></tr>
+          <tr><td>Ireland: HSE</td><td>2021</td><td>—</td><td>"A few days to two weeks"</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>Europe: ESRS</td><td>2023</td><td>Yes (A), in person or digital</td><td>4 weeks or less (A)</td><td>Up to 3 months (A)</td><td>Short-term (B)</td><td>Fast-release: no (A). Slow-release over 55, up to 3 months (B)</td></tr>
+          <tr><td>Germany: DGSM</td><td>2025 (read via a press summary)</td><td>Yes</td><td>As a rule 4 weeks max</td><td>No long-term recommendation, but the payer covers daridorexant past 4 weeks</td><td>Short-term only</td><td>Licensed 55+, no recommendation</td></tr>
+          <tr><td>France: HAS / ANSM</td><td>2006 <span class="pill stale">stale</span> + drug-agency rule</td><td>Yes</td><td>4 weeks incl. taper (regulation)</td><td>—</td><td>"Unproven" (2006)</td><td>Prescription medicine; low-dose supplements allowed</td></tr>
+          <tr><td>Netherlands: NHG</td><td>2024</td><td>Yes</td><td>No pills for persistent insomnia</td><td>Not mentioned</td><td>Against amitriptyline, mirtazapine; strongly against quetiapine</td><td>Recommend against</td></tr>
+          <tr><td>Denmark</td><td>2019</td><td>—</td><td>Usually 1–2 weeks</td><td>—</td><td>—</td><td>Banned in supplements</td></tr>
+          <tr><td>Norway</td><td>2021</td><td>—</td><td>"Maximum four weeks"</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>Canada</td><td>Ontario tool 2017; deprescribing guideline 2018</td><td>Yes</td><td>Offer tapering after more than 4 weeks</td><td>Approved; national drug assessment agency says do not reimburse</td><td>Doxepin called safest in older adults</td><td>Over the counter</td></tr>
+          <tr><td>Australia</td><td>Joint statement 2026</td><td>Yes</td><td>2–4 weeks</td><td>"Generally only" for chronic insomnia; not subsidised</td><td>Advises against antidepressants</td><td>Pharmacist-only for 55+; up to 13 weeks</td></tr>
+          <tr><td>New Zealand</td><td>bpac 2017</td><td>Non-drug preferred</td><td>Max 4 weeks "but often less"</td><td>—</td><td>—</td><td>Pharmacy-only for all adults since Oct 2025</td></tr>
+          <tr><td>Brazil: ABS</td><td>2023 (many industry ties)</td><td>Yes</td><td>Zolpidem max 4 weeks; benzodiazepines not recommended</td><td>All three recommended, though none confirmed on sale in Brazil</td><td>Trazodone and doxepin recommended</td><td>Not recommended. Supplement capped at 0.21 mg/day</td></tr>
+          <tr><td>China: CSRS</td><td>2025</td><td>Yes</td><td>—</td><td>Top tier, alongside short-acting Z-drugs</td><td>Third tier</td><td>Second tier. Full herbal medicine section</td></tr>
+          <tr><td>Japan</td><td>2013 <span class="pill stale">stale</span></td><td>Built around stopping pills</td><td>Payer cuts fees for 3+ hypnotics, or 12+ months of one benzodiazepine</td><td>Approved: 2014, 2020, 2024</td><td>—</td><td>Approved for children only</td></tr>
+          <tr><td>South Korea</td><td>2020</td><td>Yes (strong)</td><td>Regulator: up to 4 weeks</td><td>Suvorexant graded "Strong" though not used there (likely error)</td><td>Trazodone: weak for</td><td>Fast-release: no. Slow-release 55+: consider</td></tr>
+          <tr><td>India: IPS</td><td>2017</td><td>Preferred</td><td>Long-term allowed if CBT-I unavailable</td><td>—</td><td>—</td><td>Not a hypnotic</td></tr>
+          <tr><td>WHO</td><td>No insomnia guideline</td><td colspan="5">Only for sleep problems after trauma (2013): relaxation and sleep hygiene, no benzodiazepines. No sleeping pills on the essential medicines list.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="two">
+      <div>
+        <h3>Same drug, opposite advice</h3>
+        <ul class="tight">
+          <li><strong>Trazodone</strong>: the US (AASM, VA/DoD) suggests against it. Korea and Brazil support it. Europe allows low-dose antidepressants short-term; the Netherlands advises against them.</li>
+          <li><strong>Orexin drugs</strong>: the US VA/DoD, Brazil and China rank them highly. The UK allows daridorexant only if CBT-I failed or isn't available. Canada approved two of them and then advised public plans not to pay for either.</li>
+          <li><strong>Benzodiazepines</strong>: AASM weakly supports temazepam and triazolam. VA/DoD and Brazil advise against benzodiazepines.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Melatonin: five different rules</h3>
+        <ul class="tight">
+          <li><strong>Supplement anyone can buy:</strong> US, Canada.</li>
+          <li><strong>Pharmacy product for adults:</strong> New Zealand (since Oct 2025); Australia for 55+.</li>
+          <li><strong>Prescription medicine:</strong> UK, France (above supplement doses), Japan (children only).</li>
+          <li><strong>Tiny supplement dose only:</strong> Brazil, capped at 0.21 mg a day.</li>
+          <li><strong>Banned in supplements:</strong> Denmark.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="apnea">
+  <div class="wrap">
+    <h2>Sleep apnea: testing, CPAP and the new weight-loss drug</h2>
+    <div class="prose">
+      <p>Obstructive sleep apnea (OSA) means breathing stops and starts during sleep. "AHI" is the number of pauses per hour. Diagnosis is either an overnight lab study or a simpler home test. The main treatment is CPAP, a mask that keeps the airway open. In December 2024 the US approved tirzepatide (Zepbound), a weight-loss drug, for OSA in people with obesity.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Country</th><th>Home test or lab?</th><th>CPAP: what the payer demands</th><th>Mouth splint</th><th>Tirzepatide</th><th>Waiting-time standard</th></tr></thead>
+        <tbody>
+          <tr><td>US</td><td>Lab or home test for uncomplicated adults (strong)</td><td>Medicare: ≥4 hours a night on 70% of nights in a 30-day stretch, within the first 3 months</td><td>AASM: if CPAP fails or not wanted. VA/DoD: equal to CPAP for mild–moderate</td><td>Approved Dec 2024. AASM: "not as a replacement for PAP"</td><td>—</td></tr>
+          <tr><td>UK</td><td>Home breathing test first</td><td>No NHS use rule found. The driving licence agency enforces use for drivers</td><td>Second-line</td><td>No NICE sleep apnea appraisal</td><td>18 weeks to treatment; 6-week test pledge</td></tr>
+          <tr><td>Germany</td><td>Payer rule: home test first; lab only if unclear</td><td>No hours rule found; CPAP started over 2 nights in the lab</td><td>Paid only after CPAP fails, though the guideline calls it first-line</td><td>—</td><td>—</td></tr>
+          <tr><td>France</td><td>Guideline 2010 <span class="pill stale">stale</span>; payer rules lead</td><td>At least 112 hours per 28 days, monitored remotely</td><td>Must be considered first for moderate OSA</td><td>—</td><td>—</td></tr>
+          <tr><td>Canada</td><td>Lab is standard; home test if likely OSA (2011 <span class="pill stale">stale</span>)</td><td>Ontario pays 75% of the device; no use rule</td><td>—</td><td>—</td><td>Severe: 4 weeks. Everyone: 6 months</td></tr>
+          <tr><td>Australia</td><td>GP refers; specialist approves a home test without seeing the patient if questionnaire scores qualify</td><td>Medicare pays for tests, not devices. Queensland loan: 2-month trial averaging ≥4 h/night</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>Brazil</td><td>Home test for high-risk patients</td><td>Public system has no sleep apnea protocol</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>China</td><td>Lab is the gold standard; home test for clear moderate–severe cases</td><td>None found</td><td>—</td><td>Add-on for obese moderate–severe OSA (1A)</td><td>—</td></tr>
+          <tr><td>Japan</td><td>Coverage needs lab findings</td><td>Payment stops only if use averaged under 1 h a day for 3 months running</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>South Korea</td><td>—</td><td>Since 2018: ≥4 h on ≥70% of 30 nights in a row, in the first 90 days</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>India</td><td>Home test only after a full evaluation (2014 <span class="pill stale">stale</span>)</td><td>Mostly out of pocket (unverified)</td><td>—</td><td>—</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="prose small muted">The European Respiratory Society's 2021 guideline on non-CPAP treatments rates all of its advice as conditional, with low-quality evidence. EU law requires drivers with OSA to be reviewed every 3 years (cars) or every year (lorries and buses).</p>
+  </div>
+</section>
+
+<section id="other">
+  <div class="wrap">
+    <h2>Other conditions</h2>
+    <div class="two">
+      <div>
+        <h3>Restless legs: the sharpest split</h3>
+        <p>In 2025 the US (AASM) moved to <em>suggest against</em> routine use of dopamine agonists such as pramipexole and ropinirole, because over time they can make symptoms worse. It now prefers gabapentin-type drugs and IV iron. Europe's only formal guideline, from 2012, still gives dopamine agonists its top rating. The World Sleep Society backed the US guideline only "with caveats" because of "regional disagreement". Italy (2026) has switched to the US position.</p>
+      </div>
+      <div>
+        <h3>Narcolepsy: guidelines agree, payers don't</h3>
+        <p>The US and European 2021 guidelines both strongly recommend modafinil, pitolisant, sodium oxybate and solriamfetol. England pays for solriamfetol only after modafinil and then a stimulant have failed. The EU has limited modafinil to narcolepsy since 2010.</p>
+      </div>
+      <div>
+        <h3>Melatonin for children</h3>
+        <p>A supplement in the US (sleep doctors say see a clinician first). Prescription-only licensed products in the EU, Australia and Japan. Denmark: it "should never be the first choice" in otherwise healthy children.</p>
+      </div>
+      <div>
+        <h3>Children's sleep apnea</h3>
+        <p>China won't diagnose it without a lab study. Canada (2026) is the first to accept home tests, for healthy children over 5 where lab studies aren't available. France (2023) needs no sleep study if a child has two or more night-time symptoms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pathways">
+  <div class="wrap">
+    <h2>Pathways and payers: what actually happens</h2>
+    <div class="prose">
+      <p>A guideline says <em>what</em> to do. The care route decides who does it and in what order, and the payer decides what gets paid for. Often the payer has the last word.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="k">Payers overrule guidelines</div><p>Germany's guideline makes no long-term call on orexin drugs, but the payer covers daridorexant past 4 weeks. The same guideline calls mouth splints first-line, but the payer pays only after CPAP fails.</p></div>
+      <div class="card"><div class="k">Approved but not paid for</div><p>Canada approved two orexin drugs and then advised public plans not to fund either. Australia doesn't subsidise any of them.</p></div>
+      <div class="card"><div class="k">CPAP use rules differ 4-fold</div><p>US and Korea: 4+ hours on 70% of nights. France: 112 hours per 28 days. Japan: payment stops only below 1 hour a day. England and Ontario: no use rule for funding.</p></div>
+    </div>
+    <h3>Who pays for insomnia therapy?</h3>
+    <ul class="tight prose">
+      <li><strong>Germany</strong> pays for three insomnia apps on prescription (about €225–241, no co-payment).</li>
+      <li><strong>Scotland</strong> links people straight to free digital CBT-I, no GP visit needed. In England it depends on the local NHS commissioner.</li>
+      <li><strong>Australia</strong> counts insomnia toward up to 10 subsidised psychology sessions a year.</li>
+      <li><strong>US Medicare</strong> pays for approved therapy apps only alongside clinician-led care. The VA has trained its own therapists in CBT-I since about 2011–12.</li>
+      <li><strong>Canada:</strong> no public coverage found.</li>
+      <li><strong>Netherlands:</strong> guided online CBT-I is one step in a "lightest suitable form first" model.</li>
+    </ul>
+    <h3>Who you see first for sleep apnea</h3>
+    <p class="prose">In the Netherlands, the GP refers on and does no testing. In Australia, the GP screens and a specialist can approve a home test without seeing the patient. In the US, any treating clinician can order a test and CPAP, and an equipment supplier delivers it. Only Canada sets a waiting-time standard for sleep care.</p>
+  </div>
+</section>
+
+<section id="gap">
+  <div class="wrap">
+    <h2>Has anyone compared this before?</h2>
+    <div class="verdict"><strong>Not thoroughly.</strong>Nothing published covers several countries, several conditions and individual drugs, with care routes and payer rules, kept current and open as data. Care routes are the biggest gap.</div>
+    <div class="prose"><p>We found and rated 49 earlier studies. The closest ones:</p></div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Kind of study</th><th>Best examples</th><th>Why it doesn't fill the gap</th></tr></thead>
+        <tbody>
+          <tr><td>Quality scores</td><td>Insomnia: <a href="https://pubmed.ncbi.nlm.nih.gov/36116294/">Zhu 2022</a>, 26 guidelines. Sleep apnea: <a href="https://pubmed.ncbi.nlm.nih.gov/38581804/">Xu 2024</a>, 44 guidelines</td><td>Score how well guidelines were <em>made</em>, not what they <em>say</em>. Paywalled</td></tr>
+          <tr><td>Recommendation comparisons</td><td><a href="https://pubmed.ncbi.nlm.nih.gov/36355585/">Seow 2022</a>: 10 insomnia guidelines "diverged in the choice of first-line pharmacotherapy". <a href="https://pubmed.ncbi.nlm.nih.gov/38516102/">Brandt 2024</a>: 113 documents, free</td><td>Seow is small, paywalled and predates the orexin drugs. Brandt is thorough but covers only benzodiazepines and Z-drugs, and most of its authors sit on a benzodiazepine-harm charity</td></tr>
+          <tr><td>Sleep apnea care routes</td><td><a href="https://pubmed.ncbi.nlm.nih.gov/35724441/">Fietze 2022</a>: 26 European countries, 36 centres (repeat of <a href="https://pubmed.ncbi.nlm.nih.gov/21167776/">2011</a>)</td><td>The only multi-country survey of care routes. Europe only, one or two centres per country</td></tr>
+          <tr><td>CPAP payment rules</td><td><a href="https://pubmed.ncbi.nlm.nih.gov/36722719/">ATS 2023</a> policy statement</td><td>A few paragraphs</td></tr>
+          <tr><td>Driving rules</td><td><a href="https://pubmed.ncbi.nlm.nih.gov/40341050/">McNicholas 2025</a>: 33 European states</td><td>Thorough, but one narrow topic</td></tr>
+          <tr><td>Drug use by country</td><td><a href="https://pubmed.ncbi.nlm.nih.gov/37094086/">Ma 2023</a>: sales data from 67 countries to 2018</td><td>Strong data, but never linked to what each country's guidelines say. No orexin drugs</td></tr>
+          <tr><td>Access to CBT-I</td><td><a href="https://pubmed.ncbi.nlm.nih.gov/27159249/">Thomas 2016</a>: 88% of 752 behavioural sleep specialists worldwide were in the US</td><td>Old, and the only one</td></tr>
+          <tr><td>Restless legs, narcolepsy, melatonin rules</td><td>—</td><td>No cross-country comparison found</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="prose">Some insomnia overviews do exist, but most are written by authors with ties to the maker of daridorexant. The studies above can seed and cross-check an open dataset, with credit.</p>
+  </div>
+</section>
+
+<section id="closed">
+  <div class="wrap">
+    <h2>Who owns the guidance doctors actually use</h2>
+    <div class="prose">
+      <p>When we tried to read the UK's main GP guide to insomnia, NICE's <strong>Clinical Knowledge Summaries (CKS)</strong>, we got a block page. It says CKS "is not NICE content and is excluded from the NICE UK Open Content Licence", that it is readable only from the UK, and that "data scraping and data mining of CKS is not permitted". So we didn't try to get around it. We looked at who owns it instead.</p>
+      <ul class="tight">
+        <li>CKS began as PRODIGY, an NHS-funded project at Newcastle University in the 1990s.</li>
+        <li>NICE has paid Clarity Informatics to write it since 2012. The last contract was about £1.32 million for April 2023 to April 2026, and only one bid was received.</li>
+        <li>Clarity has been owned since 2021 by Agilio Software, a UK healthcare software group. Agilio was sold in 2024 to funds advised by Five Arrows (Rothschild &amp; Co) and TA Associates.</li>
+        <li>Agilio states: "The content within CKS is the intellectual property of Agilio." Outside the UK the same content is sold by subscription. Its topic list includes insomnia, sleep apnea and restless legs.</li>
+      </ul>
+      <p>The UK's drug reference, the <strong>BNF</strong>, works the same way. Three professional bodies own it, and NICE pays £15.16 million over 2021–2033 for UK access, awarded without competition "due to IPR ownership".</p>
+      <h3>It's a pattern</h3>
+      <p>Most of the guidance doctors use day to day is paid or login-only: UpToDate, BMJ Best Practice, DynaMed, Australia's Therapeutic Guidelines, HealthPathways. Some governments buy national licences. That makes the content free to use in that country, but never open, and it can disappear. Norway dropped BMJ Best Practice on 1 April 2026 and deleted its translated patient leaflets the same day. Society guidelines are more often free to read (Netherlands, Germany, Japan, NICE's own guidelines), but machine reuse is increasingly restricted. Germany's guideline register forbids text mining and AI use. NICE's own licence covers the UK only and excludes AI use.</p>
+      <div class="verdict"><strong>The public pays twice.</strong>Once for the research and the experts, and again to license the summary back. And people outside the paying country can't see it at all. We found studies on paywalled specialist guidelines, but none on how closed GP guidance is. That is another gap.</div>
+    </div>
+  </div>
+</section>
+
+<section id="formats">
+  <div class="wrap">
+    <h2>Is there a standard format for this?</h2>
+    <div class="prose">
+      <p>Yes, several, but none was built for comparing countries.</p>
+      <ul class="tight">
+        <li><strong>WHO SMART Guidelines</strong> sets out steps from a written guideline to working software. There are 10 kits so far (antenatal care, HIV, TB, immunisation and others). None covers sleep or mental health.</li>
+        <li><strong>HL7 FHIR</strong>, the main modern health-data standard, has a guideline format with slots for a recommendation's direction, strength and evidence quality, plus a "pathway" type. Its newest recommendation profiles are still drafts.</li>
+        <li><strong>GRADE</strong> gives the words most guideline panels use: for or against, strong or conditional, and certainty of evidence from high to very low.</li>
+        <li><strong>Care routes</strong> have clear definitions and can be drawn as flowcharts, but there is no shared data format. Map of Medicine, a commercial pathway library, closed in 2018 and its content went with it.</li>
+        <li><strong>Payer rules</strong> have no format that works across countries.</li>
+      </ul>
+      <p>So the dataset stays plain JSON, with optional fields named after GRADE and FHIR terms, ICD-11 condition codes and ATC drug codes. It can be exported to FHIR later if a partner needs it.</p>
+    </div>
+  </div>
+</section>
+
+<section id="caveats">
+  <div class="wrap">
+    <h2>Caveats</h2>
+    <div class="two">
+      <div>
+        <h3>What we couldn't read</h3>
+        <ul class="tight">
+          <li>NICE CKS and the BNF: UK-only, mining banned.</li>
+          <li>Germany's 2025 insomnia guideline PDF: its register forbids text mining and AI use, so those rows rest on a pharmacy-press summary. A person should copy the grades.</li>
+          <li>Finland's national guideline: the site was down.</li>
+          <li>Australian HealthPathways: login only.</li>
+          <li>Japan's 2013 sleeping-pill guideline PDF: connection refused.</li>
+          <li>Many papers: abstract only. Each row says what was read.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Numbers to check before quoting</h3>
+        <ul class="tight">
+          <li>Japan's 2026 CPAP cut-offs (AHI 15/30 vs 20/40), read from a commercial copy.</li>
+          <li>France's 112 hours per 28 days, and its proposed 2026 changes.</li>
+          <li>Germany's app prices (€224.99–€241.25).</li>
+          <li>England 2017–18: 1.4 million adults on benzodiazepines, 1.0 million on Z-drugs.</li>
+          <li>Australia's questionnaire cut-off (STOP-Bang ≥3).</li>
+          <li>CKS contract value (two official notices differ: £1,320,000 vs £1,323,000).</li>
+        </ul>
+      </div>
+    </div>
+    <h3>Conflicts of interest worth knowing</h3>
+    <ul class="tight prose">
+      <li>Brazil 2023: many drug-company ties on the panel, including the Latin American partner for daridorexant.</li>
+      <li>Japan 2020 sleep apnea guideline: heavy ties to CPAP makers.</li>
+      <li>US restless legs 2025: the chair consulted for the maker of the IV iron the guideline strongly recommends.</li>
+      <li>The tirzepatide sleep apnea trials were funded by the drug's maker, Lilly.</li>
+      <li>UK BAP 2019 declares no conflicts, but a co-author is listed on PubMed with the company that makes Sleepio.</li>
+    </ul>
+    <h3>How this was made</h3>
+    <p class="prose">Nine AI research agents worked in parallel on 21 October 2026, one per region or topic, under fixed rules: no citation without a PubMed ID or DOI that was looked up, or a page that was read; numbers copied exactly; dates, status and conflicts of interest recorded; blocks and licence terms respected. All 155 PubMed IDs were re-checked at the end. This is a first pass and needs review by a person.</p>
+  </div>
+</section>
+
+<section id="explore">
+  <div class="wrap">
+    <h2>Explore the data</h2>
+    <p class="prose">All 312 rows. Each is one recommendation, care-route step or payer rule from one country, with its source. Click a row for details.</p>
+    <div class="filters">
+      <input id="q" type="search" placeholder="Search: e.g. zolpidem, CPAP, melatonin" aria-label="Search">
+      <select id="fc" aria-label="Condition"><option value="">All conditions</option></select>
+      <select id="fl" aria-label="Layer"><option value="">Guideline, pathway and payer</option><option value="guideline">Guideline</option><option value="pathway">Pathway</option><option value="coverage">Payer / coverage</option></select>
+      <select id="fk" aria-label="Country"><option value="">All countries</option></select>
+    </div>
+    <div id="count" aria-live="polite"></div>
+    <div class="rows" id="rows"></div>
+    <button class="more" id="more" hidden>Show more</button>
+    <p class="small muted" style="margin-top:16px">Download: <a href="data.json">data.json</a> (trimmed public version; drug codes are left out pending a licence check).</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Health Culture Foundation · Draft research, 21–22 October 2026 · Part of the Open Health Communication Declaration work. Recommendations are quoted from their sources for comparison; follow the links for the originals. Not medical advice.
+  </div>
+</footer>
+
+<script>
+(function(){
+  const $=s=>document.querySelector(s);
+  const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const PAGE=40; let data=[], shown=PAGE, list=[];
+  function cls(d){d=d||'';if(/against/.test(d))return'against';if(/regulatory/.test(d))return'fact';if(/^(recommend|suggest)/.test(d))return'for';return'';}
+  function link(r){
+    const out=[];
+    if(r.pmid)out.push(`<a href="https://pubmed.ncbi.nlm.nih.gov/${esc(r.pmid)}/">PubMed ${esc(r.pmid)}</a>`);
+    if(r.doi)out.push(`<a href="https://doi.org/${esc(r.doi)}">DOI</a>`);
+    if(r.url && /^https?:/.test(r.url))out.push(`<a href="${esc(r.url)}">Source</a>`);
+    return out.join(' · ')||'—';
+  }
+  function render(){
+    const q=$('#q').value.trim().toLowerCase(), c=$('#fc').value, l=$('#fl').value, k=$('#fk').value;
+    list=data.filter(r=>(!c||r.condition===c)&&(!l||r.layer===l)&&(!k||r.country===k)&&
+      (!q||[r.country,r.jurisdiction,r.body,r.decision,r.recommendation,(r.drugs||[]).join(' '),r.guidelineTitle].join(' ').toLowerCase().includes(q)));
+    $('#count').textContent=`${list.length} of ${data.length} rows`;
+    $('#rows').innerHTML=list.slice(0,shown).map(r=>`
+      <details class="row"><summary>
+        <span class="c">${esc(r.country)}${r.jurisdiction?` <span class="muted small">(${esc(r.jurisdiction)})</span>`:''}</span>
+        <span class="d">${esc(r.condition)} · ${esc(r.decision)}</span>
+        <span class="pill ${cls(r.direction)}">${esc(r.direction)}</span>
+        ${r.layer!=='guideline'?`<span class="pill">${esc(r.layer==='coverage'?'payer':r.layer)}</span>`:''}
+        ${/stale|inactive|superseded|withdrawn/i.test(r.status||'')?'<span class="pill stale">stale</span>':''}
+      </summary><div class="body">
+        <p>${esc(r.recommendation)}</p>
+        <dl>
+          <dt>Body</dt><dd>${esc(r.body)}</dd>
+          <dt>Source</dt><dd>${esc(r.guidelineTitle)}${r.guidelineYear?` (${esc(r.guidelineYear)})`:''}</dd>
+          <dt>Status</dt><dd>${esc(r.status)}</dd>
+          <dt>Strength</dt><dd>${esc(r.strength)}</dd>
+          ${(r.drugs&&r.drugs.length)?`<dt>Drugs</dt><dd>${esc(r.drugs.join(', '))}</dd>`:''}
+          <dt>What we read</dt><dd>${esc(r.whatWasRead)}${r.freeToRead?' · free to read':''}</dd>
+          <dt>Conflicts of interest</dt><dd>${esc(r.conflictsOfInterest)}</dd>
+          <dt>Links</dt><dd>${link(r)}</dd>
+        </dl></div></details>`).join('');
+    $('#more').hidden=list.length<=shown;
+  }
+  fetch('data.json').then(r=>r.json()).then(d=>{
+    data=d;
+    const opts=(key,sel)=>[...new Set(d.map(r=>r[key]))].filter(Boolean).sort().forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;$(sel).appendChild(o);});
+    opts('condition','#fc'); opts('country','#fk');
+    render();
+  }).catch(()=>{$('#count').textContent='Could not load the data file.';});
+  ['#q','#fc','#fl','#fk'].forEach(s=>$(s).addEventListener('input',()=>{shown=PAGE;render();}));
+  $('#more').addEventListener('click',()=>{shown+=PAGE;render();});
+})();
+</script>
+</body>
+</html>
