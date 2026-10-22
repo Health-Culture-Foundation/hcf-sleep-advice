@@ -4,6 +4,7 @@ How doctors are told to treat sleep problems in different countries, which drugs
 are allowed, who does what, and who pays. Plus: has anyone already compared this?
 
 **Status: draft research, 21 October 2026. Nothing here has been checked by a person yet.**
+**Read the write-up:** https://vivwebsolutions.github.io/hcf-sleep-advice/ (public GitHub Pages site, published from the `gh-pages` branch; source in [`site/`](site/). The repo itself stays private.)
 Tracking issue: [#3](https://github.com/vivwebsolutions/hcf-sleep-advice/issues/3).
 Context: [vivwebsolutions/health-glossary#30](https://github.com/vivwebsolutions/health-glossary/issues/30)
 (Open Health Communication Declaration). Everyday sleep advice from AASM, ACP, ESRS,
