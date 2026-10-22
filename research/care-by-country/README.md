@@ -65,8 +65,8 @@ fills them; it never changes the fields above.
 | Field | Meaning | Maps to |
 |---|---|---|
 | `countryCode`, `regionCode` | ISO 3166-1 alpha-2 (`GB` for the UK) and ISO 3166-2 (`GB-ENG`, `GB-SCT`, `CA-ON`, `AU-QLD`). `null` for Europe, EU, International, WHO | `PlanDefinition.jurisdiction` |
-| `conditionCodes` | `{icd11}`: ICD-11 MMS code, checked in the WHO browser (2026-01 release): chronic insomnia `7A00`, OSA and pediatric OSA `7A41`, narcolepsy `7A20`, restless legs `7A80`. `null` for pediatric insomnia (7A00 or 7A01 depends on the row), circadian disorders (rows span 7A60-7A65) and other | `PlanDefinition.subject` |
-| `drugCodes` | One `{name, atc, rxnorm}` per name in `drugs`. ATC from the WHO index; class names get an ATC group only when one group matches exactly (Z-drugs `N05CF`). RxNorm only for an exact single-ingredient match. Reasons and other codes per name: [`scripts/codes/drug-codes.json`](scripts/codes/drug-codes.json) | `ActivityDefinition.productCodeableConcept` |
+| `conditionCodes` | `{icd11, icd11Title, icd11Uri}`: ICD-11 MMS code, WHO title and URI, checked in the WHO browser (2026-01 release): chronic insomnia `7A00`, OSA and pediatric OSA `7A41`, narcolepsy `7A20`, restless legs `7A80`. `null` for pediatric insomnia (7A00 or 7A01 depends on the row), circadian disorders (rows span 7A60-7A65) and other | `PlanDefinition.subject` |
+| `drugCodes` | One `{name, atc, rxnorm}` per name in `drugs`. ATC (bare code only; WHOCC material, see below) from the WHO index; class names get an ATC group only when one group matches exactly (Z-drugs `N05CF`). RxNorm only for an exact single-ingredient match. Reasons and other codes per name: [`scripts/codes/drug-codes.json`](scripts/codes/drug-codes.json) | `ActivityDefinition.productCodeableConcept` |
 | `strengthGrade` | `strong` / `conditional` only when the guideline uses GRADE (or GRADE's strong/weak words) and the row has one strength; `non-GRADE system` for NICE wording, letters, levels and other systems (never mapped to strong); `not graded` for rules, statements and consensus; `null` if the grade was not seen or the row mixes strengths | CPG `strengthOfRecommendation` |
 | `certaintyOfEvidence` | high / moderate / low / very low, only when the row states one level for the whole row | CPG `qualityOfEvidence` |
 | `gradingSystem` | Which system the `strength` text comes from, e.g. `GRADE`, `NICE wording (offer / consider)`, `ESRS 2023 letter grades` | `RecommendationJustification` rating system |
@@ -74,6 +74,15 @@ fills them; it never changes the fields above.
 | `step`, `after` | Order in a stepped route: step number, and what must come (or fail) first | `action.relatedAction` |
 | `target` | List of `{measure, comparator, value, unit}`: waiting-time standards, CPAP-use thresholds, licence review intervals. Every value is also in `numbersToVerify` | `PlanDefinition.goal.target` |
 | `payer`, `program`, `ruleType` | Who pays, under which scheme, and what kind of rule: eligibility, adherence, prior authorisation, reimbursement, prescribing limit, prescriber requirement, regulatory status, restricted distribution | none (HCF's own) |
+
+**Licences of the codes.** ATC codes are WHOCC material, excluded from the CC BY 4.0
+licence (attribution: WHO Collaborating Centre for Drug Statistics Methodology, ATC/DDD
+Index, https://atcddd.fhi.no/atc_ddd_index/). Its terms ban commercial copying and
+"changing or manipulating the material", so only bare codes are stored (no ATC names,
+hierarchy or DDDs), and **ATC must stay out of any open release, public repo or public
+site until WHOCC replies**. ICD-11 codes are WHO material under CC BY-ND 3.0 IGO; its
+licence asks that stored codes carry code, title and URI, which `conditionCodes` does.
+See [LICENSE](../../LICENSE).
 
 Strength mapping, row by row: [`scripts/codes/strength-map.json`](scripts/codes/strength-map.json).
 Pathway and coverage fields, row by row: [`scripts/codes/pathway-coverage.json`](scripts/codes/pathway-coverage.json).

@@ -24,17 +24,20 @@ COUNTRY = {
 }
 # ISO 3166-2, matched on the start of `jurisdiction`. Other jurisdictions (EU, consensus groups) get null.
 REGION = {"England": "GB-ENG", "Scotland": "GB-SCT", "Ontario": "CA-ON", "Queensland": "AU-QLD"}
-# ICD-11 MMS, checked in the WHO ICD-11 browser (release 2026-01) on 2026-10-22.
+# ICD-11 MMS, checked in the WHO ICD-11 browser (release 2026-01) on 2026-10-22: (code, title, entity id).
+# The ICD-11 licence (CC BY-ND 3.0 IGO) asks stored codes to carry code, title and URI.
+ICD11_URI = "http://id.who.int/icd/release/11/2026-01/mms/"
 ICD11 = {
-    "chronic insomnia": "7A00",          # Chronic insomnia
-    "obstructive sleep apnea": "7A41",   # Obstructive sleep apnoea
-    "pediatric OSA": "7A41",             # 7A41's definition includes the paediatric criterion
-    "narcolepsy": "7A20",                # Narcolepsy (7A20.0 type 1, 7A20.1 type 2)
-    "restless legs": "7A80",             # Restless legs syndrome
+    "chronic insomnia": ("7A00", "Chronic insomnia", "323148092"),
+    "obstructive sleep apnea": ("7A41", "Obstructive sleep apnoea", "1919233290"),
+    "pediatric OSA": ("7A41", "Obstructive sleep apnoea", "1919233290"),  # 7A41's definition covers children
+    "narcolepsy": ("7A20", "Narcolepsy", "1201727099"),
+    "restless legs": ("7A80", "Restless legs syndrome", "1254916765"),
     "pediatric insomnia": None,          # rows mix short-term and chronic; 7A00 or 7A01 per row, not checked
     "circadian rhythm disorders": None,  # rows span several of 7A60-7A65
     "other": None,
 }
+
 PATHWAY_FIELDS = ["performer", "setting", "step", "after", "target", "payer", "program", "ruleType"]
 NEW = ["countryCode", "regionCode", "conditionCodes", "drugCodes", "strengthGrade", "certaintyOfEvidence",
        "gradingSystem"] + PATHWAY_FIELDS
@@ -58,7 +61,9 @@ for r in before:
     e["regionCode"] = next((c for name, c in REGION.items() if j.startswith(name)), None)
     if r["condition"] not in ICD11:
         problems.append(f"no ICD-11 decision: {r['condition']}")
-    e["conditionCodes"] = {"icd11": ICD11.get(r["condition"])}
+    icd = ICD11.get(r["condition"])
+    e["conditionCodes"] = ({"icd11": icd[0], "icd11Title": icd[1], "icd11Uri": ICD11_URI + icd[2]} if icd
+                           else {"icd11": None})
     e["drugCodes"] = []
     for d in r.get("drugs") or []:
         c = drugs.get(d)
