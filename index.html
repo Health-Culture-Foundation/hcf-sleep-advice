@@ -77,6 +77,7 @@ ul.tight{padding-left:1.2em;margin:0 0 1em} ul.tight li{margin:.3em 0}
 .spectrum .row{display:grid;grid-template-columns:140px 1fr;gap:12px;align-items:center;margin:8px 0;font-size:.92rem}
 .spectrum .bar{height:10px;border-radius:5px;background:var(--accent)}
 .spectrum .row span:last-child{display:flex;align-items:center;gap:10px}
+@media (max-width:560px){.spectrum .row{grid-template-columns:1fr;gap:4px;margin:14px 0}.spectrum .row span:first-child{font-weight:600}.spectrum .row span:last-child{flex-direction:column;align-items:flex-start;gap:4px}.spectrum .bar{min-width:8px}}
 /* explorer */
 .filters{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
 .filters input,.filters select{font:inherit;font-size:.9rem;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);min-width:0}
