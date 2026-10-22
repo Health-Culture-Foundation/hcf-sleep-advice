@@ -1,0 +1,615 @@
+OK       42781607  australia-chronic-insomnia-cbt-i-1  
+         cited:  Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, S
+         pubmed: Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, S (2026) 10.1093/sleepadvances/zpag086
+OK       42781607  australia-chronic-insomnia-duration-limit-1  
+         cited:  Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, S
+         pubmed: Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, S (2026) 10.1093/sleepadvances/zpag086
+OK       42781607  australia-chronic-insomnia-sedating-antihistamines-1  
+         cited:  Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, S
+         pubmed: Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, S (2026) 10.1093/sleepadvances/zpag086
+OK       42781607  australia-chronic-insomnia-referral-criteria-1  
+         cited:  Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, S
+         pubmed: Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, S (2026) 10.1093/sleepadvances/zpag086
+OK       42781607  australia-chronic-insomnia-reimbursement-digital-cbt-i-1  
+         cited:  Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, S
+         pubmed: Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, S (2026) 10.1093/sleepadvances/zpag086
+OK       42781607  australia-chronic-insomnia-reimbursement-drug-1  
+         cited:  Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, S
+         pubmed: Management of adult insomnia in Australia: a joint position statement of the Australasian Sleep Association, S (2026) 10.1093/sleepadvances/zpag086
+OK       38370879  brazil-chronic-insomnia-cbt-i-1  
+         cited:  2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association
+         pubmed: 2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association. (2023) 10.1055/s-0043-1776281
+OK       38370879  brazil-chronic-insomnia-z-drugs-1  
+         cited:  2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association
+         pubmed: 2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association. (2023) 10.1055/s-0043-1776281
+OK       38370879  brazil-chronic-insomnia-low-dose-doxepin-1  
+         cited:  2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association
+         pubmed: 2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association. (2023) 10.1055/s-0043-1776281
+OK       38370879  brazil-chronic-insomnia-melatonin-2  
+         cited:  2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association
+         pubmed: 2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association. (2023) 10.1055/s-0043-1776281
+OK       38370879  brazil-chronic-insomnia-orexin-antagonists-1  
+         cited:  2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association
+         pubmed: 2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults - Brazilian Sleep Association. (2023) 10.1055/s-0043-1776281
+OK       35830079  brazil-obstructive-sleep-apnea-cpap-1  
+         cited:  Brazilian Thoracic Association Consensus on Sleep-disordered Breathing
+         pubmed: Brazilian Thoracic Association Consensus on Sleep-disordered Breathing. (2022) 10.36416/1806-3756/e20220106
+OK       35830079  brazil-obstructive-sleep-apnea-diagnosis-home-sleep-apnea-test-1  
+         cited:  Brazilian Thoracic Association Consensus on Sleep-disordered Breathing
+         pubmed: Brazilian Thoracic Association Consensus on Sleep-disordered Breathing. (2022) 10.36416/1806-3756/e20220106
+OK       29760253  canada-chronic-insomnia-deprescribing-2  
+         cited:  Deprescribing benzodiazepine receptor agonists: Evidence-based clinical practice guideline
+         pubmed: Deprescribing benzodiazepine receptor agonists: Evidence-based clinical practice guideline. (2018) 
+OK       21369547  canada-obstructive-sleep-apnea-cpap-1  
+         cited:  Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing
+         pubmed: Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing. (2011) 10.1155/2011/506189
+OK       21369547  canada-obstructive-sleep-apnea-diagnosis-home-sleep-apnea-test-1  
+         cited:  Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing
+         pubmed: Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing. (2011) 10.1155/2011/506189
+OK       21369547  canada-obstructive-sleep-apnea-surgery-1  
+         cited:  Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing
+         pubmed: Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing. (2011) 10.1155/2011/506189
+OK       21369547  canada-obstructive-sleep-apnea-waiting-time-1  
+         cited:  Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing
+         pubmed: Canadian Thoracic Society 2011 guideline update: diagnosis and treatment of sleep disordered breathing. (2011) 10.1155/2011/506189
+OK       41887281  canada-pediatric-osa-diagnosis-home-sleep-apnea-test-1  
+         cited:  The Canadian Thoracic Society/Canadian Sleep Society Guideline on the Diagnosis of Obstructive Sleep Apnea in 
+         pubmed: The Canadian Thoracic Society/Canadian Sleep Society Guideline on the Diagnosis of Obstructive Sleep Apnea in  (2026) 10.1016/j.chest.2025.12.017
+OK       40904305  china-chronic-insomnia-cbt-i-1  
+         cited:  [Guidelines for the diagnosis and treatment of insomnia disorder (2025 edition)]
+         pubmed: [Guidelines for the diagnosis and treatment of insomnia disorder (2025 edition)]. (2025) 10.3760/cma.j.cn112137-20250421-00981
+OK       40904305  china-chronic-insomnia-deprescribing-1  
+         cited:  [Guidelines for the diagnosis and treatment of insomnia disorder (2025 edition)]
+         pubmed: [Guidelines for the diagnosis and treatment of insomnia disorder (2025 edition)]. (2025) 10.3760/cma.j.cn112137-20250421-00981
+OK       40904305  china-chronic-insomnia-first-line-treatment-1  
+         cited:  [Guidelines for the diagnosis and treatment of insomnia disorder (2025 edition)]
+         pubmed: [Guidelines for the diagnosis and treatment of insomnia disorder (2025 edition)]. (2025) 10.3760/cma.j.cn112137-20250421-00981
+OK       40904305  china-chronic-insomnia-neuromodulation-physical-therapy-1  
+         cited:  [Guidelines for the diagnosis and treatment of insomnia disorder (2025 edition)]
+         pubmed: [Guidelines for the diagnosis and treatment of insomnia disorder (2025 edition)]. (2025) 10.3760/cma.j.cn112137-20250421-00981
+OK       40904305  china-chronic-insomnia-traditional-chinese-medicine-1  
+         cited:  [Guidelines for the diagnosis and treatment of insomnia disorder (2025 edition)]
+         pubmed: [Guidelines for the diagnosis and treatment of insomnia disorder (2025 edition)]. (2025) 10.3760/cma.j.cn112137-20250421-00981
+OK       41820035  china-obstructive-sleep-apnea-cpap-1  
+         cited:  [Guidelines for the diagnosis and treatment of obstructive sleep apnea in adults (2025)]
+         pubmed: [Guidelines for the diagnosis and treatment of obstructive sleep apnea in adults (2025)]. (2026) 10.3760/cma.j.cn112147-20251108-00694
+OK       41820035  china-obstructive-sleep-apnea-glp-1-tirzepatide-1  
+         cited:  [Guidelines for the diagnosis and treatment of obstructive sleep apnea in adults (2025)]
+         pubmed: [Guidelines for the diagnosis and treatment of obstructive sleep apnea in adults (2025)]. (2026) 10.3760/cma.j.cn112147-20251108-00694
+OK       41820035  china-obstructive-sleep-apnea-diagnosis-home-sleep-apnea-test-1  
+         cited:  [Guidelines for the diagnosis and treatment of obstructive sleep apnea in adults (2025)]
+         pubmed: [Guidelines for the diagnosis and treatment of obstructive sleep apnea in adults (2025)]. (2026) 10.3760/cma.j.cn112147-20251108-00694
+OK       41820035  china-obstructive-sleep-apnea-oral-appliance-1  
+         cited:  [Guidelines for the diagnosis and treatment of obstructive sleep apnea in adults (2025)]
+         pubmed: [Guidelines for the diagnosis and treatment of obstructive sleep apnea in adults (2025)]. (2026) 10.3760/cma.j.cn112147-20251108-00694
+OK       41820035  china-obstructive-sleep-apnea-follow-up-schedule-telemedicine-1  
+         cited:  [Guidelines for the diagnosis and treatment of obstructive sleep apnea in adults (2025)]
+         pubmed: [Guidelines for the diagnosis and treatment of obstructive sleep apnea in adults (2025)]. (2026) 10.3760/cma.j.cn112147-20251108-00694
+OK       41820035  china-obstructive-sleep-apnea-screening-referral-criteria-1  
+         cited:  [Guidelines for the diagnosis and treatment of obstructive sleep apnea in adults (2025)]
+         pubmed: [Guidelines for the diagnosis and treatment of obstructive sleep apnea in adults (2025)]. (2026) 10.3760/cma.j.cn112147-20251108-00694
+OK       34589673  china-pediatric-osa-anti-inflammatory-drugs-1  
+         cited:  Chinese guideline for the diagnosis and treatment of childhood obstructive sleep apnea (2020)
+         pubmed: Chinese guideline for the diagnosis and treatment of childhood obstructive sleep apnea (2020). (2021) 10.1002/ped4.12284
+OK       34589673  china-pediatric-osa-diagnosis-1  
+         cited:  Chinese guideline for the diagnosis and treatment of childhood obstructive sleep apnea (2020)
+         pubmed: Chinese guideline for the diagnosis and treatment of childhood obstructive sleep apnea (2020). (2021) 10.1002/ped4.12284
+OK       37457117  denmark-pediatric-insomnia-melatonin-1  
+         cited:  Use of melatonin in children and adolescents with idiopathic chronic insomnia: a systematic review, meta-analy
+         pubmed: Use of melatonin in children and adolescents with idiopathic chronic insomnia: a systematic review, meta-analy (2023) 10.1016/j.eclinm.2023.102048
+OK       37457114  denmark-pediatric-insomnia-melatonin-2  
+         cited:  Use of melatonin for children and adolescents with chronic insomnia attributable to disorders beyond indicatio
+         pubmed: Use of melatonin for children and adolescents with chronic insomnia attributable to disorders beyond indicatio (2023) 10.1016/j.eclinm.2023.102049
+OK       38016484  europe-chronic-insomnia-cbt-i-1  
+         cited:  The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023
+         pubmed: The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. (2023) 10.1111/jsr.14035
+OK       38016484  europe-chronic-insomnia-z-drugs-1  
+         cited:  The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023
+         pubmed: The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. (2023) 10.1111/jsr.14035
+OK       38016484  europe-chronic-insomnia-antipsychotics-1  
+         cited:  The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023
+         pubmed: The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. (2023) 10.1111/jsr.14035
+OK       38016484  europe-chronic-insomnia-benzodiazepines-1  
+         cited:  The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023
+         pubmed: The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. (2023) 10.1111/jsr.14035
+OK       39923608  europe-chronic-insomnia-deprescribing-1  
+         cited:  Clinical practice guidelines for switching or deprescribing hypnotic medications for chronic insomnia: Results
+         pubmed: Clinical practice guidelines for switching or deprescribing hypnotic medications for chronic insomnia: Results (2025) 10.1016/j.sleep.2025.01.033
+OK       38016484  europe-chronic-insomnia-diagnosis-polysomnography-1  
+         cited:  The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023
+         pubmed: The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. (2023) 10.1111/jsr.14035
+OK       28875581  europe-chronic-insomnia-first-line-treatment-1  
+         cited:  European guideline for the diagnosis and treatment of insomnia
+         pubmed: European guideline for the diagnosis and treatment of insomnia. (2017) 10.1111/jsr.12594
+OK       38016484  europe-chronic-insomnia-light-therapy-1  
+         cited:  The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023
+         pubmed: The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. (2023) 10.1111/jsr.14035
+OK       38016484  europe-chronic-insomnia-low-dose-sedating-antidepressants-1  
+         cited:  The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023
+         pubmed: The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. (2023) 10.1111/jsr.14035
+OK       38016484  europe-chronic-insomnia-melatonin-1  
+         cited:  The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023
+         pubmed: The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. (2023) 10.1111/jsr.14035
+OK       38016484  europe-chronic-insomnia-orexin-antagonists-1  
+         cited:  The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023
+         pubmed: The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. (2023) 10.1111/jsr.14035
+OK       38016484  europe-chronic-insomnia-phytotherapeutics-1  
+         cited:  The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023
+         pubmed: The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. (2023) 10.1111/jsr.14035
+OK       38016484  europe-chronic-insomnia-sedating-antihistamines-1  
+         cited:  The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023
+         pubmed: The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. (2023) 10.1111/jsr.14035
+OK       38016484  europe-chronic-insomnia-stepped-care-1  
+         cited:  The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023
+         pubmed: The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023. (2023) 10.1111/jsr.14035
+OK       34173695  europe-narcolepsy-cataplexy-1  
+         cited:  European guideline and expert statements on the management of narcolepsy in adults and children
+         pubmed: European guideline and expert statements on the management of narcolepsy in adults and children. (2021) 10.1111/ene.14888
+OK       34173695  europe-narcolepsy-first-line-treatment-1  
+         cited:  European guideline and expert statements on the management of narcolepsy in adults and children
+         pubmed: European guideline and expert statements on the management of narcolepsy in adults and children. (2021) 10.1111/ene.14888
+OK       34173695  europe-narcolepsy-pediatric-narcolepsy-1  
+         cited:  European guideline and expert statements on the management of narcolepsy in adults and children
+         pubmed: European guideline and expert statements on the management of narcolepsy in adults and children. (2021) 10.1111/ene.14888
+OK       34853097  europe-obstructive-sleep-apnea-bariatric-surgery-1  
+         cited:  European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea
+         pubmed: European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea. (2021) 10.1183/16000617.0200-2021
+OK       36609518  europe-obstructive-sleep-apnea-diagnosis-home-sleep-apnea-test-1  
+         cited:  ERS technical standards for using type III devices (limited channel studies) in the diagnosis of sleep disorde
+         pubmed: ERS technical standards for using type III devices (limited channel studies) in the diagnosis of sleep disorde (2023) 10.1183/13993003.00422-2022
+OK       33008939  europe-obstructive-sleep-apnea-driving-1  
+         cited:  European Respiratory Society statement on sleep apnoea, sleepiness and driving risk
+         pubmed: European Respiratory Society statement on sleep apnoea, sleepiness and driving risk. (2021) 10.1183/13993003.01272-2020
+OK       34853097  europe-obstructive-sleep-apnea-drug-therapy-carbonic-anhydrase-inhibitors-1  
+         cited:  European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea
+         pubmed: European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea. (2021) 10.1183/16000617.0200-2021
+OK       34853097  europe-obstructive-sleep-apnea-myofunctional-therapy-1  
+         cited:  European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea
+         pubmed: European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea. (2021) 10.1183/16000617.0200-2021
+OK       34853097  europe-obstructive-sleep-apnea-oral-appliance-1  
+         cited:  European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea
+         pubmed: European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea. (2021) 10.1183/16000617.0200-2021
+OK       34853097  europe-obstructive-sleep-apnea-positional-therapy-1  
+         cited:  European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea
+         pubmed: European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea. (2021) 10.1183/16000617.0200-2021
+OK       34853097  europe-obstructive-sleep-apnea-surgery-hypoglossal-nerve-stimulation-1  
+         cited:  European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea
+         pubmed: European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea. (2021) 10.1183/16000617.0200-2021
+OK       34853097  europe-obstructive-sleep-apnea-surgery-maxillomandibular-advancement-1  
+         cited:  European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea
+         pubmed: European Respiratory Society guideline on non-CPAP therapies for obstructive sleep apnoea. (2021) 10.1183/16000617.0200-2021
+OK       40907996  europe-obstructive-sleep-apnea-telemonitoring-1  
+         cited:  European Respiratory Society statement on advanced telemedicine for obstructive sleep apnoea (e-Sleep)
+         pubmed: European Respiratory Society statement on advanced telemedicine for obstructive sleep apnoea (e-Sleep). (2025) 10.1183/13993003.00557-2025
+OK       29217599  europe-pediatric-osa-diagnosis-1  
+         cited:  ERS statement on obstructive sleep disordered breathing in 1- to 23-month-old children
+         pubmed: ERS statement on obstructive sleep disordered breathing in 1- to 23-month-old children. (2017) 10.1183/13993003.00985-2017
+OK       26541535  europe-pediatric-osa-treatment-threshold-1  
+         cited:  Obstructive sleep disordered breathing in 2- to 18-year-old children: diagnosis and management
+         pubmed: Obstructive sleep disordered breathing in 2- to 18-year-old children: diagnosis and management. (2016) 10.1183/13993003.00385-2015
+OK       25553845  europe-pediatric-insomnia-melatonin-1  
+         cited:  Current role of melatonin in pediatric neurology: clinical recommendations
+         pubmed: Current role of melatonin in pediatric neurology: clinical recommendations. (2015) 10.1016/j.ejpn.2014.12.007
+CHECK    22937989  europe-restless-legs-dopamine-agonists-1  title 0.59
+         cited:  European guidelines on management of restless legs syndrome: report of a joint task force by the EFNS, ENS and
+         pubmed: European guidelines on management of restless legs syndrome: report of a joint task force by the European Fede (2012) 10.1111/j.1468-1331.2012.03853.x
+CHECK    20863987  france-obstructive-sleep-apnea-first-line-treatment-1  title 0.49
+         cited:  Recommandations pour la pratique clinique du syndrome d'apnées hypopnées obstructives du sommeil de l'adulte
+         pubmed: [Recommendations for clinical practice. Obstructive sleep apnea hypopnea syndrome in adults]. (2010) 10.1016/j.rmr.2010.05.011
+OK       37537084  france-pediatric-osa-diagnosis-1  
+         cited:  Management of obstructive sleep apnea syndrome type 1 in children and adolescents - A French consensus
+         pubmed: Management of obstructive sleep apnea syndrome type 1 in children and adolescents - A French consensus. (2023) 10.1016/j.arcped.2023.06.009
+OK       28216789  india-chronic-insomnia-first-line-treatment-1  
+         cited:  Clinical Practice Guidelines for Sleep Disorders
+         pubmed: Clinical Practice Guidelines for Sleep Disorders. (2017) 10.4103/0019-5545.196978
+OK       28216789  india-chronic-insomnia-melatonin-1  
+         cited:  Clinical Practice Guidelines for Sleep Disorders
+         pubmed: Clinical Practice Guidelines for Sleep Disorders. (2017) 10.4103/0019-5545.196978
+OK       26180408  india-obstructive-sleep-apnea-cpap-1  
+         cited:  Consensus and evidence-based Indian initiative on obstructive sleep apnea guidelines 2014 (first edition)
+         pubmed: Consensus and evidence-based Indian initiative on obstructive sleep apnea guidelines 2014 (first edition). (2015) 10.4103/0970-2113.159677
+OK       26180408  india-obstructive-sleep-apnea-diagnosis-home-sleep-apnea-test-1  
+         cited:  Consensus and evidence-based Indian initiative on obstructive sleep apnea guidelines 2014 (first edition)
+         pubmed: Consensus and evidence-based Indian initiative on obstructive sleep apnea guidelines 2014 (first edition). (2015) 10.4103/0970-2113.159677
+OK       26180408  india-obstructive-sleep-apnea-surgery-1  
+         cited:  Consensus and evidence-based Indian initiative on obstructive sleep apnea guidelines 2014 (first edition)
+         pubmed: Consensus and evidence-based Indian initiative on obstructive sleep apnea guidelines 2014 (first edition). (2015) 10.4103/0970-2113.159677
+OK       37890009  international-pediatric-osa-persistent-osa-1  
+         cited:  Management of Persistent, Post-adenotonsillectomy Obstructive Sleep Apnea in Children: An Official American Th
+         pubmed: Management of Persistent, Post-adenotonsillectomy Obstructive Sleep Apnea in Children: An Official American Th (2024) 10.1164/rccm.202310-1857ST
+OK       39923609  international-pediatric-insomnia-melatonin-1  
+         cited:  Melatonin use in typically developing (TD) children: International Pediatric Sleep Association (IPSA) Expert C
+         pubmed: Melatonin use in typically developing (TD) children: International Pediatric Sleep Association (IPSA) Expert C (2025) 10.1016/j.sleep.2025.02.002
+OK       40834711  international-restless-legs-dopamine-agonists-1  
+         cited:  Partial endorsement of 'Treatment of restless legs syndrome and periodic limb movement disorder: an American A
+         pubmed: Partial endorsement of "Treatment of restless legs syndrome and periodic limb movement disorder: an AmericanAc (2025) 10.1016/j.sleep.2025.106734
+OK       27448465  international-restless-legs-first-line-treatment-1  
+         cited:  Guidelines for the first-line treatment of restless legs syndrome/Willis-Ekbom disease, prevention and treatme
+         pubmed: Guidelines for the first-line treatment of restless legs syndrome/Willis-Ekbom disease, prevention and treatme (2016) 10.1016/j.sleep.2016.01.017
+OK       29425576  international-restless-legs-iron-1  
+         cited:  Evidence-based and consensus clinical practice guidelines for the iron treatment of restless legs syndrome/Wil
+         pubmed: Evidence-based and consensus clinical practice guidelines for the iron treatment of restless legs syndrome/Wil (2018) 10.1016/j.sleep.2017.11.1126
+OK       38063870  italy-chronic-insomnia-orexin-antagonists-1  
+         cited:  Evaluation and management of insomnia in the clinical practice in Italy: a 2023 update from the Insomnia Exper
+         pubmed: Evaluation and management of insomnia in the clinical practice in Italy: a 2023 update from the Insomnia Exper (2024) 10.1007/s00415-023-12112-3
+OK       42891733  italy-restless-legs-dopamine-agonists-1  
+         cited:  Italian adaptation of international recommendations for the management of restless legs syndrome: A consensus 
+         pubmed: Italian adaptation of international recommendations for the management of restless legs syndrome: A consensus  (2026) 10.1007/s10072-026-09487-2
+OK       26065138  japan-chronic-insomnia-deprescribing-1  
+         cited:  [Clinical Practice Guideline for the proper use and cessation of hypnotics]
+         pubmed: [Clinical Practice Guideline for the proper use and cessation of hypnotics]. (2015) 
+OK       25227290  japan-chronic-insomnia-regulatory-status-1  
+         cited:  Suvorexant: first global approval
+         pubmed: Suvorexant: first global approval. (2014) 10.1007/s40265-014-0294-5
+OK       31399894  japan-chronic-insomnia-reimbursement-drug-1  
+         cited:  Changes in Prescription of Psychotropic Drugs After Introduction of Polypharmacy Reduction Policy in Japan Bas
+         pubmed: Changes in Prescription of Psychotropic Drugs After Introduction of Polypharmacy Reduction Policy in Japan Bas (2019) 10.1007/s40261-019-00838-w
+OK       34986992  japan-obstructive-sleep-apnea-cpap-1  
+         cited:  Sleep Apnea Syndrome (SAS) Clinical Practice Guidelines 2020
+         pubmed: Sleep Apnea Syndrome (SAS) Clinical Practice Guidelines 2020. (2022) 10.1016/j.resinv.2021.08.010
+OK       32912180  japan-pediatric-insomnia-melatonin-1  
+         cited:  Long-term melatonin treatment for the sleep problems and aberrant behaviors of children with neurodevelopmenta
+         pubmed: Long-term melatonin treatment for the sleep problems and aberrant behaviors of children with neurodevelopmenta (2020) 10.1186/s12888-020-02847-y
+OK       32912180  japan-pediatric-insomnia-regulatory-status-1  
+         cited:  Long-term melatonin treatment for the sleep problems and aberrant behaviors of children with neurodevelopmenta
+         pubmed: Long-term melatonin treatment for the sleep problems and aberrant behaviors of children with neurodevelopmenta (2020) 10.1186/s12888-020-02847-y
+OK       30729406  saudi-arabia-chronic-insomnia-benzodiazepines-1  
+         cited:  Using benzodiazepines and Z-drugs for managing primary insomnia in adults in Saudi Arabia: an e-Delphi study t
+         pubmed: Using benzodiazepines and Z-drugs for managing primary insomnia in adults in Saudi Arabia: an e-Delphi study t (2019) 10.1007/s11325-019-01794-7
+OK       33198436  south-korea-chronic-insomnia-cbt-i-1  
+         cited:  Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia in Adults
+         pubmed: Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia in Adults. (2020) 10.30773/pi.2020.0146
+OK       33198436  south-korea-chronic-insomnia-z-drugs-1  
+         cited:  Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia in Adults
+         pubmed: Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia in Adults. (2020) 10.30773/pi.2020.0146
+OK       33198436  south-korea-chronic-insomnia-duration-limit-1  
+         cited:  Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia in Adults
+         pubmed: Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia in Adults. (2020) 10.30773/pi.2020.0146
+OK       33198436  south-korea-chronic-insomnia-melatonin-1  
+         cited:  Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia in Adults
+         pubmed: Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia in Adults. (2020) 10.30773/pi.2020.0146
+OK       36791806  south-korea-obstructive-sleep-apnea-surgery-1  
+         cited:  Clinical Practice Guideline: Clinical Efficacy of Nasal Surgery in the Treatment of Obstructive Sleep Apnea
+         pubmed: Clinical Practice Guideline: Clinical Efficacy of Nasal Surgery in the Treatment of Obstructive Sleep Apnea. (2023) 10.21053/ceo.2022.01361
+OK       38433419  south-korea-obstructive-sleep-apnea-cpap-adherence-requirement-1  
+         cited:  Predictors of Continuous Positive Airway Pressure Adherence and Comparison of Clinical Factors and Polysomnogr
+         pubmed: Predictors of Continuous Positive Airway Pressure Adherence and Comparison of Clinical Factors and Polysomnogr (2024) 10.30773/pi.2023.0175
+OK       33875282  spain-obstructive-sleep-apnea-first-line-treatment-1  
+         cited:  International Consensus Document on Obstructive Sleep Apnea
+         pubmed: International Consensus Document on Obstructive Sleep Apnea. (2022) 10.1016/j.arbres.2021.03.017
+CHECK    41017611  switzerland-chronic-insomnia-cbt-i-1  title 0.58
+         cited:  Behandlungsempfehlungen für chronische Insomnie - kognitive Verhaltenstherapie als Erstlinienbehandlung
+         pubmed: [Treatment recommendations for chronic insomnia - cognitive behavioural therapy as first-line treatment]. (2025) 10.23785/PRAXIS.2025.08_09.003
+OK       31271339  uk-chronic-insomnia-cbt-i-1  
+         cited:  British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, paraso
+         pubmed: British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, paraso (2019) 10.1177/0269881119855343
+OK       31271339  uk-chronic-insomnia-duration-limit-1  
+         cited:  British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, paraso
+         pubmed: British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, paraso (2019) 10.1177/0269881119855343
+OK       31271339  uk-chronic-insomnia-first-line-treatment-1  
+         cited:  British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, paraso
+         pubmed: British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, paraso (2019) 10.1177/0269881119855343
+OK       31271339  uk-chronic-insomnia-melatonin-1  
+         cited:  British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, paraso
+         pubmed: British Association for Psychopharmacology consensus statement on evidence-based treatment of insomnia, paraso (2019) 10.1177/0269881119855343
+OK       34246110  uk-chronic-insomnia-stepped-care-1  
+         cited:  Does adjunctive digital CBT for insomnia improve clinical outcomes in an improving access to psychological the
+         pubmed: Does adjunctive digital CBT for insomnia improve clinical outcomes in an improving access to psychological the (2021) 10.1016/j.brat.2021.103922
+OK       33164742  us-chronic-insomnia-cbt-i-1  
+         cited:  Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep 
+         pubmed: Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep  (2021) 10.5664/jcsm.8986
+OK       27998379  us-chronic-insomnia-z-drugs-1  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       27998379  us-chronic-insomnia-z-drugs-2  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       27998379  us-chronic-insomnia-z-drugs-3  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       27998379  us-chronic-insomnia-benzodiazepines-1  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       27998379  us-chronic-insomnia-benzodiazepines-2  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       33164742  us-chronic-insomnia-brief-behavioral-therapy-bbt-i-1  
+         cited:  Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep 
+         pubmed: Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep  (2021) 10.5664/jcsm.8986
+OK       41975142  us-chronic-insomnia-combination-cbt-i-drug-1  
+         cited:  Combination treatment for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical 
+         pubmed: Combination treatment for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical  (2026) 10.1007/s44470-025-00038-8
+OK       41975142  us-chronic-insomnia-combination-cbt-i-drug-2  
+         cited:  Combination treatment for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical 
+         pubmed: Combination treatment for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical  (2026) 10.1007/s44470-025-00038-8
+OK       27136449  us-chronic-insomnia-duration-limit-1  
+         cited:  Management of Chronic Insomnia Disorder in Adults: A Clinical Practice Guideline From the American College of 
+         pubmed: Management of Chronic Insomnia Disorder in Adults: A Clinical Practice Guideline From the American College of  (2016) 10.7326/M15-2175
+OK       27136449  us-chronic-insomnia-first-line-treatment-1  
+         cited:  Management of Chronic Insomnia Disorder in Adults: A Clinical Practice Guideline From the American College of 
+         pubmed: Management of Chronic Insomnia Disorder in Adults: A Clinical Practice Guideline From the American College of  (2016) 10.7326/M15-2175
+OK       27998379  us-chronic-insomnia-herbal-remedies-1  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       27998379  us-chronic-insomnia-low-dose-doxepin-1  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       27998379  us-chronic-insomnia-melatonin-1  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       27998379  us-chronic-insomnia-melatonin-receptor-agonist-1  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       27998379  us-chronic-insomnia-orexin-antagonists-1  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       27998379  us-chronic-insomnia-other-1  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       27998379  us-chronic-insomnia-other-2  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       33164742  us-chronic-insomnia-relaxation-1  
+         cited:  Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep 
+         pubmed: Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep  (2021) 10.5664/jcsm.8986
+OK       27998379  us-chronic-insomnia-sedating-antihistamines-1  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       33164742  us-chronic-insomnia-sleep-hygiene-1  
+         cited:  Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep 
+         pubmed: Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep  (2021) 10.5664/jcsm.8986
+OK       33164742  us-chronic-insomnia-sleep-restriction-1  
+         cited:  Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep 
+         pubmed: Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep  (2021) 10.5664/jcsm.8986
+OK       33164742  us-chronic-insomnia-stimulus-control-1  
+         cited:  Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep 
+         pubmed: Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep  (2021) 10.5664/jcsm.8986
+OK       27998379  us-chronic-insomnia-trazodone-1  
+         cited:  Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy
+         pubmed: Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy (2017) 10.5664/jcsm.6470
+OK       22505869  us-chronic-insomnia-who-delivers-cbt-i-1  
+         cited:  Dissemination of CBTI to the non-sleep specialist: protocol development and training issues
+         pubmed: Dissemination of CBTI to the non-sleep specialist: protocol development and training issues. (2012) 10.5664/jcsm.1786
+CHECK    26414986  us-circadian-rhythm-disorders-light-therapy-1  title 0.51
+         cited:  Clinical Practice Guideline for the Treatment of Intrinsic Circadian Rhythm Sleep-Wake Disorders: ASWPD, DSWPD
+         pubmed: Clinical Practice Guideline for the Treatment of Intrinsic Circadian Rhythm Sleep-Wake Disorders: Advanced Sle (2015) 10.5664/jcsm.5100
+CHECK    26414986  us-circadian-rhythm-disorders-melatonin-1  title 0.51
+         cited:  Clinical Practice Guideline for the Treatment of Intrinsic Circadian Rhythm Sleep-Wake Disorders: ASWPD, DSWPD
+         pubmed: Clinical Practice Guideline for the Treatment of Intrinsic Circadian Rhythm Sleep-Wake Disorders: Advanced Sle (2015) 10.5664/jcsm.5100
+CHECK    26414986  us-circadian-rhythm-disorders-sleep-promoting-drugs-1  title 0.51
+         cited:  Clinical Practice Guideline for the Treatment of Intrinsic Circadian Rhythm Sleep-Wake Disorders: ASWPD, DSWPD
+         pubmed: Clinical Practice Guideline for the Treatment of Intrinsic Circadian Rhythm Sleep-Wake Disorders: Advanced Sle (2015) 10.5664/jcsm.5100
+CHECK    26414986  us-circadian-rhythm-disorders-tasimelteon-1  title 0.51
+         cited:  Clinical Practice Guideline for the Treatment of Intrinsic Circadian Rhythm Sleep-Wake Disorders: ASWPD, DSWPD
+         pubmed: Clinical Practice Guideline for the Treatment of Intrinsic Circadian Rhythm Sleep-Wake Disorders: Advanced Sle (2015) 10.5664/jcsm.5100
+OK       34743789  us-narcolepsy-first-line-treatment-1  
+         cited:  Treatment of central disorders of hypersomnolence: an American Academy of Sleep Medicine clinical practice gui
+         pubmed: Treatment of central disorders of hypersomnolence: an American Academy of Sleep Medicine clinical practice gui (2021) 10.5664/jcsm.9328
+OK       34743789  us-narcolepsy-pediatric-narcolepsy-1  
+         cited:  Treatment of central disorders of hypersomnolence: an American Academy of Sleep Medicine clinical practice gui
+         pubmed: Treatment of central disorders of hypersomnolence: an American Academy of Sleep Medicine clinical practice gui (2021) 10.5664/jcsm.9328
+OK       34743789  us-narcolepsy-stimulants-1  
+         cited:  Treatment of central disorders of hypersomnolence: an American Academy of Sleep Medicine clinical practice gui
+         pubmed: Treatment of central disorders of hypersomnolence: an American Academy of Sleep Medicine clinical practice gui (2021) 10.5664/jcsm.9328
+OK       24061345  us-obstructive-sleep-apnea-cpap-1  
+         cited:  Management of obstructive sleep apnea in adults: A clinical practice guideline from the American College of Ph
+         pubmed: Management of obstructive sleep apnea in adults: A clinical practice guideline from the American College of Ph (2013) 10.7326/0003-4819-159-7-201310010-00704
+OK       30736887  us-obstructive-sleep-apnea-cpap-2  
+         cited:  Treatment of Adult Obstructive Sleep Apnea with Positive Airway Pressure: An American Academy of Sleep Medicin
+         pubmed: Treatment of Adult Obstructive Sleep Apnea with Positive Airway Pressure: An American Academy of Sleep Medicin (2019) 10.5664/jcsm.7640
+OK       30736887  us-obstructive-sleep-apnea-cpap-3  
+         cited:  Treatment of Adult Obstructive Sleep Apnea with Positive Airway Pressure: An American Academy of Sleep Medicin
+         pubmed: Treatment of Adult Obstructive Sleep Apnea with Positive Airway Pressure: An American Academy of Sleep Medicin (2019) 10.5664/jcsm.7640
+OK       38912654  us-obstructive-sleep-apnea-glp-1-tirzepatide-1  
+         cited:  Tirzepatide for the Treatment of Obstructive Sleep Apnea and Obesity
+         pubmed: Tirzepatide for the Treatment of Obstructive Sleep Apnea and Obesity. (2024) 10.1056/NEJMoa2404881
+OK       30736887  us-obstructive-sleep-apnea-pap-adherence-support-1  
+         cited:  Treatment of Adult Obstructive Sleep Apnea with Positive Airway Pressure: An American Academy of Sleep Medicin
+         pubmed: Treatment of Adult Obstructive Sleep Apnea with Positive Airway Pressure: An American Academy of Sleep Medicin (2019) 10.5664/jcsm.7640
+OK       34351848  us-obstructive-sleep-apnea-bariatric-surgery-1  
+         cited:  Referral of adults with obstructive sleep apnea for surgical consultation: an American Academy of Sleep Medici
+         pubmed: Referral of adults with obstructive sleep apnea for surgical consultation: an American Academy of Sleep Medici (2021) 10.5664/jcsm.9592
+OK       25089864  us-obstructive-sleep-apnea-diagnosis-home-sleep-apnea-test-1  
+         cited:  Diagnosis of obstructive sleep apnea in adults: a clinical practice guideline from the American College of Phy
+         pubmed: Diagnosis of obstructive sleep apnea in adults: a clinical practice guideline from theAmerican College of Phys (2014) 10.7326/M12-3187
+OK       28162150  us-obstructive-sleep-apnea-diagnosis-home-sleep-apnea-test-2  
+         cited:  Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea: An American Academy of S
+         pubmed: Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea: An American Academy of S (2017) 10.5664/jcsm.6506
+OK       28162150  us-obstructive-sleep-apnea-diagnosis-polysomnography-1  
+         cited:  Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea: An American Academy of S
+         pubmed: Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea: An American Academy of S (2017) 10.5664/jcsm.6506
+OK       28162150  us-obstructive-sleep-apnea-diagnosis-questionnaires-1  
+         cited:  Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea: An American Academy of S
+         pubmed: Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea: An American Academy of S (2017) 10.5664/jcsm.6506
+OK       26094920  us-obstructive-sleep-apnea-oral-appliance-1  
+         cited:  Clinical Practice Guideline for the Treatment of Obstructive Sleep Apnea and Snoring with Oral Appliance Thera
+         pubmed: Clinical Practice Guideline for the Treatment of Obstructive Sleep Apnea and Snoring with Oral Appliance Thera (2015) 10.5664/jcsm.4858
+OK       34351848  us-obstructive-sleep-apnea-surgery-1  
+         cited:  Referral of adults with obstructive sleep apnea for surgical consultation: an American Academy of Sleep Medici
+         pubmed: Referral of adults with obstructive sleep apnea for surgical consultation: an American Academy of Sleep Medici (2021) 10.5664/jcsm.9592
+OK       24061345  us-obstructive-sleep-apnea-weight-loss-1  
+         cited:  Management of obstructive sleep apnea in adults: A clinical practice guideline from the American College of Ph
+         pubmed: Management of obstructive sleep apnea in adults: A clinical practice guideline from the American College of Ph (2013) 10.7326/0003-4819-159-7-201310010-00704
+OK       22926173  us-pediatric-osa-surgery-1  
+         cited:  Diagnosis and management of childhood obstructive sleep apnea syndrome
+         pubmed: Diagnosis and management of childhood obstructive sleep apnea syndrome. (2012) 10.1542/peds.2012-1671
+OK       30798778  us-pediatric-osa-referral-criteria-1  
+         cited:  Clinical Practice Guideline: Tonsillectomy in Children (Update)
+         pubmed: Clinical Practice Guideline: Tonsillectomy in Children (Update). (2019) 10.1177/0194599818801757
+OK       17068980  us-pediatric-insomnia-behavioral-treatment-1  
+         cited:  Practice parameters for behavioral treatment of bedtime problems and night wakings in infants and young childr
+         pubmed: Practice parameters for behavioral treatment of bedtime problems and night wakings in infants and young childr (2006) 
+OK       39324694  us-restless-legs-alpha-2-delta-ligands-1  
+         cited:  Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine
+         pubmed: Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine (2025) 10.5664/jcsm.11390
+OK       39324694  us-restless-legs-dopamine-agonists-1  
+         cited:  Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine
+         pubmed: Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine (2025) 10.5664/jcsm.11390
+OK       42203073  us-restless-legs-first-line-treatment-1  
+         cited:  An Updated Algorithm for the Management of Restless Legs Syndrome
+         pubmed: An Updated Algorithm for the Management of Restless Legs Syndrome. (2026) 10.1016/j.mayocp.2026.05.010
+OK       39324694  us-restless-legs-iron-1  
+         cited:  Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine
+         pubmed: Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine (2025) 10.5664/jcsm.11390
+OK       39324694  us-restless-legs-iron-2  
+         cited:  Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine
+         pubmed: Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine (2025) 10.5664/jcsm.11390
+OK       39324694  us-restless-legs-opioids-1  
+         cited:  Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine
+         pubmed: Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine (2025) 10.5664/jcsm.11390
+OK       39324694  us-restless-legs-other-drugs-1  
+         cited:  Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine
+         pubmed: Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine (2025) 10.5664/jcsm.11390
+OK       38297463  who-chronic-insomnia-regulatory-status-1  
+         cited:  Ground-breaking change to the mental health section of the WHO Model List of Essential Medicines: implications
+         pubmed: Ground-breaking change to the mental health section of the WHO Model List of Essential Medicines: implications (2024) 10.1017/S2045796024000040
+OK       23925613  who-other-benzodiazepines-1  
+         cited:  Management of acute stress, PTSD, and bereavement: WHO recommendations
+         pubmed: Management of acute stress, PTSD, and bereavement: WHO recommendations. (2013) 10.1001/jama.2013.166723
+OK       40965652  who-other-classification-1  
+         cited:  Sleep disorders: comparison of ICD-11 and ICD-10
+         pubmed: Sleep disorders: comparison of ICD-11 and ICD-10. (2025) 10.1007/s00115-025-01859-x
+CHECK    31091057  who-other-sleep-duration-1  title 0.00
+         cited:  Guidelines on Physical Activity, Sedentary Behaviour and Sleep for Children under 5 Years of Age
+         pubmed:  (2019) 
+OK       36116294  existing-comparisons[0]  
+         cited:  A critical appraisal of clinical practice guidelines on insomnia using the RIGHT statement and AGREE II instru
+         pubmed: A critical appraisal of clinical practice guidelines on insomnia using the RIGHT statement and AGREE II instru (2022) 10.1016/j.sleep.2022.08.023
+OK       36355585  existing-comparisons[1]  
+         cited:  Systematic Review of Clinical Practice Guidelines for Insomnia Disorder.
+         pubmed: Systematic Review of Clinical Practice Guidelines for Insomnia Disorder. (2022) 10.1097/PRA.0000000000000670
+OK       38131058  existing-comparisons[2]  
+         cited:  Efficacy and safety of pharmacotherapy in chronic insomnia: A review of clinical guidelines and case reports.
+         pubmed: Efficacy and safety of pharmacotherapy in chronic insomnia: A review of clinical guidelines and case reports. (2023) 10.9740/mhc.2023.10.244
+OK       33557810  existing-comparisons[3]  
+         cited:  A systematic review and quality assessment of complementary and alternative medicine recommendations in insomn
+         pubmed: A systematic review and quality assessment of complementary and alternative medicine recommendations in insomn (2021) 10.1186/s12906-021-03223-3
+OK       37397764  existing-comparisons[4]  
+         cited:  Identifying complementary and alternative medicine recommendations for insomnia treatment and care: a systemat
+         pubmed: Identifying complementary and alternative medicine recommendations for insomnia treatment and care: a systemat (2023) 10.3389/fpubh.2023.1157419
+OK       38122913  existing-comparisons[5]  
+         cited:  Traditional Chinese medicine for insomnia: Recommendation mapping of the global clinical guidelines.
+         pubmed: Traditional Chinese medicine for insomnia: Recommendation mapping of the global clinical guidelines. (2024) 10.1016/j.jep.2023.117601
+OK       38516102  existing-comparisons[6]  
+         cited:  Prescribing and deprescribing guidance for benzodiazepine and benzodiazepine receptor agonist use in adults wi
+         pubmed: Prescribing and deprescribing guidance for benzodiazepine and benzodiazepine receptor agonist use in adults wi (2024) 10.1016/j.eclinm.2024.102507
+OK       30543200  existing-comparisons[7]  
+         cited:  Deprescribing benzodiazepine receptor agonists taken for insomnia: a review and key messages from practice gui
+         pubmed: Deprescribing benzodiazepine receptor agonists taken for insomnia: a review and key messages from practice gui (2019) 10.20452/pamw.4391
+OK       38581804  existing-comparisons[8]  
+         cited:  Quality assessment of clinical practice guidelines for adult obstructive sleep apnea: A systematic review.
+         pubmed: Quality assessment of clinical practice guidelines for adult obstructive sleep apnea: A systematic review. (2024) 10.1016/j.sleep.2024.03.045
+OK       31042014  existing-comparisons[9]  
+         cited:  Guidelines on the surgical management of sleep disorders: A systematic review.
+         pubmed: Guidelines on the surgical management of sleep disorders: A systematic review. (2020) 10.1002/lary.28028
+OK       38355893  existing-comparisons[10]  
+         cited:  Screening for obstructive sleep apnea (OSA) in children and adolescents with obesity: A scoping review of nati
+         pubmed: Screening for obstructive sleep apnea (OSA) in children and adolescents with obesity: A scoping review of nati (2024) 10.1111/obr.13712
+OK       39125438  existing-comparisons[11]  
+         cited:  Iron Deficiency and Sleep/Wake Behaviors: A Scoping Review of Clinical Practice Guidelines-How to Overcome the
+         pubmed: Iron Deficiency and Sleep/Wake Behaviors: A Scoping Review of Clinical Practice Guidelines-How to Overcome the (2024) 10.3390/nu16152559
+OK       41480563  existing-comparisons[12]  
+         cited:  The AASM Guidelines for the Treatment of Restless Legs Syndrome (RLS) in the Context of Latin America.
+         pubmed: The AASM Guidelines for the Treatment of Restless Legs Syndrome (RLS) in the Context of Latin America. (2025) 10.1055/s-0045-1813730
+OK       41518862  existing-comparisons[13]  
+         cited:  Pharmacological management of insomnia with a focus on GABA(A) receptor positive allosteric modulators and ore
+         pubmed: Pharmacological management of insomnia with a focus on GABA(A) receptor positive allosteric modulators and ore (2026) 10.1016/j.sleep.2025.108743
+OK       37094086  existing-comparisons[14]  
+         cited:  Global trends in the consumption of benzodiazepines and Z-drugs in 67 countries and regions from 2008 to 2018:
+         pubmed: Global trends in the consumption of benzodiazepines and Z-drugs in 67 countries and regions from 2008 to 2018: (2023) 10.1093/sleep/zsad124
+OK       37099524  existing-comparisons[15]  
+         cited:  Global trends in antidepressant, atypical antipsychotic, and benzodiazepine use: A cross-sectional analysis of
+         pubmed: Global trends in antidepressant, atypical antipsychotic, and benzodiazepine use: A cross-sectional analysis of (2023) 10.1371/journal.pone.0284389
+OK       26149383  existing-comparisons[16]  
+         cited:  Exposure to benzodiazepines (anxiolytics, hypnotics and related drugs) in seven European electronic healthcare
+         pubmed: Exposure to benzodiazepines (anxiolytics, hypnotics and related drugs) in seven European electronic healthcare (2016) 10.1002/pds.3825
+OK       36314353  existing-comparisons[17]  
+         cited:  Use of benzodiazepines and benzodiazepine-related drugs in the Nordic countries between 2000 and 2020.
+         pubmed: Use of benzodiazepines and benzodiazepine-related drugs in the Nordic countries between 2000 and 2020. (2023) 10.1111/bcpt.13811
+OK       38454372  existing-comparisons[18]  
+         cited:  Prevalence, country-specific prescribing patterns and determinants of benzodiazepine use in community-residing
+         pubmed: Prevalence, country-specific prescribing patterns and determinants of benzodiazepine use in community-residing (2024) 10.1186/s12877-024-04742-7
+OK       33902474  existing-comparisons[19]  
+         cited:  The prevalence and prescribing patterns of benzodiazepines and Z-drugs in older nursing home residents in diff
+         pubmed: The prevalence and prescribing patterns of benzodiazepines and Z-drugs in older nursing home residents in diff (2021) 10.1186/s12877-021-02213-x
+OK       42159554  existing-comparisons[20]  
+         cited:  Dispensing of benzodiazepines and benzodiazepine-related drugs in Estonia, Latvia and Lithuania: a cross-natio
+         pubmed: Dispensing of benzodiazepines and benzodiazepine-related drugs in Estonia, Latvia and Lithuania: a cross-natio (2026) 10.1080/08039488.2026.2671998
+OK       41554537  existing-comparisons[21]  
+         cited:  International Comparison of Benzodiazepine Prescription for Older Adults in Acute Care Hospitals.
+         pubmed: International Comparison of Benzodiazepine Prescription for Older Adults in Acute Care Hospitals. (2026) 10.1111/ggi.70327
+OK       23114457  existing-comparisons[22]  
+         cited:  Contribution of prolonged-release melatonin and anti-benzodiazepine campaigns to the reduction of benzodiazepi
+         pubmed: Contribution of prolonged-release melatonin and anti-benzodiazepine campaigns to the reduction of benzodiazepi (2013) 10.1007/s00228-012-1424-1
+OK       37599882  existing-comparisons[23]  
+         cited:  Long-term use of benzodiazepines in chronic insomnia: a European perspective.
+         pubmed: Long-term use of benzodiazepines in chronic insomnia: a European perspective. (2023) 10.3389/fpsyt.2023.1212028
+OK       31322113  existing-comparisons[24]  
+         cited:  Policies for Deprescribing: An International Scan of Intended and Unintended Outcomes of Limiting Sedative-Hyp
+         pubmed: Policies for Deprescribing: An International Scan of Intended and Unintended Outcomes of Limiting Sedative-Hyp (2019) 10.12927/hcpol.2019.25857
+OK       41847869  existing-comparisons[25]  
+         cited:  Gender differences in adolescent anxiolytic, hypnotic and sedative use across 32 European countries: a multile
+         pubmed: Gender differences in adolescent anxiolytic, hypnotic and sedative use across 32 European countries: a multile (2026) 10.1093/eurpub/ckag034
+OK       27159249  existing-comparisons[26]  
+         cited:  Where are the Behavioral Sleep Medicine Providers and Where are They Needed? A Geographic Assessment.
+         pubmed: Where are the Behavioral Sleep Medicine Providers and Where are They Needed? A Geographic Assessment. (2016) 10.1080/15402002.2016.1173551
+OK       31856367  existing-comparisons[27]  
+         cited:  The European Academy for Cognitive Behavioural Therapy for Insomnia: An initiative of the European Insomnia Ne
+         pubmed: The European Academy for Cognitive Behavioural Therapy for Insomnia: An initiative of the European Insomnia Ne (2020) 10.1111/jsr.12967
+OK       36900721  existing-comparisons[28]  
+         cited:  Chronic Insomnia Disorder across Europe: Expert Opinion on Challenges and Opportunities to Improve Care.
+         pubmed: Chronic Insomnia Disorder across Europe: Expert Opinion on Challenges and Opportunities to Improve Care. (2023) 10.3390/healthcare11050716
+OK       37942936  existing-comparisons[29]  
+         cited:  Increasing access to evidence-based insomnia care in the United States: findings from an American Academy of S
+         pubmed: Increasing access to evidence-based insomnia care in the United States: findings from an American Academy of S (2024) 10.5664/jcsm.10922
+OK       37642008  existing-comparisons[30]  
+         cited:  Disseminating cognitive behavioural therapy (CBT) for insomnia at scale: capitalising on the potential of digi
+         pubmed: Disseminating cognitive behavioural therapy (CBT) for insomnia at scale: capitalising on the potential of digi (2023) 10.1111/jsr.14025
+OK       40886655  existing-comparisons[31]  
+         cited:  The need to prioritize "insomnia disorder" in public health agendas: "a wakeup call" position paper from Europ
+         pubmed: The need to prioritize "insomnia disorder" in public health agendas: "a wakeup call" position paper from Europ (2025) 10.1016/j.sleep.2025.106763
+OK       33424495  existing-comparisons[32]  
+         cited:  Melatonin Use in Pediatrics: Evaluating the Discrepancy in Evidence Based on Country and Regulations Regarding
+         pubmed: Melatonin Use in Pediatrics: Evaluating the Discrepancy in Evidence Based on Country and Regulations Regarding (2021) 10.5863/1551-6776-26.1.4
+OK       40572610  existing-comparisons[33]  
+         cited:  Validated UHPLC Methods for Melatonin Quantification Reveal Regulatory Violations in EU Online Dietary Supplem
+         pubmed: Validated UHPLC Methods for Melatonin Quantification Reveal Regulatory Violations in EU Online Dietary Supplem (2025) 10.3390/molecules30122647
+OK       21167776  existing-comparisons[34]  
+         cited:  Management of obstructive sleep apnea in Europe.
+         pubmed: Management of obstructive sleep apnea in Europe. (2011) 10.1016/j.sleep.2010.10.003
+OK       35724441  existing-comparisons[35]  
+         cited:  Management of obstructive sleep apnea in Europe - A 10-year follow-up.
+         pubmed: Management of obstructive sleep apnea in Europe - A 10-year follow-up. (2022) 10.1016/j.sleep.2022.06.001
+OK       39436398  existing-comparisons[36]  
+         cited:  Access and models of obstructive sleep apnea care: a cross-national comparison of Canadian and Australian pati
+         pubmed: Access and models of obstructive sleep apnea care: a cross-national comparison of Canadian and Australian pati (2025) 10.5664/jcsm.11414
+OK       42753383  existing-comparisons[37]  
+         cited:  Current practice, clinical perspectives and barriers to multi-night testing for obstructive sleep apnea in Eur
+         pubmed: Current practice, clinical perspectives and barriers to multi-night testing for obstructive sleep apnea in Eur (2026) 10.1016/j.sleep.2026.109272
+OK       41473545  existing-comparisons[38]  
+         cited:  Treatment choice in mild to moderate sleep apnoea in the European Sleep Apnea Database.
+         pubmed: Treatment choice in mild to moderate sleep apnoea in the European Sleep Apnea Database. (2025) 10.1183/23120541.00360-2025
+OK       42639925  existing-comparisons[39]  
+         cited:  Clinical practice patterns and unmet needs in the use of GLP-1 receptor agonists in sleep medicine: A pan-Euro
+         pubmed: Clinical practice patterns and unmet needs in the use of GLP-1 receptor agonists in sleep medicine: A pan-Euro (2026) 10.1080/25310429.2026.2722795
+OK       33206044  existing-comparisons[40]  
+         cited:  Adherence with positive airway pressure therapy for obstructive sleep apnea in developing vs. developed countr
+         pubmed: Adherence with positive airway pressure therapy for obstructive sleep apnea in developing vs. developed countr (2021) 10.5664/jcsm.9008
+OK       40341050  existing-comparisons[41]  
+         cited:  Implementation of European national driving regulations for obstructive sleep apnoea: challenges and recommend
+         pubmed: Implementation of European national driving regulations for obstructive sleep apnoea: challenges and recommend (2025) 10.1183/13993003.02484-2024
+OK       42809166  existing-comparisons[42]  
+         cited:  Barriers to the diagnosis and treatment of obstructive sleep apnea in 15 francophone Sub-Saharan African count
+         pubmed: Barriers to the diagnosis and treatment of obstructive sleep apnea in 15 francophone Sub-Saharan African count (2026) 10.1007/s11325-026-03816-7
+OK       36722719  existing-comparisons[43]  
+         cited:  Moving toward Equitable Care for Sleep Apnea in the United States: Positive Airway Pressure Adherence Threshol
+         pubmed: Moving toward Equitable Care for Sleep Apnea in the United States: Positive Airway Pressure Adherence Threshol (2023) 10.1164/rccm.202210-1846ST
+OK       39667903  existing-comparisons[44]  
+         cited:  New management pathways for follow-up of CPAP-treated sleep apnoea patients including digital medicine and mul
+         pubmed: New management pathways for follow-up of CPAP-treated sleep apnoea patients including digital medicine and mul (2024) 10.1136/thorax-2024-221422
+OK       38445659  existing-comparisons[45]  
+         cited:  Global practice of sleep medicine: Iran.
+         pubmed: Global practice of sleep medicine: Iran. (2024) 10.5664/jcsm.11096
+OK       42768286  existing-comparisons[46]  
+         cited:  The Global Initiative for Obstructive Sleep Apnea (GIFOSA): Rationale, Strategic Framework, and Call to Action
+         pubmed: The Global Initiative for Obstructive Sleep Apnea (GIFOSA): Rationale, Strategic Framework, and Call to Action (2026) 10.1007/s41030-026-00386-7
