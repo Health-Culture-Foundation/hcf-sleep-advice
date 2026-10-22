@@ -38,7 +38,7 @@ NHS, CDC and NSF is in the separate lit search (`research/lit-search-2026-10/`, 
 | [`existing-comparisons.json`](existing-comparisons.json) | **49 published items** that compare guidelines, pathways or drug use across countries, with how thorough each is. |
 | [`notes/`](notes/) | Each research area's findings note (main differences, surprises, blocked pages, open questions) and its raw rows. |
 | [`notes/pmid-verification.txt`](notes/pmid-verification.txt) | Every PMID (155) re-checked against PubMed on 21 Oct 2026. |
-| [`scripts/`](scripts/) | `merge.py` builds `comparison.json` from the notes; `verify.py` re-checks PMIDs. |
+| [`scripts/`](scripts/) | `merge.py` builds `comparison.json` from the notes; `enrich.py` then adds the code and standard-named fields from the hand-checked tables in [`scripts/codes/`](scripts/codes/); `drug_codes.py` rebuilds the drug table; `verify.py` re-checks PMIDs. |
 
 ### Row format (`comparison.json`)
 
@@ -55,6 +55,28 @@ NHS, CDC and NSF is in the separate lit search (`research/lit-search-2026-10/`, 
 | `freeToRead`, `freeUrl`, `whatWasRead` | Whether a reader can get it free, and whether we read the full text, abstract, web page or a secondary source |
 | `conflictsOfInterest` | What the source states |
 | `numbersToVerify` | Every number a person should check before it is used |
+| `notes`, `researchFile` | Anything else worth knowing; which note in `notes/` the row came from |
+
+**Added fields** (all optional; `null` means "not stated" or "not confirmed", never "no").
+Names follow GRADE, HL7 EBMonFHIR and FHIR PlanDefinition, as proposed in
+[`notes/formats.md`](notes/formats.md#recommendation-for-comparisonjson). `enrich.py`
+fills them; it never changes the fields above.
+
+| Field | Meaning | Maps to |
+|---|---|---|
+| `countryCode`, `regionCode` | ISO 3166-1 alpha-2 (`GB` for the UK) and ISO 3166-2 (`GB-ENG`, `GB-SCT`, `CA-ON`, `AU-QLD`). `null` for Europe, EU, International, WHO | `PlanDefinition.jurisdiction` |
+| `conditionCodes` | `{icd11}`: ICD-11 MMS code, checked in the WHO browser (2026-01 release): chronic insomnia `7A00`, OSA and pediatric OSA `7A41`, narcolepsy `7A20`, restless legs `7A80`. `null` for pediatric insomnia (7A00 or 7A01 depends on the row), circadian disorders (rows span 7A60-7A65) and other | `PlanDefinition.subject` |
+| `drugCodes` | One `{name, atc, rxnorm}` per name in `drugs`. ATC from the WHO index; class names get an ATC group only when one group matches exactly (Z-drugs `N05CF`). RxNorm only for an exact single-ingredient match. Reasons and other codes per name: [`scripts/codes/drug-codes.json`](scripts/codes/drug-codes.json) | `ActivityDefinition.productCodeableConcept` |
+| `strengthGrade` | `strong` / `conditional` only when the guideline uses GRADE (or GRADE's strong/weak words) and the row has one strength; `non-GRADE system` for NICE wording, letters, levels and other systems (never mapped to strong); `not graded` for rules, statements and consensus; `null` if the grade was not seen or the row mixes strengths | CPG `strengthOfRecommendation` |
+| `certaintyOfEvidence` | high / moderate / low / very low, only when the row states one level for the whole row | CPG `qualityOfEvidence` |
+| `gradingSystem` | Which system the `strength` text comes from, e.g. `GRADE`, `NICE wording (offer / consider)`, `ESRS 2023 letter grades` | `RecommendationJustification` rating system |
+| `performer`, `setting` | Pathway and coverage rows: who carries out the decision (GP, sleep physician, dentist...) and where (primary care, sleep clinic, home, online...) | `action.participant`, `useContext` |
+| `step`, `after` | Order in a stepped route: step number, and what must come (or fail) first | `action.relatedAction` |
+| `target` | List of `{measure, comparator, value, unit}`: waiting-time standards, CPAP-use thresholds, licence review intervals. Every value is also in `numbersToVerify` | `PlanDefinition.goal.target` |
+| `payer`, `program`, `ruleType` | Who pays, under which scheme, and what kind of rule: eligibility, adherence, prior authorisation, reimbursement, prescribing limit, prescriber requirement, regulatory status, restricted distribution | none (HCF's own) |
+
+Strength mapping, row by row: [`scripts/codes/strength-map.json`](scripts/codes/strength-map.json).
+Pathway and coverage fields, row by row: [`scripts/codes/pathway-coverage.json`](scripts/codes/pathway-coverage.json).
 
 ## Insomnia: country × key decisions
 
@@ -234,7 +256,7 @@ named after GRADE / EBMonFHIR / FHIR terms: country codes, ICD-11 and ATC codes,
 normalised strength and certainty, grading system, and, for pathway rows, who does it,
 where, in what order, and any numeric target (e.g. hours of CPAP use). Mapping table:
 [`notes/formats.md`](notes/formats.md#recommendation-for-comparisonjson). Don't
-produce FHIR until a partner asks for it. Not done yet; see open questions.
+produce FHIR until a partner asks for it. Done on 22 Oct 2026 (see the added fields under Row format).
 
 ## Who owns the guidance doctors actually use
 
@@ -343,6 +365,13 @@ Every row lists its own in `numbersToVerify`. The ones most likely to be quoted:
 - [ ] Has Australia's March 2026 scheduling meeting changed melatonin's status?
 - [ ] Does the TGA list daridorexant?
 - [ ] Add drug-use data (OECD, Nordic registers) next to each country's guidance?
+- [ ] ATC licence: the WHOCC copyright notice bans "changing or manipulating the
+      material". Is listing ATC codes in an openly licensed dataset allowed? Ask the
+      WHO Collaborating Centre (Oslo) before an open-licence release.
+- [ ] Several guidelines graded 1A-2C or "strong/weak" without the row naming GRADE
+      (Canadian Thoracic Society 2011, Chinese Thoracic Society 2025, Korean 2020).
+      They are recorded as `non-GRADE system` or with the system "not named". Check
+      each guideline's methods section and upgrade to GRADE if it says so.
 
 ## Method
 

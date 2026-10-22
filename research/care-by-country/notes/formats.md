@@ -227,8 +227,8 @@ The existing `strength` text stays, verbatim, because bodies grade differently (
 ## Open questions
 
 - [ ] Ask the WHO Collaborating Centre (Oslo) whether listing ATC codes in an openly licensed dataset is allowed. Its notice bans "changing or manipulating the material".
-- [ ] Verify ICD-11 code 7A41 (OSA) and other sleep codes in the WHO ICD-11 browser. The API needs a registered token, so I didn't use it.
-- [ ] Should HCF fill `strengthGrade` for non-GRADE systems (for example map "Level A" to strong)? The default here is no: record "non-GRADE system".
+- [x] Verify ICD-11 code 7A41 (OSA) and other sleep codes in the WHO ICD-11 browser. Done 2026-10-22 in the browser (release 2026-01): 7A00 chronic insomnia, 7A01 short-term insomnia, 7A20 narcolepsy, 7A41 obstructive sleep apnoea (definition covers children), 7A60-7A65 circadian rhythm disorders, 7A80 restless legs syndrome.
+- [ ] Should HCF fill `strengthGrade` for non-GRADE systems (for example map "Level A" to strong)? The default here is no: record "non-GRADE system". Applied in `scripts/enrich.py` (2026-10-22).
 - [ ] Open the Lancet SMART paper in Chrome and confirm the L1-L5 wording (the page returned 403).
 
 ## Blocked
