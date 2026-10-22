@@ -613,3 +613,10 @@ OK       38445659  existing-comparisons[45]
 OK       42768286  existing-comparisons[46]  
          cited:  The Global Initiative for Obstructive Sleep Apnea (GIFOSA): Rationale, Strategic Framework, and Call to Action
          pubmed: The Global Initiative for Obstructive Sleep Apnea (GIFOSA): Rationale, Strategic Framework, and Call to Action (2026) 10.1007/s41030-026-00386-7
+
+# Second pass (21 Oct 2026): 38 further PMIDs cited in notes/*.md (formats, agilio, regional notes).
+# Each fetched from PubMed esummary; title and year matched the context they are cited in.
+10566381 10984468 12509357 12807812 13679327 15196480 17036094 17600098 20656455 21037998
+22195106 22342733 22473437 23806274 26904977 27353417 27365494 27893062 28188149 28648224
+32066145 32161664 32693906 32948216 33610488 33937976 34409586 34629966 34862166 36107480
+37344115 37387055 38768161 38916936 39575797 39854255 8978246 9830177

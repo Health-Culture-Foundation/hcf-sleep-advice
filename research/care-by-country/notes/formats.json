@@ -1,0 +1,542 @@
+[
+  {
+    "name": "WHO SMART Guidelines (L1-L5 knowledge layers, Digital Adaptation Kits)",
+    "owner": "World Health Organization",
+    "type": "guideline format",
+    "status": "Active programme. As of Nov 2025 the smart.who.int list shows 10 published DAKs and some FHIR IGs; Community Health under development.",
+    "openLicence": "Lancet Digit Health paper is CC BY (per Europe PMC). DAK licence not checked.",
+    "url": "https://smart.who.int/",
+    "citation": {
+      "pmid": "33610488",
+      "doi": "10.1016/S2589-7500(21)00038-8"
+    },
+    "whatWasRead": "Guideline web pages (who.int SMART page, smart.who.int index, IG starter kit); PubMed record of Mehl 2021 (no abstract); layer wording from Wikipedia and healthmanagement.org (secondary source). Lancet full text blocked (403).",
+    "summary": "WHO's five-step route from a written guideline to software: L1 narrative guideline, L2 operational 'Digital Adaptation Kit' (software-neutral requirements: workflows, data elements, decision tables), L3 machine-readable FHIR implementation guide, L4 executable reference software, L5 dynamic/AI-optimised algorithms. DAKs exist for antenatal care, family planning, postnatal care, birth defects surveillance, HIV, TB, child health in humanitarian emergencies, immunizations, self-monitoring of blood pressure in pregnancy, infectious disease surveillance vol 1.",
+    "relevanceToHCF": "Gives HCF the vocabulary for its own layers: HCF rows are L1 facts made structured (between L1 and L2). No sleep or mental-health DAK exists, so there is nothing to copy for sleep. The L1 call to 'register and uniquely identify recommendations' supports HCF's stable row ids."
+  },
+  {
+    "name": "HL7 FHIR Clinical Practice Guidelines IG (CPG-on-FHIR)",
+    "owner": "HL7 International (Clinical Decision Support WG)",
+    "type": "guideline format",
+    "status": "v2.0.0 STU2 (trial use), published 2024-11-26, FHIR R4 4.0.1. STU1 was 2021-02-11.",
+    "openLicence": "HL7 FHIR specs are CC0 / free to use (general HL7 FHIR policy; not checked on this page).",
+    "url": "https://hl7.org/fhir/uv/cpg/",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "Guideline web pages: IG home page, package-list.json, CPGRecommendationDefinition and CPGPathwayDefinition profile pages (first 100k characters).",
+    "summary": "How to write a guideline as computable FHIR content. Recommendations are PlanDefinition profiles (CPGRecommendationDefinition, type 'eca-rule') with extensions for strengthOfRecommendation, directionOfRecommendation and qualityOfEvidence; pathways are CPGPathwayDefinition ('groupings of strategies to provide a longitudinal view of the guideline'); logic is in Library resources written in CQL (Clinical Quality Language); single actions (prescribe X) are ActivityDefinitions.",
+    "relevanceToHCF": "Best fit for HCF's guideline and pathway layers. HCF does not need executable logic, but borrowing the field names (strength, direction, quality of evidence, pathway vs recommendation) makes a later FHIR export straightforward."
+  },
+  {
+    "name": "FHIR PlanDefinition resource",
+    "owner": "HL7 International",
+    "type": "guideline format",
+    "status": "FHIR R5: Maturity Level 4, Trial Use. jurisdiction and topic elements marked deprecated in R5.",
+    "openLicence": "HL7 FHIR spec, free to use (not checked on page).",
+    "url": "https://hl7.org/fhir/R5/plandefinition.html",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "Specification web page (first 100k of 448k characters).",
+    "summary": "A 'sharable, consumable, and executable artifact' describing a group of actions: order sets, protocols, decision-support rules. Key fields: type (order-set, clinical-protocol, eca-rule, workflow-definition), action (with participants, conditions, related actions), goal (with targets and due times), relatedArtifact (citations), useContext.",
+    "relevanceToHCF": "Target resource for HCF guideline and pathway rows. 'action.participant' maps to 'who prescribes CPAP'; 'goal.target' maps to waiting-time targets; 'relatedArtifact' maps to HCF citation."
+  },
+  {
+    "name": "FHIR Evidence resource (and EvidenceVariable)",
+    "owner": "HL7 International",
+    "type": "evidence format",
+    "status": "FHIR R5: Maturity Level 1, Trial Use.",
+    "openLicence": "HL7 FHIR spec, free to use (not checked on page).",
+    "url": "https://hl7.org/fhir/R5/evidence.html",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "Specification web page (first 100k of 270k characters).",
+    "summary": "Holds a study or pooled result: what was compared (variableDefinition -> EvidenceVariable for population, exposure, outcome), the numbers (statistic) and a machine-readable certainty rating.",
+    "relevanceToHCF": "Only needed if HCF ever stores effect sizes behind recommendations. For now HCF just records the certainty label the guideline gives."
+  },
+  {
+    "name": "Evidence Based Medicine on FHIR IG (EBMonFHIR)",
+    "owner": "HL7 International (CDS WG); led by Health Evidence Knowledge Accelerator (HEvKA)",
+    "type": "evidence format",
+    "status": "Not yet a standard: 1.0.0-ballot2 (ballot, 2025-03-28, FHIR 6.0.0); ballot1 2023-12-17. Its profiles are 'Draft', Maturity Level 1.",
+    "openLicence": "HL7 FHIR IG (free). Paper is open access in JMIR.",
+    "url": "https://hl7.org/fhir/uv/ebm/2025May/artifacts.html",
+    "citation": {
+      "pmid": "38916936",
+      "doi": "10.2196/54265"
+    },
+    "whatWasRead": "IG package-list.json and artifacts list; profile pages for Guideline, Recommendation, RecommendationPlan, RecommendationJustification, CertaintyOfEvidence; abstract of Soares 2024 (JMIR).",
+    "summary": "Profiles for the whole evidence-to-guideline chain: Guideline and Recommendation (Composition = document), RecommendationPlan (PlanDefinition = the action), RecommendationJustification (ArtifactAssessment holding strength, direction, net effect and judgments), CertaintyOfEvidence. Lead author declares ownership of Computable Publishing LLC.",
+    "relevanceToHCF": "Closest existing schema to an HCF row ('a recommendation from a clinical practice guideline, with its strength, direction and rationale'). Map HCF fields to Recommendation + RecommendationJustification names. Still a ballot, so expect renames."
+  },
+  {
+    "name": "GRADE Evidence to Decision (EtD) frameworks",
+    "owner": "GRADE Working Group",
+    "type": "evidence format",
+    "status": "Published 2016 (BMJ series); in wide use (WHO, NICE-adjacent, MAGIC).",
+    "openLicence": "BMJ article; licence not checked.",
+    "url": "https://www.bmj.com/content/353/bmj.i2016",
+    "citation": {
+      "pmid": "27353417",
+      "doi": "10.1136/bmj.i2016"
+    },
+    "whatWasRead": "PubMed record (no abstract shown) for part 1; title of part 2 (PMID 27365494, doi 10.1136/bmj.i2089, clinical practice guidelines).",
+    "summary": "A structured table that guideline panels fill in to move from evidence to a recommendation (criteria such as benefits/harms, certainty, values, resources, acceptability, feasibility - criteria list from general knowledge, not read in this session). Its output is a recommendation with a direction (for/against) and strength (strong/conditional).",
+    "relevanceToHCF": "Defines the strength vocabulary HCF should normalise to: strong vs conditional (weak), for vs against, plus certainty high/moderate/low/very low. Many sleep guidelines (AASM, ESRS) use GRADE, so this normalisation is meaningful."
+  },
+  {
+    "name": "MAGICapp (MAGIC Evidence Ecosystem Foundation) and living guidelines",
+    "owner": "MAGIC Evidence Ecosystem Foundation (Norway, non-profit)",
+    "type": "guideline format",
+    "status": "Active; used by WHO, Stroke Foundation (AU), Australian Living Evidence Collaboration.",
+    "openLicence": "No (commercial terms after 8-week free trial; 'Negotiations'). Individual guidelines may be free to read.",
+    "url": "https://magicevidence.org/magicapp/",
+    "citation": {
+      "pmid": "28188149",
+      "doi": "10.1136/bmjopen-2016-011569"
+    },
+    "whatWasRead": "Product web page; MAGICapp help article on GRADEpro import; abstract of Brandt 2017 (BMJ Open).",
+    "summary": "Web platform to write, publish and update GRADE guidelines as structured data ('robust, structured data model', API, recommendation-level publishing, audit trail, widgets). Built for 'living guidelines' that are updated recommendation-by-recommendation. In Brandt 2017, 72% of 181 physicians preferred the multilayered digital format. FHIR export not confirmed.",
+    "relevanceToHCF": "Source of structured recommendations if a sleep guideline is hosted there. Its multilayer format (short recommendation, then rationale, then evidence) is a good display model for HCF pages."
+  },
+  {
+    "name": "GRADEpro GDT and the Cochrane Summary of Findings JSON schema",
+    "owner": "Evidence Prime / McMaster (GRADEpro); Cochrane (schema)",
+    "type": "evidence format",
+    "status": "Active. Cochrane schema v1 published at assets.cochrane.org.",
+    "openLicence": "GRADEpro is commercial; schema openly downloadable (licence not stated in file).",
+    "url": "https://assets.cochrane.org/schema/v1/sof/summary-of-findings.schema.json",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "Cochrane JSON schema file (top-level fields); MAGICapp help page describing GRADEpro JSON-LD export.",
+    "summary": "GRADEpro exports Summary of Findings tables as JSON-LD; Cochrane publishes a JSON schema described as a 'Common representation of GRADE Summary of Findings or Evidence Profile tables for exchange between tools (e.g. GRADEpro GDT, MAGICapp, Cochrane RevMan)'. Top-level fields: ci-level, population, setting, intervention, comparator, outcomes.",
+    "relevanceToHCF": "If HCF stores evidence tables later, use this schema rather than inventing one. Not needed for v1."
+  },
+  {
+    "name": "Guidelines International Network (GIN) key components / standards",
+    "owner": "Guidelines International Network",
+    "type": "reporting standard",
+    "status": "Published 2012 as 'proposed' minimum standards.",
+    "openLicence": "Article licence not checked.",
+    "url": "https://www.acpjournals.org/doi/10.7326/0003-4819-156-7-201204030-00009",
+    "citation": {
+      "pmid": "22473437",
+      "doi": "10.7326/0003-4819-156-7-201204030-00009"
+    },
+    "whatWasRead": "Abstract (PubMed).",
+    "summary": "11 key components for trustworthy guidelines: panel composition, decision-making process, conflicts of interest, objective, methods, evidence review, basis of recommendations, ratings of evidence and recommendations, review, updating, funding. GIN then had 93 organisations and 89 individual members from 46 countries.",
+    "relevanceToHCF": "A checklist for HCF's guideline-level metadata: COI, funding, update plan, rating system. Not a data format."
+  },
+  {
+    "name": "GIN International Guidelines Library",
+    "owner": "Guidelines International Network (powered by EBSCO)",
+    "type": "guideline format",
+    "status": "Active registry.",
+    "openLicence": "Free to access; members upload.",
+    "url": "https://g-i-n.net/library/international-guidelines-library",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "Web page.",
+    "summary": "Free registry of published and in-development guidelines, many languages; CSV collection template and RIS export. Size not stated.",
+    "relevanceToHCF": "A place to find sleep guidelines by country, and its descriptor fields are a cross-check for HCF's guideline metadata. Not a recommendation-level format."
+  },
+  {
+    "name": "RIGHT statement (Reporting Items for practice Guidelines in HealThcare)",
+    "owner": "RIGHT Working Group (Lanzhou University, WHO and others)",
+    "type": "reporting standard",
+    "status": "Published 2017; EQUATOR reporting guideline.",
+    "openLicence": "Licence not checked.",
+    "url": "https://www.right-statement.org/",
+    "citation": {
+      "pmid": "27893062",
+      "doi": "10.7326/M16-1565"
+    },
+    "whatWasRead": "Abstract (PubMed); right-statement.org home page (title only).",
+    "summary": "22-item checklist: basic information (1-4), background (5-9), evidence (10-12), recommendations (13-15), review and quality assurance (16-17), funding and declaration and management of interests (18-19), other (20-22).",
+    "relevanceToHCF": "Use its sections as HCF guideline-level fields (who funded, COI management, review, update). Items 18-19 back HCF's conflictsOfInterest field."
+  },
+  {
+    "name": "AGREE II",
+    "owner": "AGREE Next Steps Consortium / AGREE Trust",
+    "type": "reporting standard",
+    "status": "Published 2010 (instrument updated 2009/2017 per site).",
+    "openLicence": "Free to use (copyright page not read).",
+    "url": "https://www.agreetrust.org/",
+    "citation": {
+      "pmid": "20656455",
+      "doi": "10.1016/j.jclinepi.2010.07.001"
+    },
+    "whatWasRead": "PubMed record (no abstract); AGREE Trust page (download filename says '23-item Instrument').",
+    "summary": "The most used tool to score guideline quality (23 items).",
+    "relevanceToHCF": "Optional: HCF could add an 'appraisal' field if a published AGREE II score exists for a guideline. Not a format for recommendations."
+  },
+  {
+    "name": "AGREE-REX (Recommendation EXcellence)",
+    "owner": "AGREE Trust",
+    "type": "reporting standard",
+    "status": "Published; draft validated on 161 guidelines in 2020.",
+    "openLicence": "Not checked.",
+    "url": "https://www.agreetrust.org/resource-centre/agree-rex-recommendation-excellence/",
+    "citation": {
+      "pmid": "32948216",
+      "doi": "10.1186/s13012-020-01036-5"
+    },
+    "whatWasRead": "Abstract of Florez 2020 (Implement Sci, open access, CIHR funded); AGREE Trust page.",
+    "summary": "Scores the quality of the recommendations themselves (clinical credibility, values, local applicability). Across 161 guidelines the mean was 4.23 of 7; lowest on policy values (3.44), local applicability (3.56) and resources (3.49).",
+    "relevanceToHCF": "Its weak spots (local applicability, resources) are exactly the gap HCF's pathway and coverage layers describe."
+  },
+  {
+    "name": "COGS (Conference on Guideline Standardization) checklist",
+    "owner": "Shiffman et al., Yale",
+    "type": "reporting standard",
+    "status": "Published 2003; largely superseded by RIGHT (2017) in practice.",
+    "openLicence": "Not checked.",
+    "url": "https://www.acpjournals.org/doi/10.7326/0003-4819-139-6-200309160-00013",
+    "citation": {
+      "pmid": "13679327",
+      "doi": "10.7326/0003-4819-139-6-200309160-00013"
+    },
+    "whatWasRead": "Abstract (PubMed).",
+    "summary": "18-topic checklist for reporting guidelines, built by a 2-round Delphi of 23 experts in 2002.",
+    "relevanceToHCF": "Historical. Use RIGHT instead."
+  },
+  {
+    "name": "GEM - Guideline Elements Model (ASTM E2210)",
+    "owner": "Yale Center for Medical Informatics; ASTM International",
+    "type": "guideline format",
+    "status": "XML model from 2000; ASTM E2210. Current ASTM status not verified (ASTM page returned 403). 2011 review: GEM Cutter downloaded 563 times.",
+    "openLicence": "ASTM standard is paid (not verified).",
+    "url": "https://www.astm.org/e2210-12r24.html",
+    "citation": {
+      "pmid": "10984468",
+      "doi": "10.1136/jamia.2000.0070488"
+    },
+    "whatWasRead": "Abstracts of Shiffman 2000 (JAMIA, open access) and Hajizadeh 2011 (GEM at 10). ASTM page blocked.",
+    "summary": "XML document model with >100 elements: identity, developer, purpose, audience, methods, target population, and 'knowledge components' - recommendations made of conditionals (if) and imperatives (do).",
+    "relevanceToHCF": "Its split of a recommendation into 'condition / population' + 'action' + 'strength' is a sensible pattern HCF already roughly follows. Low current use; do not adopt as the format."
+  },
+  {
+    "name": "NICE syndication API",
+    "owner": "National Institute for Health and Care Excellence (UK)",
+    "type": "guideline format",
+    "status": "Active.",
+    "openLicence": "No: licence required. Free in UK; outside UK: £550 international test licence, £60,000 worldwide annual service licence. Organisations only, need cyber certification. Using NICE content to train or fine-tune LLMs 'is not permitted'.",
+    "url": "https://www.nice.org.uk/about/what-we-do/nice-syndication-api",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "Web page (via curl).",
+    "summary": "Delivers current NICE guidance as text/html, Atom XML and NICE-specific JSON/XML. Old and withdrawn guidance not available.",
+    "relevanceToHCF": "HCF should link to NICE web pages and quote short wording rather than bulk-ingest via the API; check licence before republishing NICE text in an open dataset."
+  },
+  {
+    "name": "Arden Syntax",
+    "owner": "HL7 International",
+    "type": "guideline format",
+    "status": "Alive but niche: ANSI/HL7 Arden V2.10-2014, reaffirmed as 2.10-2019 (published 2019-07-31). FHIR-based Arden compilers reported in 2023-2024.",
+    "openLicence": "HL7 standard (HL7 IP policy; not checked).",
+    "url": "https://standups.hl7.org/2019/07/31/publication-of-health-level-seven-arden-syntax-for-medical-logic-systems-version-2-10-2019/",
+    "citation": {
+      "pmid": "22342733",
+      "doi": "10.1016/j.jbi.2012.02.001"
+    },
+    "whatWasRead": "HL7 StandUps news page; abstract of Samwald 2012; titles of 2023/2024 'Arden Syntax on FHIR' papers (PMIDs 37387055, 39575797).",
+    "summary": "Rule language dating back to 1989: each 'Medical Logic Module' is a single if-then alert. 2.10 added an XML form (ArdenML).",
+    "relevanceToHCF": "Not relevant to a comparison dataset: it encodes alerts, not recommendations with strength and source."
+  },
+  {
+    "name": "GLIF3 (Guideline Interchange Format)",
+    "owner": "InterMed collaboratory (Columbia, Harvard, Stanford)",
+    "type": "guideline format",
+    "status": "Research model from 2004; no active maintenance found (not checked beyond literature).",
+    "openLicence": "Not stated.",
+    "url": "https://doi.org/10.1016/j.jbi.2004.04.002",
+    "citation": {
+      "pmid": "15196480",
+      "doi": "10.1016/j.jbi.2004.04.002"
+    },
+    "whatWasRead": "Abstract (PubMed).",
+    "summary": "Encodes a guideline at three levels: conceptual flowchart, computable specification, implementable specification. RDF-based.",
+    "relevanceToHCF": "Historical; its three levels foreshadow the WHO L1-L4 layers. Do not adopt."
+  },
+  {
+    "name": "PROforma",
+    "owner": "Cancer Research UK / J Fox; commercialised as Arezzo (InferMed)",
+    "type": "guideline format",
+    "status": "Published 2003; commercial descendant existed. Deontics (Fox-linked company) now markets 'Intelligent Treatment Pathways' but its site does not mention PROforma.",
+    "openLicence": "Not stated.",
+    "url": "https://doi.org/10.1197/jamia.M1264",
+    "citation": {
+      "pmid": "12807812",
+      "doi": "10.1197/jamia.M1264"
+    },
+    "whatWasRead": "Abstract (PubMed); Deontics home page.",
+    "summary": "Executable language of tasks (plans, decisions, actions, enquiries).",
+    "relevanceToHCF": "Historical. Do not adopt."
+  },
+  {
+    "name": "Asbru",
+    "owner": "Vienna University of Technology / Ben-Gurion University (Shahar)",
+    "type": "guideline format",
+    "status": "Research use; papers to 2024 (compliance assessment).",
+    "openLicence": "Not stated.",
+    "url": "https://doi.org/10.1197/jamia.m1135",
+    "citation": {
+      "pmid": "12509357",
+      "doi": "10.1197/jamia.m1135"
+    },
+    "whatWasRead": "Abstract of Peleg 2003 comparison; PubMed titles of later Asbru papers (PMIDs 17276145, 38768161).",
+    "summary": "Time-oriented plan language for guidelines.",
+    "relevanceToHCF": "Historical / research. Do not adopt."
+  },
+  {
+    "name": "SAGE (Standards-Based Active Guideline Environment)",
+    "owner": "SAGE consortium (Stanford, IDX, Mayo, Intermountain, others)",
+    "type": "guideline format",
+    "status": "Project ended (2007 overview paper); not maintained as a standard.",
+    "openLicence": "Not stated.",
+    "url": "https://doi.org/10.1197/jamia.M2399",
+    "citation": {
+      "pmid": "17600098",
+      "doi": "10.1197/jamia.M2399"
+    },
+    "whatWasRead": "Abstract (PubMed).",
+    "summary": "Encoded guidelines as 'recommendation sets' using only standard terminologies, integrated with order sets and workflow.",
+    "relevanceToHCF": "Historical. Its lesson - use standard codes (SNOMED, etc.) for conditions and drugs - carries over to HCF."
+  },
+  {
+    "name": "GUIDE, EON, PRODIGY and the computer-interpretable guideline (CIG) family",
+    "owner": "Various academic groups (Pavia, Stanford, Newcastle)",
+    "type": "guideline format",
+    "status": "Research models compared in 2003; methodological review 2013. Field consolidated into HL7 work (CQL, FHIR PlanDefinition).",
+    "openLicence": "Not stated.",
+    "url": "https://doi.org/10.1016/j.jbi.2013.06.009",
+    "citation": {
+      "pmid": "23806274",
+      "doi": "10.1016/j.jbi.2013.06.009"
+    },
+    "whatWasRead": "Abstracts of Peleg 2003 (12509357) and Peleg 2013 (23806274).",
+    "summary": "Peleg 2003 compared Asbru, EON, GLIF, GUIDE, PRODIGY, PROforma on two guidelines; found consensus on plan organisation, expression language, record model; noted that some participants pursued standardisation 'under the auspices of HL7'.",
+    "relevanceToHCF": "Confirms the older languages fed into HL7; the live successors are CQL + FHIR CPG."
+  },
+  {
+    "name": "BPM+ Health (OMG BPMN / CMMN / DMN for healthcare)",
+    "owner": "Object Management Group; moving to HL7 as 'HL7 BPM Community'",
+    "type": "pathway format",
+    "status": "In transition from OMG to HL7 (announcement on bpm-plus.org; date not stated).",
+    "openLicence": "OMG specs free to download (not checked).",
+    "url": "https://www.bpm-plus.org/",
+    "citation": {
+      "pmid": "36107480",
+      "doi": "10.2196/29927"
+    },
+    "whatWasRead": "bpm-plus.org home page; abstract of Iglesias 2022 (JMIR, open access).",
+    "summary": "Uses general business-process standards: BPMN (flowcharts of steps), CMMN (case management, for flexible order), DMN (decision tables). BPMN is used for clinical pathways because it is easy to draw, but needs extensions for timing-heavy care.",
+    "relevanceToHCF": "Good for drawing one country's pathway as a diagram (e.g. GP -> home sleep test -> CPAP). Overkill as the storage format for a comparison table."
+  },
+  {
+    "name": "European Pathway Association (E-P-A) care pathway definition",
+    "owner": "European Pathway Association",
+    "type": "pathway format",
+    "status": "Definition in use.",
+    "openLicence": "Web page; licence not stated.",
+    "url": "https://e-p-a.org/care-pathways/",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "Web page.",
+    "summary": "Defines a care pathway as 'a complex intervention for the mutual decision making and organisation of care processes' for 'a well-defined group of patients during a well-defined period', with five characteristics (goals and key elements; communication; coordinating roles and sequencing; documenting variances and outcomes; resources).",
+    "relevanceToHCF": "Use as the plain definition of HCF's 'pathway' layer: who does what, in what order, for whom."
+  },
+  {
+    "name": "Clinical pathway operational definition (Cochrane, Lawal 2016)",
+    "owner": "Lawal, Rotter et al.",
+    "type": "pathway format",
+    "status": "Published 2016.",
+    "openLicence": "Open access (BMC Med).",
+    "url": "https://doi.org/10.1186/s12916-016-0580-z",
+    "citation": {
+      "pmid": "26904977",
+      "doi": "10.1186/s12916-016-0580-z"
+    },
+    "whatWasRead": "Abstract (PubMed).",
+    "summary": "4 criteria: structured multidisciplinary plan; translates guidelines into local structures; details steps with time-frames or criteria-based progression; aims to standardise care for a specific population.",
+    "relevanceToHCF": "Test for whether an HCF row belongs in 'pathway' rather than 'guideline'."
+  },
+  {
+    "name": "openEHR Task Planning (TP)",
+    "owner": "openEHR Foundation",
+    "type": "pathway format",
+    "status": "Specification state: RETIRED (PROC Release-1.7.0).",
+    "openLicence": "openEHR specs free (not checked).",
+    "url": "https://specifications.openehr.org/releases/PROC/latest/task_planning.html",
+    "citation": {
+      "pmid": "36107480",
+      "doi": "10.2196/29927"
+    },
+    "whatWasRead": "Specification web page (status sections via curl); Iglesias 2022 abstract.",
+    "summary": "A clinically oriented planning model drawing on YAWL, BPMN, CMMN and DMN; 2022 study found it could model infection pathways out-of-the-box.",
+    "relevanceToHCF": "Do not adopt: the spec is marked RETIRED."
+  },
+  {
+    "name": "HealthPathways",
+    "owner": "Streamliners NZ Limited (with regional health systems)",
+    "type": "pathway format",
+    "status": "Active: Australia, New Zealand, Canada, England, Wales; '50+ health systems', '30M+' population.",
+    "openLicence": "No; regional sites, content copyright Streamliners/regions. Login model not stated on page.",
+    "url": "https://www.healthpathways.info/",
+    "citation": {
+      "pmid": "32693906",
+      "doi": "10.1071/AH19214"
+    },
+    "whatWasRead": "Web page; abstract of Goddard-Nash 2020.",
+    "summary": "Locally agreed GP-facing pathways (assessment, management, referral) started in Canterbury NZ in 2008. Content is web pages, not a published data format.",
+    "relevanceToHCF": "Main source for HCF pathway rows in AU/NZ (name the region). Copy facts, not text."
+  },
+  {
+    "name": "Map of Medicine",
+    "owner": "Map of Medicine Ltd (Hearst Health)",
+    "type": "pathway format",
+    "status": "Withdrawn: referrals/sidebar tools withdrawn from sale 31 March, pathways map to cease 30 June (Pulse+IT, 4 June 2018). Earlier, RCP stopped contributing (RCP release dated 15 July 2015).",
+    "openLicence": "No.",
+    "url": "https://www.pulseit.news/?p=18729",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "News page (paywalled after 2 paragraphs); RCP news page; web search snippets (secondary).",
+    "summary": "UK national pathway library once built into EMIS and TPP GP systems; regions (e.g. Brisbane North) moved to HealthPathways.",
+    "relevanceToHCF": "Shows a pathway library can vanish: HCF should archive URLs (e.g. Wayback) for every pathway row."
+  },
+  {
+    "name": "CDS Hooks",
+    "owner": "HL7 International",
+    "type": "guideline format",
+    "status": "STU 2 (2.0.1) trial use; 3.0.0 normative ballot dated 2025-12-15.",
+    "openLicence": "Free (HL7).",
+    "url": "https://cds-hooks.hl7.org/",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "cds-hooks.org page and package-list.json.",
+    "summary": "API for calling decision-support services from inside an electronic record at 'hooks' (patient-view, order-select, order-sign); replies are 'cards' (information, suggestion, app link).",
+    "relevanceToHCF": "Delivery plumbing, not a content format. Irrelevant to HCF except as background for Da Vinci CRD."
+  },
+  {
+    "name": "Medicare Coverage Database downloads and Coverage API",
+    "owner": "US Centers for Medicare & Medicaid Services (CMS)",
+    "type": "coverage format",
+    "status": "Active; datasets updated weekly (Thursdays); Coverage API live.",
+    "openLicence": "Mixed: US government data, but CPT codes inside are AMA-licensed for personal non-commercial use; click-through licence required.",
+    "url": "https://www.cms.gov/medicare-coverage-database/downloads/downloads.aspx",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "Download page; api.coverage.cms.gov overview and one metadata endpoint.",
+    "summary": "National Coverage Determinations (NCDs), Local Coverage Determinations (LCDs) and Articles as ZIPs (MS Access .MDB and CSV with embedded HTML) plus a REST API.",
+    "relevanceToHCF": "Source for US coverage rows (e.g. CPAP NCD). Cite the NCD/LCD id and date; do not copy CPT descriptors (AMA licence)."
+  },
+  {
+    "name": "Da Vinci Coverage Requirements Discovery (CRD) IG",
+    "owner": "HL7 International / Da Vinci Project",
+    "type": "coverage format",
+    "status": "v2.2.1, STU 2.2 trial use, 2026-03-27, FHIR R4, US realm.",
+    "openLicence": "Free (HL7).",
+    "url": "https://hl7.org/fhir/us/davinci-crd/",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "IG home page and package-list.json.",
+    "summary": "Lets a clinician's system ask the payer, via CDS Hooks, what that payer requires (documentation, prior authorisation) for a proposed order.",
+    "relevanceToHCF": "Real-time US payer plumbing. Not a format for publishing coverage rules HCF could reuse; just note it exists."
+  },
+  {
+    "name": "Da Vinci Documentation Templates and Rules (DTR) IG",
+    "owner": "HL7 International / Da Vinci Project",
+    "type": "coverage format",
+    "status": "v2.2.0, STU 2.2 trial use, 2026-03-27, FHIR R4, US realm.",
+    "openLicence": "Free (HL7).",
+    "url": "https://hl7.org/fhir/us/davinci-dtr/",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "IG home page and package-list.json.",
+    "summary": "'Specifies how payer rules can be executed in a provider context to ensure that documentation requirements are met' (FHIR Questionnaire + CQL); companion to CRD.",
+    "relevanceToHCF": "Same as CRD: background only. If a payer ever publishes a CPAP-adherence DTR questionnaire, that would be a machine-readable source for a coverage row."
+  },
+  {
+    "name": "SNOMED CT",
+    "owner": "SNOMED International",
+    "type": "terminology",
+    "status": "Active.",
+    "openLicence": "No charge in Member countries; licence (fees possible) required via MLDS in non-Member countries.",
+    "url": "https://www.snomed.org/get-snomed",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "Web page (via curl). Public concept browser API redirected; no codes looked up.",
+    "summary": "The most detailed clinical terminology; used inside FHIR resources.",
+    "relevanceToHCF": "Optional secondary code for conditions and interventions (CBT-I, CPAP). Licence varies by country, so do not make it required."
+  },
+  {
+    "name": "ICD-11",
+    "owner": "World Health Organization",
+    "type": "terminology",
+    "status": "In effect since 1 January 2022. Sleep-wake disorders are a new chapter 7.",
+    "openLicence": "CC BY-ND 3.0 IGO (plus WHO terms of use). API available (needs registered token).",
+    "url": "https://www.who.int/standards/classifications/classification-of-diseases",
+    "citation": {
+      "pmid": "40965652",
+      "doi": "10.1007/s00115-025-01859-x"
+    },
+    "whatWasRead": "WHO ICD page; full text (Europe PMC XML) of Spiegelhalder 2025, Nervenarzt.",
+    "summary": "Global disease classification. Chronic insomnia = 7A00, short-term insomnia = 7A01 (from Spiegelhalder 2025). OSA code 7A41 seen only in secondary web results.",
+    "relevanceToHCF": "Recommended primary condition code for HCF: free, global, has a dedicated sleep chapter."
+  },
+  {
+    "name": "ATC/DDD (Anatomical Therapeutic Chemical classification)",
+    "owner": "WHO Collaborating Centre for Drug Statistics Methodology (Norwegian Institute of Public Health)",
+    "type": "terminology",
+    "status": "Updated annually; index last updated 2026-01-20.",
+    "openLicence": "Free to search; copyright notice: reference required, 'Copying and distribution for commercial purposes is not allowed. Changing or manipulating the material is not allowed.' Download (Excel/XML) needs an account.",
+    "url": "https://atcddd.fhi.no/atc_ddd_index/",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "Index pages N05CF, N05CJ, N05CM; copyright/disclaimer page.",
+    "summary": "Hierarchical drug codes used worldwide outside the US. Checked: zopiclone N05CF01, zolpidem N05CF02, zaleplon N05CF03, eszopiclone N05CF04; suvorexant N05CJ01, lemborexant N05CJ02, daridorexant N05CJ03.",
+    "relevanceToHCF": "Recommended primary drug code. Storing individual codes with attribution in a non-commercial open dataset looks compatible with the notice, but confirm with the Centre before an open licence release."
+  },
+  {
+    "name": "RxNorm",
+    "owner": "US National Library of Medicine",
+    "type": "terminology",
+    "status": "Active; REST API (RxNav).",
+    "openLicence": "Free to use (Terms of Service not read).",
+    "url": "https://www.nlm.nih.gov/research/umls/rxnorm/index.html",
+    "citation": {
+      "pmid": "",
+      "doi": ""
+    },
+    "whatWasRead": "Web page; RxNav REST API lookups.",
+    "summary": "US normalised drug names linked to US drug databases. Checked: zolpidem RxCUI 39993, suvorexant RxCUI 1547099.",
+    "relevanceToHCF": "Optional secondary drug code for US rows and for linking to US drug data."
+  }
+]

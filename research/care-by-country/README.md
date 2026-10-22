@@ -37,7 +37,7 @@ NHS, CDC and NSF is in the separate lit search (`research/lit-search-2026-10/`, 
 | [`comparison.json`](comparison.json) | **312 rows**, one per country × condition × recommendation. 243 guideline, 30 pathway, 39 coverage rows. 31 countries or bodies. |
 | [`existing-comparisons.json`](existing-comparisons.json) | **49 published items** that compare guidelines, pathways or drug use across countries, with how thorough each is. |
 | [`notes/`](notes/) | Each research area's findings note (main differences, surprises, blocked pages, open questions) and its raw rows. |
-| [`notes/pmid-verification.txt`](notes/pmid-verification.txt) | Every PMID re-checked against PubMed on 21 Oct 2026. |
+| [`notes/pmid-verification.txt`](notes/pmid-verification.txt) | Every PMID (155) re-checked against PubMed on 21 Oct 2026. |
 | [`scripts/`](scripts/) | `merge.py` builds `comparison.json` from the notes; `verify.py` re-checks PMIDs. |
 
 ### Row format (`comparison.json`)
@@ -199,9 +199,84 @@ with ties to the maker of daridorexant (Idorsia). The items above can seed and
 cross-check rows (Brandt 2024, Seow 2022, Fietze 2022, McNicholas 2025 on driving rules),
 and should be credited.
 
-<!-- FORMATS -->
+## Is there a standard format for guidelines and pathways?
 
-<!-- CLOSED -->
+Full note: [`notes/formats.md`](notes/formats.md) (36 standards in [`notes/formats.json`](notes/formats.json)).
+
+**Yes, several, but none was built for comparing countries.**
+
+- **WHO SMART Guidelines** sets out five steps from a written guideline to software:
+  L1 narrative, L2 "Digital Adaptation Kit" (workflows and decision tables), L3 a
+  machine-readable FHIR version, L4 software, L5 AI-tuned. There are 10 kits (antenatal
+  care, HIV, TB, immunisation and others). **None covers sleep or mental health.** An
+  HCF row sits between L1 and L2.
+- **HL7 FHIR** is the main modern health-data standard. Its guideline rulebook
+  (CPG-on-FHIR, v2.0.0, trial use, 2024) has slots for a recommendation's direction,
+  strength and quality of evidence, and a separate "pathway" type. The newer
+  **EBMonFHIR** recommendation profiles are the closest match to an HCF row, but are
+  still a draft (ballot, March 2025).
+- **GRADE** supplies the words most guideline panels use: for or against, strong or
+  conditional, and high to very low certainty. MAGICapp stores GRADE guidelines as
+  structured data, but it is commercial.
+- **Reporting checklists** (RIGHT, AGREE II, GIN) are not data formats, but they list
+  the guideline-level facts worth recording: funding, conflicts of interest, updating.
+- **Pathways:** clear definitions exist (European Pathway Association), and BPMN
+  flowcharts can draw one country's route, but **there is no shared data format for
+  pathways**. Map of Medicine, a commercial pathway library, was shut down in 2018 and
+  its content went with it.
+- **Payer rules:** no country-neutral format. The US has machine-readable Medicare
+  coverage files and real-time payer standards (Da Vinci), US-only.
+- **Codes:** ICD-11 for conditions (chronic insomnia 7A00); ATC for drugs (zolpidem
+  N05CF02, suvorexant N05CJ01, daridorexant N05CJ03).
+
+**Decision (reversible):** keep `comparison.json` as plain JSON, but add optional fields
+named after GRADE / EBMonFHIR / FHIR terms: country codes, ICD-11 and ATC codes,
+normalised strength and certainty, grading system, and, for pathway rows, who does it,
+where, in what order, and any numeric target (e.g. hours of CPAP use). Mapping table:
+[`notes/formats.md`](notes/formats.md#recommendation-for-comparisonjson). Don't
+produce FHIR until a partner asks for it. Not done yet; see open questions.
+
+## Who owns the guidance doctors actually use
+
+Full note: [`notes/agilio-closed-guidance.md`](notes/agilio-closed-guidance.md)
+(17 resources in [`notes/agilio-closed-guidance.json`](notes/agilio-closed-guidance.json)).
+
+**The UK's main GP guide (NICE Clinical Knowledge Summaries, CKS) is paid for by NICE
+but owned by a private-equity-held company.**
+- CKS began as PRODIGY, an NHS-funded project at Newcastle University in the 1990s.
+  Since September 2012 NICE has paid Clarity Informatics to write it.
+- Clarity was bought in April 2021 by Agilio Software, a UK healthcare software group.
+  Agilio's founding investor sold it in February 2024 to funds advised by Five Arrows
+  (Rothschild & Co) and TA Associates.
+- The last contract was about £1.32 million for April 2023 to April 2026, with one bid
+  received. The two official notices disagree slightly (£1,320,000 vs £1,323,000).
+- Agilio's page says: "The content within CKS is the intellectual property of Agilio."
+  NICE excludes CKS from its open licence. It is readable only from the UK, and
+  scraping and mining are banned.
+- Outside the UK the same content is sold by subscription ("Agilio Prodigy", and through
+  the Royal Pharmaceutical Society's publishing arm). Its topic list includes insomnia,
+  sleep apnea and restless legs.
+
+**The BNF (the UK drug reference) works the same way.** It is owned by the Royal
+Pharmaceutical Society, the BMJ and the Royal College of Paediatrics and Child Health.
+NICE pays £15.16 million for 2021–2033 for UK access, awarded without competition
+"due to IPR ownership".
+
+**This is a pattern.** The guidance doctors actually use day to day is mostly paid or
+login-only: UpToDate, BMJ Best Practice, DynaMed, Australia's Therapeutic Guidelines,
+HealthPathways. Some governments buy national licences, which makes the content free to
+use there but never open. Those licences can lapse: Norway dropped BMJ Best Practice on
+1 April 2026 and deleted its translated patient leaflets the same day. Society guidelines
+are more often free to read (Netherlands NHG, Germany AWMF, Japan Minds, NICE), but
+machine reuse is increasingly restricted. AWMF reserves its texts against text mining and
+AI. NICE's own licence covers the UK only and excludes AI use. Its API costs £60,000 a
+year outside the UK.
+
+**For the Declaration:** the public pays twice, once for the evidence and the experts,
+then again to license the summary back. And people outside the paying country can't see
+it at all. We found studies on paywalled specialty guidelines (dermatology: 34 of 226
+behind a paywall), but **none on how closed GP-level guidance is.** That's another gap
+HCF could fill.
 
 ## Conflicts of interest worth knowing
 
@@ -277,5 +352,5 @@ existing comparisons). Two more looked at standard formats and at who owns close
 guidance. Rules: no citation without a PMID or DOI that was looked up, or a page that was
 read; numbers copied exactly; say what was read; record dates, status and conflicts of
 interest; respect blocks and licence terms rather than work around them. All 117 PMIDs
-were re-checked against PubMed at the end and match; DOI-only citations were checked on
+in the data, plus 38 more cited in the notes, were re-checked against PubMed at the end and match; DOI-only citations were checked on
 Crossref. This is a first pass by an AI and needs a person's review.
