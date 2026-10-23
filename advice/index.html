@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Everyday Sleep Advice</title>
+<meta name="description" content="Everyday sleep advice in plain words, with the research behind each tip and where trusted sources disagree. Draft dataset by the Health Culture Foundation.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf7; --surface:#ffffff; --surface-2:#f3f1ec; --ink:#1d1f23; --ink-2:#4a4f57; --ink-3:#6b717a;
+  --line:#e2ded5; --accent:#2f4b8a; --accent-soft:#e6ecf8; --warn:#8a5a00; --warn-soft:#fbf1dc;
+  --good:#2f6b3f; --good-soft:#e3f1e6; --bad:#9a2d2d; --bad-soft:#f8e4e2;
+  --maxw:1080px; --prose:720px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161a; --surface:#1b1e23; --surface-2:#22262c; --ink:#e9e7e2; --ink-2:#b9bcc2; --ink-3:#8d929a;
+    --line:#2f343b; --accent:#9db4ea; --accent-soft:#232c40; --warn:#e6b65c; --warn-soft:#33291a;
+    --good:#8fcf9e; --good-soft:#1d2e22; --bad:#ec9a92; --bad-soft:#3a2222;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14161a; --surface:#1b1e23; --surface-2:#22262c; --ink:#e9e7e2; --ink-2:#b9bcc2; --ink-3:#8d929a;
+  --line:#2f343b; --accent:#9db4ea; --accent-soft:#232c40; --warn:#e6b65c; --warn-soft:#33291a;
+  --good:#8fcf9e; --good-soft:#1d2e22; --bad:#ec9a92; --bad-soft:#3a2222;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:2px}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;line-height:1.2;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,5vw,3.1rem);margin:.2em 0 .3em;font-weight:700}
+h2{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 .6em;font-weight:600}
+h3{font-size:1.2rem;margin:1.6em 0 .5em;font-weight:600}
+p{margin:0 0 1em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+.prose{max-width:var(--prose)}
+header.hero{border-bottom:1px solid var(--line);background:var(--surface);padding:56px 0 40px}
+.eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.lede{font-size:1.2rem;color:var(--ink-2);max-width:var(--prose)}
+.banner{margin-top:24px;padding:12px 16px;border-radius:8px;background:var(--warn-soft);color:var(--warn);font-size:.92rem;max-width:var(--prose)}
+nav.toc{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+nav.toc a{flex:none;font-size:.85rem;color:var(--ink-2);text-decoration:none;padding:6px 10px;border-radius:6px}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 18px 14px}
+.card .k{font-family:"Source Serif 4",Georgia,serif;font-size:1.15rem;font-weight:600;margin-bottom:6px}
+.card p{color:var(--ink-2);font-size:.95rem;margin:0}
+.stats{display:flex;flex-wrap:wrap;gap:28px;margin:28px 0 0}
+.stat .n{font-family:"Source Serif 4",Georgia,serif;font-size:2.2rem;font-weight:700;line-height:1}
+.stat .l{font-size:.85rem;color:var(--ink-3)}
+.verdict{border-left:4px solid var(--accent);background:var(--accent-soft);padding:16px 20px;border-radius:0 8px 8px 0;margin:20px 0;max-width:var(--prose)}
+.verdict strong{display:block;font-family:"Source Serif 4",Georgia,serif;font-size:1.15rem;margin-bottom:4px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:16px 0}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:900px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{background:var(--surface-2);font-weight:600;font-size:.8rem;color:var(--ink-2);position:sticky;top:0}
+tr:last-child td{border-bottom:none}
+td:first-child{font-weight:600;white-space:nowrap}
+.muted{color:var(--ink-3)}
+.small{font-size:.88rem}
+.pill{display:inline-block;font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.pill.for{background:var(--good-soft);color:var(--good)}
+.pill.against{background:var(--bad-soft);color:var(--bad)}
+.pill.fact{background:var(--accent-soft);color:var(--accent)}
+.pill.stale{background:var(--warn-soft);color:var(--warn)}
+ul.tight{padding-left:1.2em;margin:0 0 1em} ul.tight li{margin:.3em 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.spectrum{margin:16px 0 8px;max-width:var(--prose)}
+.spectrum .row{display:grid;grid-template-columns:140px 1fr;gap:12px;align-items:center;margin:8px 0;font-size:.92rem}
+.spectrum .bar{height:10px;border-radius:5px;background:var(--accent)}
+.spectrum .row span:last-child{display:flex;align-items:center;gap:10px}
+@media (max-width:560px){.spectrum .row{grid-template-columns:1fr;gap:4px;margin:14px 0}.spectrum .row span:first-child{font-weight:600}.spectrum .row span:last-child{flex-direction:column;align-items:flex-start;gap:4px}.spectrum .bar{min-width:8px}}
+/* explorer */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.filters input,.filters select{font:inherit;font-size:.9rem;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);min-width:0}
+.filters input{flex:1 1 220px}
+.filters select{flex:0 1 180px}
+#count{font-size:.85rem;color:var(--ink-3);margin-bottom:8px}
+.rows{display:grid;gap:10px}
+details.row{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
+details.row summary{cursor:pointer;list-style:none;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:baseline}
+details.row summary::-webkit-details-marker{display:none}
+details.row summary .c{font-weight:600}
+details.row summary .d{color:var(--ink-2)}
+details.row .body{margin-top:10px;font-size:.92rem;color:var(--ink-2)}
+details.row .body dl{display:grid;grid-template-columns:150px 1fr;gap:4px 12px;margin:10px 0 0}
+details.row .body dt{color:var(--ink-3);font-size:.82rem}
+details.row .body dd{margin:0}
+@media (max-width:560px){details.row .body dl{grid-template-columns:1fr}details.row .body dt{margin-top:6px}}
+button.more{font:inherit;font-size:.9rem;margin-top:14px;padding:8px 14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;cursor:pointer}
+footer{padding:40px 0 64px;color:var(--ink-3);font-size:.88rem}
+
+.sitenav{background:var(--surface-2);border-bottom:1px solid var(--line);font-size:.85rem}
+.sitenav .wrap{display:flex;flex-wrap:wrap;gap:4px 18px;padding-top:8px;padding-bottom:8px;align-items:center}
+.sitenav a{color:var(--ink-2);text-decoration:none}
+.sitenav a[aria-current]{color:var(--ink);font-weight:600}
+.sitenav .lab{color:var(--ink-3)}
+.pill.mixed{background:var(--warn-soft);color:var(--warn)}
+.score{font-variant-numeric:tabular-nums}
+.pos{margin:6px 0 10px;padding-left:1.1em}
+.pos li{margin:.25em 0}
+.find{border-top:1px solid var(--line);padding:8px 0}
+.find:first-child{border-top:none}
+.was{text-decoration:line-through;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="sitenav"><div class="wrap"><span class="lab">HCF sleep research (draft):</span>
+<a href="./" aria-current="page">Everyday sleep advice (public)</a>
+<a href="../">Sleep care by country (clinicians)</a></div></div>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Health Culture Foundation · Draft dataset 0.1 · October 2026</div>
+    <h1>Everyday sleep advice</h1>
+    <p class="lede">The sleep tips people hear from public health sites, sleep coaches and podcasts, each in one plain line, with the research behind it and where trusted sources disagree.</p>
+    <div class="stats" id="stats"></div>
+    <div class="banner"><strong>Draft. Not yet reviewed by a person.</strong> Wording, scores and findings were drafted with AI help. Most studies were read at abstract level. It is not medical advice. For how doctors are told to treat sleep disorders, see <a href="../">Sleep care by country</a>.</div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <div class="wrap">
+    <a href="#answer">Short answer</a>
+    <a href="#sources">Where it comes from</a>
+    <a href="#disagree">Where sources disagree</a>
+    <a href="#rewritten">Rewritten after the evidence</a>
+    <a href="#scores">How we score</a>
+    <a href="#explore">Explore all advice</a>
+  </div>
+</nav>
+
+<main>
+<section id="answer">
+  <div class="wrap">
+    <h2>Short answer</h2>
+    <div class="verdict"><strong>Sleep tips help, but they don't treat insomnia.</strong>The American Academy of Sleep Medicine (2021) advises clinicians not to use "sleep hygiene" alone for insomnia that has lasted months, and reviews find it works less well than CBT-I, a short course of talking and habit therapy that US and European guidelines name as the first treatment. Everyday tips are for keeping sleep healthy, not for fixing a sleep disorder. <span class="small">(Lead framing proposed, not yet agreed.)</span></div>
+    <div class="cards">
+      <div class="card"><div class="k">Plain first, evidence underneath</div><p>Every item has three layers: one line you can act on, a short paragraph, then the studies.</p></div>
+      <div class="card"><div class="k">Disagreements shown, not hidden</div><p>When trusted sources disagree, both positions are listed. Screens before bed is the clearest case: strong evidence for children and teens, much weaker for adults.</p></div>
+      <div class="card"><div class="k">Who it fits</div><p>Items are tagged by audience (children, shift workers, pregnancy, older adults…) and note who a tip may not suit.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sources">
+  <div class="wrap prose">
+    <h2>Where it comes from</h2>
+    <ul class="tight">
+      <li><strong>Sleep Awareness Month wiki</strong>: 62 tips and 5 myths, with the wiki's write-ups and citations.</li>
+      <li><strong>Health glossary sleep entries</strong>: 20 more tips from NHLBI and popular sleep experts (Michael Breus, Andrew Huberman), placed in the same categories.</li>
+      <li><strong><a href="https://doonething.sleepliteracy.org/choose-your-one-thing/">Do One Thing</a></strong> habits from Sleep Literacy: 7 more tips (cannabis, finishing work earlier, planning social time earlier…).</li>
+      <li><strong>October 2026 literature search</strong>: five research passes covering guidelines, body clock and light, mind and behavior, substances and the bedroom, and myths and gaps. They added 18 tips (infant safe sleep, nicotine, sleep trackers, later school start times…) and attached findings to most items. Every PubMed ID was re-checked.</li>
+    </ul>
+    <p class="small muted">Everyday advice for individuals is here. Two related pieces are not published yet: what works at the level of schools, workplaces and policy (the "What Works" intervention library, still private, one sleep study so far), and the full dataset with medical codes (held back until the code licences are checked).</p>
+  </div>
+</section>
+
+<section id="disagree">
+  <div class="wrap">
+    <h2>Where sources disagree</h2>
+    <p class="prose">Items where trusted sources say different things, with each side's position.</p>
+    <div class="rows" id="dis"></div>
+  </div>
+</section>
+
+<section id="rewritten">
+  <div class="wrap">
+    <h2>Rewritten after the evidence</h2>
+    <p class="prose">Tips whose plain line changed once the studies were read.</p>
+    <div class="rows" id="rew"></div>
+  </div>
+</section>
+
+<section id="scores">
+  <div class="wrap prose">
+    <h2>How we score</h2>
+    <p>Each item has five 1–5 scores. They are first-pass proposals and have not been reviewed.</p>
+    <ul class="tight" id="scales"></ul>
+  </div>
+</section>
+
+<section id="explore">
+  <div class="wrap">
+    <h2>Explore all advice</h2>
+    <p class="prose">Click an item for the paragraph, who it fits, scores and the studies behind it.</p>
+    <div class="filters">
+      <input id="q" type="search" placeholder="Search: e.g. caffeine, naps, melatonin" aria-label="Search">
+      <select id="fc" aria-label="Category"><option value="">All categories</option></select>
+      <select id="fa" aria-label="Audience"><option value="">All audiences</option></select>
+      <select id="fe" aria-label="Evidence"><option value="">Any evidence score</option><option value="4">4–5: well supported</option><option value="3">3: mixed or limited</option><option value="2">1–2: weak or against</option></select>
+    </div>
+    <div id="count" aria-live="polite"></div>
+    <div class="rows" id="rows"></div>
+    <button class="more" id="more" hidden>Show more</button>
+    <p class="small muted" style="margin-top:16px">Download: <a href="data.json">data.json</a> (public copy; medical codes and internal notes left out). CC BY 4.0, Health Culture Foundation.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Health Culture Foundation · Draft dataset 0.1, October 2026 · Part of the Open Health Communication Declaration work. Studies are summarized in our own words; follow the links for the originals. Not medical advice.</div>
+</footer>
+
+<script>
+(function(){
+  const $=s=>document.querySelector(s);
+  const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const PAGE=30; let data=[], shown=PAGE, list=[];
+  const dirCls=d=>/support/.test(d)?'for':/against|harm/.test(d)?'against':/mixed/.test(d)?'mixed':'';
+  const evLabel=v=>v==null?'not scored':v>=4?`evidence ${v}/5`:v==3?'evidence 3/5':`evidence ${v}/5`;
+  const evCls=v=>v==null?'':v>=4?'for':v==3?'mixed':'against';
+  const human=s=>String(s||'').replace(/-/g,' ');
+  function ref(c,url){
+    const out=[]; if(c.pmid)out.push(`<a href="https://pubmed.ncbi.nlm.nih.gov/${esc(c.pmid)}/">PubMed</a>`);
+    if(c.doi)out.push(`<a href="https://doi.org/${esc(c.doi)}">DOI</a>`);
+    if(url&&/^https?:/.test(url))out.push(`<a href="${esc(url)}">free copy</a>`);
+    return out.join(' · ');
+  }
+  function disHTML(i){
+    return i.disagreements.map(x=>`<p><strong>${esc(x.about)}</strong></p><ul class="pos">${(x.positions||[]).map(p=>`<li><em>${esc(p.source)}</em>: ${esc(p.says)}</li>`).join('')}</ul>`).join('');
+  }
+  function item(i,open){
+    const t=i.tags||{};
+    const finds=i.findings.map(f=>`<div class="find"><span class="pill ${dirCls(f.direction)}">${esc(f.direction)}</span> <span class="small muted">${esc(f.studyType)} · ${esc(f.population)}</span><br>${esc(f.keyResult)}<br><span class="small muted">${esc(f.citation.authors)} ${esc(f.citation.year)}, ${esc(f.citation.journal)} · read: ${esc(f.whatWasRead)}</span> <span class="small">${ref(f.citation,f.freeUrl)}</span></div>`).join('');
+    const srcs=i.sources.filter(s=>s.citation).map(s=>`<li>${esc(s.citation)} ${s.url?`<a href="${esc(s.url)}">link</a>`:''}</li>`).join('');
+    return `<details class="row"${open?' open':''}><summary>
+      <span class="c">${esc(i.plain)}</span>
+      ${i.kind==='myth'?'<span class="pill against">myth</span>':''}
+      <span class="pill ${evCls(t.evidenceSupport)}">${evLabel(t.evidenceSupport)}</span>
+      ${i.disagreements.length?'<span class="pill mixed">sources disagree</span>':''}
+    </summary><div class="body">
+      ${i.paragraph?`<p>${esc(i.paragraph)}</p>`:''}
+      ${i.plainBefore?`<p class="small">Earlier wording: <span class="was">${esc(i.plainBefore)}</span></p>`:''}
+      <dl>
+        <dt>Category</dt><dd>${esc(i.category)}${i.subcategory?' › '+esc(i.subcategory):''}</dd>
+        <dt>Who it fits</dt><dd>${esc(i.audience.map(human).join(', '))}${i.audienceNote?`<br><span class="muted">${esc(i.audienceNote)}</span>`:''}</dd>
+        <dt>Scores (1–5)</dt><dd class="score">evidence ${t.evidenceSupport??'–'} · impact ${t.impact??'–'} · ease ${t.ease??'–'} · reach ${t.reach??'–'} · novelty ${t.novelty??'–'}</dd>
+        ${i.facets.mechanism.length?`<dt>How it works</dt><dd>${esc(i.facets.mechanism.map(human).join(', '))}</dd>`:''}
+        ${i.disagreements.length?`<dt>Disagreements</dt><dd>${disHTML(i)}</dd>`:''}
+        ${i.evidenceSummary?`<dt>Wiki's evidence note</dt><dd>${esc(i.evidenceSummary)}</dd>`:''}
+        ${finds?`<dt>Studies (${i.findings.length})</dt><dd>${finds}</dd>`:''}
+        ${srcs?`<dt>Other sources</dt><dd><ul class="tight">${srcs}</ul></dd>`:''}
+      </dl></div></details>`;
+  }
+  function render(){
+    const q=$('#q').value.trim().toLowerCase(), c=$('#fc').value, a=$('#fa').value, e=$('#fe').value;
+    list=data.filter(i=>{
+      const v=i.tags.evidenceSupport;
+      if(c&&i.category!==c)return false; if(a&&!i.audience.includes(a))return false;
+      if(e==='4'&&!(v>=4))return false; if(e==='3'&&v!==3)return false; if(e==='2'&&!(v<=2))return false;
+      return !q||[i.plain,i.paragraph,i.plainBefore,i.subcategory,i.category].join(' ').toLowerCase().includes(q);
+    });
+    $('#count').textContent=`${list.length} of ${data.length} items`;
+    $('#rows').innerHTML=list.slice(0,shown).map(i=>item(i)).join('');
+    $('#more').hidden=list.length<=shown;
+  }
+  fetch('data.json').then(r=>r.json()).then(d=>{
+    data=d.items;
+    const nf=data.reduce((s,i)=>s+i.findings.length,0), nd=data.filter(i=>i.disagreements.length).length;
+    $('#stats').innerHTML=[[data.length,'tips, concepts<br>and myths'],[nf,'study findings<br>attached'],[nd,'items where<br>sources disagree'],[data.filter(i=>i.plainBefore).length,'tips rewritten<br>after the evidence']].map(([n,l])=>`<div class="stat"><div class="n">${n}</div><div class="l">${l}</div></div>`).join('');
+    $('#scales').innerHTML=Object.entries(d.scales||{}).map(([k,v])=>`<li><strong>${esc(human(k.replace(/([A-Z])/g,' $1').toLowerCase()))}</strong>: ${esc(v)}</li>`).join('');
+    $('#dis').innerHTML=data.filter(i=>i.disagreements.length).map(i=>item(i)).join('');
+    $('#rew').innerHTML=data.filter(i=>i.plainBefore).map(i=>item(i)).join('');
+    [...new Set(data.map(i=>i.category))].filter(Boolean).forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;$('#fc').appendChild(o);});
+    [...new Set(data.flatMap(i=>i.audience))].sort().forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=human(v);$('#fa').appendChild(o);});
+    render();
+  }).catch(()=>{$('#count').textContent='Could not load the data file.';});
+  ['#q','#fc','#fa','#fe'].forEach(s=>$(s).addEventListener('input',()=>{shown=PAGE;render();}));
+  $('#more').addEventListener('click',()=>{shown+=PAGE;render();});
+})();
+</script>
+</body>
+</html>

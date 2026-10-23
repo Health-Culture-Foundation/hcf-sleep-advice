@@ -97,9 +97,18 @@ details.row .body dd{margin:0}
 @media (max-width:560px){details.row .body dl{grid-template-columns:1fr}details.row .body dt{margin-top:6px}}
 button.more{font:inherit;font-size:.9rem;margin-top:14px;padding:8px 14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;cursor:pointer}
 footer{padding:40px 0 64px;color:var(--ink-3);font-size:.88rem}
+
+.sitenav{background:var(--surface-2);border-bottom:1px solid var(--line);font-size:.85rem}
+.sitenav .wrap{display:flex;flex-wrap:wrap;gap:4px 18px;padding-top:8px;padding-bottom:8px;align-items:center}
+.sitenav a{color:var(--ink-2);text-decoration:none}
+.sitenav a[aria-current]{color:var(--ink);font-weight:600}
+.sitenav .lab{color:var(--ink-3)}
 </style>
 </head>
 <body>
+<div class="sitenav"><div class="wrap"><span class="lab">HCF sleep research (draft):</span>
+<a href="advice/">Everyday sleep advice (public)</a>
+<a href="./" aria-current="page">Sleep care by country (clinicians)</a></div></div>
 
 <header class="hero">
   <div class="wrap">
@@ -112,7 +121,7 @@ footer{padding:40px 0 64px;color:var(--ink-3);font-size:.88rem}
       <div class="stat"><div class="n">49</div><div class="l">earlier comparisons<br>found and rated</div></div>
       <div class="stat"><div class="n">155</div><div class="l">PubMed IDs<br>re-checked</div></div>
     </div>
-    <div class="banner"><strong>Draft. Not yet reviewed by a person.</strong> This is a first pass, researched with AI help. It is not medical advice. Numbers that need checking are flagged, and some sources could only be read as abstracts or summaries.</div>
+    <div class="banner"><strong>Draft. Not yet reviewed by a person.</strong> This is a first pass, researched with AI help. It is not medical advice. For everyday sleep tips for the public, see <a href="advice/">Everyday sleep advice</a>. Numbers that need checking are flagged, and some sources could only be read as abstracts or summaries.</div>
   </div>
 </header>
 
